@@ -1,0 +1,212 @@
+% This is a basic Math Paper
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{url}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Computer Networks}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Computer Networks\\
+		Second Year B.Tech Semister 3\\
+		Academic Year 2022-23
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Module 1 - Class Notes
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Notes
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		P34. Krishnaraj Thadesar\\
+		\vspace{1cm}
+		Batch A2
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Operating System}
+What is an operating system?
+
+\begin{enumerate}
+	\item It is a program that acts as an intermediary between a user and the hardware.
+	\item It is also the program taht controls the execution of application programs.
+	\item It allocates resources effectively.
+\end{enumerate}
+
+The main Objective is convenience, efficiency and providing an environment. It has a kernel, and is always running all the time.
+
+
+\section{System Calls}
+
+System calls are what are called by the operating system to the kernel. When you say things like printf and all they then invoke system calls
+Examples are read(), write() etc
+
+\section{Shell}
+The shell is simply another program on top of the kernel which provides a basic human os interface.
+
+There are different types of shells
+
+\begin{enumerate}
+	\item /bin/csh - It is the C Shell
+	\item /bin/tcsh - Enhanced C Shell
+	\item /bin/sh - The Bourne Shell / POSIX shell
+	\item /bin/ksh - Korn Shell
+	\item /bin/bash - Korn Shell Clone from GNU
+\end{enumerate}
+
+All linux systems use the bash shell as the default.
+
+\subsection{Scripts}
+A script is a bunch of lines of the script written in a plain text file.
+
+\subsection{Why should we write shell script?}
+\begin{enumerate}
+	\item Shell script can take input from the user or file and then output them on the screen.
+	\item Useful to create our own commands. Save lots of time
+	\item To automate some tast of daily life.
+	\item System administration part can be automated.
+\end{enumerate}
+
+\subsection{Practical Examples where you can use scripts}
+\begin{enumerate}
+	\item Monitor your systemdata backupFind out what process are taking up resources
+	\item Find out which memory is free
+	\item Find which users are logged in
+	\item Find out if all necdessary network services are running etc.
+\end{enumerate}
+
+
+\section{OS Components and Functions}
+
+\begin{enumerate}
+	\item Process Management and CPU scheduling:
+	      \textit{A Process is when a part of your program is in its execution state.}\\
+	      A program is on a higher level than the process. One Program can have a lot of processes. On an even higher level is the job or the task. The tast is the highest level. Whenever you say something exclusively in your program, then doing that is caleld a process. \\
+
+	      A process needs certain resources, including CPU time, memory, files, and IO devices. \\
+
+	      The Operating system is responsible for the following activities
+	      \begin{enumerate}
+		      \item Process creation and deletion
+		      \item Process suspension and resumption
+		      \item Provision of mechanisms for process synchronization  and Process communication
+	      \end{enumerate}
+
+	\item Memory Management
+	      \begin{enumerate}
+		      \item Memory is a large array of words or bytes. Each with its own address
+		      \item It is a repository of quickly accessible data shared by the CPU and IO devices
+		      \item Main memory is a volatile storage device. It loses its contents in case of a system failure.
+		      \item The Operating system is responsible for the following activities in connections with memory management
+		            \begin{enumerate}
+			            \item Keeping track of which parts of the memory are currently being used and by whom.
+			            \item Deciding which process to load when memory space becomes available
+			            \item Allocating and deallocating memory space as needed.
+		            \end{enumerate}
+
+
+	      \end{enumerate}
+	\item File Management
+
+	      There are 2 types of Files. Sequential and Direct Access Files.
+
+	      \begin{enumerate}
+		      \item A File is a collection of related information defined by its created. Commonly files represent programs and data
+		      \item The operating system is responsible for the following activities in connections with file mangement.
+		            \begin{enumerate}
+			            \item File creating and deletion
+			            \item Directory creation and deletion
+			            \item Support of primitives for manipulating files and directories.
+			            \item Mapping files onto secondary storage. File backup on stable or non volatile storage media.
+		            \end{enumerate}
+
+	      \end{enumerate}
+
+	\item IO System management.
+
+	      \begin{enumerate}
+		      \item Control of devices connected to computer
+		      \item IO Devices vary widely in their function and speed, so different methods are needed to control them.
+		      \item Device drivers are required to provide an interface to IO devices
+		      \item Also the IO system consists uses buffering to take care of speed difference between IO devices and processor.
+	      \end{enumerate}
+
+\end{enumerate}
+
+\section{Security}
+
+
+\end{document}

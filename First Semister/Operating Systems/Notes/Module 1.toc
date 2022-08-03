@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Operating System}{2}{}%
+\contentsline {section}{\numberline {2}System Calls}{2}{}%
+\contentsline {section}{\numberline {3}Shell}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Scripts}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Why should we write shell script?}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Practical Examples where you can use scripts}{3}{}%
+\contentsline {section}{\numberline {4}OS Components and Functions}{3}{}%
+\contentsline {section}{\numberline {5}Security}{4}{}%
