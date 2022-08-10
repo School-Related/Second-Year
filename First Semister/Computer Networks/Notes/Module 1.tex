@@ -187,4 +187,108 @@ Line Coding Schemes
 }
 
 
+\subsubsection{Unipolar}
+Signal levels are on one side of the time axis either above or below NRZ scheme is an eample of this code. The signal level does not return to zero during symbol transmission. It has no synchronization or error detection. It is simple but costly in power consumption. 
+
+\subsubsection{Polar}
+
+Non return to Zero - Level - Positive voltage ffor one symbol and negative for the other. \\
+
+NRZ - Inversion - The change or lack of change in polarity determines the value off a symbol. Eg. A 1 symbol inverts teh polarity a "0" does not. Basically we only change when the bit value is actually changing. This means unless you change, the computer will assume that you have the same value. This prevents any confusion as to how many values are there.\\  
+
+The voltages for Polar are on both sides of the time axis. Polar NRZ scheme can be implemented with two voltages. Eg. +V for 1 and -V ffor 0\\
+
+Return to Zero (RZ)
+\begin{enumerate}
+	\item This scheme uses three voltage values. +, 0 and -
+	\item You basically return to zero after each transmission. 
+\end{enumerate}
+
+\subsubsection{BiPolar}
+\begin{enumerate}
+	% \item Code uses 3 voltage levels. $ _, +, 0, _ $ to represent the symbols ( note not transitions to zero as in RZ)
+	\item So voltage level for one symbol is at 0 and the other alternates between + and -.
+	\item Bipolar alternate Mark Inversion AMI - The 0 symbol is represented by zero voltage and the 1 symbol alternates between +v and -V
+	\item PseudoTernary is the reverse of AMI. ere 0 is represented by alternate voltage and 1 is represeted by 0. 
+	\item AMI is used in USA
+	\item Pseudoternary is used in Europe. 
+\end{enumerate}
+
+
+\subsubsection{Block Coding}
+A technique of sending data in a set of sequence. 
+
+Block coding is done in Steps. You are basically wanting to convert a bunch of bits into a bunch of blocks. The base block may be of some value m, and you might convert it to another block of size n, which may be greater or lesser than m. This is mB to nB substitution. 
+
+
 \end{document}
+
+\subsubsection{Scrambling}
+\begin{enumerate}
+	\item Earlier coding schemes are not suitable ffor long distance because of DC components. 
+	\item Scrambling is a technique to avoid long sequene of 0s used to create a sequence of bits that has the required bandwidth for transmission. Self clocking, no low frequenies, no wide bandwidth. 
+	\item It is implemented atthe same time as encoding the bit stream is created on the fly
+	\item It is implemented at the same time as encoding, the bit stream is created on the fly. 
+	\item It replaces unffriendly runs of bits with a violation code that is easy to recognize. 
+	\item The reason we are doing this is mainly just because we know that for long distances DC signals dont travel well. So when you send long strings of data, like say 8 0's, then some may get lost somewhere. To avoid that, we scramble the data, by violating it. When you have 8 zeroes, the sender realizes that, and after 3 zeroes, it flips the data bits as + - 0 - +. So the receiver realizes that there were 8 zeroes. The value of the violated signal is different from the signal for 1 or 0. 
+	
+
+\subsubsection{Analog to Digital Conversion}
+\begin{enumerate}
+	\item A digital signal is superior to analog signal. It is more robust to noise and can easily by recovered, corrected and amplified. 
+	\item For this reason it is better to change an analog signal to digital data.
+\end{enumerate}
+
+\section{Introduction to Medium Access Control}
+
+\paragraph{Type of Networks}
+\begin{itemize}
+	\item Personal Area Network : 1 m
+	\item LAN upto 1 km
+	\item MAN upto 10km
+	\item WAN upto 1000km : Mostly wtih Fiber and Serial Links. 
+	\item More than that would be the Internet.
+\end{itemize}
+\end{enumerate}
+
+\paragraph{802.11}
+Laptops with recent technology have this tech in it. A wireless router is connected to the wired network. 
+
+\paragraph{Swithced Ethernet}
+Ethernet Switch is connected to the rest of the network. 
+
+\paragraph*{Ad Hoc Network}
+Any temporary network where the devices are connected for sometime is called the ad hoc network. Bluetooth
+
+\section{Network Architecture}
+\subsection{Client Server Model}
+This is like the usual browser and html thing. You send a request, and you get a reply over the network. 
+\subsection{Peer to Peer Network}
+No centralized data source. Its the ultimate form of democracy on the internet. Any node can initate a connection. 
+\subsection{Distributed Network}
+This is a critical thing, and most important commercial networks fall into this. Its simple, there are several servers, who are connected to other computers of their own. These servers are then connected with each other. 
+\subsection{Software Define Network}
+This is a new type coz there is an application layer, a control layer, and a forwarding layer. A single network dude cant handle thousands of applications, and so there is a software that controls them. Think of apps. The main difference here is that the network is controlled by the software. 
+
+
+\section{Protocol Hierarchies: Layers, Protocols and interfaces}
+\subsection{Layers}
+\begin{itemize}
+	\item The concept here is that data communication takes place in layers. There are several layer Interfaces. 
+	\item Layer 1 for example would be the Communication between NIC and Wireless card of your system with the Cellular Network Tower. Layer 2 would be between the Servers of your applciation. etc. 
+\end{itemize}
+
+
+\subsection{Reference Models}
+\begin{itemize}
+	\item OSI Model: Open system Interconnection Model. \\
+	Imagine you have opened several tabs on your Browser on your Lap. You are connected to the Google servers via serveral other computers. Your First base physical layer would be the fact that you have a router connected via 2.4Ghz wifi. Your second data link layer, would be your NIC Card that actually sends the bits of data to be sent over the network. 
+	But the packet of data that is sent has to be received at the destination. That is what happens at the network Layer. Between you and the Google network, there are several other computers, that receive these packets till their network layer. A packet leaves your computer, with your IP address, and bounces between these computers, where it goes through several checks, and finally reaches the Google Server.  
+	The Browser application is yet another layer, which manages what information to send. Each browser maintains several sessions in each of those tabs. That is yet another layer.  
+	Even above the Browser application layer is not the last one, there is yet another presentation layer, between the browser itself that manages presents the final form of data to you.\\
+	In this example, we see 7 layers, present everywhere on every computer. 2 of them are physical layers, the rest 5 need to be in your OS. 
+
+	\paragraph{Addresses}
+	The Network layer uses your IP Address. the Data Layer is where the MAC Address is defined. The Physical layer doesnt have an address. Data sent from a computer is sent in packets. We know that. But these packets are abstracted in the network layer. At the data link layer, you call them frames, which then make up packets. Frames that have headers that contain the Source and Destination MAC Address. Network layer has packets arranged in the same manner. At the transport layer, we use Port addresses. These addresses are associated with the processes running on your machine. Like what happens when you run a Jupyter Notebook file. \\ IP Addresses are not known, and we have to send a request to the DNS which then gives us the exact IP address. 
+\end{itemize}
+
