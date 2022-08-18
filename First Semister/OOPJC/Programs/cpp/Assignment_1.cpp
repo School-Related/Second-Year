@@ -115,6 +115,9 @@ int main()
     President.basic_sal *= 2;
     President.position = "President";
 
+    // Defining anothe object using the parameterized constructor
+    Employee VP(1003, 50, 200000, 3000, 1000, "Mumbai", "Vice President", "Visey Presed Ent");
+
     // Taking user input for the number of employees
     int count = 0;
     cout << "How many values do you wanna input ?";
@@ -136,6 +139,8 @@ int main()
     CEO.display();
     cout << "Information about the President" << endl;
     President.display();
+    cout << "Information about the Vice President" << endl;
+    VP.display();
 
     // Displaying Information about the other Employees
     for (int i = 0; i < count; i++)

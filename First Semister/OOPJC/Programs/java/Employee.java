@@ -1,21 +1,22 @@
 import java.util.Scanner;
-    // create an object of Scanner
-    
-    
+
 class Employee {
+
+    // create an object of Scanner
     Scanner input = new Scanner(System.in);
+    
     int emp_id;
     int age, basic_sal, da, ta;
     String address_city, position, name;
+    static int ssn;
 
-
-    void Employee()
+    Employee()
     {
         System.out.println("Default Constructor was called");
     }
 
     // Parameterized Constructor
-    void Employee(int e, int a, int b, int d, int t, String add, String pos, String nam)
+    Employee(int e, int a, int b, int d, int t, String add, String pos, String nam)
     {
         System.out.println("Parameterized constructor was called");
         emp_id = e;
@@ -27,6 +28,20 @@ class Employee {
         position = pos;
         name = nam;
     }
+    
+    // Copy Constructor
+    Employee(Employee E)
+    {
+        System.out.println("Copy constructor was called");
+        emp_id = E.emp_id;
+        age = E.age;
+        basic_sal = E.basic_sal;
+        da = E.da;
+        ta = E.ta;
+        address_city = E.address_city;
+        position = E.position;
+        name = E.name;
+    }
 
     double calc_gross_sal()
     {
@@ -34,8 +49,9 @@ class Employee {
     }
 
     void display()
-    {
-        // System.out.println("Employee ssn is: " + );
+    {   
+        ssn = ssn + 1;
+        System.out.println("Employee ssn is: " + ssn);
         System.out.println("Employee ID is : " + emp_id);
         System.out.println("Employee Name: " + name);
         System.out.println("Employee Age: " + age);
@@ -45,13 +61,11 @@ class Employee {
         System.out.println("Employee TA: " + ta);
         System.out.println("Employee Gross Salary: " + calc_gross_sal() );
         System.out.println("Employee Address City: " + address_city);
+        System.out.println("\n");
     }
-
-        
 
     void accept()
     {
-        
         System.out.println("Enter the age :");
         age = input.nextInt();
         System.out.println("Employee ID is: ");
@@ -71,4 +85,5 @@ class Employee {
         System.out.println("Employee Address City: ");
         address_city = input.next();
     }
+
 }

@@ -1,4 +1,5 @@
 // Your First Program
+package java;
 
 class HelloWorld {
     public static void main(String[] args) {
