@@ -1,7 +1,8 @@
+package assignment_1;
 import java.util.Scanner;
 
 
-public class Assignment_1 {
+public class Source {
 
     static Scanner input = new Scanner(System.in);
 

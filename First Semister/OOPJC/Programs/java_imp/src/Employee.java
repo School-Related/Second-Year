@@ -1,6 +1,7 @@
+package assignment_1;
 import java.util.Scanner;
 
-class Employee {
+public class Employee {
 
     // create an object of Scanner
     Scanner input = new Scanner(System.in);
