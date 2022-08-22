@@ -1,0 +1,196 @@
+% This is a basic Math Paper
+
+\documentclass[11pt]{article}
+ 
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{url}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Operating Systems}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Computer Networks\\
+		Second Year B.Tech Semister 3\\
+		Academic Year 2022-23
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Operating Systems
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Notes from Tananbaum and Classes
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		P34. Krishnaraj Thadesar\\
+		\vspace{1cm}
+		Batch A2
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+
+\section{Processes}
+
+A process is an instance of a program in exeuction. It is an entity that can be assigned to and executed on a procesor. 
+
+\begin{enumerate}
+    \item Process is compromised of Program Code
+    \item Data
+    \item Stack
+    \item A number of attribute describing the state of process. 
+\end{enumerate}
+
+\subsection{Process states}
+\begin{enumerate}
+    \item New
+    \item Ready
+    \item Running
+    \item Waiting
+    \item Terminated
+    \item Suspended
+\end{enumerate}
+
+
+\subsubsection{Suspended State}
+\begin{itemize}
+    \item Process is faster than IO so man processes could be waiting for IO
+    \item Swap this proces to disk (SSD/ HDD) to free up RAM memory. 
+    \item Ready or waiting state becomes suspended state when swapped to disk. 
+\end{itemize}
+
+\section{Process Control Block}
+It is a data structure maintained by the Operating System. It holds all necessary information related to Process.
+Information Associated with each process is as follows:
+\begin{enumerate}
+    \item Process state
+    \item Program Counter
+    \item CPU Registers
+    \item CPU Scheduling information
+    \item Memory Management Information
+    \item Accounting Information
+    \item IO Status information
+\end{enumerate}
+
+\section{Switches}
+\subsection{Context Switches}
+\begin{enumerate}
+    \item It switches the execution of a process to another, so for that it has to do some stuff, 
+    \item It saves the state of the first program, and then reloads the state of the next one. 
+    \item And only then it runs the next process. This takes time, and is a major disadvantage. 
+    \item It is a mode switch, but a mode switch isnt a context switch. 
+    \item It is a mode switch coz it requires you to switch mode from user to kernel. 
+\end{enumerate}
+
+\section{Process Execution}
+Consider three processes being executed, all are in the meory, plus the dispatcher. 
+\paragraph{Dispatcher}
+Dispatcher is a small program which switches from one program to another. -
+
+\section{Process Creation}
+When a new process is created, the following happens:
+\begin{enumerate}
+    \item Allocates space to the process in memory
+    \item Assign a unique Process ID to the Process
+    \item A process control Block PCB gets associated with the process
+    \item OS Maintains pointers to each process's PCB in a process table sothat it can access the PCB quickly. 
+\end{enumerate}
+
+Reasons to create a Process
+\begin{enumerate}
+    \item New User Job
+    \item Created by OS to provide a service
+    \item Spawned by existing Process: The action of creating a new process at the explicit request of another process is called process spawning.
+\end{enumerate}
+
+After Creation
+\begin{enumerate}
+    \item Stay in the parent Process
+    \item Transfer Control to the child process. The system call for that is called Fork. This child process inherits everything from the parent. 
+    \item Transfer control to another process. 
+\end{enumerate}
+
+
+\subsection{fork()}
+A system call fork() is used to create processes. It takes no arguments and returns a process ID. 
+The syntax for the fork system call
+pid = fork();\\
+in the Parent process, pid is the child process\\
+In the child process, pid is 0
+
+\begin{enumerate}
+    \item It allocates a slot in the process table for the new process
+    \item It assigns a unique ID number to the child process
+    \item It makes a copy of the context of the parent process. 
+    \item It returns the ID number of the child to the parent process, and a 0 value to the child process process is assigned. 
+\end{enumerate}
+
+\end{document}

@@ -206,4 +206,32 @@ Theres not really a lot of difference here. Its just that languages like Visual 
 	\item Decision support and office automation systems
 	\item CIM, CAM, CAD systems. 
 \end{itemize}
+
+\section{Classes and Objects}
+
+\begin{itemize}
+	\item A class is a way to bind data and associated function together. 
+	\item An exanded concept of a data structure.
+	\item It has data that can be hidden from external members.
+\end{itemize}
+
+\subsection{Access Specifiers}
+\begin{itemize}
+	\item Private: They are only accessible by the member functions. 
+	\item Protected: Accessible from own class member functions, not objects, and derived class.
+	\item Public: Accessible from own class objects, member functions, derived and child classes as well. 
+	\item In C++ if you dont write any access specifier, its gonna be private. 
+	\item Member functions of the same class have access to to the private members, always. Even if they are public. 
+	\item Note that if you inherite some class from another class, the member functions of that class still can access the private members of the other parent class. 
+	\item A friend class or a friend function is a special type of function that can access private data members of the parent class or any class. 
+\end{itemize}
+
+\subsection{Objects}
+\begin{itemize}
+	\item A class provides the blueprints for objects, so basically an object is created from a class. 
+	\item Objects of a class are declared with exactly the same sort of declaration. 
+\end{itemize}
+
+
+
 \end{document}

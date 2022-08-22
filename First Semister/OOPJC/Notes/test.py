@@ -16,7 +16,7 @@ class animal():
     def spider(self):
         self.number_of_legs = 8
         print('I am a spider')
-        
+
     
     
 def main():

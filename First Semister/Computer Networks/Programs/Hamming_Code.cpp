@@ -1,0 +1,1 @@
+// You will be given a string as input and you have to find the resulting hamming code to be sent. 

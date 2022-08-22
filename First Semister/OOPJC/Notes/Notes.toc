@@ -10,3 +10,6 @@
 \contentsline {subsection}{\numberline {3.4}Polymorphism}{4}{}%
 \contentsline {subsection}{\numberline {3.5}Object Base vs. Object Oriented Languages. }{4}{}%
 \contentsline {subsection}{\numberline {3.6}Applications of OOP}{4}{}%
+\contentsline {section}{\numberline {4}Classes and Objects}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Access Specifiers}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Objects}{5}{}%

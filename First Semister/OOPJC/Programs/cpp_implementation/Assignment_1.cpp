@@ -4,6 +4,8 @@ class Employee
 {
 private:
     static int ssn;
+protected:
+    int something = 5;
 
 public:
     int emp_id = 1000;
@@ -20,7 +22,7 @@ public:
     // Parameterized Constructor
     Employee(int e, int a, int b, int d, int t, string add, string pos, string nam)
     {
-        cout << "Parameterized constructor was called";
+        cout << "Parameterized constructor was called\n";
         emp_id = e;
         age = a;
         basic_sal = b;
@@ -94,6 +96,17 @@ public:
 
 int Employee::ssn = 1000;
 
+
+class ramesh:private Employee{
+
+    void somefunction(){
+        int some = something;
+        cout << some;
+    }
+
+} obj;
+
+
 int main()
 {
     // Defining an Object using the default Constructor
@@ -106,6 +119,7 @@ int main()
     CEO.da = 1000;
     CEO.ta = 2000;
     CEO.position = "CEO";
+
 
     // Defining an object using the copy constructor
     Employee President(CEO);
