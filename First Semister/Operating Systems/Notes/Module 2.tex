@@ -100,97 +100,155 @@
 
 \section{Processes}
 
-A process is an instance of a program in exeuction. It is an entity that can be assigned to and executed on a procesor. 
+A process is an instance of a program in exeuction. It is an entity that can be assigned to and executed on a procesor.
 
 \begin{enumerate}
-    \item Process is compromised of Program Code
-    \item Data
-    \item Stack
-    \item A number of attribute describing the state of process. 
+	\item Process is compromised of Program Code
+	\item Data
+	\item Stack
+	\item A number of attribute describing the state of process.
 \end{enumerate}
 
 \subsection{Process states}
 \begin{enumerate}
-    \item New
-    \item Ready
-    \item Running
-    \item Waiting
-    \item Terminated
-    \item Suspended
+	\item New
+	\item Ready
+	\item Running
+	\item Waiting
+	\item Terminated
+	\item Suspended
 \end{enumerate}
 
 
 \subsubsection{Suspended State}
 \begin{itemize}
-    \item Process is faster than IO so man processes could be waiting for IO
-    \item Swap this proces to disk (SSD/ HDD) to free up RAM memory. 
-    \item Ready or waiting state becomes suspended state when swapped to disk. 
+	\item Process is faster than IO so man processes could be waiting for IO
+	\item Swap this proces to disk (SSD/ HDD) to free up RAM memory.
+	\item Ready or waiting state becomes suspended state when swapped to disk.
 \end{itemize}
 
 \section{Process Control Block}
 It is a data structure maintained by the Operating System. It holds all necessary information related to Process.
 Information Associated with each process is as follows:
 \begin{enumerate}
-    \item Process state
-    \item Program Counter
-    \item CPU Registers
-    \item CPU Scheduling information
-    \item Memory Management Information
-    \item Accounting Information
-    \item IO Status information
+	\item Process state
+	\item Program Counter
+	\item CPU Registers
+	\item CPU Scheduling information
+	\item Memory Management Information
+	\item Accounting Information
+	\item IO Status information
 \end{enumerate}
 
 \section{Switches}
 \subsection{Context Switches}
 \begin{enumerate}
-    \item It switches the execution of a process to another, so for that it has to do some stuff, 
-    \item It saves the state of the first program, and then reloads the state of the next one. 
-    \item And only then it runs the next process. This takes time, and is a major disadvantage. 
-    \item It is a mode switch, but a mode switch isnt a context switch. 
-    \item It is a mode switch coz it requires you to switch mode from user to kernel. 
+	\item It switches the execution of a process to another, so for that it has to do some stuff,
+	\item It saves the state of the first program, and then reloads the state of the next one.
+	\item And only then it runs the next process. This takes time, and is a major disadvantage.
+	\item It is a mode switch, but a mode switch isnt a context switch.
+	\item It is a mode switch coz it requires you to switch mode from user to kernel.
 \end{enumerate}
 
 \section{Process Execution}
-Consider three processes being executed, all are in the meory, plus the dispatcher. 
+Consider three processes being executed, all are in the meory, plus the dispatcher.
 \paragraph{Dispatcher}
 Dispatcher is a small program which switches from one program to another. -
 
 \section{Process Creation}
 When a new process is created, the following happens:
 \begin{enumerate}
-    \item Allocates space to the process in memory
-    \item Assign a unique Process ID to the Process
-    \item A process control Block PCB gets associated with the process
-    \item OS Maintains pointers to each process's PCB in a process table sothat it can access the PCB quickly. 
+	\item Allocates space to the process in memory
+	\item Assign a unique Process ID to the Process
+	\item A process control Block PCB gets associated with the process
+	\item OS Maintains pointers to each process's PCB in a process table sothat it can access the PCB quickly.
 \end{enumerate}
 
 Reasons to create a Process
 \begin{enumerate}
-    \item New User Job
-    \item Created by OS to provide a service
-    \item Spawned by existing Process: The action of creating a new process at the explicit request of another process is called process spawning.
+	\item New User Job
+	\item Created by OS to provide a service
+	\item Spawned by existing Process: The action of creating a new process at the explicit request of another process is called process spawning.
 \end{enumerate}
 
 After Creation
 \begin{enumerate}
-    \item Stay in the parent Process
-    \item Transfer Control to the child process. The system call for that is called Fork. This child process inherits everything from the parent. 
-    \item Transfer control to another process. 
+	\item Stay in the parent Process
+	\item Transfer Control to the child process. The system call for that is called Fork. This child process inherits everything from the parent.
+	\item Transfer control to another process.
 \end{enumerate}
 
 
 \subsection{fork()}
-A system call fork() is used to create processes. It takes no arguments and returns a process ID. 
+A system call fork() is used to create processes. It takes no arguments and returns a process ID.
 The syntax for the fork system call
 pid = fork();\\
 in the Parent process, pid is the child process\\
 In the child process, pid is 0
 
 \begin{enumerate}
-    \item It allocates a slot in the process table for the new process
-    \item It assigns a unique ID number to the child process
-    \item It makes a copy of the context of the parent process. 
-    \item It returns the ID number of the child to the parent process, and a 0 value to the child process process is assigned. 
+	\item It allocates a slot in the process table for the new process
+	\item It assigns a unique ID number to the child process
+	\item It makes a copy of the context of the parent process.
+	\item It returns the ID number of the child to the parent process, and a 0 value to the child process process is assigned.
+	\item It doesnt take any arguements
+	\item Purpose of fork is to create a new process, which becomes the child process of the caller.
+	\item After a process is created, both processes will execute the next instruction following the fork system call.
+	\item To distinguist the parent from the child, the returned value of fork can be used.
+	\item \begin{itemize}
+		      \item fork() returns a negative value to the parent if the creation of the child process wasnt successful
+		      \item 0 to the child process if successful, and the PID of thus generated child process to the parent process.
+	      \end{itemize}
+	\item Returned process id is of type PID defined in sys/types.h
+	\item Process can se function getpid() to retrieve the process ID assigned to this process.
+	\item Linux would make an exact copy of the parent's address space and give it to the child. Therefore the parent and child process will always have a separate address space.
+
 \end{enumerate}
 
+The OS will make two identical copies of address spaces for parent and child processes. So the parent and child processes have different address spaces.
+A local variable is:
+\begin{enumerate}
+	\item Declared inside the process
+	\item  Created when the process starts
+	\item  Lost when the process terminates
+\end{enumerate}
+
+A global variable is:
+\begin{enumerate}
+	\item Declared outside the process
+	\item Created as the process starts
+	\item Lost when the program ends
+\end{enumerate}
+
+The process ID, i.e., PID of the child process created, is returned to the parent process. (In case of failure, -1 is returned to the parent process.) \\
+Zero is returned to the child process. (If it fails, the child process is not created.) If a child process exits at that instant or is interrupted, a signal SIGCHLD is sent to the parent process. \\
+Both parent and child processes independently execute the subsequent commands after the fork() system call.
+
+
+\section{Process Termination}
+\begin{itemize}
+	\item All the resources held by process are released.
+	\item All the information help in all data structures is removed.
+	\item A process goes back to becoming a program and is stored on the secondary memory.
+\end{itemize}
+
+
+\section{Threads}
+\begin{itemize}
+	\item A thread is a part of a program.
+	\item It is an execution unit within a process
+	\item All threads of the same process share the same address space.
+	\item All threas have separate stacks and individual Thread IDs.
+	\item Thread is a lightweight process because: The contexxt switching between threads is inexpensive in terms of memory and resources.
+	\item Even if 2 processes are communicating within each other, its is their threads that are communicating.
+\end{itemize}
+
+\section{Differences between thread and processes}
+\begin{enumerate}
+	\item Process is program in execution, thread is process in execution
+	\item Inter process communication is slower than inter thread communication.
+	\item They both have unique ids, unique pid, and unique thread id.
+	\item Context switching is expensive in processes, its inexpensive in thread.
+	\item Every process has its own memory address, but threads use the memory of the process that they belong to.
+\end{enumerate}
 \end{document}
