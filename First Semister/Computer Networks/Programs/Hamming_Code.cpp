@@ -10,6 +10,18 @@ using namespace std;
 int m, r[20][20];
 int r_val = 0;
 
+void display_r()
+{
+    for (int i = 0; i < 20; i++)
+    {
+        for (int j = 0; j < 20; j++)
+        {
+            cout << r[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
 // Returns the length of the resulting hamming code
 int calc_length(string input)
 {
@@ -35,7 +47,9 @@ void fill_r_values(int hamming_len)
     bool should_add = false;
     for (int k = 0; k < hamming_len; k++)
     {
-        for (int i = 0, j = 0; i < hamming_len; i++)
+        count = 0;
+        should_add = false;
+        for (int i = 0, j = 0; i <= hamming_len; i++)
         {
             if (count == pow(2, k))
             {
@@ -53,7 +67,8 @@ void fill_r_values(int hamming_len)
     }
 }
 
-void fill_r_parity(int hamming_len, bool hamming[hamming_len])
+// Fills the first column of the r table, to 1 or 0 for maintaining even parity. 
+void fill_r_parity(int hamming_len, bool hamming[])
 {
     int count = 0;
     bool parity = false;
@@ -63,34 +78,35 @@ void fill_r_parity(int hamming_len, bool hamming[hamming_len])
         count = 0;
         for (int j = 1; j <= hamming_len / 2; j++)
         {
-            hamming[r[i][j]] ? count++ : count--;
+            hamming[r[i][j] - 1] ? count++ :count;
         }
         parity = count % 2 == 0 ? false : true; // if number of 1's is even
         r[i][0] = parity;                       // assign parity bit
     }
 }
 
-// Fills the hamming array by looking at the parity r bits from the r array. 
-void fill_hamming(int hamming_len, bool hamming[hamming_len])
+// Fills the hamming array by looking at the parity r bits from the r array.
+void fill_hamming(int hamming_len, bool hamming[])
 {
     int k = 0;
     for (int j = 0; j < hamming_len; j++)
     {
-        if (hamming_len[j] == pow(2, k) - 1)
+        if (j == pow(2, k) - 1)
         {
-            hamming[j] = r[k][0]
+            hamming[j] = r[k][0];
             k++;
         }
     }
 }
 
-void display_hamming(int hamming_len, bool hamming[hamming_len])
+void display_hamming(int hamming_len, bool hamming[])
 {
     cout << "The Hamming code to be sent by the sender is: " << endl;
-    for (int i = hamming_len - 1; i >= 0; i++)
+    for (int i = hamming_len - 1; i >= 0; i--)
     {
         cout << hamming[i];
     }
+    cout << endl;
 }
 
 int main()
@@ -104,6 +120,8 @@ int main()
     // Edge Case
     if (input.length() == 0)
         return 0;
+    else
+        m = input.length();
 
     // Find the value of r and the length of the hamming code
     hamming_len = calc_length(input);
@@ -112,11 +130,12 @@ int main()
     bool hamming[hamming_len] = {false};
 
     // Store the bits
-    for (int i = 0, j = 0; i < hamming_len; i++)
+    for (int i = 0, j = 0, k = m; i < hamming_len; i++)
     {
         if (i != (pow(2, j) - 1))
         {
-            hamming[i] = (bool)input[hamming_len - 1 - i];
+            hamming[i] = (input[k - 1] == '1');
+            k--;
         }
         else
         {
@@ -133,6 +152,9 @@ int main()
     // Fill the hamming code
     fill_hamming(hamming_len, hamming);
 
+    display_r();
+
     display_hamming(hamming_len, hamming);
+
     return 0;
 }
