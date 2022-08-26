@@ -10,4 +10,5 @@
 \contentsline {subsection}{\numberline {5.1}fork()}{4}{}%
 \contentsline {section}{\numberline {6}Process Termination}{5}{}%
 \contentsline {section}{\numberline {7}Threads}{5}{}%
-\contentsline {section}{\numberline {8}Differences between thread and processes}{5}{}%
+\contentsline {subsection}{\numberline {7.1}Differences between thread and processes}{5}{}%
+\contentsline {subsection}{\numberline {7.2}User Level Threads}{6}{}%

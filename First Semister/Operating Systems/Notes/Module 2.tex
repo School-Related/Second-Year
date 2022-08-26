@@ -241,9 +241,17 @@ Both parent and child processes independently execute the subsequent commands af
 	\item All threas have separate stacks and individual Thread IDs.
 	\item Thread is a lightweight process because: The contexxt switching between threads is inexpensive in terms of memory and resources.
 	\item Even if 2 processes are communicating within each other, its is their threads that are communicating.
+	\item They share the same process things like data, open files, descriptors, signals, current working directory, user and group id. 
+	\item Each thread has a unique thread ID, which has a set of registers, stack for local variables, return addreses, priorities. 
 \end{itemize}
 
-\section{Differences between thread and processes}
+There are 2 types of threads. This is similar to how there is always this binary existance of many basic OS operations and functions. We also had user and kernel spaces. 
+\begin{enumerate}
+	\item Kernel Level threads
+	\item User level Threads. 
+\end{enumerate}
+
+\subsection{Differences between thread and processes}
 \begin{enumerate}
 	\item Process is program in execution, thread is process in execution
 	\item Inter process communication is slower than inter thread communication.
@@ -251,4 +259,39 @@ Both parent and child processes independently execute the subsequent commands af
 	\item Context switching is expensive in processes, its inexpensive in thread.
 	\item Every process has its own memory address, but threads use the memory of the process that they belong to.
 \end{enumerate}
-\end{document}do
+
+\subsection{User Level Threads}
+\begin{enumerate}
+	\item user level threads are implemented by users and the kernel is not aware of this existance of these threads. 
+	\item kernel handles them as if they were single threaded processes. 
+	\item User level threads are much faster than kernel level threads. 
+	\item They are represented by a program counter, stack, registers and a small process control block. 
+	\item Also there is no kernel involvement in synchronization for user elvel threads. 
+	\item User level threads are managed entirely by the user level library. 
+\end{enumerate}
+
+\subsubsection*{Advantages of user level threads}
+\begin{enumerate}
+	\item User level threads are easier and faster to create than kernel elvel threads, so they can be more easily managed. 
+	\item User level threads can be run on any operating system. 
+	\item There are no kernel mode priviledges required for thread switching in user-level threads. 
+\end{enumerate}
+
+\subsubsection*{Disadvantages of user level threads}
+\begin{enumerate}
+	\item Multithreaded applications in user level threads cannot use multiprocessing to their advantage. 
+	\item Entire process is blocked if one suer level thread persforms blocking operations. 
+\end{enumerate}
+
+\subsubsection*{Kernel level threads}
+\begin{enumerate}
+	\item Kernel level threads are handled by the operating system directly and thethread management is done by the kernel  
+	\item context information for the proces as well as the process threads is all managed by the kernel. 
+	\item Because of this kernel level threads are slower than user level threads.
+\end{enumerate}
+
+
+
+
+
+\end{document}

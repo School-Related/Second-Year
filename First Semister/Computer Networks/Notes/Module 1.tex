@@ -221,7 +221,6 @@ A technique of sending data in a set of sequence.
 Block coding is done in Steps. You are basically wanting to convert a bunch of bits into a bunch of blocks. The base block may be of some value m, and you might convert it to another block of size n, which may be greater or lesser than m. This is mB to nB substitution. 
 
 
-\end{document}
 
 \subsubsection{Scrambling}
 \begin{enumerate}
@@ -292,6 +291,49 @@ This is a new type coz there is an application layer, a control layer, and a for
 	The Network layer uses your IP Address. the Data Layer is where the MAC Address is defined. The Physical layer doesnt have an address. Data sent from a computer is sent in packets. We know that. But these packets are abstracted in the network layer. At the data link layer, you call them frames, which then make up packets. Frames that have headers that contain the Source and Destination MAC Address. Network layer has packets arranged in the same manner. At the transport layer, we use Port addresses. These addresses are associated with the processes running on your machine. Like what happens when you run a Jupyter Notebook file. \\ IP Addresses are not known, and we have to send a request to the DNS which then gives us the exact IP address. 
 \end{itemize}
 
+\section{IP Addresses}
+\subsection{Classes of IP Addresses}
+There are multiple networks, and they all have to be connected to each other some how. 
+
+a usual iP address would be 192.168.1.1 from Class C\\
+There are multiple classes for using IPs
+
+\begin{enumerate}
+	\item Class A: it has |Network|Host|Host|Host| \\
+	There are 4 integers, so 32 bits, A has certain starting bits that define what the range of the first bit is gonna be
+	like A would have 0 in the first big fixed, so naturally 7 would be 1. Rest of the bits are also 1. \\ So we have range like
+	127.255.255.255
+	\item Class B: It has |Network|Network|Host|Host|\\
+	128.255.255.255 to 191.255.255.255
+	\item Class C: It has |Network|Host|Host|Host|\\
+	192.255.255.255 to 223.255.255.255
+\end{enumerate}
+
+127.0.0.0 is reserved for loopback, so you can ping yourself. 
+anything.255.255.255 is reserved for broadcast address, and so that would be if you wanna send something to the entire class.
+\subsection{Network Address}
+It has all 0's in the Host place, and so it refers to a range. 
+So then the class is A, coz its between 0 and 1. The block has a netid of 17, and the range is from 17.0.0.1 to 17.255.255.254
+eg. Given the network address 17.0.0.0, 
 
 
+eg. 132.21.0.0 - is again for the network, as there are 0's in the host\\
+Class would be B for this. \\
+Range would be from 132.21.0.1 to 132.21.255.254\\
+Block netid is 132.21\\
 
+eg. 220.34.76.0\\ 
+This is class C obviously. 
+
+\subsection*{Default Subnet Mask}
+When are the network bits are 1, it becomes a subnet mask. 
+You need this so that the computer has to know what class you are talking about. If you are using like class A, then you have an IP, but to differentiate between the network and host bits, you have to tell the computer that its gonna be 255.0.0.0, so they know what the hosts are. 
+
+The number of bits used by Class a would be 8 for network, and 24 for host. 
+for b it is 16 bits for network, and 16 for host. The number of machines would then $2^{value}$
+Now these are your public addresses. So they have to be unique. But there are a lot of machines that you can use here. Say you just wanna use private IPs for your lan, then you can have that too, and it can be and has to be repeated. 
+
+So like every private lan address might have 192.168.0.1. But your ip on the web will be different. 
+
+
+\end{document}

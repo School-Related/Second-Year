@@ -49,5 +49,6 @@ public class Source {
             objs[i].accept();
             objs[i].display();
         }
+        System.gc();
     }
 }
