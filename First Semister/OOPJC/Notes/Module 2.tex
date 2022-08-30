@@ -1,0 +1,166 @@
+% This is a basic Math Paper
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{url}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Object Oriented Programming}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Computer Networks\\
+		Second Year B.Tech Semister 3\\
+		Academic Year 2022-23
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Module 1 - Class Notes
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Notes
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		P34. Krishnaraj Thadesar\\
+		\vspace{1cm}
+		Batch A2
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+
+\section{Things to do}
+\begin{enumerate}
+	\item Types of Inheritance
+	\item Virtual base Classs
+	\item Polymorphism
+	\item Vitual functions
+\end{enumerate}
+
+\section{Inheritance}
+
+\begin{itemize}
+	\item It is the mechanism by which one class acquires the properties of another class
+	\item Provides a way to create a new class from an existing class
+	\item The new class is a specialized fersion of the existing class
+	\item Inheritance establishes an "is a" relationship or a parent child relationship between classes. 
+	\item Allows sharing off the behavior of the parent class into its child classes
+	\item child class can add new behavior or override existing behaviour from parent
+	\item It allows a hierarchy of classes to be built moving from the most general to the most specific class. 
+\end{itemize}
+
+\subsection{Differnece between overloading and overiding}
+\begin{itemize}
+	\item Overloading is when you write the same function many times within the same class
+	\item Overriding is when you do that same thing, but in sub classes. 
+\end{itemize}
+
+\subsection{Benefits of using Inheritance}
+\begin{itemize}
+	\item Reusablity : Reuse the methods and data of the existing class
+	\item Extendability: Extend the existing class by adding new data and new methods. 
+	\item Modifyability: Modify the existang class by overloading its methods with newer implementations, saves memory space, increases reliability, saves the developing process. 
+\end{itemize}
+
+\section{Class Derivation in C++}
+syntax: class DerivedClassName : specification BaseClassName\\
+like class child : public parent() // private by default
+{};
+
+\section{Types of Inheritance}
+{
+	\begin{enumerate}
+		\item Single level Inheritance : You have 1 base class --> 1 Child class.
+		\item Multiple Inheritance : 2 or more Base Classes --> 1 Child Class
+		\item Multi-Level inheritance : 1 Base Class --> 1 Child Class --> Another Child Class and so on
+		\item Heirarchical Inheritance : 1 Base Class --> 2 or more Child Classes. 
+		\item Hybrid Inhertiance : Any legal combination of any of these things. 
+	\end{enumerate}
+}
+
+\subsection{What Access modifiers mean when inheriting}
+\begin{enumerate}
+	\item If you do class child : private parent; then every private data member becomes inaccessible, coz anyway thats what should happen, then the protected data members become private, and public data members also become private. 
+	\item If you do class child : protected parent; then its the same thing, except you still cant access private variables, but protected and public data members become protected
+	\item Same with class child : public parent; everything remains unchanged. The objects will behave in accordance with the usual laws of objects.  
+\end{enumerate}
+
+
+\subsection{Constructors and Destructors in Base and Derived classes}
+\begin{enumerate}
+	\item Derived classes can have their own constructors and destructors
+	\item When an object of a derived class is created, the base class's constructor is executed frist followed by the derived class's constructor is executed first, followed bt the derived class's constructor
+	\item In case of multiple inheritances, the base classes are constructed in the order in which they appear in the declaration of the derived class. 
+	\item For destructors, the order is reversed. 
+\end{enumerate}
+
+\end{document}

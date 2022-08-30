@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Things to do}{2}{}%
+\contentsline {section}{\numberline {2}Inheritance}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Differnece between overloading and overiding}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Benefits of using Inheritance}{2}{}%
+\contentsline {section}{\numberline {3}Class Derivation in C++}{2}{}%
+\contentsline {section}{\numberline {4}Types of Inheritance}{3}{}%
+\contentsline {subsection}{\numberline {4.1}What Access modifiers mean when inheriting}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Constructors and Destructors in Base and Derived classes}{3}{}%

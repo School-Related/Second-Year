@@ -335,5 +335,12 @@ Now these are your public addresses. So they have to be unique. But there are a 
 
 So like every private lan address might have 192.168.0.1. But your ip on the web will be different. 
 
+\subsection{Borrowing Subnet bits}
+
+if the number of bits you borrow from the host bits would be s, then the number of sub networks that you can create is $2^s$
+ip addresses available would be $2^\textit{remaining bits}$
+but hosts available would be addresses - 2, for the network address and broadcast address reserved bits. 
+
+
 
 \end{document}

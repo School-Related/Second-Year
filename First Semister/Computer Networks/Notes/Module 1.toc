@@ -29,3 +29,4 @@
 \contentsline {section}{\numberline {5}IP Addresses}{7}{}%
 \contentsline {subsection}{\numberline {5.1}Classes of IP Addresses}{7}{}%
 \contentsline {subsection}{\numberline {5.2}Network Address}{7}{}%
+\contentsline {subsection}{\numberline {5.3}Borrowing Subnet bits}{8}{}%

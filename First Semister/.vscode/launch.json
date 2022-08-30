@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "e:/University/Second Year/First Semister/Operating Systems/Programs",
-      "program": "e:/University/Second Year/First Semister/Operating Systems/Programs/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Fundamentals of Data Structures/Programs",
+      "program": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Fundamentals of Data Structures/Programs/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -287,11 +287,120 @@ There are 2 types of threads. This is similar to how there is always this binary
 \begin{enumerate}
 	\item Kernel level threads are handled by the operating system directly and thethread management is done by the kernel  
 	\item context information for the proces as well as the process threads is all managed by the kernel. 
-	\item Because of this kernel level threads are slower than user level threads.
+	\item Because of this kernel level gthreads are slower than user level threads.
 \end{enumerate}
 
 
+\section{Scheduling}
+
+\begin{enumerate}
+	\item Maximum CPU utilization obtained with multiprogramming. 
+	\item CPU IO burst cycle - Process execution consists of a cycle of CPU execution and I/O wait. 
+	\item This IO could be momory or something, it could also be the external device, and stuff. 
+	\item The cycle looks something like :
+	load store\\
+	add store\\
+	read from file\\
+	WAIT FOR IO\\
+	store increment\\
+	index\\
+	write to file\\
+	WAIT FOR IO\\
+	load store \\
+	add store\\
+	read from file \\
+	WAIT FOR IO\\
+
+	These are CPU and IO burst cycles. 
+
+\end{enumerate}
+
+\subsection{CPU or Process Scheduling}
+There are 2 types of scheduling algorithms. 
+\begin{enumerate}
+	\item Non Preemptive: If the cpu allocated to a process, it keeps the CPU until the proess releases it by termiating or switching to waiting state.
+	\item Pre Emptive: If the CPU allocated to a process, it may be released if high priority process needs the CPU.  
+\end{enumerate}
+
+\begin{itemize}
+	\item It may take place in different parts
+	\item The assigning of the task, or copying its states or something will be non premptive, so you cant mess with the CPU that time. 
+	\item The actual task execution may be preemptive. 
+\end{itemize}
 
 
+\subsection{Scheduling Algorithms}
 
+\begin{itemize}
+	\item They deal with the problem of deciding whcih of the process in ready queue is to be allocated the CPU. Algo compared based on following criteria. 
+	\item CPU utilization - Keeping the CPU as busy as possible
+	\item Throughput - Number of processes completed or amount of wokr done per unit time. This has to be MAX
+	\item Turnaround time - Time of submission of a process at the time of completion. This has to be MIN
+	\item Waiting time - Amount of time a process has been waiting in the ready queue. 
+	\item Response time - Amount of time it takes from when a request was submitted until the first response is produced. 
+\end{itemize}
+
+\subsection{Types of schedulers}
+Scheduling is broken down into three categories: 
+\begin{enumerate}
+	\item Long Term Scheduling
+	\begin{itemize}
+		\item Is performed when a new process is created. 
+		\item Long term scheduler or job scheduler selects which processes should be brought into the ready queue. 
+		\item Long term scheduler is invoked very infrequently. in seconds or minutes. It may be slow too. 
+		\item It controls the degree of multiprogramming. 
+	\end{itemize}
+	\item Medium Term Scheduling: 
+	\begin{itemize}
+		\item Part of the swapping function
+		\item Swapping in decisions are taken by medium term scheduler. 
+		\item Based on the need to anage the degree of multiprogramming.  
+	\end{itemize}
+
+	\item Short term scheduling
+	\item Determines which ready processs will be assinge dht ecpu when it next becoems availabe and actually assigns the cpu to this proces. 
+	\item Sort term scheduler or cpu scheduler selects which process should be executed next and allocatesd cpu
+	\item short term scheduler is invoked very frequently. 
+\end{enumerate}
+
+\section{Scheduling Algorithms}
+\subsection{First Come First Serve FSFC}
+
+Note that this is non Preemptive, so it doesnt care as long as a process is in execution. 
+\begin{enumerate}
+	\item Selection function, max(w) : selects the process whcih is waiting in the ready queue for maximum time. 
+	\item Decision Mode: Non Preemptive
+	\item Throughput : Not Emphasized
+	\item Response Time : It may be high, especially if there is a large variance in the process eeution times. 
+	\item Overhead is Minimum : Theres not much logic involved.  
+	\item Effect on Processes : Penalizes short processes. 
+	\item Starvation is Not there. 
+\end{enumerate}
+
+Example: Processes P1, P2, P3 are there, P1 takes 24 Burst times, P2 takes 3, P3 takes 3. 
+Waiting times: \\
+P1 = 0;\\
+P2 = 24;\\
+P3 = 27;\\
+
+Average Waiting time: $$\frac{(0 + 24 + 27)}{3} = 17 $$
+Turnaround time for P1 = 24, P2 = 27, P3 = 30\\
+Average Turnaround Time = $$\frac{(24 + 27 + 30)}{3} = 27 $$
+
+If you include arrival time, then you have to include it in your calculations. Like you have to subtract it from the turnaround time to find the waiting time and stuff. 
+
+\subsection{Shortest Job First Scheduling}
+
+It associates with each process the length of its next cpu burst. Use these lengths to schedule the process with the shortest time. \\
+There are 2 Schemes here. 
+\begin{enumerate}
+	\item Non Preemptive: Once CPU given to the process it cannot be preempted until completes its CPU burst.
+	\item Preemptive -  If a new process arrives with CPU burst length less than remaining time of current exxecution process, Preempt it. This scheme is known as the Shortest Remaining Time First (SRTF).
+	\item It is pretty optimal when it comes to saving the wait times. 
+\end{enumerate}
+
+\begin{enumerate}
+	\item Selection Function: Minimum total service time required by the process, minus time spent in execution so far. 
+	\item Decision mode: Preemptive (At Arrival time)
+\end{enumerate}
 \end{document}
