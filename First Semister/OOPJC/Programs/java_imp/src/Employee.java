@@ -17,7 +17,8 @@ public class Employee {
     }
 
     // Parameterized Constructor
-    Employee(int e, int a, int b, int d, int t, String add, String pos, String nam)
+    Employee(int e, int a, int b, int d, 
+    int t, String add, String pos, String nam)
     {
         System.out.println("Parameterized constructor was called");
         emp_id = e;

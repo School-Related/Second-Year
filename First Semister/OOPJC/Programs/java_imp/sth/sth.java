@@ -66,8 +66,6 @@ class Employee {
 
     void accept()
     {
-        System.out.println("Enter the age :");
-        age = input.nextInt();
         System.out.println("Employee ID is: ");
         emp_id = input.nextInt();
         System.out.println("Employee Name: " );

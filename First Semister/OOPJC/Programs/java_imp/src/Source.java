@@ -29,7 +29,8 @@ public class Source {
         President.basic_sal *= 2;
         President.position = "President";
 
-        Employee VP = new Employee(1003, 50, 200000, 3000, 1000, "Mumbai", "Vice President", "Visey Presed Ent");
+        Employee VP = new Employee(1003, 50, 200000, 3000, 1000,
+         "Mumbai", "Vice President", "Visey Presed Ent");
 
         
         System.out.println("Information about the CEO");

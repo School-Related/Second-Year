@@ -97,16 +97,6 @@ public:
 int Employee::ssn = 1000;
 
 
-class ramesh:private Employee{
-
-    void somefunction(){
-        int some = something;
-        cout << some;
-    }
-
-} obj;
-
-
 int main()
 {
     // Defining an Object using the default Constructor
@@ -134,7 +124,7 @@ int main()
 
     // Taking user input for the number of employees
     int count = 0;
-    cout << "How many values do you wanna input ?";
+    cout << "How many values do you wanna input ? ";
     cin >> count;
 
     // Dynamically Creating new Objects
@@ -144,7 +134,7 @@ int main()
     // Accepting Objects from the User.
     for (int i = 0; i < count; i++)
     {
-        cout << "Enter information about the Employee Number: " << i << endl;
+        cout << "Enter information about the Employee Number: " << i + 1 << endl;
         Obj[i].accept();
     }
 
@@ -159,7 +149,7 @@ int main()
     // Displaying Information about the other Employees
     for (int i = 0; i < count; i++)
     {
-        cout << "Information about the Employee Number: " << i << endl;
+        cout << "Information about the Employee Number: " << i + 1 << endl;
         Obj[i].display();
     }
 
