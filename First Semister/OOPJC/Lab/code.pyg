@@ -1,8 +1,0 @@
-
-# Note: $\pi=\lim_{n\to\infty}\frac{P_n}{d}$
-title = "Hello World"
-
-sum = 0
-for i in range(10):
- sum += i
-
