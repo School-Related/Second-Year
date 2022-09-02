@@ -2,12 +2,13 @@
 // Also check which bit if flipped after flipping it.
 
 #include <iostream>
-#include <string.h>
-#include <math.h>
+#include <cstring>
+#include <cmath>
 
 using namespace std;
 
-int m, r[20][20];
+unsigned long int m;
+int r[20][20];
 int r_val = 0;
 
 void display_r()
@@ -30,34 +31,34 @@ int calc_length(string input)
     int r = 0;
     for (int i = 0; i < 10; i++)
     {
-        if (pow(2, i) >= m + i + 1)
+        if (pow(2, i) >= int(m) + i + 1)
         {
             r = i;
             break;
         }
     }
-    r_val = r;
-    return m + r;
+    ::r_val = r;
+    return int(m) + r;
 }
 
-// Fills the values of r in the 2d array
+// Fills the values with r in the 2d array
 void fill_r_values(int hamming_len)
 {
-    int count = 0;
-    bool should_add = false;
+    int count;
+    bool should_add;
     for (int k = 0; k < hamming_len; k++)
     {
         count = 0;
         should_add = false;
-        for (int i = 0, j = 0; i <= hamming_len; i++)
+        for (int i = 0, j = 1; i <= hamming_len; i++)
         {
             if (count == pow(2, k))
             {
                 count = 0;
-                should_add = should_add ? false : true; // flips it
+                should_add = !should_add; // flips it
             }
 
-            if (should_add == true)
+            if (should_add)
             {
                 r[k][j] = i;
                 j++;
@@ -68,19 +69,19 @@ void fill_r_values(int hamming_len)
 }
 
 // Fills the first column of the r table, to 1 or 0 for maintaining even parity. 
-void fill_r_parity(int hamming_len, bool hamming[])
+void fill_r_parity(int hamming_len, const bool hamming[])
 {
-    int count = 0;
-    bool parity = false;
-    for (int i = 0; i < hamming_len; i++)
+    int count;
+    bool parity;
+    for (int i = 0; i < ::r_val; i++)
     {
         // check parity
         count = 0;
-        for (int j = 1; j <= hamming_len / 2; j++)
+        for (int j = 2; j <= (hamming_len / 2) + 1; j++)
         {
             hamming[r[i][j] - 1] ? count++ :count;
         }
-        parity = count % 2 == 0 ? false : true; // if number of 1's is even
+        parity = count % 2 != 0; // if number of 1's is even
         r[i][0] = parity;                       // assign parity bit
     }
 }
@@ -109,11 +110,38 @@ void display_hamming(int hamming_len, bool hamming[])
     cout << endl;
 }
 
+// This function does the entire error correction, and prints the process as well
+void detect_errors(int hamming_len, bool hamming[50], int flipped_bit) 
+{
+    int count;
+    bool parity[::r_val];
+
+    // Display new hamming code with flipped bit, and the old one as well. 
+    
+    // Deduce values of r from the new hamming code
+
+    // from the previous r table that we already have,
+    for (int i = 0; i < ::r_val; i++)
+    {
+        // check parity
+        count = 0;
+        for (int j = 1; j <= hamming_len / 2; j++)
+        {
+            hamming[r[i][j] - 1] ? count++ :count;
+        }
+        parity[i] = count % 2 != 0; // if number of 1's is even
+    }
+    cout<<parity[3]<< parity[2] << parity[1] << parity[0];
+    // converted parity bits to decimal, and then find the flipped bit
+    
+    // Display the flipped bit and then the corrected hamming code, with the original hamming code.    
+}
+
 int main()
 {
     string input;
-    int hamming_len;
-    // Input the value as a string, as we dont know how long it can be.
+    int hamming_len, flipped_bit = 0;
+    // Input the value as a string, as we don't know how long it can be.
     cout << "Enter the Input : " << endl;
     cin >> input;
 
@@ -127,10 +155,10 @@ int main()
     hamming_len = calc_length(input);
 
     // Declare an array to store the hamming code
-    bool hamming[hamming_len] = {false};
+    bool hamming[50] = {};
 
     // Store the bits
-    for (int i = 0, j = 0, k = m; i < hamming_len; i++)
+    for (int i = 0, j = 0, k = int(m); i < hamming_len; i++)
     {
         if (i != (pow(2, j) - 1))
         {
@@ -156,5 +184,14 @@ int main()
 
     display_hamming(hamming_len, hamming);
 
+    // Implement Error Detection
+
+    cout<<"What bit would you like to flip? (Starting from 1, from right)"<<endl;
+    cin>>flipped_bit;
+
+    cout<<"Now Calculating Error"<<endl;
+
+    detect_errors(hamming_len, hamming, flipped_bit);
+    
     return 0;
 }
