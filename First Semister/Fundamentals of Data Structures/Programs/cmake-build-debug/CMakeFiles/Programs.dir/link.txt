@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Programs.dir/Matrix_calc.c.o CMakeFiles/Programs.dir/saddle_point.cpp.o CMakeFiles/Programs.dir/sparce_matrix.c.o CMakeFiles/Programs.dir/test.c.o CMakeFiles/Programs.dir/sets.c.o -o Programs 
