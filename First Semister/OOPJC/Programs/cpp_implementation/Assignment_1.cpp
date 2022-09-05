@@ -1,3 +1,9 @@
+// Assignment 1 - OOPCJ
+// Write A Program to show implementation of Constructors in C++
+// PA34. Krishnaraj Thadesar
+// SY CSE Semester 3 
+// Date Of Implementation: 17th August
+
 #include <iostream>
 using namespace std;
 class Employee

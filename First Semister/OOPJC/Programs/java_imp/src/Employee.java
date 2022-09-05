@@ -1,3 +1,10 @@
+// Assignment 1 - OOPCJ
+// Write A Program to show implementation of Constructors in Java
+// PA34. Krishnaraj Thadesar
+// SY CSE Semester 3 
+// Date Of Implementation: 19th August
+
+
 package assignment_1;
 import java.util.Scanner;
 

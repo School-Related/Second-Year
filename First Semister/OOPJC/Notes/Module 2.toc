@@ -6,3 +6,6 @@
 \contentsline {section}{\numberline {4}Types of Inheritance}{3}{}%
 \contentsline {subsection}{\numberline {4.1}What Access modifiers mean when inheriting}{3}{}%
 \contentsline {subsection}{\numberline {4.2}Constructors and Destructors in Base and Derived classes}{3}{}%
+\contentsline {section}{\numberline {5}Overriding Member Functions}{3}{}%
+\contentsline {section}{\numberline {6}Virtual Base Class}{4}{}%
+\contentsline {section}{\numberline {7}Inheritance in Java}{5}{}%
