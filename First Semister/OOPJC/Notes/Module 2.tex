@@ -226,5 +226,41 @@ like class child : public parent() // private by default
 \end{verbatim}
 
 
+\section{Operator Overloading}
+
+\begin{itemize}
+	\item Operator overloading is a feature in C++ Programming that allows programmer to redefine the meaning of an existing operator when they operator on class obects. 
+	\item It is the ability to tell the compiler thow to perform a cerain operation when its corresponding opeator is used on one or more ariables.
+	\item Closely Related to function overloading. 
+	\item Allows existing operators to be redefined or overloaded to have new meaning for a specific class objects. 
+	\item Already used the + and - operator when you are adding ints and floats and stuff. They have been overloaded to implicitly convert the operands if they are compatible, but not same. 
+	\item Overloading of operators are achieved by creating operaotr function. 
+	\item An operator function defined the operations that the overloaded operator can perform relative to the class. 
+	\item An operator function is created using the keyword Operator. 
+	\item Operator functions can be either members or non members of a class. 
+	\item Non member operator functions are always friend functions of the class, coz you need to access all the data members. So you gotta use the friend keyword.  
+\end{itemize}
+
+Syntax: 
+\begin{verbatim}
+	Returntype classname::Operator OperatorSymbol (Arguement list)
+	{
+		// function body. 
+	}
+\end{verbatim}
+
+Restrictions on Operator Overloading
+
+\begin{itemize}
+	\item Precedence or Associativity of an operator cannot be changed by overloading. So use parenthesis to force order of overloaded operators in an expression. 
+	\item C++ doesnt allow new operators to be created. 
+	\item Number of operands an operator takes cannot be changed, unary remain unary and stuff. 
+	\item Cannot overload the meaning of operators if all arguments are primitie data types. 
+	\item So that means no overloading for operators for built in types
+	\item You cant change how 2 integers are added. 
+	\item You cant change ::, ., .*
+	\item .
+\end{itemize}
+
 \end{document}
 

@@ -9,3 +9,4 @@
 \contentsline {section}{\numberline {5}Overriding Member Functions}{3}{}%
 \contentsline {section}{\numberline {6}Virtual Base Class}{4}{}%
 \contentsline {section}{\numberline {7}Inheritance in Java}{5}{}%
+\contentsline {section}{\numberline {8}Operator Overloading}{5}{}%

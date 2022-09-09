@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.30)  6 SEP 2022 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.30)  6 SEP 2022 01:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,13 +557,13 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 221.
-<Screenshots/Assignment_1_screenshot.png, id=15, 1165.35374pt x 473.77pt>
-File: Screenshots/Assignment_1_screenshot.png Graphic file (type png)
-<use Screenshots/Assignment_1_screenshot.png>
-Package pdftex.def Info: Screenshots/Assignment_1_screenshot.png  used on input line 249.
-(pdftex.def)             Requested size: 547.71634pt x 222.67192pt.
+<Screenshots/Assignment_2_screenshot.png, id=15, 1390.44469pt x 528.47438pt>
+File: Screenshots/Assignment_2_screenshot.png Graphic file (type png)
+<use Screenshots/Assignment_2_screenshot.png>
+Package pdftex.def Info: Screenshots/Assignment_2_screenshot.png  used on input line 249.
+(pdftex.def)             Requested size: 653.50911pt x 248.38298pt.
 
-Overfull \hbox (77.96132pt too wide) in paragraph at lines 249--250
+Overfull \hbox (183.75409pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
@@ -582,7 +582,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3 <./Screenshots/Assignment_1_screenshot.png>] (./Assignment 2.aux) ) 
+[3 <./Screenshots/Assignment_2_screenshot.png (PNG copy)>] (./Assignment 2.aux) ) 
 Here is how much of TeX's memory you used:
  6315 strings out of 478238
  89824 string characters out of 5850456
@@ -592,7 +592,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  65i,12n,69p,654b,1112s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 2.pdf" (5 pages, 127521 bytes).
+Output written on "Assignment 2.pdf" (5 pages, 197448 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream

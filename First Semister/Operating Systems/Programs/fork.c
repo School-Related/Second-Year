@@ -1,8 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <unistd.h>
+#include "krish.h"
+
 
 int try_hello_world()
 {
@@ -57,11 +54,11 @@ void concurrency()
 {
     if (fork() == 0)
     {
-        printf("Hello from child\n");
+        printf("Hello from child in the concurrency function\n");
     }
     else
     {
-        printf("Hello from Parent\n");
+        printf("Hello from Parent in the concurrency function\n");
     }
 }
 
@@ -95,6 +92,81 @@ void sleeper()
     sleep(5);
 }
 
+pid_t num_pid, cpid;
+int i;
+void pid_caller()
+{
+    num_pid = fork();
+    if(num_pid < 0) // will be executed in parent if child isnt created. 
+    {
+        printf("Error in fork execution");
+    }
+    else if (num_pid == 0) // will be executed in child
+    {
+        printf("This is the child process, its id is : %d\n", getpid());
+        printf("Child completed\n");
+    }
+    else // will be executed in the parent if child is created
+    {
+        printf("Hello from parent, its id is: %d\n", getpid());
+    }
+}
+
+void ill_wait_bro()
+{
+    printf("This is the parent id %d\n", getpid());
+    wait(NULL);
+    printf("Im waiting bro\n");
+    printf("Parent exiting after child completed\n");
+}
+
+void zombie()
+{
+    pid_t pid= fork();
+    if(pid < 0)
+    {
+        println("\t Fork Error ");
+    }
+    else if(pid==0)
+    {
+        println("");
+        printf("Child id is %d : \n", getpid());
+    }
+    else
+    {
+        sleep(2);
+        println("Parent here");
+        system("gedit hi.c");
+        system("ps -axj | tail");
+    }
+}
+
+void morgan()
+{
+    printf("I love you 3000, and my id is: %d \n", getpid());
+    system("ps -axj | tail");
+
+}
+
+
+void tony_stark()
+{
+    int pid = fork();
+    if(pid > 0)
+    {
+        morgan();
+        printf("Parent Process id: %d \n", getppid());
+    }
+    else if (pid == 0)
+    {
+        sleep(3);
+        morgan();
+        printf("Parent Process id: %d \n", getppid());
+
+    }
+}
+
+
 int main()
 {
     // try_hello_world();
@@ -102,4 +174,9 @@ int main()
     // try_many_times();
     // concurrency_1();
     // concurrency();
+    // pid_caller();
+    // ill_wait_bro();
+    // zombie();
+    tony_stark();
+    return 0;
 }

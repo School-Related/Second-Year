@@ -1,0 +1,166 @@
+
+\documentclass[11pt]{article}
+ 
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{url}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Operating Systems}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Computer Networks\\
+		Second Year B.Tech Semister 3\\
+		Academic Year 2022-23
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Operating Systems
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Notes from Tananbaum and Classes
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		P34. Krishnaraj Thadesar\\
+		\vspace{1cm}
+		Batch A2
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Concurrency Control - Waht to learn }
+
+\paragraph Process Synchronization: Principles of Concurrency, Requirements for Mutual Exclusion: Hardware Support, OS Support
+
+\paragraph Classical Synchronization Problems: Readers Writers Problem, Producer and Consumer Problem
+
+\paragraph Principles of Deadlock, Deadlock modelling, prevention, avoiance and stuff. 
+
+\textbf{When 2 processes are running at the same time, when they are interdependent on each other through inputs and outputs, then you would call that concurrency. We arent doing multiprocessing by choice, here we just gotta do it at the same time somehow. }
+
+\section{Design Issues in concurrency}
+\begin{enumerate}
+    \item Communication among processes
+    \item Sharing and Competition for resources
+    \item Synchronization of activities of multiple processes
+    \item Allocation of processor time to processes. 
+\end{enumerate}
+
+\section{Contexts of Concurrency}
+\begin{enumerate}
+    \item Multiple Aplications like Multiprogramming(diff programs on a single processor) and Multiprocessing(on diff processors)
+    \item Strucctured Applications: Some applictions can be effectively programmed as a set of concurrent proesses. (Principles of modular design and structured programming)
+    \item OS Structure: OS often implemented as a set of processes or threads. 
+\end{enumerate}
+
+\section{Key terms related to concurrency}
+
+\begin{enumerate}
+    \item Atomic Operation: A sequence of one or more statements that appear to be inivisible that is no other process can see an intermediate state or interrupt the operations
+    \item Critical Section: A section of code within a process that requires access to shared resources and that must not be executed while another process is in corresponding section of code. 
+    \item Deadlock: A situation in which two or more processes are unable to proceed because each is waiting for one of the others to do something. 
+    \item Mutual Exclusion: The requirement that when one process is in critical section that access shared resources, no other processes may be in critical section that accesses any of those shared resources. 
+    \item Race Condition: A situation in which multiple threads/Processes read and write a shared data item and final result depends on relative timing of their execution. 
+    \item Starvation: A situation in which a runnable processes is overlooked indefinitely by the scheduler, although it is able to proceed, it is never chosen. 
+\end{enumerate}
+
+\subsection{Race Condition}
+A race Condition occurs when multiple competing processes or threads read and write data items so that final result depends on the order of eecution of instructions in multiple processes. so 2 processes p1 and p2, say they share global variable 'a'. P1 updates a to 1, and p updates it to 2. Thus two tasks are in a race to write variable 'a'. Loser of race is the one that determines the value of 'a'.
+
+\section{Difficulties due to concurrency}
+\begin{enumerate}
+    \item Sharing of global resources: Eg. Two processes both make use of global variable and both perfrom read and write on that variable, in which read and write are done is critical. 
+    \item Management of resources optimally. Eg. Process has gained the ownership of IO devices but is suspended before using it, thus locking IO device and preventing its use by other processes. 
+    \item Error locating in Program: Pesults are not deterministic are reproducible. 
+\end{enumerate}
+
+\subsection{Example}
+
+\begin{verbatim}
+    void echo()
+    {
+        chin = getchar();
+        chout = chin;
+        putchar(chout);
+    }
+\end{verbatim}
+
+\begin{enumerate}
+    \item Uniprocessor multiprogramming, single user environment
+    \item Many applications can call this procedure repeatedly to accept user ip and display on screen. 
+    \item User can jump from one applciation to other. 
+    \item Each application needs or uses procedure echo. 
+    \item Echo is made shared procedure and loaded into a portion of memory global to all applications 
+    \item Single copy of echo procedure is used, saving space. 
+    \item When echo procedure is invoked by some process, an dif fthe process gets suspended for any reason beffore completing it, then no other process can invoke echo till prcess that was suspended gets resumed, and completes echo. Thus other processes are not allowed to access it. 
+    \item It would make more sense if you visualize this in terms of a multi user operating system. So if many people are using a server kinda thing at the same time. 
+\end{enumerate}
+\end{document} 
