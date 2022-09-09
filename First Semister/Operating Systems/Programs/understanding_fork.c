@@ -23,6 +23,7 @@ void parentTask()
     printf("Waiting for child process to finish.\n");
     wait(NULL); // you write this so things happen properly and smoothly, it would work without it as well. 
     printf("Child process finished.\n");
+
 }
 
 int main(void)

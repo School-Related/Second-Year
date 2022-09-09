@@ -27,5 +27,11 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
+  ],
+  "java.project.sourcePaths": [
+    "Programs/java_implementations/random",
+    "Programs/java_implementations/Assignment 2",
+    "Programs/java_implementations/Assignment 1/src",
+    "Programs/java_implementations/assignment_2"
   ]
 }
