@@ -1,6 +1,0 @@
-\contentsline {section}{\numberline {1}Problem Statement}{1}{}%
-\contentsline {section}{\numberline {2}ICs Used}{1}{}%
-\contentsline {section}{\numberline {3}Platform Used}{1}{}%
-\contentsline {section}{\numberline {4}Theory}{1}{}%
-\contentsline {section}{\numberline {5}Procedure}{1}{}%
-\contentsline {section}{\numberline {6}Conclusion}{2}{}%

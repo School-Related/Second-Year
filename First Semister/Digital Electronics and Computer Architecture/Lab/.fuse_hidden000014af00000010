@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Problem Statement}{1}{}%
+\contentsline {section}{\numberline {2}ICs Used}{1}{}%
+\contentsline {section}{\numberline {3}Platform Used}{1}{}%
+\contentsline {section}{\numberline {4}Theory}{1}{}%
+\contentsline {subsection}{\numberline {4.1}Involved Truth Tables}{1}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Binary to Gray Code}{1}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Gray to Binary Code}{2}{}%
+\contentsline {subsubsection}{\numberline {4.1.3}XOR Gate}{2}{}%
+\contentsline {subsection}{\numberline {4.2}Reduced Boolean Expressions from Respective Karnaugh Maps}{3}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Karnaugh Maps for Binary to Gray}{3}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Karnaugh Maps for Gray to Binary}{5}{}%
+\contentsline {section}{\numberline {5}Design and Implementation}{7}{}%
+\contentsline {subsection}{\numberline {5.1}Binary to Gray Conversion Logic Gate Design}{7}{}%
+\contentsline {subsection}{\numberline {5.2}Gray to Binary Conversion Logic Gate Design}{8}{}%
+\contentsline {section}{\numberline {6}Procedure}{8}{}%
+\contentsline {section}{\numberline {7}Conclusion}{8}{}%
+\contentsline {section}{\numberline {8}FAQs}{9}{}%
