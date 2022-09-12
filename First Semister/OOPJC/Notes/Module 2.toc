@@ -8,5 +8,9 @@
 \contentsline {subsection}{\numberline {4.2}Constructors and Destructors in Base and Derived classes}{3}{}%
 \contentsline {section}{\numberline {5}Overriding Member Functions}{3}{}%
 \contentsline {section}{\numberline {6}Virtual Base Class}{4}{}%
-\contentsline {section}{\numberline {7}Inheritance in Java}{5}{}%
-\contentsline {section}{\numberline {8}Operator Overloading}{5}{}%
+\contentsline {section}{\numberline {7}Inheritance in Java}{4}{}%
+\contentsline {section}{\numberline {8}Operator Overloading}{4}{}%
+\contentsline {subsection}{\numberline {8.1}Types of Polymorphism}{5}{}%
+\contentsline {subsection}{\numberline {8.2}Pure Virtual Functions}{5}{}%
+\contentsline {subsection}{\numberline {8.3}Abstract Class}{6}{}%
+\contentsline {subsection}{\numberline {8.4}Virtual Destructor}{6}{}%

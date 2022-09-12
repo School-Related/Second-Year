@@ -201,7 +201,7 @@ like class child : public parent() // private by default
 \end{itemize}
 
 
-\lstinputlisting[language=C++]{../Programs/inheritance_ambiguity.cpp}
+% \lstinputlisting[language=C++]{../Programs/inheritance_ambiguity.cpp}
 
 \section{Virtual Base Class}
 \begin{itemize}
@@ -210,7 +210,7 @@ like class child : public parent() // private by default
 \item So like imagine you have 2 base classes each inheriting the same class. Now imagine a third class that inherits from both of them. So the base, or the grandparent classes methods are copied twice. You can prevent this by declaring them as virtual base classes. 
 \end{itemize}
 
-\lstinputlisting[language=C++]{../Programs/virtual_base_classes.cpp}
+% \lstinputlisting[language=C++]{../Programs/virtual_base_classes.cpp}
 
 \section{Inheritance in Java}
 \begin{itemize}
@@ -261,6 +261,57 @@ Restrictions on Operator Overloading
 	\item You cant change ::, ., .*
 	\item .
 \end{itemize}
+
+\subsection{Types of Polymorphism}
+
+\begin{enumerate}
+	\item Early Binding or Compile Time Polymorphism
+	\begin{itemize}
+		\item Events occur at the compile time, so the compiler while making the exe file, knows what function to call. 
+		\item All information needed to call a function is known at compile time. 
+		\item It is therefore efficient. 
+		\item It is also fast in execution because of this.
+		\item To Invoke it you have to overload your functions or operators. 
+	\end{itemize}
+	\item Dynamic Binding or Runtime Polymorphism
+	\begin{itemize}
+		\item Events occur at runtime
+		\item The OS Decided what function to call
+		\item The Information needed to call the function is known at runtime. It is fleixble. 
+		\item Due to all these factors, its slow. 
+		\item To invoke it, you need to use the virtual keyword, or override your function in java. 
+		\item You always need to use pointers for this. 
+	\end{itemize}
+\end{enumerate}
+
+% \lstinputlisting[language=C++]{../Programs/virtual_base_classes.cpp}
+
+\subsection{Pure Virtual Functions}
+\begin{enumerate}
+	\item These are called Abstract functions. 
+	\item They dont do anything. 
+	\item You assign them to 0
+\end{enumerate}
+
+
+\subsection{Abstract Class}
+\begin{enumerate}
+	\item Abstract Class is also known as abstract base class. 
+	\item An Abstract class is a class whose instances or objects cant be made. 
+	\item Objects of subclass can be made if they are not abstract. 
+	\item An Abstract class has atleast one abstract function (Pure virtual function )
+	\item Abstract class can have normal functions and variables along with a pure vritual function. 
+	\item If even one pure virtual function is not overridden, the derived class will also be abstract. 
+	\item Compiler will refuse to create any objects of the class. 
+	\item You cannot call a construcuter in this. 
+\end{enumerate}
+
+\subsection{Virtual Destructor}
+\begin{enumerate}
+	\item Calling the destructor of base class does not destruct the memory of derived class. 
+	\item This problem can be fixed by making the base class destructor virtual. 
+	\item we can ensure that the drived class destructor is called this way. 
+\end{enumerate}
 
 \end{document}
 
