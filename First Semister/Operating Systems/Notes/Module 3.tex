@@ -102,34 +102,34 @@
 
 \paragraph Classical Synchronization Problems: Readers Writers Problem, Producer and Consumer Problem
 
-\paragraph Principles of Deadlock, Deadlock modelling, prevention, avoiance and stuff. 
+\paragraph Principles of Deadlock, Deadlock modelling, prevention, avoiance and stuff.
 
 \textbf{When 2 processes are running at the same time, when they are interdependent on each other through inputs and outputs, then you would call that concurrency. We arent doing multiprocessing by choice, here we just gotta do it at the same time somehow. }
 
 \section{Design Issues in concurrency}
 \begin{enumerate}
-    \item Communication among processes
-    \item Sharing and Competition for resources
-    \item Synchronization of activities of multiple processes
-    \item Allocation of processor time to processes. 
+	\item Communication among processes
+	\item Sharing and Competition for resources
+	\item Synchronization of activities of multiple processes
+	\item Allocation of processor time to processes.
 \end{enumerate}
 
 \section{Contexts of Concurrency}
 \begin{enumerate}
-    \item Multiple Aplications like Multiprogramming(diff programs on a single processor) and Multiprocessing(on diff processors)
-    \item Strucctured Applications: Some applictions can be effectively programmed as a set of concurrent proesses. (Principles of modular design and structured programming)
-    \item OS Structure: OS often implemented as a set of processes or threads. 
+	\item Multiple Aplications like Multiprogramming(diff programs on a single processor) and Multiprocessing(on diff processors)
+	\item Strucctured Applications: Some applictions can be effectively programmed as a set of concurrent proesses. (Principles of modular design and structured programming)
+	\item OS Structure: OS often implemented as a set of processes or threads.
 \end{enumerate}
 
 \section{Key terms related to concurrency}
 
 \begin{enumerate}
-    \item Atomic Operation: A sequence of one or more statements that appear to be inivisible that is no other process can see an intermediate state or interrupt the operations
-    \item Critical Section: A section of code within a process that requires access to shared resources and that must not be executed while another process is in corresponding section of code. 
-    \item Deadlock: A situation in which two or more processes are unable to proceed because each is waiting for one of the others to do something. 
-    \item Mutual Exclusion: The requirement that when one process is in critical section that access shared resources, no other processes may be in critical section that accesses any of those shared resources. 
-    \item Race Condition: A situation in which multiple threads/Processes read and write a shared data item and final result depends on relative timing of their execution. 
-    \item Starvation: A situation in which a runnable processes is overlooked indefinitely by the scheduler, although it is able to proceed, it is never chosen. 
+	\item Atomic Operation: A sequence of one or more statements that appear to be inivisible that is no other process can see an intermediate state or interrupt the operations
+	\item Critical Section: A section of code within a process that requires access to shared resources and that must not be executed while another process is in corresponding section of code.
+	\item Deadlock: A situation in which two or more processes are unable to proceed because each is waiting for one of the others to do something.
+	\item Mutual Exclusion: The requirement that when one process is in critical section that access shared resources, no other processes may be in critical section that accesses any of those shared resources.
+	\item Race Condition: A situation in which multiple threads/Processes read and write a shared data item and final result depends on relative timing of their execution.
+	\item Starvation: A situation in which a runnable processes is overlooked indefinitely by the scheduler, although it is able to proceed, it is never chosen.
 \end{enumerate}
 
 \subsection{Race Condition}
@@ -137,9 +137,9 @@ A race Condition occurs when multiple competing processes or threads read and wr
 
 \section{Difficulties due to concurrency}
 \begin{enumerate}
-    \item Sharing of global resources: Eg. Two processes both make use of global variable and both perfrom read and write on that variable, in which read and write are done is critical. 
-    \item Management of resources optimally. Eg. Process has gained the ownership of IO devices but is suspended before using it, thus locking IO device and preventing its use by other processes. 
-    \item Error locating in Program: Pesults are not deterministic are reproducible. 
+	\item Sharing of global resources: Eg. Two processes both make use of global variable and both perfrom read and write on that variable, in which read and write are done is critical.
+	\item Management of resources optimally. Eg. Process has gained the ownership of IO devices but is suspended before using it, thus locking IO device and preventing its use by other processes.
+	\item Error locating in Program: Pesults are not deterministic are reproducible.
 \end{enumerate}
 
 \subsection{Example}
@@ -154,13 +154,87 @@ A race Condition occurs when multiple competing processes or threads read and wr
 \end{verbatim}
 
 \begin{enumerate}
-    \item Uniprocessor multiprogramming, single user environment
-    \item Many applications can call this procedure repeatedly to accept user ip and display on screen. 
-    \item User can jump from one applciation to other. 
-    \item Each application needs or uses procedure echo. 
-    \item Echo is made shared procedure and loaded into a portion of memory global to all applications 
-    \item Single copy of echo procedure is used, saving space. 
-    \item When echo procedure is invoked by some process, an dif fthe process gets suspended for any reason beffore completing it, then no other process can invoke echo till prcess that was suspended gets resumed, and completes echo. Thus other processes are not allowed to access it. 
-    \item It would make more sense if you visualize this in terms of a multi user operating system. So if many people are using a server kinda thing at the same time.
+	\item Uniprocessor multiprogramming, single user environment
+	\item Many applications can call this procedure repeatedly to accept user ip and display on screen.
+	\item User can jump from one applciation to other.
+	\item Each application needs or uses procedure echo.
+	\item Echo is made shared procedure and loaded into a portion of memory global to all applications
+	\item Single copy of echo procedure is used, saving space.
+	\item When echo procedure is invoked by some process, an dif fthe process gets suspended for any reason beffore completing it, then no other process can invoke echo till prcess that was suspended gets resumed, and completes echo. Thus other processes are not allowed to access it.
+	\item It would make more sense if you visualize this in terms of a multi user operating system. So if many people are using a server kinda thing at the same time.
 \end{enumerate}
-\end{document} 
+
+\subsection{Example}
+Say you have global variables that hvae values b = 1, c = 3
+If P1 executes b = b + c \\
+P2 does c = c + b\\
+
+Now if P1 executes first, you would get b = 3, c = 5;\\
+If P2 was to Execute first, then b = 4, c = 3\\
+
+This is a problem.
+
+
+\subsection{Process Interaction}
+
+\begin{itemize}
+	\item Processes that are unaware of each Other (Competition)
+	      \begin{enumerate}
+		      \item Here Multiprogramming of Multiple indepent Processes
+		      \item OS Needs to know about competition for resources such as printer, disk, file etc.
+		      \item Potential Problems: Mutual Exclusion, Deadlock, starvation
+	      \end{enumerate}
+	\item Processes that are indirectly aware of each Other (Cooperation by sharing)
+	      \begin{enumerate}
+		      \item Shared Access to some object such as shared variable.
+		      \item Cooperation by sharing.
+		      \item Potential Probelm: Mutual Exclusion, Deadlock, starvation, data coherence etc.
+	      \end{enumerate}
+	\item Processes that are directly aware of each other (Cooperation by communication)
+	      \begin{enumerate}
+		      \item Cooperation by communicatio, communication primitives are available.
+		      \item Potential control problems: Deadlock and starvation.
+		      \item Mutual exclusion not a probelm, as both are aware of each other.
+		      \item DeadLock is possible, and so is starvation.
+	      \end{enumerate}
+\end{itemize}
+
+
+\subsection{Three Control problems}
+\begin{itemize}
+	\item The need for mutual Exclusion: Two or more processes require access to single non sharable resources such as printer, say. Such a resource is called a critical resource, and the portion of code using it is called as critical section of the program. Mutual Exclusion is when you allow only process to work when its in its critical section.
+	\item A common problem would be deadlock, where say P1 is using the printer, and P2 is using a file, Now P1 has to wait for P2 for using the file, and P2 has to wait for P1 to use the printer.
+	\item Starvation would be like how we schedule the processes, and so periodic access would be given. While one process is using some resource, others have to patiently wait, and so they are starving.
+\end{itemize}
+
+\textbf{Remember to Examples a whole lot while answering questions of OS}
+
+\subsubsection{Cooperation among processes by sharing}
+\begin{itemize}
+	\item Processes that interact with other processes without begin explicitly aware of them, access to shared variables, or files or databases is what is being talked about here.
+	\item Processes may use and update shared data without reference to other processes but know that other processes may have access to same data.
+	\item Processes must cooperate to ensure that the data that they share are properly managed.
+	\item control problems of mutual exclusion, deadlock and starvation are again present.
+	\item Data Items are accessed in 2 Modes: Reading and Writing.
+	\item Writing operations must be mutually exclusive.
+\end{itemize}
+
+
+\subsubsection{Requirements for Mutual Exclusion}
+\begin{itemize}
+	\item Any facility or capability providing support for mutual exclusion should meet following requirements:
+	\item Mutual Exclusion must be \textbf{enforced}. Only one process at a time in the CS, among all processes that have CS for same resource or shared object.
+	\item A process that \textbf{halts in its non CS} must do without interfering with other processes.
+	\item A Process requiring access to CS must not be \textbf{denied or delayed } indefinitely. So no deadlock or starvation.
+	\item When no process is in its CS, any process that requests an entry to its CS, ust be permitted to enter without delay.
+	\item No Asusmptions are made about the relative speed of the process.
+\end{itemize}
+
+\subsubsection{Approaches to satisfy the requirements of Mutual Exclusion}
+\begin{enumerate}
+	\item Hardware Approaches
+	\item Support from the OS or programming language itself.
+	\item Software Approach (No support from OS or programming language) You have to write it yourself.
+\end{enumerate}
+
+\end{document}

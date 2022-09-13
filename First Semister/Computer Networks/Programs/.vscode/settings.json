@@ -32,5 +32,6 @@
     "*.rmd": "markdown",
     "ostream": "cpp",
     "iostream": "cpp"
-  }
+  },
+  "python.formatting.provider": "black"
 }

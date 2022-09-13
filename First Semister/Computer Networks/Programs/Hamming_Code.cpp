@@ -8,7 +8,7 @@ using namespace std;
 
 unsigned long int m;
 int r_array[20][20];
-int r_val = 0; //value of r, or number of bits of r that need to be put in.
+int r_val = 0;     // value of r, or number of bits of r that need to be put in.
 int error_bit = 0; // the bit that was changed by the user and detected by program.
 
 void display_r()
@@ -45,13 +45,14 @@ int calc_length(string input)
 void convert_binary_to_decimal(bool parity[])
 {
     int decimal = 0;
-    for (int i = 0; i < ::r_val; i++) {
-        if(parity[i])
+    for (int i = 0; i < ::r_val; i++)
+    {
+        if (parity[i])
         {
             decimal += pow(2, i);
         }
     }
-    if(decimal)
+    if (decimal)
     {
         ::error_bit = decimal;
     }
@@ -98,7 +99,7 @@ void fill_r_parity(int hamming_len, const bool hamming[])
             hamming[r_array[i][j] - 1] ? count++ : count;
         }
         parity = count % 2 != 0; // if number of 1's is even
-        r_array[i][0] = parity;                       // assign parity bit
+        r_array[i][0] = parity;  // assign parity bit
     }
 }
 
@@ -131,8 +132,8 @@ void detect_errors(int hamming_len, bool hamming[50])
     int count;
     bool parity[::r_val];
 
-    // Display new hamming code with flipped bit, and the old one as well. 
-    
+    // Display new hamming code with flipped bit, and the old one as well.
+
     // Deduce values of r_array from the new hamming code
 
     // from the previous r_array table that we already have,
@@ -150,8 +151,8 @@ void detect_errors(int hamming_len, bool hamming[50])
     convert_binary_to_decimal(parity);
 
     // Display the flipped bit and then the corrected hamming code, with the original hamming code.
-    cout<<"The Bit which was changed is: " <<::error_bit << endl;
-    cout<<"The Hamming code with the correction is: "<<endl;
+    cout << "The Bit which was changed is: " << ::error_bit << endl;
+    cout << "The Hamming code with the correction is: " << endl;
     hamming[::error_bit - 1] = !hamming[::error_bit - 1];
     display_hamming(hamming_len, hamming);
 }
@@ -204,14 +205,14 @@ int main()
 
     // Implement Error Detection
 
-    cout<<"What bit would you like to flip? (Starting from 1, from right)"<<endl;
-    cin>>flipped_bit;
+    cout << "What bit would you like to flip? (Starting from 1, from right)" << endl;
+    cin >> flipped_bit;
     // Changing the Hamming code
     hamming[flipped_bit - 1] = !hamming[flipped_bit - 1];
-    cout<<"The Hamming code after the error is: "<<endl;
+    cout << "The Hamming code after the error is: " << endl;
     display_hamming(hamming_len, hamming);
 
-    cout<<"Now Calculating Error"<<endl;
+    cout << "Now Calculating Error" << endl;
     detect_errors(hamming_len, hamming);
 
     return 0;
