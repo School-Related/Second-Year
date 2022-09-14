@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import assignment_2.Employee;
+
 class Employee {
 
     // create an object of Scanner

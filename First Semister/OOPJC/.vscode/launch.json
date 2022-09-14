@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Launch Main",
       "request": "launch",
+      "mainClass": "assignment_2.Main",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
       "mainClass": "Main",
       "projectName": "OOPJC_abb04044"
     },
