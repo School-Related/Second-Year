@@ -22,6 +22,37 @@
 \renewcommand{\footrulewidth}{1pt}
 
 
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+
 
 % Other Doc Editing
 % \parindent 0ex
@@ -236,5 +267,134 @@ This is a problem.
 	\item Support from the OS or programming language itself.
 	\item Software Approach (No support from OS or programming language) You have to write it yourself.
 \end{enumerate}
+
+\subsection{OS or programming language support}
+\begin{enumerate}
+	\item Semaphore : It is an integer variable that sovles critical section problem, after initialization. Its value can only be accessed by 2 atomic instructions.
+	      \begin{enumerate}
+		      \item wait(s)
+		            \begin{lstlisting}[language = C]
+					wait(s) {
+						while(s<= 0) {
+							s --;
+						}
+					}
+					\end{lstlisting}
+
+		      \item signal()
+		      \item \textit{Internal Working}: Consider if P1, P2, P3, P4 etc are processes that want to go to the critical section.
+		            \begin{lstlisting}[language = C++]
+				do{
+					wait(s);
+					// goes in critical section. 
+					signal(s);
+					// remainder section;
+				} while(true);
+			  \end{lstlisting}
+	      \end{enumerate}
+	      Explicitly you cant change the value of semaphore.
+	\item There are 2 types, Binary and Counting Semaphore.
+	      \begin{itemize}
+		      \item Mutex: Mutual exclusion
+		      \item Progress
+		      \item Bounded Wait
+	      \end{itemize}
+	\item Mutex
+	      \begin{itemize}
+		      \item
+	      \end{itemize}
+	\item Monitors
+\end{enumerate}
+
+\subsubsection{Problem}
+Suppose we want to synchronize two concurrent processes P1 and P2 using binary semaphores s and t. The code for the processes P2 and P2 is shown below.
+
+\begin{verbatim}
+	Process P1: 
+	while(1)
+	{
+		w: ____
+		print '0'
+		print '0'
+		x: ____
+	}
+\end{verbatim}
+
+\begin{verbatim}
+	while(1)
+	{
+		y = ___
+		print(1)
+		print(1)
+		z = ___
+	}
+\end{verbatim}
+
+The required output is "001100110010011" Processes are sunchronized using P and V operations on semaphores s and t. Choose the correct options from the following at points w x y and z. While of the following option is correct?
+\begin{enumerate}
+	\item P(s) at w, V(s) at x, P(t) at z, s and t initially 0
+	\item P(s) at w, V(t) at x, P(t) at y, V(s) at z, s initially 1 and t 0
+	\item P(s) at w, V(s) at x, P(t) at z, s and t initially 0
+	\item P(s) at w, V(s) at x, P(t) at z, s 1 and t 0
+
+\end{enumerate}
+
+\subsection{Producer Consumer Problem}
+\begin{itemize}
+	\item it is one fo the classic problems of Synchronization
+	\item Producer produces an item and adds to a buffer of limited size ( bounded buffer)
+	\item Consuder takes out an item from buffer and consumes it. 
+	\item Buffer is a shared resource and must be used in a mutual exclusion manner by processes. 
+	\item Producers to be prevented from adding into a full buffer. 
+	\item Consumers to be stopped from taking out an item from an empty buffer. 
+	\item To solve this you have to use the semaphores. And wait and signal will be used. 
+\end{itemize}
+
+\subsection{Cooperative Processes}
+\begin{itemize}
+	\item The Processes which are sharing the resources like code, memory, data item, and stuff like that. 
+\end{itemize}
+
+\begin{lstlisting}[language=C]
+	// Here count is used to count number of items present in the buffer. 
+	// Assume that the buffer has like 8 items. 
+	// initially obviously the value of count would be 0;
+
+	int count = 0;
+	int in = 0; // it is the position where the producer is going to write the newly generated data item. 
+	void Producer(void)
+	{
+		int itemp;
+		while(true)
+		{
+			Produce_item(itemp);
+			while(count == n)
+			{
+				buffer[in] = itemp;
+				in = in + (1 mod n); // to 
+				count = count + 1; // this is then again split into like 3 other commands in assembly. 
+				// The micro instructions for this line are (in assembly)
+				// load Rp, m[count]
+				// incr Rp
+				// load m[count] Rp
+			}
+		}
+	}
+	void consumer()
+	{
+		int itemc = 0;
+		int out = 0;
+		while(true)
+		{
+			while(count == 0)
+			{
+				itemc = buffer[out]
+				out = out + (1 mod n)
+				count = count - 1;
+				Consume_item(itemc)
+			}
+		}
+	}
+\end{lstlisting}
 
 \end{document}

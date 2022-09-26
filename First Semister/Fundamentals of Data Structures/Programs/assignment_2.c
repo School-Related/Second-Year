@@ -154,6 +154,25 @@ int insertion_sort(struct Student students[], int number_of_students)
 
 int shell_sort(struct Student students[], int number_of_students)
 {
+    int gap = number_of_students / 2;
+    int swapped;
+    do
+    {
+        do
+        {
+            swapped = 0;
+            for (int i = 0; i < number_of_students - gap;i++)
+            {
+                if(students[i].marks > students[i + gap].marks)
+                {
+                    swap(&students[i].marks, &students[i + gap].marks);
+                    swapped = 1;
+                }
+            }
+        } while (swapped == 1);
+
+    } while ((gap = gap/2) >= 1);
+    
 }
 
 int main()
@@ -236,6 +255,11 @@ int main()
     case 5:
         printf("\nHere are the Students sorted by their marks with insertion sort\n");
         insertion_sort(students, number_of_students);
+        display(students, number_of_students, 0);
+        break;
+    case 6:
+        printf("\nHere are the Students sorted by their marks with insertion sort\n");
+        shell_sort(students, number_of_students);
         display(students, number_of_students, 0);
         break;
     default:

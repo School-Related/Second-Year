@@ -33,5 +33,8 @@
     "Programs/java_implementations/Assignment 2",
     "Programs/java_implementations/Assignment 1/src",
     "Programs/java_implementations/assignment_2"
-  ]
+  ],
+  "files.associations": {
+    "iostream": "cpp"
+  }
 }
