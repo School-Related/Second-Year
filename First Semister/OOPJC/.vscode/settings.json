@@ -6,20 +6,13 @@
   "C_Cpp_Runner.cppStandard": "",
   "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.useMsvc": false,
-  "C_Cpp_Runner.warnings": [
-    "-Wall",
-    "-Wextra",
-    "-Wpedantic"
-  ],
+  "C_Cpp_Runner.warnings": ["-Wall", "-Wextra", "-Wpedantic"],
   "C_Cpp_Runner.enableWarnings": true,
   "C_Cpp_Runner.warningsAsError": false,
   "C_Cpp_Runner.compilerArgs": [],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [],
-  "C_Cpp_Runner.includeSearch": [
-    "*",
-    "**/*"
-  ],
+  "C_Cpp_Runner.includeSearch": ["*", "**/*"],
   "C_Cpp_Runner.excludeSearch": [
     "**/build",
     "**/build/**",
@@ -29,10 +22,12 @@
     "**/.vscode/**"
   ],
   "java.project.sourcePaths": [
+    "Programs/javatest",
     "Programs/java_implementations/random",
-    "Programs/java_implementations/Assignment 2",
+    "Programs/java_implementations/assignment_2",
+    "Programs/java_implementations/assignment_1",
     "Programs/java_implementations/Assignment 1/src",
-    "Programs/java_implementations/assignment_2"
+    "Programs/javatest2"
   ],
   "files.associations": {
     "iostream": "cpp"

@@ -1,3 +1,0 @@
-/run/media/krishnaraj/Classes/University/Second Year/First Semister/Fundamentals of Data Structures/Programs/cmake-build-debug/CMakeFiles/Programs.dir
-/run/media/krishnaraj/Classes/University/Second Year/First Semister/Fundamentals of Data Structures/Programs/cmake-build-debug/CMakeFiles/edit_cache.dir
-/run/media/krishnaraj/Classes/University/Second Year/First Semister/Fundamentals of Data Structures/Programs/cmake-build-debug/CMakeFiles/rebuild_cache.dir

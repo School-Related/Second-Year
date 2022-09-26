@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Testing",
+      "request": "launch",
+      "mainClass": "Testing",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "type": "java",
       "name": "Launch Main",
       "request": "launch",
       "mainClass": "assignment_2.Main",
