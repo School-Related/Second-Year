@@ -57,11 +57,14 @@ void bucket_sort_integers(int arr[], int size)
 
 void bucket_sort_floating_points(int arr[], int size)
 {
+    
 }
 
 int main()
 {
     int arr[10] = {9, 0, 8, 8, 1, 4, 3, 1, 4, 7};
+    int arrf[10] = {9.23, 0.35, 8.95, 8.86, 1.50, 4.22, 4.96, 1.00, 4.55, 7.2};
+
     int size = 10;
 
     printf("Enter the size of the Array : \n");

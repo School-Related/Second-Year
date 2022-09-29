@@ -339,7 +339,7 @@ The required output is "001100110010011" Processes are sunchronized using P and 
 
 \end{enumerate}
 
-\subsection{Producer Consumer Problem}
+\section{Producer Consumer Problem}
 \begin{itemize}
 	\item it is one fo the classic problems of Synchronization
 	\item Producer produces an item and adds to a buffer of limited size ( bounded buffer)
@@ -348,11 +348,7 @@ The required output is "001100110010011" Processes are sunchronized using P and 
 	\item Producers to be prevented from adding into a full buffer. 
 	\item Consumers to be stopped from taking out an item from an empty buffer. 
 	\item To solve this you have to use the semaphores. And wait and signal will be used. 
-\end{itemize}
-
-\subsection{Cooperative Processes}
-\begin{itemize}
-	\item The Processes which are sharing the resources like code, memory, data item, and stuff like that. 
+	\item A Cooperative Process: The Processes which are sharing the resources like code, memory, data item, and stuff like that. 
 \end{itemize}
 
 \begin{lstlisting}[language=C]
@@ -395,6 +391,98 @@ The required output is "001100110010011" Processes are sunchronized using P and 
 			}
 		}
 	}
+\end{lstlisting}
+
+\subsection{Solution to producer cnsumer problem using semaphore}
+\begin{itemize}
+	\item With a Bounded Buffer, The bounded buffer producer problem assumes that there is a fixed buffer size, in this case the consumer must wait if the buffer is empty and the producer must wait if the buffer is full.
+	\item \begin{lstlisting}[language = C]
+	\\ initialization
+
+	char item; // could be any data type. 
+	char buffer[n];
+	semaphore full = 0; // counting semaphore for full slots
+	semaphore empty = 1; // counting for empty slot
+	semaphore mutex = 1; // binary sema for mutual exclusion of buffer. 
+	char nextp, nextc;
+	
+	\end{lstlisting}
+	
+	\item \begin{lstlisting}
+		// Producer
+		do
+		{
+			produce and item in nextp
+			wait(empty); // wait until empty > 0 and then decrement 'empty'
+			wait(mutex); // acquire lock
+			add nextp to bufer // add data to buffer
+			signal(mutex); // release lock
+			signal(full); // increment full
+		} while(true)
+
+
+		// Consumer
+		do{
+			wait(full);
+			wait(mutex);
+			remove an item from buffer to nextc // remove data from buffer
+			signal(mutex);
+			signal(empty);
+			consume the item in nextc
+		} while(true);
+	\end{lstlisting}
+\end{itemize}
+
+
+\subsection{Reader and Writer Problem}
+
+\begin{itemize}
+	\item If you are running concurrently, Reader and Writer together would be a problem
+	\item Writer and Reader, this would also be a problem
+	\item Writer and Writer, this would be a problem
+	\item Reader and Reader, this wont be a problem
+\end{itemize}
+
+\begin{lstlisting}
+	semaphore db = 1;
+	semaphore mutex = 1
+
+	void reader()
+	{
+		semaphore rc = 0; // reader count
+		while(true)
+		{
+			down(mutex); // this is like wait, coz you are decrementing anyway
+			rc = rc + 1
+			if(rc == 1)
+			{
+				down(db);
+			}
+			up(mutex);
+			
+			// read the data 
+			
+			// Exit section
+			rc = rc - 1;
+			if(rc == 0)
+			{
+				up(db)
+			}
+			up(mutex);
+		}
+	}
+
+	void writer()
+	{
+		while(true)
+		{
+			down(mutex);
+			// do something or write
+			up(db);
+		}
+	}
+
+
 \end{lstlisting}
 
 \end{document}

@@ -16,5 +16,6 @@
 \contentsline {subsubsection}{\numberline {5.4.3}Approaches to satisfy the requirements of Mutual Exclusion}{5}{}%
 \contentsline {subsection}{\numberline {5.5}OS or programming language support}{5}{}%
 \contentsline {subsubsection}{\numberline {5.5.1}Problem}{6}{}%
-\contentsline {subsection}{\numberline {5.6}Producer Consumer Problem}{7}{}%
-\contentsline {subsection}{\numberline {5.7}Cooperative Processes}{7}{}%
+\contentsline {section}{\numberline {6}Producer Consumer Problem}{7}{}%
+\contentsline {subsection}{\numberline {6.1}Solution to producer cnsumer problem using semaphore}{8}{}%
+\contentsline {subsection}{\numberline {6.2}Reader and Writer Problem}{8}{}%
