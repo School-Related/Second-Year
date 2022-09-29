@@ -188,8 +188,15 @@ void round_robin(struct Process processes[], int number_of_processes, int time_q
         burst_times[i] = processes[i].burst_time;
     }
 
+    // Drawing the first line of the Gantt Chart
+
+    for (int i = 0; i < ready_queue_size; i++)
+        printf("-------------------");
+    printf("\n");
+
+    // Drawing the last line of the Gantt Chart
     // well increment the counter as per as our need, and stop the scheduling when we are done with the queue.
-    while (current_node < ready_queue_size)
+    while (current_node <= ready_queue_size)
     {
         displayGanttChartRR(processes, ready_queue[current_node], cpu_time);
 
@@ -232,11 +239,27 @@ void round_robin(struct Process processes[], int number_of_processes, int time_q
             ready_queue[ready_queue_counter] = ready_queue[current_node];
         }
 
+        // If its done, then calculate everything related to that processes.
+        else if (burst_times[ready_queue[current_node]] == 0)
+        {
+            processes[ready_queue[current_node]].completion_time = cpu_cycle_end_state;
+            processes[ready_queue[current_node]].turnaround_time = processes[ready_queue[current_node]].completion_time -
+                                                                   processes[ready_queue[current_node]].arrival_time;
+            processes[ready_queue[current_node]].waiting_time = processes[ready_queue[current_node]].turnaround_time -
+                                                                processes[ready_queue[current_node]].burst_time;
+        }
+
         // finally increment the current node to point to the next part of the ready queue counter
         current_node++;
     }
+    // Print the last line of gantt chart
     printf("|%d|", cpu_time);
+    printf("\n");
+    for (int i = 0; i < ready_queue_size; i++)
+        printf("-------------------");
+    printf("\n\n");
 }
+
 float calc_average_waiting_time(struct Process processes[], float number_of_processes)
 {
     float a = 0;
@@ -265,7 +288,7 @@ float calc_average_tat(struct Process processes[], float number_of_processes)
 
 int main()
 {
-    int number_of_processes = 0, time_quantum = 3;
+    int number_of_processes = 0, time_quantum = 2;
     float average_waiting_time, average_tat;
     // printf("How many Processes do you wanna input? \n\n");
     // scanf("%d", &number_of_processes);
@@ -287,18 +310,29 @@ int main()
             // {2, 2, 5, 0, 0, 0, 0},
             // {3, 7, 1, 0, 0, 0, 0},
             // {4, 3, 6, 0, 0, 0, 0},
-            // {5, 8, 8, 0, 0, 0, 0}
+            // {5, 5, 8, 0, 0, 0, 0}
         };
 
     // accept_array(processes, number_of_processes);
     insertion_sort(processes, number_of_processes); // sort arrival times.
-    // npfcfs(processes, number_of_processes);
+
+    // Display Round Robin
+
+    printf("Here is the Gantt Chart for Round Robin Scheduling done on the Given Data:\n\n");
     round_robin(processes, number_of_processes, time_quantum);
-    // display(processes, number_of_processes, 0);
-    // average_waiting_time = calc_average_waiting_time(processes, number_of_processes);
-    // average_tat = calc_average_tat(processes, number_of_processes);
-    // // printf("\nAverage waiting time is: %f", average_waiting_time);
-    // printf("\nAverage Turnaround time is: %f", average_tat);
-    // printf("\nThe Gang Chart is : \n");
-    // displayGanttChartFSFS(processes, number_of_processes);
+    display(processes, number_of_processes, 0);
+    average_waiting_time = calc_average_waiting_time(processes, number_of_processes);
+    average_tat = calc_average_tat(processes, number_of_processes);
+    printf("\nAverage waiting time is: %f", average_waiting_time);
+    printf("\nAverage Turnaround time is: %f\n", average_tat);
+
+    printf("\n\n Here is the Gantt Chart for Non Preemptive First Come First Server Scheduling done on the Given Data:\n\n");
+
+    npfcfs(processes, number_of_processes);
+    displayGanttChartFSFS(processes, number_of_processes);
+    display(processes, number_of_processes, 0);
+    average_waiting_time = calc_average_waiting_time(processes, number_of_processes);
+    average_tat = calc_average_tat(processes, number_of_processes);
+    printf("\nAverage waiting time is: %f", average_waiting_time);
+    printf("\nAverage Turnaround time is: %f\n", average_tat);
 }
