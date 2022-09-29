@@ -56,70 +56,70 @@
 %\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
-	
-	\begin{titlepage} 
-		\centering 
-		
-		%---------------------------NAMES-------------------------------
-		
-		\huge\textsc{
-			MIT World Peace University
-		}\\
-	
-		\vspace{0.75\baselineskip} % space after Uni Name
-		
-		\LARGE{
-			Object Oriented Programming with Java and C++\\
-			Second Year B. Tech, Semester 1
-		}
-		
-		\vfill % space after Sub Name
-		
-		%--------------------------TITLE-------------------------------
-		
-		\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
-		\rule{\textwidth}{0.6pt}
-		\vspace{0.75\baselineskip} % Whitespace above the title
-		
-		
-		
-		\huge{\textsc{
-			To demonstrate the use of objects, classes, constructors and destructors using C++ and JAVA.
-			}} \\
-		
-		
-		
-		\vspace{0.5\baselineskip} % Whitespace below the title
-		\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
-		\rule{\textwidth}{1.6pt}
-		
-		\vspace{1\baselineskip} % Whitespace after the title block
 
-		%--------------------------SUBTITLE --------------------------	
-			
-		\LARGE\textsc{
-			Practical Report
-		} % Subtitle or further description
-		\vfill
-		
-		%--------------------------AUTHOR-------------------------------
-		
-		Prepared By
-		\vspace{0.5\baselineskip} % Whitespace before the editors
-		
-		\Large{
-			Krishnaraj Thadesar \\
-			Cyber Security and Forensics\\
-			Batch A2, PA 34
-		}
-		
-		
-		\vspace{0.5\baselineskip} % Whitespace below the editor list
-		\today
+\begin{titlepage}
+	\centering
 
-	\end{titlepage}
-	
-	
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Object Oriented Programming with Java and C++\\
+		Second Year B. Tech, Semester 1
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Implementation of Inheritance using C++ and Java
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A2, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
 \tableofcontents
 \thispagestyle{empty}
 \clearpage
@@ -128,375 +128,269 @@
 \setcounter{page}{1}
 
 \section{Aim and Objectives}
-To demonstrate the use of objects, classes, constructors and destructors using C++
-and JAVA.
+To Implement inheritance using C++ and Java (with interfaces).
+\textbf{Objectives are: }
 \begin{enumerate}
-	\item To study various OOP concepts
-	\item To acquaint with the use of objects and classes in C++ and Java.
-	\item To learn implementation of constructor, destructors and dynamic memory
-	allocation
+	\item To understand the inheritance or is-A relationship concept.
+	\item To understand code reusability.
+	\item To learn implementation of interfaces in java.
 \end{enumerate}
+\section{Problem Statements}
+\subsection{Problem 1 in C++}
 
-\section{Problem Statement}
+Design and develop inheritance for a given case study, identify objects and relationships
+and implement inheritance wherever applicable using C++.\\
+Employee class has Empname, Empid, Address, Mailid, and Mobileno as data
+members.
+Add the Following Classes
+\begin{itemize}
+	\item Programmer
+	\item Team Leader
+	\item Assistant Project Manager
+	\item Project Manager from Employee Class
+\end{itemize}
+\noindent
+Add Basic Pay as the member of all the inherited classes with 97 \% of the Basic Pay as DA, 10 \% of Basic Pay as HRA, 12 \% of  Basic Pay as PF, 0.1 \% of Basic Pay for staff club fund.
 
-Develop an object-oriented program to create a database of employee information system
-containing the following information: Employee Name, Employee number, qualification,
-address, contact number, salary details (basic, DA, TA, Net salary), etc. Construct the
-database with suitable member functions for initializing and destroying the data viz.
-constructor, default constructor, Copy constructor, destructor. Use dynamic memory
-allocation concept while creating and destroying the object of a class. Use static data
-member concept wherever required. Accept and display the information of Employees.
+Generate Pay slips for the Employees with their gross and net salaries.
+
+\subsection{Problem 2 in Java}
+Write a Java Program for demonstrating Inheritance in Java.
+Write a program in Java showing hierarchical inheritance with base class as Employee and
+derived classes as FullTimeEmployee and InternEmployee with methods DisplaySalary in
+base class and CalculateSalary in derived classes.
+Calculate salary method will calculate as per increment given to fulltime and intern
+Employees. Fulltime employee- 50\% hike, Intern employee-25\% hike. Display salary
+before and after hike.
+\subsection{Probelm 2 in Java}
+Write a java program to create two interfaces Motorbike and Cycle.
+\begin{itemize}
+	\item Motorbike interface consists of the attribute speed.
+	\item The method is totalDistance().
+	\item Cycle interface consists of the attributes distance and the method speed().
+	\item These interfaces are implemented by the class TwoWheeler.
+	\item Calculate total distance travelled and Average Speed maintained by Two Wheeler.
+\end{itemize}
 
 \section{Theory}
 
-\subsection{Algorithm}
-An \textit{Algorithm} is a set of statements for solving a problem. They're the building blocks for programming, and they allow things like computers, smartphones, and websites to function and make decisions.\\
+\subsection{Concept of Inheritance and its types}
+\textbf{Inheritance} is a process in which one object acquires all the properties and behaviors of its parent object automatically. In such way, you can \textit{reuse, extend, or modify} the attributes and behaviors which are defined in other class.
 
-It looks like this, and can be generally implemented in any suitable programming language. 
-\begin{lstlisting}
-	step 1: Start
-	step 2: Do something
-	step 3: Do something else
-	step 4: Return result
-	step 5: Stop
-\end{lstlisting}
+In C++, the class which inherits the members of another class is called derived class and the class whose members are inherited is called base class. The derived class is the specialized class for the base class. Most ideas of inheritance are directly applicable in Java as well. 
 
-\subsection{Class}
+
+\subsubsection{Advantages}
 \begin{enumerate}
-	\item In object-oriented programming, a \textit{class} is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
-	\item It is a basic concept of Object-Oriented Programming which revolve around the real-life entities. 
-	\item It is like a template for creating objects. You can initialize various variables of varying data types in it.
-	\item The Syntax for C++ and Java is given below. 
+	\item Minimizing duplicate code: Key benefits of Inheritance include minimizing the identical code as it allows sharing of the common code among other subclasses.
+
+	\item Flexibility: Inheritance makes the code flexible to change, as you will adjust only in one place, and the rest of the code will work smoothly.
+
+	\item Overriding: With the help of Inheritance, you can override the methods of the base class.
+
+	\item Data Hiding: The base class in Inheritance decides which data to be kept private, such that the derived class will not be able to alter it.
 \end{enumerate}
 
+\subsubsection{Types of Inheritance}
+
+\begin{enumerate}
+	\item Single inheritance :
+	      It is defined as the inheritance in which a derived class is inherited from the only one base class.
+	\item Multiple inheritance : It is the process of deriving a new class that inherits the attributes from two or more classes.
+	\item Hierarchical inheritance : When one class inherits another class which is further inherited by another class, it is known as multi level inheritance in C++. Inheritance is transitive so the last derived class acquires all the members of all its base classes.
+	\item Multilevel inheritance: It is a process of deriving a class from another derived class.
+	\item Hybrid inheritance : Any legal combination of any of the above inheritance techniques would be known as hybrid inheritance.
+\end{enumerate}
+
+\textbf{Let us Look an Examples of these.}
 \begin{lstlisting}[language = C++]
-	// Syntax in C++
-	class Name_of_Class
+	class A
 	{
-		private: 
-			int a;
-		public: 
-			int b;
-		protected: 
-			int c;
-			data_type member_function()
-			{
-				return data_type;
-			}
-	}objects;
-\end{lstlisting}
+		// Base Class
+	};
 
-
-\begin{lstlisting}[language = java]
-	// Syntax in Java
-	class Name_of_Class
+	class D
 	{
-		private: 
-			int a;
-		public: 
-			int b;
-		protected: 
-			int c;
-			data_type member_function()
-			{
-				return data_type;
-			}
+		// Base Class 2
+	}
+	class B : public A
+	{
+		// Single Inheritance
+	}
+	class C : public B
+	{
+		// Multi Level Inheritance
+	}
+	class E : public A, public D
+	{
+		// Multiple Inheritance
+	}
+	class F : public E, private D
+	{
+		// hierarchical inheritance
 	}
 \end{lstlisting}
 
-\subsection{Objects}
+\subsubsection{Base class and Derived Class Constructors}
+Whenever we create an object of a class, the default constructor of that class is invoked automatically to initialize the members of the class. \\
 
+If we inherit a class from another class and create an object of the derived class, it is clear that the default constructor of the derived class will be invoked but before that the default constructor of all of the base classes will be invoke, i.e the order of invocation is that the base class's default constructor will be invoked first and then the derived class's default constructor will be invoked.\\
 
-\begin{enumerate}
-	\item \textit{Object} is an instance of a \textit{class}. An object in \textit{OOP} is nothing but a self-contained component which consists of methods and properties to make a particular type of data useful. 
-	\item For example color name, table, bag, barking. When you send a message to an object, you are asking the object to invoke or execute one of its methods as defined in the class.
-	\item From a programming point of view, an object in OOPS can include a data structure, a variable, or a function. It has a memory location allocated. Java Objects are designed as class hierarchies.
-	\item The syntax for Java and C++ are given below. 
-\end{enumerate}
+When a class is inherited from other, The data members and member functions of base class comes automatically in derived class based on the access specifier but the definition of these members exists in base class only. So when we create an object of derived class, all of the members of derived class must be initialized but the inherited members in derived class can only be initialized by the base class's constructor as the definition of these members exists in base class only. \\
 
-\begin{lstlisting}[language = C++]
-	// C++ Syntax
-	class_name obj;
-	Employee CEO;
-	Employee President(Name, Age);
-\end{lstlisting}
+This is why the constructor of base class is called first to initialize all the inherited members. 
 
-\begin{lstlisting}[language = java]
-	// Java Syntax
-	class_name obj = new class_name;
-	Employee CEO = new Employee();
-	Employee President = new Employee(Name, Age);
-\end{lstlisting}
-
-\subsection{Default, Parameterized, and Copy Construtor}
-A constructor is a special member function with exact same name as the class name.
-
-There are \textbf{3} Types of Constructors: 
-
-\begin{enumerate}
-	\item \textbf{Default Constructor}: A constructor with no arguments (or parameters) in the definition is a default constructor. Usually, these constructors use to initialize data members (variables) with real values. If no constructor is explicitly declared, the compiler automatically creates a default constructor with no data member (variables) or initialization.
-	\item \textbf{Parameterized Constructor}: Unlike Default constructor, It contains parameters (or arguments) in the constructor definition and declaration. More than one argument can also pass through a parameterized constructor. Moreover, these types of constructors use for overloading to differentiate between multiple constructors.
-	\item \textbf{Copy Constructor}: A copy constructor is a member function that initializes an object using another object of the same class. It helps to copy data from one object to another.
-	\item The Syntax for Each of them is same for C++ and Java and is given below. 
-\end{enumerate}
+\subsubsection*{Let us see an Example}
 
 \begin{lstlisting}[language = C++]
-	class Avenger
-	{
-		static int hero = 0;
-		int age;
-		bool from_earth, is_a_God;
-		string Superpower;
-		
-		// default Constructor
-		Avenger()
-		{
-			hero++;
-		}
+ 
+// base class
+class Parent
+{
+    public:
+     
+    // base class constructor
+    Parent()
+    {
+        cout << "Inside base class" << endl;
+    }
+};
+ 
+// sub class
+class Child : public Parent
+{
+    public:
+     
+    //sub class constructor
+    Child()
+    {
+        cout << "Inside sub class" << endl;
+    }
+};
+ 
+// main function
+int main() {
+      
+    // creating object of sub class
+    Child obj;
 
-		// Parameterized Constructor
-		Avenger(bool from_earth, bool is_a_God, int age, String name, string Superpower)
-		{
-			if(!from_earth)
-			{
-				alien_avengers++;
-			}
-		}
-
-		// Copy Constructor
-
-		Avenger(Avenger &new_Avenger)
-		{
-			this.superpower = new_Avenger.superpower;
-		}
-	}
-\end{lstlisting}
-
-\subsection{Destuctors}
-\textbf{Destructor} is an instance member function which is invoked automatically whenever an object is going to be destroyed. Meaning, a destructor is the last function that is going to be called before an object is destroyed.
-
-\begin{enumerate}
-	\item Destructor is also a \textit{special member} function like constructor. Destructor destroys the class objects created by constructor.
-	\item Destructor has the same name as their class name preceded by a tiled (~) symbol.
-	\item It is not possible to define more than one destructor. 
-	\item The destructor is only one way to destroy the object create by constructor. Hence destructor can-not be overloaded.
-	\item Destructor neither requires any argument nor returns any value.
-	\item It is automatically called when object goes out of scope. 
-	\item Destructor release memory space occupied by the objects created by constructor.
-	\item In destructor, objects are destroyed in the reverse of an object creation.
-\end{enumerate}
-
-In Java, The job of the constructor is done by the compiler, as garbage collection in general is done better by the compiler in java than the programmer. It is for this reason that the finalize() function exists in java but is depricated and its strongly recommended not to use it. \\
-\begin{lstlisting}[language = C++]
-	// C++ Implementation 
-	class Avenger()
-	{
-		~Avenger()
-		{
-			pay_respects();
-		}
-
-		// in java
-		finalize()
-		{
-			System.gc() // call the garbage collector
-		}
-	}
-
-\end{lstlisting}
-
-
-\subsection{Dynamic Allocation and DeAllocation}
-
-\begin{enumerate}
-	\item Many times, you are not aware in advance how much memory you will need to store particular information in a defined variable and the size of required memory can be determined at run time.
-	\item You can allocate memory at run time within the heap for the variable of a given type using a special operator in C++ which returns the address of the space allocated. This operator is called new operator.
-	\item If you are not in need of dynamically allocated memory anymore, you can use delete operator, which de-allocates memory that was previously allocated by new operator.
-	\item The Syntax for C++ and Java is given below. 
-\end{enumerate}
-
-\begin{lstlisting}[language = C++]
+    return 0;
+}
 	
-	// C++
-	int a = new int;
-	delete a;
-
-	// Java
-	Employee Obj = new Employee()
-
 \end{lstlisting}
-
-\section{Algorithm}
-
-\begin{enumerate}
-	\item \textbf{Start}
-	\item Create Employee Class
-	\item Delcare appropirate Data Memebers and define the member funtions
-	\item Accept multiple employee's Data using an Array of Objects
-	\item Assign some Basic employees using default, copy and parameterized constructors
-	\item Show usage of Default Constructor and display the Data
-	\item Show usage of Parameterized constructor and display that data
-	\item Show usage of Copy Constructor and display that Data. 
-	\item Distory the objects if possible
-	\item \textbf{End}
-\end{enumerate}
+\textbf{Output would be}
+\begin{verbatim}
+	Inside base class
+	Inside sub class
+\end{verbatim}
 
 \section{Platform}
-	\textbf{Operating System}: Arch Linux x86-64\\
-	\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
-	\textbf{Compilers} : g++ and gcc on linux for C++, and javac, with JDK 18.0.2 for Java\\
+\textbf{Operating System}: Arch Linux x86-64\\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
+\textbf{Compilers} : g++ and gcc on linux for C++, and javac, with JDK 18.0.2 for Java\\
 
 \section{Input}
-
+\textbf{For C++}
 \begin{enumerate}
-	\item Number of Employees for enrollment
-	\item Employee ID
-	\item Employee Name
-	\item Employee Position
-	\item Employee Address
-	\item Employee Salary
+	\item Number of Each Type of Employee
+	\item Name, Age, Address City, and Salary of Each Employee
+\end{enumerate}
+\textbf{For Java}
+\begin{enumerate}
+	\item The Information and Salary about the Full Time Employee
+	\item The Information and Salary of the Intern Employee
+	\item Speed, Time and Distance
 \end{enumerate}
 
 \section{Output}
+\textbf{For C++}
+\begin{enumerate}
+	\item General Information about Each Employee
+	\item The Gross Salary of Each Employee
+	\item The Net Salary of Each Employee
+\end{enumerate}
 
-\textbf{Employee Data} should be displayed by use of member functions. 
+\textbf{For Java}
+\begin{enumerate}
+	\item The General information about the Full time and the Intern Employee
+	\item The Hiked salaries of both the Intern Employee, and the Full Time Employee. 
+	\item Speed and Distance. 
+\end{enumerate}
 
 \section{Conclusion}
-Thus, learned to use objects, classes, constructor and destructor and implemented solution
-of the given problem statement using C++ and Java.
+Thus, learned to use reusability by applying concept of inheritance, interfaces and
+implemented solution of the given problem statement using C++ and Java.
 
 \section{Code}
 
-\subsection{Java Implementation}
+\subsection{Java Implementation of Problem 2}
 
-\lstinputlisting[language=java, caption=Employee.java]{../Programs/java_imp/src/Employee.java}
+\lstinputlisting[language=java, caption=Employee.java]{../Programs/java_implementations/assignment_2/Employee.java}
+\lstinputlisting[language=java, caption=Intern Employee.java]{../Programs/java_implementations/assignment_2/InternEmployee.java}
+\lstinputlisting[language=java, caption=Full Time Employee.java]{../Programs/java_implementations/assignment_2/FullTimeEmployee.java}
+\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_2/Main.java}
 
-\lstinputlisting[language=java, caption=Source.java]{../Programs/java_imp/src/Source.java}
+\subsubsection{Java Output for Problem 2}
+\begin{lstlisting}[caption=Java Output for Problem 2]
+Welcome to Salary Hiking Program
+Enter the Details about the Full Time Employee:
 
-\subsubsection{Java Input}
-\begin{lstlisting}[language=bash, caption=Python example]
-Enter the number of employees :
-2
-Default Constructor was called
-Enter the age :
-35
-Employee ID is:
-006
-Employee Name:
-Peter
-Employee Age:
-17
-Employee Position:
-Avenger
-Employee basic Salary:
-500000
-Employee DA:
-3440
-Employee TA:
-3550
-Employee Address City:
-Brooklyn
+Enter the Employee Name
+Tony
+Enter The Employee ID
+1001
+Enter The Employee Salary
+100000
+The Employee Name is: Tony
+The Employee ID is: 1001
+The Salary Before the Hike for this Full time Employee is: 100000.0
+The Salary after the Hike for this Full time Employee is : 200000.0
+Enter the Details about the Intern Employee:
 
-
-Default Constructor was called
-Enter the age :
-4
-Employee ID is:
-007
-Employee Name:
-Thor
-Employee Age:
-1500
-Employee Position:
-Avenger
-Employee basic Salary:
-6000000
-Employee DA:
-3000
-Employee TA:
-5000
-Employee Address City:
-Asgard
-
+Enter the Employee Name
+Steve
+Enter The Employee ID
+1002
+Enter The Employee Salary
+50000
+The Employee Name is: Steve
+The Employee ID is: 1002
+The Salary Before the Hike for this Intern Employee is: 50000.0
+The Salary after the Hike for this Intern Employee is : 100000.0
 \end{lstlisting}
 
+\subsection{Java Implementation of Problem 3 using Interfaces}
+
+\lstinputlisting[language=java, caption=Two Wheeler.java]{../Programs/java_implementations/assignment_2b/TwoWheeler.java}
+\lstinputlisting[language=java, caption=MotorCycle.java]{../Programs/java_implementations/assignment_2b/MotorCycle.java}
+\lstinputlisting[language=java, caption=Cycle.java]{../Programs/java_implementations/assignment_2b/Cycle.java}
+\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_2b/Main.java}
+
 \subsubsection{Java Output}
-\begin{lstlisting}[language=bash, caption=Python example]
-This is the first Assignment
-Default Constructor was called
-Copy constructor was called
-Parameterized constructor was called
-Information about the CEO
-Employee ssn is: 1
-Employee ID is : 1000
-Employee Name: Kom Pany Seeio
-Employee Age: 45
-Employee Position: CEO
-Employee basic Salary: 1000000
-Employee DA: 1000
-Employee TA: 2000
-Employee Gross Salary: 853000.0
-Employee Address City: Seoul
-
-
-Information about the President
-Employee ssn is: 2
-Employee ID is : 1000
-Employee Name: Precy Dent
-Employee Age: 45
-Employee Position: President
-Employee basic Salary: 2000000
-Employee DA: 1000
-Employee TA: 2000
-Employee Gross Salary: 1703000.0
-Employee Address City: Delhi
-
-
-Information about the President
-Employee ssn is: 3
-Employee ID is : 1003
-Employee Name: Visey Presed Ent
-Employee Age: 50
-Employee Position: Vice President
-Employee basic Salary: 200000
-Employee DA: 3000
-Employee TA: 1000
-Employee Gross Salary: 174000.0
-Employee Address City: Mumbai
-
-
-Employee ssn is: 4
-Employee ID is : 6
-Employee Name: Peter
-Employee Age: 17
-Employee Position: Avenger
-Employee basic Salary: 500000
-Employee DA: 3440
-Employee TA: 3550
-Employee Gross Salary: 431990.0
-Employee Address City: Brooklyn
-
-
-Employee ssn is: 5
-Employee ID is : 7
-Employee Name: Thor
-Employee Age: 1500
-Employee Position: Avenger
-Employee basic Salary: 6000000
-Employee DA: 3000
-Employee TA: 5000
-Employee Gross Salary: 5108000.0
-Employee Address City: Asgard
-
+\begin{lstlisting}[caption=Java Output for Program 3]
+Calculating Speed:
+Enter the Distance Travelled by Your 2 Wheeler:
+50
+Enter the Time you Travelled on Your 2 Wheeler:
+2
+The Speed is:
+25
+Calculating Total Distance:
+Enter the Speed of Your 2 Wheeler:
+25
+Enter the Time you Travelled on Your 2 Wheeler:
+2
+The Total Distance is:
+50
 \end{lstlisting}
 
 \subsection{C++ Implementation}
 
-\lstinputlisting[language=c++, caption=Main.Cpp]{../Programs/cpp_implementation/Assignment_2.cpp}
-
+\lstinputlisting[language=c++, caption=Main.Cpp]{../Programs/cpp_implementations/Assignment_2.cpp}
 
 \subsubsection{C++ Input and Output}
 \begin{lstlisting}[language=bash, caption=C++ Output]
+
 Welcome to Employee Payroll Management System
 
 Whose Details do you wanna enter?
@@ -506,53 +400,36 @@ Whose Details do you wanna enter?
 4. Project Manager
 5. Quit
 1
-How many Programmers are we talking? 2
-The Default Constructor was called
+How many Programmers are we talking? 1
 The Default Constructor was called
 Enter the Information about the Programmer
 Enter the Employee ID:
-1
+1001
 Enter the Employee Name:
-Helmin
+Tony
 Enter the Employee Age:
-25
+45
 Enter the Employee Address City:
-Trivandrum
+Berlin
 Enter the basic Salary of the Programmer :
-400000
-Enter the Information about the Programmer
-Enter the Employee ID:
-2
-Enter the Employee Name:
-Dennis
-Enter the Employee Age:
-65
-Enter the Employee Address City:
-Bronxville
-Enter the basic Salary of the Programmer :
-500000
+450000
+
 Here is their Information and their Pay Slips
 
 
 Programmer
 Info and Pay Slip of Programmer 1
 Employee ssn is:1001
-Employee ID is : 1
-Employee Name: Helmin
-Employee Age: 25
-Employee Address City: Trivandrum
-The Gross Salary is: 1.988e+06
-The Net Salary is: 1.6898e+06
-Info and Pay Slip of Programmer 2
-Employee ssn is:1002
-Employee ID is : 2
-Employee Name: Dennis
-Employee Age: 65
-Employee Address City: Bronxville
-The Gross Salary is: 2.485e+06
-The Net Salary is: 2.11225e+06
+Employee ID is : 1001
+Employee Name: Tony
+Employee Age: 45
+Employee Address City: Berlin
+The Gross Salary is: 2.2365e+06
+The Net Salary is: 1.90102e+06
+
 The Destructor was called
-The Destructor was called
+
+
 Whose Details do you wanna enter?
 1. Programmer
 2. Team Leader
@@ -560,54 +437,36 @@ Whose Details do you wanna enter?
 4. Project Manager
 5. Quit
 2
-How many Team Leaders are we talking? 2
-The Default Constructor was called
+How many Team Leaders are we talking? 1
 The Default Constructor was called
 Enter the Information about the Team Leader 1
 Enter the Employee ID:
-3
+1002
 Enter the Employee Name:
-Jason
+Steve
 Enter the Employee Age:
-19
+80
 Enter the Employee Address City:
-Hawkins
+Queens
 Enter the basic Salary of the Team Leader :
-40000
-Enter the Information about the Team Leader 2
-Enter the Employee ID:
-4
-Enter the Employee Name:
-Tony
-Enter the Employee Age:
-55
-Enter the Employee Address City:
-NewYork
-Enter the basic Salary of the Team Leader :
-1000000
+70000
 Here is their Information and their Pay Slips
 
 
 Info and Pay Slip of Team Leader 1
-Employee ssn is:1003
-Employee ID is : 3
-Employee Name: Jason
-Employee Age: 19
-Employee Address City: Hawkins
-The Gross Salary is: 198800
-The Net Salary is: 168980
-Info and Pay Slip of Team Leader 2
-Employee ssn is:1004
-Employee ID is : 4
-Employee Name: Tony
-Employee Age: 55
-Employee Address City: NewYork
-The Gross Salary is: 4.97e+06
-The Net Salary is: 4.2245e+06
+Employee ssn is:1002
+Employee ID is : 1002
+Employee Name: Steve
+Employee Age: 80
+Employee Address City: Queens
+The Gross Salary is: 347900
+The Net Salary is: 295715
+
 
 
 The Destructor was called
-The Destructor was called
+
+
 Whose Details do you wanna enter?
 1. Programmer
 2. Team Leader
@@ -615,54 +474,36 @@ Whose Details do you wanna enter?
 4. Project Manager
 5. Quit
 3
-How many Assistant Project Managers are we talking? 2
-The Default Constructor was called
+How many Assistant Project Managers are we talking? 1
 The Default Constructor was called
 Enter the Information about the Assitant Project Manager 1
 Enter the Employee ID:
-5
+1003
 Enter the Employee Name:
-Ramesh
+Caulson
 Enter the Employee Age:
-55
-Enter the Employee Address City:
-Mumbai
-Enter the basic Salary of the Assistant Project Manager :
-400000
-Enter the Information about the Assitant Project Manager 2
-Enter the Employee ID:
-6
-Enter the Employee Name:
-Suresh
-Enter the Employee Age:
-40
+60
 Enter the Employee Address City:
 Delhi
 Enter the basic Salary of the Assistant Project Manager :
-500000
+60000
 Here is their Information and their Pay Slips
 
 
 Info and Pay Slip of Assitant Project Manager 1
-Employee ssn is:1005
-Employee ID is : 5
-Employee Name: Ramesh
-Employee Age: 55
-Employee Address City: Mumbai
-The Gross Salary is: 1.988e+06
-The Net Salary is: 1.6898e+06
-Info and Pay Slip of Assitant Project Manager 2
-Employee ssn is:1006
-Employee ID is : 6
-Employee Name: Suresh
-Employee Age: 40
+Employee ssn is:1003
+Employee ID is : 1003
+Employee Name: Caulson
+Employee Age: 60
 Employee Address City: Delhi
-The Gross Salary is: 2.485e+06
-The Net Salary is: 2.11225e+06
+The Gross Salary is: 298200
+The Net Salary is: 253470
+
 
 
 The Destructor was called
-The Destructor was called
+
+
 Whose Details do you wanna enter?
 1. Programmer
 2. Team Leader
@@ -670,52 +511,34 @@ Whose Details do you wanna enter?
 4. Project Manager
 5. Quit
 4
-How many Project Managers are we talking? 2
-The Default Constructor was called
+How many Project Managers are we talking? 1
 The Default Constructor was called
 Enter the Information about the Project Manager 1
 Enter the Employee ID:
-7
+1005
 Enter the Employee Name:
-Prashant
+Fury
 Enter the Employee Age:
-47
+56
 Enter the Employee Address City:
 Pune
 Enter the basic Salary of the Project Manager :
-2000000
-Enter the Information about the Project Manager 2
-Enter the Employee ID:
-8
-Enter the Employee Name:
-Steve
-Enter the Employee Age:
-70
-Enter the Employee Address City:
-Hawkins
-Enter the basic Salary of the Project Manager :
-1500000
+600000
 Here is their Information and their Pay Slips
 
 
 Info and Pay Slip of Project Manager 1
-Employee ssn is:1007
-Employee ID is : 7
-Employee Name: Prashant
-Employee Age: 47
+Employee ssn is:1004
+Employee ID is : 1005
+Employee Name: Fury
+Employee Age: 56
 Employee Address City: Pune
-The Gross Salary is: 9.94e+06
-The Net Salary is: 8.449e+06
-Info and Pay Slip of Project Manager 2
-Employee ssn is:1008
-Employee ID is : 8
-Employee Name: Steve
-Employee Age: 70
-Employee Address City: Hawkins
-The Gross Salary is: 7.455e+06
-The Net Salary is: 6.33675e+06
+The Gross Salary is: 2.982e+06
+The Net Salary is: 2.5347e+06
+
 The Destructor was called
-The Destructor was called
+
+
 Whose Details do you wanna enter?
 1. Programmer
 2. Team Leader
@@ -730,104 +553,45 @@ Whose Details do you wanna enter?
 \section{FAQs}
 
 \begin{enumerate}
-	\item \textbf{What are classes?}\\
+	\item \textbf{Discuss ambiguity arises in multipath inheritance and how it is to be avoided in C++?}\\
 
-	In object-oriented programming, a \textbf{class} is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
-	\\ It is a basic concept of Object-Oriented Programming which revolve around the real-life entities. 
-	
-	\begin{verbatim}
+	      In object-oriented programming, a \textbf{class} is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
+	      \\ It is a basic concept of Object-Oriented Programming which revolve around the real-life entities.
+
+	      \begin{verbatim}
 		class <class_name>{  
 			field;  
 			method;  
   	}
 	\end{verbatim}
 
-	\item \textbf{ Explain : Array of Objects:} \\
- 
-	An array of objects is like any other array in C++ and Java. An Array usually is just a collection of variables that have the same data type, and are placed in contiguous memory locations. An Array of Objects is similar in that instead of variables there are objects which are placed contigiously in memory. 
+	\item \textbf{What's the difference between public, private, and protected?} \\
 
-	\begin{verbatim}
+	      An array of objects is like any other array in C++ and Java. An Array usually is just a collection of variables that have the same data type, and are placed in contiguous memory locations. An Array of Objects is similar in that instead of variables there are objects which are placed contigiously in memory.
+
+	      \begin{verbatim}
 	Syntax: 
 	Employee obj[5];
 	\end{verbatim}
-	\item \textbf{Explain when to use different types of constructors?
-	There are 3 Types of constructors}: 
-	\begin{enumerate}
-		\item \textbf{Default Constructor}: This type is called when the Object is just created in its most simple declaration. 
-		It does not take any parameters, or arguements. So if you have a simple class, that does not have many user dependent variables and fields, that does a rather general task, then it is better to use default constructors, where you do not have to assign any user variables to class variables, and have to just call some basic intantiating functions depending on class requirements and functions. 
-		
-		\item \textbf{Parameterized Constructor}: Say there are variables that the user has entered that need to be assigned to the class object, or there are certain properties of each object different from other objects of the same class, like in enemies in a game, or employees in a Company, each object can be initialized with a set of variables. In this situation it is better to just use a parameterized constructor. 
-		
-		\item \textbf{Copy Constructor}: If you have many constructors that are often similar in defintion and declaration, but have very few dissimilar properties, it is better to use copy constructors. For example Trees in a RPG game, where each tree has the same basic structure, but you might have small variation in just the height or the position of the tree. 
-	\end{enumerate}
-	\item \textbf{ Explain use of static member functions.}\\
-	
-	\textbf{Static member functions} in java are those that can be accessed by other classes without declaring an Object of that class. This is often why the main function needs to be public and static. Every other member function needs to be accessed by an obejct of that class, as opposed to static ones. 
+	\item \textbf{Why can't derived class access private things from base class?}:
+	      \begin{enumerate}
+		      \item \textbf{Default Constructor}: This type is called when the Object is just created in its most simple declaration.
+		            It does not take any parameters, or arguements. So if you have a simple class, that does not have many user dependent variables and fields, that does a rather general task, then it is better to use default constructors, where you do not have to assign any user variables to class variables, and have to just call some basic intantiating functions depending on class requirements and functions.
 
-	In terms of memory, the \textit{static} keyword in C++ is used when you have a variable that needs to be accessed by several objects of the same class, and this variable doesnt need to be different for each object. An Example would be the Security number of an Employee, which just needs to be incremented as an object is created. It is accessed by each object, and therefore it makes sense for it to be declared in a way where it does not get copied for each object, thereby saving space. 
-	\item \textbf{How java program is executed?}\\
-	Java, being a \textit{platform-independent programming language}, doesn't work on the one-step compilation. Instead, it involves a two-step execution, first through an OS-independent compiler; and second, in a virtual machine (JVM) which is custom-built for every operating system. First, the source '.java' file is passed through the compiler, which then encodes the source code into a machine-independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate '.class' file.\\
-	
-	The class files generated by the compiler are independent of the machine or the OS, which allows them to be run on any system. To run, the main class file (the class that contains the method main) is passed to the JVM and then goes through three main stages before the final machine code is executed.
-	\item \textbf{What is the use of JVM?}\\
-	\textbf{Java Virtual Machine}, or JVM, loads, verifies and executes Java bytecode. It is known as the interpreter or the core of Java programming language because it executes Java programming.
+		      \item \textbf{Parameterized Constructor}: Say there are variables that the user has entered that need to be assigned to the class object, or there are certain properties of each object different from other objects of the same class, like in enemies in a game, or employees in a Company, each object can be initialized with a set of variables. In this situation it is better to just use a parameterized constructor.
 
-	\textbf{JVM} is specifically responsible for converting bytecode to machine-specific code and is necessary in both JDK and JRE. It is also platform-dependent and performs many functions, including memory management and security. In addition, JVM can run programs written in other programming languages that have been translated to Java bytecode.
+		      \item \textbf{Copy Constructor}: If you have many constructors that are often similar in defintion and declaration, but have very few dissimilar properties, it is better to use copy constructors. For example Trees in a RPG game, where each tree has the same basic structure, but you might have small variation in just the height or the position of the tree.
+	      \end{enumerate}
+	\item \textbf{Explain use of 'super' keyword with suitable example}\\
 
-	\item \textbf{What are the different control statements used in C++ and Java?}\\
-	There are several Control statements in Java and C++
-	\begin{enumerate}
-		\item Loops like for, while and do while
-		\item Logical Control statements like if, else if, else, switch statements
-		\item Ternary Operator as another form of logical operation
-		\item Branching Statements include Keywords like break and continue.
-	\end{enumerate}
+	      \textbf{Static member functions} in java are those that can be accessed by other classes without declaring an Object of that class. This is often why the main function needs to be public and static. Every other member function needs to be accessed by an obejct of that class, as opposed to static ones.
 
-	Examples: 
-	\begin{lstlisting}[language=C++]
-		// Loops
-		for(int i = 0; i < 5; i++)
-		{
-			cout<<"This is a basic for loop, and exists in both cpp and java.";
-		}
-		do
-		{
-			cout<<"This is a do while loop";
-		}while(condition);
-		while(true)
-		{
-			cout<<"This is a while loop";
-		}
+	      In terms of memory, the \textit{static} keyword in C++ is used when you have a variable that needs to be accessed by several objects of the same class, and this variable doesnt need to be different for each object. An Example would be the Security number of an Employee, which just needs to be incremented as an object is created. It is accessed by each object, and therefore it makes sense for it to be declared in a way where it does not get copied for each object, thereby saving space.
+	\item \textbf{Why to use concept of interface in Java}\\
+	      Java, being a \textit{platform-independent programming language}, doesn't work on the one-step compilation. Instead, it involves a two-step execution, first through an OS-independent compiler; and second, in a virtual machine (JVM) which is custom-built for every operating system. First, the source '.java' file is passed through the compiler, which then encodes the source code into a machine-independent encoding, known as Bytecode. The content of each class contained in the source file is stored in a separate '.class' file.\\
 
-		// Logical Statements
-		if(condition)
-		{
-			cout<<"Condition true";
-		}
-		else cout << "Condition false";
+	      The class files generated by the compiler are independent of the machine or the OS, which allows them to be run on any system. To run, the main class file (the class that contains the method main) is passed to the JVM and then goes through three main stages before the final machine code is executed.
 
-		condition = condition ? true : false;
-
-		// Branching statements: 
-		switch(condition)
-		{
-			case 1: cout<<"Case 1 is being executed";
-				break;
-			case 2: cout<<"Case 2 is being executed";
-				break;
-			default: cout<<"Default case";
-				break;
-		}
-	\end{lstlisting}
-	\item \textbf{Write couple of examples/applications suitable to use OOP concepts specially use
-	of classes, objects and constructors.}\\
-	\begin{enumerate}
-		\item \textbf{Game Development}: Enemies, walls, obstacles, trees, NPCs, are often structured as classes. This is because they have a set template that each member follows, and there are often many of them in a game. This makes OOP the perfect choice. 
-		
-		\item \textbf{Machine Learning}: Machine learning often requires extensive and complex algorithms that need to be written and applied on a set of data. If such algorithms are put together as classes, then their objects can be fed that data and that algorithm can be run on it efficiently and easily, as opposed to writing it every time for each data set. 
-		
-		\item \textbf{Software Development}: GUI components like buttons, sliders, panels, frames, bars, etc often have a singular functionality associated with them. As there are many such components in a GUI, it makes sense to make them into classes, and spawn their objects in various meaningful positions in the UI. 
-	\end{enumerate}
 \end{enumerate}
-	
+
 \end{document}

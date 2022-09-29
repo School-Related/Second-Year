@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.30)  2 SEP 2022 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.30)  29 SEP 2022 23:50
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Assignment 2.tex"
-(./Assignment 2.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Assignment 2.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Assignment 2.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-10>
-(/usr/share/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -22,18 +22,14 @@ File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-)
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-)
-(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+ (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count193
@@ -48,8 +44,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen145
 \Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks17
-)
-(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -57,25 +52,21 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen147
-))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen148
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
 \inf@bad=\count196
@@ -115,13 +106,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
-)
-(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip52
 \f@nch@O@elh=\skip53
 \f@nch@O@erh=\skip54
@@ -131,47 +119,37 @@ rs
 \f@nch@O@erf=\skip58
 \f@nch@O@olf=\skip59
 \f@nch@O@orf=\skip60
-)
-(/usr/share/texmf-dist/tex/latex/float/float.sty
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count274
 \float@exts=\toks24
 \float@box=\box52
 \@float@everytoks=\toks25
 \@floatcapt=\box53
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
-)
-(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks26
 \inpenc@posthook=\toks27
-)
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(/usr/share/texmf-dist/tex/latex/fouriernc/fouriernc.sty
+) (/usr/share/texmf-dist/tex/latex/fouriernc/fouriernc.sty
 Package: fouriernc 2005/12/20 1.0 fouriernc package
-
-(/usr/share/texmf-dist/tex/latex/fourier/fourier.sty
+ (/usr/share/texmf-dist/tex/latex/fourier/fourier.sty
 Package: fourier 2022/02/05 2.3 fourier-GUTenberg package
 Now handling font encoding FML ...
 ... no UTF-8 mapping file for font encoding FML
@@ -179,19 +157,14 @@ Now handling font encoding FMS ...
 ... no UTF-8 mapping file for font encoding FMS
 Now handling font encoding FMX ...
 ... no UTF-8 mapping file for font encoding FMX
-
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+ (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
-12.
-
-(/usr/share/texmf-dist/tex/latex/fourier/t1futs.fd
+LaTeX Font Info:    Trying to load font information for T1+futs on input line 112.
+ (/usr/share/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
-))
-(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+)) (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(/usr/share/texmf-dist/tex/latex/fourier/fourier-orns.sty
+) (/usr/share/texmf-dist/tex/latex/fourier/fourier-orns.sty
 Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
 )
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
@@ -241,13 +214,11 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 126.
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
 LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-27.
+(Font)              `largesymbols' in the math version `normal' on input line 127.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
 LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 127
-.
+(Font)              `largesymbols' in the math version `bold' on input line 127.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
@@ -266,10 +237,8 @@ LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 132.
 LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 138.
 LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 139.
 LaTeX Font Info:    Redeclaring math symbol \vDash on input line 142.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 14
-3.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
-44.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 144.
 LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 145.
 LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 146.
 LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
@@ -283,13 +252,11 @@ LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 155.
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
 LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 162.
 LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 163.
-LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 164
-.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 164.
 LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 165.
 LaTeX Font Info:    Redeclaring math symbol \square on input line 166.
 LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 167.
 LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 168.
-
 LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 169.
 LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
 LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
@@ -367,8 +334,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `normal'
 (Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
 (Font)                  FMS/futm/m/n --> FMS/fncm/m/n on input line 38.
-)
-(/usr/share/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+) (/usr/share/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
 
@@ -388,22 +354,18 @@ Package tocbibind Note: Using section or other style headings.
 \lst@newlines=\count279
 \lst@lineno=\count280
 \lst@maxwidth=\dimen161
-
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count281
 \lst@skipnumbers=\count282
 \lst@framebox=\box55
-)
-(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+ (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
-
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
@@ -417,21 +379,17 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
-LaTeX Font Info:    Trying to load font information for T1+fnc on input line 58
-.
-
-(/usr/share/texmf-dist/tex/latex/fouriernc/t1fnc.fd
+LaTeX Font Info:    Trying to load font information for T1+fnc on input line 58.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 10.18341pt on input line 58.
-
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box56
-)
-(./Assignment 2.aux)
+) (./Assignment 2.aux)
 \openout1 = `"Assignment 2.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -449,25 +407,20 @@ LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 58.
-LaTeX Font Info:    Trying to load font information for FML+fncmi on input line
- 58.
+LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 58.
  (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 58.
-LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 
-58.
-
-(/usr/share/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
+LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 58.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 58.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-58.
-
-(/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 58.
+ (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 58.
@@ -521,12 +474,9 @@ LaTeX Font Info:    ... okay on input line 58.
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 58.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 58.
@@ -550,105 +500,107 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 4.
+(Font)              scaled to size 7.71893pt on input line 3.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 4.
+(Font)              scaled to size 5.57996pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 4.
+(Font)              scaled to size 10.07397pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 4.
+(Font)              scaled to size 7.63599pt on input line 3.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 4.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 
-4.
-
-(/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 3.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 4.
+(Font)              scaled to size 10.07397pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 4.
+(Font)              scaled to size 7.63599pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 4.
+(Font)              scaled to size 5.51999pt on input line 3.
 )
 \tf@toc=\write3
 \openout3 = `"Assignment 2.toc"'.
 
  [1]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 152.
+(Font)              scaled to size 11.15991pt on input line 139.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 152.
+(Font)              scaled to size 11.15991pt on input line 139.
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 147.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 147.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 153.
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-56.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 157.
-
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
+(Font)              scaled to size 10.18341pt on input line 178.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 178.
+(Font)              scaled to size 13.39188pt on input line 179.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [1
 
 ] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 206.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 207.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
 
  []
 
@@ -657,61 +609,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 345--348
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[5] (../Programs/java_imp/src/Employee.java
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[7]) (../Programs/java_imp/src/Source.java
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[8]) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+[4] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
+) (../Programs/java_implementations/assignment_2/Employee.java) (../Programs/java_implementations/assignment_2/InternEmployee.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
+[5]) (../Programs/java_implementations/assignment_2/FullTimeEmployee.java) (../Programs/java_implementations/assignment_2/Main.java)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6] (../Programs/java_implementations/assignment_2b/TwoWheeler.java) (../Programs/java_implementations/assignment_2b/MotorCycle.java) (../Programs/java_implementations/assignment_2b/Cycle.java
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[7]) (../Programs/java_implementations/assignment_2b/Main.java)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[8] (../Programs/cpp_implementations/Assignment_2.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [9]
@@ -720,16 +659,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[10] (../Programs/cpp_implementation/Assignment_2.cpp
+[10]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [11]
@@ -738,7 +675,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [12]
@@ -747,16 +683,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[13]
+[13]) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [14]
@@ -765,16 +703,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[15])
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [16]
@@ -783,48 +719,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [17]
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [18]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[19]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 590--592
 
  []
 
@@ -833,54 +753,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 768--770
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[23] (./Assignment 2.aux) ) 
+[19] (./Assignment 2.aux) ) 
 Here is how much of TeX's memory you used:
- 6944 strings out of 478238
- 97169 string characters out of 5850456
- 1103203 words of memory out of 5000000
- 25056 multiletter control sequences out of 15000+600000
- 515155 words of font info for 81 fonts, out of 8000000 for 9000
+ 6970 strings out of 478238
+ 99406 string characters out of 5850456
+ 1150038 words of memory out of 5000000
+ 25059 multiletter control sequences out of 15000+600000
+ 515465 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,571b,1943s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-s
-uper-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texm
-f-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsb
-k/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/s
-hare/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 2.pdf" (25 pages, 179058 bytes).
+ 65i,13n,69p,655b,1910s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on "Assignment 2.pdf" (21 pages, 168225 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
