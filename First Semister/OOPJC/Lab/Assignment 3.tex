@@ -44,7 +44,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{OOPJC Assignment 2}}}
+\fancyhead[L]{\textit{\Large{OOPJC Assignment 3}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -84,7 +84,7 @@
 
 
 	\huge{\textsc{
-			Implementation of Inheritance using C++ and Java
+			Implementation of Polymorphism using C++ and JAVA
 		}} \\
 
 
@@ -128,41 +128,30 @@
 \setcounter{page}{1}
 
 \section{Aim and Objectives}
-\subsection*{Aim}
-To Implement inheritance using C++ and Java (with interfaces).
-\subsection*{Objectives}
-\begin{enumerate}
-	\item To understand the inheritance or is-A relationship concept.
-	\item To understand code reusability.
-	\item To learn implementation of interfaces in java.
-\end{enumerate}
+Implementation of Polymorphism using C++ and Java.
 \section{Problem Statements}
 \subsection{Problem 1 in C++}
 
-Design and develop inheritance for a given case study, identify objects and relationships
-and implement inheritance wherever applicable using C++.\\
-Employee class has Empname, Empid, Address, Mailid, and Mobileno as data
-members.
-Add the Following Classes
+Write a C++ program with base class Employee and three derived classes namely
 \begin{itemize}
-	\item Programmer
-	\item Team Leader
-	\item Assistant Project Manager
-	\item Project Manager from Employee Class
+	\item SalariedEmployees
+	\item CommissionEmployees
+	\item HourlyEmployees
 \end{itemize}
-\noindent
-Add Basic Pay as the member of all the inherited classes with 97 \% of the Basic Pay as DA, 10 \% of Basic Pay as HRA, 12 \% of  Basic Pay as PF, 0.1 \% of Basic Pay for staff club fund.
 
-Generate Pay slips for the Employees with their gross and net salaries.
+Declare calculateSalary() as a pure virtual function in base class and define it in respective
+derived classes to calculate salary of an employee.
+The company wants to implement an Object Oriented Application that performs its payroll
+calculations polymorphically.
+
 
 \subsection{Problem 2 in Java}
-Write a Java Program for demonstrating Inheritance in Java.
-Write a program in Java showing hierarchical inheritance with base class as Employee and
-derived classes as FullTimeEmployee and InternEmployee with methods DisplaySalary in
-base class and CalculateSalary in derived classes.
-Calculate salary method will calculate as per increment given to fulltime and intern
-Employees. Fulltime employee- 50\% hike, Intern employee-25\% hike. Display salary
-before and after hike.
+
+Define a Class \textbf{Shapes} as the Base Class and other : 
+\begin{itemize}
+	\item 
+\end{itemize}
+
 \subsection{Probelm 3 in Java}
 Write a java program to create two interfaces Motorbike and Cycle.
 \begin{itemize}

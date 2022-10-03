@@ -19,3 +19,6 @@
 \contentsline {section}{\numberline {6}Producer Consumer Problem}{7}{}%
 \contentsline {subsection}{\numberline {6.1}Solution to producer cnsumer problem using semaphore}{8}{}%
 \contentsline {subsection}{\numberline {6.2}Reader and Writer Problem}{8}{}%
+\contentsline {section}{\numberline {7}Inter Process Communication}{9}{}%
+\contentsline {subsection}{\numberline {7.1}Pipe}{10}{}%
+\contentsline {section}{\numberline {8}Monitor}{10}{}%

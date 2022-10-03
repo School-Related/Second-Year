@@ -2,7 +2,7 @@
 // pipe system call in C
 #include <stdio.h>
 #include <unistd.h>
-#include<stdlib.h>
+#include <stdlib.h>
 
 int basic(void)
 {
@@ -32,16 +32,25 @@ int read_write_eg(void)
     }
 
     char *pin = "4128\0";
+    pid_t pid = fork();
 
-    printf("Writing PIN to pipe...\n");
-    write(pipefds[1], pin, 5);
-    printf("Done.\n\n");
-
-    printf("Reading PIN from pipe...\n");
-    read(pipefds[0], buffer, 5);
-    printf("Done.\n\n");
-
-    printf("PIN from pipe: %s\n", buffer);
+    if (pid > 0)
+    {
+        printf("In the parent rn. \n");
+        printf("Writing PIN to pipe...\n");
+        write(pipefds[1], pin, 5);
+        printf("Done.\n\n");
+    }
+    if (pid == 0)
+    {
+        close(pipefds[1]);
+        printf("In the child rn. \n");
+        printf("Reading PIN from pipe...\n");
+        read(pipefds[0], buffer, 5);
+        printf("Done.\n\n");
+        printf("PIN from pipe: %s\n", buffer);
+    }
+    close(pipefds[0]);
 
     return EXIT_SUCCESS;
 }

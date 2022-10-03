@@ -120,7 +120,7 @@ void display_mat(int *matrix, int rows, int cols)
     }
     printf("\n");
 }
-
+1
 int main()
 {
     int rows_simple = 5, cols_simple = 5, choice = 0;

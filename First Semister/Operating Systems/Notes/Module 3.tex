@@ -485,4 +485,44 @@ The required output is "001100110010011" Processes are sunchronized using P and 
 
 \end{lstlisting}
 
+\section{Inter Process Communication}
+There are several mechanisms for inter process communication (IPC)
+\begin{itemize}
+	\item Signals
+	\item FIFOS that are called pipes. 
+	\item pipes
+	\item Sockets
+	\item Message passing
+	\item Sahred memory
+	\item Semaphores. 
+\end{itemize}
+
+\subsection{Pipe}
+A Pipe is a communication medium between two or more related ro interrelated processes. It can be either within one process ro a communciation betwen the child and the paretn processes.
+UNIX deals with pipes the same way it deals with files. A process can send data down a pipe using a write system call and another process that can receive the data by using read at the other end.  
+
+\begin{itemize}
+	\item Within programs a pipe is created using a system call named pipie.
+	\item This system call would create a pipe for one way communication. 
+	\item This call would return zero on success and -1 on case of failure. 
+	\item If successful this cal returns two file descriptors. 
+	\begin{lstlisting}[language = C]
+		#include<unistd.h>
+		int pipe(int filedes[2]);
+		// filedes is the file handler. 
+	\end{lstlisting}
+	\item filesdes is a two integer array that that will hold the file descriptors that will indentify the pipe if successful. 
+	\item filedes[0] will be open for reading from the pipe. 
+	\item filedes[1] will be open for writing down it. 
+	\item piep can fail returns -1 if it cannot obtain the file descriptors (exceeds user limit or kernel limit)
+	\item console > parent > write > read by child > console > display > parent.
+\end{itemize}
+
+\section{Monitor}
+\begin{itemize}
+	\item Monitors are a synchronizatiion construct. 
+	\item Monitors contain data variables and procedures. 
+	\item Data variables cannot be directly accessed by a process. 
+	\item Monitors allow only a single process to access the variabels at a time. 
+\end{itemize}
 \end{document}

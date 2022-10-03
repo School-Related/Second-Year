@@ -7,7 +7,7 @@ public class Main {
         obj.accept();
         obj.display();
     }
-
+    
     public static void program_2() {
         Division d = new Division();
         d.accept();
