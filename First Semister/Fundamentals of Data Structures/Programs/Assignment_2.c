@@ -79,10 +79,6 @@ void fast_transpose(int sparse_mat[][3], int transponsed_mat[][3])
 
     // counter variable starting from 1 coz 0 is header
     int row_count_t_matrix = 1;
-
-    
-
-
 }
 
 // Adds 2 known and defined sparse matrices, and assigns it to the 3rd one.
@@ -120,7 +116,6 @@ void display_mat(int *matrix, int rows, int cols)
     }
     printf("\n");
 }
-1
 int main()
 {
     int rows_simple = 5, cols_simple = 5, choice = 0;

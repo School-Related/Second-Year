@@ -6,20 +6,20 @@ int count_distinct(int some_arr[], int size)
 {
     int distinct = 0;
     int count = 0;
-    int random_arr[size];
-    for (int i = 0; i < size; i++)
-    {
-        random_arr[i] = some_arr[i];
-    }
+    // int random_arr[size];
+    // for (int i = 0; i < size; i++)
+    // {
+    //     random_arr[i] = some_arr[i];
+    // }
 
     for (int i = 0; i < size; i++)
     {
         for (int j = i + 1; j < size; j++)
         {
-            if ((random_arr[i] == random_arr[j]) && random_arr[j] != -1)
+            if ((some_arr[i] == some_arr[j]) && some_arr[j] != -1)
             {
                 count++;
-                random_arr[j] = -1;
+                some_arr[j] = -1;
             }
         }
     }

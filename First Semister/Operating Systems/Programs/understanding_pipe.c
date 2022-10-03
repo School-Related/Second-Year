@@ -10,7 +10,7 @@ int basic(void)
 
     if (pipe(pipefds) == -1)
     {
-        perror("pipe");
+        // perror("pipe");
         exit(EXIT_FAILURE);
     }
 
@@ -27,7 +27,7 @@ int read_write_eg(void)
 
     if (pipe(pipefds) == -1)
     {
-        perror("pipe");
+        // perror("pipe");
         exit(EXIT_FAILURE);
     }
 
