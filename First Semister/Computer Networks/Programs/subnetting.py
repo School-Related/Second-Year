@@ -91,13 +91,15 @@ def get_ip(ip_list):
 def main():
     
     given_ip = []
-    s = '205.16.37.24'
-    subnet_number = 32
+    # s = '205.16.37.24'
+    # s = '172.20.15.1'
+    s = '192.168.1.0'
+    subnet_number = 8
     
     
     # Input from user. 
     print('Enter the Given IP Address: ')
-    # s = input(given_ip)
+    # s = input()
     
     print('Enter the Number of Subnets you Want to make: ')
     # subnet_number = int(input())
