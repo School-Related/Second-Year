@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Aim and Objectives}{1}{}%
+\contentsline {section}{\numberline {2}Problem Statements}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Problem 1 in C++}{1}{}%
+\contentsline {subsection}{\numberline {2.2}Problem 2 in Java}{1}{}%
+\contentsline {subsection}{\numberline {2.3}Problem 3 in Java}{2}{}%
+\contentsline {subsection}{\numberline {2.4}Problem 4 in Java}{2}{}%
+\contentsline {section}{\numberline {3}Theory}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Concept of Compile time Polymorphism}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Concept of Run Time Polymorphism}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Use of Pure Virtual Functions}{2}{}%
+\contentsline {section}{\numberline {4}Platform}{2}{}%
+\contentsline {section}{\numberline {5}Input}{2}{}%
+\contentsline {section}{\numberline {6}Output}{3}{}%
+\contentsline {section}{\numberline {7}Code}{3}{}%
+\contentsline {subsection}{\numberline {7.1}C++ Implementation of Problem A}{3}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}C++ Output}{5}{}%
+\contentsline {subsection}{\numberline {7.2}Java Implementation of Problem B}{6}{}%
+\contentsline {subsubsection}{\numberline {7.2.1}Java Output}{7}{}%
+\contentsline {subsection}{\numberline {7.3}Java Implementation of Problem C}{8}{}%
+\contentsline {subsubsection}{\numberline {7.3.1}Java Output}{9}{}%
+\contentsline {subsection}{\numberline {7.4}Java Implementation of Problem D}{9}{}%
+\contentsline {subsubsection}{\numberline {7.4.1}Java Output}{11}{}%
+\contentsline {section}{\numberline {8}Conclusion}{12}{}%
+\contentsline {section}{\numberline {9}FAQs}{13}{}%

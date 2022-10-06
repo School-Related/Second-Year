@@ -24,7 +24,7 @@ class D2 : virtual public Base
 
 class C : public D1, public
 
- D2
+D2
 {
 
     public: 

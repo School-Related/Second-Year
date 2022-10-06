@@ -323,68 +323,7 @@ int main() {
 
 \section{Code}
 
-\subsection{Java Implementation of Problem 2}
-
-\lstinputlisting[language=java, caption=Employee.java]{../Programs/java_implementations/assignment_2/Employee.java}
-\lstinputlisting[language=java, caption=Intern Employee.java]{../Programs/java_implementations/assignment_2/InternEmployee.java}
-\lstinputlisting[language=java, caption=Full Time Employee.java]{../Programs/java_implementations/assignment_2/FullTimeEmployee.java}
-\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_2/Main.java}
-
-\subsubsection{Java Output for Problem 2}
-\begin{lstlisting}[caption=Java Output for Problem 2]
-Welcome to Salary Hiking Program
-Enter the Details about the Full Time Employee:
-
-Enter the Employee Name
-Tony
-Enter The Employee ID
-1001
-Enter The Employee Salary
-100000
-The Employee Name is: Tony
-The Employee ID is: 1001
-The Salary Before the Hike for this Full time Employee is: 100000.0
-The Salary after the Hike for this Full time Employee is : 200000.0
-Enter the Details about the Intern Employee:
-
-Enter the Employee Name
-Steve
-Enter The Employee ID
-1002
-Enter The Employee Salary
-50000
-The Employee Name is: Steve
-The Employee ID is: 1002
-The Salary Before the Hike for this Intern Employee is: 50000.0
-The Salary after the Hike for this Intern Employee is : 100000.0
-\end{lstlisting}
-
-\subsection{Java Implementation of Problem 3 using Interfaces}
-
-\lstinputlisting[language=java, caption=Two Wheeler.java]{../Programs/java_implementations/assignment_2b/TwoWheeler.java}
-\lstinputlisting[language=java, caption=MotorCycle.java]{../Programs/java_implementations/assignment_2b/MotorCycle.java}
-\lstinputlisting[language=java, caption=Cycle.java]{../Programs/java_implementations/assignment_2b/Cycle.java}
-\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_2b/Main.java}
-
-\subsubsection{Java Output}
-\begin{lstlisting}[caption=Java Output for Program 3]
-Calculating Speed:
-Enter the Distance Travelled by Your 2 Wheeler:
-50
-Enter the Time you Travelled on Your 2 Wheeler:
-2
-The Speed is:
-25
-Calculating Total Distance:
-Enter the Speed of Your 2 Wheeler:
-25
-Enter the Time you Travelled on Your 2 Wheeler:
-2
-The Total Distance is:
-50
-\end{lstlisting}
-
-\subsection{C++ Implementation}
+\subsection{C++ Implementation for Problem 1}
 
 \lstinputlisting[language=c++, caption=Main.Cpp]{../Programs/cpp_implementations/Assignment_2.cpp}
 
@@ -548,6 +487,67 @@ Whose Details do you wanna enter?
 5
 \end{lstlisting}
 
+\subsection{Java Implementation of Problem 2}
+
+\lstinputlisting[language=java, caption=Employee.java]{../Programs/java_implementations/assignment_2/Employee.java}
+\lstinputlisting[language=java, caption=Intern Employee.java]{../Programs/java_implementations/assignment_2/InternEmployee.java}
+\lstinputlisting[language=java, caption=Full Time Employee.java]{../Programs/java_implementations/assignment_2/FullTimeEmployee.java}
+\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_2/Main.java}
+
+\subsubsection{Java Output for Problem 2}
+\begin{lstlisting}[caption=Java Output for Problem 2]
+Welcome to Salary Hiking Program
+Enter the Details about the Full Time Employee:
+
+Enter the Employee Name
+Tony
+Enter The Employee ID
+1001
+Enter The Employee Salary
+100000
+The Employee Name is: Tony
+The Employee ID is: 1001
+The Salary Before the Hike for this Full time Employee is: 100000.0
+The Salary after the Hike for this Full time Employee is : 200000.0
+Enter the Details about the Intern Employee:
+
+Enter the Employee Name
+Steve
+Enter The Employee ID
+1002
+Enter The Employee Salary
+50000
+The Employee Name is: Steve
+The Employee ID is: 1002
+The Salary Before the Hike for this Intern Employee is: 50000.0
+The Salary after the Hike for this Intern Employee is : 100000.0
+\end{lstlisting}
+
+\subsection{Java Implementation of Problem 3 using Interfaces}
+
+\lstinputlisting[language=java, caption=Two Wheeler.java]{../Programs/java_implementations/assignment_2b/TwoWheeler.java}
+\lstinputlisting[language=java, caption=MotorCycle.java]{../Programs/java_implementations/assignment_2b/MotorCycle.java}
+\lstinputlisting[language=java, caption=Cycle.java]{../Programs/java_implementations/assignment_2b/Cycle.java}
+\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_2b/Main.java}
+
+\subsubsection{Java Output}
+\begin{lstlisting}[caption=Java Output for Program 3]
+Calculating Speed:
+Enter the Distance Travelled by Your 2 Wheeler:
+50
+Enter the Time you Travelled on Your 2 Wheeler:
+2
+The Speed is:
+25
+Calculating Total Distance:
+Enter the Speed of Your 2 Wheeler:
+25
+Enter the Time you Travelled on Your 2 Wheeler:
+2
+The Total Distance is:
+50
+\end{lstlisting}
+
 \pagebreak
 
 \section{Conclusion}
@@ -671,7 +671,44 @@ int main() {
 		            You can achieve loose coupling in Java using interfaces
 
 	      \end{itemize}
+	\item \textbf{Write Couple of Examples or Applications suitable to Demonstrate use of Inheritances.}\\
+	
+	Inheritance is a core part of Object Oriented Programming. In every Object oriented language, it is heavily used, and these languages are heavily used in almost all fields involving programming, which makes the uses of inheritance vast and versatile. So some of them are listed below. 
+	\begin{enumerate}
+		\item In Application Development: Every GUI that we see on screens, is often built on simple base classes like buttons, sliders, labels, titlebars etc. The Programmer often just inherits it, and overrides certain methods to his or her liking. 
+		\item Games are built in many different ways, but as the scale of games increase it becomes pertinent to use simple base classes like trees, enemies, players, friends, coins, As there might be several of the same kind of enemies, and several sorts of trees in the game environment, which will all inherit the base class and override or create certain new methods. 
+		\item In Data Science, Many algorithms are their own predefined classes, The programmer then tweaks certain parameters, and this helps them streamline and organize the process of applying this algorithm on hundreds of different datasets without hassle. 
+	\end{enumerate}
 
+	\begin{lstlisting}[language = Java]
+		// Here is an example of Creating a GUI in Java using Swing. 
+
+		// This is the definition of the JButton class, which is used for placing buttons on the screen. 
+		public class JButton extends AbstractButton implements Accessible  
+
+
+		import javax.swing.*;    
+		public class ButtonExample {  
+			public static void main(String[] args) {  
+
+				JFrame f=new JFrame("Button Example");  
+				JButton b=new JButton("Click Here");
+
+				b.setBounds(50,100,95,30);  
+				f.add(b);  
+				f.setSize(400,400);  
+				f.setLayout(null);  
+				f.setVisible(true);   
+			}  
+		}  
+		
+	\end{lstlisting}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=1]{button.png}
+	\end{figure}
+	
 
 \end{enumerate}
 

@@ -9,7 +9,7 @@ public class Bank {
     public int c_id;
     Scanner input = new Scanner(System.in);
 
-    public void accept() {
+    public int accept() {
         System.out.println("Enter the customer id: ");
         try {
             c_id = input.nextInt();
@@ -18,6 +18,7 @@ public class Bank {
             }
         } catch (Exception e) {
             System.out.println("Wrong customer id");
+            return 0;
         }
 
         System.out.println("Enter the Amount in your Account: ");
@@ -28,6 +29,7 @@ public class Bank {
             }
         } catch (Exception e) {
             System.out.println("Mimimum amount cant be less than 1000. ");
+            return 0;
         }
 
         System.out.println("Enter the Withdrawal Amount: ");
@@ -40,7 +42,10 @@ public class Bank {
             }
         } catch (Exception e) {
             System.out.println("Withdrawal Amount more than amount in bank. ");
+            return 0;
         }
+
+        return 1;
     }
 
     public void display() {

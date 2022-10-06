@@ -4,14 +4,18 @@ public class Main {
 
     public static void program_3() {
         Bank obj = new Bank();
-        obj.accept();
-        obj.display();
+        if (obj.accept() == 1) {
+            System.out.println("Data entered Correctly!");
+            obj.display();
+        } else {
+            System.out.println("Data entered Incorrectly!");
+        }
     }
-    
+
     public static void program_2() {
         Division d = new Division();
         d.accept();
-        System.out.printn("Dividing the inputs: ");
+        System.out.println("Dividing the inputs: ");
         System.out.println(d.divide());
 
     }
@@ -26,7 +30,7 @@ public class Main {
 
     public static void main(String args[]) {
 
-        program_1();
+        // program_1();
         program_2();
         program_3();
 

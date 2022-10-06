@@ -1,14 +1,42 @@
+package assignment_3;
+
 public class Shapes {
 
-    public static double Area;
+    public double Area;
+    public double side;
+    public double length;
+    public double breadth;
+    public int radius;
 
-    Shapes()
-    {
+    Shapes(int radius) {
         Area = 0.0;
+        this.radius = radius;
     }
 
-    public int area()
-    {
-        return 0;
+    Shapes(double length, double breadth) {
+        Area = 0.0;
+        this.length = length;
+        this.breadth = breadth;
     }
+
+    Shapes(double side) {
+        Area = 0.0;
+        this.side = side;
+    }
+
+    double Area(int radius) {
+        Area = 3.14 * radius * radius;
+        return Area;
+    }
+
+    double Area(double length, double breadth) {
+        Area = length * breadth;
+        return Area;
+    }
+
+    double Area(double side) {
+        Area = side * side;
+        return Area;
+    }
+
 }

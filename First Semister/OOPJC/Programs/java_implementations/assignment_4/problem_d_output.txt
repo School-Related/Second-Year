@@ -1,0 +1,23 @@
+Enter the customer id: 
+1001
+Wrong customer id
+Data entered Incorrectly!
+
+Enter the customer id: 
+1
+Enter the Amount in your Account: 
+5000
+Enter the Withdrawal Amount: 
+3000
+Data entered Correctly!
+
+
+The Customer ID is: 
+1
+The Amount in the Bank Before Withdrawing was: 
+5000
+The Withdrawal Amount is: 
+3000
+The Amount Remaining in Bank is: 
+2000
+ krishnaraj@

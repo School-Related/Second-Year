@@ -58,7 +58,7 @@ public:
     void calculate_salary()
     {
         cout << "Calculating Salary of Salaried Employee" << endl;
-        net_sal = weekly_salary * 4;
+        net_sal = weekly_salary * 7;
     }
 
     void display()

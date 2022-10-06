@@ -525,4 +525,39 @@ UNIX deals with pipes the same way it deals with files. A process can send data 
 	\item Data variables cannot be directly accessed by a process. 
 	\item Monitors allow only a single process to access the variabels at a time. 
 \end{itemize}
+
+\section{Deadlock}
+As mentioned before, its whne a finite number of resources are to be distributed among a number of competing processes, then this happens. 
+A set of blocked processes each holding a resource and waiting to acquire a resource held by another process in the set. 
+
+\subsection{Deadlock Characterization}
+\textbf{Deadlock would happen if some of these things happen at the same time. }
+\begin{itemize}
+	\item Mutual Exclusion: Resources must be held in a nonsharable mode. 
+	\item Hold and Wait: A process holding at least one resource is waiting to acquire additional resources held by other processes. 
+	\item No Preemption: A resource can be released only voluntarily by the process holding it. after that the process has completed its task. 
+	\item Circular wait: There exists a set of waiting processes such that P0 is waiting for a resoruce that is held by P1. Who is then again waiting for a resource that is hed by P2, and so on, until the last process being dependent on P0 completing its task, which means no one is going to do anything. 
+\end{itemize}
+
+\subsection{Resource Allocation graph}
+\begin{itemize}
+	\item If there isnt a cycle, then there there is no deadlock. 
+	\item If graph has a cycle, then if only one instance per resource type, then deadlockk. 
+	\item If several instances of the resource, then chance of deadlock. 
+\end{itemize}
+
+\subsection{Method of Handling a Deadlock. }
+Ensure that the system will never enter into deadlock. 
+\begin{itemize}
+	\item You can either prevent it, naturally 
+	\item or you can avoid it, which i dont even get like arent they the same thing?
+	\item By ensuring that atleast one of the conditions cannot hold, we can prevent deadlock. 
+	\item Like say \textbf{Mutual Exclusion}, Things like printers arent sharable by nature. so we better not allow a 2 processes to use the printer at the same time. 
+	\item Holding and waiting is another way to avoid deadlock. Require the process to request what resoruce it needs, and allocate it all the resources before it begins execution. If there is, Low Resource Unitlization, so starvation is also possible.
+	\item Another problem would be \textbf{no preemption}: so if a process that is holding some resoruce and requests another resrouce, that cannot be immediately allocated to it, then all resoruce currently being held are released. 
+	\item Preempted resourcees are added to the list of resrouces for which the process is waiting. 
+	\item Process will be something 
+	\item \textbf{Circular Weight}: 
+\end{itemize}
+Allow the system to enter a deadlock state and then recover. Ignore the problem and pretend that deadlock never occured in the system. Used by most Operating systems. 
 \end{document}

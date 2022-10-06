@@ -29,6 +29,7 @@ public class Division {
     Scanner input = new Scanner(System.in);
 
     void accept() {
+        System.out.println("Enter the Numbers that you want to divide. ");
         try {
             n1 = input.nextInt();
             n2 = input.nextInt();
@@ -40,10 +41,10 @@ public class Division {
     int divide() {
         try {
             ans = n1 / n2;
-            return ans;
         } catch (ArithmeticException e) {
             System.out.println("Exception Caught! Cant divide by Zero!");
         }
+        return ans;
     }
 
 }
