@@ -30,6 +30,7 @@
     "Programs/javatest2"
   ],
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "new": "cpp"
   }
 }

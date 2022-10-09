@@ -121,7 +121,7 @@ int selection_sort(struct Student students[], int number_of_students)
         // find the minimum element in the rest of the array
         for (int j = i + 1; j < number_of_students; j++)
         {
-            if (students[j].marks > min)
+            if (students[j].marks < min)
             {
                 min = j;
             }
@@ -184,7 +184,7 @@ int main()
             {2, "b", 100},
             {3, "c", 70}};
 
-    // accept_array(students, number_of_students);
+    accept_array(students, number_of_students);
     display(students, 3, 0);
 
     printf("\n\n Welcome to Assignment 2\n");

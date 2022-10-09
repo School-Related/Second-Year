@@ -79,15 +79,25 @@ void fast_transpose(int sparse_mat[][3], int transponsed_mat[][3])
 
     // counter variable starting from 1 coz 0 is header
     int row_count_t_matrix = 1;
-}
 
-// Adds 2 known and defined sparse matrices, and assigns it to the 3rd one.
-void add_sparse_mats(int sparse_mat_1[][3], int rows_of_1, int sparse_mat_2[][3], int rows_of_2, int added_sparse[][3])
-{
-    int rows_of_add = rows_of_1 > rows_of_2 ? rows_of_1 : rows_of_2;
-    int added_mat[rows_of_add][3];
+    for (int i = 0; i <= cols_simple_mat; i++)
+    {
+        s[i] = 0;
+    }
+    for (int i = 1; i <= no_of_vals; i++)
+    {
+        s[a[i][1]]++;
+    }
 
-    // added_mat = sparse_mat_1 + sparse_mat_2
+    T[0] = 1;
+    for (i = 1; i < cols_simple_mat; i++)
+    {
+        i = T[a[i][1]];
+        b[T[j][0]] = a[i][1];
+        b[T[j][1]] = a[i][0];
+        b[T[j][2]] = a[i][2];
+        T[a[i][1]]++;
+    }
 }
 
 // Accepts a Variable length 2 Dimensional Matrix
@@ -155,18 +165,18 @@ int main()
                               {4, 4, 2}};
 
     printf("What do you wanna do with the matrices?"
-           " \n1. Simple Transpose\n2. Fast Transpose\n3. Add 2 Sparse Matrices\n\n");
+           " \n1. Simple Transpose\n2. Fast Transpose\n\n");
     scanf("%d", &choice);
     switch (choice)
     {
     case 1:
 
-        // printf("Enter the rows of the Matrix: (Max 5) \n");
-        // scanf("%d", &rows);
-        // printf("Enter the columns of the Matrix: (Max 5) \n");
-        // scanf("%d", &cols);
-        // pritnf("Enter the simple matrix: \n");
-        // accept_mat(&simple_mat[0][0], rows_simple, cols_simple);
+        printf("Enter the rows of the Matrix: (Max 5) \n");
+        scanf("%d", &rows_simple);
+        printf("Enter the columns of the Matrix: (Max 5) \n");
+        scanf("%d", &cols_simple);
+        pritnf("Enter the simple matrix: \n");
+        accept_mat(&simple_mat[0][0], rows_simple, cols_simple);
         printf("The Matrix you entered is: \n\n");
         display_mat(&simple_mat[0][0], rows_simple, cols_simple);
         convert_to_sparse(&simple_mat[0][0], rows_simple, cols_simple, sparse_mat);
@@ -178,10 +188,10 @@ int main()
         break;
     case 2:
 
-        // printf("Enter the rows of the Matrix: (Max 5) \n");
-        // scanf("%d", &rows);
-        // printf("Enter the columns of the Matrix: (Max 5) \n");
-        // scanf("%d", &cols);
+        printf("Enter the rows of the Matrix: (Max 5) \n");
+        scanf("%d", &rows_simple);
+        printf("Enter the columns of the Matrix: (Max 5) \n");
+        scanf("%d", &cols_simple);
 
         printf("The Matrix you entered is: \n\n");
         display_mat(&simple_mat[0][0], rows_simple, cols_simple);
@@ -191,27 +201,6 @@ int main()
         fast_transpose(sparse_mat, transposed_mat);
         printf("The Transposed Matrix is: \n\n");
         display_mat(&transposed_mat[0][0], transposed_mat[0][2] + 1, 3);
-        break;
-
-    case 3:
-        // printf("Enter the rows of the First Sparse matrix Excluding the header: \n");
-        // scanf("%d", &sparse_mat_1[0][2]);
-        // accept_mat(sparse_mat_1, sparse_mat_1[0][2] + 1, 3);
-
-        // printf("Enter the rows of the Second Sparse matrix Excluding the header: \n");
-        // scanf("%d", &sparse_mat_2[0][2]);
-        // accept_mat(sparse_mat_2, sparse_mat_2[0][2] + 1, 3);
-
-        printf("The First Sparse Matrix you entered is: \n\n");
-        display_mat(&sparse_mat_1[0][0], sparse_mat_1[0][2] + 1, 3);
-        printf("The Second Sparse Matrix you entered is : \n\n");
-        display_mat(&sparse_mat_2[0][0], sparse_mat_2[0][2] + 1, 3);
-
-        add_sparse_mats(sparse_mat_1, sparse_mat_1_rows,
-                        sparse_mat_2, sparse_mat_2_rows, result_sparse);
-
-        printf("Here is the resulting sparse matrix\n\n");
-        display_mat(&result_sparse[0][0], result_sparse[0][2] + 1, 3);
         break;
     default:
         printf("Try again\n");

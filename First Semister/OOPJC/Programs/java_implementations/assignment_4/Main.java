@@ -1,3 +1,27 @@
+// P1
+// Implement the program to handle the arithmetic exception, ArrayIndexOutofBounds .
+// The user enters the two numbers: n1, n2. The division of n1 and n2 is displayed. If n1, n2
+// are not integers then program will throw number format exception. If n2 is zero the
+// program will throw Arithmetic exception.
+
+// P2
+// Validate the employee record with custom exception
+// Create a class employee with attributes eid, name, age and department.
+// Initialize values through parameterized constructor. If age of employee is not in between
+// 25 and 60 then generate user-defined exception "AgeNotWithinRangeException". If
+// name contains numbers or special symbols raise exception "NameNotValidException".
+// Define the two exception classes.
+
+// P3
+// Write a menu-driven program for banking system which accept the personal data for
+// Customer(cid, cname, amount).
+// Implement the user-defined/standard exceptions, wherever required to handle the
+// following situations:
+// Account should be created with minimum amount of 1000 rs..
+// For withdrawal of amount, if wth_amt greater than amount.
+// cid should be in the specific range of 1 to 20.
+// Entered amount should be positive.
+
 package assignment_4;
 
 public class Main {

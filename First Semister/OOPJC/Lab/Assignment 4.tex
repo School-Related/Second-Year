@@ -189,9 +189,102 @@ following situations:
 \end{enumerate}
 \section{Theory}
 \subsection{Exception Handling}
+Exception handling is the process of responding to unwanted or unexpected events when a computer program runs. Exception handling deals with these events to avoid the program or system crashing, and without this process, exceptions would disrupt the normal operation of a program.\\
+
+Exceptions occur for numerous reasons, including invalid user input, code errors, device failure, the loss of a network connection, insufficient memory to run an application, a memory conflict with another program, a program attempting to divide by zero or a user attempting to open files that are unavailable.\\
+
+When an exception occurs, specialized programming language constructs, interrupt hardware mechanisms or operating system interprocess communication facilities handle the exception.\\
 \subsection{Try Throw Catch Block}
+
+Exception handling in C++ revolves around these three keywords:
+
+\textbf{throw}- when a program encounters a problem, it throws an exception. The throw keyword helps the program perform the throw.\\
+
+\textbf{catch}- a program uses an exception handler to catch an exception. It is added to the section of a program where you need to handle the problem. It's done using the catch keyword.\\
+
+\textbf{try}- the try block identifies the code block for which certain exceptions will be activated. It should be followed by one/more catch blocks.
+Suppose a code block will raise an exception. The exception will be caught by a method using try and catch keywords. The try/catch block should surround code that may throw an exception. Such code is known as protected code.
+
+\begin{lstlisting}[language=C++]
+	try {
+	// the protected code
+	} catch( Exception_Name exception1 ) {
+	// catch block
+	} catch( Exception_Name exception2 ) {
+	// catch block
+	} catch( Exception_Name exceptionN ) {
+	// catch block
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java]
+try {
+  //  Block of code to try
+}
+catch(Exception e) {
+  //  Block of code to handle errors
+}	
+\end{lstlisting}
+
 \subsection{Catch All}
+Catch block is used to catch all types of exception. The keyword “catch” is used to catch exceptions.
+If used like this, it would catch all the exceptions in the try block.
+
+\begin{lstlisting}[language=C++]
+	#include <iostream>
+	using namespace std;
+
+	void func(int a) {
+	try {
+		if(a==0) throw 23.33;
+		if(a==1) throw 's';
+	} catch(...) {
+		cout << "Caught Exception!\n";
+	}
+	}
+	int main() {
+		func(0);
+		func(1);
+		return 0;
+	}
+	
+\end{lstlisting}
+\textbf{In Java}
+\begin{lstlisting}[language=Java]
+	try {
+	  //  Block of code to try
+	}
+	catch(Exception e) {
+	  //  Block of code to handle errors
+	}	
+\end{lstlisting}
+
 \subsection{Rethrowing Exceptions}
+If a catch block cannot handle the exception that it was designed to handle, then you can rethrow that exception from that catch block.
+It causes the original exception to be rethrown.
+
+Because the exception has already been caught at the scope in which the rethrow expression occurs, it is rethrown out to the next dynamically enclosing try block. Therefore, it cannot be handled by catch blocks at the scope in which the rethrow expression occurred. Any catch blocks for the dynamically enclosing try block have an opportunity to catch the exception.
+\begin{lstlisting}[language=C++]
+void f() {
+  try {
+	cout << "In try block of f()" << endl;
+	cout << "Throwing exception of type E1" << endl;
+	E1 myException;
+	throw myException;
+  }
+  catch (E2& e) {
+	cout << "In handler of f(), catch (E2& e)" << endl;
+	cout << "Exception: " << e.message << endl;
+	throw;
+  }
+  catch (E1& e) {
+	cout << "In handler of f(), catch (E1& e)" << endl;
+	cout << "Exception: " << e.message << endl;
+	throw;
+  }	
+}
+
+\end{lstlisting}
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
 \textbf{IDEs or Text Editors Used}: Visual Studio Code\\
@@ -381,7 +474,7 @@ Thus, learned to use polymorphism and implemented solution of the given problem 
 
 	      The finally block follows the try-catch block.
 
-\begin{lstlisting}[language=Java]
+	      \begin{lstlisting}[language=Java]
 	class TestFinallyBlock {    
 		public static void main(String args[]){    
 		try{    

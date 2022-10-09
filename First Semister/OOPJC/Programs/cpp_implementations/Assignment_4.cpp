@@ -1,3 +1,17 @@
+
+// Define a class Employee consisting following:
+// Data members: a. Employee ID, b. Name of Employee, c. Age, d. Income, e. City, f. Vehicle
+// Member Functions: a. To assign initial values, b. To display.
+
+// Accept Employee ID, Name, Age, Income, City and Vehicle from the user. Create
+// an exception to check the following conditions and throw an exception if the
+// condition does not meet.
+
+// Employee age between 18 and 55
+// Employee income between Rs. 50,000 to Rs. 1,00,000 per month
+// Employee staying in Pune/ Mumbai/ Bangalore / Chennai
+// Employee having 4-wheeler
+
 #include <iostream>
 #include <string.h>
 using namespace std;

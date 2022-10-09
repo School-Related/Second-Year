@@ -557,7 +557,9 @@ Ensure that the system will never enter into deadlock.
 	\item Another problem would be \textbf{no preemption}: so if a process that is holding some resoruce and requests another resrouce, that cannot be immediately allocated to it, then all resoruce currently being held are released. 
 	\item Preempted resourcees are added to the list of resrouces for which the process is waiting. 
 	\item Process will be something 
-	\item \textbf{Circular Weight}: 
+	\item \textbf{Circular Weight}:  Impose a total ordering of all resource tyes and require that each process requests resources in an increasing order of enumeration. 
 \end{itemize}
+
 Allow the system to enter a deadlock state and then recover. Ignore the problem and pretend that deadlock never occured in the system. Used by most Operating systems. 
+
 \end{document}

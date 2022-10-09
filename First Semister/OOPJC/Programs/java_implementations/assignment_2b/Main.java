@@ -1,3 +1,10 @@
+// Write a java program to create two interfaces Motorbike and Cycle.
+// Motorbike interface consists of the attribute speed.
+// The method is totalDistance().
+// Cycle interface consists of the attributes distance and the method speed().
+// These interfaces are implemented by the class TwoWheeler.
+// Calculate total distance travelled and Average Speed maintained by Two Wheeler.
+
 package assignment_2b;
 
 import java.util.Scanner;

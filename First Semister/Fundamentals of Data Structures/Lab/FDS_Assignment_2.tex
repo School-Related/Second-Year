@@ -1,0 +1,380 @@
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{FDS Assignment 2 - Sparse Matrices}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Object Oriented Programming with Java and C++\\
+		Second Year B. Tech, Semester 1
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Sparse Matrix Operations
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A2, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\setcounter{page}{1}
+
+\section{Objectives}
+\begin{enumerate}
+	\item To Study the concept of sparse matrix, how it is stored and displayed.
+	\item To understand the implementation of sparse matrix operations - Simple Transpose, Fast Transpose.
+\end{enumerate}
+
+\section{Problem Statements}
+Write a C program for sparse matrix realization and operations on it
+\begin{itemize}
+	\item Simple Transpose
+	\item Fast Transpose
+\end{itemize}
+
+\section{Theory}
+\subsection{Sparse Matrix}
+A matrix is a two-dimensional data object made of m rows and n columns, therefore having total m x n values. If most of the elements of the matrix have 0 value, then it is called a \textit{Sparse Matrix}
+
+
+\subsection{Need for Converstion of Sparse Matrix to its Compact Form}
+There are several Advantages of using a Sparse Matrix instead of a Normal one.
+
+\begin{enumerate}
+	\item Storage: There are lesser non-zero elements than zeros and thus lesser memory can be used to store only those elements.
+	\item Computing time: Computing time can be saved by logically designing a data structure traversing only non-zero elements.
+\end{enumerate}
+\subsection{Advantage of Fast Transpose over Simple Transpose}
+
+\begin{enumerate}
+	\item Fast Transpose Uses a smaller amount of memory than Simple Transpose.
+	\item Fast Transpose Sorts the Elements while inserting them into the transposed matrix as opposed to simple Transpose, which first inserts the elements into another matrix, and then sorts them, resulting in slower transposing speeds.
+\end{enumerate}
+
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64 \\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
+\textbf{Compilers} : gcc on linux for C\\
+
+\section{Input}
+
+\begin{itemize}
+	\item Normal Matrix
+	\item Sparse Matrix
+	\item Selection of whether to do Simple or Fast Transpose
+\end{itemize}
+
+\section{Output}
+\begin{itemize}
+	\item Menu to choose what to do
+	\item Converted Compact Matrix
+	\item Fast and Simple Transposed Matrix
+\end{itemize}
+
+\section{Code}
+\subsection{Pseudo Code}
+\subsubsection*{Conversion to Compact Form Pseudo Code}
+
+\begin{lstlisting}[language=C]
+Algorithm Compact(A, m, n, B)
+{
+	// m and n are total number of rows
+	// columns of original matrix
+	B(0, 0) = m;
+	B(0, 1) = n;
+	k = 1;
+	for i= 0 to m
+	{
+		for j = 0 to n
+		{
+			if(A(i, j) != 0)
+			{
+				B(k, 0) = i;
+				B(k, 1) = j;
+				B(k, 2) = A(i, j);
+				k++;
+			}
+		}
+	}
+	B(0, 2) = k - 1;
+}
+\end{lstlisting}
+\subsubsection*{Simple Transpose Pseudo Code}
+
+\begin{lstlisting}[language=C]
+Algorithm Transpose(A, B)
+{
+	// A is the Sparse Matrix
+	// B is the Transpose Matrix
+	
+	(m, n, t) = (A(0, 0), A(0, 1), A(0, 2))
+	B[0, 0] B[0, 1], B[0, 2] = (n, m, t)
+	if t <= 0:
+	{
+		return 0;
+	}
+	q = 1;
+	for(int i = 0; i < n; i++)
+	{
+		for(int j = 1; j <= t; j++)
+		{
+			if(A[j, i]] == i)
+			{
+				B[q, 0], B[q, 1], B[q, 2] = A[p, 1], A[p, 0], A[p, 2]
+				q++;
+			}
+		}
+	}
+}
+\end{lstlisting}
+\subsubsection*{Fast Transpose Pseudo Code}
+
+\begin{lstlisting}[language=C]
+algorithm Fast_transpose(a, b)
+{
+	num_rows =  a[0][0]
+	num_cols = a[0][1]
+	num_terms = a[0][2]
+	for(int i = 0; i <= num_cols; i++)
+	{
+		s[i] = 0;
+	}	
+	for(int i = 1; i <= num_terms; i++)
+	{
+		s[a[i][1]]++;
+	}
+
+	T[0] = 1;
+	for(i = 1; i <num_cols; i++)
+	{
+		i = T[a[i][1]];
+		b[T[j][0]] = a[i][1];
+		b[T[j][1]] = a[i][0];
+		b[T[j][2]] = a[i][2];
+		T[a[i][1]]++;	
+	}
+}
+\end{lstlisting}
+
+\subsection{C Implementation of Problem Statement}
+
+\lstinputlisting[language=c++, caption=Main.Cpp]{../Programs/Assignment_2.c}
+
+\subsection{C Output}
+\lstinputlisting[caption=Output]{../Programs/Assignment_2_output.txt}
+
+\section{Time Complexity}
+Time Complexity for Simple Transpose : O(N*T)\\
+Time Complexity for Fast Transpose : O(N+T)
+\section{Conclusion}
+Thus, implemented sparse matrix Operations assignment. This System is able to perform different operations on sparse matrices such as simple and fast transpose and their time complexities.
+\pagebreak
+
+\section{FAQs}
+\begin{enumerate}
+	\item \textbf{What is a sparse matrix? List the applications?}\\
+	      A matrix is a two-dimensional data object made of m rows and n columns, therefore having total m x n values. If most of the elements of the matrix have 0 value, then it is called a \textit{Sparse Matrix}
+
+	      It has several Applications in various fields, mostly involving Mathematics.
+	      \begin{enumerate}
+		      \item Sparse matrices can be useful for computing large-scale applications that dense matrices cannot handle. One such application involves solving partial differential equations by using the finite element method. The coefficient matrix is mostly sparse. Also, the size of the coefficient matrix is large in order to get an accurate approximation to the solution of PDEs. Therefore, practical finite element method applications always rely on sparse matrices and sparse matrix operations.
+		      \item Sparse matrices are at the heart of Linear Algebraic Systems. Needless to say everything of any significance happening in a sufficiently complex computer system will require lots of Linear Algebraic operations. You really cannot represent very large high dimensional matrices (when most of them have zeroes) in memory and do manipulations on them.
+		      \item Computer Graphics, Recommendtion Algorithms used by Search Engines, Machine Learning, Neural Networks, and Information Retrieval all rely on large matrices, filled mostly with null or 0 values.
+	      \end{enumerate}
+	\item \textbf{Represent sparse matrices with suitable data structures? Explain with an example simple and fast transpose?}\\
+	      \begin{enumerate}
+		      \item Using Arrays:
+		            2D array is used to represent a sparse matrix in which there are three rows named as
+
+		            Row: Index of row, where non-zero element is located
+		            Column: Index of column, where non-zero element is located
+		            Value: Value of the non zero element located at index - (row,column)
+		      \item Using Linked Lists
+		            In linked list, each node has four fields. These four fields are defined as:
+
+		            Row: Index of row, where non-zero element is located
+		            Column: Index of column, where non-zero element is located
+		            Value: Value of the non zero element located at index – (row,column)
+		            Next node: Address of the next node
+
+		      \item As a Dictionary : where row and column numbers are used as keys and values are matrix entries. This method saves space but sequential access of items is costly.
+
+	      \end{enumerate}
+
+	\item \textbf{Find out the addition of two sparse matrices in triplet form and also find Simple and Fast transpose}
+	\pagebreak
+
+	      Matrix 1:
+	      \begin{table}[H]
+		      \centering
+		      \begin{tabular}{|l|l|l|}
+			      \hline
+			      \textbf{4} & \textbf{5} & \textbf{6} \\ \hline
+			      0          & 3          & 5          \\ \hline
+			      1          & 3          & 8          \\ \hline
+			      1          & 4          & 45         \\ \hline
+			      2          & 3          & 4          \\ \hline
+			      3          & 2          & 45         \\ \hline
+			      4          & 1          & 2          \\ \hline
+		      \end{tabular}
+	      \end{table}
+
+	      Matrix 2:
+	      \begin{table}[H]
+		      \centering
+		      \begin{tabular}{|l|l|l|}
+			      \hline
+			      \textbf{4} & \textbf{5} & \textbf{6} \\ \hline
+			      0          & 3          & 7          \\ \hline
+			      0          & 4          & 6          \\ \hline
+			      1          & 4          & 4          \\ \hline
+			      2          & 1          & 8          \\ \hline
+			      3          & 2          & 45         \\ \hline
+			      4          & 4          & 21         \\ \hline
+		      \end{tabular}
+	      \end{table}
+
+	      The Addition of these Matrices would be:
+
+	      \begin{table}[H]
+		      \centering
+		      \begin{tabular}{|l|l|l|}
+			      \hline
+			      \textbf{4} & \textbf{5} & \textbf{9} \\ \hline
+			      0          & 3          & 12         \\ \hline
+			      0          & 4          & 6          \\ \hline
+			      1          & 3          & 8          \\ \hline
+			      1          & 4          & 49         \\ \hline
+			      2          & 1          & 8          \\ \hline
+			      2          & 3          & 4          \\ \hline
+			      3          & 2          & 90         \\ \hline
+			      4          & 1          & 2          \\ \hline
+			      4          & 4          & 21         \\ \hline
+		      \end{tabular}
+	      \end{table}
+
+	      The Transpose of This Matrix would be:
+	      \begin{table}[H]
+		      \centering
+		      \begin{tabular}{|l|l|l|}
+			      \hline
+			      \textbf{4} & \textbf{5} & \textbf{9} \\ \hline
+			      1          & 2          & 8          \\ \hline
+			      1          & 4          & 2          \\ \hline
+			      2          & 3          & 40         \\ \hline
+			      3          & 0          & 12         \\ \hline
+			      3          & 1          & 8          \\ \hline
+			      3          & 2          & 4          \\ \hline
+			      4          & 0          & 6          \\ \hline
+			      4          & 1          & 49         \\ \hline
+			      4          & 4          & 21         \\ \hline
+		      \end{tabular}
+	      \end{table}
+\end{enumerate}
+\end{document}

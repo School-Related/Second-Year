@@ -1,3 +1,12 @@
+// Write a C++ program with base class Employee and three derived classes namely
+// 1. salaried employees
+// 2. commission_employees and
+// 3. hourly employees
+// Declare calculate_salary() as a pure virtual function in base class and define it in respective
+// derived classes to calculate salary of an employee.
+// The company wants to implement an Object Oriented Application that performs its payroll
+// calculations polymorphically.
+
 // Polymorphism
 // Virtual Functionss, overriding functions, and overloading functions.
 

@@ -1,3 +1,18 @@
+// Design and develop inheritance for a given case study, identify objects and relationships
+// and implement inheritance wherever applicable using C++.
+// Employee class has Emp_name, Emp_id, Address, Mail_id, and Mobile_no as data
+// members.
+
+// Inherit the classes:
+// Programmer
+// Team Lead
+// Assistant Project Manager and
+// Project Manager from employee class.
+
+// Add Basic Pay as the member of all the inherited classes with 97% of Basic Pay as DA, 10
+// % of Basic Pay as HRA, 12% of Basic Pay as PF, 0.1% of Basic Pay for staff club fund.
+// Generate pay slips for the employees with their gross and net salary.
+
 #include <iostream>
 using namespace std;
 

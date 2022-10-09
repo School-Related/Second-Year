@@ -1,3 +1,9 @@
+// Define a class Shapes as
+// 1. Circle
+// 2. square and
+// 3. rectangle.
+// Find the area of these shapes using constructor overloading and method overloading.
+
 package assignment_3;
 
 import java.lang.Math;

@@ -1,8 +1,16 @@
 // Assignment 1 - OOPCJ
 // Write A Program to show implementation of Constructors in C++
 // PA34. Krishnaraj Thadesar
-// SY CSE Semester 3 
+// SY CSE Semester 3
 // Date Of Implementation: 17th August
+
+// Develop an object-oriented program to create a database of employee information system
+// containing the following information: Employee Name, Employee number, qualification,
+// address, contact number, salary details (basic, DA, TA, Net salary), etc. Construct the
+// database with suitable member functions for initializing and destroying the data viz.
+// constructor, default constructor, Copy constructor, destructor. Use dynamic memory
+// allocation concept while creating and destroying the object of a class. Use static data
+// member concept wherever required. Accept and display the information of Employees.
 
 #include <iostream>
 using namespace std;
@@ -10,6 +18,7 @@ class Employee
 {
 private:
     static int ssn;
+
 protected:
     int something = 5;
 
@@ -102,7 +111,6 @@ public:
 
 int Employee::ssn = 1000;
 
-
 int main()
 {
     // Defining an Object using the default Constructor
@@ -115,7 +123,6 @@ int main()
     CEO.da = 1000;
     CEO.ta = 2000;
     CEO.position = "CEO";
-
 
     // Defining an object using the copy constructor
     Employee President(CEO);
@@ -162,4 +169,3 @@ int main()
     delete[] Obj;
     return 0;
 }
-

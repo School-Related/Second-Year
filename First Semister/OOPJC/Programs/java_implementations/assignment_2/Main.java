@@ -1,3 +1,13 @@
+
+// Write a Java Program for demonstrating Inheritance in Java.
+// Write a program in Java showing hierarchical inheritance with base class as Employee and
+// derived classes as FullTimeEmployee and InternEmployee with methods DisplaySalary in
+// base class and CalculateSalary in derived classes.
+// Calculate salary method will calculate as per increment given to fulltime and intern
+// Employees. Fulltime employee- 50% hike, Intern employee-25% hike. Display salary
+// before and after hike.
+
+
 package assignment_2;
 
 import java.util.Scanner;

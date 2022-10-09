@@ -112,7 +112,7 @@ int main()
     // accept(arr, size);
     display(arr, size);
     bucket_sort_integers(arr, size);
-    radix_sort(arrf, sizef);
+    // radix_sort(arrf, sizef);
     display(arr, size);
     return 0;
 }
