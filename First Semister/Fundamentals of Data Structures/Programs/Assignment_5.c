@@ -60,8 +60,13 @@ int find_total_members(struct club *head)
     return count;
 }
 
-void delete_member(struct club *head, int position)
+int delete_member(struct club *head, int position)
 {
+    if (head->next == NULL)
+    {
+        printf("\n\nList is Empty\n\n");
+        return -1;
+    }
     struct club *prev = (struct club *)malloc(sizeof(struct club *));
     prev = head;
     int count = 1;
@@ -93,6 +98,7 @@ void delete_member(struct club *head, int position)
 
 int display_club(struct club *head)
 {
+    int counter = 0;
     if (head->next == NULL)
     {
         printf("\nNo members in the club");
@@ -102,21 +108,22 @@ int display_club(struct club *head)
     curr = head->next;
     while (curr != NULL)
     {
+        printf("\n--Member: %d--", ++counter);
         printf("\nName: %s", curr->name);
         printf("\nPRN: %d", curr->prn);
         curr = curr->next;
     }
 }
 
-void sort_2_linked_list()
+void sort_linked_list(struct club *head)
 {
 }
 
-void merge_2_linked_list()
+struct club *merge_2_linked_list(struct club *head, struct club *head_2)
 {
 }
 
-void reverse_linked_list_using_3_pointers()
+struct club *reverse_linked_list_using_3_pointers(struct club *head)
 {
 }
 
@@ -136,17 +143,20 @@ int main()
     head = (struct club *)malloc(sizeof(struct club));
     head->next = NULL;
 
+    // Creating the Club
+    struct club *head_2;
+    head_2 = (struct club *)malloc(sizeof(struct club));
+    head_2->next = NULL;
     while (1)
     {
-        printf("\nEnter What you want to do: \n\n\2
-        
+        printf("\nEnter What you want to do: \n\n\
     1. Enroll to the club\n\
     2. Delete a member of the Club (1 for president, 0 for Secretary)\n\
     3. Find total members\n\
     4. View List of Club Members\n\
-    5. Sorting 2 linked list\n\
-    6. Merge 2 linked lists\n\
-    7. Reverse using 3 pointers\n\n\
+    5. Sorting The Members of the Club by PRN\n\
+    6. Merge 2 Clubs\n\
+    7. Reverse Members of the Club\n\n\
     ");
 
         scanf("%d", &choice);
@@ -171,12 +181,30 @@ int main()
             display_club(head);
             break;
         case 5:
+            printf("\nThe Members of the Club Before Sorting by PRN Number are: \n");
+            display_club(head);
+            sort_linked_list(head);
+            printf("\nThe Members of the Club After Sorting by PRN Number are: \n");
+            display_club(head);
             break;
         case 6:
+            printf("\nThe Members of the First Club Are: \n");
+            display_club(head);
+            printf("\nAdd the Members to the Second Club: \n");
+            add_member(head_2);
+            printf("\nThe Members of the Second Club Are: \n");
+            display_club(head_2);
+            printf("\nOn Combining the 2 Linked Lists: \n");
+            struct club *merged_head = merge_2_linked_list(head, head_2);
+            display_club(merged_head);
             break;
         case 7:
+            printf("The Members of the Club Before Reversing are: ");
+            display_club(head);
+            struct club *reversed_head = reverse_linked_list_using_3_pointers(head);
+            printf("The Members of the Club After Reversing are: ");
+            display_club(reversed_head);
             break;
-
         default:
             break;
         };
