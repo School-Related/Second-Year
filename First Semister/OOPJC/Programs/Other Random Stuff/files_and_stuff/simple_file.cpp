@@ -36,7 +36,7 @@ void create_simple_file()
     f.open("Ramesh.txt", ios::out); // will still not create ramesh, even if you write to it. 
     fin.open("Suresh.txt", ios::out); // wont create suresh
     fout.open("binary_thing.bin", ios::binary | ios::out); // will create it immediately. 
-    fout.open("Rajesh2.txt"); // will immediately create rajesh2.txt
+    fout.open("Rajesh3.txt"); // will immediately create rajesh2.txt
 
     fout << "hi"; // would write to rajesh, not binary_thing.bin
     f << "hi";

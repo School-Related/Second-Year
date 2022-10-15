@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1665434635 "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 3.tex" "Assignment 3.pdf" "Assignment 3" 1665434635
-  "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 3.tex" 1665434633 14910 eacd2dbe74832d1e662399504564f7c7 ""
+["pdflatex"] 1665465558 "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 3.tex" "Assignment 3.pdf" "Assignment 3" 1665465559
+  "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 3.tex" 1665465557 14911 64248dfefa9ee9cbc44fab11a5b736b0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm" 1650183167 3220 7b5d1a9569a08754f1bdfbc1c7ad8dbd ""
@@ -152,9 +152,9 @@
   "7400.png" 1665430382 72606 17b0b54a70483b5b8e4ee60740603bb0 ""
   "7476 function table.png" 1665430510 49705 98f468343f01693eead37050595cfa94 ""
   "7476.jpg" 1665430265 73029 5f1d70fd72014f6a434516a6e305dc6e ""
-  "Assignment 3.aux" 1665434635 4291 3c977de0b0951b7f2c639ab17bbd140a "pdflatex"
-  "Assignment 3.tex" 1665434633 14910 eacd2dbe74832d1e662399504564f7c7 ""
-  "Assignment 3.toc" 1665434635 2086 54a5a31e93143e68cef5b67ebd3d988e "pdflatex"
+  "Assignment 3.aux" 1665465559 4291 3c977de0b0951b7f2c639ab17bbd140a "pdflatex"
+  "Assignment 3.tex" 1665465557 14911 64248dfefa9ee9cbc44fab11a5b736b0 ""
+  "Assignment 3.toc" 1665465559 2086 54a5a31e93143e68cef5b67ebd3d988e "pdflatex"
   "asynchronuos counter mod 8 down.png" 1665433801 11726 7f10021b420e6bd8e0d775fc5d7cb79b ""
   "asynchronuos counter mod 8 up.png" 1665433609 13586 ce42ff8e39b19b95dcafc7e4dd5fe3ff ""
   "counters2.png" 1665430059 2660 3ced1ca13f0ea67aaad7d80debb59a59 ""
