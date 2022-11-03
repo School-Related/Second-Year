@@ -32,6 +32,17 @@
   "files.associations": {
     "iostream": "cpp",
     "new": "cpp",
-    "fstream": "cpp"
+    "fstream": "cpp",
+    "bit": "cpp",
+    "*.tcc": "cpp",
+    "chrono": "cpp",
+    "functional": "cpp",
+    "string_view": "cpp",
+    "random": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "numeric": "cpp",
+    "semaphore": "cpp",
+    "valarray": "cpp"
   }
 }

@@ -1,0 +1,494 @@
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{OOPJC Assignment 3}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Object Oriented Programming with Java and C++\\
+		Second Year B. Tech, Semester 1
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Implementation of Polymorphism using C++ and JAVA
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A2, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\setcounter{page}{1}
+
+\section{Aim and Objectives}
+\subsection*{Aim}
+Implementation of Polymorphism using C++ and Java.
+
+\subsection*{Objectives}
+\begin{enumerate}
+	\item To understand the use of pure virtual funcitons.
+	\item To understnad implantation of compile time and run time polymorphism.
+	\item To learn implementation ofmethod overriding in java.
+\end{enumerate}
+
+\section{Problem Statements}
+\subsection{Problem 1 in C++}
+
+Write a C++ program with base class Employee and three derived classes namely
+\begin{itemize}
+	\item SalariedEmployees
+	\item CommissionEmployees
+	\item HourlyEmployees
+\end{itemize}
+
+Declare calculateSalary() as a pure virtual function in base class and define it in respective
+derived classes to calculate salary of an employee.
+The company wants to implement an Object Oriented Application that performs its payroll
+calculations polymorphically.
+
+
+\subsection{Problem 2 in Java}
+
+Define a Class \textbf{Shapes} as the Base Class that can find the area of the following :
+\begin{itemize}
+	\item Circle
+	\item Square
+	\item Rectangle
+\end{itemize}
+
+Find the area of these shapes using construtor overloading and method overloading.
+
+\subsection{Probelm 3 in Java}
+Create a Parent Class Hillstations with the methods location() and famousfor().
+Create three subclasses by Hill Station names.
+These subclasses must extend the superclass and override its methods location() and famousfor().
+It should refer to the base class object and the base class method overrides the superclass method, and the base class method is invoked at runtime.
+
+\section{Theory}
+
+\subsection{Concept of Compile time Polymorphism}
+In compile-time polymorphism, a function is called at the time of program compilation. We call this type of polymorphism as early binding or Static binding.
+
+Function overloading and operator overloading is the type of Compile time polymorphism.
+
+It can be implemented in 2 simple ways in c++
+\begin{enumerate}
+	\item Function Overloading
+	      Function overloading means one function can perform many tasks. In C++, a single function is used to perform many tasks with the same name and different types of arguments. In the function overloading function will call at the time of program compilation. It is an example of compile-time polymorphism.
+	      \begin{lstlisting}[language=C++]
+
+		class Addition {
+		public:
+			int ADD(int X,int Y)   // Function with parameter 
+			{
+				return X+Y;     // this function is performing addition of  two Integer value
+			}
+			int ADD() {              // Function with same name but without parameter
+				string a= "HELLO";
+				string b="SAM";   // in this function concatenation is performed
+			string c= a+b;
+			cout<<c<<endl;
+				
+			}
+		};
+		int main(void) {
+			Addition obj;   // Object is created  
+			cout<<obj.ADD(128, 15)<<endl; //first method is called
+			obj.ADD();  // second method is called
+			return 0;
+		}
+		
+	\end{lstlisting}
+	\item Operator Overloading
+	      Operator overloading means defining additional tasks to operators without changing its actual meaning. We do this by using operator function.\\`'
+	      The purpose of operator overloading is to provide a special meaning to the user-defined data types.\\
+	      The advantage of Operators overloading is to perform different operations on the same operand.
+
+
+	      \begin{lstlisting}[language=C++]
+			#include <iostream>  
+			using namespace std;  
+			class A  
+			{  
+				
+				string x;  
+				public:  
+				A(){}  
+				A(string i)  
+				{  
+				x=i;  
+				}  
+				void operator+(A);  
+				void display();  
+			};  
+			
+			void A:: operator+(A a)  
+			{  
+				
+				string m = x+a.x;  
+				cout<<"The result of the addition of two objects is : "<<m;  
+			
+			}  
+			int main()  
+			{  
+				A a1("Welcome");  
+				A a2("back");  
+				a1+a2;  
+				return 0;  
+			}
+			
+	\end{lstlisting}
+\end{enumerate}
+
+\subsection{Concept of Run Time Polymorphism}
+In Runtime polymorphism, functions are called at the time the program execution. Hence, it is known as late binding or dynamic binding.
+
+Function overriding is a part of runtime polymorphism. In function overriding, more than one method has the same name with different types of the parameter list.
+
+It is achieved by using virtual functions and pointers. It provides slow execution as it is known at the run time. Thus, It is more flexible as all the things executed at the run time.
+
+In C++ it can be implemented using these 2 methods.
+\begin{enumerate}
+	\item Function overriding:
+	      In function overriding, we give the new definition to base class function in the derived class. At that time, we can say the base function has been overridden. It can be only possible in the 'derived class'. In function overriding, we have two definitions of the same function, one in the superclass and one in the derived class. The decision about which function definition requires calling happens at runtime. That is the reason we call it 'Runtime polymorphism'.
+
+
+	\item Virtual Functions
+	      A virtual function is declared by keyword virtual. The return type of virtual function may be int, float, void.
+
+	      A virtual function is a member function in the base class. We can redefine it in a derived class. It is part of run time polymorphism. The declaration of the virtual function must be in the base class by using the keyword virtual. A virtual function is not static.
+
+	      The virtual function helps to tell the compiler to perform dynamic binding or late binding on the function.
+
+	      If it is necessary to use a single pointer to refer to all the different classes' objects. This is because we will have to create a pointer to the base class that refers to all the derived objects.
+\end{enumerate}
+\subsection{Use of Pure Virtual Functions}
+When the function has no definition, we call such functions as “Do-nothing function or Pure virtual function”. The declaration of this function happens in the base class with no definition.
+
+
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64 \\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
+\textbf{Compilers} : g++ and gcc on linux for C++, and javac, with JDK 18.0.2 for Java\\
+
+\section{Input}
+
+\subsection*{For C++}
+\begin{enumerate}
+	\item Number of Each Type of Employee
+	\item Name, Age, Address City, and Salary of Each Employee
+\end{enumerate}
+
+\subsection*{For Java}
+\begin{enumerate}
+	\item The Side of the Square
+	\item The Radius of the Circle
+	\item The Length and Breadth of the Rectangle.
+\end{enumerate}
+
+\section{Output}
+\subsection*{For C++}
+\begin{enumerate}
+	\item General Information about Each Employee
+	\item The Weekly, hourly and commisioned Salary for Respective Employees.
+\end{enumerate}
+
+\subsection*{For Java}
+\begin{enumerate}
+	\item The Area of the Shapes
+	\item The Location of the Hill Stations
+	\item The Reason the Hill stations are Famous for.
+\end{enumerate}
+
+
+\section{Code}
+\subsection{C++ Implementation}
+
+\lstinputlisting[language=c++, caption=Main.Cpp]{../Programs/cpp_implementations/Assignment_3.cpp}
+
+\subsubsection{C++ Input and Output}
+\lstinputlisting[caption=Output for Problem 1]{../Programs/cpp_implementations/Assignment_3_output.txt}
+
+\subsection{Java Implementation of Problem 2}
+
+\lstinputlisting[language=java, caption=Full Time Employee.java]{../Programs/java_implementations/assignment_3/Shapes.java}
+\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_3/Problem_A.java}
+
+\subsubsection{Java Output for Problem 2}
+\lstinputlisting[caption=Output for Problem 2]{../Programs/java_implementations/assignment_3/Problem_A_output.txt}
+
+\subsection{Java Implementation of Problem 3 using Interfaces}
+
+\lstinputlisting[language=java, caption=HillStation]{../Programs/java_implementations/assignment_3/HillStation.java}
+\lstinputlisting[language=java, caption=Main.java]{../Programs/java_implementations/assignment_3/Problem_B.java}
+
+\subsubsection{Java Output}
+\lstinputlisting[caption=Output for Problem 3]{../Programs/java_implementations/assignment_3/Problem_B_output.txt}
+
+\pagebreak
+
+\section{Conclusion}
+Thus, learned to use polymorphism and implemented solution of the given problem statement using C++ and Java.
+
+\section{FAQs}
+
+\begin{enumerate}
+	\item \textbf{Discuss the use of Virtual Functions. }\\
+	      Without "virtual" you get "early binding". Which implementation of the method is used gets decided at compile time based on the type of the pointer that you call through.
+
+	      With "virtual" you get "late binding". Which implementation of the method is used gets decided at run time based on the type of the pointed-to object - what it was originally constructed as. This is not necessarily what you'd think based on the type of the pointer that points to that object.
+
+	      \begin{lstlisting}[language=C++]
+		class Base
+		{
+		  public:
+					void Method1 ()  {  std::cout << "Base::Method1" << std::endl;  }
+			virtual void Method2 ()  {  std::cout << "Base::Method2" << std::endl;  }
+		};
+		
+		class Derived : public Base
+		{
+		  public:
+			void Method1 ()  {  std::cout << "Derived::Method1" << std::endl;  }
+			void Method2 ()  {  std::cout << "Derived::Method2" << std::endl;  }
+		};
+		
+		Base* basePtr = new Derived ();
+		  //  Note - constructed as Derived, but pointer stored as Base*
+		
+		basePtr->Method1 ();  //  Prints "Base::Method1"
+		basePtr->Method2 ();  //  Prints "Derived::Method2"		
+	\end{lstlisting}
+	\item \textbf{What is the difference between early binding and late binding. }\\
+	      \textbf{Early Binding}: The binding which can be resolved at compile time by the compiler is known as static or early binding. Binding of all the static, private and final methods is done at compile-time.
+
+	      \textbf{Example}
+
+	      \begin{lstlisting}[language=Java]
+		public class NewClass { 
+			public static class superclass { 
+				static void print() 
+				{ 
+					System.out.println("print in superclass."); 
+				} 
+			} 
+			public static class subclass extends superclass { 
+				static void print() 
+				{ 
+					System.out.println("print in subclass."); 
+				} 
+			} 
+		  
+			public static void main(String[] args) 
+			{ 
+				superclass A = new superclass(); 
+				superclass B = new subclass(); 
+				A.print(); 
+				B.print(); 
+			} 
+		} 		
+	
+		// Output
+		// print in superclass.
+		// print in superclass.
+
+	\end{lstlisting}
+
+	      \textbf{Late Binding}: In the late binding or dynamic binding, the compiler doesn't decide the method to be called. Overriding is a perfect example of dynamic binding. In overriding both parent and child classes have the same method.
+
+	      \begin{lstlisting}[language=Java]
+
+
+		public class NewClass { 
+			public static class superclass { 
+				void print() 
+				{ 
+					System.out.println("print in superclass."); 
+				} 
+			} 
+		  
+			public static class subclass extends superclass { 
+				@Override
+				void print() 
+				{ 
+					System.out.println("print in subclass."); 
+				} 
+			} 
+		  
+			public static void main(String[] args) 
+			{ 
+				superclass A = new superclass(); 
+				superclass B = new subclass(); 
+				A.print(); 
+				B.print(); 
+			} 
+		} 
+		// Output: 
+		// print in superclass.
+		// print in subclass.
+	\end{lstlisting}
+	\item \textbf{Explain the use of abstract keyword in java with examples.}\\
+	      \textbf{Abstract} is a non-access modifier in java applicable for classes, methods but not variables. It is used to achieve abstraction which is one of the pillar of Object Oriented Programming(OOP). Following are different contexts where abstract can be used in Java.
+
+	      Due to their partial implementation, we cannot instantiate abstract classes.Any subclass of an abstract class must either implement all of the abstract methods in the super-class, or be declared abstract itself.Some of the predefined classes in java are abstract. They depend on their sub-classes to provide complete implementation. For example, java.lang.Number is a abstract class. For more on abstract classes, see abstract classes in java
+	      \begin{lstlisting}[language=Java]
+		// A java program to demonstrate
+		// use of abstract keyword.
+		
+		// abstract with class
+		abstract class A
+		{
+			// abstract with method
+			// it has no body
+			abstract void m1();
+			
+			// concrete methods are still allowed in abstract classes
+			void m2()
+			{
+				System.out.println("This is a concrete method.");
+			}
+		}
+		
+		// concrete class B
+		class B extends A
+		{
+			// class B must override m1() method
+			// otherwise, compile-time exception will be thrown
+			void m1() {
+				System.out.println("B's implementation of m1.");
+			}
+			
+			
+		}
+		
+		// Driver class
+		public class AbstractDemo
+		{
+			public static void main(String args[])
+			{
+				B b = new B();
+				b.m1();
+				b.m2();
+			}
+		}
+				
+	\end{lstlisting}
+	\item \textbf{State Features of abstract base classes.} \\
+	      A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.
+
+	      Important Features are:
+	      \begin{enumerate}
+		      \item An abstract class must be declared with an abstract keyword.
+		      \item It can have abstract and non-abstract methods.
+		      \item It cannot be instantiated.
+		      \item It can have constructors and static methods also.
+		      \item It can have final methods which will force the subclass not to change the body of the method.
+	      \end{enumerate}
+\end{enumerate}
+
+\end{document}
