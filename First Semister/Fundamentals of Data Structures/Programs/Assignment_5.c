@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 // something about trhe president and the club.
 // First and last are reserved for the president and the secretary.
@@ -33,7 +34,7 @@ void add_member(struct club *head)
         curr->next = NULL;
         temp->next = curr;
         temp = curr;
-        printf("\nDo you want to enter more Members? (Y or N)");
+        printf("\nDo you want to enter more Members? (1 or 0)");
         scanf("%d", &choice);
     } while (choice != 0);
 
@@ -113,18 +114,58 @@ int display_club(struct club *head)
         printf("\nPRN: %d", curr->prn);
         curr = curr->next;
     }
+    printf("\n");
 }
 
 void sort_linked_list(struct club *head)
 {
+    struct club *i = (struct club *)malloc(sizeof(struct club));
+    struct club *j = (struct club *)malloc(sizeof(struct club));
+    struct club temp;
+
+    // bubble sorting
+    for (i = head; i != NULL; i = i->next)
+    {
+        for (j = i; j->next != NULL; j = j->next)
+        {
+            if (j->prn > j->next->prn)
+            {
+                // swapping elements of a linked list here, lengthy but with the conventional logic.
+                // we dont touch the next variable, coz that would change the order of the addresses and mess up the linked list. 
+                // so we just swap the actual values. 
+                temp.prn = j->prn;
+                strcpy(temp.name, j->name);
+
+                j->prn = j->next->prn;
+                strcpy(j->name, j->next->name);
+
+                j->next->prn = temp.prn;
+                strcpy(j->next->name, temp.name);
+            }
+        }
+    }
 }
 
 struct club *merge_2_linked_list(struct club *head, struct club *head_2)
 {
 }
 
-struct club *reverse_linked_list_using_3_pointers(struct club *head)
+void reverse_linked_list(struct club *head)
 {
+    struct club *current = head;
+    struct club *prev = NULL, *next = NULL;
+
+    while (current != NULL)
+    {
+        // Store next
+        next = current->next;
+        // Reverse current node's pointer
+        current->next = prev;
+        // Move pointers one position ahead.
+        prev = current;
+        current = next;
+    }
+    head = prev;
 }
 
 int main()
@@ -199,11 +240,11 @@ int main()
             display_club(merged_head);
             break;
         case 7:
-            printf("The Members of the Club Before Reversing are: ");
+            printf("The Members of the Club Before Reversing are: \n");
             display_club(head);
-            struct club *reversed_head = reverse_linked_list_using_3_pointers(head);
-            printf("The Members of the Club After Reversing are: ");
-            display_club(reversed_head);
+            reverse_linked_list(head);
+            printf("The Members of the Club After Reversing are: \n");
+            display_club(head);
             break;
         default:
             break;

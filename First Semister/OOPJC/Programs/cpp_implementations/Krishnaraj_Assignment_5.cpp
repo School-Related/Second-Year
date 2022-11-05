@@ -6,9 +6,9 @@
 
 #include <iostream>
 #include <list>
-#include <algorithm>
 using namespace std;
 
+// struct so we can put it in a single linked list.
 struct Items
 {
     int item_code;
@@ -20,6 +20,7 @@ struct Items
     }
 } currentItem(0, "", 0, 0), itemToAdd(0, "", 0, 0);
 
+// linked list items so we can put objects of structures in it easily.
 list<Items> items = {
     Items(101, "Burger", 10, 150),
     Items(102, "Fries", 10, 129),
@@ -28,8 +29,8 @@ list<Items> items = {
 };
 
 bool itemFound = false;
-int currentItemCode = -1, currentItemIndex = -1;
 
+// inserts items in the list
 void insertItems()
 {
     cout << "Enter the details of the Item that you wanna enter to the database" << endl;
@@ -49,8 +50,7 @@ void insertItems()
     cout << "Item added successfully" << endl;
 }
 
-// returns true or false depending on whether the item was found, and if it was found, then it assigns
-// it to the global struct object of current item, and assigns the variables currentItemCode, and currentItemIndex.
+// returns true or false depending on whether the item was found
 bool searchItem(int itemCode)
 {
     int i = 0;
@@ -59,8 +59,6 @@ bool searchItem(int itemCode)
         struct Items temp = *it;
         if (temp.item_code == itemCode)
         {
-            currentItemCode = itemCode;
-            currentItemIndex = i;
             currentItem = temp;
             return true;
         }
@@ -69,7 +67,7 @@ bool searchItem(int itemCode)
 }
 
 // just find the element at the element currentItemIndex, and replace it with the currentItem struct object.
-void updateItems(int quantity)
+void updateItems(int quantity, int currentItemCode)
 {
     for (list<Items>::iterator it = items.begin(); it != items.end(); it++)
     {
@@ -106,9 +104,8 @@ c:
             throw selectedItemCode;
         }
     l:
-        cout
-            << "Enter the Quantity of the Item that you wanna buy. "
-            << endl;
+        cout << "Enter the Quantity of the Item that you wanna buy. "
+             << endl;
         cout << "Max quantity is: " << currentItem.item_quantity << endl;
         cin >> selectedQuantity;
         try
@@ -120,7 +117,7 @@ c:
             else
             {
                 cout << "Thank you for Purchasing!" << endl;
-                updateItems(selectedQuantity);
+                updateItems(selectedQuantity, selectedItemCode);
             }
         }
         catch (int something)
@@ -149,7 +146,8 @@ int main()
         cout << endl
              << "What do you wanna do?\n\
         1. Add new Items\n\
-        2. Purchase Item\n"
+        2. Purchase Item\n\
+        3. Quit\n"
              << endl;
         cin >> choice;
         switch (choice)
@@ -166,7 +164,6 @@ int main()
             {
                 cout << "Item purchased and Updated Successfully" << endl;
             }
-            // purchase item
             break;
         case 3:
             cout << "Thanks for Visiting our store!" << endl;
