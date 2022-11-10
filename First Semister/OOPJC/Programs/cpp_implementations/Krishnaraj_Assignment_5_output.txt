@@ -1,0 +1,105 @@
+Welcome to McRonalds
+
+What do you wanna do?
+        1. Add new Items
+        2. Purchase Item
+        3. Quit
+
+1
+Enter the details of the Item that you wanna enter to the database
+Enter the Code of the new Item: 106
+Enter the Name of the new Item: Water       
+Enter the Quantity of the new Item: 100
+Enter the Cost of the new Item: 30
+Item added successfully
+
+What do you wanna do?
+        1. Add new Items
+        2. Purchase Item
+        3. Quit
+
+1
+Enter the details of the Item that you wanna enter to the database
+Enter the Code of the new Item: 107
+Enter the Name of the new Item: Lemonade
+Enter the Quantity of the new Item: 25
+Enter the Cost of the new Item: 40
+Item added successfully
+
+What do you wanna do?
+        1. Add new Items
+        2. Purchase Item
+        3. Quit
+
+2
+The Items that you can buy are: 
+101 Burger 10 150
+102 Fries 10 129
+103 Ice Cream 10 40
+104 Coke 10 50
+106 Water 100 30
+107 Lemonade 25 40
+Please enter the code of the item that you wanna buy
+10
+The code of the item that you entered doesnt exist. Try again. 
+Please enter the code of the item that you wanna buy
+103
+Enter the Quantity of the Item that you wanna buy. 
+Max quantity is: 10
+24
+Quantity you entered is too much! Try again!
+Enter the Quantity of the Item that you wanna buy. 
+Max quantity is: 10
+2
+Thank you for Purchasing!
+Item purchased and Updated Successfully
+
+What do you wanna do?
+        1. Add new Items
+        2. Purchase Item
+        3. Quit
+
+2  
+The Items that you can buy are: 
+101 Burger 10 150
+102 Fries 10 129
+104 Coke 10 50
+106 Water 100 30
+107 Lemonade 25 40
+103 Ice Cream 8 40
+Please enter the code of the item that you wanna buy
+106
+Enter the Quantity of the Item that you wanna buy. 
+Max quantity is: 100
+3
+Thank you for Purchasing!
+Item purchased and Updated Successfully
+
+What do you wanna do?
+        1. Add new Items
+        2. Purchase Item
+        3. Quit
+
+2 
+The Items that you can buy are: 
+101 Burger 10 150
+102 Fries 10 129
+104 Coke 10 50
+107 Lemonade 25 40
+103 Ice Cream 8 40
+106 Water 97 30
+Please enter the code of the item that you wanna buy
+101
+Enter the Quantity of the Item that you wanna buy. 
+Max quantity is: 10
+1
+Thank you for Purchasing!
+Item purchased and Updated Successfully
+
+What do you wanna do?
+        1. Add new Items
+        2. Purchase Item
+        3. Quit
+
+3
+Thanks for Visiting our store!

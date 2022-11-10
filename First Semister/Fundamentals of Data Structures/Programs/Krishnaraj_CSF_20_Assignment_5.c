@@ -131,8 +131,8 @@ void sort_linked_list(struct club *head)
             if (j->prn > j->next->prn)
             {
                 // swapping elements of a linked list here, lengthy but with the conventional logic.
-                // we dont touch the next variable, coz that would change the order of the addresses and mess up the linked list. 
-                // so we just swap the actual values. 
+                // we dont touch the next variable, coz that would change the order of the addresses and mess up the linked list.
+                // so we just swap the actual values.
                 temp.prn = j->prn;
                 strcpy(temp.name, j->name);
 
@@ -148,24 +148,105 @@ void sort_linked_list(struct club *head)
 
 struct club *merge_2_linked_list(struct club *head, struct club *head_2)
 {
+    struct club *merged_head = (struct club *)malloc(sizeof(struct club));
+    merged_head->next = NULL;
+    if (head->next == NULL || head_2->next == NULL)
+    {
+        printf("\nOne of the clubs is empty, so no point in merging!\n");
+        return merged_head;
+    }
+
+    struct club *temp_head, *temp_merged, *current;
+    temp_head = head->next;
+
+    temp_merged = (struct club *)malloc(sizeof(struct club));
+    merged_head->next = temp_merged;
+    while (temp_head != NULL)
+    {
+        current = temp_merged;
+        strcpy(temp_merged->name, temp_head->name);
+        temp_merged->prn = temp_head->prn;
+
+        temp_merged = (struct club *)malloc(sizeof(struct club));
+        current->next = temp_merged;
+        temp_head = temp_head->next;
+    }
+
+    temp_head = head_2->next;
+    while (temp_head != NULL)
+    {
+        current = temp_merged;
+        strcpy(temp_merged->name, temp_head->name);
+        temp_merged->prn = temp_head->prn;
+
+        temp_merged = (struct club *)malloc(sizeof(struct club));
+        current->next = temp_merged;
+        temp_head = temp_head->next;
+    }
+
+    current->next = NULL;
+
+    return merged_head;
 }
 
 void reverse_linked_list(struct club *head)
 {
-    struct club *current = head;
-    struct club *prev = NULL, *next = NULL;
+    struct club *current = head->next;
+    struct club *prev = NULL, *future = NULL;
 
     while (current != NULL)
     {
         // Store next
-        next = current->next;
+        future = current->next;
         // Reverse current node's pointer
         current->next = prev;
         // Move pointers one position ahead.
         prev = current;
-        current = next;
+        current = future;
     }
-    head = prev;
+    head->next = prev;
+}
+
+int findLength(struct club *head)
+{
+    int i = 0;
+    struct club *temp = head;
+    while (temp != NULL)
+    {
+        temp = temp->next;
+        i++;
+    }
+    return i;
+}
+
+int insertByPosition(struct club *head)
+{
+    int i = 1, pos = 0;
+    struct club *curr = head;
+    struct club *nnode = (struct club *)malloc(sizeof(struct club));
+    printf("Enter the name of the person you want to add to the club: \n");
+    scanf("%s", &nnode->name);
+    printf("Enter the prn of the person you want to add to the club: \n");
+    scanf("%d", &nnode->prn);
+    printf("Enter the position of the person you want to add to the club: \n");
+    scanf("%d", &pos);
+    pos--;
+    int total_length = findLength(head);
+    if (pos > total_length + 1)
+    {
+        printf("Data cant be inserted!\n");
+        return 0;
+    }
+    else
+    {
+        while (curr != NULL && i < total_length)
+        {
+            i++;
+            curr = curr->next;
+        }
+        nnode->next = curr->next;
+        curr->next = nnode;
+    }
 }
 
 int main()
@@ -180,7 +261,7 @@ int main()
         return 0;
     }
     // Creating the Club
-    struct club *head;
+    struct club *head, *merged_head;
     head = (struct club *)malloc(sizeof(struct club));
     head->next = NULL;
 
@@ -188,6 +269,10 @@ int main()
     struct club *head_2;
     head_2 = (struct club *)malloc(sizeof(struct club));
     head_2->next = NULL;
+
+    // Creating the Merged Club
+    merged_head = (struct club *)malloc(sizeof(struct club));
+    merged_head->next = NULL;
     while (1)
     {
         printf("\nEnter What you want to do: \n\n\
@@ -196,8 +281,10 @@ int main()
     3. Find total members\n\
     4. View List of Club Members\n\
     5. Sorting The Members of the Club by PRN\n\
-    6. Merge 2 Clubs\n\
-    7. Reverse Members of the Club\n\n\
+    6. Merge 2 Clubs (First fill the 1st Club)\n\
+    7. Reverse Members of the Club\n\
+    8. Sort the Members of the Merged Club\n\
+    9. Insert an element in a position. \n\n\
     ");
 
         scanf("%d", &choice);
@@ -229,14 +316,19 @@ int main()
             display_club(head);
             break;
         case 6:
+            if (head->next == NULL)
+            {
+                printf("\nNothing in the First Club! Add data there first\n\n");
+                add_member(head);
+            }
             printf("\nThe Members of the First Club Are: \n");
             display_club(head);
             printf("\nAdd the Members to the Second Club: \n");
             add_member(head_2);
             printf("\nThe Members of the Second Club Are: \n");
             display_club(head_2);
+            merged_head = merge_2_linked_list(head, head_2);
             printf("\nOn Combining the 2 Linked Lists: \n");
-            struct club *merged_head = merge_2_linked_list(head, head_2);
             display_club(merged_head);
             break;
         case 7:
@@ -246,6 +338,16 @@ int main()
             printf("The Members of the Club After Reversing are: \n");
             display_club(head);
             break;
+        case 8:
+            printf("\nThe Members of the Merged Club Before Sorting by PRN Number are: \n");
+            display_club(merged_head);
+            sort_linked_list(merged_head);
+            printf("\nThe Members of the Merged Club After Sorting by PRN Number are: \n");
+            display_club(merged_head);
+            break;
+        case 9:
+            printf("Which position do you wanna add the new value?\n");
+            insertByPosition(head);
         default:
             break;
         };
