@@ -10,7 +10,7 @@
 // database with suitable member functions for initializing and destroying the data viz.
 // constructor, default constructor, Copy constructor, destructor. Use dynamic memory
 // allocation concept while creating and destroying the object of a class. Use static data
-// member concept wherever required. Accept and display the information of Employees.
+// member concept wherever required Accept and display the information of Employees.
 
 #include <iostream>
 using namespace std;
