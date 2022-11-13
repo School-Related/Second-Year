@@ -1,0 +1,456 @@
+What Year do you belong to? (1, 2, 3, 4)
+
+4
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    1        
+
+Enter Name of the President: Presi
+
+Enter the PRN: 109
+
+Do you want to enter more Members? (1 or 0)1
+
+Enter Name: Ramesh
+
+Enter the PRN: 243
+
+Do you want to enter more Members? (1 or 0)1
+
+Enter Name: Suresh
+
+Enter the PRN: 345
+
+Do you want to enter more Members? (1 or 0)1
+
+Enter Name: William
+
+Enter the PRN: 99
+
+Do you want to enter more Members? (1 or 0)1
+
+Enter Name: Tony
+
+Enter the PRN: 909
+
+Do you want to enter more Members? (1 or 0)0
+
+Enter The name of the Secretary: Pam
+
+Enter the PRN: 005
+
+--Member: 1--
+Name: Presi
+PRN: 109
+--Member: 2--
+Name: Ramesh
+PRN: 243
+--Member: 3--
+Name: Suresh
+PRN: 345
+--Member: 4--
+Name: William
+PRN: 99
+--Member: 5--
+Name: Tony
+PRN: 909
+--Member: 6--
+Name: Pam
+PRN: 5
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    2
+What position do you want to delete the node? 3
+
+--Member: 1--
+Name: Presi
+PRN: 109
+--Member: 2--
+Name: Ramesh
+PRN: 243
+--Member: 3--
+Name: William
+PRN: 99
+--Member: 4--
+Name: Tony
+PRN: 909
+--Member: 5--
+Name: Pam
+PRN: 5
+
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    5
+
+The Members of the Club Before Sorting by PRN Number are: 
+
+--Member: 1--
+Name: Presi
+PRN: 109
+--Member: 2--
+Name: Ramesh
+PRN: 243
+--Member: 3--
+Name: William
+PRN: 99
+--Member: 4--
+Name: Tony
+PRN: 909
+--Member: 5--
+Name: Pam
+PRN: 5
+
+The Members of the Club After Sorting by PRN Number are: 
+
+--Member: 1--
+Name: Pam
+PRN: 5
+--Member: 2--
+Name: William
+PRN: 99
+--Member: 3--
+Name: Presi
+PRN: 109
+--Member: 4--
+Name: Ramesh
+PRN: 243
+--Member: 5--
+Name: Tony
+PRN: 909
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    6
+
+The Members of the First Club Are: 
+
+--Member: 1--
+Name: Pam
+PRN: 5
+--Member: 2--
+Name: William
+PRN: 99
+--Member: 3--
+Name: Presi
+PRN: 109
+--Member: 4--
+Name: Ramesh
+PRN: 243
+--Member: 5--
+Name: Tony
+PRN: 909
+
+Add the Members to the Second Club: 
+
+Enter Name of the President: Lewis
+
+Enter the PRN: 75
+
+Do you want to enter more Members? (1 or 0)1
+
+Enter Name: Max
+
+Enter the PRN: 1
+
+Do you want to enter more Members? (1 or 0)1
+
+Enter Name: Kevin
+
+Enter the PRN: 665
+
+Do you want to enter more Members? (1 or 0)1
+
+Enter Name: Perez
+
+Enter the PRN: 334
+
+Do you want to enter more Members? (1 or 0)0
+
+Enter The name of the Secretary: Erin
+
+Enter the PRN: 443
+
+The Members of the Second Club Are: 
+
+--Member: 1--
+Name: Lewis
+PRN: 75
+--Member: 2--
+Name: Max
+PRN: 1
+--Member: 3--
+Name: Kevin
+PRN: 665
+--Member: 4--
+Name: Perez
+PRN: 334
+--Member: 5--
+Name: Erin
+PRN: 443
+
+On Combining the 2 Linked Lists: 
+
+--Member: 1--
+Name: Pam
+PRN: 5
+--Member: 2--
+Name: William
+PRN: 99
+--Member: 3--
+Name: Presi
+PRN: 109
+--Member: 4--
+Name: Ramesh
+PRN: 243
+--Member: 5--
+Name: Tony
+PRN: 909
+--Member: 6--
+Name: Lewis
+PRN: 75
+--Member: 7--
+Name: Max
+PRN: 1
+--Member: 8--
+Name: Kevin
+PRN: 665
+--Member: 9--
+Name: Perez
+PRN: 334
+--Member: 10--
+Name: Erin
+PRN: 443
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    9
+Which position do you wanna add the new value?
+Enter the name of the person you want to add to the club: 
+Russell
+Enter the prn of the person you want to add to the club: 
+345
+Enter the position of the person you want to add to the club: 
+3
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    4
+
+The Members of the Club are: 
+
+--Member: 1--
+Name: Pam
+PRN: 5
+--Member: 2--
+Name: William
+PRN: 99
+--Member: 3--
+Name: Presi
+PRN: 109
+--Member: 4--
+Name: Ramesh
+PRN: 243
+--Member: 5--
+Name: Tony
+PRN: 909
+--Member: 6--
+Name: Russell
+PRN: 345
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    7
+The Members of the Club Before Reversing are: 
+
+--Member: 1--
+Name: Pam
+PRN: 5
+--Member: 2--
+Name: William
+PRN: 99
+--Member: 3--
+Name: Presi
+PRN: 109
+--Member: 4--
+Name: Ramesh
+PRN: 243
+--Member: 5--
+Name: Tony
+PRN: 909
+--Member: 6--
+Name: Russell
+PRN: 345
+The Members of the Club After Reversing are: 
+
+--Member: 1--
+Name: Russell
+PRN: 345
+--Member: 2--
+Name: Tony
+PRN: 909
+--Member: 3--
+Name: Ramesh
+PRN: 243
+--Member: 4--
+Name: Presi
+PRN: 109
+--Member: 5--
+Name: William
+PRN: 99
+--Member: 6--
+Name: Pam
+PRN: 5
+
+
+Enter What you want to do: 
+
+    1. Enroll to the club
+    2. Delete a member of the Club (1 for president, 0 for Secretary)
+    3. Find total members
+    4. View List of Club Members
+    5. Sorting The Members of the Club by PRN
+    6. Merge 2 Clubs (First fill the 1st Club)
+    7. Reverse Members of the Club
+    8. Sort the Members of the Merged Club
+    9. Insert an element in a position. 
+
+    8
+
+The Members of the Merged Club Before Sorting by PRN Number are: 
+
+--Member: 1--
+Name: Pam
+PRN: 5
+--Member: 2--
+Name: William
+PRN: 99
+--Member: 3--
+Name: Presi
+PRN: 109
+--Member: 4--
+Name: Ramesh
+PRN: 243
+--Member: 5--
+Name: Tony
+PRN: 909
+--Member: 6--
+Name: Lewis
+PRN: 75
+--Member: 7--
+Name: Max
+PRN: 1
+--Member: 8--
+Name: Kevin
+PRN: 665
+--Member: 9--
+Name: Perez
+PRN: 334
+--Member: 10--
+Name: Erin
+PRN: 443
+
+The Members of the Merged Club After Sorting by PRN Number are: 
+
+--Member: 1--
+Name: Max
+PRN: 1
+--Member: 2--
+Name: Pam
+PRN: 5
+--Member: 3--
+Name: William
+PRN: 99
+--Member: 4--
+Name: Lewis
+PRN: 75
+--Member: 5--
+Name: Presi
+PRN: 109
+--Member: 6--
+Name: Ramesh
+PRN: 243
+--Member: 7--
+Name: Perez
+PRN: 334
+--Member: 8--
+Name: Erin
+PRN: 443
+--Member: 9--
+Name: Kevin
+PRN: 665
+--Member: 10--
+Name: Tony
+PRN: 909
