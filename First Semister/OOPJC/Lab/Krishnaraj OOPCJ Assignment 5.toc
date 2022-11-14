@@ -12,6 +12,6 @@
 \contentsline {section}{\numberline {6}Output}{5}{}%
 \contentsline {section}{\numberline {7}Code}{5}{}%
 \contentsline {subsection}{\numberline {7.1}C++ Implementation of Problem A}{5}{}%
-\contentsline {subsubsection}{\numberline {7.1.1}C++ Input and Output}{9}{}%
-\contentsline {section}{\numberline {8}Conclusion}{11}{}%
-\contentsline {section}{\numberline {9}FAQs}{12}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}C++ Input and Output}{11}{}%
+\contentsline {section}{\numberline {8}Conclusion}{13}{}%
+\contentsline {section}{\numberline {9}FAQs}{14}{}%
