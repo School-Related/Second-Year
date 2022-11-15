@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.26)  15 NOV 2022 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.26)  15 NOV 2022 18:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Krishnaraj OOPCJ Assignment 9.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Krishnaraj OOPCJ Assignment 9.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Krishnaraj OOPCJ Assignment 8.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Krishnaraj OOPCJ Assignment 8.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -389,8 +389,8 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box56
-) (./Krishnaraj OOPCJ Assignment 9.aux)
-\openout1 = `"Krishnaraj OOPCJ Assignment 9.aux"'.
+) (./Krishnaraj OOPCJ Assignment 8.aux)
+\openout1 = `"Krishnaraj OOPCJ Assignment 8.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -496,46 +496,18 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 123.
- (./Krishnaraj OOPCJ Assignment 9.toc
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 1.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 3.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 3.
- (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
-File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
-)
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-)
-\tf@toc=\write3
-\openout3 = `"Krishnaraj OOPCJ Assignment 9.toc"'.
 
- [1]
+No file "Krishnaraj OOPCJ Assignment 8".toc.
+\tf@toc=\write3
+\openout3 = `"Krishnaraj OOPCJ Assignment 8.toc"'.
+
+[1]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 136.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 136.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.18341pt on input line 138.
 
 Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
@@ -612,6 +584,8 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 209.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 209.
  (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -634,70 +608,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4] (../Programs/java_implementations/assignment_9/Assignment_9.java) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) (../Programs/java_implementations/assignment_9/Applets_html.html)
-<../Programs/java_implementations/assignment_9/output_assignment_9.png, id=25, 581.92406pt x 506.6428pt>
-File: ../Programs/java_implementations/assignment_9/output_assignment_9.png Graphic file (type png)
-<use ../Programs/java_implementations/assignment_9/output_assignment_9.png>
-Package pdftex.def Info: ../Programs/java_implementations/assignment_9/output_assignment_9.png  used on input line 332.
-(pdftex.def)             Requested size: 232.7655pt x 202.65353pt.
+[4]
 
+! Package Listings Error: File `../Programs/cpp_implementations/Assignment_4(.cpp)' not found.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cpp)
 
-[5 <../Programs/java_implementations/assignment_9/output_assignment_9.png (PNG copy)>]
+Enter file name: 
+/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Krishnaraj OOPCJ Assignment 8.tex:326: Emergency stop.
+<read *> 
+         
+l.326 ...ams/cpp_implementations/Assignment_4.cpp}
+                                                  ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[7]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[8]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[9] (./Krishnaraj OOPCJ Assignment 9.aux) ) 
+ 
 Here is how much of TeX's memory you used:
- 6850 strings out of 478238
- 97384 string characters out of 5850455
- 803492 words of memory out of 5000000
- 24960 multiletter control sequences out of 15000+600000
- 514452 words of font info for 81 fonts, out of 8000000 for 9000
+ 6477 strings out of 478238
+ 91914 string characters out of 5850455
+ 712423 words of memory out of 5000000
+ 24621 multiletter control sequences out of 15000+600000
+ 507194 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,508b,1915s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Krishnaraj OOPCJ Assignment 9.pdf" (11 pages, 169169 bytes).
-PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 65i,12n,69p,501b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
+/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Krishnaraj OOPCJ Assignment 8.tex:326:  ==> Fatal error occurred, no output PDF file produced!
