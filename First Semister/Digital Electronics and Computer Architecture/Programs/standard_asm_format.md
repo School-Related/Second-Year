@@ -87,3 +87,15 @@ mov rsi, hello; starting address of the variable to be read
 mov rdx, 8 ; maximum bytes to be read
 syscall;
 ```
+
+# macro syntax
+```assembly
+%macro macr-name no_of_parameters
+    %1 ; first parameters
+    %2 ; second parameters
+    %3 ; third parameters and so on 
+%endmacro
+```
+
+callling it
+macro_name firstparameters, second_parameter, ;third parameter
