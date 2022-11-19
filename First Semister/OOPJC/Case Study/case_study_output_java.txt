@@ -1,0 +1,20 @@
+Enter the size of the Array that you want to enter
+10
+Enter the Elements of the Array:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+3
+The Average of All the Elements that you have entered is: 4
+The Elements that are above the Average of all the elements are:
+5
+6
+7
+8
+9

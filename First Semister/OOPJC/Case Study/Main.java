@@ -1,3 +1,7 @@
+// C++ and Java Program to Calculate Average of elements in an Integer Arrays.Take input values.Also display number of elements which are greater than average value.
+// Krishnaraj Thadesar 
+// PA 20 Batch A1
+
 import java.util.*;;
 
 public class Main {
@@ -19,7 +23,7 @@ public class Main {
         System.out.println("The Elements that are above the Average of all the elements are: ");
         for (int i = 0; i < size; i++) {
             if (arr[i] > average) {
-                System.out.println(arr[i]);
+                System.out.println(arr[i] + " ");
             }
         }
     }

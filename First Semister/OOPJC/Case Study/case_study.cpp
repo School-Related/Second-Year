@@ -1,4 +1,6 @@
 // C++ and Java Program to Calculate Average of elements in an Integer Arrays.Take input values.Also display number of elements which are greater than average value.
+// Krishnaraj Thadesar
+// PA 20 Batch A1
 
 #include <iostream>
 using namespace std;

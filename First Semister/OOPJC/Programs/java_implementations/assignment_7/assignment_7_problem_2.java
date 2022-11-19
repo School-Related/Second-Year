@@ -1,3 +1,8 @@
+// Krishnaraj Thadesar
+// Batch A1, PA20
+// OOPCJ Assignment 7.2
+// Print even and odd numbers in increasing order using two threads in Java
+
 import java.security.ProtectionDomain;
 import java.util.Scanner;
 

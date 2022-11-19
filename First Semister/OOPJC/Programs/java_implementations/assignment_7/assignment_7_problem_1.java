@@ -1,3 +1,11 @@
+// Krishnaraj Thadesar
+// Batch A1, PA20
+// OOPCJ Assignment 7.1
+// Write a program to create a multithreaded calculator that does addition, subtraction,
+// multiplication, and division using separate threads.
+// Additionally also handle '/ by zero' exception by the division method.
+
+
 import java.lang.Thread;
 import java.util.Scanner;
 

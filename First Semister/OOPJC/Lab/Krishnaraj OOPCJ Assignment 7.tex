@@ -129,8 +129,13 @@
 \setcounter{page}{1}
 
 \section{Aim and Objectives}
-Implementation and Understanding of Exception handling in Java and C++, and to learn and use the exception handling mechanisms with try and catch blocks.
-
+\subsection*{Aim}
+Implementing Solutions on Multithreading using Thread Class and Runnable Interface
+\subsection*{Objectives}
+\begin{enumerate}
+	\item To understand Multithreading in Java
+	\item To learn two different ways to create threads in Java
+\end{enumerate}
 \section{Problem Statements}
 
 \subsection{Problem 1 in Java}
@@ -142,26 +147,42 @@ Additionally also handle '/ by zero' exception by the division method.
 Print even and odd numbers in increasing order using two threads in Java
 
 \section{Theory}
-
+% Multithreading in Java
+% 
+%  Life Cycle of a Thread
+% 
+%  Two ways to create a Thread
+% 
+%  How to perform multiple tasks by multiple threads
+% 
+%  Thread Scheduler
+% 
+%  Joining a thread
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
 \textbf{IDEs or Text Editors Used}: Visual Studio Code\\
 \textbf{Compilers} : g++ and gcc on linux for C++, and javac, with JDK 18.0.2 for Java\\
 
 \section{Input}
-\subsection*{For Java}
+\subsection*{For Problem 1}
 \begin{enumerate}
-	\item The Side of the Square
-	\item The Radius of the Circle
-	\item The Length and Breadth of the Rectangle.
+	\item 2 numbers
+	\item Choice about what to do with those numbers 
+\end{enumerate}
+\subsection*{For Problem 2}
+\begin{enumerate}
+	\item The Maximum limit up to which the user wants to see the odd and even numbers printed
 \end{enumerate}
 
 \section{Output}
-\subsection*{For Java}
+\subsection*{For Problem 1}
 \begin{enumerate}
-	\item The Area of the Shapes
-	\item The Location of the Hill Stations
-	\item The Reason the Hill stations are Famous for.
+	\item Menu about what to do with numbers
+	\item Output of the calculation done with those numbers
+\end{enumerate}
+\subsection*{For Problem 2}
+\begin{enumerate}
+	\item Even numebers and Odd numbers in Ascending order upto the specified limit. 
 \end{enumerate}
 
 
@@ -169,159 +190,35 @@ Print even and odd numbers in increasing order using two threads in Java
 
 \subsection{Java Implementation of Problem 1}
 
-\lstinputlisting[language=java, caption=Full Time Employee.java]{../Programs/java_implementations/assignment_7/assignment_7_problem_1.java}
+\lstinputlisting[language=java, caption=Probelm 1.java]{../Programs/java_implementations/assignment_7/assignment_7_problem_1.java}
 
 \subsubsection{Java Output}
-\lstinputlisting[caption=Output for Problem 1]{../Programs/java_implementations/assignment_7/problem_1_output.txt}
+\lstinputlisting[caption=Output for Problem 1 - calculations]{../Programs/java_implementations/assignment_7/problem_1_output.txt}
 
 \subsection{Java Implementation of Problem 2}
 
-\lstinputlisting[language=java, caption=HillStation]{../Programs/java_implementations/assignment_7/assignment_7_problem_2.java}
+\lstinputlisting[language=java, caption=Multithreading Even Odd]{../Programs/java_implementations/assignment_7/assignment_7_problem_2.java}
 
 \subsubsection{Java Output}
-\lstinputlisting[caption=Output for Problem 2]{../Programs/java_implementations/assignment_7/problem_2_output.txt}
+\lstinputlisting[caption=Output for ProblemHillStation 2]{../Programs/java_implementations/assignment_7/problem_2_output.txt}
 
 
 \section{Conclusion}
-Thus, learned to use polymorphism and implemented solution of the given problem statement using C++ and Java.
+Thus, learnt the use of thread class in java and performed multithreading operations.
+
 \pagebreak
 
 \section{FAQs}
 
 \begin{enumerate}
-	\item \textbf{Why do we use Exception Handling mechanism?}\\
-	      Exception handling is the process of responding to unwanted or unexpected events when a computer program runs. Exception handling deals with these events to avoid the program or system crashing, and without this process, exceptions would disrupt the normal operation of a program.
-	      \begin{enumerate}
-		      \item It helps you avoid the program from crashing
-		      \item It helps you set the program control in a more detailed manner
-		      \item It helps you manually stop the program safely according to your wish.
-	      \end{enumerate}
-	      \begin{verbatim}
-		// Psudo code for exception handling
-		int a;
-		try
-		{
-			cin>> a;
-			cout<<33/a; // if a is 0, Exception is thrown, program crashes. 
-		}
-		catch DivisionByZeroException as e
-		{
-			cout<<"cant divide by zero;
-		}
-	\end{verbatim}
-	\item \textbf{Is it possible to use multiple catch for single throw? Explain?}\\
-	      Yes, it is possible to use multiple catch statements for a single throw statement in both C++ and Java. C++ try and catch block works in a specific way, where the throw keyword throws an exception with an integer, or an exception. You can then write multiple catch statements just below the try block.\\
-	      In Java, you can throw instances of the Exception class, or throw any of the pre defined exceptions in java.
-
-	      \textbf{Example}
-	      \begin{lstlisting}[language=C++]
-		int a;
-		try
-		{
-			cin>> a;
-			if(a == 0)
-			{
-				throw a; // int is being thrown. 
-			}
-			else{
-				cout<<33/a; 
-				throw 'a'; // character is being thrown.  
-			}
-		}
-		catch (int a)
-		{
-			cout<<"cant divide by zero;
-		}
-		catch (char a)
-		{
-			cout<<"A is not zero";
-		}
-	\end{lstlisting}
-	      \begin{lstlisting}[language = Java]
-		try {
-            withdrawal_amt = input.nextInt();
-            if (withdrawal_amt > amount) {
-                throw new Exception("Withdrawal amount more than amount. ");
-				new_amount = withdrawal_amt / amount;
-            } else {
-                amount -= withdrawal_amt;
-            }
-        } catch (Exception e) {
-            System.out.println("Withdrawal Amount more than amount in bank. ");
-            return 0;
-        } catch (DivisionByZeroException d)
-		{
-			System.out.println(d);
-		}
-	\end{lstlisting}
-	\item \textbf{What is Exception Specification?}\\
-	      An exception specification is a contract between the function and the rest of the program. It is a guarantee that the function will not throw any exception not listed in its exception specification.
-	      \begin{lstlisting}[language = C++]
-		void f1(void) throw(int) {   
-			printf_s("About to throw 1\n");   
-			if (1)   
-			   throw 1;   
-		 }   
-	\end{lstlisting}
-	      \begin{lstlisting}[language=Java]
-		void function_name() throw(Exception)
-		{
-		  if (error) 
-		  {
-			throw Exception("Error");
-		  }
-		}		
-	\end{lstlisting}
-	\item \textbf{What is Re-throwing Exception?}\\
-	      If a catch block cannot handle the exception that it was designed to handle, then you can rethrow that exception from that catch block.
-	      It causes the original exception to be rethrown.
-
-	      Because the exception has already been caught at the scope in which the rethrow expression occurs, it is rethrown out to the next dynamically enclosing try block. Therefore, it cannot be handled by catch blocks at the scope in which the rethrow expression occurred. Any catch blocks for the dynamically enclosing try block have an opportunity to catch the exception.
-	      \begin{lstlisting}[language=C++]
-		void f() {
-			try {
-			  cout << "In try block of f()" << endl;
-			  cout << "Throwing exception of type E1" << endl;
-			  E1 myException;
-			  throw myException;
-			}
-			catch (E2& e) {
-			  cout << "In handler of f(), catch (E2& e)" << endl;
-			  cout << "Exception: " << e.message << endl;
-			  throw;
-			}
-			catch (E1& e) {
-			  cout << "In handler of f(), catch (E1& e)" << endl;
-			  cout << "Exception: " << e.message << endl;
-			  throw;
-			}	
-		}
-		
-	\end{lstlisting}
-	\item \textbf{Explain use of finally keyword in java.}\\
-	      Java finally block is a block used to execute important code such as closing the connection, etc.
-
-	      Java finally block is always executed whether an exception is handled or not. Therefore, it contains all the necessary statements that need to be printed regardless of the exception occurs or not.
-
-	      The finally block follows the try-catch block.
-
-	      \begin{lstlisting}[language=Java]
-	class TestFinallyBlock {    
-		public static void main(String args[]){    
-		try{    
-	  //below code do not throw any exception  
-		 int data=25/5;    
-		 System.out.println(data);    
-		}    
-	  //catch won't be executed  
-		catch(NullPointerException e){  
-	  System.out.println(e);  
-	  }    
-	  //executed regardless of exception occurred or not  
-	   finally {  
-	  System.out.println("finally block is always executed");  
-	  }    
-\end{lstlisting}
+	\item \textit{Why do we use collection framework?}
+	
+	\item \textit{Which is best collection framework in Java?}
+	
+	\item \textit{What is difference between array and collection?}
+	
+	\item \textit{What is HashMap in Java?}
+	
 \end{enumerate}
 
 \end{document}
