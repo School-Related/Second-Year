@@ -147,17 +147,63 @@ Additionally also handle '/ by zero' exception by the division method.
 Print even and odd numbers in increasing order using two threads in Java
 
 \section{Theory}
-% Multithreading in Java
-% 
-%  Life Cycle of a Thread
-% 
-%  Two ways to create a Thread
-% 
+\subsection{Multithreading in Java}
+\textit{
+In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A thread in Java is a lightweight process requiring fewer resources to create and share the process resources.
+
+Multithreading and Multiprocessing are used for multitasking in Java, but we prefer multithreading over multiprocessing. 
+
+}
+
+\subsection{Life Cycle of a Thread in Java}
+There are five states a thread has to go through in its life cycle. This life cycle is controlled by JVM (Java Virtual Machine). These states are:
+\begin{enumerate}
+	\item New : In this state, a new thread begins its life cycle. This is also called a born thread. The thread is in the new state if you create an instance of Thread class but before the invocation of the start() method.
+	\item Runnable : A thread becomes runnable after a newly born thread is started. In this state, a thread would be executing its task.
+	\item Running : When the thread scheduler selects the thread then, that thread would be in a running state.
+	\item Non-Runnable (Blocked) : The thread is still alive in this state, but currently, it is not eligible to run.
+	\item Terminated : A thread that is in a terminated state does not consume ant cycle of the CPU.
+\end{enumerate}
+
+\subsection{Ways of Creating a Thread}
+
 %  How to perform multiple tasks by multiple threads
 % 
 %  Thread Scheduler
-% 
-%  Joining a thread
+
+\subsection{Joining a Thread in Java}
+java.lang.Thread class provides the join() method which allows one thread to wait until another thread completes its execution. If t is a Thread object whose thread is currently executing, then t.join() will make sure that t is terminated before the next instruction is executed by the program.
+If there are multiple threads calling the join() methods that means overloading on join allows the programmer to specify a waiting period. However, as with sleep, join is dependent on the OS for timing, so you should not assume that join will wait exactly as long as you specify.
+There are three overloaded join functions.
+\begin{lstlisting}[language=Java]
+public class JoinExample1 extends Thread  
+{    
+    public void run()  
+    {    
+        for(int i=1; i<=4; i++)  
+        {    
+            try 
+            {    
+                Thread.sleep(500);    
+            }catch(Exception e){System.out.println(e);}    
+            System.out.println(i);    
+        }    
+    }    
+    public static void main(String args[])  
+    {   
+        JoinExample1 thread1 = new JoinExample1();    
+        JoinExample1 thread2 = new JoinExample1();    
+        JoinExample1 thread3 = new JoinExample1();    
+        thread1.start();   
+       try 
+        {    
+        thread1.join();    
+        }catch(Exception e){System.out.println(e);}    
+        thread2.start();   
+        thread3.start();    
+    }    
+}
+\end{lstlisting}
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
 \textbf{IDEs or Text Editors Used}: Visual Studio Code\\
