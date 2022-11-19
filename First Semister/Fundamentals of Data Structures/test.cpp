@@ -1,32 +1,18 @@
-/* CPP program to print all distinct elements
-of a given array */
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-// This function prints all distinct elements
-void printDistinct(int arr[], int n)
+int f(int x, int n)
 {
-    // Creates an empty hashset
-    unordered_set<int> s;
-
-    // Traverse the input array
-    for (int i = 0; i < n; i++)
+    if (n == 0)
+        return 1;
+    else
     {
-        // if element is not present then s.count(element) return 0 else return 1
-        // hashtable and print it
-        if (!s.count(arr[i])) // <--- avg O(1) time
-        {
-            s.insert(arr[i]);
-            cout << arr[i] << " ";
-        }
+        return x * f(x, --n);
     }
 }
 
-// Driver method to test above method
 int main()
 {
-    int arr[] = {10, 5, 3, 4, 3, 5, 6};
-    int n = 7;
-    printDistinct(arr, n);
+    cout << f(2, 6);
     return 0;
 }

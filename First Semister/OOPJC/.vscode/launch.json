@@ -3,6 +3,21 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Attach",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": "<debug port of the debuggee>"
+    },
+
+    {
+      "type": "java",
+      "name": "Launch assignment_8",
+      "request": "launch",
+      "mainClass": "assignment_8",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "type": "java",
       "name": "Launch Testing",
       "request": "launch",
       "mainClass": "Testing",

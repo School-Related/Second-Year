@@ -22,9 +22,10 @@
     "**/.vscode/**"
   ],
   "java.project.sourcePaths": [
+    "Programs/java_implementations/assignment_3",
     "Programs/java_implementations/assignment_2",
     "Programs/java_implementations/assignment_1",
-    "Programs/java_implementations/assignment_3"
+    "Programs/java_implementations/assignment_8"
   ],
   "files.associations": {
     "iostream": "cpp",

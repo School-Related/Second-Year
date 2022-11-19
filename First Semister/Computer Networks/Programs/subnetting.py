@@ -136,7 +136,6 @@ def main():
     
 
     for i in range(possible_subnets):
-                
         # to get the respective ips,we first need the subnet ip
         # there are only possible_subnets possible subnets, so we could just iterate through i
 
