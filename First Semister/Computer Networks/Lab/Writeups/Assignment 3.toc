@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Aim and Objectives}{1}{}%
+\contentsline {section}{\numberline {2}Devices}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Devices Used}{1}{}%
+\contentsline {subsection}{\numberline {2.2}Device Info and IP Addresses}{1}{}%
+\contentsline {section}{\numberline {3}Cables}{1}{}%
+\contentsline {section}{\numberline {4}Procedure to Configure VLAN}{1}{}%
+\contentsline {section}{\numberline {5}Commands}{2}{}%
+\contentsline {section}{\numberline {6}Output}{2}{}%
+\contentsline {subsection}{\numberline {6.1}Switch 1}{2}{}%
+\contentsline {subsection}{\numberline {6.2}Switch 2}{3}{}%
+\contentsline {subsection}{\numberline {6.3}Switch 3}{4}{}%
+\contentsline {section}{\numberline {7}Platform}{4}{}%
+\contentsline {section}{\numberline {8}Connection Screenshot}{5}{}%
+\contentsline {section}{\numberline {9}Conclusion}{5}{}%

@@ -8,7 +8,7 @@
 \usepackage{amsfonts, amsmath, amssymb}
 \usepackage{fancyhdr, float, graphicx}
 \usepackage[utf8]{inputenc} % Required for inputting international characters
-\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[T1]{fontenc} 
 \usepackage{fouriernc} % Use the New Century Schoolbook font
 \usepackage[nottoc, notlot, notlof]{tocbibind}
 \usepackage{listings}
@@ -41,11 +41,12 @@
 
 \lstset{style=mystyle}
 
-% Header and Footer
+% Header and Footer     Reset functions
+
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{Computer Networks Assignment 1}}}
+\fancyhead[L]{\textit{\Large{Computer Networks Assignment 3}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -57,70 +58,71 @@
 %\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
-	
-	\begin{titlepage} 
-		\centering 
-		
-		%---------------------------NAMES-------------------------------
-		
-		\huge\textsc{
-			MIT World Peace University
-		}\\
-	
-		\vspace{0.75\baselineskip} % space after Uni Name
-		
-		\LARGE{
-			Computer Networks\\
-			Second Year B. Tech, Semester 3
-		}
-		
-		\vfill % space after Sub Name
-		
-		%--------------------------TITLE-------------------------------
-		
-		\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
-		\rule{\textwidth}{0.6pt}
-		\vspace{0.75\baselineskip} % Whitespace above the title
-		
-		
-		
-		\huge{\textsc{
-			Configuration of a Simple LAN
-			}} \\
-		
-		
-		
-		\vspace{0.5\baselineskip} % Whitespace below the title
-		\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
-		\rule{\textwidth}{1.6pt}
-		
-		\vspace{1\baselineskip} % Whitespace after the title block
 
-		%--------------------------SUBTITLE --------------------------	
-			
-		\LARGE\textsc{
-			Practical Report
-		} % Subtitle or further description
-		\vfill
-		
-		%--------------------------AUTHOR-------------------------------
-		
-		Prepared By
-		\vspace{0.5\baselineskip} % Whitespace before the editors
-		
-		\Large{
-			Krishnaraj Thadesar \\
-			Cyber Security and Forensics\\
-			Batch A2, PA 34
-		}
-		
-		
-		\vspace{0.5\baselineskip} % Whitespace below the editor list
-		\today
+\begin{titlepage}
+	\centering
 
-	\end{titlepage}
-	
-	
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Computer Networks\\
+		Second Year B. Tech, Semester 3
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Configuration of a Virtual LAN
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report\\
+		Assignment 3
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A1, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
 \tableofcontents
 \thispagestyle{empty}
 \clearpage
@@ -129,7 +131,7 @@
 \setcounter{page}{1}
 
 \section{Aim and Objectives}
-To learn how to configure a simple LAN connection using Cisco Packet Tracer.
+To Design and configure a virtual LAN using Packet Tracer and To understand the concept of VLAN and implement it using packet tracer.
 
 \section{Devices}
 
@@ -142,46 +144,26 @@ To learn how to configure a simple LAN connection using Cisco Packet Tracer.
 \end{enumerate}
 
 \subsection{Device Info and IP Addresses}
-
-Subnet Mask: 255.255.255.0
-
-\begin{table}[H] 
-	\centering
-	\begin{tabular}{|c|c|c|}
-	\hline
-	\textbf{Name} & \textbf{Type}      & \textbf{IP}    \\ 
-	\hline
-	PC0           & PC                 & 192.168.10.1   \\ 
-	\hline
-	PC1           & PC                 & 192.168.10.2   \\ 
-	\hline
-	PC2           & PC                 & 192.168.10.3   \\ 
-	\hline
-	PC3           & PC                 & 192.168.10.4   \\ 
-	\hline
-	PC4           & PC                 & 192.168.10.5   \\ 
-	\hline
-	PC5           & PC                 & 192.168.10.6   \\ 
-	\hline
-	Laptop0       & Laptop             & 192.168.10.7   \\ 
-	\hline
-	Laptop1       & Laptop             & 192.168.10.8   \\ 
-	\hline
-	Laptop2       & Laptop             & 192.168.10.9   \\ 
-	\hline
-	Laptop3       & Laptop             & 192.168.10.10  \\ 
-	\hline
-	Switch0       & 2950-24
-					Switch & None           \\ 
-	\hline
-	Switch1       & 2950-24
-					Switch & None           \\ 
-	\hline
-	Switch2       & Generic
-					Switch & None           \\
-	\hline
+\begin{table}[H]
+	\begin{tabular}{|l|l|l|c|}
+		\hline
+		\textbf{No} & \textbf{Device Name} & \textbf{Model} & \textbf{IP}       \\ \hline
+		\textbf{1}  & Switch0              & 2950-24        & - \\ \hline
+		2           & PC0 - CS             & PC-PT          & 192.168.0.1 \\ \hline
+		3           & PC1 - ECE            & PC-PT          & 192.168.0.5 \\ \hline
+		4           & PC2 MECH             & PC-PT          & 192.168.0.2 \\ \hline
+		5           & Switch1              & 2950-24        & - \\ \hline
+		6           & PC3 CS               & PC-PT          & 192.168.0.3 \\ \hline
+		7           & PC4 PH               & PC-PT          & 192.168.0.4 \\ \hline
+		8           & Switch2              & 2950-24        & - \\ \hline
+		9           & Laptop0 CS           & Laptop-PT      & 192.168.0.6 \\ \hline
+		10          & Laptop1 PH           & Laptop-PT      & 192.168.0.9 \\ \hline
+		11          & Laptop2 MECH         & Laptop-PT      & 192.168.0.8 \\ \hline
+		12          & Laptop3 ECE          & Laptop-PT      & 192.168.0.7 \\ \hline
+		13          & PC5 ECE              & PC-PT          & 192.168.0.10 \\ \hline
 	\end{tabular}
-	\end{table}
+\end{table}
+
 
 \section{Cables}
 \begin{enumerate}
@@ -189,68 +171,175 @@ Subnet Mask: 255.255.255.0
 	\item Crossover LAN Cable to connect like Devices
 \end{enumerate}
 
-\section{Procedure to Configure LAN}
+\section{Procedure to Configure VLAN}
 \begin{enumerate}
-	\item All 3 switches are connected with each other using crossover cables, as they are similar. 
-	\item 4 PCs are connected to The first Switch
-    \item 4 Laptops are connected to the Second switch
-    \item 2 More computers are connected to another Switch. 
-    \item Check the connection by opening the command prompt, and entering the commands ipconfig, and pinging the other computers. 
+	\item Create a Simple network with a switch and a few PCs
+	\item Create as many other networks you want, connect a few PCS or laptops to it. Use a generic Switch.
+	\item Name the PCs and Laptops according to some virtual division you want to make, be it different divisions of a single institution, wings in a hospital or anything. 
+	\item Connect the switches to each toher using a crossover cable, and the PCs to the switch using a Straight cable. 
+	\item Click on the Switch and open its terminal, or GUI, where you can add the VLAN name and Number. Add the VLANS respective to the ones you have in your network, to all the switches either via its GUI or terminal using commands given below. 
+	\item Select Each interface and set its particular VLAN. You can do this in the terminal for each switch or with the GUI. 
 \end{enumerate}
 
 \section{Commands}
-
-\begin{enumerate}
-	\item \textbf{ipconfig}: 
-	
-	In Windows, ipconfig is a console application designed to run from the Windows command prompt. This utility allows you to get the IP address information of a Windows computer. It also allows some control over your network adapters, IP addresses (DHCP-assigned specifically), even your DNS cache. Ipconfig replaced the older winipcfg utility.
-	\item \textbf{ping <ip addr>}: 
-	
-	The ping command is a Command Prompt command used to test the ability of the source computer to reach a specified destination computer. It's a simple way to verify that a computer can communicate with another computer or network device.\\ 
-	The ping command operates by sending Internet Control Message Protocol (ICMP) Echo Request messages to the destination computer and waiting for a response. The two major pieces of information that the ping command provides are how many of those responses are returned and how long it takes for them to return.
-\end{enumerate}
-
-\section{Platform}
-	\textbf{Operating System}: Arch Linux x86-64\\
-	\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
-	\textbf{Programs Used}: Cisco Packet Tracer v6.0.1
+\begin{verbatim}
+	# enable
+	# configure terminal
+	# exitverbatim
+	# vlan 20 name Mechanical
+	# vlan 10 name CS
+	# vlan 30 name Pharma
+	# terminal Show VLAN
+	# vlan database
+	# interface F0/2
+	# switchport access vlan <VLAN_NO>
+	# exit
+	# interface F0/1 // the one connected to another switch
+	# switchport mode trunk
+\end{verbatim}
 
 \section{Output}
+\subsection{Switch 1}
+\begin{lstlisting}
+Switch#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/7, Fa0/8, Fa0/9
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15, Fa0/16, Fa0/17, Fa0/18
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24
+10   CS                               active    Fa0/6, Fa0/10
+11   ECE                              active    Fa0/3
+12   MECH                             active    Fa0/4
+13   PH                               active    Fa0/2
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+11   enet  100011     1500  -      -      -        -    -        0      0
+12   enet  100012     1500  -      -      -        -    -        0      0
+13   enet  100013     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+\end{lstlisting}
+
+\subsection{Switch 2}
 
 \begin{lstlisting}
-FastEthernet0 Connection:(default port)
+Switch#show vlan
 
-Link-local IPv6 Address.........: FE80::201:C9FF:FEE6:3985
-IP Address......................: 192.168.1.1
-Subnet Mask.....................: 255.255.255.0
-Default Gateway.................: 0.0.0.0
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/7, Fa0/8, Fa0/9, Fa0/10
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15, Fa0/16, Fa0/17, Fa0/18
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24
+10   CS                               active    Fa0/5
+11   ECE                              active    Fa0/6
+12   MECH                             active    Fa0/4
+13   PH                               active    Fa0/3
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
 
-PC>ping 192.168.1.2
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+11   enet  100011     1500  -      -      -        -    -        0      0
+12   enet  100012     1500  -      -      -        -    -        0      0
+13   enet  100013     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
 
-Pinging 192.168.1.2 with 32 bytes of data:
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
 
-Reply from 192.168.1.2: bytes=32 time=1ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=17ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=0ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=0ms TTL=128
+Remote SPAN VLANs
+------------------------------------------------------------------------------
 
-Ping statistics for 192.168.1.2:
-Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-Minimum = 0ms, Maximum = 17ms, Average = 4ms
-
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
 \end{lstlisting}
+
+
+\subsection{Switch 3}
+\begin{lstlisting}
+Switch#show vlan
+	
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/8, Fa0/9, Fa0/10, Fa0/11
+                                                Fa0/12, Fa0/13, Fa0/14, Fa0/15
+                                                Fa0/16, Fa0/17, Fa0/18, Fa0/19
+                                                Fa0/20, Fa0/21, Fa0/22, Fa0/23
+                                                Fa0/24
+10   CS                               active    Fa0/3, Fa0/6
+11   ECE                              active    Fa0/7
+12   MECH                             active    Fa0/4
+13   PH                               active    Fa0/2, Fa0/5
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+11   enet  100011     1500  -      -      -        -    -        0      0
+12   enet  100012     1500  -      -      -        -    -        0      0
+13   enet  100013     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+\end{lstlisting}
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64\\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
+\textbf{Programs Used}: Cisco Packet Tracer v8.2
 
 \section{Connection Screenshot}
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.47]{Screenshots/Assignment_2_screenshot.png}
+	\includegraphics[scale=0.35]{../Screenshots/Assignment_3_screenshot.png}
 \end{figure}
 
 
 \section{Conclusion}
-A local area network was successfully created, deployed and tested on a simulator. The concept behind the Local area network was understood in detail. The various types of cables used to connect the devices were also used and explained. Commands to test computers on a network were also executed successfully. Various computers can be connected with each other and communicate seamlessly with the help of switches, Network Interface Cards, Computers and Straight as well as twisted Ethernet Cables.  in a local area network. 
-
+A Virtual Local Area Network was implemented successfulyl with 3 switches and 4 Virtual LANS. The Concept and its uses were understood.
 \end{document}

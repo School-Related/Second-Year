@@ -41,12 +41,11 @@
 
 \lstset{style=mystyle}
 
-% Header and Footer     Reset functions
-
+% Header and Footer
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{Computer Networks Assignment 3}}}
+\fancyhead[L]{\textit{\Large{Computer Networks Assignment 10}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -86,7 +85,7 @@
 		
 		
 		\huge{\textsc{
-			Configuration of a Virtual LAN
+			DHCP, DNS and Web Server configuration
 			}} \\
 		
 		
@@ -100,7 +99,8 @@
 		%--------------------------SUBTITLE --------------------------	
 			
 		\LARGE\textsc{
-			Practical Report
+			Practical Report\\
+			Assignment 10
 		} % Subtitle or further description
 		\vfill
 		
@@ -114,6 +114,8 @@
 			Cyber Security and Forensics\\
 			Batch A1, PA 20
 		}
+		
+		
 		\vspace{0.5\baselineskip} % Whitespace below the editor list
 		\today
 
@@ -128,16 +130,22 @@
 \setcounter{page}{1}
 
 \section{Aim and Objectives}
-To Design and configure a virtual LAN using Packet Tracer and To understand the concept of VLAN and implement it using packet tracer.
-
+\subsection*{Aim}
+To Configure network using Dynamic Host Configuration Protocol (DHCP), DNS and Web server Use Ping utility to test connectivity.
+\subsection*{Objectives}
+\begin{enumerate}
+	\item To learn the DHCP installation and understand the practical use of DHCP, DNS and Web server.
+	\item To learn the mechanism to access the remote machine by using ping utility to test connectivity.
+\end{enumerate}
 \section{Devices}
 
 \subsection{Devices Used}
 \begin{enumerate}
-	\item 1 Generic Switch
-	\item 2 Switch 2960 with 24 LAN Ports
-	\item 6 Generic PCs
-	\item 4 Laptops
+	\item 1 Wireless Router WRT300N
+	\item 1 Switch 2950
+	\item 5 Generic PCs
+	\item 3 Laptops
+	\item 1 Web Server
 \end{enumerate}
 
 \subsection{Device Info and IP Addresses}
@@ -158,7 +166,7 @@ Subnet Mask: 255.255.255.0
 	\hline
 	PC3           & PC                 & 192.168.10.4   \\ 
 	\hline
-	PC4           & PC                 & 192.168.10.5   \\ 
+	PC6           & PC                 & 192.168.10.5   \\ 
 	\hline
 	PC5           & PC                 & 192.168.10.6   \\ 
 	\hline
@@ -188,68 +196,48 @@ Subnet Mask: 255.255.255.0
 	\item Crossover LAN Cable to connect like Devices
 \end{enumerate}
 
+\section{Commands}
+\begin{verbatim}
+Router>enable
+Router#config terminal
+Router(config)#int fa0/0
+Router(config-if)#ip add 192.168.1.1 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#
+Router(config)#ip dhcp pool MY_LAN
+Router(dhcp-config)#network 192.168.1.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.1.1
+Router(dhcp-config)#dns-server 192.168.1.10
+\end{verbatim}
+
 \section{Procedure to Configure LAN}
 \begin{enumerate}
-	\item All 3 switches are connected with each other using crossover cables, as they are similar. 
-	\item 4 PCs are connected to The first Switch
-    \item 4 Laptops are connected to the Second switch
-    \item 2 More computers are connected to another Switch. 
-    \item Check the connection by opening the command prompt, and entering the commands ipconfig, and pinging the other computers. 
-\end{enumerate}
-
-\section{Commands}
-
-\begin{enumerate}
-	\item \textbf{ipconfig}: 
-	
-	In Windows, ipconfig is a console application designed to run from the Windows command prompt. This utility allows you to get the IP address information of a Windows computer. It also allows some control over your network adapters, IP addresses (DHCP-assigned specifically), even your DNS cache. Ipconfig replaced the older winipcfg utility.
-	\item \textbf{ping <ip addr>}: 
-	
-	The ping command is a Command Prompt command used to test the ability of the source computer to reach a specified destination computer. It's a simple way to verify that a computer can communicate with another computer or network device.\\ 
-	The ping command operates by sending Internet Control Message Protocol (ICMP) Echo Request messages to the destination computer and waiting for a response. The two major pieces of information that the ping command provides are how many of those responses are returned and how long it takes for them to return.
+	\item Create The network topology on the Packet tracer, that has a router, a few PCS near the router, and some connected to it via LAN cables. 
+	\item Add a Web server which is connected to a switch that is connected to other end devices. 
+	\item Run the commands on the router to configure it. 
+	\item Go to the GUI tab in the router, and select the Wireless tab, where you can go to wireless security, and select security mode to WPA2, personal, and encryption to AE5. Assign a password. 
+	\item To the PCs not connected to the router directly, install a wireless network card in them after turning them off, and then turn them back on. 
+	\item Go the PC wireless in the Desktop Settings, and navigate to the Connect Tab. Here refersh the network, and add the WPA2 Passkey that you have assigned to the router. 
+	\item To the webserver, add a Fast ethernet port to connect it. 
+	\item Configure the Web Server, and add the Default gateway as 10.0.0.1
+	\item Go to the services tab in the web server, and in DHCP, turn it on, and configure the starting and the ending IP addresses. Save. 
+	\item Assign IP Addresses to all the other computers, by selecting on the DHCP Radiobutton instead of the static one, and wait for it to query and assign the IP. Ping and check. 
 \end{enumerate}
 
 \section{Platform}
 	\textbf{Operating System}: Arch Linux x86-64\\
 	\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
-	\textbf{Programs Used}: Cisco Packet Tracer v6.0.1
-
-\section{Output}
-
-\begin{lstlisting}
-FastEthernet0 Connection:(default port)
-
-Link-local IPv6 Address.........: FE80::201:C9FF:FEE6:3985
-IP Address......................: 192.168.1.1
-Subnet Mask.....................: 255.255.255.0
-Default Gateway.................: 0.0.0.0
-
-PC>ping 192.168.1.2
-
-Pinging 192.168.1.2 with 32 bytes of data:
-
-Reply from 192.168.1.2: bytes=32 time=1ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=17ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=0ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=0ms TTL=128
-
-Ping statistics for 192.168.1.2:
-Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-Minimum = 0ms, Maximum = 17ms, Average = 4ms
-
-\end{lstlisting}
+	\textbf{Programs Used}: Cisco Packet Tracer v8.2
 
 \section{Connection Screenshot}
 
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.47]{Screenshots/Assignment_2_screenshot.png}
+	\includegraphics[scale=0.35]{../Screenshots/Assignment_10_screenshot.png}
 \end{figure}
 
 
 \section{Conclusion}
-A local area network was successfully created, deployed and tested on a simulator. The concept behind the Local area network was understood in detail. The various types of cables used to connect the devices were also used and explained. Commands to test computers on a network were also executed successfully. Various computers can be connected with each other and communicate seamlessly with the help of switches, Network Interface Cards, Computers and Straight as well as twisted Ethernet Cables.  in a local area network. 
-
+DHCP, DNS and Web Server configurations were implemented and understood successfully. 
 \end{document}

@@ -45,7 +45,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{Computer Networks Assignment 1}}}
+\fancyhead[L]{\textit{\Large{Computer Networks Assignment 5}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -57,70 +57,71 @@
 %\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
-	
-	\begin{titlepage} 
-		\centering 
-		
-		%---------------------------NAMES-------------------------------
-		
-		\huge\textsc{
-			MIT World Peace University
-		}\\
-	
-		\vspace{0.75\baselineskip} % space after Uni Name
-		
-		\LARGE{
-			Computer Networks\\
-			Second Year B. Tech, Semester 3
-		}
-		
-		\vfill % space after Sub Name
-		
-		%--------------------------TITLE-------------------------------
-		
-		\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
-		\rule{\textwidth}{0.6pt}
-		\vspace{0.75\baselineskip} % Whitespace above the title
-		
-		
-		
-		\huge{\textsc{
-			Configuration of a Simple LAN
-			}} \\
-		
-		
-		
-		\vspace{0.5\baselineskip} % Whitespace below the title
-		\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
-		\rule{\textwidth}{1.6pt}
-		
-		\vspace{1\baselineskip} % Whitespace after the title block
 
-		%--------------------------SUBTITLE --------------------------	
-			
-		\LARGE\textsc{
-			Practical Report
-		} % Subtitle or further description
-		\vfill
-		
-		%--------------------------AUTHOR-------------------------------
-		
-		Prepared By
-		\vspace{0.5\baselineskip} % Whitespace before the editors
-		
-		\Large{
-			Krishnaraj Thadesar \\
-			Cyber Security and Forensics\\
-			Batch A2, PA 34
-		}
-		
-		
-		\vspace{0.5\baselineskip} % Whitespace below the editor list
-		\today
+\begin{titlepage}
+	\centering
 
-	\end{titlepage}
-	
-	
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Computer Networks\\
+		Second Year B. Tech, Semester 3
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Subnetting
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report\\
+		Assignment 5
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A1, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
 \tableofcontents
 \thispagestyle{empty}
 \clearpage
@@ -129,128 +130,83 @@
 \setcounter{page}{1}
 
 \section{Aim and Objectives}
-To learn how to configure a simple LAN connection using Cisco Packet Tracer.
+\subsection*{Aim}
+Write a  program to implement subnetting to find subnet mask
 
-\section{Devices}
+\subsection*{Objectives}
+To understand and learn the concept of IP address, subnet mask and subnetting
 
-\subsection{Devices Used}
-\begin{enumerate}
-	\item 1 Generic Switch
-	\item 2 Switch 2960 with 24 LAN Ports
-	\item 6 Generic PCs
-	\item 4 Laptops
-\end{enumerate}
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64\\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
+\textbf{Programs Used}: Cisco Packet Tracer v8.2
+\textbf{Interpreter Used}: Python 3.9
 
-\subsection{Device Info and IP Addresses}
+\section{Code}
 
-Subnet Mask: 255.255.255.0
+\lstinputlisting[language=python, caption=Hamming Code.cpp]{../../Programs/subnetting.py}
 
-\begin{table}[H] 
-	\centering
-	\begin{tabular}{|c|c|c|}
+\section{ Output}
+\begin{lstlisting}
+Enter the Given IP Address: 
+Enter the Number of Subnets you Want to make: 
+
+The IP Address you have entered is:  [192, 168, 1, 0]
+Subnet Number:  32
+Subnet Bits:  5
+CIDR Value:  29
+Maximum Possible Subnets:  32
+Maxixmum Possible Hosts:  8
+Subnet Mask is:  255.255.255.248
+\end{lstlisting}
+% \lstinputlisting[caption=Output for Hamming Codes]{../../Programs/output.csv}
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|c|c|c|}
 	\hline
-	\textbf{Name} & \textbf{Type}      & \textbf{IP}    \\ 
-	\hline
-	PC0           & PC                 & 192.168.10.1   \\ 
-	\hline
-	PC1           & PC                 & 192.168.10.2   \\ 
-	\hline
-	PC2           & PC                 & 192.168.10.3   \\ 
-	\hline
-	PC3           & PC                 & 192.168.10.4   \\ 
-	\hline
-	PC4           & PC                 & 192.168.10.5   \\ 
-	\hline
-	PC5           & PC                 & 192.168.10.6   \\ 
-	\hline
-	Laptop0       & Laptop             & 192.168.10.7   \\ 
-	\hline
-	Laptop1       & Laptop             & 192.168.10.8   \\ 
-	\hline
-	Laptop2       & Laptop             & 192.168.10.9   \\ 
-	\hline
-	Laptop3       & Laptop             & 192.168.10.10  \\ 
-	\hline
-	Switch0       & 2950-24
-					Switch & None           \\ 
-	\hline
-	Switch1       & 2950-24
-					Switch & None           \\ 
-	\hline
-	Switch2       & Generic
-					Switch & None           \\
-	\hline
+	\textbf{} & {\color[HTML]{9698ED} \textbf{Subnet IP}} & {\color[HTML]{009901} \textbf{Starting Host IP}} & {\color[HTML]{000000} \textbf{Last Host IP}} & {\color[HTML]{F56B00} \textbf{Broadcast IP}} & {\color[HTML]{963400} Subnet Mask}     \\ \hline
+	0         & {\color[HTML]{9698ED} 192.168.1.0}        & {\color[HTML]{009901} 192.168.1.1}               & {\color[HTML]{000000} 192.168.1.6}           & {\color[HTML]{F56B00} 192.168.1.7}           & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	1         & {\color[HTML]{9698ED} 192.168.1.8}        & {\color[HTML]{009901} 192.168.1.9}               & {\color[HTML]{000000} 192.168.1.14}          & {\color[HTML]{F56B00} 192.168.1.15}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	2         & {\color[HTML]{9698ED} 192.168.1.16}       & {\color[HTML]{009901} 192.168.1.17}              & {\color[HTML]{000000} 192.168.1.22}          & {\color[HTML]{F56B00} 192.168.1.23}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	3         & {\color[HTML]{9698ED} 192.168.1.24}       & {\color[HTML]{009901} 192.168.1.25}              & {\color[HTML]{000000} 192.168.1.30}          & {\color[HTML]{F56B00} 192.168.1.31}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	4         & {\color[HTML]{9698ED} 192.168.1.32}       & {\color[HTML]{009901} 192.168.1.33}              & {\color[HTML]{000000} 192.168.1.38}          & {\color[HTML]{F56B00} 192.168.1.39}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	5         & {\color[HTML]{9698ED} 192.168.1.40}       & {\color[HTML]{009901} 192.168.1.41}              & {\color[HTML]{000000} 192.168.1.46}          & {\color[HTML]{F56B00} 192.168.1.47}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	6         & {\color[HTML]{9698ED} 192.168.1.48}       & {\color[HTML]{009901} 192.168.1.49}              & {\color[HTML]{000000} 192.168.1.54}          & {\color[HTML]{F56B00} 192.168.1.55}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	7         & {\color[HTML]{9698ED} 192.168.1.56}       & {\color[HTML]{009901} 192.168.1.57}              & {\color[HTML]{000000} 192.168.1.62}          & {\color[HTML]{F56B00} 192.168.1.63}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	8         & {\color[HTML]{9698ED} 192.168.1.64}       & {\color[HTML]{009901} 192.168.1.65}              & {\color[HTML]{000000} 192.168.1.70}          & {\color[HTML]{F56B00} 192.168.1.71}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	9         & {\color[HTML]{9698ED} 192.168.1.72}       & {\color[HTML]{009901} 192.168.1.73}              & {\color[HTML]{000000} 192.168.1.78}          & {\color[HTML]{F56B00} 192.168.1.79}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	10        & {\color[HTML]{9698ED} 192.168.1.80}       & {\color[HTML]{009901} 192.168.1.81}              & {\color[HTML]{000000} 192.168.1.86}          & {\color[HTML]{F56B00} 192.168.1.87}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	11        & {\color[HTML]{9698ED} 192.168.1.88}       & {\color[HTML]{009901} 192.168.1.89}              & {\color[HTML]{000000} 192.168.1.94}          & {\color[HTML]{F56B00} 192.168.1.95}          & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	12        & {\color[HTML]{9698ED} 192.168.1.96}       & {\color[HTML]{009901} 192.168.1.97}              & {\color[HTML]{000000} 192.168.1.102}         & {\color[HTML]{F56B00} 192.168.1.103}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	13        & {\color[HTML]{9698ED} 192.168.1.104}      & {\color[HTML]{009901} 192.168.1.105}             & {\color[HTML]{000000} 192.168.1.110}         & {\color[HTML]{F56B00} 192.168.1.111}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	14        & {\color[HTML]{9698ED} 192.168.1.112}      & {\color[HTML]{009901} 192.168.1.113}             & {\color[HTML]{000000} 192.168.1.118}         & {\color[HTML]{F56B00} 192.168.1.119}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	15        & {\color[HTML]{9698ED} 192.168.1.120}      & {\color[HTML]{009901} 192.168.1.121}             & {\color[HTML]{000000} 192.168.1.126}         & {\color[HTML]{F56B00} 192.168.1.127}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	16        & {\color[HTML]{9698ED} 192.168.1.128}      & {\color[HTML]{009901} 192.168.1.129}             & {\color[HTML]{000000} 192.168.1.134}         & {\color[HTML]{F56B00} 192.168.1.135}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	17        & {\color[HTML]{9698ED} 192.168.1.136}      & {\color[HTML]{009901} 192.168.1.137}             & {\color[HTML]{000000} 192.168.1.142}         & {\color[HTML]{F56B00} 192.168.1.143}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	18        & {\color[HTML]{9698ED} 192.168.1.144}      & {\color[HTML]{009901} 192.168.1.145}             & {\color[HTML]{000000} 192.168.1.150}         & {\color[HTML]{F56B00} 192.168.1.151}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	19        & {\color[HTML]{9698ED} 192.168.1.152}      & {\color[HTML]{009901} 192.168.1.153}             & {\color[HTML]{000000} 192.168.1.158}         & {\color[HTML]{F56B00} 192.168.1.159}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	20        & {\color[HTML]{9698ED} 192.168.1.160}      & {\color[HTML]{009901} 192.168.1.161}             & {\color[HTML]{000000} 192.168.1.166}         & {\color[HTML]{F56B00} 192.168.1.167}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	21        & {\color[HTML]{9698ED} 192.168.1.168}      & {\color[HTML]{009901} 192.168.1.169}             & {\color[HTML]{000000} 192.168.1.174}         & {\color[HTML]{F56B00} 192.168.1.175}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	22        & {\color[HTML]{9698ED} 192.168.1.176}      & {\color[HTML]{009901} 192.168.1.177}             & {\color[HTML]{000000} 192.168.1.182}         & {\color[HTML]{F56B00} 192.168.1.183}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	23        & {\color[HTML]{9698ED} 192.168.1.184}      & {\color[HTML]{009901} 192.168.1.185}             & {\color[HTML]{000000} 192.168.1.190}         & {\color[HTML]{F56B00} 192.168.1.191}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	24        & {\color[HTML]{9698ED} 192.168.1.192}      & {\color[HTML]{009901} 192.168.1.193}             & {\color[HTML]{000000} 192.168.1.198}         & {\color[HTML]{F56B00} 192.168.1.199}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	25        & {\color[HTML]{9698ED} 192.168.1.200}      & {\color[HTML]{009901} 192.168.1.201}             & {\color[HTML]{000000} 192.168.1.206}         & {\color[HTML]{F56B00} 192.168.1.207}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	26        & {\color[HTML]{9698ED} 192.168.1.208}      & {\color[HTML]{009901} 192.168.1.209}             & {\color[HTML]{000000} 192.168.1.214}         & {\color[HTML]{F56B00} 192.168.1.215}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	27        & {\color[HTML]{9698ED} 192.168.1.216}      & {\color[HTML]{009901} 192.168.1.217}             & {\color[HTML]{000000} 192.168.1.222}         & {\color[HTML]{F56B00} 192.168.1.223}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	28        & {\color[HTML]{9698ED} 192.168.1.224}      & {\color[HTML]{009901} 192.168.1.225}             & {\color[HTML]{000000} 192.168.1.230}         & {\color[HTML]{F56B00} 192.168.1.231}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	29        & {\color[HTML]{9698ED} 192.168.1.232}      & {\color[HTML]{009901} 192.168.1.233}             & {\color[HTML]{000000} 192.168.1.238}         & {\color[HTML]{F56B00} 192.168.1.239}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	30        & {\color[HTML]{9698ED} 192.168.1.240}      & {\color[HTML]{009901} 192.168.1.241}             & {\color[HTML]{000000} 192.168.1.246}         & {\color[HTML]{F56B00} 192.168.1.247}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
+	31        & {\color[HTML]{9698ED} 192.168.1.248}      & {\color[HTML]{009901} 192.168.1.249}             & {\color[HTML]{000000} 192.168.1.254}         & {\color[HTML]{F56B00} 192.168.1.255}         & {\color[HTML]{963400} 255.255.255.248} \\ \hline
 	\end{tabular}
 	\end{table}
 
-\section{Cables}
-\begin{enumerate}
-	\item Straight LAN Cable to connect unlike Devices
-	\item Crossover LAN Cable to connect like Devices
-\end{enumerate}
-
-\section{Procedure to Configure LAN}
-\begin{enumerate}
-	\item All 3 switches are connected with each other using crossover cables, as they are similar. 
-	\item 4 PCs are connected to The first Switch
-    \item 4 Laptops are connected to the Second switch
-    \item 2 More computers are connected to another Switch. 
-    \item Check the connection by opening the command prompt, and entering the commands ipconfig, and pinging the other computers. 
-\end{enumerate}
-
-\section{Commands}
-
-\begin{enumerate}
-	\item \textbf{ipconfig}: 
-	
-	In Windows, ipconfig is a console application designed to run from the Windows command prompt. This utility allows you to get the IP address information of a Windows computer. It also allows some control over your network adapters, IP addresses (DHCP-assigned specifically), even your DNS cache. Ipconfig replaced the older winipcfg utility.
-	\item \textbf{ping <ip addr>}: 
-	
-	The ping command is a Command Prompt command used to test the ability of the source computer to reach a specified destination computer. It's a simple way to verify that a computer can communicate with another computer or network device.\\ 
-	The ping command operates by sending Internet Control Message Protocol (ICMP) Echo Request messages to the destination computer and waiting for a response. The two major pieces of information that the ping command provides are how many of those responses are returned and how long it takes for them to return.
-\end{enumerate}
-
-\section{Platform}
-	\textbf{Operating System}: Arch Linux x86-64\\
-	\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
-	\textbf{Programs Used}: Cisco Packet Tracer v6.0.1
-
-\section{Output}
-
-\begin{lstlisting}
-FastEthernet0 Connection:(default port)
-
-Link-local IPv6 Address.........: FE80::201:C9FF:FEE6:3985
-IP Address......................: 192.168.1.1
-Subnet Mask.....................: 255.255.255.0
-Default Gateway.................: 0.0.0.0
-
-PC>ping 192.168.1.2
-
-Pinging 192.168.1.2 with 32 bytes of data:
-
-Reply from 192.168.1.2: bytes=32 time=1ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=17ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=0ms TTL=128
-Reply from 192.168.1.2: bytes=32 time=0ms TTL=128
-
-Ping statistics for 192.168.1.2:
-Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-Minimum = 0ms, Maximum = 17ms, Average = 4ms
-
-\end{lstlisting}
-
-\section{Connection Screenshot}
-
-
+\section{Packet Tracer Implementation}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.47]{Screenshots/Assignment_2_screenshot.png}
+	\includegraphics[scale=0.4]{/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Screenshots/assignment_6_screenshot.png}
 \end{figure}
-
-
 \section{Conclusion}
-A local area network was successfully created, deployed and tested on a simulator. The concept behind the Local area network was understood in detail. The various types of cables used to connect the devices were also used and explained. Commands to test computers on a network were also executed successfully. Various computers can be connected with each other and communicate seamlessly with the help of switches, Network Interface Cards, Computers and Straight as well as twisted Ethernet Cables.  in a local area network. 
-
+Thus learnt how Subnetting works, and implemented a simple program using python to calculate the IP Addresses, and subnet masks of each Subnetwork. 
 \end{document}

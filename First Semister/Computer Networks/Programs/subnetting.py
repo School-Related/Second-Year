@@ -94,7 +94,7 @@ def main():
     # s = '205.16.37.24'
     # s = '172.20.15.1'
     s = '192.168.1.0'
-    subnet_number = 8
+    subnet_number = 32
     
     
     # Input from user. 

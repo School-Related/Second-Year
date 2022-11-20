@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1668588354 "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 1.tex" "Assignment 1.pdf" "Assignment 1" 1668588355
-  "../Screenshots/Assignment_1_screenshot.png" 1662405667 65794 46ca732675e48ad9f8a80dd2685de168 ""
-  "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 1.tex" 1668588266 7711 92cca55817a4764131413b476840e162 ""
+["pdflatex"] 1668959544 "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 3.tex" "Assignment 3.pdf" "Assignment 3" 1668959545
+  "../Screenshots/assignment_3_screenshot.png" 1668943024 262617 61f1aab3a08af107d58be68e32dc6d52 ""
+  "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 3.tex" 1668959543 13102 10aa4ea7e3e7710792894d535f5b3e3e ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1650183167 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -27,6 +27,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm" 1650179560 1704 843e3f158d760e961a55e682635af76d ""
   "/usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm" 1650179560 1468 cf5c4cb2bf4b2c1807b5813f5820e2dd ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb" 1650183167 170827 2e4b634de7b58578eae1dc93e51dfe48 ""
+  "/usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb" 1650183167 169670 48d12e69c9a3b23c81f6d703ccbd4554 ""
   "/usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb" 1650183167 48864 96901a485f69890f3d64b5f7b7218eb3 ""
   "/usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb" 1650183167 46830 624e2afdf1987af1003e0fa8f7d5d313 ""
   "/usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb" 1650183167 45832 e347aaf9b53b931665ec33b7dde3a94c ""
@@ -82,11 +83,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1666725644 4278762 af3ac1370db81a450c1118eabf1fe718 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1666725610 2927660 ff996cf9b6ef8181e8087ece7d46fbe6 ""
-  "Assignment 1.aux" 1668588355 1160 812f3dc27104d3bbcbdd90ef71d62b72 "pdflatex"
-  "Assignment 1.tex" 1668588266 7711 92cca55817a4764131413b476840e162 ""
-  "Assignment 1.toc" 1668588355 677 a17793fdc7a12cad37f7c7f2f2638340 "pdflatex"
+  "Assignment 3.aux" 1668959545 1464 4d19be7d91f3434c759d55f7d4ec630a "pdflatex"
+  "Assignment 3.tex" 1668959543 13102 10aa4ea7e3e7710792894d535f5b3e3e ""
+  "Assignment 3.toc" 1668959545 858 64b04da5cddc202bc866ac6ae5755bf1 "pdflatex"
   (generated)
-  "Assignment 1.aux"
-  "Assignment 1.log"
-  "Assignment 1.pdf"
-  "Assignment 1.toc"
+  "Assignment 3.aux"
+  "Assignment 3.log"
+  "Assignment 3.pdf"
+  "Assignment 3.toc"
