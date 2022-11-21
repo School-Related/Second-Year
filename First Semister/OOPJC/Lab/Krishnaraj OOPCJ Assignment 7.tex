@@ -149,10 +149,7 @@ Print even and odd numbers in increasing order using two threads in Java
 \section{Theory}
 \subsection{Multithreading in Java}
 \textit{
-In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A thread in Java is a lightweight process requiring fewer resources to create and share the process resources.
-
-Multithreading and Multiprocessing are used for multitasking in Java, but we prefer multithreading over multiprocessing. 
-
+In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A thread in Java is a lightweight process requiring fewer resources to create and share the process resources.Multithreading and Multiprocessing are used for multitasking in Java, but we prefer multithreading over multiprocessing. 
 }
 
 \subsection{Life Cycle of a Thread in Java}
@@ -166,14 +163,101 @@ There are five states a thread has to go through in its life cycle. This life cy
 \end{enumerate}
 
 \subsection{Ways of Creating a Thread}
+There are multiple ways of creating Threads in Java
+\begin{enumerate}
+	\item By Extending the Thread Class
+	\begin{lstlisting}[language=Java]
+class Multi extends Thread{  
+	public void run(){  
+		System.out.println("thread is running...");  
+	}  
+	public static void main(String args[]){  
+		Multi t1=new Multi();  
+		t1.start();  
+	}  
+}  		
+	\end{lstlisting}
+	\item By Implementing the Runnable Interface
+	\begin{lstlisting}[language=Java]
+class Multi3 implements Runnable{  
+	public void run(){  
+		System.out.println("thread is running...");  
+	}  
 
-%  How to perform multiple tasks by multiple threads
-% 
-%  Thread Scheduler
+	public static void main(String args[]){  
+		Multi3 m1=new Multi3();  
+		Thread t1 =new Thread(m1);   // Using the constructor Thread(Runnable r)  
+		t1.start();  
+	}   
+}
+	\end{lstlisting}
+\item Using the Thread Class
+\begin{lstlisting}[language=Java]
+public class MyThread1  
+{
+	// Main method  
+	public static void main(String argvs[])  
+	{  
+		// creating an object of the Thread class using the constructor Thread(String name)   
+		Thread t= new Thread("My first thread");  
+
+		// the start() method moves the thread to the active state  
+		t.start();  
+		// getting the thread name by invoking the getName() method  
+		String str = t.getName();  
+		System.out.println(str);  
+	}  
+}  
+\end{lstlisting}
+\end{enumerate}
+\subsection{Performing Multiple tasks by multiple threads}
+You could just create multiple classes that perform their own tasks, each a child of the Thread class. So you could then invoke instances of those classes, and run them as multiple threads. 
+
+\begin{lstlisting}[language=Java]
+class MultithreadEx3 extends Thread  
+{  
+    public void run()  
+    {  
+        System.out.println("Start task one");  
+    }  
+}  
+class MultithreadEx4 extends Thread  
+{  
+    public void run()  
+    {  
+        System.out.println("Start task two");  
+    }  
+}  
+class Run  
+{  
+    public static void main(String args[])  
+    {  
+        MultithreadEx3 th1 = new MultithreadEx3();  
+        MultithreadEx4 th2 = new MultithreadEx4();  
+        th1.start();  
+        th2.start();  
+    }  
+} 
+\end{lstlisting}
+\subsection{Thread Scheduler}
+A component of Java that decides which thread to run or execute and which thread to wait is called a thread scheduler in Java. In Java, a thread is only chosen by a thread scheduler if it is in the runnable state.\\
+
+However, if there is more than one thread in the runnable state, it is up to the thread scheduler to pick one of the threads and ignore the other ones. There are some criteria that decide which thread will execute first. There are two factors for scheduling a thread i.e. Priority and Time of arrival.
+
+\begin{itemize}
+	\item \textit{Priority}: Priority of each thread lies between 1 to 10. If a thread has a higher priority, it means that thread has got a better chance of getting picked up by the thread scheduler.
+	
+	\item \textit{Time of Arrival}: Suppose two threads of the same priority enter the runnable state, then priority cannot be the factor to pick a thread from these two threads. In such a case, arrival time of thread is considered by the thread scheduler. A thread that arrived first gets the preference over the other threads.
+\end{itemize}
+
 
 \subsection{Joining a Thread in Java}
-java.lang.Thread class provides the join() method which allows one thread to wait until another thread completes its execution. If t is a Thread object whose thread is currently executing, then t.join() will make sure that t is terminated before the next instruction is executed by the program.
-If there are multiple threads calling the join() methods that means overloading on join allows the programmer to specify a waiting period. However, as with sleep, join is dependent on the OS for timing, so you should not assume that join will wait exactly as long as you specify.
+java.lang.Thread class provides the join() method which allows one thread to wait until another thread completes its execution.\\
+
+If t is a Thread object whose thread is currently executing, then t.join() will make sure that t is terminated before the next instruction is executed by the program.
+If there are multiple threads calling the join() methods that means overloading on join allows the programmer to specify a waiting period.\\
+
+However, as with sleep, join is dependent on the OS for timing, so you should not assume that join will wait exactly as long as you specify.
 There are three overloaded join functions.
 \begin{lstlisting}[language=Java]
 public class JoinExample1 extends Thread  

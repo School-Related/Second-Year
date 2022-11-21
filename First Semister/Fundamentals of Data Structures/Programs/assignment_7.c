@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #define MAX_SIZE 10
 char stack[MAX_SIZE];
+char stack_str[MAX_SIZE][MAX_SIZE];
 int top = -1;
+int top_str = -1;
 
 int isFull()
 {
@@ -14,6 +17,20 @@ int isFull()
 int isEmpty()
 {
     if (top == -1)
+        return 1;
+    else
+        return 0;
+}
+int isFull_str()
+{
+    if (top_str == MAX_SIZE - 1)
+        return 1;
+    else
+        return 0;
+}
+int isEmpty_str()
+{
+    if (top_str == -1)
         return 1;
     else
         return 0;
@@ -44,6 +61,33 @@ int pop()
         return stack[top + 1];
     }
 }
+
+char *pop_str()
+{
+    char *str = (char*) malloc(sizeof(MAX_SIZE));
+    int st = isEmpty_str();
+    if(st == 1){
+        printf("\n Stack is Empty");
+    }
+    else{
+        strcpy(str, stack_str[top_str--]);
+        printf("%s", str);
+        return str;
+        // strcpy(str, temp)
+    }
+}
+
+void push_str(char str[MAX_SIZE])
+{
+    int st = isFull_str();
+    if(st == 1){
+        printf("\n Stack is full");
+    }
+    else{
+        strcpy(stack_str[++top_str], str);
+    }
+}
+
 void display_stack()
 {
     printf("\n");
@@ -53,6 +97,17 @@ void display_stack()
     }
     printf("\n");
 }
+
+void display_stack_str()
+{
+    printf("\n");
+    for (int i = top; i >= 0; i--)
+    {
+        printf("%c\n", stack_str[i]);
+    }
+    printf("\n");
+}
+
 int icp(char ch) // incoming char precedence
 {
     if (ch == '+' || ch == '-')
@@ -78,7 +133,8 @@ int isp(char ch) // incoming sign precedence
         return 0;
 }
 
-int in_post(char inexp[10])
+// 1
+int infix_to_postfix(char inexp[10])
 {
     int postexp[10];
     int k = 0, i = 0;
@@ -131,10 +187,42 @@ int in_post(char inexp[10])
         printf("%c", postexp[i]);
     }
 }
+
+// 2
+int postfix_to_infix(char post[MAX_SIZE])
+{
+    char *temp, *temp1, *temp2, *inf;
+    for (int i = 0; post[i] != '\0'; i++)
+    {
+        if (post[i] >= 97 && post[i] <= 127)
+        {
+            temp[0] = post[i];
+            temp[1] = '\0';
+            push_str(temp);
+            // temp[0] = '\0';
+        }
+        else{
+            temp = pop_str();
+            temp1 = pop_str();
+            temp2[0] = post[i];
+            temp2[1] = '\0';
+            strcpy(inf, "(");
+            strcat(inf, temp1);
+            strcat(inf, temp2);
+            strcat(inf, temp);
+            strcat(inf, ")");
+            push_str(inf);
+        }
+    }
+    inf = pop_str();
+    printf("\nThe infix expression is: ");
+    printf("\n%s", inf);
+}
 int main()
 {
     int choice = 0;
     char temp;
+    char fix[10];
 
     while (choice != 8)
     {
@@ -145,8 +233,8 @@ int main()
     3. See the Stack\n\
     4. Check if stack is empty\n\
     5. Check if stack is full\n\
-    6. Postfix\n\
-    7. Prefix\n\
+    6. Infix to Postfix\n\
+    7. Postfix to Prefix\n\
     8. Exit\n\n");
 
         scanf("%d", &choice);
@@ -188,14 +276,17 @@ int main()
                 printf("No stack isnt full!");
             }
         case 6:
-            printf("\nsomething about prefix\n");
-            char fix[10];
+            printf("\ninfix to postfix\n");
             scanf("%s", fix);
-            in_post(fix);
+            infix_to_postfix(fix);
             display_stack();
             break;
         case 7:
-            printf("\nSomething about postfix\n");
+            printf("\npostfix to infix\n");
+            scanf("%s", fix);
+            postfix_to_infix(fix);
+            display_stack_str();
+            break;
         default:
             printf("\nThank You\n");
             break;
