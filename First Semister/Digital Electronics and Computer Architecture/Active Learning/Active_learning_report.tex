@@ -1,4 +1,3 @@
-
 % This is a Basic Assignment Paper but with like Code and stuff allowed in it. 
 
 \documentclass[11pt]{article}
@@ -14,6 +13,8 @@
 \usepackage[nottoc, notlot, notlof]{tocbibind}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{karnaugh-map}
+\usepackage{pdfpages}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -45,7 +46,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{OOPJC Mini Project Report}}}
+\fancyhead[L]{\textit{\Large{DECA Active Learning}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -70,7 +71,7 @@
 	\vspace{0.75\baselineskip} % space after Uni Name
 
 	\LARGE{
-		Object Oriented Programming with Java and C++\\
+		Digital Electronics and Computer Architecture\\
 		Second Year B. Tech, Semester 1
 	}
 
@@ -85,8 +86,7 @@
 
 
 	\huge{\textsc{
-			Mini Project with Java - Price Guessing Game\\
-			\textit{"How Much?"}
+			4 Bit Adder and Subtracter using IC 7483
 		}} \\
 
 
@@ -100,7 +100,7 @@
 	%--------------------------SUBTITLE --------------------------	
 
 	\LARGE\textsc{
-		Project Report
+		Practical Report
 	} % Subtitle or further description
 	\vfill
 
@@ -110,15 +110,19 @@
 	\vspace{0.5\baselineskip} % Whitespace before the editors
 
 	\Large{
-		Krishnaraj Thadesar \\
+		Krishnaraj Thadesar, PA20 \\
+        Avipsa Ghorai, PA18\\
+        Shivranjan Pathak, PA16\\
+        Vaishnavi Powar, PA19\\
+        Pratyush Choudhari, PA17\\
 		Cyber Security and Forensics\\
-		Batch A2, PA 20
+        Batch A1
 	}
-	
-	
+
+
 	\vspace{0.5\baselineskip} % Whitespace below the editor list
 	\today
-	
+
 \end{titlepage}
 
 
@@ -126,106 +130,34 @@
 \thispagestyle{empty}
 \clearpage
 
+
 \setcounter{page}{1}
-% % The Mini project report should follow the following format:A. Mini Project Report
-\section{Introduction}
+\section{Problem Statement}
+\textit{To design and implement 4 bit Adder and Subtractor using IC 7483 parallel adder.}
 
-\section{Methodology Used}
+\section{Components Used}
+\begin{enumerate}
+    \item 2 1.5 V AA Batteries or 3 Volt Power Source
+    \item DIP Switch 
+\end{enumerate}
+\section{Involved Truth Tables}
 
-\section{Platform}
+\section{Pin Diagrams of Used ICs}
 
-\section{Requirements}
+\section{Theory}
+\subsection{What is adder and Subtractor}
+\subsection{Parallel Adder}
+\subsection{Serial Adder}
+\subsection{Advantages of Parallel Adder to Serial Adder}
+\subsection{Disadvantages of Parallel Adder to Serial Adder}
+\subsection{Working of Parallel Adder}
 
-\section{Installation and Running}
-Download the .jar file from the releases when it is released that is.
-Navigate there from your terminal
-\begin{verbatim}
-	java -jar ./How_Much.jar
-\end{verbatim}
+\section{Prodecure}
 
-\section{Database Management}
+\section{Circuit Diagrams}
 
-\section{Unique Features}
-\subsection{Dark Mode}
-\subsection{Data Backup}
-\subsection{Web Scrapping}
-\subsection{Working Login and Account Creation}
+\section{Applications}
 
-\section{Screenshots of the Project}
-
-\subsection{The Login Page}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.45]{./design/Screenshots/Login Screen.png}
-	\caption{The Login page after a successful login}
-\end{figure}
-\subsection{The Menu Screen}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.30]{./design/Screenshots/Main Menu Screen.png}
-\caption{}
-\end{figure}
-
-
-\subsection{The Topic Selection Screen}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.30]{./design/Screenshots/Topic Selection.png}
-	\caption{The Login page after a successful login}
-\end{figure}
-\subsection{The Highscore Screen}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.30]{./design/Screenshots/Highscores.png}
-	\caption{The Login page after a successful login}
-\end{figure}
-\subsection{The Help and About}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.30]{./design/Screenshots/Help and Credits.png}
-	\caption{The Login page after a successful login}
-\end{figure}
-\subsection{The Game Over Screen}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.30]{./design/Screenshots/Game Over.png}
-	\caption{The Login page after a successful login}
-\end{figure}
-\section{Output Files Produced}
-
-\section{Walk-Through of the Files}
-\subsection{TopicsFrame.java}
-
-\subsection{MongoManager.java}
-
-\subsection{MenuFrame.java}
-
-\subsection{Main.java}
-
-\subsection{LoginFrame.java}
-
-\subsection{HighscoreFrame.java}
-
-\subsection{HelpFrame.java}
-
-\subsection{GameOverFrame.java}
-
-\subsection{GameFrame.java}
-
-\subsection{  DataBaseManager.java}
-
-\subsection{  Colors.java}
-
-\subsection{  BackgroundPanel.java}
-
-\subsection{  AmazonScrapper.java}
-
-\section{Conclusion and Topics Learnt}
-
-\section{Code File Main.java}
-
-\lstinputlisting[language=Java, caption=Main Java file]{/run/media/krishnaraj/Programs/Java/How Much/src/main/java/org/howmuch/Main.java}
-
-
+\section{Conclusion}
 
 \end{document}
