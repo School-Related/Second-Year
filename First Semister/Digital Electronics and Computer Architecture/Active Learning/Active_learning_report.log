@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  23 NOV 2022 02:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,33 +743,33 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 6.
+(Font)              scaled to size 7.71893pt on input line 4.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 6.
+(Font)              scaled to size 5.57996pt on input line 4.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 6.
+(Font)              scaled to size 10.07397pt on input line 4.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 6.
+(Font)              scaled to size 7.63599pt on input line 4.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+(Font)              scaled to size 5.51999pt on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 6.
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 4.
  (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 6.
+(Font)              scaled to size 10.07397pt on input line 4.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 6.
+(Font)              scaled to size 7.63599pt on input line 4.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 6.
+(Font)              scaled to size 5.51999pt on input line 4.
 )
 \tf@toc=\write4
 \openout4 = `Active_learning_report.toc'.
@@ -777,12 +777,20 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
  [1]
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 136.
+Package textcomp Info: Symbol \textohm not provided by
+(textcomp)             font family fnc in TS1 encoding.
+(textcomp)             Default family used instead on input line 146.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 148.
+(Font)              scaled to size 11.15991pt on input line 152.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 148.
+(Font)              scaled to size 11.15991pt on input line 152.
+<4-bit-adder-Turth-Table.jpg, id=14, 286.82156pt x 289.83281pt>
+File: 4-bit-adder-Turth-Table.jpg Graphic file (type jpg)
+<use 4-bit-adder-Turth-Table.jpg>
+Package pdftex.def Info: 4-bit-adder-Turth-Table.jpg  used on input line 155.
+(pdftex.def)             Requested size: 258.13701pt x 260.8471pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 163.
+(Font)              scaled to size 13.39188pt on input line 175.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -793,20 +801,179 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-] (./Active_learning_report.aux) ) 
+ <./4-bit-adder-Turth-Table.jpg>]
+<7486.png, id=20, 752.8125pt x 677.53125pt>
+File: 7486.png Graphic file (type png)
+<use 7486.png>
+Package pdftex.def Info: 7486.png  used on input line 180.
+(pdftex.def)             Requested size: 301.11966pt x 271.00769pt.
+<IC74283.png, id=21, 569.87906pt x 428.35031pt>
+File: IC74283.png Graphic file (type png)
+<use IC74283.png>
+Package pdftex.def Info: IC74283.png  used on input line 186.
+(pdftex.def)             Requested size: 284.93883pt x 214.17462pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[2 <./7486.png>]
+<parallel adder.png, id=25, 814.54312pt x 225.09094pt>
+File: parallel adder.png Graphic file (type png)
+<use parallel adder.png>
+Package pdftex.def Info: parallel adder.png  used on input line 199.
+(pdftex.def)             Requested size: 407.27055pt x 112.54518pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3 <./IC74283.png (PNG copy)>]
+<serial adder.png, id=29, 657.95813pt x 442.65375pt>
+File: serial adder.png Graphic file (type png)
+<use serial adder.png>
+Package pdftex.def Info: serial adder.png  used on input line 206.
+(pdftex.def)             Requested size: 263.17859pt x 177.05835pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4 <./parallel adder.png (PNG copy)> <./serial adder.png (PNG copy)>]
+<tinkercad 1.png, id=33, 1062.97125pt x 611.28375pt>
+File: tinkercad 1.png Graphic file (type png)
+<use tinkercad 1.png>
+Package pdftex.def Info: tinkercad 1.png  used on input line 237.
+(pdftex.def)             Requested size: 531.48433pt x 305.64113pt.
+
+Overfull \hbox (61.72931pt too wide) in paragraph at lines 237--238
+ [][] 
+ []
+
+<tinkercad 2.png, id=34, 1078.0275pt x 597.73312pt>
+File: tinkercad 2.png Graphic file (type png)
+<use tinkercad 2.png>
+Package pdftex.def Info: tinkercad 2.png  used on input line 243.
+(pdftex.def)             Requested size: 517.44733pt x 286.90863pt.
+
+Overfull \hbox (47.6923pt too wide) in paragraph at lines 243--244
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[5 <./tinkercad 1.png (PNG copy)>]
+<logic.png, id=39, 665.48625pt x 390.70969pt>
+File: logic.png Graphic file (type png)
+<use logic.png>
+Package pdftex.def Info: logic.png  used on input line 250.
+(pdftex.def)             Requested size: 332.74231pt x 195.35435pt.
+<1.pdf, id=40, 794.97pt x 614.295pt>
+File: 1.pdf Graphic file (type pdf)
+<use 1.pdf>
+Package pdftex.def Info: 1.pdf  used on input line 255.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+File: 1.pdf Graphic file (type pdf)
+<use 1.pdf>
+Package pdftex.def Info: 1.pdf  used on input line 255.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+<1.pdf, id=43, page=1, 794.97pt x 614.295pt>
+File: 1.pdf Graphic file (type pdf)
+<use 1.pdf, page 1>
+Package pdftex.def Info: 1.pdf , page1 used on input line 255.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+File: 1.pdf Graphic file (type pdf)
+<use 1.pdf, page 1>
+Package pdftex.def Info: 1.pdf , page1 used on input line 255.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6 <./tinkercad 2.png (PNG copy)> <./logic.png (PNG copy)>]
+File: 1.pdf Graphic file (type pdf)
+<use 1.pdf, page 1>
+Package pdftex.def Info: 1.pdf , page1 used on input line 255.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+File: 1.pdf Graphic file (type pdf)
+<use 1.pdf, page 1>
+Package pdftex.def Info: 1.pdf , page1 used on input line 255.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+File: 1.pdf Graphic file (type pdf)
+<use 1.pdf, page 1>
+Package pdftex.def Info: 1.pdf , page1 used on input line 255.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+ [7 <./1.pdf>]
+<2.pdf, id=59, 794.97pt x 614.295pt>
+File: 2.pdf Graphic file (type pdf)
+<use 2.pdf>
+Package pdftex.def Info: 2.pdf  used on input line 256.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+File: 2.pdf Graphic file (type pdf)
+<use 2.pdf>
+Package pdftex.def Info: 2.pdf  used on input line 256.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+<2.pdf, id=62, page=1, 794.97pt x 614.295pt>
+File: 2.pdf Graphic file (type pdf)
+<use 2.pdf, page 1>
+Package pdftex.def Info: 2.pdf , page1 used on input line 256.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+File: 2.pdf Graphic file (type pdf)
+<use 2.pdf, page 1>
+Package pdftex.def Info: 2.pdf , page1 used on input line 256.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+File: 2.pdf Graphic file (type pdf)
+<use 2.pdf, page 1>
+Package pdftex.def Info: 2.pdf , page1 used on input line 256.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+File: 2.pdf Graphic file (type pdf)
+<use 2.pdf, page 1>
+Package pdftex.def Info: 2.pdf , page1 used on input line 256.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+File: 2.pdf Graphic file (type pdf)
+<use 2.pdf, page 1>
+Package pdftex.def Info: 2.pdf , page1 used on input line 256.
+(pdftex.def)             Requested size: 615.04005pt x 475.25821pt.
+ [8 <./2.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[9] (./Active_learning_report.aux) ) 
 Here is how much of TeX's memory you used:
- 17824 strings out of 478238
- 339313 string characters out of 5850455
- 612260 words of memory out of 5000000
- 35700 multiletter control sequences out of 15000+600000
- 512238 words of font info for 77 fonts, out of 8000000 for 9000
+ 17915 strings out of 478238
+ 340870 string characters out of 5850455
+ 617261 words of memory out of 5000000
+ 35776 multiletter control sequences out of 15000+600000
+ 512579 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,94p,817b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Active_learning_report.pdf (3 pages, 47204 bytes).
+ 99i,17n,94p,817b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on Active_learning_report.pdf (11 pages, 761206 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
