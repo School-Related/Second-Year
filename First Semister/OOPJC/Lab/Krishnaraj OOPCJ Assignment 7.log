@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  23 NOV 2022 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,20 +647,63 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[9] (./Krishnaraj OOPCJ Assignment 7.aux) ) 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+
+Overfull \hbox (5.06168pt too wide) in paragraph at lines 351--352
+[]\T1/fnc/b/n/10.95 Difficulty of man-ag-ing con-cur-rency\T1/fnc/m/n/10.95 : The task of man-ag-ing con-cur-rency among threads
+ []
+
+
+Overfull \hbox (15.78404pt too wide) in paragraph at lines 357--358
+[]\T1/fnc/b/n/10.95 Difficulty of port-ing ex-ist-ing code\T1/fnc/m/n/10.95 : Ex-ist-ing code of-ten re-quires sig-nif-i-cant re-architecting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[10]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[12] (./Krishnaraj OOPCJ Assignment 7.aux) ) 
 Here is how much of TeX's memory you used:
- 6534 strings out of 478238
- 93539 string characters out of 5850455
+ 6550 strings out of 478238
+ 93764 string characters out of 5850455
  1237939 words of memory out of 5000000
- 24650 multiletter control sequences out of 15000+600000
+ 24666 multiletter control sequences out of 15000+600000
  515465 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,475b,1871s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,13n,69p,475b,1950s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Krishnaraj OOPCJ Assignment 7.pdf" (11 pages, 114470 bytes).
+Output written on "Krishnaraj OOPCJ Assignment 7.pdf" (14 pages, 124906 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

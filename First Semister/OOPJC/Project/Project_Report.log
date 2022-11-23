@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  23 NOV 2022 03:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Mini Project/Project_Report.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Mini Project/Project_Report.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Project/Project_Report.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Project/Project_Report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -507,51 +507,56 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 8.
+(Font)              scaled to size 7.71893pt on input line 7.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 8.
+(Font)              scaled to size 5.57996pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 8.
+(Font)              scaled to size 10.07397pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 8.
+(Font)              scaled to size 7.63599pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+(Font)              scaled to size 5.51999pt on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 8.
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 7.
  (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 8.
+(Font)              scaled to size 10.07397pt on input line 7.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 8.
+(Font)              scaled to size 7.63599pt on input line 7.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 8.
+(Font)              scaled to size 5.51999pt on input line 7.
 
-Overfull \hbox (2.05666pt too wide) detected at line 30
+Overfull \hbox (2.05666pt too wide) detected at line 32
 \T1/fnc/m/n/10.95 10.10 
  []
 
 
-Overfull \hbox (2.05666pt too wide) detected at line 31
+Overfull \hbox (2.05666pt too wide) detected at line 33
 \T1/fnc/m/n/10.95 10.11 
  []
 
 
-Overfull \hbox (2.05666pt too wide) detected at line 32
+Overfull \hbox (2.05666pt too wide) detected at line 34
 \T1/fnc/m/n/10.95 10.12 
  []
 
 
-Overfull \hbox (2.05666pt too wide) detected at line 33
+Overfull \hbox (2.05666pt too wide) detected at line 35
 \T1/fnc/m/n/10.95 10.13 
+ []
+
+
+Overfull \hbox (2.05666pt too wide) detected at line 36
+\T1/fnc/m/n/10.95 10.14 
  []
 
 )
@@ -559,23 +564,46 @@ Overfull \hbox (2.05666pt too wide) detected at line 33
 \openout3 = `Project_Report.toc'.
 
  [1]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 142.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 127.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 13.39188pt on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[2]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 146.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 149.
+(Font)              scaled to size 11.15991pt on input line 151.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 149.
-<./design/Screenshots/Login Screen.png, id=12, 963.6pt x 542.025pt>
-File: ./design/Screenshots/Login Screen.png Graphic file (type png)
-<use ./design/Screenshots/Login Screen.png>
-Package pdftex.def Info: ./design/Screenshots/Login Screen.png  used on input line 159.
-(pdftex.def)             Requested size: 433.616pt x 243.90898pt.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 162.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 162.
+(Font)              scaled to size 11.15991pt on input line 151.
+<mongo 1.png, id=15, 1249.66875pt x 623.32875pt>
+File: mongo 1.png Graphic file (type png)
+<use mongo 1.png>
+Package pdftex.def Info: mongo 1.png  used on input line 154.
+(pdftex.def)             Requested size: 499.85864pt x 249.32707pt.
+
+Overfull \hbox (30.10362pt too wide) in paragraph at lines 154--155
+ [][] 
+ []
+
+<mongo 2.png, id=16, 1247.41031pt x 648.17157pt>
+File: mongo 2.png Graphic file (type png)
+<use mongo 2.png>
+Package pdftex.def Info: mongo 2.png  used on input line 160.
+(pdftex.def)             Requested size: 498.95529pt x 259.26402pt.
+
+Overfull \hbox (29.20027pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -586,11 +614,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-]
-<./design/Screenshots/Main Menu Screen.png, id=17, 1445.4pt x 789.70032pt>
+ <./mongo 1.png (PNG copy)>]
+<csv.png, id=21, 1112.65688pt x 362.85562pt>
+File: csv.png Graphic file (type png)
+<use csv.png>
+Package pdftex.def Info: csv.png  used on input line 166.
+(pdftex.def)             Requested size: 445.05487pt x 145.13968pt.
+<./design/Screenshots/Login Screen.png, id=22, 963.6pt x 542.025pt>
+File: ./design/Screenshots/Login Screen.png Graphic file (type png)
+<use ./design/Screenshots/Login Screen.png>
+Package pdftex.def Info: ./design/Screenshots/Login Screen.png  used on input line 180.
+(pdftex.def)             Requested size: 433.616pt x 243.90898pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[2 <./mongo 2.png (PNG copy)> <./csv.png (PNG copy)>]
+<./design/Screenshots/Main Menu Screen.png, id=26, 1445.4pt x 789.70032pt>
 File: ./design/Screenshots/Main Menu Screen.png Graphic file (type png)
 <use ./design/Screenshots/Main Menu Screen.png>
-Package pdftex.def Info: ./design/Screenshots/Main Menu Screen.png  used on input line 165.
+Package pdftex.def Info: ./design/Screenshots/Main Menu Screen.png  used on input line 186.
 (pdftex.def)             Requested size: 433.62335pt x 236.91193pt.
 
 
@@ -600,16 +647,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[2 <./design/Screenshots/Login Screen.png (PNG copy)>]
-<./design/Screenshots/Topic Selection.png, id=21, 1445.4pt x 790.45313pt>
+[3 <./design/Screenshots/Login Screen.png (PNG copy)>]
+<./design/Screenshots/Topic Selection.png, id=30, 1445.4pt x 790.45313pt>
 File: ./design/Screenshots/Topic Selection.png Graphic file (type png)
 <use ./design/Screenshots/Topic Selection.png>
-Package pdftex.def Info: ./design/Screenshots/Topic Selection.png  used on input line 173.
+Package pdftex.def Info: ./design/Screenshots/Topic Selection.png  used on input line 194.
 (pdftex.def)             Requested size: 433.62335pt x 237.13776pt.
-<./design/Screenshots/Highscores.png, id=22, 1445.4pt x 789.70032pt>
+<./design/Screenshots/Highscores.png, id=31, 1445.4pt x 789.70032pt>
 File: ./design/Screenshots/Highscores.png Graphic file (type png)
 <use ./design/Screenshots/Highscores.png>
-Package pdftex.def Info: ./design/Screenshots/Highscores.png  used on input line 179.
+Package pdftex.def Info: ./design/Screenshots/Highscores.png  used on input line 200.
 (pdftex.def)             Requested size: 433.62335pt x 236.91193pt.
 
 
@@ -619,16 +666,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3 <./design/Screenshots/Main Menu Screen.png (PNG copy)> <./design/Screenshots/Topic Selection.png (PNG copy)>]
-<./design/Screenshots/Help and Credits.png, id=26, 1445.4pt x 789.70032pt>
+[4 <./design/Screenshots/Main Menu Screen.png (PNG copy)> <./design/Screenshots/Topic Selection.png (PNG copy)>]
+<./design/Screenshots/Help and Credits.png, id=36, 1445.4pt x 789.70032pt>
 File: ./design/Screenshots/Help and Credits.png Graphic file (type png)
 <use ./design/Screenshots/Help and Credits.png>
-Package pdftex.def Info: ./design/Screenshots/Help and Credits.png  used on input line 185.
+Package pdftex.def Info: ./design/Screenshots/Help and Credits.png  used on input line 206.
 (pdftex.def)             Requested size: 433.62335pt x 236.91193pt.
-<./design/Screenshots/Game Over.png, id=27, 1445.4pt x 790.45313pt>
+<./design/Screenshots/Game Over.png, id=37, 1445.4pt x 790.45313pt>
 File: ./design/Screenshots/Game Over.png Graphic file (type png)
 <use ./design/Screenshots/Game Over.png>
-Package pdftex.def Info: ./design/Screenshots/Game Over.png  used on input line 191.
+Package pdftex.def Info: ./design/Screenshots/Game Over.png  used on input line 212.
 (pdftex.def)             Requested size: 433.62335pt x 237.13776pt.
 
 
@@ -638,7 +685,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4 <./design/Screenshots/Highscores.png (PNG copy)> <./design/Screenshots/Help and Credits.png (PNG copy)>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+[5 <./design/Screenshots/Highscores.png (PNG copy)> <./design/Screenshots/Help and Credits.png (PNG copy)>]
+<code.png, id=41, 1401.235pt x 1485.55pt>
+File: code.png Graphic file (type png)
+<use code.png>
+Package pdftex.def Info: code.png  used on input line 223.
+(pdftex.def)             Requested size: 420.37375pt x 445.66844pt.
+<code2.png, id=43, 1401.235pt x 1927.2pt>
+File: code2.png Graphic file (type png)
+<use code2.png>
+Package pdftex.def Info: code2.png  used on input line 228.
+(pdftex.def)             Requested size: 420.37375pt x 578.16447pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6 <./design/Screenshots/Game Over.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[7 <./code.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 
@@ -648,34 +722,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[5 <./design/Screenshots/Game Over.png (PNG copy)>] (/run/media/krishnaraj/Programs/Java/How Much/src/main/java/org/howmuch/Main.java
+[8 <./code2.png>] (/run/media/krishnaraj/Programs/Java/How Much/src/main/java/org/howmuch/Main.java
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 1.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[7]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[8]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -715,7 +765,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[13])
+[13]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -723,20 +773,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[14] (./Project_Report.aux) ) 
+[14]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[16])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[17] (./Project_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 6578 strings out of 478238
- 94733 string characters out of 5850455
- 1301932 words of memory out of 5000000
- 24699 multiletter control sequences out of 15000+600000
+ 6613 strings out of 478238
+ 95199 string characters out of 5850455
+ 1298684 words of memory out of 5000000
+ 24729 multiletter control sequences out of 15000+600000
  516647 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,385b,1931s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,13n,69p,431b,1931s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Project_Report.pdf (16 pages, 1040810 bytes).
+Output written on Project_Report.pdf (20 pages, 1826721 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

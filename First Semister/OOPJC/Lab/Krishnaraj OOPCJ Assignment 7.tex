@@ -149,7 +149,7 @@ Print even and odd numbers in increasing order using two threads in Java
 \section{Theory}
 \subsection{Multithreading in Java}
 \textit{
-In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A thread in Java is a lightweight process requiring fewer resources to create and share the process resources.Multithreading and Multiprocessing are used for multitasking in Java, but we prefer multithreading over multiprocessing. 
+	In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A thread in Java is a lightweight process requiring fewer resources to create and share the process resources.Multithreading and Multiprocessing are used for multitasking in Java, but we prefer multithreading over multiprocessing.
 }
 
 \subsection{Life Cycle of a Thread in Java}
@@ -166,7 +166,7 @@ There are five states a thread has to go through in its life cycle. This life cy
 There are multiple ways of creating Threads in Java
 \begin{enumerate}
 	\item By Extending the Thread Class
-	\begin{lstlisting}[language=Java]
+	      \begin{lstlisting}[language=Java]
 class Multi extends Thread{  
 	public void run(){  
 		System.out.println("thread is running...");  
@@ -178,7 +178,7 @@ class Multi extends Thread{
 }  		
 	\end{lstlisting}
 	\item By Implementing the Runnable Interface
-	\begin{lstlisting}[language=Java]
+	      \begin{lstlisting}[language=Java]
 class Multi3 implements Runnable{  
 	public void run(){  
 		System.out.println("thread is running...");  
@@ -191,8 +191,8 @@ class Multi3 implements Runnable{
 	}   
 }
 	\end{lstlisting}
-\item Using the Thread Class
-\begin{lstlisting}[language=Java]
+	\item Using the Thread Class
+	      \begin{lstlisting}[language=Java]
 public class MyThread1  
 {
 	// Main method  
@@ -211,7 +211,7 @@ public class MyThread1
 \end{lstlisting}
 \end{enumerate}
 \subsection{Performing Multiple tasks by multiple threads}
-You could just create multiple classes that perform their own tasks, each a child of the Thread class. So you could then invoke instances of those classes, and run them as multiple threads. 
+You could just create multiple classes that perform their own tasks, each a child of the Thread class. So you could then invoke instances of those classes, and run them as multiple threads.
 
 \begin{lstlisting}[language=Java]
 class MultithreadEx3 extends Thread  
@@ -246,7 +246,7 @@ However, if there is more than one thread in the runnable state, it is up to the
 
 \begin{itemize}
 	\item \textit{Priority}: Priority of each thread lies between 1 to 10. If a thread has a higher priority, it means that thread has got a better chance of getting picked up by the thread scheduler.
-	
+
 	\item \textit{Time of Arrival}: Suppose two threads of the same priority enter the runnable state, then priority cannot be the factor to pick a thread from these two threads. In such a case, arrival time of thread is considered by the thread scheduler. A thread that arrived first gets the preference over the other threads.
 \end{itemize}
 
@@ -297,7 +297,7 @@ public class JoinExample1 extends Thread
 \subsection*{For Problem 1}
 \begin{enumerate}
 	\item 2 numbers
-	\item Choice about what to do with those numbers 
+	\item Choice about what to do with those numbers
 \end{enumerate}
 \subsection*{For Problem 2}
 \begin{enumerate}
@@ -312,7 +312,7 @@ public class JoinExample1 extends Thread
 \end{enumerate}
 \subsection*{For Problem 2}
 \begin{enumerate}
-	\item Even numebers and Odd numbers in Ascending order upto the specified limit. 
+	\item Even numebers and Odd numbers in Ascending order upto the specified limit.
 \end{enumerate}
 
 
@@ -338,17 +338,133 @@ Thus, learnt the use of thread class in java and performed multithreading operat
 
 \pagebreak
 
-% \section{FAQs}
+\section{FAQs}
 
-% \begin{enumerate}
-% 	\item \textit{Why do we use collection framework?}
-	
-% 	\item \textit{Which is best collection framework in Java?}
-	
-% 	\item \textit{What is difference between array and collection?}
-	
-% 	\item \textit{What is HashMap in Java?}
-	
-% \end{enumerate}
+\begin{enumerate}
+	\item \textit{What are the challenges for multithreading implementation using Java Programming?}\\
+	      \begin{enumerate}
+		      \item \textbf{Difficulty of writing code}: Multithreaded and multicontexted applications are not easy to write. Only experienced programmers should undertake coding for these types of applications.
+
+		      \item \textbf{Difficulty of debugging}: It is much harder to replicate an error in a multithreaded or multicontexted application than it is to do so in a single-threaded, single-contexted application. As a result, it is more difficult, in the former case, to identify and verify root causes when errors occur.
+
+
+		      \item \textbf{Difficulty of managing concurrency}: The task of managing concurrency among threads is difficult and has the potential to introduce new problems into an application.
+
+
+		      \item \textbf{Difficulty of testing}: Testing a multithreaded application is more difficult than testing a single-threaded application because defects are often timing-related and more difficult to reproduce.
+
+
+		      \item \textbf{Difficulty of porting existing code}: Existing code often requires significant re-architecting to take advantage of multithreading and multicontexting. Programmers need to:
+		            \begin{itemize}
+			            \item Remove static variables
+			            \item Replace any function calls that are not thread-safe
+			            \item Replace any other code that is not thread-safe
+		            \end{itemize}
+	      \end{enumerate}
+	\item \textit{What is the difference between the start and run method in Java Thread? }\\
+	      \textbf{start()}
+	      \begin{itemize}
+		      \item Creates a new thread and the run() method is executed on the newly created thread.
+		      \item Can't be invoked more than one time otherwise throws java.lang.IllegalStateException
+		      \item Defined in java.lang.Thread class.
+	      \end{itemize}
+	      \textbf{run()}
+	      \begin{itemize}
+		      \item No new thread is created and the run() method is executed on the calling thread itself.
+		      \item Multiple invocation is possible.
+		      \item It is just a normal function in Runnable Interface.
+		      \item Defined in java.lang.Runnable interface and must be overriden in the implementing class.
+	      \end{itemize}
+	\item \textit{Which one is better to implement thread in Java? extending Thread class or implementing Runnable?}\\
+	      \begin{enumerate}
+		      \item The significant differences between extending Thread class and implementing Runnable interface
+		      \item When we extend Thread class, we cant extend any other class even we require and When we implement Runnable, we can save a space for our class to extend any other class in future or now.
+		      \item When we extend Thread class, each of our thread creates unique object and associate with it. When we implements Runnable, it shares the same object to multiple threads.
+	      \end{enumerate}
+	\item \textit{What is the difference between wait and sleep in Java? Explain with example.}\\
+	      \textbf{wait()}:
+	      \begin{itemize}
+		      \item Wait() method belongs to Object class.
+		      \item Wait() method releases lock during Synchronization.
+		      \item Wait() should be called only from Synchronized context.
+		      \item Wait() is not a static method.
+		      \item Wait() Has Three Overloaded Methods:
+		            \begin{enumerate}
+			            \item wait()
+			            \item wait(long timeout)
+			            \item wait(long timeout, int nanos)
+		            \end{enumerate}
+	      \end{itemize}
+	      \textbf{sleep()}
+	      \begin{itemize}
+		      \item Sleep() method belongs to Thread class.
+		      \item Sleep() method does not release the lock on object during Synchronization.
+		      \item There is no need to call sleep() from Synchronized context.
+		      \item Sleep() is a static method.
+		      \item Sleep() Has Two Overloaded Methods:
+		            \begin{enumerate}
+			            \item sleep(long millis)millis: milliseconds
+			            \item sleep(long millis,int nanos) nanos: Nanoseconds
+		            \end{enumerate}
+	      \end{itemize}
+	\item \textit{What is the difference between the submit() and execute() method of Executor and ExecutorService in Java? Explain with example.}\\
+	      \textbf{submit()}:
+	      \begin{enumerate}
+		      \item This function executes the given command at some time in the future. The command may execute in a new thread, in a pooled thread, or in the calling thread, at the discretion of the Executor implementation.
+		      \item Unlike the execute method, this method returns a future. The future object is used to handle the task after the execution has started.
+		      \item Therefore, when we need the result of the execution, then we can use the submit() method of the future object. In order to get the result, we can use the get() methods on the Future. The get() method returns an object.
+		            \begin{lstlisting}[language=Java]
+				import java.util.concurrent.*;
+public class Test {
+    public static void main(String[] args) throws Exception
+    {
+        ExecutorService executorService = Executors.newFixedThreadPool(1);
+        Future obj = executorService.submit(new Callable() {
+                  // Overriding the call method
+                  public Object call()
+                  {
+                      System.out.println(
+                          "This is submit() "
+                          + "method example");
+ 
+                      return "Returning Callable "
+                          + "Task Result";
+                  }
+              });
+        System.out.println(obj.get());
+        executorService.shutdown();
+    }
+}
+			  \end{lstlisting}
+	      \end{enumerate}
+	      \textbf{execute()}:
+	      \begin{enumerate}
+		      \item This function executes the given command at some time in the future. The command may execute in a new thread, in a pooled thread, or in the calling thread, at the discretion of the Executor implementation.
+		      \item This method is a void method meaning it doesn't return any function. Once the task is assigned in the execute() method, we won't get any response and we can forget about the task.
+		            \begin{lstlisting}[language=Java]				
+import java.util.concurrent.*;
+public class Test {
+
+	public static void main(String[] args) throws Exception
+	{
+
+		ExecutorService executorService = Executors.newSingleThreadExecutor();
+		executorService.execute(new Runnable() {
+			// Override the run method
+			public void run()
+			{
+				System.out.println(
+					"This is execute() "
+					+ "method example");
+			}
+		});				
+		executorService.shutdown();
+	}
+}
+
+			  \end{lstlisting}
+	      \end{enumerate}
+
+\end{enumerate}
 
 \end{document}

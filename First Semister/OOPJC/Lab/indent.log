@@ -1,10 +1,10 @@
 INFO:  latexindent version 3.17.2, 2022-04-14, a script to indent .tex files
        latexindent lives here: /usr/share/texmf-dist/scripts/latexindent/
-       Tue Nov 22 13:41:36 2022
-       Filename: /run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Mini Project/Project_Report.tex
+       Wed Nov 23 22:39:09 2022
+       Filename: /run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab/Krishnaraj OOPCJ Assignment 7.tex
 INFO:  Processing switches:
 INFO:  Directory for backup files and indent.log:
-       /run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Mini Project
+       /run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Lab
 INFO:  YAML settings read: defaultSettings.yaml
        Reading defaultSettings.yaml from /usr/share/texmf-dist/scripts/latexindent/defaultSettings.yaml
 INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml

@@ -1,0 +1,38 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {2}Methodology Used}{1}{}%
+\contentsline {section}{\numberline {3}Platform}{1}{}%
+\contentsline {section}{\numberline {4}Requirements}{1}{}%
+\contentsline {section}{\numberline {5}Installation and Running}{1}{}%
+\contentsline {section}{\numberline {6}Database Management}{1}{}%
+\contentsline {subsection}{\numberline {6.1}MongoDB}{1}{}%
+\contentsline {subsection}{\numberline {6.2}Local CSV Files}{2}{}%
+\contentsline {section}{\numberline {7}Unique Features}{3}{}%
+\contentsline {subsection}{\numberline {7.1}Dark Mode}{3}{}%
+\contentsline {subsection}{\numberline {7.2}Data Backup}{3}{}%
+\contentsline {subsection}{\numberline {7.3}Web Scrapping}{3}{}%
+\contentsline {subsection}{\numberline {7.4}Working Login and Account Creation}{3}{}%
+\contentsline {section}{\numberline {8}Screenshots of the Project}{3}{}%
+\contentsline {subsection}{\numberline {8.1}The Login Page}{3}{}%
+\contentsline {subsection}{\numberline {8.2}The Menu Screen}{4}{}%
+\contentsline {subsection}{\numberline {8.3}The Topic Selection Screen}{4}{}%
+\contentsline {subsection}{\numberline {8.4}The Highscore Screen}{5}{}%
+\contentsline {subsection}{\numberline {8.5}The Help and About}{5}{}%
+\contentsline {subsection}{\numberline {8.6}The Game Over Screen}{6}{}%
+\contentsline {section}{\numberline {9}Output Files Produced}{7}{}%
+\contentsline {section}{\numberline {10}Walk-Through of the Files}{7}{}%
+\contentsline {subsection}{\numberline {10.1}Project Structure}{7}{}%
+\contentsline {subsection}{\numberline {10.2}TopicsFrame.java}{9}{}%
+\contentsline {subsection}{\numberline {10.3}MongoManager.java}{9}{}%
+\contentsline {subsection}{\numberline {10.4}MenuFrame.java}{9}{}%
+\contentsline {subsection}{\numberline {10.5}Main.java}{9}{}%
+\contentsline {subsection}{\numberline {10.6}LoginFrame.java}{9}{}%
+\contentsline {subsection}{\numberline {10.7}HighscoreFrame.java}{9}{}%
+\contentsline {subsection}{\numberline {10.8}HelpFrame.java}{9}{}%
+\contentsline {subsection}{\numberline {10.9}GameOverFrame.java}{9}{}%
+\contentsline {subsection}{\numberline {10.10}GameFrame.java}{9}{}%
+\contentsline {subsection}{\numberline {10.11} DataBaseManager.java}{9}{}%
+\contentsline {subsection}{\numberline {10.12} Colors.java}{9}{}%
+\contentsline {subsection}{\numberline {10.13} BackgroundPanel.java}{9}{}%
+\contentsline {subsection}{\numberline {10.14} AmazonScrapper.java}{9}{}%
+\contentsline {section}{\numberline {11}Conclusion and Topics Learnt}{9}{}%
+\contentsline {section}{\numberline {12}Code File Main.java}{9}{}%

@@ -7,6 +7,6 @@
 \contentsline {subsection}{\numberline {6.1}C++ Implementation of Problem}{2}{}%
 \contentsline {subsection}{\numberline {6.2}Java Implementation of Problem}{3}{}%
 \contentsline {subsection}{\numberline {6.3}Input}{3}{}%
-\contentsline {subsection}{\numberline {6.4}Output}{4}{}%
-\contentsline {subsection}{\numberline {6.5}C++ Output}{4}{}%
+\contentsline {subsection}{\numberline {6.4}Output}{3}{}%
+\contentsline {subsection}{\numberline {6.5}C++ Output}{3}{}%
 \contentsline {subsection}{\numberline {6.6}Java Output}{4}{}%

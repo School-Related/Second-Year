@@ -8,14 +8,15 @@ public class Main {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-        int size = 10, average = 0;
+        int size = 10;
+        int greater = 0;
+        double average = 0;
         System.out.println("Enter the size of the Array that you want to enter");
         size = input.nextInt();
-        Integer arr[] = new Integer[size];
+        Double arr[] = new Double[size];
         System.out.println("Enter the Elements of the Array: ");
         for (int i = 0; i < size; i++) {
-            arr[i] = input.nextInt();
+            arr[i] = input.nextDouble();
             average += arr[i];
         }
         average /= size;
@@ -24,7 +25,9 @@ public class Main {
         for (int i = 0; i < size; i++) {
             if (arr[i] > average) {
                 System.out.println(arr[i] + " ");
+                greater++;
             }
         }
+        System.out.println("The Number of elements greater than the Average is: " + greater);
     }
 }

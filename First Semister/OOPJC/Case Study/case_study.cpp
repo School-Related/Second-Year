@@ -6,10 +6,11 @@
 using namespace std;
 int main()
 {
-    int size = 10, average = 0;
+    int size = 10;   
+    float average = 0;
     cout << "What size array do you want? " << endl;
     cin >> size;
-    int arr[size];
+    float arr[size];
     cout << "Enter the elements of the array!" << endl;
     for (int i = 0; i < size; i++)
     {
@@ -19,13 +20,16 @@ int main()
     average /= size;
     cout << "The Average of all the elements in the array is: " << average << endl;
     cout << "The Elements of the Array which are greater than the Average of the Array are: " << endl;
+    int count = 0;
     for (int i = 0; i < size; i++)
     {
         if (arr[i] > average)
         {
             cout << arr[i] << endl;
+            count++;
         }
     }
+    cout << endl << "The Number of Elements greater than the Average are: " << count;
 
     return 0;
 }
