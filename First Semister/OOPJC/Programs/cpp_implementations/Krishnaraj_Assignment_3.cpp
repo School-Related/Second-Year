@@ -229,14 +229,5 @@ int main()
 
     } while (choice != 4);
 
-try
-{
-    /* code */
-}
-catch(...)
-{
-    std::cerr << e.what() ';
-}
-
     return 0;
 }

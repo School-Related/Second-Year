@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Aim and Objectives}{1}{}%
+\contentsline {section}{\numberline {2}Problem Statement}{1}{}%
+\contentsline {section}{\numberline {3}Theory}{1}{}%
+\contentsline {subsection}{\numberline {3.1}Concept of collection framework in Java}{1}{}%
+\contentsline {subsection}{\numberline {3.2}Benefit of Generics in Collections Framework}{1}{}%
+\contentsline {subsection}{\numberline {3.3}Basic interfaces of Java Collections Framework}{1}{}%
+\contentsline {subsection}{\numberline {3.4}Types of collections allowed by the Java collections framework, Explain with suitable syntax and examples}{1}{}%
+\contentsline {section}{\numberline {4}Platform}{1}{}%
+\contentsline {section}{\numberline {5}Input}{1}{}%
+\contentsline {section}{\numberline {6}Output}{2}{}%
+\contentsline {section}{\numberline {7}Code}{2}{}%
+\contentsline {subsubsection}{\numberline {7.0.1}Output}{4}{}%
+\contentsline {section}{\numberline {8}Conclusion}{7}{}%
+\contentsline {section}{\numberline {9}FAQs}{8}{}%

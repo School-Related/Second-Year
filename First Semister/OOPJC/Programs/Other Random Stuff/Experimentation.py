@@ -5,7 +5,7 @@ try:
     d = []
     d[3] = int(input())
 
-except ZeroDivisionError as err: 
+except ZeroDivisionError as err:
     print("You cant divide by 0 man")
     
 except IndexError as err2:
