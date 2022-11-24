@@ -3,12 +3,24 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Launch Cs",
+      "request": "launch",
+      "mainClass": "Cs"
+    },
+    {
+      "type": "java",
       "name": "Attach",
       "request": "attach",
       "hostName": "localhost",
       "port": "<debug port of the debuggee>"
     },
-
     {
       "type": "java",
       "name": "Launch assignment_8",
@@ -51,8 +63,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Programs",
-      "program": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/Programs/build/Debug/outDebug",
+      "cwd": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC",
+      "program": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

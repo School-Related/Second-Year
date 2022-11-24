@@ -14,6 +14,15 @@
 \usepackage[nottoc, notlot, notlof]{tocbibind}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -129,9 +138,18 @@
 \setcounter{page}{1}
 
 \section{Introduction}
+This project was made for Submission to Object Oriented Programming with Java and C++ as the End Semester Report. The Motivation behind selecting this topic was that Online shopping has become rather prevelant now a days after COVID, and that has made the average consumer more aware about prices of everyday items, as well as Items out of everyday scope rather well. This game tests that theory, while trying to make it fun and leanring concepts of Java along the way. \\
 
-\section{Methodology Used}
+\textit{The Concept is simple. You are shown a few topics to select from, and then an image along with the title of the Product is shown. There are 4 Choices for its Price which you are supposed to guess within 10 Seconds. For guessing correctly, the time remaining gets added to your score, and you can try again upon guessing incorrectly.}
 
+\section{Methodology}
+The Working Methodology of the Game is Discussed below in a few points and elaborated further in the Report. 
+\begin{itemize}
+	\item There are 2 Active databases Maintained throughout the execution of the Program, MongoDB and CSV. CSV support is added in case the User does not have MongoDB installed in his or her System. 
+	\item Upon Starting the Game, it checks for the last time its databse was updated, if it was not within a day, it updates it. 
+	\item The databases are updated by quering directly to Amazon and Scraping data. Several Webpages of Amazon and visited, and their pictures and prices are scrapped. They are then stored in the Database. 
+	\item The GUI is written entirely in Java Swing and awt. 
+\end{itemize}
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
 \textbf{IDEs or Text Editors Used}: IntelliJ Idea Ultimate Edition for Java\\
@@ -139,15 +157,24 @@
 \textbf{Database} : MongoDb 6.0.3.1
 
 \section{Requirements}
-
+\begin{itemize}
+	\item \textbf{Java 8}
+	\item \textbf{Any 32 or 64 bit Operating System}
+	\item \textbf{1 GB RAM}
+	\item \textbf{Active Internet Connection}
+\end{itemize}
+Management
 \section{Installation and Running}
-Download the .jar file from the releases when it is released that is.
-Navigate there from your terminal
-\begin{verbatim}
-	java -jar ./How_Much.jar
-\end{verbatim}
+\begin{itemize}
+	\item Navigate to \url{https://github.com/KrishnarajT/How-Much/releases}
+	\item Download the .jar file from the releases when it is released that is.
+	\item Navigate there from your terminal and do
+	\begin{verbatim}
+		java -jar ./How_Much.jar
+	\end{verbatim}
+\end{itemize}
 
-\section{Database Management}
+\section{Database Screenshots}
 \subsection{MongoDB}
 \begin{figure}[H]
 	\centering
@@ -162,15 +189,69 @@ Navigate there from your terminal
 \end{figure}
 \subsection{Local CSV Files}
 \begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{csv.png}
-\caption{Screenshot of the Local CSV File}
+	\centering
+	\includegraphics[scale=0.4]{csv.png}
+	\caption{Screenshot of the Local CSV File}
 \end{figure}
 \section{Unique Features}
 \subsection{Dark Mode}
+Dark mode is toggled by a switch. It simply flips a boolean variable statically defined in Colors.java. Other classes will then set Colors on their screens depending on this variable, for each Swing element in their Panel or Frame. 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{dark mode2.png}
+\caption{Dark mode Turned on}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{dark mode1.png}
+\caption{Dark mode Turned Off}
+\end{figure}
 \subsection{Data Backup}
+Data backup is an important feature that ensures the user never has to face a situation where there is no product to be loaded on the Screen. 
+\begin{itemize}
+	\item There are 3 Databases maintained. 
+	\item When updating, the program updates MongoDB and CSV if they have not been updated. 
+	\item Each of the database have their own text file to maintain when the last time it was that they got updated. 
+	\item They are updated only once a day, as updating takes time. 
+	\item Updating is done in separate threads running in the Background. 
+	\item There is a 3rd backup database of CSV files that just duplicates the current state of the CSV database each time the user exits the program. 
+	\item The Game can update the Database in the Background while the user is playing the game, and at this point the backup database can be used. 
+\end{itemize}
 \subsection{Web Scrapping}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{amazon.png}
+\caption{Product on Amazon}
+\end{figure}
+
+\begin{itemize}
+	\item Every Webpage on amazon with some product has products that look like the one above.
+	\item The HTML page is scrapped, and the respective divs are searched in it to find each product and its price. 
+	\item It is then stored in the database after downloading and parsing the HTML file. 
+\end{itemize}
+
 \subsection{Working Login and Account Creation}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{login.png}
+\caption{}
+\end{figure}
+
+\begin{itemize}
+	\item All the Requirements of a simple login are satisfied here. 
+	\item After the user inputs the username, it is valided in the local CSV file. 
+	\item If found, the password is expected, checked and login is permitted. 
+	\item If not found, password is validated, and a new user account creation is permitted. 
+\end{itemize}
+
+\section{Color Schemes Used}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{design/Dark Mode Palette.png}
+\caption{Color Palette}
+\end{figure}
+The Above Colors where used and are defined in the Colors.java.
 
 \section{Screenshots of the Project}
 
@@ -212,8 +293,6 @@ Navigate there from your terminal
 	\includegraphics[scale=0.30]{./design/Screenshots/Game Over.png}
 	\caption{The Login page after a successful login}
 \end{figure}
-\section{Output Files Produced}
-
 
 \section{Walk-Through of the Files}
 
@@ -229,36 +308,77 @@ Navigate there from your terminal
 	\caption{}
 \end{figure}
 \subsection{TopicsFrame.java}
-
+This file manages the entire topic selection screen. It has various functions regarding showing the topics on the screen. It then sets static variables defined in the Main class with respect to the selected Topic. 
 \subsection{MongoManager.java}
-
+Important Class, which manages all interactions with Mongodb. It establishes connection with it, and flips a statically defined variable in Main called usingMongo to true or false depending on the success of the connection. It also has functions to update, clear, and retrieve values to and from the Mongo Database. 
 \subsection{MenuFrame.java}
+This file manages the entire Menu selection screen. It has various functions regarding showing the topics on the screen. It then sets static variables defined in the Main class with respect to the selected Topic.
+It also has the Dark mode toggle, which flips a boolean called usingDarkMode defined in Colors.java. 
 
 \subsection{Main.java}
+This class calls all the other classes. It also has the main function. It uses multithreading to update the database at the same time as displaying the GUI. It has a function that manages the interactions between all the other classes. It also has several statically defined variables. 
 
 \subsection{LoginFrame.java}
+A Class that manages everything defined in the Login Screen. It has functions to check if the password fits the given criteria, and it queries and updates the database using functions defined in other classes.
 
 \subsection{HighscoreFrame.java}
-
+A Simple class that just displays the High scores of the User. It retrieves that data using database functions, and shows the top 5 Highscoring Users along with their scores. 
 \subsection{HelpFrame.java}
+A Simple Class that simply displays what to do in the game, how to play and the credits. 
 
 \subsection{GameOverFrame.java}
-
+A Simple class that just shows the score and gives an option to the user to go back to the main menu to try again if the game was lost, or won. 
 \subsection{GameFrame.java}
-
+This is the Main class, in that it shows the actual game. It has functions to check if the databases are working properly, and what to refer in case some of them dont work. It retrieves data using functions defind in other classes. Calculates 4 suitable options depending on the Correct price, and displayes everything on the Screen. 
 \subsection{  DataBaseManager.java}
-
+Important class that manages the Local CSV files. It updates, retrieves, and clears it. It also has functions to check the database for login functions, like password matching, username matching, adding username etc. 
 \subsection{  Colors.java}
-
+Another important class that has all the colors defined in it. It has a function to reassign colors, which is called every time the Dark Mode switch is flipped. 
 \subsection{  BackgroundPanel.java}
+Important class, as it is the panel that is used by all the other screens to display the background. It has a function to set the background as the Swing JPanel background by taking arguement of the location of the image to be inserted, while maintaining aspect ratio of the image. 
 
 \subsection{  AmazonScrapper.java}
+A very important class, as it has functions to actually scrap the data from amazon, and parse it. It then verifies the data, checks for invalid characters, and if everything is fine it calls functions from teh database class to insert new data into the databases. 
 
 \section{Conclusion and Topics Learnt}
+A lot of topics were learnt in the process of making this Project. It was very useful to make this Game, and it got me a lot more fluent in writing Java code.
+\begin{enumerate}
+	\item Multithreading was Understood in a greater depth, and implemented many times. 
+	\item Web Scrapping was Learnt and in the process various java Libraries were used and understood.
+	\item Swing in java was learnt in a higher detail.
+	\item Database Management was understood. 
+	\item JDBC Drivers, Connections of java with MongoDB and MySQL were learnt in detail. 
+	\item Several Bugs were Resolved and as a Result of that programming skills were improved. 
+	\item Designing skills were also improved.  
+\end{enumerate} 
+\section{Dependencies}
 
-\section{Code File Main.java}
+\lstinputlisting[language=xml, caption=Maven Dependency File]{/run/media/krishnaraj/Programs/Java/How Much/pom.xml}
+\section{Code Files}
 
-\lstinputlisting[language=Java, caption=Main Java file]{/run/media/krishnaraj/Programs/Java/How Much/src/main/java/org/howmuch/Main.java}
+\lstinputlisting[language=Java, caption=Main Java File]{Colors.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{BackgroundPanel.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{Main.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{LoginFrame.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{GameFrame.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{TopicsFrame.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{GameOverFrame.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{MongoManager.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{DataBaseManager.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{HighscoreFrame.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{HelpFrame.java}
+
+\lstinputlisting[language=Java, caption=Main Java file]{AmazonScrapper.java}
 
 
 

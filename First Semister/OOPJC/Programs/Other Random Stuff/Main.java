@@ -1,67 +1,57 @@
 import java.util.Scanner;
 
-public class Main {
+class Commission {
+	public int sales = 0;
 
-  public static void main(String args[]) {
-    int row1, col1, row2, col2;
-    Scanner s = new Scanner(System.in);
+	Commission(int sales) {
+		this.sales = sales;
+	}
 
-    // Input dimensions of First Matrix: A
-    System.out.print("Enter number of rows in first matrix: ");
-    row1 = s.nextInt();
+	// returns the commission
+	public double commission() {
+		// commission can be a decimal point number. So, we use double
+		double commission = 0.0;
+		if (sales >= 0 && sales <= 5000) {
+			commission = 0.02 * (double) sales;
+		} else if (sales > 5000 && sales <= 10000) {
+			commission = 0.05 * (double) sales;
+		} else if (sales > 10000) {
+			commission = 0.08 * (double) sales;
+		}
+		return commission;
+	}
 
-    System.out.print("Enter number of columns in first matrix: ");
-    col1 = s.nextInt();
+}
 
-    // Input dimensions of second matrix: B
-    System.out.print("Enter number of rows in second matrix: ");
-    row2 = s.nextInt();
+// Now write a demo class to test the
+// Commission class by reading a sale from the user, using it to create a
+// Commission object after validating that the value is not negative. Finally,
+// call the commission()
+// method to get and print the
+// commission. If the sales are negative, your demo should print the message
+// “Invalid Input”.
+class Demo {
+	static Scanner scan = new Scanner(System.in);
 
-    System.out.print("Enter number of columns in second matrix: ");
-    col2 = s.nextInt();
+	public static void runDemo() {
+		System.out.println("Enter sales");
+		try {
+			int sales = scan.nextInt();
+			if (sales >= 0) {
+				Commission commission = new Commission(sales);
+				System.out.println("Commission is " + commission.commission());
+			} else {
+				throw new Exception();
+			}
+		} catch (Exception e) {
+			System.out.println("Invalid Input");
+		}
+	}
+}
 
-    // Requirement check for matrix multiplication
-    try {
-      if (col1 != row2) {
-        throw new Exception();
-      }
-    } catch (Exception e) {
-      System.out.println("The no of columns in first matrix has to be same as the no of rows in second matrix");
-      System.exit(0);
-    }
+class Main {
 
-    int a[][] = new int[row1][col1];
-    int b[][] = new int[row2][col2];
-    int c[][] = new int[row1][col2];
-
-    // Input the values of matrices
-    System.out.println("\nEnter values for matrix A : ");
-    for (int i = 0; i < row1; i++) {
-      for (int j = 0; j < col1; j++)
-        a[i][j] = s.nextInt();
-    }
-    System.out.println("\nEnter values for matrix B : ");
-    for (int i = 0; i < row2; i++) {
-      for (int j = 0; j < col2; j++)
-        b[i][j] = s.nextInt();
-    }
-
-    // Perform matrix multiplication
-    // Using for loop
-    System.out.println("\nMatrix multiplication is : ");
-    for (int i = 0; i < row1; i++) {
-      for (int j = 0; j < col2; j++) {
-        // Initialize the element C(i,j) with zero
-        c[i][j] = 0;
-
-        // Dot product calculation
-        for (int k = 0; k < col1; k++) {
-          c[i][j] += a[i][k] * b[k][j];
-        }
-
-        System.out.print(c[i][j] + " ");
-      }
-      System.out.println();
-    }
-  }
+	public static void main(String args[]) {
+		Demo.runDemo();
+	}
 }

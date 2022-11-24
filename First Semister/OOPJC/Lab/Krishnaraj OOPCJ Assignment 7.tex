@@ -428,7 +428,7 @@ public class Test {
                           + "method example");
  
                       return "Returning Callable "
-                          + "Task Result";
+                          + "Task Result"; 
                   }
               });
         System.out.println(obj.get());
@@ -440,7 +440,7 @@ public class Test {
 	      \textbf{execute()}:
 	      \begin{enumerate}
 		      \item This function executes the given command at some time in the future. The command may execute in a new thread, in a pooled thread, or in the calling thread, at the discretion of the Executor implementation.
-		      \item This method is a void method meaning it doesn't return any function. Once the task is assigned in the execute() method, we won't get any response and we can forget about the task.
+		      \item This method is a void method meaning it doesn't return any function. Once the task is assigned in the execute() method, we won't get any response and we can forget about the task.-
 		            \begin{lstlisting}[language=Java]				
 import java.util.concurrent.*;
 public class Test {

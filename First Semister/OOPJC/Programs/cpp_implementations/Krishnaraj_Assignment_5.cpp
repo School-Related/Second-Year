@@ -9,6 +9,11 @@
 #include <iomanip>
 using namespace std;
 
+void binary_search(){
+    
+}
+
+
 // struct so we can put it in a single linked list.
 struct Items
 {
