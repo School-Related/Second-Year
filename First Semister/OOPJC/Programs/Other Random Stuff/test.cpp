@@ -1,82 +1,83 @@
-#include <cstring>
-#include <iostream>
-#include <math.h>
-using namespace std;
-int check_parity(int n, int i, int code[]) {
-  int p = 0, k;
-  for (int j = i; j <= n; j = k + i) {
-    for (k = j; k < j + i && k <= n;
-         k++) // for i=1 ->bits=1,3,5,7,9,11 for i=2 ->bits 2,3,6,7,10,11
-    {         // i is parity bit position
-      if (code[k] == 1)
-        p++;
-    }
-  }
-  if (p % 2 == 0)
-    return 0; // if no. of 1 is even return 0
-  else
-    return 1; // if no. of 1 is odd return 1
-}
-void hamming_code(int data[], int num) {
-  int r = 0, m = 0, n, j = 1, c, code[50];
+mport java.util.*;
 
-  while ((r + num + 1) > (pow(2, r))) // calculating no. of parity/redundant
-                                      // bits
-    r++;
-  n = num + r; // adding no. of redundant bits to array size
-  for (int i = 1; i <= n; i++) {
-    if (i == pow(2, m) && m <= r) {
-      code[i] = 0; // initializing all the bit position of power 2 to zero
-      m++;
-    } else {
-      code[i] = data[j]; // assgning data to remaining positions
-      j++;
+public class Main {
+  static Scanner sc = new Scanner(System.in);
+
+  // assuming that the digits of the factorial of a number can not exceed 19
+  // Digits.
+  long result[] = new long[19];
+
+  // Method for Finding Factorial
+  public int factorial(int x) // Here X is the number we want to find the factorial of
+  {
+    // Initialize the result array
+    result[0] = 1;
+    int resultSize = 1;
+
+    // Applying the simple formula of factorial
+    // f! = 1 x 2 x 3 x 4 ... x f
+    for (int f = 2; f <= x; f++) {
+      resultSize = multiply(f, result, resultSize);
     }
+
+    return resultSize;
   }
-  m = 0;
-  for (int i = 1; i <= n; i++) {
-    if (i == pow(2, m) && m <= r) {
-      c = check_parity(n, i,
-                       code); // assigning parity bit to position of power 2
-      code[i] = c;
-      m++;
+
+  // The following method multiplies x with the number
+  // represented by the result[] array. resultSize is the size of the result[]
+  // array
+  // or the number of digits present in the number that is represented by
+  // result[].
+  // The method uses the basic school mathematics for
+  // the multiplication. The method may increase the value of resultSize
+  // and returns a new value of the resultSize
+  static int multiply(int y, long result[], int resultSize) {
+    int c = 0; // Initializing the carry
+    // performing the basic multiplication
+    // and updating the result array
+    for (int j = 0; j < resultSize; j++) {
+      int product = (int) result[j] * y + c;
+      result[j] = product % 10; // Storing the last digit of
+      // 'product' in the result[] array
+      c = product / 10; // Put the rest in c
     }
-  }
-  cout << "The hamming code for given data is:";
-  for (int i = n; i > 0; i--)
-    cout << code[i];
-  cout << "\nEnter the received code:";
-  for (int i = n; i > 0; i--)
-    cin >> code[i];
-  m = j = c = 0;
-  for (int i = 1; i <= n; i++) {
-    if (i == pow(2, m) && m <= r) {
-      c = c +
-          (pow(2, j) * check_parity(n, i, code)); // decimal value of error code
-      j++;
-      m++;
+    // Putting the carry in the result[] array and increase the result size
+    // resultSize
+    while (c != 0) {
+      result[resultSize] = c % 10;
+      c = c / 10;
+      resultSize = resultSize + 1;
     }
+    return resultSize;
   }
-  if (c == 0)
-    cout << "\nReceived word is correct.";
-  else {
-    cout << "\nThere is error in bit " << (n - c) + 1
-         << "\nThe corrected code is:";
-    if (code[c] == 1)
-      code[c] = 0;
-    else
-      code[c] = 1;
-    for (int i = n; i > 0; i--)
-      cout << code[i];
+
+  // main method
+  public static void main(String argvs[]) {
+
+    System.out.print("**Enter the Number of which you want to Find factorial*: ");
+    int x = sc.nextInt();
+    try {
+      if (x <= 0) {
+        throw new IllegalArgumentException("Value of x must be positiveb!.");
+      }
+      if (x >= 20)
+        throw new IllegalArgumentException("Result will Overflow");
+    } catch (IllegalArgumentException a) {
+      System.out.println(a);
+
+      System.exit(0);
+    }
+
+    // creating an object of the class LargeNumFact
+    Main obj = new Main();
+    // storing the result of the method factorial()
+    int resSize = obj.factorial(x);
+    System.out.println("The factorial of the number " + x + " is: ");
+    // printing the result
+    for (int j = resSize - 1; j >= 0; j--) {
+      System.out.print(obj.result[j]);
+
+    }
+
   }
-}
-int main() {
-  int data[50], num;
-  cout << "Enter the size of data: ";
-  cin >> num;
-  cout << "Enter the data: ";
-  for (int i = num; i > 0; i--)
-    cin >> data[i];
-  hamming_code(data, num);
-  return 0;
 }

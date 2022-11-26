@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  24 NOV 2022 00:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  25 NOV 2022 14:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -720,7 +720,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ...numberline {13}Code Files}{14}{section.13}
+l.39 ...numberline {13}References}{14}{section.13}
                                                   % [1])
 \tf@toc=\write4
 \openout4 = `Project_Report.toc'.
@@ -759,7 +759,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 178.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 178.
-<mongo 1.png, id=220, 1249.66875pt x 623.32875pt>
+<mongo 1.png, id=225, 1249.66875pt x 623.32875pt>
 File: mongo 1.png Graphic file (type png)
 <use mongo 1.png>
 Package pdftex.def Info: mongo 1.png  used on input line 181.
@@ -769,7 +769,7 @@ Overfull \hbox (30.10362pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
-<mongo 2.png, id=221, 1247.41031pt x 648.17157pt>
+<mongo 2.png, id=226, 1247.41031pt x 648.17157pt>
 File: mongo 2.png Graphic file (type png)
 <use mongo 2.png>
 Package pdftex.def Info: mongo 2.png  used on input line 187.
@@ -792,12 +792,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
                    \relax 
 l.190 \subsection
                  {Local CSV Files} [2 <./mongo 1.png (PNG copy)>]
-<csv.png, id=227, 1112.65688pt x 362.85562pt>
+<csv.png, id=232, 1112.65688pt x 362.85562pt>
 File: csv.png Graphic file (type png)
 <use csv.png>
 Package pdftex.def Info: csv.png  used on input line 193.
 (pdftex.def)             Requested size: 445.05487pt x 145.13968pt.
-<dark mode2.png, id=228, 294.34969pt x 104.64093pt>
+<dark mode2.png, id=233, 294.34969pt x 104.64093pt>
 File: dark mode2.png Graphic file (type png)
 <use dark mode2.png>
 Package pdftex.def Info: dark mode2.png  used on input line 201.
@@ -811,12 +811,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [3 <./mongo 2.png (PNG copy)> <./csv.png (PNG copy)>]
-<dark mode1.png, id=235, 291.33844pt x 121.95563pt>
+<dark mode1.png, id=240, 291.33844pt x 121.95563pt>
 File: dark mode1.png Graphic file (type png)
 <use dark mode1.png>
 Package pdftex.def Info: dark mode1.png  used on input line 207.
 (pdftex.def)             Requested size: 145.66885pt x 60.97765pt.
-<amazon.png, id=236, 823.57687pt x 182.93344pt>
+<amazon.png, id=241, 823.57687pt x 182.93344pt>
 File: amazon.png Graphic file (type png)
 <use amazon.png>
 Package pdftex.def Info: amazon.png  used on input line 224.
@@ -830,17 +830,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [4 <./dark mode2.png (PNG copy)> <./dark mode1.png (PNG copy)> <./amazon.png (PNG copy)>]
-<login.png, id=245, 253.69781pt x 229.60782pt>
+<login.png, id=250, 253.69781pt x 229.60782pt>
 File: login.png Graphic file (type png)
 <use login.png>
 Package pdftex.def Info: login.png  used on input line 237.
 (pdftex.def)             Requested size: 152.21985pt x 137.76575pt.
-<design/Dark Mode Palette.png, id=246, 411.03563pt x 633.86812pt>
+<design/Dark Mode Palette.png, id=251, 411.03563pt x 633.86812pt>
 File: design/Dark Mode Palette.png Graphic file (type png)
 <use design/Dark Mode Palette.png>
 Package pdftex.def Info: design/Dark Mode Palette.png  used on input line 251.
 (pdftex.def)             Requested size: 123.31163pt x 190.1619pt.
-<./design/Screenshots/Login Screen.png, id=247, 963.6pt x 542.025pt>
+<./design/Screenshots/Login Screen.png, id=252, 963.6pt x 542.025pt>
 File: ./design/Screenshots/Login Screen.png Graphic file (type png)
 <use ./design/Screenshots/Login Screen.png>
 Package pdftex.def Info: ./design/Screenshots/Login Screen.png  used on input line 261.
@@ -854,12 +854,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [5 <./login.png (PNG copy)> <./design/Dark Mode Palette.png (PNG copy)>]
-<./design/Screenshots/Main Menu Screen.png, id=254, 1445.4pt x 789.70032pt>
+<./design/Screenshots/Main Menu Screen.png, id=259, 1445.4pt x 789.70032pt>
 File: ./design/Screenshots/Main Menu Screen.png Graphic file (type png)
 <use ./design/Screenshots/Main Menu Screen.png>
 Package pdftex.def Info: ./design/Screenshots/Main Menu Screen.png  used on input line 267.
 (pdftex.def)             Requested size: 433.62335pt x 236.91193pt.
-<./design/Screenshots/Topic Selection.png, id=255, 1445.4pt x 790.45313pt>
+<./design/Screenshots/Topic Selection.png, id=260, 1445.4pt x 790.45313pt>
 File: ./design/Screenshots/Topic Selection.png Graphic file (type png)
 <use ./design/Screenshots/Topic Selection.png>
 Package pdftex.def Info: ./design/Screenshots/Topic Selection.png  used on input line 275.
@@ -873,12 +873,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [6 <./design/Screenshots/Login Screen.png (PNG copy)> <./design/Screenshots/Main Menu Screen.png (PNG copy)>]
-<./design/Screenshots/Highscores.png, id=262, 1445.4pt x 789.70032pt>
+<./design/Screenshots/Highscores.png, id=267, 1445.4pt x 789.70032pt>
 File: ./design/Screenshots/Highscores.png Graphic file (type png)
 <use ./design/Screenshots/Highscores.png>
 Package pdftex.def Info: ./design/Screenshots/Highscores.png  used on input line 281.
 (pdftex.def)             Requested size: 433.62335pt x 236.91193pt.
-<./design/Screenshots/Help and Credits.png, id=263, 1445.4pt x 789.70032pt>
+<./design/Screenshots/Help and Credits.png, id=268, 1445.4pt x 789.70032pt>
 File: ./design/Screenshots/Help and Credits.png Graphic file (type png)
 <use ./design/Screenshots/Help and Credits.png>
 Package pdftex.def Info: ./design/Screenshots/Help and Credits.png  used on input line 287.
@@ -892,17 +892,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [7 <./design/Screenshots/Topic Selection.png (PNG copy)> <./design/Screenshots/Highscores.png (PNG copy)>]
-<./design/Screenshots/Game Over.png, id=270, 1445.4pt x 790.45313pt>
+<./design/Screenshots/Game Over.png, id=275, 1445.4pt x 790.45313pt>
 File: ./design/Screenshots/Game Over.png Graphic file (type png)
 <use ./design/Screenshots/Game Over.png>
 Package pdftex.def Info: ./design/Screenshots/Game Over.png  used on input line 293.
 (pdftex.def)             Requested size: 433.62335pt x 237.13776pt.
-<code.png, id=271, 1401.235pt x 1485.55pt>
+<code.png, id=276, 1401.235pt x 1485.55pt>
 File: code.png Graphic file (type png)
 <use code.png>
 Package pdftex.def Info: code.png  used on input line 302.
 (pdftex.def)             Requested size: 420.37375pt x 445.66844pt.
-<code2.png, id=273, 1401.235pt x 1927.2pt>
+<code2.png, id=278, 1401.235pt x 1927.2pt>
 File: code2.png Graphic file (type png)
 <use code2.png>
 Package pdftex.def Info: code2.png  used on input line 307.
@@ -964,9 +964,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[13]) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+[13])
+Overfull \hbox (24.38148pt too wide) in paragraph at lines 360--362
+[]\T1/fnc/m/n/10.95 https://www.notion.so/045f2a28abfe4a82a3ba0e8251c0e196?v=1ddbea2937324f79af4eae827f8a3132
+ []
+
+
+Overfull \hbox (52.89832pt too wide) in paragraph at lines 364--365
+[][][]$\T1/cmtt/m/n/10.95 https : / / www . geeksforgeeks . org / scraping-[]amazon-[]product-[]information-[]using-[]beautiful-[]soup/$[][] 
+ []
+
+
+Overfull \hbox (10.28972pt too wide) in paragraph at lines 366--367
+[][][]$\T1/cmtt/m/n/10.95 https : / / docs . oracle . com / cd / E50453 _ 01 / doc . 80 / e50452 / run _ java _ guis . htm# : ~ : text = In %
+ []
+
+
+Overfull \hbox (40.08157pt too wide) in paragraph at lines 370--371
+[][][]$\T1/cmtt/m/n/10.95 https : / / one . trustedstream . life / space-[]robot / ?pl = uy-[]e9pFAkEqFCifo9sDBZw & sm = space-[]robot &
+ []
+
+
+Overfull \hbox (27.76483pt too wide) in paragraph at lines 372--373
+[][][]$\T1/cmtt/m/n/10.95 https : / / docs . oracle . com / javase / 7 / docs / api / javax / swing / package-[]summary . html# : ~ : text =
+ []
+
+
+Overfull \hbox (10.78972pt too wide) in paragraph at lines 372--373
+\T1/cmtt/m/n/10.95 The % 20Action % 20interface % 20provides % 20a ,[] be % 20accessed % 20by % 20several % 20controls .
+ []
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (./Colors.java) (./BackgroundPanel.java
+) (./Colors.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -974,7 +1004,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[14]) (./Main.java
+[14]) (./BackgroundPanel.java) (./Main.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1038,7 +1068,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[22]) (./LoginFrame.java
+[22]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1046,7 +1076,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[23]
+[23]) (./LoginFrame.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1102,7 +1132,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[30]) (./GameFrame.java
+[30]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1110,7 +1140,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[31]
+[31]) (./GameFrame.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1222,7 +1252,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[45]) (./GameOverFrame.java
+[45]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1230,7 +1260,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[46]
+[46]) (./GameOverFrame.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1246,7 +1276,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[48]) (./MongoManager.java
+[48]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1254,7 +1284,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[49]
+[49]) (./MongoManager.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1334,7 +1364,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[59]) (./HelpFrame.java
+[59]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1342,7 +1372,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[60]
+[60]) (./HelpFrame.java
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1400,21 +1430,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [67] (./Project_Report.aux)
 Package rerunfilecheck Info: File `Project_Report.out' has not changed.
-(rerunfilecheck)             Checksum: E633D85A626AA9151F2B03AA7F54EABE;5493.
+(rerunfilecheck)             Checksum: AF47FC7192F5C2F75A7E537A9D71BE19;5588.
  ) 
 Here is how much of TeX's memory you used:
- 17172 strings out of 478238
- 258149 string characters out of 5850455
- 1399164 words of memory out of 5000000
- 32065 multiletter control sequences out of 15000+600000
+ 17174 strings out of 478238
+ 258171 string characters out of 5850455
+ 1504544 words of memory out of 5000000
+ 32066 multiletter control sequences out of 15000+600000
  517970 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,13n,69p,596b,2090s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Project_Report.pdf (70 pages, 2295639 bytes).
+Output written on Project_Report.pdf (70 pages, 2309021 bytes).
 PDF statistics:
- 4152 PDF objects out of 4296 (max. 8388607)
- 4011 compressed objects within 41 object streams
- 3061 named destinations out of 3580 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4172 PDF objects out of 4296 (max. 8388607)
+ 4031 compressed objects within 41 object streams
+ 3062 named destinations out of 3580 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

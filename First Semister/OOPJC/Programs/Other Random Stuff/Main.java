@@ -1,57 +1,67 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
-class Commission {
-	public int sales = 0;
-
-	Commission(int sales) {
-		this.sales = sales;
+// create student class.
+class StudentManagement extends Exception {
+	StudentManagement(String error) {
+		super(error);
 	}
-
-	// returns the commission
-	public double commission() {
-		// commission can be a decimal point number. So, we use double
-		double commission = 0.0;
-		if (sales >= 0 && sales <= 5000) {
-			commission = 0.02 * (double) sales;
-		} else if (sales > 5000 && sales <= 10000) {
-			commission = 0.05 * (double) sales;
-		} else if (sales > 10000) {
-			commission = 0.08 * (double) sales;
-		}
-		return commission;
-	}
-
 }
 
-// Now write a demo class to test the
-// Commission class by reading a sale from the user, using it to create a
-// Commission object after validating that the value is not negative. Finally,
-// call the commission()
-// method to get and print the
-// commission. If the sales are negative, your demo should print the message
-// “Invalid Input”.
-class Demo {
-	static Scanner scan = new Scanner(System.in);
+public class Main {
+	static double m1, m2, m3, m4, m5, m6;
+	static String name;
+	static Scanner in = new Scanner(System.in);
+	static double percentage;
 
-	public static void runDemo() {
-		System.out.println("Enter sales");
+	public static void main(String arg[]) {
+
 		try {
-			int sales = scan.nextInt();
-			if (sales >= 0) {
-				Commission commission = new Commission(sales);
-				System.out.println("Commission is " + commission.commission());
-			} else {
-				throw new Exception();
+			System.out.println("Enter The name of the Student: ");
+			name = in.next();
+			// create object of scanner class.
+
+			// enter marks between 1-50
+			System.out.print("Enter marks for subject 1 here\n : ");
+			double m1 = in.nextInt();
+
+			System.out.print("Enter marks for subject 2 here\n : ");
+			double m2 = in.nextInt();
+
+			System.out.print("Enter marks for subject 3 here \n: ");
+			double m3 = in.nextInt();
+
+			System.out.print("Enter marks for subject 4 here \n: ");
+			double m4 = in.nextInt();
+
+			System.out.print("Enter marks for subject 5 here \n: ");
+			double m5 = in.nextInt();
+
+			System.out.print("Enter marks for subject 6 here \n: ");
+			double m6 = in.nextInt();
+
+			// condition for checking valid entry of marks.
+			if (!(m1 >= 0 && m1 <= 50) || !(m2 >= 0 && m2 <= 50) || !(m3 >= 0 && m3 <= 50) || !(m4 >= 0 && m4 <= 50)
+					|| !(m5 >= 0 && m5 <= 50) || !(m6 >= 0 && m6 <= 50)) {
+				throw (new StudentManagement("Invalid marks:"));
 			}
-		} catch (Exception e) {
-			System.out.println("Invalid Input");
+
+			System.out.println("The Name of the student is: " + name);
+			System.out.println("Entered marks for subject 1 are :" + m1);
+			System.out.println("Entered marks for subject 1 are :" + m2);
+			System.out.println("Entered marks for subject 1 are :" + m3);
+			System.out.println("Entered marks for subject 1 are :" + m4);
+			System.out.println("Entered marks for subject 1 are :" + m5);
+			System.out.println("Entered marks for subject 1 are :" + m6);
+
+			percentage =  ((m1 + m2 + m3 + m4 + m5 + m6) * 0.01)/6;
+			System.out.println("The Percentage is: " + percentage);
+
+		} catch (InputMismatchException e) {
+			System.out.println("Invalid Input..Pls Input Integer Only..");
+		} catch (StudentManagement e) {
+			System.out.println("Error:" + e);
 		}
-	}
-}
 
-class Main {
-
-	public static void main(String args[]) {
-		Demo.runDemo();
 	}
 }
