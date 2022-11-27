@@ -1,0 +1,141 @@
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+1
+Enter the element you want to add
+1
+
+1
+
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+1
+Enter the element you want to add
+2
+
+2
+1
+
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+3
+Here is the stack: 
+
+2
+1
+
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+2
+Removing the top element from the stack
+Removed this thing 2
+
+1
+
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+4
+Nope stack isnt empty
+
+1
+
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+5
+No stack isnt full!
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+6
+
+infix to postfix
+a+b
+Removed this thing +
+Removed this thing 1
+ab+1
+
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+7
+
+postfix to infix
+ab+
+ba(a+b)
+The infix expression is: 
+(a+b)
+
+Enter what you want to do: 
+    1. Push Element to the stack
+    2. Pop Element from the stack
+    3. See the Stack
+    4. Check if stack is empty
+    5. Check if stack is full
+    6. Infix to Postfix
+    7. Postfix to Prefix
+    8. Exit
+
+8
+
+Thank You

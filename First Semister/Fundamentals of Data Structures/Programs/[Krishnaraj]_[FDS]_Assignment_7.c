@@ -273,8 +273,9 @@ int main()
             }
             else
             {
-                printf("No stack isnt full!");
+                printf("No stack isnt full!\n");
             }
+            break;
         case 6:
             printf("\ninfix to postfix\n");
             scanf("%s", fix);
