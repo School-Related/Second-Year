@@ -1,8 +1,8 @@
 PWD /run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 7.tex
-OUTPUT Assignment 7.log
+INPUT /run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 6.tex
+OUTPUT Assignment 6.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -360,10 +360,10 @@ INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Assignment 7.aux
-INPUT Assignment 7.aux
-INPUT Assignment 7.aux
-OUTPUT Assignment 7.aux
+INPUT ./Assignment 6.aux
+INPUT Assignment 6.aux
+INPUT Assignment 6.aux
+OUTPUT Assignment 6.aux
 INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
@@ -400,7 +400,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
-OUTPUT Assignment 7.pdf
+OUTPUT Assignment 6.pdf
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
@@ -412,15 +412,54 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
-INPUT ./Assignment 7.toc
-INPUT Assignment 7.toc
-INPUT Assignment 7.toc
+INPUT ./Assignment 6.toc
+INPUT Assignment 6.toc
+INPUT Assignment 6.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
-OUTPUT Assignment 7.toc
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
+OUTPUT Assignment 6.toc
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -430,14 +469,19 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT ../Screenshots/Assignment_7_screenshot.png
-INPUT ../Screenshots/Assignment_7_screenshot.png
-INPUT ../Screenshots/Assignment_7_screenshot.png
-INPUT ../Screenshots/Assignment_7_screenshot.png
-INPUT ../Screenshots/Assignment_7_screenshot.png
-INPUT Assignment 7.aux
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT ../Screenshots/Natting web browser.png
+INPUT ../Screenshots/Natting web browser.png
+INPUT ../Screenshots/Natting web browser.png
+INPUT ../Screenshots/Natting web browser.png
+INPUT ../Screenshots/Natting web browser.png
+INPUT ../Screenshots/assignment_6_screenshot.png
+INPUT ../Screenshots/assignment_6_screenshot.png
+INPUT ../Screenshots/assignment_6_screenshot.png
+INPUT ../Screenshots/assignment_6_screenshot.png
+INPUT ../Screenshots/assignment_6_screenshot.png
+INPUT Assignment 6.aux
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb

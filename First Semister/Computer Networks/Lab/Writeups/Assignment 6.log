@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  27 NOV 2022 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  27 NOV 2022 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 7.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 7.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 6.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Lab/Writeups/Assignment 6.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -389,8 +389,8 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box56
-) (./Assignment 7.aux)
-\openout1 = `"Assignment 7.aux"'.
+) (./Assignment 6.aux)
+\openout1 = `"Assignment 6.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
@@ -496,22 +496,54 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 125.
- (./Assignment 7.toc
+ (./Assignment 6.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 3.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 3.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
 )
 \tf@toc=\write3
-\openout3 = `"Assignment 7.toc"'.
+\openout3 = `"Assignment 6.toc"'.
 
  [1]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 167.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 137.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 137.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 163.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 199.
+(Font)              scaled to size 10.18341pt on input line 215.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 199.
+(Font)              scaled to size 13.39188pt on input line 215.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -523,15 +555,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
 ]
-Overfull \hbox (367.68388pt too wide) in paragraph at lines 199--199
-[]\T1/cmtt/m/n/10.95 11 is the network of the routers. 10 would be the networks on the left and 12 would be the networks on the right or anything that you want it to be.[] 
+Overfull \hbox (33.84pt too wide) in paragraph at lines 215--215
+[]\T1/cmtt/m/n/10.95 %Default route without gateway, if not a point-to-point interface, may impact performance[] 
  []
 
 
-Overfull \hbox (271.49158pt too wide) in paragraph at lines 225--225
-[]\T1/cmtt/m/n/10.95 i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area \* - candidate default, U - per-user static route, o - ODR[] 
+Overfull \hbox (33.84pt too wide) in paragraph at lines 215--215
+[]\T1/cmtt/m/n/10.95 %Default route without gateway, if not a point-to-point interface, may impact performance[] 
  []
 
+<../Screenshots/Natting web browser.png, id=16, 525.46312pt x 514.92375pt>
+File: ../Screenshots/Natting web browser.png Graphic file (type png)
+<use ../Screenshots/Natting web browser.png>
+Package pdftex.def Info: ../Screenshots/Natting web browser.png  used on input line 225.
+(pdftex.def)             Requested size: 315.2803pt x 308.95662pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -540,13 +577,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2]
-<../Screenshots/Assignment_7_screenshot.png, id=19, 1333.98375pt x 521.69907pt>
-File: ../Screenshots/Assignment_7_screenshot.png Graphic file (type png)
-<use ../Screenshots/Assignment_7_screenshot.png>
-Package pdftex.def Info: ../Screenshots/Assignment_7_screenshot.png  used on input line 231.
-(pdftex.def)             Requested size: 533.58405pt x 208.67592pt.
+<../Screenshots/Assignment_6_screenshot.png, id=20, 1443.14156pt x 495.35063pt>
+File: ../Screenshots/Assignment_6_screenshot.png Graphic file (type png)
+<use ../Screenshots/Assignment_6_screenshot.png>
+Package pdftex.def Info: ../Screenshots/Assignment_6_screenshot.png  used on input line 233.
+(pdftex.def)             Requested size: 577.2464pt x 198.13673pt.
 
-Overfull \hbox (63.82903pt too wide) in paragraph at lines 231--232
+Overfull \hbox (107.49138pt too wide) in paragraph at lines 233--234
  [][] 
  []
 
@@ -557,20 +594,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3 <../Screenshots/Assignment_7_screenshot.png (PNG copy)>] (./Assignment 7.aux) ) 
+[3 <../Screenshots/Natting web browser.png (PNG copy)> <../Screenshots/assignment_6_screenshot.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4] (./Assignment 6.aux) ) 
 Here is how much of TeX's memory you used:
- 5985 strings out of 478238
- 86824 string characters out of 5850455
- 386937 words of memory out of 5000000
- 24142 multiletter control sequences out of 15000+600000
- 499631 words of font info for 51 fonts, out of 8000000 for 9000
+ 6059 strings out of 478238
+ 88175 string characters out of 5850455
+ 384937 words of memory out of 5000000
+ 24196 multiletter control sequences out of 15000+600000
+ 511539 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,12n,69p,442b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,12n,69p,367b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 7.pdf" (5 pages, 206009 bytes).
+Output written on "Assignment 6.pdf" (6 pages, 266378 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
