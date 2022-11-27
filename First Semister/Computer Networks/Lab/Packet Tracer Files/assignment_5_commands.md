@@ -5,7 +5,7 @@ make sure you are in the # shell in the router.
 then do
 conf t
 router rip
-ver
+ver 1
 network 10.0.0.0
 network 11.0.0.0
 

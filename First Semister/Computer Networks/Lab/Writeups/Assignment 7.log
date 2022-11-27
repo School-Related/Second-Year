@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  27 NOV 2022 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  27 NOV 2022 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -488,14 +488,14 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 16.07027pt on input line 72.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 16.07027pt on input line 103.
+(Font)              scaled to size 16.07027pt on input line 104.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 111.
+(Font)              scaled to size 13.39188pt on input line 112.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 124.
+(Font)              scaled to size 13.39188pt on input line 125.
  (./Assignment 7.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
@@ -533,13 +533,13 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
  [1]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 136.
+(Font)              scaled to size 11.15991pt on input line 137.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 136.
+(Font)              scaled to size 11.15991pt on input line 137.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 206.
+(Font)              scaled to size 10.18341pt on input line 208.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 206.
+(Font)              scaled to size 13.39188pt on input line 208.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -551,19 +551,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 209.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 211.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 211.
+(Font)              scaled to size 8.36993pt on input line 213.
 <../Screenshots/Assignment_7_screenshot.png, id=15, 1333.98375pt x 521.69907pt>
 File: ../Screenshots/Assignment_7_screenshot.png Graphic file (type png)
 <use ../Screenshots/Assignment_7_screenshot.png>
-Package pdftex.def Info: ../Screenshots/Assignment_7_screenshot.png  used on input line 218.
+Package pdftex.def Info: ../Screenshots/Assignment_7_screenshot.png  used on input line 220.
 (pdftex.def)             Requested size: 533.58405pt x 208.67592pt.
 
-Overfull \hbox (63.82903pt too wide) in paragraph at lines 218--219
+Overfull \hbox (63.82903pt too wide) in paragraph at lines 220--221
  [][] 
  []
 
@@ -584,7 +584,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  65i,12n,69p,367b,1093s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 7.pdf" (4 pages, 167493 bytes).
+Output written on "Assignment 7.pdf" (4 pages, 167534 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
