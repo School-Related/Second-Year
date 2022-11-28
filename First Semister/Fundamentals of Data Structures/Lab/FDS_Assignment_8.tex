@@ -42,7 +42,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{FDS Assignment 5 - Singly Linked List Operations}}}
+\fancyhead[L]{\textit{\Large{FDS Assignment 8}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -74,7 +74,7 @@
 	\vspace{0.75\baselineskip} % Whitespace above the title
 
 	\huge{\textsc{
-			Expression conversion using stack
+			Expression Evaluation using stack
 		}} \\
 
 
@@ -89,7 +89,7 @@
 
 	\LARGE\textsc{
 		Practical Report\\
-		Assignment 7
+		Assignment 8
 	} % Subtitle or further description
 	\vfill
 
@@ -117,92 +117,17 @@
 \setcounter{page}{1}
 
 \section{Aim}
-Implement stack as an ADT and apply it for different expression conversions (infix to postfix or
-infix to prefix (Any one), prefix to postfix or prefix to infix, postfix to infix or postfix to prefix
-(Any one)).
-
+Writing a C Program to Evaluate a Postfix Expression using Stack.
 \section{Objectives}
 \begin{enumerate}
 	\item To study Stack and its operations
-	\item To study the importance of expression conversions
+	\item To study the importance of expression evaluation
 \end{enumerate}
 
 \section{Problem Statements}
-\textit{Department of Computer Engineering has student's node named 'Pinnacle Node'. Students of
-	second, third and final year of department can be granted membership on request. Similarly, one
-	may cancel the membership of node. First node is reserved for president of node and last node is
-	reserved for the secretary of the node. Write C program to maintain node members information
-	using singly linked list. Store student PRN and Name. Write functions to:}
-\begin{enumerate}
-	\item \textit{ Add members as well as president or even secretary.}
-	\item \textit{ Compute total number of members of node }
-	\item \textit{ Display members}
-	\item \textit{ sorting of two linked list}
-	\item \textit{ merging of two linked list}
-	\item \textit{ Reversing using three pointers}
-	\item \textit{ Add and delete the}
-\end{enumerate}
+\textit{Write a C Program to Evaluate a Postfix Expression using Stack. }
+
 \section{Theory}
-\subsection{Stack}
-A stack is a linear data structure which follows a particular order in which the operations are
-performed. The order may be LIFO (Last In First Out) or FILO (First In Last Out). Mainly the
-following three basic operations are performed in the stack:
-\begin{enumerate}
-	\item \textit{Push:} Adds an item in the stack. If the stack is full, then it is said to be an
-	      Overflow condition.
-	\item \textit{Pop:} Removes an item from the stack. The items are popped in the reversed order
-	      in which they are pushed. If the stack is empty, then it is said to be an Underflow
-	      condition.
-	\item \textit{Peek or Top:} Returns top element of stack.
-	\item \textit{isEmpty:} Returns true if stack is empty, else false.
-\end{enumerate}
-
-
-\subsection{Expression Conversion}
-Expression conversion is the process of converting an expression from one form to another. The
-following are the different forms of expression conversion:
-\begin{enumerate}
-	\item \textit{Infix to Postfix:} Infix expression is converted to postfix expression.
-	\item \textit{Infix to Prefix:} Infix expression is converted to prefix expression.
-	\item \textit{Postfix to Infix:} Postfix expression is converted to infix expression.
-	\item \textit{Postfix to Prefix:} Postfix expression is converted to prefix expression.
-	\item \textit{Prefix to Infix:} Prefix expression is converted to infix expression.
-	\item \textit{Prefix to Postfix:} Prefix expression is converted to postfix expression.
-\end{enumerate}
-
-\subsection{Infix to Postfix}
-The algorithm for conversion of infix expression to postfix expression is as follows:
-\begin{enumerate}
-	\item Scan the infix expression from left to right.
-	\item If the scanned character is an operand, output it.
-	\item Else,
-	      \begin{enumerate}
-		      \item If the precedence of the scanned operator is greater than the precedence of the
-		            operator in the stack(or the stack is empty or the stack contains a '(' ), push it.
-		      \item Else, Pop all the operators from the stack which are greater than or equal to in
-		            precedence than that of the scanned operator. After doing that Push the scanned
-		            operator to the stack. (If you encounter parenthesis while popping then stop there
-		            and push the scanned operator in the stack.)
-	      \end{enumerate}
-	\item If the scanned character is an '(', push it to the stack.
-	\item If the scanned character is an ')', pop the stack and and output it until a '(' is
-	      encountered, and discard both the parenthesis.
-	\item Repeat steps 2-6 until infix expression is scanned.
-	\item Print the output
-	\item Pop and output from the stack until it is not empty.
-\end{enumerate}
-
-\subsection{Postfix to Prefix}
-The algorithm for conversion of postfix expression to prefix expression is as follows:
-\begin{enumerate}
-	\item Read the postfix expression from right to left.
-	\item If the symbol is an operand, then push it onto the Stack.
-	\item If the symbol is an operator, then pop two operands from the Stack
-	\item Create a string by concatenating the two operands and the operator before them.
-	\item string = operator + operand1 + operand2
-	\item And push the resultant string back to Stack
-	\item Repeat the above steps until end of Prefix expression.
-\end{enumerate}
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
@@ -210,153 +135,22 @@ The algorithm for conversion of postfix expression to prefix expression is as fo
 \textbf{Compilers} : gcc on linux for C\\
 
 \section{Input}
-
-\begin{itemize}
-	\item Atleast 5 Elements to Input, including the President and the Secretary
-	\item Details of Every Element like Name and PRN
-	\item Options to Select what to do.
-\end{itemize}
-
+The Postfix Condition
 \section{Output}
-\begin{itemize}
-	\item Menu to display all the operations you can perform on the Linked list.
-	\item Display of All the elements of the Linked list, before and after performing operations on it.
-\end{itemize}
-
+The Evaluation of the Postfix Expression entered.
 \section{Test Conditions}
 \begin{enumerate}
-	\item Input at least 5 records.
-	\item Inserting an Element at All Positions
-	\item Delete an Element from All positions
+	\item The Postfix Expression and Checking its Evaluation.
 \end{enumerate}
 
 \section{Code}
 \subsection{Pseudo Code}
-\subsubsection{Pseudo Code for checking if the stack is full}
-\begin{lstlisting}[language=C]
-	isFull()
-		if (top == MAX_SIZE - 1)
-			return 1;
-		else
-			return 0;
-\end{lstlisting}\subsubsection{Pseudo Code for checking if the stack is empty}
-
-\begin{lstlisting}[language=C]
-	isEmpty()
-		if (top == -1)
-			return 1;
-		else
-			return 0;
-\end{lstlisting}\subsubsection{Pseudo Code for Pushing onto stack}
-
-\begin{lstlisting}[language=C]
-	push(char item)
-		if (!isFull())
-			top++;
-			stack[top] = item;
-		else
-			printf("\nSTACK OVERFLOW!\n");
-\end{lstlisting}\subsubsection{Pseudo Code for popping from the stack}
-
-\begin{lstlisting}[language=C]
-	pop()
-		if (isEmpty())
-			printf("Stack is Empty \n\n STACK UNDERFLOW!!");
-			return 0;
-		else
-			printf("Removed this thing %c\n", stack[top]);
-			top--;
-			return stack[top + 1];
-	
-\end{lstlisting}\subsubsection{Pseudo Code for checking incoming character precedence and incoming sign precedence}
-
-\begin{lstlisting}[language=C]
-
-	icp(char ch) // incoming char precedence
-		if (ch == '+' || ch == '-')
-			return 1;
-		if (ch == '*' || ch == '/')
-			return 2;
-		if (ch == '^')
-			return 4;
-		if (ch == '(')
-			return 5;
-		else
-			return 0;
-	isp(char ch) // incoming sign precedence
-		if (ch == '+' || ch == '-')
-			return 1;
-		if (ch == '*' || ch == '/')
-			return 2;
-		if (ch == '^')
-			return 3;
-		else
-			return 0;
-\end{lstlisting}\subsubsection{Pseudo Code infix to postfix}
-
-\begin{lstlisting}[language=C]
-	
-	infix_to_postfix(char inexp[10])
-		int postexp[10];
-		int k = 0, i = 0;
-		char tkn = inexp[i];
-		while (tkn != '\0')
-			if (tkn >= 97 && tkn <= 122)
-				postexp[k] = inexp[i];
-				k++;
-			else
-				if (tkn == '(')
-					push('(');
-				else
-					if (tkn == ')')
-						while ((tkn = pop()) != '(')
-							postexp[k] = tkn;
-							k++;
-					else
-						while (!isEmpty() && isp(stack[top] >= icp(tkn)))
-							postexp[k] = pop();
-							k++;
-						push(tkn);
-			i++;
-			tkn = inexp[i];
-		while (!isEmpty())
-			postexp[k] = pop();
-			k++;
-		postexp[k] = '\0';
-		for (int i = 0; i < k; i++)
-			printf("%c", postexp[i]);
-\end{lstlisting}\subsubsection{Pseudo Code for postfix to infix}
-
-\begin{lstlisting}[language=C]
-	
-	postfix_to_infix(char post[MAX_SIZE])
-		for (int i = 0; post[i] != '\0'; i++)
-			if (post[i] >= 97 && post[i] <= 127)
-				temp[0] = post[i];
-				temp[1] = '\0';
-				push_str(temp);
-				// temp[0] = '\0';
-			else
-				temp = pop_str();
-				temp1 = pop_str();
-				temp2[0] = post[i];
-				temp2[1] = '\0';
-				strcpy(inf, "(");
-				strcat(inf, temp1);
-				strcat(inf, temp2);
-				strcat(inf, temp);
-				strcat(inf, ")");
-				push_str(inf);
-		inf = pop_str();
-		printf("\nThe infix expression is: ");
-		printf("\n%s", inf);
-\end{lstlisting}
 \subsection{C Implementation of Problem Statement}
 
-\lstinputlisting[language=C, caption=Main.Cpp]{../Programs/[Krishnaraj]_[FDS]_Assignment_7.c}
+\lstinputlisting[language=C, caption=Main.Cpp]{../Programs/[Krishnaraj]_[FDS]_Assignment_8.c}
 
 \subsection{Input and Output}
-\lstinputlisting[caption=Output]{../Programs/[Krishnaraj]_[FDS]_Assignment_7_output.txt}
+\lstinputlisting[caption=Output]{../Programs/[Krishnaraj]_[FDS]_Assignment_8_output.txt}
 
 \section{Time Complexity}
 \begin{itemize}
@@ -366,55 +160,16 @@ The algorithm for conversion of postfix expression to prefix expression is as fo
 \end{itemize}
 
 \section{Conclusion}
-\begin{itemize}
-	\item \textbf{Pros}: Easy to implement, Easy to understand, Easy to use.
-	\item \textbf{Cons}: No random access, No reverse access, No search.
-\end{itemize}
+Thus, implemented postfix expression evaluation using stack data structure.
 
 
 \section{FAQs}
 \begin{enumerate}
-	\item \textbf{What is the advantage of prefix and postfix over infix expression?}\\
-
-	      The advantage of prefix and postfix over infix expression is that there is no need of brackets in prefix and postfix expression. So there is no problem of precedence.
-	\item \textbf{Explain how postfix/prefix expression is evaluated.}\\
-
-	      Postfix expression is evaluated by scanning the expression from left to right. If the scanned character is an operand, push it onto the stack. If the scanned character is an operator, pop two operands from the stack and apply the operator on them. Push the result back onto the stack. Repeat the steps until the end of the expression. The result obtained at the end of the expression is the final result.
-
-	\item \textbf{What is ISP and ICP?}\\
-	      In the process of creating machine code from source code, compilers translate infix expressions to postfix expressions.
-	      Uses the 2 notions of precedence:
-	      \begin{itemize}
-		      \item incoming sign precedence isp()
-		      \item incoming character Presedence icp().
-	      \end{itemize}
-	      ISP is the precedence of the operator in the stack and ICP is the precedence of the operator in the scanned expression.
-
-	\item \textbf{Give various applications of stack}\\
-
-	      \begin{enumerate}
-		      \item \textbf{Balancing of symbols:} In this application, we check whether the given expression has balanced symbols or not. For example, in the expression (a+b)*(c-d), symbols are balanced. But in the expression (a+b*(c-d), symbols are not balanced.
-		      \item \textbf{Infix to Postfix Conversion:} In this application, we convert the given infix expression to postfix expression. For example, the infix expression a+b*c-d/e is converted to abc*+de/-. The postfix expression is evaluated easily as compared to infix expression.
-		      \item \textbf{Evaluation of Postfix Expression:} In this application, we evaluate the given postfix expression. For example, the postfix expression abc*+de/- is evaluated as (a+b*c)-(d/e).
-		      \item \textbf{Redo-undo:} In this application, we can undo the last performed operation and redo it again.
-		      \item \textbf{Forward and backward feature in web browsers:} In this application, we can go to the previous web page and next web page.
-		      \item \textbf{Infix to Prefix Conversion:} In this application, we convert the given infix expression to prefix expression. For example, the infix expression a+b*c-d/e is converted to -+a*bc/de. The prefix expression is evaluated easily as compared to infix expression.
-		      \item \textbf{Evaluation of Prefix Expression:} In this application, we evaluate the given prefix expression. For example, the prefix expression -+a*bc/de is evaluated as (a+b*c)-(d/e).
-		      \item \textbf{Parenthesis Matching:} In this application, we check whether the given expression has balanced parenthesis or not. For example, in the expression (a+b)*(c-d), parenthesis are balanced. But in the expression (a+b*(c-d), parenthesis are not balanced.
-		      \item \textbf{Tower of Hanoi:} In this application, we solve the Tower of Hanoi problem using stack.
-		      \item \textbf{Expression Conversion:} In this application, we convert the given expression from one form to another form. For example, we can convert the given infix expression to postfix expression or prefix expression.
-	      \end{enumerate}
-	\item \textbf{Why is stack used in expression conversion?}\\
-
-	      One of the applications of Stack is in the conversion of arithmetic expressions in high-level programming languages into machine readable form. As our computer system can only understand and work on a binary language, it assumes that an arithmetic operation can take place in two operands only e.g., A+B, C*D,D/A etc. But in our usual form an arithmetic expression may consist of more than one operator and two operands e.g. (A+B)*C(D/(J+D)).\\
-
-	      These complex arithmetic operations can be converted into polish notation using stacks which then can be executed in two operands and an operator form.
-
-	\item \textbf{Give stack full and stack empty conditions for stack.}\\
-
-	      if Top == size - 1, then stack is full. If top == -1 then stack is empty.
-
-
+	\item \textbf{How prefix expression evaluation works?}\\
+	
+	
+	\item \textbf{What is the advantage of prefix and postfix expressions?}\\
+	
 \end{enumerate}
 \end{document}
 
