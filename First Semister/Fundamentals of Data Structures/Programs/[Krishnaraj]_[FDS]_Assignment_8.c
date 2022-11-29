@@ -1,12 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 
 #define MAX_SIZE 30
 int stack[MAX_SIZE];
 int top = -1;
 
-int powerr(int a, int power){
+int powerr(int a, int power)
+{
     int i, result = 1;
-    for(i = 0; i < power; i++){
+    for (i = 0; i < power; i++)
+    {
         result *= a;
     }
     return result;
@@ -54,7 +56,6 @@ int pop()
     }
 }
 
-
 int calc(int op1, int op2, char op)
 {
     int ans;
@@ -90,7 +91,7 @@ void eval(char post[MAX_SIZE])
     int z = 0, ans = 0, op1, op2;
     for (int i = 0; post[i] != 0; i++)
     {
-        if(post[i] >= 97 && post[i] <= 122)
+        if (post[i] >= 97 && post[i] <= 122)
         {
             printf("\nEnter value of %c: ", post[i]);
             scanf("%d", &z);

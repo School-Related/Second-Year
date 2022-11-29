@@ -1,11 +1,11 @@
 // Queue thing
 #include <stdio.h>
 #define MAX_SIZE 5
-int	front = -1, rear = -1;
+int front = -1, rear = -1;
 
-int	queue[MAX_SIZE];
+int queue[MAX_SIZE];
 
-int	isFull(void)
+int isFull(void)
 {
 	if (rear == MAX_SIZE - 1)
 		return (1);
@@ -13,7 +13,7 @@ int	isFull(void)
 		return (0);
 }
 
-int	isEmpty(void)
+int isEmpty(void)
 {
 	if (rear == front)
 	{
@@ -25,7 +25,7 @@ int	isEmpty(void)
 	}
 }
 
-int	enqueue(int item)
+int enqueue(int item)
 {
 	if (!isFull())
 	{
@@ -38,7 +38,7 @@ int	enqueue(int item)
 	}
 }
 
-int	dequeue(void)
+int dequeue(void)
 {
 	if (isEmpty())
 	{
@@ -52,9 +52,9 @@ int	dequeue(void)
 		return (queue[front]);
 	}
 }
-void	display_queue(void)
+void display_queue(void)
 {
-	int	i;
+	int i;
 
 	if (isEmpty())
 	{
@@ -69,38 +69,38 @@ void	display_queue(void)
 		}
 	}
 }
-int	main(void)
+int main(void)
 {
 	int choice;
 	int temp;
 
 	choice = 0;
-	while (choice != 8)
+	while (choice != 6)
 	{
 		printf("Enter what you want to do: \n\
-    1. Push Element to the Queue\n\
-    2. Pop Element from the Queue\n\
+    1. Add Job to the Ready Queue\n\
+    2. Kill or Terminate Job from the Queue\n\
     3. See the Queue\n\
-    4. Check if Queue is Empty\n\
-    5. Check if Queue is full\n\
+    4. Check if Ready Queue is Empty and Processor is free\n\
+    5. Check if Ready Queue is full\n\
     6. Exit\n\n");
 		scanf("%d", &choice);
 		switch (choice)
 		{
 		case 1:
-			printf("Enter the element you want to add\n");
+			printf("Enter the Process Number of the Job you want to add. \n");
 			scanf(" %d", &temp);
 			enqueue(temp);
 			display_queue();
-			break ;
+			break;
 		case 2:
-			printf("Removing the top element from the stack\n");
+			printf("Killing or Terminating Job from the Queue\n");
 			dequeue();
 			display_queue();
-			break ;
+			break;
 		case 3:
 			display_queue();
-			break ;
+			break;
 		case 4:
 			if (isEmpty())
 			{
@@ -111,7 +111,7 @@ int	main(void)
 				printf("Nope Queue isnt empty\n");
 				display_queue();
 			}
-			break ;
+			break;
 		case 5:
 			if (isFull())
 			{
@@ -121,10 +121,10 @@ int	main(void)
 			{
 				printf("No Queue isnt full!\n");
 			}
-			break ;
+			break;
 		default:
 			printf("\nThank You\n");
-			break ;
+			break;
 		}
 	}
 	return 0;

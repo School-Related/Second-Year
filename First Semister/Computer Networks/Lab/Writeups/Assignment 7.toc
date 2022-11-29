@@ -1,9 +1,0 @@
-\contentsline {section}{\numberline {1}Aim and Objectives}{1}{}%
-\contentsline {section}{\numberline {2}Devices}{1}{}%
-\contentsline {section}{\numberline {3}Cables}{1}{}%
-\contentsline {section}{\numberline {4}Procedure to Configure the Network}{1}{}%
-\contentsline {section}{\numberline {5}Commands}{2}{}%
-\contentsline {section}{\numberline {6}Platform}{2}{}%
-\contentsline {section}{\numberline {7}Output}{2}{}%
-\contentsline {section}{\numberline {8}Connection Screenshot}{3}{}%
-\contentsline {section}{\numberline {9}Conclusion}{3}{}%
