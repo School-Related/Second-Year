@@ -241,13 +241,23 @@ A sequence detector is a sequential circuit that outputs certain data when a par
 \begin{enumerate}
 	\item What is Sequence Detector?
 	
-	
+	A sequence detector is a sequential circuit that outputs 1 when a particular pattern of bits sequentially arrives at its data input. The figure below shows a block diagram of a sequence detector. It has two inputs and one output. The inputs are the clock used to synchronize the functionality of the circuit and the data input.
+
+	Sequence detector is of two types: 
+	\begin{itemize}
+		\item Overlapping
+		\item Non-Overlapping
+	\end{itemize}	
+
+	In an overlapping sequence detector, the last bit of one sequence becomes the first bit of the next sequence. However, in a non-overlapping sequence detector, the last bit of one sequence does not become the first bit of the next sequence. In this post, we’ll discuss the design procedure for non-overlapping 101 Mealy sequence detectors. 
+
 	\item What are applications of Sequence Detector?
 	
-	
+	\begin{itemize}
+		\item Sequence detectors are used in the decoding equipment on the ground to provide “flags” which indicate the beginning (or end) of a data block (e.g., a TV frame).
+		\item They can be used to detect if a bunch of states in a circuit occur in a particular desired pattern. 
+	\end{itemize}
 
-
-	
 \end{enumerate}
 
 \end{document}
