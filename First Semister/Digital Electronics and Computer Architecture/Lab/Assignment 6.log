@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.30)  11 OCT 2022 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  2 DEC 2022 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 3.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 3.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 6.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/First Semister/Digital Electronics and Computer Architecture/Lab/Assignment 6.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -591,8 +591,8 @@ File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 10.18341pt on input line 58.
- (./Assignment 3.aux)
-\openout1 = `"Assignment 3.aux"'.
+ (./Assignment 6.aux)
+\openout1 = `"Assignment 6.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -690,15 +690,15 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 16.07027pt on input line 71.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 16.07027pt on input line 102.
+(Font)              scaled to size 16.07027pt on input line 103.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 109.
+(Font)              scaled to size 13.39188pt on input line 110.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 122.
- (./Assignment 3.toc
+(Font)              scaled to size 13.39188pt on input line 123.
+ (./Assignment 6.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -713,195 +713,4 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 6.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 6.
- (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
-File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
-)
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 6.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 6.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 6.
-)
-\tf@toc=\write4
-\openout4 = `"Assignment 3.toc"'.
-
- [1]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 149.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 149.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 150.
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 174.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[1
-
-]
-<counters2.png, id=18, 552.0625pt x 234.8775pt>
-File: counters2.png Graphic file (type png)
-<use counters2.png>
-Package pdftex.def Info: counters2.png  used on input line 177.
-(pdftex.def)             Requested size: 276.03056pt x 117.43846pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[2 <./counters2.png>]
-<7476 function table.png, id=23, 736.25063pt x 502.12593pt>
-File: 7476 function table.png Graphic file (type png)
-<use 7476 function table.png>
-Package pdftex.def Info: 7476 function table.png  used on input line 244.
-(pdftex.def)             Requested size: 368.1244pt x 251.06235pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[3]
-<7476.jpg, id=27, 702.625pt x 702.625pt>
-File: 7476.jpg Graphic file (type jpg)
-<use 7476.jpg>
-Package pdftex.def Info: 7476.jpg  used on input line 253.
-(pdftex.def)             Requested size: 245.92242pt x 245.92242pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[4 <./7476 function table.png (PNG copy)>]
-<7400.png, id=31, 1003.75pt x 903.375pt>
-File: 7400.png Graphic file (type png)
-<use 7400.png>
-Package pdftex.def Info: 7400.png  used on input line 259.
-(pdftex.def)             Requested size: 250.93689pt x 225.8432pt.
-<counters4.png, id=32, 465.74pt x 301.125pt>
-File: counters4.png Graphic file (type png)
-<use counters4.png>
-Package pdftex.def Info: counters4.png  used on input line 265.
-(pdftex.def)             Requested size: 256.15779pt x 165.61925pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[5 <./7476.jpg> <./7400.png>]
-<asynchronuos counter mod 8 up.png, id=37, 987.69pt x 469.00218pt>
-File: asynchronuos counter mod 8 up.png Graphic file (type png)
-<use asynchronuos counter mod 8 up.png>
-Package pdftex.def Info: asynchronuos counter mod 8 up.png  used on input line 273.
-(pdftex.def)             Requested size: 493.8438pt x 234.50052pt.
-
-Overfull \hbox (24.08878pt too wide) in paragraph at lines 273--274
- [][] 
- []
-
-
-Overfull \hbox (2.36244pt too wide) in paragraph at lines 277--277
-[]\T1/fnc/b/n/12 Circuit di-a-gram of a 3-bit asyn-chronous counter: (3 Bit Asyn-chronous - DOWN
- []
-
-<asynchronuos counter mod 8 down.png, id=38, 1117.92656pt x 487.06969pt>
-File: asynchronuos counter mod 8 down.png Graphic file (type png)
-<use asynchronuos counter mod 8 down.png>
-Package pdftex.def Info: asynchronuos counter mod 8 down.png  used on input line 282.
-(pdftex.def)             Requested size: 503.0623pt x 219.17932pt.
-
-Overfull \hbox (33.30728pt too wide) in paragraph at lines 282--283
- [][] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6 <./counters4.png> <./asynchronuos counter mod 8 up.png (PNG copy)>]
-Overfull \hbox (6.23341pt too wide) in paragraph at lines 285--285
-[]\T1/fnc/b/n/12 Circuit Di-a-gram MOD 5 (101) UP Asyn-chronous Counter - (Trun-cated Counter)
- []
-
-<mod 5 counter.png, id=43, 990.70125pt x 582.67688pt>
-File: mod 5 counter.png Graphic file (type png)
-<use mod 5 counter.png>
-Package pdftex.def Info: mod 5 counter.png  used on input line 289.
-(pdftex.def)             Requested size: 495.34941pt x 291.33772pt.
-
-Overfull \hbox (25.59439pt too wide) in paragraph at lines 289--290
- [][] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[7 <./asynchronuos counter mod 8 down.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[8 <./mod 5 counter.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[9] (./Assignment 3.aux) ) 
-Here is how much of TeX's memory you used:
- 17027 strings out of 478238
- 325649 string characters out of 5850456
- 609291 words of memory out of 5000000
- 34919 multiletter control sequences out of 15000+600000
- 512238 words of font info for 77 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,14n,94p,774b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 3.pdf" (11 pages, 297902 bytes).
-PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+File: um
