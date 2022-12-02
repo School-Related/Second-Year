@@ -3,6 +3,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch StudentInfo",
+      "request": "launch",
+      "mainClass": "StudentInfo"
+    },
+    {
+      "type": "java",
       "name": "Launch Main",
       "request": "launch",
       "mainClass": "Main",

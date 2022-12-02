@@ -99,10 +99,10 @@ def main():
     
     # Input from user. 
     print('Enter the Given IP Address: ')
-    # s = input()
+    s = input()
     
     print('Enter the Number of Subnets you Want to make: ')
-    # subnet_number = int(input())
+    subnet_number = int(input())
     
         
     given_ip = [int(i) for i in s.split('.')]

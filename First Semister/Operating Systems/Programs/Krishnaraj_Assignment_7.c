@@ -7,9 +7,9 @@ struct Frames
     int insert_index;
 } frames[MAX_FRAMES];
 
-int pages[MAX_PAGES] = {7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 3, 0, 0, 0, 0, 0};
+int pages[MAX_PAGES] = {12, 19, 100, 121, 200, 150, 360, 300, 309, 312, 122, 53, 59, 415, 212, 515};
 
-int frame_size = 4, no_of_pages = 14;
+int frame_size = 4, no_of_pages = 16;
 int hits = 0, faults = 0;
 int page_search(int page)
 {
@@ -85,7 +85,7 @@ int fifo()
     for (int i = 0; i < no_of_pages; i++)
     {
         printf("Currently doing : %d\n\n", pages[i]);
-        if (page_search(pages[i]))
+        if (page_search(pages[i]) != -1)
         {
             printf("Hit\n");
             hits++;
@@ -101,7 +101,6 @@ int fifo()
         display();
     }
 }
-// int
 int main()
 {
     printf("Enter how many frames you have\n");
