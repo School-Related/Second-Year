@@ -253,6 +253,8 @@ int main()
 {
     int choice = 0;
     int eligible_year = 0;
+    int delete_position;
+
     printf("What Year do you belong to? (1, 2, 3, 4)\n\n");
     scanf("%d", &eligible_year);
     if (eligible_year < 2 || eligible_year > 4)
@@ -295,7 +297,6 @@ int main()
             display_club(head);
             break;
         case 2:
-            int delete_position;
             printf("What position do you want to delete the node? ");
             scanf("%d", &delete_position);
             delete_member(head, delete_position);

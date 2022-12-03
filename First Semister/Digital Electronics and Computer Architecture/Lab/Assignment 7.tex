@@ -84,7 +84,7 @@
 
 
 	\huge{\textsc{
-			Design a sequence detector to detect the bit sequence 110 using Mealy Machine.
+			Write an Assembly Language Program to Display 2 Digit and 4 Digit Hexadecimal Numbers using 64 Bit Assembly.
 		}} \\
 
 
@@ -99,7 +99,7 @@
 
 	\LARGE\textsc{
 		Practical Report\\
-		Assignment 6
+		Assignment 7
 	} % Subtitle or further description
 	\vfill
 
@@ -125,140 +125,170 @@
 \clearpage
 
 
-\setcounter{page}{1}
-\section{Objectives}
-\begin{enumerate}
-	\item To learn Finite State Machine
-	\item To understand Moore and Mealy Machine
-	\item To learn and implement Sequence Detector
+\section{\textbf{Problem Statement}}
+Write an assembly language program (ALP) to display 2-digit and 4-digit hex numbers using 64-bit assembly language programming.
 
+\section{\textbf{Objective}}
+\begin{itemize}
+    \item To understand the structure of the assembly language program.
+    \item To understand system call function for write and exit.
+\end{itemize}
+
+\section{\textbf{Platform}}
+CPU - Core i7 Duo, 64 bit with 4 GHz clock frequency.\\
+OS - Arch Linux, 64 bit\\
+Editor - VS code \\
+Assembler - NASM (Netwide Assembler)\\
+Linker - LD, GNU linker.
+
+\section{\textbf{Theory}}
+\subsection{\textbf{Assembly Language Program Basic Structure}}
+\begin{verbatim}
+    section.Data (declare data segment)
+    ; initialized data declaration 
+    section.bss (declare block started by segment sort)
+    ; uninitialized data declaration.
+    section.text (declare code segment)
+    global-start (entry point for program)
+
+    -start:
+    ;code.
+
+    (;semicolon is used to give the comment)
+
+\end{verbatim}
+
+\subsection{\textbf{System calls to write and exit.}}
+\subsubsection{\textbf{System Call to write/output call}}
+display variable -name contents of specified variable length on monitor.
+\begin{verbatim}
+    mov rax,1   ; function number for writing/outputting the data.
+    mov rdi,0   ; file descriptor ID for standard input device (keyboard)
+    mov rsi,arr ; starting addresses of the variable used to store the data.
+    mov rdx,8   ; maximum bytes to be read.
+    syscall     ; system call (in built function)
+\end{verbatim}
+\subsubsection{\textbf{System exit call}}
+
+function to exit or terminate program.
+\begin{verbatim}
+    mov rax,60 ; function number for sys-exit
+    mov rdi,0  ; return code for zero error.
+    syscall    ; system call.
+\end{verbatim}
+\subsection{\textbf{Instruction used in the program for implementation}}
+\begin{verbatim}
+    ADD
+    add two numbers together
+
+    COMPARE
+    compare numbers
+
+    JUMP
+    jump to designated RAM address.
+
+    LOAD 
+    Load information from RAM to the CPU.
+\end{verbatim}
+
+\subsection{\textbf{Commands to execute the program}}
+\begin{verbatim}
+    to assemble:
+    nasm -f elf64 hello.asm
+
+    to link:
+    ld -o hello hello.o
+
+    to execute:
+    ./hello
+
+    where, hello is the filename.
+\end{verbatim}
+
+\section{\textbf{Algorithm}}
+\begin{enumerate}
+    \item start
+    \item Display message "Two-digit HEX Number"
+    \item Initialize hard coded two digit and four-digit number.
+    \item Write a procedure for unpacking BCD number (Display Ouputs)
+    \item Display two digit and four digit numbers.
+    \item end.
+\end{enumerate}
+\section{\textbf{Input}}
+Two digit and four digit numbers.
+
+\section{\textbf{Output}}
+Two digit and four digit numbers.
+\begin{verbatim}
+The Two digit Hex number is: 
+2A
+\end{verbatim}
+\section{Code}
+\lstinputlisting[]{../Programs/assignment_1.asm}
+
+\section{\textbf{Conclusion}}
+Thus, implemented the program in assembly language to display two digit and four-digit hex numbers
+
+\section{\textbf{FAQs}}
+\begin{enumerate}
+	\item {\textbf{Explain assembler directives. List the assembler directives in your program.}}
+	
+	Assembler Directives supply data to the program and control the assembly process. It enables to do the following:
+\begin{itemize}
+    \item Assemble code and data into specified sections. 
+    \item Reserve space in memory for unitized variables.
+    \item Control the appearance of listings.
+    \item Initialize memory.
+    \item Assemble conditional blocks.
+    \item Define global variables.
+    \item Specify libraries from which the assembler can obtain macros.
+    \item Examine symbolic debugging information.
+\end{itemize}
+
+Assembler Directives in the program:
+\begin{itemize}
+    \item .text      switch to text segment.
+    \item .data      switch to initialized part of data segment.
+    \item .bss       switch to uninitialized port of data segment.
+\end{itemize}
+
+\item {\textbf{Illustrate the significance of the sections: .data, .bss, .text}}
+.bss segment stands for 'block starting symbol' is the memory space for uninitialized variable of your code . IT is the method of optimization to reduce the code size.\\
+syntax: section.bss\\
+\indent var-name RES memory-Type memory size.\\
+\begin{verbatim}
+    Eg. section.bss
+        A resb 5D
+        (Declare variable A allocate 50 bytes memory)
+\end{verbatim}
+
+.data section holds the initialized value. It holds the data of the initialized variable (global or local)
+\begin{verbatim}
+syntax:
+    section.data
+    var_name data_type variable_value.
+Eg:
+    A DB 50
+    (declared variable A of type byte with value 50)
+
+\end{verbatim}
+
+.text segment is the code, vector table and constants. It is the section that holds the executable instructions. 
+\begin{verbatim}
+syntax:
+       section.text
+       global_start
+       _start:
+       ;code
+\end{verbatim}
+
+\item {\textbf{What is the difference between RESB and DB?}}
+
+DB stands for Declare/Define Byte. It is a directive that is used to allocate space for initialized data in the data section.\\
+\\
+RESB Stands for Reserve Byte. It is a directive that is used to allocate space for uninitialized data in .bss section.
 
 \end{enumerate}
 
-\section{Problem Statement}
-Design a sequence detector to detect the bit sequence 110 using Mealy Machine.
-
-
-\section{ICs Used}
-
-\begin{enumerate}
-	\item IC7408 (AND Gate)
-	\item IC7476 (Dual Master Slave JK Flip Flop)
-\end{enumerate}
-
-\section{Platform Used}
-Digital Trainer Kit
-
-\section{Theory}
-\subsection{Application of state machine}
-
-A state machine is any device storing the status of something at a given time. The status changes based on inputs, providing the resulting output for the implemented changes. A finite state machine has finite internal memory.\\
-
-They are used in applications where distinguishable sates exist. Each state can lead to one or multiple states and can also end the process flow. A state machine relies on user input and its original state calculation to determine to which state to go to next.
-
-\subsection{Comparison Mealy Machine with Moore Machine}
-\subsubsection{Mealy Machine}
-\begin{enumerate}
-	\item Output depends on the present state as well as present input.
-	\item Mealy machine places its output on transition.
-	\item Less number of states are required.
-	\item Asynchronous output generation.
-\end{enumerate}
-
-\subsubsection{Moore Machine}
-\begin{enumerate}
-	\item Output depends only upon the present state.
-	\item Moore machine also places its outputs on transition.
-	\item Moore states are required.
-	\item Synchronous output and state generation.
-\end{enumerate}
-\subsubsection{Sequence detector circuit}
-
-A sequence detector is a sequential circuit that outputs certain data when a particular pattern of bits sequencitally arrives at its data input.
-
-\subsection{Involved Truth Tables}
-
-\subsubsection{AND Gate}
-
-\begin{table}[H]
-	\begin{tabular}{|c|c|c|}
-		\hline
-		{\color[HTML]{000000} \textbf{A}} & {\color[HTML]{000000} \textbf{B}} & {\color[HTML]{000000} \textbf{Q}} \\ \hline
-		{\color[HTML]{330001} \textit{0}} & {\color[HTML]{330001} \textit{0}} & {\color[HTML]{F56B00} \textit{0}} \\ \hline
-		{\color[HTML]{330001} \textit{0}} & {\color[HTML]{330001} \textit{1}} & {\color[HTML]{F56B00} \textit{1}} \\ \hline
-		{\color[HTML]{330001} \textit{1}} & {\color[HTML]{330001} \textit{0}} & {\color[HTML]{F56B00} \textit{1}} \\ \hline
-		{\color[HTML]{330001} \textit{1}} & {\color[HTML]{330001} \textit{1}} & {\color[HTML]{F56B00} \textit{1}} \\ \hline
-	\end{tabular}
-\end{table}
-
-\subsubsection{Function Table of the IC7476}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale = 0.5]{7476 function table.png}
-	\caption{Function Table for IC 7476}
-\end{figure}
-
-\section{Pin Diagrams of ICs Used}
-
-\subsection{Pin Diagram of IC7476}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale = 0.35]{7476.jpg}
-	\caption{Pin Diagram for IC 7476}
-\end{figure}
-\subsection{Pin Diagram of IC7408}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale = 0.25]{7408.jpg}
-	\caption{Pin Diagram for IC 7408}
-\end{figure}
-
-\section{Design and Implementation}
-
-
-
-
-\section{Procedure}
-
-\begin{enumerate}
-	\item Draw state diagram
-	\item Make a state table
-	\item Apply state reduction if required
-	\item Assign states
-	\item Re-write the state table using states assigned
-	\item Prepare state transition table
-	\item Use k-maps to find inputs to Flip Flop
-	\item Draw the circuit diagram.
-
-\end{enumerate}
-
-\section{Conclusion}
-\textit{Thus, we have learnt a fundamental application and working of the IC 7476, and verified the truth table of its dual Master Slave JK Flip Flops. The Logic of Flip Flops was understood in detail, and implemented on the Digital Trainer Kit. Synchronous counters were also implemented with MOD 8. Their results were observed, noted and understood. }
-\pagebreak
-
-\section{FAQs}
-
-\begin{enumerate}
-	\item What is Sequence Detector?
-
-	      A sequence detector is a sequential circuit that outputs 1 when a particular pattern of bits sequentially arrives at its data input. The figure below shows a block diagram of a sequence detector. It has two inputs and one output. The inputs are the clock used to synchronize the functionality of the circuit and the data input.
-
-	      Sequence detector is of two types:
-	      \begin{itemize}
-		      \item Overlapping
-		      \item Non-Overlapping
-	      \end{itemize}
-
-	      In an overlapping sequence detector, the last bit of one sequence becomes the first bit of the next sequence. However, in a non-overlapping sequence detector, the last bit of one sequence does not become the first bit of the next sequence. In this post, we'll discuss the design procedure for non-overlapping 101 Mealy sequence detectors.
-
-	\item What are applications of Sequence Detector?
-
-	      \begin{itemize}
-		      \item Sequence detectors are used in the decoding equipment on the ground to provide “flags” which indicate the beginning (or end) of a data block (e.g., a TV frame).
-		      \item They can be used to detect if a bunch of states in a circuit occur in a particular desired pattern.
-		      
-	      \end{itemize}
-
-\end{enumerate}
 
 \end{document}

@@ -1,0 +1,225 @@
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{karnaugh-map}
+% \usepackage[table,xcdraw]{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{DECA Assignment 8}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Digital Electronics and Computer Architecture\\
+		Second Year B. Tech, Semester 3
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+		Write an assembly language program (ALP) to implement addition and subtraction of 8-bit numbers (Using user input, macro and procedure)
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report\\
+		Assignment 7
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A1, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\setcounter{page}{1}
+\section{Objectives}
+Write an assembly language program (ALP) to implement addition and subtraction of 8-bit numbers (Using user input, macro and procedure)
+
+\begin{itemize}
+	\item To understand assembly language programming. 
+	\item To study instruction set of 8086. 
+\end{itemize}
+
+\section{Platform Used}
+\textbf{Operating System} : Arch Linux\\
+\textbf{Editor} – Visual Studio Code\\
+\textbf{Assembler} – NASM (Netwide Assembler)\\
+\textbf{LINKER} – LD, a GNU linker
+
+
+\section{\textbf{Theory:}}
+\subsection{\textbf{Assembly language program basic structure:}}
+A ALP is series of statements which are either assembly language instruction such as ADD and MOV or statements called directives. A program language instruction consists of following 4 fields.\\
+\begin{verbatim}
+      [Label] mnemonic [operands] [;comment]
+\end{verbatim}
+
+A square bracket([]) indicates that the field is optional\\
+A Label field allows the program to refer to a line of code by name. The label Fields cannot exceed a certain no.of characters.\\
+The mnemonics and operands fields together perform the real work of the program and accomplish the tasks statements like ADD A,C and MOV C,\#68 where ADD adn MOV are the mnemonics, which produce opcodes, "AC" and "C,\#68" are operands. These two fields could contain directives. Directives do not generates machine code and are used only by the assembler, whereas instructions are translated into machine code for the CPU to execute.\\
+The comment fields begins with a semicolon which is a comment indicator\\
+Notice the label "HERE" in the program. Any lable which refers to an instruction should be followed by a colour. 
+
+
+\subsection{\textbf{System calls to read, write and Exit.}}
+
+Reading From a file:
+\begin{itemize}
+    \item Put the system call sys\_oread in EAX register 
+    \item Put file descriptors in the EBX register.
+    \item Put the pointer to input buffer in ECX register.
+    \item Put the pointer buffer size i.e. number of bytes to read in EDX register.
+\end{itemize}
+
+Writing to a file:
+\begin{itemize}
+    \item Put system call sys\_write() in EAX register
+    \item Put file descriptive in EBX register 
+    \item Put buffer size i.e. the number of bytes to write in EDX.
+\end{itemize}
+
+Exit From File:
+\begin{itemize}
+    \item Put system call sys\_exit in EAX register.
+\end{itemize}
+
+\subsection{\textbf{Describe the instruction used (e.g MOV, ADD, SUB)}}
+\begin{enumerate}
+    \item INC - used for incrementing and operand by one works on single operand that can be a memory or in a register
+    \item DEC - used for documenting an operand by one work on a single operand.
+    \item ADD and SUB - used for performing simple additional subtraction of binary data in byte, word adn double word size.
+    \item MUL/IMUL - used for multiplying data both affect the carry and overflow flag. 
+\end{enumerate}
+
+
+\section{Code}
+\lstinputlisting[]{../Programs/assignment_2.asm}
+
+\section{Output}
+\begin{verbatim}
+Addition of 2 numbers 
+5C
+\end{verbatim}
+\section{Conclusion}
+\textit{Thus learnt how to add numbers using Assembly Language and Display name. }
+\pagebreak
+
+
+\section{\textbf{FAQs:}}
+\subsection{\textbf{Explain assembler directives. List the assembler directives in your program.}}
+These are the statements that direct the assembles to do something. As the name sya it directs the assembles to do a task.
+They are classified into the following categories based on the function performed by them.
+\begin{itemize}
+    \item CODE - This assembles directives indicates the beginning of the code segment.
+    \item Data - Indicates beginning of data segment 
+    \item Mode - Is used for selecting a standard memory. model for the assembly program.
+    \item Stack - The directives is used for displaying the stack. 
+\end{itemize}
+
+\subsection{\textbf{Explain why 30H 137H is added to convert the digit to ASCII?}}
+30H is the ASCII code for a digit '0' then 31H,32H,39H, corresponds 1,2,3,.....,9. 41H is the ASCII code for a letter 'A'. As in hexadecimal a value of 10 would be responded represented by the 'A'. Basically that function segmented in two possible additions convert the internal value into a printable character than  properly represents value.
+
+\subsection{\textbf{Define Macro and Procedure:}}
+\begin{itemize}
+    \item Macro - A macro in computer science is a set of rules or programmable patience which decrypts a specific sequence of output.
+    \item Procedure - Procedure are used for a large set of rules. They help make a large program more readable. It indicates a set of instructions that executes a particular task.
+\end{itemize}
+
+
+
+
+\end{document}

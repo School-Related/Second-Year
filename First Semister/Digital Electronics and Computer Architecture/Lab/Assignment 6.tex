@@ -215,6 +215,81 @@ A sequence detector is a sequential circuit that outputs certain data when a par
 
 \section{Design and Implementation}
 
+\subsection{State Diagram}
+\begin{figure}[H]
+	\includegraphics[width=0.45\textwidth]{state diagram.png}
+	\caption{State Diagram}
+	\label{fig:}
+\end{figure}
+
+
+\subsection{State Transition Table}
+\begin{table}[H]
+	\begin{tabular}{|ll|lll|llll|l|}
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Present State}} & \multicolumn{3}{l|}{\textbf{Input Next State}} & \multicolumn{4}{l|}{\textbf{Flip Flop Input}} & \textbf{Output}                                                                                                                                                                         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Qa}}            & \textbf{Qb}                                    & \multicolumn{1}{l|}{\textbf{X}}               & \multicolumn{1}{l|}{\textbf{Qa+1}} & \textbf{Qb+ 1} & \multicolumn{1}{l|}{\textbf{Ja}} & \multicolumn{1}{l|}{\textbf{Ka}} & \multicolumn{1}{l|}{\textbf{Jb}} & \textbf{Kb} & \textbf{Y} \\ \hline
+		\multicolumn{1}{|l|}{0}                      & 0                                              & \multicolumn{1}{l|}{0}                        & \multicolumn{1}{l|}{0}             & 0              & \multicolumn{1}{l|}{0}           & \multicolumn{1}{l|}{X}           & \multicolumn{1}{l|}{0}           & X           & 0          \\ \hline
+		\multicolumn{1}{|l|}{0}                      & 0                                              & \multicolumn{1}{l|}{1}                        & \multicolumn{1}{l|}{0}             & 1              & \multicolumn{1}{l|}{0}           & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{1}           & x           & 0          \\ \hline
+		\multicolumn{1}{|l|}{0}                      & 1                                              & \multicolumn{1}{l|}{0}                        & \multicolumn{1}{l|}{0}             & 0              & \multicolumn{1}{l|}{0}           & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{x}           & 1           & 0          \\ \hline
+		\multicolumn{1}{|l|}{0}                      & 1                                              & \multicolumn{1}{l|}{1}                        & \multicolumn{1}{l|}{1}             & 0              & \multicolumn{1}{l|}{1}           & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{x}           & 1           & 0          \\ \hline
+		\multicolumn{1}{|l|}{1}                      & 0                                              & \multicolumn{1}{l|}{0}                        & \multicolumn{1}{l|}{0}             & 0              & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{1}           & \multicolumn{1}{l|}{0}           & x           & 1          \\ \hline
+		\multicolumn{1}{|l|}{1}                      & 0                                              & \multicolumn{1}{l|}{1}                        & \multicolumn{1}{l|}{0}             & 1              & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{1}           & \multicolumn{1}{l|}{1}           & x           & 0          \\ \hline
+		\multicolumn{1}{|l|}{1}                      & 1                                              & \multicolumn{1}{l|}{0}                        & \multicolumn{1}{l|}{x}             & x              & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{x}           & x           & x          \\ \hline
+		\multicolumn{1}{|l|}{1}                      & 1                                              & \multicolumn{1}{l|}{1}                        & \multicolumn{1}{l|}{x}             & x              & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{x}           & \multicolumn{1}{l|}{x}           & x           & x          \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\subsection{State Assignment}
+\textbf{A = 00}
+\textbf{B = 01}
+\textbf{C = 10}
+
+\section{K-Maps}
+
+\begin{karnaugh-map}[4][2][1][$Q_{A}$][$Q_{B}$][$1$]
+\manualterms{0, 0, 0, 1, X, X, X, X}
+% \autoterms[0]
+% \implicant{3}{3}
+\end{karnaugh-map}
+
+\[J_A = Q_{a + 1}X\]
+\begin{karnaugh-map}[4][2][1][$Q_{A}$][$Q_{B}$][$1$]
+	\manualterms{0, X, X, X, X, X, X, X}
+% \autoterms[0]
+
+\end{karnaugh-map}
+\[K_A = 1\]
+
+\begin{karnaugh-map}[4][2][1][$Q_{A}$][$Q_{B}$][$1$]
+	\manualterms{0, 1, X, X, 0, 1, X, X}
+% \autoterms[0]
+
+\end{karnaugh-map}
+\[J_B = X\]
+
+\begin{karnaugh-map}[4][2][1][$Q_{A}$][$Q_{B}$][$1$]
+	\manualterms{X, X, X, X, X, X, X, X}
+% \autoterms[0]
+
+\end{karnaugh-map}
+
+\[K_B = 1\]
+
+\begin{karnaugh-map}[4][2][1][$Q_{A}$][$Q_{B}$][$1$]
+	\manualterms{0, 0, 0, 0, 1, 0, X, X}
+% \autoterms[0]
+
+\end{karnaugh-map}
+\[Y=Q_a \Bar{X}\]
+
+
+\section{Circuit Diagram}
+\begin{figure}[H]
+	\includegraphics[scale=0.4]{circuit diagram for sg.png}
+	\label{fig:}
+\end{figure}
 
 
 
@@ -229,11 +304,10 @@ A sequence detector is a sequential circuit that outputs certain data when a par
 	\item Prepare state transition table
 	\item Use k-maps to find inputs to Flip Flop
 	\item Draw the circuit diagram.
-
 \end{enumerate}
 
 \section{Conclusion}
-\textit{Thus, we have learnt a fundamental application and working of the IC 7476, and verified the truth table of its dual Master Slave JK Flip Flops. The Logic of Flip Flops was understood in detail, and implemented on the Digital Trainer Kit. Synchronous counters were also implemented with MOD 8. Their results were observed, noted and understood. }
+\textit{Thus, we have learnt a about Working of Mealy Machines. State diagrams, transition diagrams and conversion of K-maps to Boolean expressions were also studied. We have also learnt how to design a Mealy Machine using the above mentioned concepts.}
 \pagebreak
 
 \section{FAQs}
@@ -256,7 +330,7 @@ A sequence detector is a sequential circuit that outputs certain data when a par
 	      \begin{itemize}
 		      \item Sequence detectors are used in the decoding equipment on the ground to provide “flags” which indicate the beginning (or end) of a data block (e.g., a TV frame).
 		      \item They can be used to detect if a bunch of states in a circuit occur in a particular desired pattern.
-		      
+
 	      \end{itemize}
 
 \end{enumerate}
