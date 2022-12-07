@@ -142,39 +142,25 @@ int infix_to_postfix(char inexp[10])
     while (tkn != '\0')
     {
         if (tkn >= 97 && tkn <= 122)
-        {
-            postexp[k] = inexp[i];
-            k++;
-        }
+            postexp[k++] = inexp[i];
         else
         {
             if (tkn == '(')
-            {
                 push('(');
-            }
             else
             {
                 if (tkn == ')')
-                {
                     while ((tkn = pop()) != '(')
-                    {
-                        postexp[k] = tkn;
-                        k++;
-                    }
-                }
+                        postexp[k++] = tkn;
                 else
                 {
                     while (!isEmpty() && isp(stack[top] >= icp(tkn)))
-                    {
-                        postexp[k] = pop();
-                        k++;
-                    }
+                        postexp[k++] = pop();
                     push(tkn);
                 }
             }
         }
-        i++;
-        tkn = inexp[i];
+        tkn = inexp[++i];
     }
     while (!isEmpty())
     {

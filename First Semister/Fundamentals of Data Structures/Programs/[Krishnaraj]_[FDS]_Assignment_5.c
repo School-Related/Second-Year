@@ -193,14 +193,10 @@ void reverse_linked_list(struct club *head)
 {
     struct club *current = head->next;
     struct club *prev = NULL, *future = NULL;
-
     while (current != NULL)
     {
-        // Store next
         future = current->next;
-        // Reverse current node's pointer
         current->next = prev;
-        // Move pointers one position ahead.
         prev = current;
         current = future;
     }

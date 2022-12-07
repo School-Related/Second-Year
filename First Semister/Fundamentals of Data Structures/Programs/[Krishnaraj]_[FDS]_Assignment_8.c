@@ -13,7 +13,6 @@ int powerr(int a, int power)
     }
     return result;
 }
-
 int isFull()
 {
     if (top == MAX_SIZE - 1)
@@ -28,7 +27,6 @@ int isEmpty()
     else
         return 0;
 }
-
 int push(int item)
 {
     if (!isFull())
@@ -55,7 +53,6 @@ int pop()
         return stack[top + 1];
     }
 }
-
 int calc(int op1, int op2, char op)
 {
     int ans;
@@ -85,7 +82,6 @@ int calc(int op1, int op2, char op)
     }
     return ans;
 }
-
 void eval(char post[MAX_SIZE])
 {
     int z = 0, ans = 0, op1, op2;

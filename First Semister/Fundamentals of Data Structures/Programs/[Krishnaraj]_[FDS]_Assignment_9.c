@@ -29,8 +29,7 @@ int enqueue(int item)
 {
 	if (!isFull())
 	{
-		rear++;
-		queue[rear] = item;
+		queue[++rear] = item;
 	}
 	else
 	{
@@ -48,8 +47,7 @@ int dequeue(void)
 	else
 	{
 		// printf("Removed this thing %c\n", stack[top]);
-		front++;
-		return (queue[front]);
+		return (queue[++front]);
 	}
 }
 void display_queue(void)
