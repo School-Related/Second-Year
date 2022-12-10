@@ -35,6 +35,7 @@ public class assignment_6 {
                     System.out.println("Enter the Element that you want to enter: ");
                     main_list_input = input.next();
                     arrayList.add(main_list_input);
+                    // arrayList.remove(main_list_input);
                     break;
                 case 2:
                     System.out.println("Enter the Element that you want to Search: ");
