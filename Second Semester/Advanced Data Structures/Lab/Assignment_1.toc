@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
+\contentsline {section}{\numberline {3}Problem Statement}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {section}{\numberline {5}Platform}{1}{section.5}%
+\contentsline {section}{\numberline {6}Pseudo Code or Algorithm}{1}{section.6}%
+\contentsline {section}{\numberline {7}Input}{1}{section.7}%
+\contentsline {section}{\numberline {8}Output}{1}{section.8}%
+\contentsline {section}{\numberline {9}Code}{1}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Program}{1}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Input and Output}{5}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Conclusion}{7}{section.10}%
+\contentsline {section}{\numberline {11}FAQ}{8}{section.11}%
