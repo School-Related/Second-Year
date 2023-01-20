@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
+\contentsline {section}{\numberline {3}Problem Statement}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Data flow diagrams}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Symbols Used (Yourdon and Coad)}{1}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Rules of DFD}{2}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}DFD Level 0, 1, 2}{2}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Level 0 DFDs}{2}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Level 1 DFDs}{2}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Level 2 DFDs}{2}{subsubsection.4.4.3}%
+\contentsline {section}{\numberline {5}Difference between DFD and CFD}{2}{section.5}%
+\contentsline {section}{\numberline {6}Tables Generated}{3}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Students}{3}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Classes}{3}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Programs}{3}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Professors}{3}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Subjects}{3}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Attendance}{3}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Data Flow Diagram Level 0}{4}{section.7}%
+\contentsline {section}{\numberline {8}Data Flow Diagram Level 1}{4}{section.8}%
+\contentsline {section}{\numberline {9}Data Flow Diagram Level 2}{5}{section.9}%
+\contentsline {section}{\numberline {10}Conclusion}{5}{section.10}%
+\contentsline {section}{\numberline {11}FAQ}{5}{section.11}%

@@ -1,7 +1,7 @@
-PWD /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Software Engineering and Testing/Assignment 1
+PWD /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Software Engineering and Testing/Assignment 1/Assignment_1.tex
+INPUT /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1.tex
 OUTPUT Assignment_1.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -731,8 +731,6 @@ OUTPUT Assignment_1.out
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncbc8t.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
@@ -741,11 +739,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncbc8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
@@ -797,28 +790,14 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8c.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
-INPUT ./app.png
-INPUT ./app.png
-INPUT app.png
-INPUT ./app.png
-INPUT ./app.png
 INPUT Assignment_1.aux
 INPUT ./Assignment_1.out
 INPUT ./Assignment_1.out

@@ -9,4 +9,11 @@
 \contentsline {subsection}{\numberline {6.1}Testing}{2}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Validation}{3}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Design}{3}{section.7}%
-\contentsline {section}{\numberline {8}Delivery: Sent for Approval}{3}{section.8}%
+\contentsline {section}{\numberline {8}Tables Generated}{3}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Students}{3}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Classes}{4}{section.9}%
+\contentsline {section}{\numberline {10}Programs}{4}{section.10}%
+\contentsline {section}{\numberline {11}Professors}{4}{section.11}%
+\contentsline {section}{\numberline {12}Subjects}{4}{section.12}%
+\contentsline {section}{\numberline {13}Attendance}{4}{section.13}%
+\contentsline {section}{\numberline {14}Delivery: Sent for Approval}{4}{section.14}%
