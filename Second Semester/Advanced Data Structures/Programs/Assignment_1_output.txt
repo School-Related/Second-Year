@@ -76,3 +76,49 @@ The Added Polynomial:
 3. Display your Polynomial
 4. Quit
 4
+
+2
+Please enter the first polynomial
+Enter the Coefficient: 3
+
+Enter the Exponent: 2
+Do you want to enter more terms? (0 for no, 1 for yes) 
+1
+
+Enter the Coefficient: 5
+
+Enter the Exponent: 1
+Do you want to enter more terms? (0 for no, 1 for yes) 
+1
+
+Enter the Coefficient: 9
+
+Enter the Exponent: 0
+Do you want to enter more terms? (0 for no, 1 for yes) 
+0
+
+The First Polynomial you entered is:  
+3x^2 + 5x^1 + 9x^0
+Please enter the second polynomial
+Enter the Coefficient: 4
+
+Enter the Exponent: 6
+Do you want to enter more terms? (0 for no, 1 for yes) 
+1
+
+Enter the Coefficient: 8
+
+Enter the Exponent: 1
+Do you want to enter more terms? (0 for no, 1 for yes) 
+0
+
+The Second Polynomial you entered is:  
+4x^6 + 8x^1
+
+The Added Polynomial:  
+4x^6 + 3x^2 + 13x^1 + 9x^0
+
+1. Create a Polynomial to represent it in a circular linked list. 
+2. Add 2 Polynomials
+3. Display your Polynomial
+4. Quit
