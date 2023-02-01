@@ -1,7 +1,7 @@
 import os
 from socket import *
 
-host = "10.2.54.12"
+host = "127.0.0.1"
 port = 13000
 buf = 1024
 addr = (host, port)

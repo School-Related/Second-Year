@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  18 JAN 2023 22:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  31 JAN 2023 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment_1.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment_1.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment1/Assignment_1.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment1/Assignment_1.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -502,57 +502,403 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip61
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2022/01/07 version 5.0.2 text color boxes
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen166
+\pgfutil@tempdimb=\dimen167
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen168
+\pgf@y=\dimen169
+\pgf@xa=\dimen170
+\pgf@ya=\dimen171
+\pgf@xb=\dimen172
+\pgf@yb=\dimen173
+\pgf@xc=\dimen174
+\pgf@yc=\dimen175
+\pgf@xd=\dimen176
+\pgf@yd=\dimen177
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count311
+\c@pgf@countb=\count312
+\c@pgf@countc=\count313
+\c@pgf@countd=\count314
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count315
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
-LaTeX Font Info:    Trying to load font information for T1+fnc on input line 67.
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
+) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen178
+\pgfmath@count=\count318
+\pgfmath@box=\box57
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count319
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen179
+\pgf@picmaxx=\dimen180
+\pgf@picminy=\dimen181
+\pgf@picmaxy=\dimen182
+\pgf@pathminx=\dimen183
+\pgf@pathmaxx=\dimen184
+\pgf@pathminy=\dimen185
+\pgf@pathmaxy=\dimen186
+\pgf@xx=\dimen187
+\pgf@xy=\dimen188
+\pgf@yx=\dimen189
+\pgf@yy=\dimen190
+\pgf@zx=\dimen191
+\pgf@zy=\dimen192
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen193
+\pgf@path@lasty=\dimen194
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen195
+\pgf@shorten@start@additional=\dimen196
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count320
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen197
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen198
+\pgf@pt@y=\dimen199
+\pgf@pt@temp=\dimen256
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen257
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen258
+\pgf@sys@shading@range@num=\count321
+\pgf@shadingcount=\count322
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box61
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box62
+) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen259
+\pgf@nodesepend=\dimen260
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read3
+) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count323
+)
+\tcb@titlebox=\box63
+\tcb@upperbox=\box64
+\tcb@lowerbox=\box65
+\tcb@phantombox=\box66
+\c@tcbbreakpart=\count324
+\c@tcblayer=\count325
+\c@tcolorbox@number=\count326
+\tcb@temp=\box67
+\tcb@temp=\box68
+\tcb@temp=\box69
+\tcb@temp=\box70
+ (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdfcol.sty
+Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box71
+\tcb@totalupperbox=\box72
+\tcb@totallowerbox=\box73
+)) (/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen261
+\captionmargin=\dimen262
+\caption@leftmargin=\dimen263
+\caption@rightmargin=\dimen264
+\caption@width=\dimen265
+\caption@indent=\dimen266
+\caption@parindent=\dimen267
+\caption@hangindent=\dimen268
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count327
+\c@continuedfloat=\count328
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+) (/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks41
+) (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+) (/usr/share/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box74
+) (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2022/04/12 4.2 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count329
+\FV@InFile=\read4
+\FV@TabBox=\box75
+\c@FancyVerbLine=\count330
+\FV@StepNumber=\count331
+\FV@OutFile=\write4
+) (/usr/share/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legacy)
+Package grffile Info: This package is an empty stub for compatibility on input line 40.
+) (/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+ (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks42
+\XKV@tempa@toks=\toks43
+)
+\XKV@depth=\count332
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box76
+)
+\tc@llx=\dimen269
+\tc@lly=\dimen270
+\tc@urx=\dimen271
+\tc@ury=\dimen272
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen273
+\adjbox@Height=\dimen274
+\adjbox@Depth=\dimen275
+\adjbox@Totalheight=\dimen276
+\adjbox@pwidth=\dimen277
+\adjbox@pheight=\dimen278
+\adjbox@pdepth=\dimen279
+\adjbox@ptotalheight=\dimen280
+ (/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count333
+) (/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box77
+\sift@deathcycles=\count334
+\@vwid@loff=\dimen281
+\@vwid@roff=\dimen282
+)) (/usr/share/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip62
+\thanksmargin=\skip63
+\droptitle=\skip64
+) (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip65
+\LTright=\skip66
+\LTpre=\skip67
+\LTpost=\skip68
+\LTchunksize=\count335
+\LTcapwidth=\dimen283
+\LT@head=\box78
+\LT@firsthead=\box79
+\LT@foot=\box80
+\LT@lastfoot=\box81
+\LT@gbox=\box82
+\LT@cols=\count336
+\LT@rows=\count337
+\c@LT@tables=\count338
+\c@LT@chunks=\count339
+\LT@p@ftn=\toks44
+) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen284
+\lightrulewidth=\dimen285
+\cmidrulewidth=\dimen286
+\belowrulesep=\dimen287
+\belowbottomsep=\dimen288
+\aboverulesep=\dimen289
+\abovetopsep=\dimen290
+\cmidrulesep=\dimen291
+\cmidrulekern=\dimen292
+\defaultaddspace=\dimen293
+\@cmidla=\count340
+\@cmidlb=\count341
+\@aboverulesep=\dimen294
+\@belowrulesep=\dimen295
+\@thisruleclass=\count342
+\@lastruleclass=\count343
+\@thisrulewidth=\dimen296
+) (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen297
+\ar@mcellbox=\box83
+\extrarowheight=\dimen298
+\NC@list=\toks45
+\extratabsurround=\skip69
+\backup@length=\skip70
+\ar@cellbox=\box84
+) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count344
+\calc@Bcount=\count345
+\calc@Adimen=\dimen299
+\calc@Bdimen=\dimen300
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count346
+\calc@Cskip=\skip73
+) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip74
+\enit@outerparindent=\dimen301
+\enit@toks=\toks46
+\enit@inbox=\box85
+\enit@count@id=\count347
+\enitdp@description=\count348
+) (/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box86
+\UL@hyphenbox=\box87
+\UL@skip=\skip75
+\UL@hook=\toks47
+\UL@height=\dimen302
+\UL@pe=\count349
+\UL@pixel=\dimen303
+\ULC@box=\box88
+Package: ulem 2019/11/18
+\ULdepth=\dimen304
+) (/usr/share/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup8
+)
+\Wrappedcontinuationbox=\box89
+\Wrappedvisiblespacebox=\box90
+Package hyperref Info: Option `breaklinks' set `true' on input line 429.
+Package hyperref Info: Option `colorlinks' set `true' on input line 429.
+Package hyperref Info: Option `colorlinks' set `true' on input line 439.
+LaTeX Font Info:    Trying to load font information for T1+fnc on input line 447.
  (/usr/share/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 67.
+(Font)              scaled to size 10.18341pt on input line 447.
  (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count311
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count350
+\l__pdf_internal_box=\box91
 ) (./Assignment_1.aux)
 \openout1 = `Assignment_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 67.
-LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 447.
+LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 447.
  (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 67.
-LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 67.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 447.
+LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 447.
  (/usr/share/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 67.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 67.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 447.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 447.
  (/usr/share/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 447.
+LaTeX Font Info:    ... okay on input line 447.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -590,27 +936,27 @@ LaTeX Font Info:    ... okay on input line 67.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
-\scratchdimen=\dimen166
-\scratchbox=\box57
-\nofMPsegments=\count313
-\nofMParguments=\count314
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count315
-\MPscratchDim=\dimen167
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count351
+\scratchdimen=\dimen305
+\scratchbox=\box92
+\nofMPsegments=\count352
+\nofMParguments=\count353
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count354
+\MPscratchDim=\dimen306
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 67.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 67.
-\c@lstlisting=\count318
-Package hyperref Info: Link coloring ON on input line 67.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 447.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 447.
+\c@lstlisting=\count357
+Package hyperref Info: Link coloring ON on input line 447.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -618,102 +964,92 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count319
+\c@section@level=\count358
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 447.
+LaTeX Info: Redefining \pageref on input line 447.
+LaTeX Info: Redefining \nameref on input line 447.
  (./Assignment_1.out) (./Assignment_1.out)
-\@outlinefile=\write3
-\openout3 = `Assignment_1.out'.
+\@outlinefile=\write5
+\openout5 = `Assignment_1.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+ (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 19.28804pt on input line 74.
+(Font)              scaled to size 19.28804pt on input line 454.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 19.28804pt on input line 76.
+(Font)              scaled to size 19.28804pt on input line 456.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07027pt on input line 80.
+(Font)              scaled to size 16.07027pt on input line 460.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 16.07027pt on input line 111.
+(Font)              scaled to size 16.07027pt on input line 491.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 119.
+(Font)              scaled to size 13.39188pt on input line 499.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 132.
+(Font)              scaled to size 13.39188pt on input line 511.
  (./Assignment_1.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 11.
+(Font)              scaled to size 7.71893pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 11.
+(Font)              scaled to size 5.57996pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 11.
+(Font)              scaled to size 10.07397pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 11.
+(Font)              scaled to size 7.63599pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 11.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+(Font)              scaled to size 5.51999pt on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 11.
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 5.
  (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 11.
+(Font)              scaled to size 10.07397pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 11.
+(Font)              scaled to size 7.63599pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 11.
-)
-\tf@toc=\write4
-\openout4 = `Assignment_1.toc'.
+(Font)              scaled to size 5.51999pt on input line 5.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
+ (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+))
+\tf@toc=\write6
+\openout6 = `Assignment_1.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134 \clearpage
+l.513 \clearpage
                  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 147--150
-
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 155.
-(/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 155.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 176.
+(Font)              scaled to size 11.15991pt on input line 535.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 176.
- (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 177.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 177.
+(Font)              scaled to size 11.15991pt on input line 535.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 558.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) (../Programs/Assignment_1.py
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 1.
-) (../Programs/Assignment_1_output.txt)
+)
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 184.
+(Font)              scaled to size 10.18341pt on input line 591.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 184.
+(Font)              scaled to size 13.39188pt on input line 591.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -726,10 +1062,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184 \clearpage
-                 [1
+l.591 \end{tcolorbox}
+                      [1
 
 ]
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 626.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 626.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -738,6 +1081,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 731.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -745,25 +1092,74 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 770--773
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 823.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[5]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 913.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 973.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 974.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[7
 
 ] (./Assignment_1.aux)
 Package rerunfilecheck Info: File `Assignment_1.out' has not changed.
-(rerunfilecheck)             Checksum: C5B2692004D7365B714FD1201D4A4529;1379.
+(rerunfilecheck)             Checksum: D1BC47653BF4BD03A2DABD6B322B8F81;3746.
  ) 
 Here is how much of TeX's memory you used:
- 13317 strings out of 478238
- 199822 string characters out of 5850455
- 682095 words of memory out of 5000000
- 31302 multiletter control sequences out of 15000+600000
- 514452 words of font info for 81 fonts, out of 8000000 for 9000
+ 27493 strings out of 478238
+ 494069 string characters out of 5850455
+ 968205 words of memory out of 5000000
+ 45131 multiletter control sequences out of 15000+600000
+ 520488 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,12n,69p,360b,1295s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_1.pdf (5 pages, 71479 bytes).
+ 83i,13n,80p,611b,1500s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on Assignment_1.pdf (9 pages, 157723 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
