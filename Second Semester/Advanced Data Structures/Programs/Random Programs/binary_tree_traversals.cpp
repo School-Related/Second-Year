@@ -1,6 +1,16 @@
 #include <iostream>
 #include <stack>
 
+// Test Cases 
+/*
+1. Left skewed
+2. Right skewed. 
+3. Complete tree
+4. Full tree
+5. Normal Tree
+6. Binary Search Tree
+*/
+
 using namespace std;
 
 class TreeNode
@@ -22,7 +32,7 @@ public:
     void create_root()
     {
         root = new TreeNode;
-        cout << "Enter the data: " << endl;
+        cout << "Enter the root node's data: " << endl;
         cin >> root->data;
         root->left = NULL;
         root->right = NULL;
@@ -164,6 +174,13 @@ public:
                 s1.push(current->right);
             }
         }
+
+        while (s2.empty() == false)
+        {
+            TreeNode *current = s2.top();
+            cout << current->data << " ";
+            s2.pop();
+        }
     }
 };
 
@@ -177,12 +194,6 @@ int main()
         cout << "\nWhat would like to do? " << endl;
         cout << "\n\nWelcome to ADS Assignment 2 - Binary Tree Traversals\n\nWhat would you like to do? " << endl;
         cout << "1. Create a Binary Tree"
-             << endl;
-        cout << "2. Insert Elements to the Tree in Auto Ascending Order"
-             << endl;
-        cout << "3. Insert Elements to the Tree Level by Level"
-             << endl;
-        cout << "4. Insert Elements into the Tree Manually"
              << endl;
         cout << "5. Traverse the Tree Inorder Recursively"
              << endl;
@@ -204,12 +215,6 @@ int main()
         {
         case 1:
             main_tree.create_root();
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
             break;
         case 5:
             cout << "Traversing through the binary tree inorder recursively: " << endl;
