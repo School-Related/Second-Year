@@ -3,60 +3,60 @@
 
 using namespace std;
 
-class TreeNode
+class WordNode
 {
     char data[10];
-    TreeNode *left;
-    TreeNode *right;
+    WordNode *left;
+    WordNode *right;
     friend class BinaryTree;
 };
 
 class BinaryTree
 {
 public:
-    TreeNode *root;
+    WordNode *root;
     BinaryTree()
     {
         root = NULL;
     }
     void create_root()
     {
-        root = new TreeNode;
+        root = new WordNode;
         cout << "Enter the data: " << endl;
         cin >> root->data;
         root->left = NULL;
         root->right = NULL;
         create_recursive(root);
     }
-    void create_recursive(TreeNode *Node)
+    void create_recursive(WordNode *Node)
     {
         int choice = 0;
-        TreeNode *new_node;
+        WordNode *new_node;
         cout << "Enter if you want to enter a left node (1/0): "
-             << "for the node -- " << Node->data << "--" << endl;
+             << "for the node -- " << Node->data << "-- ";
         cin >> choice;
         if (choice == 1)
         {
-            new_node = new TreeNode;
-            cout << "Enter the data: " << endl;
+            new_node = new WordNode;
+            cout << "Enter the data: ";
             cin >> new_node->data;
             Node->left = new_node;
             create_recursive(new_node);
         }
         cout << "Enter if you want to enter a right node (1/0): "
-             << "for the node -- " << Node->data << "--" << endl;
+             << "for the node -- " << Node->data << "-- ";
         cin >> choice;
         if (choice == 1)
         {
-            new_node = new TreeNode;
-            cout << "Enter the data: " << endl;
+            new_node = new WordNode;
+            cout << "Enter the data: ";
             cin >> new_node->data;
             Node->right = new_node;
             create_recursive(new_node);
         }
     }
 
-    void inorder_recursive(TreeNode *temp)
+    void inorder_recursive(WordNode *temp)
     {
         if (temp == NULL)
         {
@@ -66,15 +66,15 @@ public:
         cout << temp->data << " ";
         inorder_recursive(temp->right);
     }
-    void inorder_iterative(TreeNode *temp)
+    void inorder_iterative(WordNode *temp)
     {
         if (!temp)
         {
             return;
         }
 
-        stack<TreeNode *> s;
-        TreeNode *current = temp;
+        stack<WordNode *> s;
+        WordNode *current = temp;
 
         while (current != NULL || s.empty() == false)
         {
@@ -90,7 +90,7 @@ public:
         }
     }
 
-    void preorder_recursive(TreeNode *temp)
+    void preorder_recursive(WordNode *temp)
     {
         if (temp == NULL)
         {
@@ -100,19 +100,19 @@ public:
         preorder_recursive(temp->left);
         preorder_recursive(temp->right);
     }
-    void preorder_iterative(TreeNode *temp)
+    void preorder_iterative(WordNode *temp)
     {
         if (!temp)
         {
             return;
         }
 
-        stack<TreeNode *> s;
+        stack<WordNode *> s;
         s.push(temp);
 
         while (s.empty() == false)
         {
-            TreeNode *current = s.top();
+            WordNode *current = s.top();
             cout << current->data << " ";
             s.pop();
 
@@ -127,31 +127,31 @@ public:
         }
     }
 
-    void postorder_recursive(TreeNode *temp)
+    void postorder_recursive(WordNode *temp)
     {
         if (temp == NULL)
         {
             return;
         }
-        preorder_recursive(temp->left);
-        preorder_recursive(temp->right);
+        postorder_recursive(temp->left);
+        postorder_recursive(temp->right);
         cout << temp->data << " ";
     }
-    void postorder_iterative(TreeNode *temp)
+    void postorder_iterative(WordNode *temp)
     {
         if (!temp)
         {
             return;
         }
 
-        stack<TreeNode *> s1;
-        stack<TreeNode *> s2;
+        stack<WordNode *> s1;
+        stack<WordNode *> s2;
 
         s1.push(temp);
 
         while (s1.empty() == false)
         {
-            TreeNode *current = s1.top();
+            WordNode *current = s1.top();
             s1.pop();
             s2.push(current);
 
@@ -164,6 +164,12 @@ public:
                 s1.push(current->right);
             }
         }
+        while (s2.empty() == false)
+        {
+            WordNode *current = s2.top();
+            cout << current->data << " ";
+            s2.pop();
+        }
     }
 };
 
@@ -172,31 +178,25 @@ int main()
     int choice = 0;
     BinaryTree main_tree;
 
-    while (choice != 11)
+    while (choice != 8)
     {
         cout << "\nWhat would like to do? " << endl;
         cout << "\n\nWelcome to ADS Assignment 2 - Binary Tree Traversals\n\nWhat would you like to do? " << endl;
         cout << "1. Create a Binary Tree"
              << endl;
-        cout << "2. Insert Elements to the Tree in Auto Ascending Order"
+        cout << "2. Traverse the Tree Inorder Recursively"
              << endl;
-        cout << "3. Insert Elements to the Tree Level by Level"
+        cout << "3. Traverse the Tree Inorder Iteratively"
              << endl;
-        cout << "4. Insert Elements into the Tree Manually"
+        cout << "4. Traverse the Tree PreOrder Recursively"
              << endl;
-        cout << "5. Traverse the Tree Inorder Recursively"
+        cout << "5. Traverse the Tree PreOrder Iteratively"
              << endl;
-        cout << "6. Traverse the Tree Inorder Iteratively"
+        cout << "6. Traverse the Tree PostOrder Recursively"
              << endl;
-        cout << "7. Traverse the Tree PreOrder Recursively"
+        cout << "7. Traverse the Tree PostOrder Iteratively"
              << endl;
-        cout << "8. Traverse the Tree PreOrder Iteratively"
-             << endl;
-        cout << "9. Traverse the Tree PostOrder Recursively"
-             << endl;
-        cout << "10. Traverse the Tree PostOrder Iteratively"
-             << endl;
-        cout << "11. Exit" << endl
+        cout << "8. Exit" << endl
              << endl;
 
         cin >> choice;
@@ -206,36 +206,30 @@ int main()
             main_tree.create_root();
             break;
         case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        case 5:
             cout << "Traversing through the binary tree inorder recursively: " << endl;
             main_tree.inorder_recursive(main_tree.root);
             break;
-        case 6:
+        case 3:
             cout << "Traversing through the Binary Tree Inorder Iteratively: " << endl;
             main_tree.inorder_iterative(main_tree.root);
             break;
-        case 7:
+        case 4:
             cout << "Traversing through the Binary Tree PreOrder Recursively: " << endl;
             main_tree.preorder_recursive(main_tree.root);
             break;
-        case 8:
+        case 5:
             cout << "Traversing through the Binary Tree PreOrder Iteratively: " << endl;
             main_tree.preorder_iterative(main_tree.root);
             break;
-        case 9:
+        case 6:
             cout << "Traversing through the Binary Tree PostOrder Recursively: " << endl;
             main_tree.postorder_recursive(main_tree.root);
             break;
-        case 10:
+        case 7:
             cout << "Traversing through the Binary Tree PostOrder Iteratively: " << endl;
             main_tree.postorder_iterative(main_tree.root);
             break;
-        case 11:
+        case 8:
             cout << "Exiting the program" << endl;
             exit(0);
             break;

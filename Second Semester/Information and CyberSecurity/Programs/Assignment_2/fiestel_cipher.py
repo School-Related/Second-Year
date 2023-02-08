@@ -12,7 +12,10 @@ binary_to_decimal = {(0, 0): 0, (0, 1): 1, (1, 0): 2, (1, 1): 3}
 PT_IP_8 = [2, 6, 3, 1, 4, 8, 5, 7]
 PT_IP_8_INV = [4, 1, 3, 5, 7, 2, 8, 6]
 
-S0_MATRIX = [[1, 0, 3, 2], [3, 2, 1, 0], [0, 2, 1, 3], [3, 1, 3, 2]]
+S0_MATRIX = [[1, 0, 3, 2],
+             [3, 2, 1, 0], 
+             [0, 2, 1, 3], 
+             [3, 1, 3, 2]]
 
 S1_MATRIX = [
     [0, 1, 2, 3],
@@ -31,11 +34,12 @@ PT_EP = [4, 1, 2, 3, 2, 3, 4, 1]
 
 ############ Functions ###########
 
+
 def shift_left(list_to_shift):
     """Function to shift bits by 1 to the left
 
     Args:
-        list_to_shift (list): list of the bunch of binary bits that you wanna shift to left. 
+        list_to_shift (list): list of the bunch of binary bits that you wanna shift to left.
 
     Returns:
         list: shifted list.
@@ -46,13 +50,13 @@ def shift_left(list_to_shift):
 
 
 def make_keys(key):
-    """Function to Generate 8 bit K1 and 8 bit K2 from given 10 bit key. 
+    """Function to Generate 8 bit K1 and 8 bit K2 from given 10 bit key.
 
     Args:
-        key (list): list of 0's and 1's describing the key. 
+        key (list): list of 0's and 1's describing the key.
 
     Returns:
-        (K1, K2): touple containing k1 and k2. 
+        (K1, K2): touple containing k1 and k2.
     """
     # make key_p10
     key_P10 = [key[i - 1] for i in PT_P_10]
@@ -86,7 +90,7 @@ def make_keys(key):
 
 
 def function_k(input_text, key):
-    
+
     # splitting the plain text after applying initial permutation on it.
     PT_left_after_ip = input_text[: int(len(input_text) / 2)]
     PT_right_after_ip = input_text[int(len(input_text) / 2) :]
@@ -138,9 +142,13 @@ def function_k(input_text, key):
     ]
 
     # converting the decimal numbers from s box output into binary.
-    S0_value = list(binary_to_decimal.keys())[list(binary_to_decimal.values()).index(S0_value)]
-    S1_value = list(binary_to_decimal.keys())[list(binary_to_decimal.values()).index(S1_value)]  
-      
+    S0_value = list(binary_to_decimal.keys())[
+        list(binary_to_decimal.values()).index(S0_value)
+    ]
+    S1_value = list(binary_to_decimal.keys())[
+        list(binary_to_decimal.values()).index(S1_value)
+    ]
+
     s_box_output = list(S0_value + S1_value)
 
     # applying P4 to s box output.
@@ -163,50 +171,45 @@ def encrypt_fiestal_cipher(plain_text, key_1, key_2):
     # getting partial output from running f(k) with key 1
     output_1_function_k = function_k(plain_text_after_ip, key_1)
 
-    # splitting that output. 
+    # splitting that output.
     output_1_function_k_left = output_1_function_k[:4]
     output_1_function_k_right = output_1_function_k[4:]
 
-    # switching that output. 
+    # switching that output.
     temp = output_1_function_k_right + output_1_function_k_left
 
     # running function again with switched output from running f(k) with key 2
     output_2_function_k = function_k(temp, key_2)
 
-    # running IP Inverse on it. 
-    cipher_text = [
-        output_2_function_k[i - 1] for i in PT_IP_8_INV
-    ]
-    
+    # running IP Inverse on it.
+    cipher_text = [output_2_function_k[i - 1] for i in PT_IP_8_INV]
+
     return cipher_text
 
 
 def decrypt_fiestal_cipher(cipher_text, key_1, key_2):
     print("Starting to Decipher. ")
 
-    # Initial permutation for the plain text
+    # Initial permutation for the cipher text
     cipher_text_after_ip = [cipher_text[i - 1] for i in PT_IP_8_INV]
 
     # getting partial output from running f(k) with key 2
     output_1_function_k = function_k(cipher_text_after_ip, key_2)
 
-    # splitting that output. 
+    # splitting that output.
     output_1_function_k_left = output_1_function_k[:4]
     output_1_function_k_right = output_1_function_k[4:]
 
-    # switching that output. 
+    # switching that output.
     temp = output_1_function_k_right + output_1_function_k_left
 
     # running function again with switched output from running f(k) with key 1
     output_2_function_k = function_k(temp, key_1)
 
-    # running IP Inverse on it. 
-    deciphered_plain_text = [
-        output_2_function_k[i - 1] for i in PT_IP_8
-    ]
-    
-    return deciphered_plain_text
+    # running IP Inverse on it.
+    deciphered_plain_text = [output_2_function_k[i - 1] for i in PT_IP_8]
 
+    return deciphered_plain_text
 
 
 def main():
@@ -221,16 +224,16 @@ def main():
 
     key_1, key_2 = make_keys(key)
     print("The left and right keys are : ", key_1, key_2)
-    
-    # Generating the Cipher text. 
+
+    # Generating the Cipher text.
     cipher_text = encrypt_fiestal_cipher(plain_text, key_1, key_2)
     print("The cipher text is : ", cipher_text)
-    
+
     # Decrypting the cipher text.
     deciphered_plain_text = decrypt_fiestal_cipher(cipher_text, key_1, key_2)
     print("The deciphered plain text is : ", deciphered_plain_text)
 
     # DECRYPTING
-    
+
 
 main()
