@@ -1,7 +1,5 @@
 import os
-from socket    print(key_w3)
-    print(key_w3)
- import *
+from socket import *
 
 host = "127.0.0.1"
 port = 13000
