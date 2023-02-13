@@ -50,6 +50,7 @@ def ceaser_cipher(plain_text, key):
 
     cipher_letter = ""
     cipher = []
+
     for i in plain_text:
         if i == " ":
             cipher.append(" ")
@@ -61,6 +62,7 @@ def ceaser_cipher(plain_text, key):
 
         cipher.append(cipher_letter)
     return cipher
+
 
 def decimal_to_binary(ip_val, reqBits):
     """Function to convert decimal to binary. Returns a list that has integers 0 and 1 represented in binary.
@@ -101,6 +103,7 @@ def nibble_substitution_encrypt(nibble):
 
     return nibble_after_s_box
 
+
 def nibble_substitution_decrypt(nibble):
     """Performs and returns substitution of nibble using S-Box.
 
@@ -115,7 +118,6 @@ def nibble_substitution_decrypt(nibble):
     nibble_after_s_box = decimal_to_binary(nibble_after_s_box, 4)
 
     return nibble_after_s_box
-
 
 
 def key_expansion_function_g(key_w, round_number):
@@ -167,6 +169,21 @@ def col_matrix_table_lookup(x, y):
     answer = MIX_COLUMN_TABLE.get(y)[x - 1]
     return decimal_to_binary(int(answer), 4)
 
+# ]
+# # clearly, multiplication by another 2d matrix while seemingly easy, doesnt work for some reason.
+# # So we will take advantage of the fact that this is a SIMPLIFIED AES cipher, and do it manually.
+
+# # 1st row, 1st column
+# # table_lookup(value, mat[0][0]) ^ table_lookup(s[0][1], mat[1][0])
+# table_lookup_left = col_matrix_table_lookup(
+#     int("".join([str(i) for i in s_matrix[0][0]]), base=2),
+#     mix_column_matrix[0][0],
+# )
+# table_lookup_right = col_matrix_table_lookup(
+#     int("".join([str(i) for i in s_matrix[0][1]]), base=2),
+#     mix_column_matrix[1][0],
+# )
+# result_matrix[0][0] = [x ^ y for x, y in zip(table_lookup_left, table_lookup_right)]
 
 def mix_columns(s_matrix, mix_column_matrix):
     # returns a 16 bit answer.
@@ -174,36 +191,26 @@ def mix_columns(s_matrix, mix_column_matrix):
         [[0, 0, 0, 0], [0, 0, 0, 0]],
         [[0, 0, 0, 0], [0, 0, 0, 0]],
     ]
+    # clearly, multiplication by another 2d matrix while seemingly easy, doesnt work for some reason.
+    # So we will take advantage of the fact that this is a SIMPLIFIED AES cipher, and do it manually.
 
     # multiply 2 dimensional matrices
 
-    rounds = []
-    for k in range(len(s_matrix)):
-        rounds_result = []
-        for i in range(len(s_matrix[0])):
-            for j in range(len(s_matrix[0])):
+    for k in range(len(mix_column_matrix)):
+        for i in range(len(mix_column_matrix[0])):
+            for j in range(len(mix_column_matrix[0])):
                 table_lookup = col_matrix_table_lookup(
-                    int("".join([str(i) for i in s_matrix[i][k]]), base=2),
-                    mix_column_matrix[k][j],
+                    int("".join([str(i) for i in s_matrix[k][j]]), base=2),
+                    mix_column_matrix[i][k],
                 )
                 result_matrix[i][j] = [
                     x ^ y for x, y in zip(result_matrix[i][j], table_lookup)
                 ]
-                rounds_result.append(table_lookup)
-        rounds.append(rounds_result)
             
-    # Terrible method, but nothing else is working rn. 
-    rounds[1].insert(0, rounds[1].pop())
-    
-    result_matrix[0][0] = [x ^ y for x, y in zip(rounds[0][0], rounds[0][3])]
-    result_matrix[0][1] = [x ^ y for x, y in zip(rounds[0][1], rounds[0][2])]
-    result_matrix[1][0] = [x ^ y for x, y in zip(rounds[1][0], rounds[1][3])]
-    result_matrix[1][1] = [x ^ y for x, y in zip(rounds[1][1], rounds[1][2])]
-    
     return (
         result_matrix[0][0]
+        + result_matrix[1][0] # no idea why im shifting this and the next line
         + result_matrix[0][1]
-        + result_matrix[1][0]
         + result_matrix[1][1]
     )
 
@@ -248,8 +255,9 @@ def encrypt_SAES_cipher(plain_text, key):
 
     return round_2
 
+
 def decrypt_SAES_cipher(cipher_text, key):
-    
+
     key_0, key_1, key_2 = make_keys(key)
     # round 0 - Only Add round key
     round_0 = [x ^ y for x, y in zip(cipher_text, key_2)]
@@ -270,7 +278,7 @@ def decrypt_SAES_cipher(cipher_text, key):
 
     # Add Round key
     round_1 = [x ^ y for x, y in zip(nib_sub, key_1)]
-    
+
     s_0, s_1, s_2, s_3 = (round_1[:4], round_1[4:8], round_1[8:12], round_1[12:])
 
     # Inverse Mixing Columns
@@ -284,7 +292,7 @@ def decrypt_SAES_cipher(cipher_text, key):
 
     # Inverse Shifting Rows, exchanging s1 ands s3
     s_1, s_3 = s_3, s_1
-    
+
     # Inverse nibbles substitution
     s_0_after_sub = nibble_substitution_decrypt(s_0)
     s_1_after_sub = nibble_substitution_decrypt(s_1)
@@ -292,7 +300,7 @@ def decrypt_SAES_cipher(cipher_text, key):
     s_3_after_sub = nibble_substitution_decrypt(s_3)
 
     s_box = s_0_after_sub + s_1_after_sub + s_2_after_sub + s_3_after_sub
-    
+
     round_2 = [x ^ y for x, y in zip(s_box, key_0)]
 
     return round_2
@@ -303,11 +311,11 @@ def main():
     # this will make the plaintext a list.
     # plain_text = [int(i) for i in input("Enter the Plain text with spaces: ").split()]
     # key = [int(i) for i in input("Enter the Key with spaces: ").split()]
-    
+
     # plain_text = input("Enter Text to be encrypted via S-AES:")
     # ceaser_ciphered_text = ceaser_cipher(plain_text, len(plain_text))
     # print("After Ceaser Cipher : ", ceaser_ciphered_text)
-    
+
     # # make plain_text list of 16 bits
     # plain_text = [decimal_to_binary(ord(i), 8) for i in ceaser_ciphered_text]
     # plain_text = [j for i in plain_text for j in i]
@@ -316,40 +324,43 @@ def main():
     #     if(len(i) < 16):
     #         i += [0 for i in range(16-len(i))]
     # print("texts are: ", plain_texts)
-    
+
     # # make keys
     # key = input("Enter 4 digit Key to be used for encryption:")
     # key = [decimal_to_binary(int(i), 4) for i in key]
     # key = [j for i in key for j in i]
 
     # print(key)
-    
+
     # ciphers = []
     # for plain_text in plain_texts:
     #     cipher_text = encrypt_SAES_cipher(plain_text, key)
     #     ciphers.append(cipher_text)
-    
+
     # ciphers = [j for i in ciphers for j in i]
-    # ciphers = [ciphers[i:i+8] for i in range(0, len(ciphers), 8)]
-    
+    # ciphers = [ciphers[i:i+16] for i in range(0, len(ciphers), 8)]
+
     # # decrypting
     # for cipher in ciphers:
     #     plain_text = decrypt_SAES_cipher(cipher, key)
+    #     plain_text = [str(i) for i in plain_text]
+    #     plain_text = [''.join(plain_text[i:i+16]) for i in range(0, len(plain_text), 16)]
     #     plain_text = [chr(int(i, base=2)) for i in plain_text]
     #     print("The plain text is: ", plain_text)
-    
-    
-    # ciphers = [''.join(ciphers[i:i+8]) for i in range(0, len(ciphers), 8)]
+
+    # ciphers = [''.join(ciphers[i:i+16]) for i in range(0, len(ciphers), 8)]
     # ciphers = [chr(int(i, base=2)) for i in ciphers]
     # print("The cipher text is: ", ciphers)
     
     
     
+    
+
+    
+    
     plain_text = [1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0]
 
     key = [0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1]
-
-    
 
     print("The plain text is: ", plain_text)
     print("The key is: ", key)
@@ -359,9 +370,10 @@ def main():
     cipher_text = encrypt_SAES_cipher(plain_text, key)
 
     print("The cipher text is: ", cipher_text)
-    
+
     # DECRYPTING
     plain_text = decrypt_SAES_cipher(cipher_text, key)
     print("The decrypted plain text is: ", plain_text)
-    
+
+
 main()
