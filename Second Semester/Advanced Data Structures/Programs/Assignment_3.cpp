@@ -123,7 +123,7 @@ public:
         while (!q.empty())
         {
             temp = q.front();
-        
+            q.pop();
             cout << temp->word << " : " << temp->definition << endl;
             if (temp->left != NULL)
             {

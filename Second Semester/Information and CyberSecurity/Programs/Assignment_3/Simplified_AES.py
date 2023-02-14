@@ -309,8 +309,8 @@ def decrypt_SAES_cipher(cipher_text, key):
 def main():
 
     # this will make the plaintext a list.
-    plain_text = [int(i) for i in input("Enter the Plain text with spaces: ").split()]
-    key = [int(i) for i in input("Enter the Key with spaces: ").split()]
+    # plain_text = [int(i) for i in input("Enter the Plain text with spaces: ").split()]
+    # key = [int(i) for i in input("Enter the Key with spaces: ").split()]
 
     # plain_text = input("Enter Text to be encrypted via S-AES:")
     # ceaser_ciphered_text = ceaser_cipher(plain_text, len(plain_text))
@@ -358,9 +358,9 @@ def main():
 
     
     
-    # plain_text = [1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0]
+    plain_text = [1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0]
 
-    # key = [0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1]
+    key = [0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1]
 
     print("The plain text is: ", plain_text)
     print("The key is: ", key)

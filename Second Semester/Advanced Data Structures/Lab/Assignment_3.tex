@@ -1,0 +1,247 @@
+% This is a Basic Assignment Paper but with like Code and stuff allowed in it, there is also url, hyperlinks from contents included. 
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Advanced Data Structures - Assignment 3}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Advanced Data Structures\\
+		Second Year B. Tech, Semester 4
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Implementation of Dictionary using Binary Search Tree
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Assignment No. 2
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A1, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
+
+\section{Objectives}
+\begin{enumerate}
+	\item To study data structure : Binary Search Tree
+	\item To study breadth first traversal.
+	\item To study different operations on Binary search Tree.
+\end{enumerate}
+
+\section{Problem Statement}
+Implement dictionary using binary search tree where dictionary stores keywords and its meanings.
+Perform following operations:
+\begin{enumerate}
+	\item Insert a keyword
+	\item Delete a keyword
+	\item Create mirror image and display level wise
+	\item Copy
+\end{enumerate}
+
+\section{Theory}
+\subsection{Binary Search Tree}
+
+\subsection{Breadth First Traversal}
+
+\subsection{Different operations on binary search tree.(copy ,mirror image and delete)}
+
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64 \\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
+\textbf{Compilers} : g++ and gcc on linux for C++\\
+
+\section{Input}
+\begin{enumerate}
+	\item Input at least 10 nodes.
+	\item Display binary search tree levelwise traversals of binary search tree with 10 nodes
+	\item Display mirror image and copy operations on BST
+\end{enumerate}
+\section{Output}
+\begin{enumerate}
+	\item The traversal of the binary tree in different ways.
+\end{enumerate}
+
+\section{Test Conditions}
+\begin{enumerate}
+	\item Input at least 10 nodes.
+	\item Display all traversals of binary tree with 10 nodes.(recursive and nonrecursive)
+\end{enumerate}
+
+\section{Pseudo Code}
+% create, display, delete, mirror image and copy
+
+\section{Time Complexity}
+% create, display, delete, mirror image and copy
+
+\section{Code}
+
+\subsection{Program}
+\lstinputlisting[language=C++]{../Programs/Assignment_3.cpp}
+
+\subsection{Input and Output}
+\lstinputlisting[]{../Programs/Assignment_3_output.txt}
+
+\section{Conclusion}
+Thus, implemented Dictionary using Binary search tree.
+\clearpage
+
+\section{FAQ}
+\begin{enumerate}
+	\item \textbf{1.Explain application of BST}
+	      The Applications of Binary Search Tree are:
+	      \begin{enumerate}
+		      \item Binary Search Tree is used to implement dictionaries.
+		      \item Binary Search Tree is used to implement priority queues.
+		      \item Binary Search Tree is used to implement disjoint sets.
+		      \item Binary Search Tree is used to implement sorting algorithms.
+		      \item Binary Search Tree is used to implement expression trees.
+		      \item Binary Search Tree is used to implement Huffman coding.
+		      \item Binary Search Tree is used to implement B-trees.
+		      \item Binary Search Tree is used to implement red-black trees.
+	      \end{enumerate}
+	\item \textbf{Explain with example deletion of a node having two child.}
+	      If a node has two children, then we need to find the inorder successor of the node. The inorder successor is the smallest in the right subtree or the largest in the left subtree. After finding the inorder successor, we copy the contents of the inorder successor to the node and delete the inorder successor. Note that the inorder predecessor can also be used.
+
+	      An Example would be:
+	      \begin{verbatim}
+    Let us consider the following BST as an example.
+             50
+            / \
+            30 70
+        / \ / \
+        20 40 60 80
+    / \ / \
+    10 25 45 65
+    Deleting 30 will be done in following steps.
+    1. Find inorder successor of 30.
+    2. Copy contents of the inorder successor to 30.
+    3. Delete the inorder successor.
+    4. Since inorder successor is 40 which has no left child, we simply make right child of 30 as the new right child of 20.
+    
+
+             50
+            / \
+        40 70
+        / \ / \
+    20 25 60 80
+    
+
+    \end{verbatim}
+	\item \textbf{Define skewed binary tree.}
+	      A binary tree is said to be skewed if all of its nodes have only one child. A skewed binary tree can be either left or right skewed. A left skewed binary tree is a binary tree in which all the nodes have only left child. A right skewed binary tree is a binary tree in which all the nodes have only right child.
+\end{enumerate}
+
+\end{document}
