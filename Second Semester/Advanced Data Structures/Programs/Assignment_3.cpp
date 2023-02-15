@@ -84,7 +84,7 @@ public:
 
             while (!flag)
             {
-                if (strcmp(current_word->word.c_str(), temp->word.c_str()) < 0)
+                if (strcmp(current_word->word.c_str(), temp->word.c_str()) <= 0)
                 {
                     if (temp->left == NULL)
                     {
@@ -153,6 +153,40 @@ public:
         }
     }
 
+    WordNode *create_copy_interatively(WordNode *temp)
+    {
+        // We have to create a queue to pop things
+        queue<WordNode *> q;
+        WordNode *copied_tree;
+        WordNode *new_node = new WordNode;
+        new_node->word = temp->word;
+        new_node->definition = temp->definition;
+        q.push(new_node);
+        while (!q.empty())
+        {
+            copied_tree = q.front();
+            q.pop();
+            if (temp->left != NULL)
+            {
+                WordNode *new_node1 = new WordNode;
+                new_node1->word = temp->left->word;
+                new_node1->definition = temp->left->definition;
+                copied_tree->left = new_node1;
+                q.push(new_node1);
+            }
+            if (temp->right != NULL)
+            {
+                WordNode *new_node1 = new WordNode;
+                new_node1->word = temp->right->word;
+                new_node1->definition = temp->right->definition;
+                copied_tree->right = new_node1;
+                q.push(new_node1);
+            }
+            temp = temp->left;
+        }
+        return copied_tree;
+    }
+
     void mirror_recursive(WordNode *temp)
     {
         if (temp == NULL)
@@ -173,11 +207,124 @@ public:
         }
     }
 
+    void mirror_iterative(WordNode *node)
+    {
+        WordNode *temp;
+        queue<WordNode *> q;
+        q.push(node);
+        while (!q.empty())
+        {
+            temp = q.front();
+            q.pop();
+            WordNode *temp1;
+
+            // Swapping
+            temp1 = temp->left;
+            temp->left = temp->right;
+            temp->right = temp1;
+
+            if (temp->left != NULL)
+            {
+                q.push(temp->left);
+            }
+            if (temp->right != NULL)
+            {
+                q.push(temp->right);
+            }
+        }
+    }
+
     WordNode *create_mirror_tree_recursive()
     {
         WordNode *mirror_tree = create_copy_recursive(root);
         mirror_recursive(mirror_tree);
         return mirror_tree;
+    }
+
+    WordNode *create_mirror_tree_iterative()
+    {
+        WordNode *mirror_tree = create_copy_recursive(root);
+        mirror_iterative(mirror_tree);
+        return mirror_tree;
+    }
+
+    void delete_node(WordNode *temp, string word)
+    {
+        WordNode *parent = NULL;
+        while (temp != NULL)
+        {
+            if (temp->word == word)
+            {
+                break;
+            }
+            else
+            {
+                parent = temp;
+                if (strcmp(word.c_str(), temp->word.c_str()) < 0)
+                {
+                    temp = temp->left;
+                }
+                else
+                {
+                    temp = temp->right;
+                }
+            }
+        }
+        if (temp == NULL)
+        {
+            cout << "Word not found" << endl;
+            return;
+        }
+        else
+        {
+            if (temp->left == NULL && temp->right == NULL)
+            {
+                if (parent->left == temp)
+                {
+                    parent->left = NULL;
+                }
+                else
+                {
+                    parent->right = NULL;
+                }
+                delete temp;
+            }
+            else if (temp->left == NULL)
+            {
+                if (parent->left == temp)
+                {
+                    parent->left = temp->right;
+                }
+                else
+                {
+                    parent->right = temp->right;
+                }
+                delete temp;
+            }
+            else if (temp->right == NULL)
+            {
+                if (parent->left == temp)
+                {
+                    parent->left = temp->left;
+                }
+                else
+                {
+                    parent->right = temp->left;
+                }
+                delete temp;
+            }
+            else
+            {
+                WordNode *temp1 = temp->right;
+                while (temp1->left != NULL)
+                {
+                    temp1 = temp1->left;
+                }
+                temp->word = temp1->word;
+                temp->definition = temp1->definition;
+                delete_node(temp->right, temp1->word);
+            }
+        }
     }
 
     void inorder_iterative(WordNode *temp)
@@ -268,9 +415,10 @@ public:
 int main()
 {
     int choice = 0;
+    string word;
     BinarySearchTree main_tree, mirror_tree, copy_tree;
 
-    while (choice != 8)
+    while (choice != 10)
     {
         cout << "\nWhat would like to do? " << endl;
         cout << "\n\nWelcome to ADS Assignment 2 - Binary Tree Traversals\n\nWhat would you like to do? " << endl;
@@ -284,11 +432,15 @@ int main()
              << endl;
         cout << "5. Traverse it using BFS"
              << endl;
-        cout << "6. Create a Copy of the tree Recursively"
+        cout << "6. Create a Copy of the tree Recursively and Iteratively"
              << endl;
         cout << "7. Create a Mirror of the Tree Recursively"
              << endl;
-        cout << "8. Exit" << endl
+        cout << "8. Create a Mirror of the Tree Iteratively"
+             << endl;
+        cout << "9. Delete a Node from the Tree"
+             << endl;
+        cout << "10. Exit" << endl
              << endl;
 
         cin >> choice;
@@ -316,20 +468,29 @@ int main()
         case 6:
             cout << "Creating a copy of the tree" << endl;
             copy_tree.root = copy_tree.create_copy_recursive(main_tree.root);
-            cout << "Traversing through the Binary Tree Inorder Iteratively: " << endl;
-            copy_tree.inorder_iterative(copy_tree.root);
             cout << "Traversing via Breadth First Search: " << endl;
             copy_tree.bfs();
             break;
         case 7:
             cout << "Creating a mirror of the tree" << endl;
             mirror_tree.root = main_tree.create_mirror_tree_recursive();
-            cout << "Traversing through the Binary Tree Inorder Iteratively: " << endl;
-            mirror_tree.inorder_iterative(mirror_tree.root);
             cout << "Traversing via Breadth First Search: " << endl;
             mirror_tree.bfs();
             break;
         case 8:
+            cout << "Creating a mirror of the tree Iteratively" << endl;
+            mirror_tree.root = main_tree.create_mirror_tree_iterative();
+            cout << "Traversing via Breadth First Search: " << endl;
+            mirror_tree.bfs();
+            break;
+        case 9:
+            cout << "Enter the word you want to delete: " << endl;
+            cin >> word;
+            main_tree.delete_node(main_tree.root, word);
+            cout << "Traversing through the Binary Tree Inorder Iteratively: " << endl;
+            main_tree.inorder_iterative(main_tree.root);
+            break;
+        case 10:
             cout << "Exiting the program" << endl;
             break;
         default:
