@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  15 FEB 2023 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  15 FEB 2023 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -694,13 +694,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-<1200px-Binary_search_tree.svg.png, id=171, 1204.5pt x 1003.75pt>
-File: 1200px-Binary_search_tree.svg.png Graphic file (type png)
-<use 1200px-Binary_search_tree.svg.png>
-Package pdftex.def Info: 1200px-Binary_search_tree.svg.png  used on input line 164.
-(pdftex.def)             Requested size: 187.89914pt x 156.57518pt.
+<figures/1200px-Binary_search_tree.svg.png, id=171, 1204.5pt x 1003.75pt>
+File: figures/1200px-Binary_search_tree.svg.png Graphic file (type png)
+<use figures/1200px-Binary_search_tree.svg.png>
+Package pdftex.def Info: figures/1200px-Binary_search_tree.svg.png  used on input line 164.
+(pdftex.def)             Requested size: 140.92793pt x 117.42755pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 171.
+(Font)              scaled to size 13.39188pt on input line 172.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -712,10 +712,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 
-       [1
+l.172 I
+       n level order traversal, we visit the nodes level by level from left ... [1
 
- <./1200px-Binary_search_tree.svg.png>]
+ <./figures/1200px-Binary_search_tree.svg.png>]
+<figures/Binary-Tree-Mirror.png, id=186, 444.91219pt x 237.88875pt>
+File: figures/Binary-Tree-Mirror.png Graphic file (type png)
+<use figures/Binary-Tree-Mirror.png>
+Package pdftex.def Info: figures/Binary-Tree-Mirror.png  used on input line 193.
+(pdftex.def)             Requested size: 222.45554pt x 118.94408pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -723,33 +729,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+[2 <./figures/Binary-Tree-Mirror.png>]
+<figures/Deletion_BST.png, id=193, 376.40625pt x 376.40625pt>
+File: figures/Deletion_BST.png Graphic file (type png)
+<use figures/Deletion_BST.png>
+Package pdftex.def Info: figures/Deletion_BST.png  used on input line 213.
+(pdftex.def)             Requested size: 211.38832pt x 211.39487pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
  []
 
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3 <./figures/Deletion_BST.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 229.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 242.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 230.
+(Font)              scaled to size 8.36993pt on input line 243.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -758,17 +769,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [4]
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 335.
- (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 335.
-
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -777,8 +777,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [5]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 364.
- (../Programs/Assignment_3.cpp
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 394.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 394.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -787,6 +792,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 423.
+(../Programs/Assignment_3.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -842,7 +853,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[13])
+[13]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -850,7 +861,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[14] (../Programs/Assignment_3_output.txt
+[14]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -858,7 +869,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[15]
+[15]) (../Programs/Assignment_3_output.txt
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -874,7 +885,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[17])
+[17]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -882,18 +893,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+[18])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
@@ -904,7 +923,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[19
+[20
 
 ]
 
@@ -914,23 +933,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[20] (./Assignment_3.aux)
+[21] (./Assignment_3.aux)
 Package rerunfilecheck Info: File `Assignment_3.out' has not changed.
 (rerunfilecheck)             Checksum: 076653EE713FF60EC865E9B30A0BAD1C;3292.
  ) 
 Here is how much of TeX's memory you used:
- 14522 strings out of 478238
- 217241 string characters out of 5850455
- 1230929 words of memory out of 5000000
- 31643 multiletter control sequences out of 15000+600000
+ 14593 strings out of 478238
+ 218569 string characters out of 5850455
+ 1243221 words of memory out of 5000000
+ 31659 multiletter control sequences out of 15000+600000
  520206 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,554b,2020s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,13n,69p,554b,1965s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_3.pdf (22 pages, 223385 bytes).
+Output written on Assignment_3.pdf (23 pages, 320171 bytes).
 PDF statistics:
- 1305 PDF objects out of 1440 (max. 8388607)
- 1254 compressed objects within 13 object streams
- 878 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1374 PDF objects out of 1440 (max. 8388607)
+ 1317 compressed objects within 14 object streams
+ 930 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

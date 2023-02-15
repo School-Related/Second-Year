@@ -277,6 +277,7 @@ public:
         }
         else
         {
+            // no child node.
             if (temp->left == NULL && temp->right == NULL)
             {
                 if (parent->left == temp)
@@ -289,6 +290,7 @@ public:
                 }
                 delete temp;
             }
+            // 1 Child case right.
             else if (temp->left == NULL)
             {
                 if (parent->left == temp)
@@ -301,6 +303,7 @@ public:
                 }
                 delete temp;
             }
+            // 1 Child case left. 
             else if (temp->right == NULL)
             {
                 if (parent->left == temp)

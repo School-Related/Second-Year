@@ -161,7 +161,7 @@ Binary search trees are also useful for sorting, as it is easy to sort the nodes
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.40\textwidth]{1200px-Binary_search_tree.svg.png}
+	\includegraphics[width=0.30\textwidth]{figures/1200px-Binary_search_tree.svg.png}
 	\caption{Example of a Binary Search Tree}
 	\label{fig:1200px-Binary_search_tree.svg}
 \end{figure}
@@ -187,6 +187,15 @@ We repeat this process until we reach a leaf node. The new node is then inserted
 To create a mirror image of a binary search tree, we perform a pre-order traversal of the tree. For each node, we swap the left and right child of the node. We then recursively create the mirror image of the left and right sub-trees of the node.
 
 To create it Iteratively, we use a stack to store the nodes of the tree. We start by pushing the root node into the stack. We then pop a node from the stack and swap the left and right child of the popped node. We then push the left and right child of the popped node into the stack and repeat the process until the stack is empty.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{figures/Binary-Tree-Mirror.png}
+	\caption{Mirror of a Binary Tree}
+	\label{fig:Mirror of a Binary Tree}
+\end{figure}
+
+
 \subsubsection{Delete}
 
 There are 3 Cases for deletion of a node in a binary search tree:
@@ -199,7 +208,12 @@ There are 3 Cases for deletion of a node in a binary search tree:
 	      It can also be done using the inorder predecessor. The inorder predecessor is the largest node in the left sub-tree of the node. We replace the value of the node to be deleted with the value of the inorder predecessor. We then delete the inorder predecessor. The inorder predecessor will have at most one child node, so we can use the above two cases to delete it.
 \end{enumerate}
 
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.45\textwidth]{figures/Deletion_BST.png}
+	\caption{Deleting a node from a Binary Search Tree}
+	\label{fig:Deleting a node from a Binary Search Tree}
+\end{figure}
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
@@ -224,7 +238,6 @@ There are 3 Cases for deletion of a node in a binary search tree:
 \end{enumerate}
 
 \section{Pseudo Code}
-% create, display, delete, mirror image and copy
 \subsection{Create}
 \begin{lstlisting}[language=C++]
 	void create_root()
@@ -285,7 +298,53 @@ There are 3 Cases for deletion of a node in a binary search tree:
 \end{lstlisting}
 \subsection{Delete}
 \begin{lstlisting}[language=C++]
+	void delete_node(WordNode *temp, string word)
+    
+        WordNode *parent = NULL;
+        while (temp != NULL)
+            if (temp->word == word)
+                break;
+            else
+                parent = temp;
+                if (strcmp(word.c_str(), temp->word.c_str()) < 0)
+                    temp = temp->left;
+                else
+                    temp = temp->right;
+        if (temp == NULL)
+            Print - "Word not found" - endl;
+            return;
+        else
+            // no child node.
+            if (temp->left == NULL && temp->right == NULL)
+                if (parent->left == temp)
+                    parent->left = NULL;
+                else
+                    parent->right = NULL;
+                delete temp;
 
+			// 1 Child case right.
+            else if (temp->left == NULL)
+                if (parent->left == temp)
+                    parent->left = temp->right;
+                else
+                    parent->right = temp->right;
+                delete temp;
+
+			// 1 Child case left. 
+            else if (temp->right == NULL)
+                if (parent->left == temp)
+                    parent->left = temp->left;
+                else
+                    parent->right = temp->left;
+                delete temp;
+            else
+                WordNode *temp1 = temp->right;
+                while (temp1->left != NULL)
+                    temp1 = temp1->left;
+                temp->word = temp1->word;
+                temp->definition = temp1->definition;
+                delete_node(temp->right, temp1->word);
+    
 \end{lstlisting}
 \subsection{Mirror Image}
 \begin{lstlisting}[language=C++]
@@ -372,56 +431,54 @@ Thus, implemented Dictionary using Binary search tree.
 
 \section{FAQ}
 \begin{enumerate}
-\item \textbf{Explain application of BST}\\
+	\item \textbf{Explain application of BST}\\
 
-The Applications of Binary Search Tree are:
-\begin{enumerate}
-	\item Binary Search Tree is used to implement dictionaries.
-	\item Binary Search Tree is used to implement priority queues.
-	\item Binary Search Tree is used to implement disjoint sets.
-	\item Binary Search Tree is used to implement sorting algorithms.
-	\item Binary Search Tree is used to implement expression trees.
-	\item Binary Search Tree is used to implement Huffman coding.
-	\item Binary Search Tree is used to implement B-trees.
-	\item Binary Search Tree is used to implement red-black trees.
-\end{enumerate}
-\item \textbf{Explain with example deletion of a node having two child.}\\
+	      The Applications of Binary Search Tree are:
+	      \begin{enumerate}
+		      \item Binary Search Tree is used to implement dictionaries.
+		      \item Binary Search Tree is used to implement priority queues.
+		      \item Binary Search Tree is used to implement disjoint sets.
+		      \item Binary Search Tree is used to implement sorting algorithms.
+		      \item Binary Search Tree is used to implement expression trees.
+		      \item Binary Search Tree is used to implement Huffman coding.
+		      \item Binary Search Tree is used to implement B-trees.
+		      \item Binary Search Tree is used to implement red-black trees.
+	      \end{enumerate}
+	\item \textbf{Explain with example deletion of a node having two child.}\\
 
-If a node has two children, then we need to find the inorder successor of the node. The inorder successor is the smallest in the right subtree or the largest in the left subtree. After finding the inorder successor, we copy the contents of the inorder successor to the node and delete the inorder successor. Note that the inorder predecessor can also be used.
+	      If a node has two children, then we need to find the inorder successor of the node. The inorder successor is the smallest in the right subtree or the largest in the left subtree. After finding the inorder successor, we copy the contents of the inorder successor to the node and delete the inorder successor. Note that the inorder predecessor can also be used.
 
-An Example would be:
-\begin{verbatim}
+	      An Example would be:
+	      \begin{verbatim}
     Let us consider the following BST as an example.
-              50
-             / \
-            30 70
-           / \ / \
-         20 40 60 80
-		 / \   / \
-		10 25 45 65
+          50
+         / \
+       30   70
+       / \  / \
+      20 40 60 80
+      /  \  / \
+    10  25 45 65
 \end{verbatim}
 
-Deleting 30 will be done in following steps.
-1. Find inorder successor of 30.
-2. Copy contents of the inorder successor to 30.
-3. Delete the inorder successor.
-4. Since inorder successor is 40 which has no left child, we simply make right child of 30 as the new right child of 20.
+	      Deleting 30 will be done in following steps.
+	      1. Find inorder successor of 30.
+	      2. Copy contents of the inorder successor to 30.
+	      3. Delete the inorder successor.
+	      4. Since inorder successor is 40 which has no left child, we simply make right child of 30 as the new right child of 20.
 
-\begin{verbatim}
-	50
-	/ \
-	40 70
-	/   / \
-	20   60 80
-	
-	  / \   / \
-      10 25 45 65
-
-
+	      \begin{verbatim}
+             50
+            / \
+          40   70
+          / \  / \
+         20 25 60 80
+        /     / \
+       10     45 65
 \end{verbatim}
-\item \textbf{Define skewed binary tree.}\\
 
-A binary tree is said to be skewed if all of its nodes have only one child. A skewed binary tree can be either left or right skewed. A left skewed binary tree is a binary tree in which all the nodes have only left child. A right skewed binary tree is a binary tree in which all the nodes have only right child.
+	\item \textbf{Define skewed binary tree.}\\
+
+	      A binary tree is said to be skewed if all of its nodes have only one child. A skewed binary tree can be either left or right skewed. A left skewed binary tree is a binary tree in which all the nodes have only left child. A right skewed binary tree is a binary tree in which all the nodes have only right child.
 \end{enumerate}
 
 \end{document}

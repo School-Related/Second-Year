@@ -7,25 +7,25 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Copy}{2}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Insert}{2}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Mirror Image}{2}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}Delete}{2}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4}Delete}{3}{subsubsection.3.3.4}%
 \contentsline {section}{\numberline {4}Platform}{3}{section.4}%
 \contentsline {section}{\numberline {5}Input}{3}{section.5}%
-\contentsline {section}{\numberline {6}Output}{3}{section.6}%
-\contentsline {section}{\numberline {7}Test Conditions}{3}{section.7}%
-\contentsline {section}{\numberline {8}Pseudo Code}{3}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Create}{3}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Display}{4}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Delete}{4}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Mirror Image}{4}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Copy}{5}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Time Complexity}{5}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Create}{5}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Display}{5}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Delete}{5}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Mirror Image}{6}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Copy}{6}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Code}{6}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Program}{6}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Input and Output}{15}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Conclusion}{18}{section.11}%
-\contentsline {section}{\numberline {12}FAQ}{19}{section.12}%
+\contentsline {section}{\numberline {6}Output}{4}{section.6}%
+\contentsline {section}{\numberline {7}Test Conditions}{4}{section.7}%
+\contentsline {section}{\numberline {8}Pseudo Code}{4}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Create}{4}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Display}{5}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Delete}{5}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Mirror Image}{6}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Copy}{6}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Time Complexity}{7}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Create}{7}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Display}{7}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Delete}{7}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Mirror Image}{7}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Copy}{7}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Code}{7}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Program}{7}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Input and Output}{16}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Conclusion}{19}{section.11}%
+\contentsline {section}{\numberline {12}FAQ}{20}{section.12}%

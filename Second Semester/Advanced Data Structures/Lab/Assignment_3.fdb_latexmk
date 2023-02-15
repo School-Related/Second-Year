@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1676443658 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_3.tex" "Assignment_3.pdf" "Assignment_3" 1676443663
-  "../Programs/Assignment_3.cpp" 1676443657 13934 0679d7ddacfde0e6c66f48116a327be9 ""
+["pdflatex"] 1676478074 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_3.tex" "Assignment_3.pdf" "Assignment_3" 1676478078
+  "../Programs/Assignment_3.cpp" 1676477787 14034 dca9d3e4d9a879f2354f1e9e606a14c5 ""
   "../Programs/Assignment_3_output.txt" 1676382905 4655 7ddabe86341533fbe805d86566b8a54a ""
-  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_3.tex" 1676440116 15073 d432ff919568d9128f8f44a09f083584 ""
+  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_3.tex" 1676478072 17195 c71999d6bc92c26b85fc8a59533c7e2e ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1650183167 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -126,11 +126,13 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1668975588 4278762 af3ac1370db81a450c1118eabf1fe718 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668975555 2927666 a3c8876ffc725e66a0174c418ee8cb0b ""
-  "1200px-Binary_search_tree.svg.png" 1676433650 49005 4f8bb4644fcb64728461bd9ddec34fe2 ""
-  "Assignment_3.aux" 1676443663 4778 fffabb62f1c2ab327fe37bcc3f65e19f "pdflatex"
-  "Assignment_3.out" 1676443663 3292 076653ee713ff60ec865e9b30a0bad1c "pdflatex"
-  "Assignment_3.tex" 1676440116 15073 d432ff919568d9128f8f44a09f083584 ""
-  "Assignment_3.toc" 1676443663 2293 246c3ffaa747ce201bf9f7fbe00f9865 "pdflatex"
+  "Assignment_3.aux" 1676478078 5268 04ac8b9fcd008b3ca391dd1558f758f3 "pdflatex"
+  "Assignment_3.out" 1676478078 3292 076653ee713ff60ec865e9b30a0bad1c "pdflatex"
+  "Assignment_3.tex" 1676478072 17195 c71999d6bc92c26b85fc8a59533c7e2e ""
+  "Assignment_3.toc" 1676478078 2293 4bccc119f09018516a006ca5b64ff8a5 "pdflatex"
+  "figures/1200px-Binary_search_tree.svg.png" 1676433650 49005 4f8bb4644fcb64728461bd9ddec34fe2 ""
+  "figures/Binary-Tree-Mirror.png" 1676436129 13683 6ac5bdaaf887e8b42a5ba40018bd5de7 ""
+  "figures/Deletion_BST.png" 1676477384 92796 880c8a5dac69a1a9d55796d715672f37 ""
   (generated)
   "Assignment_3.aux"
   "Assignment_3.log"
