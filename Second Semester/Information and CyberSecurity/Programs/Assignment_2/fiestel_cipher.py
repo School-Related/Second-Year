@@ -229,11 +229,5 @@ def main():
     cipher_text = encrypt_fiestal_cipher(plain_text, key_1, key_2)
     print("The cipher text is : ", cipher_text)
 
-    # Decrypting the cipher text.
-    deciphered_plain_text = decrypt_fiestal_cipher(cipher_text, key_1, key_2)
-    print("The deciphered plain text is : ", deciphered_plain_text)
-
-    # DECRYPTING
-
 
 main()
