@@ -52,7 +52,7 @@ def ceaser_cipher(plain_text, key):
     cipher = []
 
     for i in plain_text:
-        if i == " " or i.isdigit():
+        if i == " " or not i.isalpha():
             cipher.append(i)
             continue
         if i.islower():
@@ -84,7 +84,7 @@ def decrypt_ceaser_cipher(cipher_text, ceaser_key):
     plain_text = []
 
     for i in cipher_text:
-        if i == " " or i.isdigit():
+        if i == " " or not i.isalpha():
             plain_text.append(i)
             continue
         if i.islower():

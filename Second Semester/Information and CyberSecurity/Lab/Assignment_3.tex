@@ -146,7 +146,17 @@ system.
 
 \section{Theory}
 
-Explanation of the Simplified AES Structure
+\subsection{What is Simplified AES?}
+S-AES is to AES as S-DES is to DES. In fact, the structure of S-AES is exactly the
+same as AES. The differences are in the key size (16 bits), the block size (16 bits) and the number
+of rounds (2 rounds). Here is an overview:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{saes.png}
+	\caption{}
+\end{figure}
+
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
@@ -172,34 +182,34 @@ Thus, learnt about the different kinds of ciphers, classical cryptographic techn
 
 \begin{enumerate}
 	\item \textbf{Differentiate between DES and AES.}\\
-	\textbf{AES: }
-	\begin{enumerate}
-		\item AES stands for advanced encryption standard.                                                   
-		\item The key length can be 128 bits, 192 bits, or 256 bits.                                         
-		\item The rounds of operations per key length are as follows: 128 bits: 10 192 bits: 12 256 bits: 14 
-		\item AES is based on a substitution and permutation network.                                        
-		\item AES is considered the standard encryption algorithm in the world and is more secure than DES.  
-		\item Key Addition, Mix Column, Byte Substitution, and Shift Row.                                    
-		\item AES can encrypt plaintext of 128 bits.                                                         
-		\item AES was derived from the Square Cipher.                                                        
-		\item AES was designed by Vincent Rijmen and Joan Daemen.                                            
-		\item There are no known attacks for AES.                                                            
-	\end{enumerate}
-	
-	\textbf{DES: }
-	\begin{enumerate}
-		\item DES stands for data encryption standard.                                                               
-		\item The key length is 56 bits.                                                                             
-		\item There are 16 identical rounds of operations.                                                           
-		\item DES is based on the Feistel network.                                                                   
-		\item DES is considered to be a weak encryption algorithm; triple DES is a more secure encryption algorithm. 
-		\item Substitution, XOR Operation, Permutation, and Expansion.                                               
-		\item DES can encrypt plaintext of 64 bits.                                                                  
-		\item DES was derived from the Lucifer Cipher.                                                               
-		\item DES was designed by IBM.                                                                               
-		\item Brute force attacks, differential cryptanalysis, and linear cryptanalysis.                             
-	\end{enumerate}
-	
+	      \textbf{AES: }
+	      \begin{enumerate}
+		      \item AES stands for advanced encryption standard.
+		      \item The key length can be 128 bits, 192 bits, or 256 bits.
+		      \item The rounds of operations per key length are as follows: 128 bits: 10 192 bits: 12 256 bits: 14
+		      \item AES is based on a substitution and permutation network.
+		      \item AES is considered the standard encryption algorithm in the world and is more secure than DES.
+		      \item Key Addition, Mix Column, Byte Substitution, and Shift Row.
+		      \item AES can encrypt plaintext of 128 bits.
+		      \item AES was derived from the Square Cipher.
+		      \item AES was designed by Vincent Rijmen and Joan Daemen.
+		      \item There are no known attacks for AES.
+	      \end{enumerate}
+
+	      \textbf{DES: }
+	      \begin{enumerate}
+		      \item DES stands for data encryption standard.
+		      \item The key length is 56 bits.
+		      \item There are 16 identical rounds of operations.
+		      \item DES is based on the Feistel network.
+		      \item DES is considered to be a weak encryption algorithm; triple DES is a more secure encryption algorithm.
+		      \item Substitution, XOR Operation, Permutation, and Expansion.
+		      \item DES can encrypt plaintext of 64 bits.
+		      \item DES was derived from the Lucifer Cipher.
+		      \item DES was designed by IBM.
+		      \item Brute force attacks, differential cryptanalysis, and linear cryptanalysis.
+	      \end{enumerate}
+
 	\item \textbf{What are the different advantages and Limitations of AES?}\\
 	      \textbf{Advantages: }\\
 	      \begin{enumerate}

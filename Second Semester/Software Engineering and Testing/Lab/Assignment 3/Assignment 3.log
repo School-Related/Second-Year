@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  24 FEB 2023 09:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  24 FEB 2023 09:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Software Engineering and Testing/Lab/Assignment 2/Assignment_2.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Software Engineering and Testing/Lab/Assignment 2/Assignment_2.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Software Engineering and Testing/Lab/Assignment 3/Assignment 3.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Software Engineering and Testing/Lab/Assignment 3/Assignment 3.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -514,15 +514,8 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box56
-) (./Assignment_2.aux
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-)
-\openout1 = `Assignment_2.aux'.
+) (./Assignment 3.aux)
+\openout1 = `"Assignment 3.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -630,9 +623,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
- (./Assignment_2.out) (./Assignment_2.out)
 \@outlinefile=\write3
-\openout3 = `Assignment_2.out'.
+\openout3 = `"Assignment 3.out"'.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 19.28804pt on input line 74.
@@ -649,40 +641,8 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 133.
- (./Assignment_2.toc
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 1.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 5.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 5.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 5.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 5.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 5.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 5.
- (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
-File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
-)
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 5.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 5.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 5.
-)
 \tf@toc=\write4
-\openout4 = `Assignment_2.toc'.
+\openout4 = `"Assignment 3.toc"'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -690,23 +650,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.135 \clearpage
                  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 156.
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 160.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 160.
+(Font)              scaled to size 10.18341pt on input line 158.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 176.
+(Font)              scaled to size 10.18341pt on input line 160.
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Software Engineering and Testing/Lab/Assignment 3/Assignment 3.tex:171: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 13.39188pt on input line 173.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -718,105 +689,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 	\item E
-              ach data store should have at least one data flow in and data ... [1
+l.173 \end{document}
+                     [1
 
-]
-Overfull \hbox (30.3071pt too wide) in paragraph at lines 216--224
-[][] 
- []
+] (./Assignment 3.aux)
 
+Package rerunfilecheck Warning: File `"Assignment 3".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[2]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 283.
-<dfd level 0.png, id=155, 1019.30812pt x 541.27219pt>
-File: dfd level 0.png Graphic file (type png)
-<use dfd level 0.png>
-Package pdftex.def Info: dfd level 0.png  used on input line 285.
-(pdftex.def)             Requested size: 407.71602pt x 216.50504pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[3]
-<dfd level 1.png, id=160, 1047.915pt x 587.94656pt>
-File: dfd level 1.png Graphic file (type png)
-<use dfd level 1.png>
-Package pdftex.def Info: dfd level 1.png  used on input line 297.
-(pdftex.def)             Requested size: 471.55739pt x 264.5735pt.
-
-Overfull \hbox (1.80237pt too wide) in paragraph at lines 297--298
- [] 
- []
-
-<dfd level 2.png, id=161, 1081.03876pt x 689.57625pt>
-File: dfd level 2.png Graphic file (type png)
-<use dfd level 2.png>
-Package pdftex.def Info: dfd level 2.png  used on input line 310.
-(pdftex.def)             Requested size: 486.46295pt x 310.30644pt.
-
-Overfull \hbox (16.70793pt too wide) in paragraph at lines 310--311
- [] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[4 <./dfd level 0.png (PNG copy)> <./dfd level 1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[5 <./dfd level 2.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6] (./Assignment_2.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `Assignment_2.out' has not changed.
-(rerunfilecheck)             Checksum: C5CD8DF780350EA85524081A7459E838;3050.
+Package rerunfilecheck Info: Checksums for `"Assignment 3".out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D39D60441FF23BBA63C9D022B6F7E307;506.
  ) 
 Here is how much of TeX's memory you used:
- 12962 strings out of 478238
- 196112 string characters out of 5850455
- 504900 words of memory out of 5000000
- 30943 multiletter control sequences out of 15000+600000
- 513596 words of font info for 78 fonts, out of 8000000 for 9000
+ 12800 strings out of 478238
+ 193778 string characters out of 5850455
+ 491654 words of memory out of 5000000
+ 30846 multiletter control sequences out of 15000+600000
+ 500330 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,14n,69p,559b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,12n,69p,498b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_2.pdf (8 pages, 384233 bytes).
+Output written on "Assignment 3.pdf" (3 pages, 46850 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 49 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

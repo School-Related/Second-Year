@@ -522,6 +522,135 @@ MariaDB [dbms_lab]> desc new_book_master;
 +------------+--------------+------+-----+---------+-------+
 10 rows in set (0.001 sec)
 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 4
+Server version: 10.10.3-MariaDB Arch Linux
 
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use dbms_lab;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [dbms_lab]> alter table course change course_id course_id varchar(50);
+Query OK, 0 rows affected (0.013 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [dbms_lab]> insert into course values('CS-437', 'Database Systems', 'Comp.Sci', 4);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('CS-437', 'Python', 'Comp.Sci', 1);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> select * from course;
++-----------+------------------+-----------+---------+
+| course_id | title            | dept_name | credits |
++-----------+------------------+-----------+---------+
+| CS-437    | Database Systems | Comp.Sci  |       4 |
+| CS-437    | Python           | Comp.Sci  |       1 |
++-----------+------------------+-----------+---------+
+2 rows in set (0.001 sec)
+
+MariaDB [dbms_lab]> update course set course_id = 'CS-451' where title ='Python';
+Query OK, 1 row affected (0.003 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [dbms_lab]> select * from course;
++-----------+------------------+-----------+---------+
+| course_id | title            | dept_name | credits |
++-----------+------------------+-----------+---------+
+| CS-437    | Database Systems | Comp.Sci  |       4 |
+| CS-451    | Python           | Comp.Sci  |       1 |
++-----------+------------------+-----------+---------+
+2 rows in set (0.000 sec)
+
+MariaDB [dbms_lab]> insert into course values('CS-433', 'Operating Systems', 'Comp.Sci', 3);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('CS-333', 'OOPCJ', 'Comp.Sci', 4);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('CS-331', 'CBS', 'Math', 1);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('MA-123', 'DMGT', 'Math', 1);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [dbms_lab]> update course set course_id = 'MA-451' where title='CBS';
+Query OK, 1 row affected (0.001 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [dbms_lab]> insert into course values('MA-554', 'Integral Calculus', 'Math', 2);
+Query OK, 1 row affected (0.007 sec)
+
+MariaDB [dbms_lab]> insert into course values('MA-124', 'Linear Algebra and Differential Calc', 'Math', 3);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('CS-113', 'Computer Networks', 'Comp.Sci', 3);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('CS-945', 'Information and Cybsersecurity', 'Comp.Sci', 3);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('CS-911', 'Digital Elecronics', 'Electronics', 3);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> insert into course values('EE-911', 'BEEE', 'Electronics', 3);
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [dbms_lab]> update course set course_id = 'EE-451' where title='Digital Electronics';
+Query OK, 0 rows affected (0.000 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+MariaDB [dbms_lab]> select * from course;
++-----------+--------------------------------------+-------------+---------+
+| course_id | title                                | dept_name   | credits |
++-----------+--------------------------------------+-------------+---------+
+| CS-437    | Database Systems                     | Comp.Sci    |       4 |
+| CS-451    | Python                               | Comp.Sci    |       1 |
+| CS-433    | Operating Systems                    | Comp.Sci    |       3 |
+| CS-333    | OOPCJ                                | Comp.Sci    |       4 |
+| MA-451    | CBS                                  | Math        |       1 |
+| MA-123    | DMGT                                 | Math        |       1 |
+| MA-554    | Integral Calculus                    | Math        |       2 |
+| MA-124    | Linear Algebra and Differential Calc | Math        |       3 |
+| CS-113    | Computer Networks                    | Comp.Sci    |       3 |
+| CS-945    | Information and Cybsersecurity       | Comp.Sci    |       3 |
+| CS-911    | Digital Elecronics                   | Electronics |       3 |
+| EE-911    | BEEE                                 | Electronics |       3 |
++-----------+--------------------------------------+-------------+---------+
+12 rows in set (0.000 sec)
+
+MariaDB [dbms_lab]> update course set course_id = 'EE-451' where title='Digital Elecronics';
+Query OK, 1 row affected (0.001 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [dbms_lab]> update course set title='Digital Electronics' where title='Digital Elecronics';
+Query OK, 1 row affected (0.001 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [dbms_lab]> select * from course;
++-----------+--------------------------------------+-------------+---------+
+| course_id | title                                | dept_name   | credits |
++-----------+--------------------------------------+-------------+---------+
+| CS-437    | Database Systems                     | Comp.Sci    |       4 |
+| CS-451    | Python                               | Comp.Sci    |       1 |
+| CS-433    | Operating Systems                    | Comp.Sci    |       3 |
+| CS-333    | OOPCJ                                | Comp.Sci    |       4 |
+| MA-451    | CBS                                  | Math        |       1 |
+| MA-123    | DMGT                                 | Math        |       1 |
+| MA-554    | Integral Calculus                    | Math        |       2 |
+| MA-124    | Linear Algebra and Differential Calc | Math        |       3 |
+| CS-113    | Computer Networks                    | Comp.Sci    |       3 |
+| CS-945    | Information and Cybsersecurity       | Comp.Sci    |       3 |
+| EE-451    | Digital Electronics                  | Electronics |       3 |
+| EE-911    | BEEE                                 | Electronics |       3 |
++-----------+--------------------------------------+-------------+---------+
+12 rows in set (0.000 sec)
+
+MariaDB [dbms_lab]>
 
 
