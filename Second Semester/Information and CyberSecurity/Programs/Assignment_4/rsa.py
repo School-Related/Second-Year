@@ -276,6 +276,7 @@ if __name__ == "__main__":
         cipher_text = rsa_encryption(i, public_key)
         cipher_texts.append(cipher_text)
 
+
     print(cipher_texts)
     cipher_text = "".join([chr(i) for i in cipher_texts])
     print(cipher_text)
@@ -287,7 +288,6 @@ if __name__ == "__main__":
         plain_text = rsa_encryption(i, private_key)
         plain_texts.append(plain_text)
 
-    print(plaintexts)
     plain_texts = [chr(i) for i in plain_texts]
     plain_text = "".join(plain_texts)
     print(plain_text)
