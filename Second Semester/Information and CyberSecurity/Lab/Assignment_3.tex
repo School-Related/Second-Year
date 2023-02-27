@@ -149,7 +149,14 @@ system.
 \subsection{What is Simplified AES?}
 S-AES is to AES as S-DES is to DES. In fact, the structure of S-AES is exactly the
 same as AES. The differences are in the key size (16 bits), the block size (16 bits) and the number
-of rounds (2 rounds). Here is an overview:
+of rounds (2 rounds).
+
+The Advanced Encryption Standard (AES) is a widely-used symmetric-key encryption algorithm that is used to encrypt and decrypt data. The simplified AES algorithm is a simplified version of the AES algorithm that is often used as a teaching tool to help people understand how AES works.
+
+The simplified AES algorithm operates on a 4x4 matrix of bytes called a "state." The algorithm consists of several rounds, each of which performs a series of operations on the state. The number of rounds depends on the key size: 10 rounds for a 128-bit key, 12 rounds for a 192-bit key, and 14 rounds for a 256-bit key.
+
+The simplified AES algorithm is a simplified version of the AES algorithm that is often used as a teaching tool to help people understand how AES works.
+
 
 \begin{figure}[H]
 	\centering
@@ -157,7 +164,37 @@ of rounds (2 rounds). Here is an overview:
 	\caption{}
 \end{figure}
 
+\subsection{Key Expansion}
+The key expansion function is the same as AES. The key is expanded to 32 bits and
+then split into two 16-bit keys. The first key is used in the first round and the second key is used in the second round. 
+\subsection{Constants}
 
+\subsection{Substitution}
+In this step, each byte in the state is replaced by another byte using a substitution table called the S-box. The S-box is a fixed table that maps each possible byte value to another byte value. The byte value is used to look up a corresponding value in the S-box. The substitution is done in a byte-wise manner.
+\subsection{Shift Rows}
+
+% \subsection{Mix Columns}
+
+% \subsection{Key Expansion Function (g())}
+
+% \subsection{Round Function}
+
+% \subsection{Encryption}
+
+% \subsection{Decryption}
+
+Here are the steps of one round of the simplified AES algorithm:
+
+\begin{enumerate}
+	\item SubBytes: In this step, each byte in the state is replaced by another byte using a substitution table called the S-box.
+	
+	\item ShiftRows: In this step, the bytes in each row of the state are shifted to the left. The first row is not shifted, the second row is shifted by one byte to the left, the third row is shifted by two bytes to the left, and the fourth row is shifted by three bytes to the left.
+	
+	\item MixColumns: In this step, each column of the state is multiplied by a fixed matrix. This is a bit more complex than the other steps, but it essentially "mixes" the bytes in each column.
+	
+	\item AddRoundKey: In this step, each byte in the state is XORed with a byte from the key schedule. The key schedule is derived from the original key using a key expansion algorithm.
+\end{enumerate}
+	
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
 \textbf{IDEs or Text Editors Used}: Visual Studio Code\\

@@ -2,8 +2,12 @@
 \contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
 \contentsline {section}{\numberline {3}Theory}{1}{section.3}%
 \contentsline {subsection}{\numberline {3.1}What is Simplified AES?}{1}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Platform}{1}{section.4}%
+\contentsline {subsection}{\numberline {3.2}Key Expansion}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Constants}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Substitution}{2}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Shift Rows}{2}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Platform}{2}{section.4}%
 \contentsline {section}{\numberline {5}Input and Output}{2}{section.5}%
-\contentsline {section}{\numberline {6}Code}{2}{section.6}%
+\contentsline {section}{\numberline {6}Code}{3}{section.6}%
 \contentsline {section}{\numberline {7}Conclusion}{10}{section.7}%
 \contentsline {section}{\numberline {8}FAQ}{11}{section.8}%

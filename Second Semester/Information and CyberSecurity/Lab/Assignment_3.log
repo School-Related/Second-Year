@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  27 FEB 2023 02:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  27 FEB 2023 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -694,24 +694,15 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 149.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 149.
-<saes.png, id=61, 438.8897pt x 573.64313pt>
+<saes.png, id=81, 438.8897pt x 573.64313pt>
 File: saes.png Graphic file (type png)
 <use saes.png>
-Package pdftex.def Info: saes.png  used on input line 156.
+Package pdftex.def Info: saes.png  used on input line 163.
 (pdftex.def)             Requested size: 219.4443pt x 286.82086pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
-
- []
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 167.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 173.
+(Font)              scaled to size 10.18341pt on input line 170.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 173.
+(Font)              scaled to size 13.39188pt on input line 170.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -724,17 +715,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.173 \end{verbatim}
-                     [1
+l.170 \subsection
+                 {Constants} [1
 
  <./saes.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 173.
+Underfull \hbox (badness 10000) in paragraph at lines 199--202
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 204.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 210.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 175.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 212.
  (../Programs/Assignment_3/Simplified_AES.py
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 1.
@@ -794,7 +793,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[8])
+[8]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -802,7 +801,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[9]
+[9])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -811,12 +810,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
@@ -839,21 +838,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12] (./Assignment_3.aux)
 Package rerunfilecheck Info: File `Assignment_3.out' has not changed.
-(rerunfilecheck)             Checksum: B8D6493FA5EFDE65C7CD519D27164733;831.
+(rerunfilecheck)             Checksum: 86659732FA512A3295D3FC344B0D9385;1289.
  ) 
 Here is how much of TeX's memory you used:
- 13961 strings out of 478238
- 208644 string characters out of 5850456
- 1174836 words of memory out of 5000000
- 31470 multiletter control sequences out of 15000+600000
+ 13973 strings out of 478238
+ 208792 string characters out of 5850456
+ 1119297 words of memory out of 5000000
+ 31474 multiletter control sequences out of 15000+600000
  516945 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,371b,2198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,13n,69p,462b,2137s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_3.pdf (14 pages, 236658 bytes).
+Output written on Assignment_3.pdf (14 pages, 239874 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
- 698 compressed objects within 7 object streams
- 504 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 725 compressed objects within 8 object streams
+ 512 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
