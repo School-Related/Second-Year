@@ -473,8 +473,8 @@
 
 
 	\huge{\textsc{
-		Learning about If Else statements in Python		
-	}} \\
+			Different Operations on the List Data Structure
+		}} \\
 
 
 
@@ -515,315 +515,561 @@
 \setcounter{page}{1}
 
 \section{Aim}
-To Write a python program to find largest of three numbers.
+Write a python program to create, append and remove etc. operation on list.
 
 \section{Objectives}
 \begin{enumerate}
-	\item To learn and Implement different types of If-else statements. 
+	\item To learn and implement List data structure.
 \end{enumerate}
 
-\section{Problem Statement}
-Learn different kinds of If statements in python, and understand some Data Types in Python. 
-    
+\section{Theory}
 
-\hypertarget{theory}{%
-\section{Theory}\label{theory}}
+\subsection{Data structures in Python}
+The Different Data Structures in python are as follows:
+\begin{enumerate}
+	\item \textit{List}\\
+	      A list is a data structure in Python that is a mutable, or changeable, ordered sequence of elements. Each element or value that is inside of a list is called an item. Just as strings are defined as characters between quotes, lists are defined by having values between square brackets [ ]
+	\item \textit{Tuple}\\
+	      A tuple is a sequence of immutable Python objects. Tuples are sequences, just like lists. The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets.
+	\item \textit{Dictionary}\\
+	      A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+	\item \textit{Set}\\
+	      A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+\end{enumerate}
+\subsection{Different Operations on Lists}
 
-    \hypertarget{decision-making}{%
-\subsection{Decision Making}\label{decision-making}}
-
-Following is the general form of a typical decision making structure
-found in most of the programming languages.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ condition:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{elif}\NormalTok{ condition:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
-
-Python programming language assumes any non-zero and non-null values as
-\emph{true}, and if it is either zero or null, then it is assumed as
-\emph{false} value.
-
-Python programming language provides the following types of decision
-making statements.
-
-    \hypertarget{if-statements}{%
-\subsection{If Statements}\label{if-statements}}
-
-An \emph{if statement} consists of a boolean expression followed by one
-or more statements.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{1}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{var} \PY{o}{=} \PY{l+m+mi}{100}
-\PY{k}{if} \PY{n}{var} \PY{o}{==} \PY{l+m+mi}{100}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Value of expression is 100}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Good bye!}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-Value of expression is 100
-Good bye!
-    \end{Verbatim}
-
-    \hypertarget{if-else-statements}{%
-\subsection{If \ldots{} Else Statements}\label{if-else-statements}}
-
-An \emph{if statement} can be followed by an optional \emph{else
-statement}, which executes when the boolean expression is \emph{false}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{3}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k}{if} \PY{n}{var} \PY{o}{==} \PY{l+m+mi}{200}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Value of expression is 200}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{k}{else}\PY{p}{:} 
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Value of expression is not 200}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-Value of expression is not 200
-    \end{Verbatim}
-
-    \hypertarget{ifelifelse-statements}{%
-\subsection{IF\ldots ELIF\ldots ELSE
-Statements}\label{ifelifelse-statements}}
-
-An \emph{if statement} can be followed by an optional \emph{elif
-statement}, which is short for \emph{else if}. It is very useful to test
-various conditions for decision making.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{elif}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{9}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{import} \PY{n+nn}{random}
-\PY{n}{num} \PY{o}{=} \PY{n}{random}\PY{o}{.}\PY{n}{randint}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{num}\PY{p}{)}
-\PY{k}{if} \PY{n}{num} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positive number}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{k}{elif} \PY{n}{num} \PY{o}{\PYZlt{}} \PY{l+m+mi}{0}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Negative number}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{k}{else}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The value is Zero}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
+The Different Operations that can be performed on a list are as follows:
+\begin{enumerate}
+	\item \textit{Creating a list}\\
+	      A list in Python is a collection of items in a particular order. You can make changes to elements in a list, add new elements to a list, and remove elements from a list.
+	      \begin{lstlisting}
+>>> list1 = [1, 2, 3, 4]
+>>> list2 = ['a', 'b', 'c', 'd']
+>>> list3 = [1, 'a', 2, 'b']
+\end{lstlisting}
+	\item \textit{Accessing elements in a list}\\
+	      Lists are ordered collections, so you can access any element in a list by telling Python the position, or index, of the item desired. To access an element in a list, write the name of the list followed by the index of the item enclosed in square brackets.
+	      \begin{lstlisting}
+>>> list1 = [1, 2, 3, 4]
+>>> list1[0]
+1
+>>> list1[1]
+2
+>>> list1[2]
 3
-Positive number
-    \end{Verbatim}
+>>> list1[3]
+4
+\end{lstlisting}
+	\item \textit{Adding elements to a list}\\
+	      Adding an element to the end of a list is as simple as appending the item to the list. You can use the append() method to add an item to a list.
+	      \begin{lstlisting}
+>>> list1 = [1, 2, 3, 4]
+>>> list1.append(5)
+>>> list1
+[1, 2, 3, 4, 5]
+\end{lstlisting}
+	\item \textit{Inserting elements into a list}\\
+	      You can insert a new element at any position in your list by using the insert() method. You do this by specifying the index of the new element and the value of the new item.
+	      \begin{lstlisting}
+>>> list1 = [1, 2, 3, 4]
+>>> list1.insert(2, 5)
+>>> list1
+[1, 2, 5, 3, 4]
+\end{lstlisting}
+	\item \textit{Removing elements from a list}\\
+	      There are several ways to remove items from a list, depending on the situation. If you know the position of the item you want to remove, you can use the del statement.
+	      \begin{lstlisting}
+>>> list1 = [1, 2, 3, 4]
+>>> del list1[2]
+>>> list1
+[1, 2, 4]
+\end{lstlisting}
+	\item \textit{Removing elements from a list}\\
+	      If you only know the value of the item you want to remove from the list, you can use the remove() method.
 
-    \hypertarget{nested-if-statements}{%
-\subsection{Nested IF Statements}\label{nested-if-statements}}
-
-You can use one \emph{if} or \emph{else} statement inside another
-\emph{if} or \emph{else} statement(s).
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-    \ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{        statement(s)}
-    \ControlFlowTok{else}\NormalTok{:}
-\NormalTok{        statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{11}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{Number\PYZus{}of\PYZus{}passengers} \PY{o}{=} \PY{l+m+mi}{6}
-\PY{n}{Number\PYZus{}of\PYZus{}baggage} \PY{o}{=} \PY{l+m+mi}{2}
-\PY{n}{Security\PYZus{}check} \PY{o}{=} \PY{k+kc}{True}
-
-\PY{k}{if} \PY{n}{Number\PYZus{}of\PYZus{}passengers} \PY{o}{\PYZgt{}} \PY{l+m+mi}{5}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The number of passengers is more than 5}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-    \PY{k}{if} \PY{n}{Number\PYZus{}of\PYZus{}passengers} \PY{o+ow}{and} \PY{n}{Number\PYZus{}of\PYZus{}baggage} \PY{o}{\PYZgt{}} \PY{l+m+mi}{5}\PY{p}{:}
-        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The number of passengers and baggage is more than 5}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-    \PY{k}{else}\PY{p}{:}
-        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The number of passengers and baggage is less than 5}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-The number of passengers is more than 5
-The number of passengers and baggage is less than 5
-    \end{Verbatim}
-
-\section{Platform}
-\textbf{Operating System}: Arch Linux x86-64 \\
-\textbf{IDEs or Text Editors Used}: Visual Studio Code with Jupyter\\
-\textbf{Interpreter}: python 3.10.8 \\
-
-\section{Libraries Used with pip}
-No additional Libraries are used with pip. The only libraries used are the default libraries that come with python.
-
-% These are the requirements for the libraries needed for the program to run. Installed using pip on a virtual environment using virtualenv. 
-
-% \begin{itemize}
-%     \item numpy==1.21.4
-%     \item pandas==1.3.4
-% \end{itemize}
-
-% \begin{lstinputlisting}{../Programs/Assignment_1_requirements.txt}
-
-
-\section{Input}
-\begin{enumerate}
-	\item Take 3 numbers from the User. 
-\end{enumerate}
-\section{Output}
-\begin{enumerate}
-	\item The Largest of those numbers. 
+	\item \textit{Popping elements from a list}\\
+	      If you want to work with an item that's removed from a list, use the pop() method. This method removes the last item in a list, but it lets you work with that item after removing it.
+	      \begin{lstlisting}
+>>> list1 = [1, 2, 3, 4]
+>>> list1.pop(2)
+3
+>>> list1
+[1, 2, 4]
+			\end{lstlisting}
+	\item \textit{Sorting a list}\\
+	      Python's sort() method makes it relatively easy to sort a list. If you want to change the order of your list permanently, you can use the sort() method. The sort() method changes the order of a list permanently.
+	\item \textit{Finding the length of a list}\\
+	      Finding the length of a list is as simple as using the len() function.
 \end{enumerate}
 
 \section{Code}
 
-
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{1}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{c+c1}{\PYZsh{} splitting the input string into a list of strings and then converting each string into an integer}
-\PY{p}{(}\PY{n}{a}\PY{p}{,} \PY{n}{b}\PY{p}{,} \PY{n}{c}\PY{p}{)} \PY{o}{=} \PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{i}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{input}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Enter 3 Numbers: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{p}{)}\PY{p}{]}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The Numbers that you have entered are: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{a}\PY{p}{,} \PY{n}{b}\PY{p}{,} \PY{n}{c}\PY{p}{)}
+\PY{c+c1}{\PYZsh{} declaring an empty list}
+\PY{n}{my\PYZus{}list} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
 
+    \hypertarget{trying-different-functions-on-the-list}{%
+\subsection{Trying different functions on the
+list}\label{trying-different-functions-on-the-list}}
 
-\PY{c+c1}{\PYZsh{} checking the largest number}
-\PY{k}{if} \PY{p}{(}\PY{n}{a} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{b} \PY{o+ow}{and} \PY{n}{a} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{c}\PY{p}{)}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The largest number is:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{a}\PY{p}{)}
-
-\PY{k}{elif} \PY{n}{b} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{a} \PY{o+ow}{and} \PY{n}{b} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{c}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The largest number is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{b}\PY{p}{)}
-
-\PY{k}{else}\PY{p}{:} 
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The largest number is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{c}\PY{p}{)}
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{2}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} append}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{How many values do you want to append to the list?}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{values} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n+nb}{input}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{values}\PY{p}{)}\PY{p}{:}
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Enter the value to append}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{n}{value} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n+nb}{input}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+    \PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{value}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list after appending is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The length of the list is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{len}\PY{p}{(}\PY{n}{my\PYZus{}list}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-The Numbers that you have entered are:  1 2 3
-The largest number is:  3
+How many values do you want to append to the list?
+Enter the value to append
+Enter the value to append
+Enter the value to append
+Enter the value to append
+The list after appending is:  [1, 2, 4, 3]
+The length of the list is:  4
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{3}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} insert}
+\PY{c+c1}{\PYZsh{} Inserting a value at a specific index}
+\PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{insert}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Something to insert}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list after inserting is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The length of the list is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{len}\PY{p}{(}\PY{n}{my\PYZus{}list}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The list after inserting is:  ['Something to insert', 1, 2, 4, 3]
+The length of the list is:  5
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} remove}
+\PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{remove}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Something to insert}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list after removing is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The length of the list is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{len}\PY{p}{(}\PY{n}{my\PYZus{}list}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The list after removing is:  [1, 2, 4, 3]
+The length of the list is:  4
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} pop}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{just removed}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{pop}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list after popping is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The length of the list is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{len}\PY{p}{(}\PY{n}{my\PYZus{}list}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+just removed 3
+The list after popping is:  [1, 2, 4]
+The length of the list is:  3
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{6}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} sort}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list before sorting is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list after sorting is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{sort}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The list before sorting is:  [1, 2, 4]
+The list after sorting is:  None
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{7}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} reverse}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list before reversing is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list after reversing is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{reverse}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The list before reversing is:  [1, 2, 4]
+The list after reversing is:  None
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} index}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The indices of the list are: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{k}{for} \PY{n}{\PYZus{}}\PY{p}{,} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{enumerate}\PY{p}{(}\PY{n}{my\PYZus{}list}\PY{p}{)}\PY{p}{:}
+    \PY{n+nb}{print}\PY{p}{(}\PY{n}{\PYZus{}}\PY{p}{,} \PY{n}{i}\PY{p}{)}
+    
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The value at index 1 is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{index}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The indices of the list are:
+0 4
+1 2
+2 1
+The value at index 1 is:  2
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} count}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The number of times 1 appears in the list is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The number of times 1 appears in the list is:  1
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{11}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} extend}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list before extending is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The length of the list is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{len}\PY{p}{(}\PY{n}{my\PYZus{}list}\PY{p}{)}\PY{p}{)}
+\PY{n}{my\PYZus{}list}\PY{o}{.}\PY{n}{extend}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{]}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The list after extending is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{my\PYZus{}list}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The list before extending is:  [4, 2, 1]
+The length of the list is:  3
+The list after extending is:  [4, 2, 1, 1, 2, 3]
+    \end{Verbatim}
+
+    \hypertarget{assignment-problems}{%
+\section{Assignment Problems}\label{assignment-problems}}
+
+    \hypertarget{define-a-list-called-list_1-with-four-integer-members-and-find-the-output-of-the-following}{%
+\subsection{1. Define a list called list\_1 with four integer members,
+and find the output of the
+following}\label{define-a-list-called-list_1-with-four-integer-members-and-find-the-output-of-the-following}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Access the first three elements from list\_1 using forward indices:
+  list\_1{[}0:3{]}
+\item
+  Access the last element from list\_1 using the len function:
+  list\_1{[}len(list\_1) - 1{]}
+\item
+  Access the last two elements from list\_1 by slicing: list\_1{[}-2:{]}
+\item
+  Access the first two elements using backward indices list\_1{[}:-2{]}
+\item
+  Reverse the elements in the string: list\_1{[}::-1{]}
+\end{enumerate}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{1}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{list1} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{]}
+\PY{n}{list1}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{3}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{1}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[1, 2, 3]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{2}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{list1}\PY{p}{[}\PY{n+nb}{len}\PY{p}{(}\PY{n}{list1}\PY{p}{)} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{2}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+4
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{3}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{list1}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{2}\PY{p}{:}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{3}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[3, 4]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{list1}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{2}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[1, 2]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{list1}\PY{p}{[}\PY{p}{:}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[4, 3, 2, 1]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \hypertarget{accept-20-values-from-user-and-save-it-in-list.-perform-following-operations-on-it}{%
+\subsection{2. Accept 20 values from user and save it in list. Perform
+following operations on
+it}\label{accept-20-values-from-user-and-save-it-in-list.-perform-following-operations-on-it}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  count similar elements of list.
+\item
+  count even and odd values of list .
+\item
+  count positive and negative values of list.
+\end{enumerate}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{27}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kn}{import} \PY{n+nn}{random}
+\PY{n+nb}{list} \PY{o}{=} \PY{p}{[}\PY{n}{random}\PY{o}{.}\PY{n}{randint}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{]}
+\PY{n+nb}{list}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{27}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[7, -5, 3, 3, -2, 10, 3, 6, 7, 4, 5, -2, -4, 8, -4, 6, -2, -2, 7, -1]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{28}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{similar\PYZus{}values} \PY{o}{=} \PY{p}{\PYZob{}}\PY{n}{i}\PY{p}{:} \PY{n+nb}{list}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{n}{i}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{list} \PY{k}{if} \PY{n+nb}{list}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{n}{i}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{1}\PY{p}{\PYZcb{}}
+\PY{n}{similar\PYZus{}values}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{28}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\{7: 3, 3: 3, -2: 4, 6: 2, -4: 2\}
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{29}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{positive\PYZus{}values} \PY{o}{=} \PY{p}{\PYZob{}}\PY{n}{i}\PY{p}{:}\PY{n+nb}{list}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{n}{i}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{list} \PY{k}{if} \PY{n}{i} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{\PYZcb{}}
+\PY{n}{negative\PYZus{}values} \PY{o}{=} \PY{p}{\PYZob{}}\PY{n}{i}\PY{p}{:}\PY{n+nb}{list}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{n}{i}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{list} \PY{k}{if} \PY{n}{i} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{l+m+mi}{0}\PY{p}{\PYZcb{}}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positive values: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{positive\PYZus{}values}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Negative values: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{negative\PYZus{}values}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Positive values:  \{7: 3, 3: 3, 10: 1, 6: 2, 4: 1, 5: 1, 8: 1\}
+Negative values:  \{-5: 1, -2: 4, -4: 2, -1: 1\}
+    \end{Verbatim}
+
+    \hypertarget{accept-10-values-from-user-and-save-it-in-list.-perform-following-operations-on-it}{%
+\subsection{3. Accept 10 values from user and save it in list. Perform
+following operations on
+it}\label{accept-10-values-from-user-and-save-it-in-list.-perform-following-operations-on-it}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Sort list in ascending order using sorted() function and display
+  sorted list
+\item
+  sort list in descending order using sort() function
+\item
+  display length of list
+\end{enumerate}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{30}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nb}{list} \PY{o}{=} \PY{p}{[}\PY{n}{random}\PY{o}{.}\PY{n}{randint}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{)}\PY{p}{]}
+\PY{n+nb}{list}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{30}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[3, 7, -2, 8, 2, -2, 0, 0, -2, 4, 10, 1, 6, 9, 3, 9, 0, 8, 7, 10]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{31}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nb}{sorted}\PY{p}{(}\PY{n+nb}{list}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{31}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[-2, -2, -2, 0, 0, 0, 1, 2, 3, 3, 4, 6, 7, 7, 8, 8, 9, 9, 10, 10]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{33}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nb}{list}\PY{o}{.}\PY{n}{sort}\PY{p}{(}\PY{n}{reverse}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{list}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+[10, 10, 9, 9, 8, 8, 7, 7, 6, 4, 3, 3, 2, 1, 0, 0, 0, -2, -2, -2]
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{34}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nb}{len}\PY{p}{(}\PY{n+nb}{list}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{34}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+20
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \hypertarget{accept-two-lists-from-user-and-merge-them-using-in-a-single-lis}{%
+\subsection{4. Accept two lists from user and merge them using + in a
+single
+lis}\label{accept-two-lists-from-user-and-merge-them-using-in-a-single-lis}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{38}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{list\PYZus{}1} \PY{o}{=} \PY{p}{[}\PY{n}{random}\PY{o}{.}\PY{n}{randint}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{]}
+\PY{n}{list\PYZus{}2} \PY{o}{=} \PY{p}{[}\PY{n}{random}\PY{o}{.}\PY{n}{randint}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{]}
+
+\PY{n}{list\PYZus{}3} \PY{o}{=} \PY{n}{list\PYZus{}1} \PY{o}{+} \PY{n}{list\PYZus{}2}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{List 1 is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{list\PYZus{}1}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{List 2 is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{list\PYZus{}2}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The concatenated list is:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{list\PYZus{}3}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+List 1 is:  [-5, -2, 7, 7, -5]
+List 2 is:  [-5, 4, 5, 0, -5]
+The concatenated list is: [-5, -2, 7, 7, -5, -5, 4, 5, 0, -5]
     \end{Verbatim}
 
 \section{Conclusion}
-Studied implementation of different forms of if...else statements using python
-programming.
+The List data structure in python was studied in detail. The different operations that can be performed on a list were also studied. The code was written and tested to check the output. The differences between lists and tuples were also studied.
+
 \clearpage
 
 \section{FAQ}
 
 \begin{enumerate}
-	\item Describe following logical and relational operators with suitable examples.\\
-	Logical Operators: and, or, not\\
-	Relational Operators: ==, !=, >, <, >=, <=\\
+\item \textbf{\textit{Is a list mutable? Explain with Example.}}\\
+		Yes, a list is mutable. It is one of the most important data structures in Python. It is a collection of items in a particular order. You can make changes to elements in a list, add new elements to a list, and remove elements from a list. Tuples however, are immutable. They are like lists in that they are a collection of items in a particular order. However, you can't modify tuples.
 
-	\textbf{Answer:}\\
 
-	\textbf{Logical Operators:}\\
+		Example: \\
+		\begin{lstlisting}[language=Python]
+		>>> a = [1, 2, 3]
+		>>> a[0] = 4
+		>>> a
+		[4, 2, 3]
+	\end{lstlisting}
 
-	\textit{and:} This operator is used to check if both the conditions are true.\\
+\item \textbf{\textit{What is the difference between append and extend?}}\\
+		The append() method adds its argument as a single element to the end of a list. The length of the list itself will increase by one. The extend() method iterates over its argument adding each element to the list and extending the list. The length of the list will increase by however many elements were in the iterable argument.
 
-	\textit{or:} This operator is used to check if any one of the conditions is true.\\
+		Example: \\
+		\begin{lstlisting}[language=Python]
+		>>> a = [1, 2, 3]
+		>>> a.append([4, 5])
+		>>> a
+		[1, 2, 3, [4, 5]]
+		>>> a.extend([4, 5])
+		>>> a
+		[1, 2, 3, [4, 5], 4, 5]
+	\end{lstlisting}
+\item \textbf{\textit{What is the difference between remove and pop?}}\\
+		The remove() method removes the first matching value, not a specific index. The pop() method removes the item at the given index from the list and returns the removed item. If no index is specified, pop() removes and returns the last item in the list.
 
-	\textit{not:} This operator is used to check if the condition is false.\\
-
-	\textbf{Relational Operators:}\\
-
-	\textit{==:} This operator is used to check if the two operands are equal.\\
-
-	\textit{!=:} This operator is used to check if the two operands are not equal.\\
-
-	\textit{>:} This operator is used to check if the left operand is greater than the right operand.\\
-
-	\textit{<:} This operator is used to check if the left operand is less than the right operand.\\
-
-	\textit{>=:} This operator is used to check if the left operand is greater than or equal to the right operand.\\
-
-	\textit{<=:} This operator is used to check if the left operand is less than or equal to the right operand.\\
-	
-	\textbf{Example for All the above mentioned Operators are:}\\
-	
-	\begin{lstlisting}[language=Python]
-		# Logical Operators
-		a = 10
-		b = 20
-		c = 30
-		if a > b and a > c:
-			print("a is the largest number")
-		elif b > a or b > c:
-			print("b is greater than a or b is greater than c")
-
-		# Relational Operators
-		a = 10
-		b = 20
-		if a == b:
-			print("a and b are equal")
-		else:
-			print("a and b are not equal")
-		
-		if a != b:
-			print("a and b are not equal")
-		else:
-			print("a and b are equal")	
-
-		if a > b:
-			print("a is greater than b")
-		else:
-			print("a is less than b")
-
-		if a < b:
-			print("a is less than b")
-		else:
-			print("a is greater than b")
-
-		if a >= b:
-			print("a is greater than or equal to b")
-		else:
-			print("a is less than b")
-
-		if a <= b:
-			print("a is less than or equal to b")
-		else:
-			print("a is greater than b")
+		Example: \\
+		\begin{lstlisting}[language=Python]
+		>>> a = [1, 2, 3, 4, 5]
+		>>> a.remove(3)
+		>>> a
+		[1, 2, 4, 5]
+		>>> a.pop(1)
+		2
+		>>> a
+		[1, 4, 5]
 	\end{lstlisting}
 
 \end{enumerate}
