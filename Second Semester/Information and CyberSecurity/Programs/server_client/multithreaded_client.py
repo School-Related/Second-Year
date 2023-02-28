@@ -30,10 +30,23 @@ public_key = [0, 0]
 private_key = [0, 0]
 server_public_key = [0, 0]
 
+
 def encrypt_alg(plain_text):
+    # print("encrypting: ", plain_text, type(plain_text))
+    cipher_texts = []
+    plain_texts = []
+    
+    for i in plain_text:
+        # print(ord(i))
+        cipher_text = rsa_encryption(ord(i), key=server_public_key)
+        cipher_texts.append(cipher_text)
+
+    cipher_texts = [chr(i) for i in cipher_texts]
+    cipher_text = "".join(cipher_texts)
+    
     time.sleep(1)
-    cipher_text = rsa_encryption(plain_text, key=server_public_key)
     return cipher_text
+
 
 def encrypt():
     global texting
@@ -48,10 +61,21 @@ def encrypt():
 
     texting = False
 
+
 def decrypt_alg(cipher_text):
+    plain_texts = []
+    
+    for i in cipher_text:
+        # print(ord(i))
+        plain_text = rsa_decryption(ord(i), key=private_key)
+        plain_texts.append(plain_text)
+    
+    plain_texts = [chr(i) for i in plain_texts]
+    plain_text = "".join(plain_texts)
+    
     time.sleep(1)
-    plain_texxt = rsa_decryption(cipher_text, key=private_key)
-    return cipher_text
+    return plain_text
+
 
 def decrypt(server_name):
     global texting
@@ -69,6 +93,7 @@ def decrypt(server_name):
 
     print("connection closed by server")
     texting = False
+
 
 def send_data(s):
     global texting
@@ -90,6 +115,7 @@ def send_data(s):
     if s:
         s.close()
 
+
 # connecting to the Server
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST, PORT))
@@ -103,9 +129,9 @@ print("Private Key", private_key)
 print("Public Key", public_key)
 
 data_to_send = {
-    'name': our_name,
-    'e': public_key[0],
-    'n': public_key[1],
+    "name": our_name,
+    "e": public_key[0],
+    "n": public_key[1],
 }
 
 data_to_send = json.dumps(data_to_send)
@@ -116,6 +142,9 @@ data_to_recv = s.recv(1024).decode(encoding="utf-32")
 # Parsing received data
 data_to_recv = json.loads(data_to_recv)
 print("Servers data", data_to_recv)
+server_name = data_to_recv["name"]
+server_public_key = [data_to_recv["e"], data_to_recv["n"]]
+print("Server's Public Key", server_public_key)
 
 # Sending next
 print("Clients data", data_to_send)
@@ -123,29 +152,9 @@ data_to_send = bytes(data_to_send, "utf-32")
 s.sendall(data_to_send)
 
 
-# # Exchanging Names
-# our_name = input("Identify Yourself: ")
-# s.sendall(bytes(our_name, "utf-32"))
-# server_name = s.recv(1024).decode(encoding="utf-32")
-# print("Server Identified as: ", server_name, "from ", HOST)
-
-# # Exchanging Keys
-# public_key, private_key = make_keys(8)
-# print("DEBUG : ", public_key, private_key, sep='\n')
-
-# print("Requesting public key from server")
-
-# server_public_key[0] = s.recv(1024).decode(encoding="utf-32")
-# server_public_key[1] = s.recv(1024).decode(encoding="utf-32")
-
-# print("Sending our public key")
-
-# s.sendall(bytes(str(public_key[0]), "utf-32"))
-# s.sendall(bytes(str(public_key[1]), "utf-32"))
-
-# print("The Servers public key is ", server_public_key, sep='\n')
-
-print("Messages to this chat are now end to end encrypted. No one outside of this chat, Not even Mark Zuckerburg can read or listen to them.\n\n")
+print(
+    "Messages to this chat are now end to end encrypted. No one outside of this chat, Not even Mark Zuckerburg can read or listen to them.\n\n"
+)
 
 
 # BEGIN CONVERSATION

@@ -30,10 +30,23 @@ public_key = [0, 0]
 private_key = [0, 0]
 client_public_key = [0, 0]
 
+
 def encrypt_alg(plain_text):
+    # print("encrypting: ", plain_text, type(plain_text))
+    cipher_texts = []
+    plain_texts = []
+    
+    for i in plain_text:
+        # print(ord(i))
+        cipher_text = rsa_encryption(ord(i), key=client_public_key)
+        cipher_texts.append(cipher_text)
+
+    cipher_texts = [chr(i) for i in cipher_texts]
+    cipher_text = "".join(cipher_texts)
+    
     time.sleep(1)
-    cipher_text = rsa_encryption(plain_text, key=client_public_key)
     return cipher_text
+
 
 def encrypt():
     global texting
@@ -48,10 +61,21 @@ def encrypt():
 
     texting = False
 
+
 def decrypt_alg(cipher_text):
+    plain_texts = []
+    
+    for i in cipher_text:
+        # print(ord(i))
+        plain_text = rsa_decryption(ord(i), key=private_key)
+        plain_texts.append(plain_text)
+        
+    plain_texts = [chr(i) for i in plain_texts]
+    plain_text = "".join(plain_texts)
+    
     time.sleep(1)
-    plain_texxt = rsa_decryption(cipher_text, key=private_key)
-    return cipher_text
+    return plain_text
+
 
 def decrypt(client_name):
     global texting
@@ -68,6 +92,7 @@ def decrypt(client_name):
                 return
 
     texting = False
+
 
 def send_data(conn, event):
     global texting
@@ -89,6 +114,7 @@ def send_data(conn, event):
     if conn:
         conn.close()
 
+
 def server():
     global texting
     event = threading.Event()
@@ -101,56 +127,44 @@ def server():
 
         # Connection with client
         print(f"Connected by {addr}")
-        
+
         # Creating Dictionary
         our_name = input("Identify Yourself for the client: ")
-        
+
         print("Generating Keys")
         public_key, private_key = make_keys(8)
         print("Our key Information")
         print("Private Key", private_key)
         print("Public Key", public_key)
-        
+
         data_to_send = {
-            'name': our_name,
-            'e': public_key[0],
-            'n': public_key[1],
+            "name": our_name,
+            "e": public_key[0],
+            "n": public_key[1],
         }
-        
+
         data_to_send = json.dumps(data_to_send)
         print("Servers data", data_to_send)
-        
+
         # Sending first
         data_to_send = bytes(data_to_send, "utf-32")
         conn.sendall(data_to_send)
-        
+
         # Receiving next
         data_to_recv = conn.recv(1024).decode(encoding="utf-32")
-        
+
         # Parsing received data
         data_to_recv = json.loads(data_to_recv)
         print("Clients data", data_to_recv)
+        client_name = data_to_recv["name"]
+        client_public_key[0] = data_to_recv["e"]
+        client_public_key[1] = data_to_recv["n"]
+
+        print("Client's key Information", client_public_key)
         
-        
-        # # client_name = conn.recv(1024).decode(encoding="utf-32")
-        # # print("Client Identified as: ", client_name, "from ", addr)
-        
-        # # Exchanging Keys
-        # print("DEBUG : ", public_key, private_key, sep='\n')
-        
-        # print("Sending our public key")
-        
-        # conn.sendall(bytes(str(public_key[0]), "utf-32"))
-        # conn.sendall(bytes(str(public_key[1]), "utf-32"))
-        
-        # print("Requesting Public key from Client")
-        
-        # client_public_key[0] = conn.recv(1024).decode(encoding="utf-32")
-        # client_public_key[1] = conn.recv(1024).decode(encoding="utf-32")
-        
-        # print("The Clients public key is: ", client_public_key)
-                                   
-        print("Messages to this chat are now end to end encrypted. No one outside of this chat, Not even Mark Zuckerburg can read or listen to them.\n\n")
+        print(
+            "Messages to this chat are now end to end encrypted. No one outside of this chat, Not even Mark Zuckerburg can read or listen to them.\n\n"
+        )
 
         # BEGIN CONVERSATION
 
