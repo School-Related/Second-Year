@@ -11,7 +11,7 @@ from rsa import rsa_decryption
 import json
 
 HOST = "127.0.0.1"  # The server's hostname or IP address
-PORT = 65436  # The port used by the server
+PORT = 65435  # The port used by the server
 
 # defining constants
 messages_to_send = [
@@ -40,11 +40,12 @@ def encrypt_alg(plain_text):
         # print(ord(i))
         cipher_text = rsa_encryption(ord(i), key=server_public_key)
         cipher_texts.append(cipher_text)
+        print(cipher_text)
 
     cipher_texts = [chr(i) for i in cipher_texts]
     cipher_text = "".join(cipher_texts)
     
-    time.sleep(1)
+    time.sleep(0.01)
     return cipher_text
 
 
@@ -73,7 +74,7 @@ def decrypt_alg(cipher_text):
     plain_texts = [chr(i) for i in plain_texts]
     plain_text = "".join(plain_texts)
     
-    time.sleep(1)
+    time.sleep(0.01)
     return plain_text
 
 
@@ -83,7 +84,7 @@ def decrypt(server_name):
     while texting:
         while len(messages_received) > 0:
             cipher_text = messages_received.pop()
-            time.sleep(1)
+            time.sleep(0.01)
             plain_text = decrypt_alg(cipher_text)
             print(time.ctime(time.time()), ", From ", server_name)
             print(">", plain_text)

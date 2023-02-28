@@ -23,8 +23,8 @@ texting = True
 
 messages_received = []
 
-HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
-PORT = 65436  # Port to listen on (non-privileged ports are > 1023)
+HOST = "192.168.214.24"  # Standard loopback interface address (localhost)
+PORT = 65435  # Port to listen on (non-privileged ports are > 1023)
 
 public_key = [0, 0]
 private_key = [0, 0]
@@ -44,7 +44,7 @@ def encrypt_alg(plain_text):
     cipher_texts = [chr(i) for i in cipher_texts]
     cipher_text = "".join(cipher_texts)
     
-    time.sleep(1)
+    time.sleep(0.01)
     return cipher_text
 
 
@@ -67,13 +67,13 @@ def decrypt_alg(cipher_text):
     
     for i in cipher_text:
         # print(ord(i))
-        plain_text = rsa_decryption(ord(i), key=private_key)
+        plain_text = rsa_decryption(ord(i), private_key)
         plain_texts.append(plain_text)
         
     plain_texts = [chr(i) for i in plain_texts]
     plain_text = "".join(plain_texts)
     
-    time.sleep(1)
+    time.sleep(0.01)
     return plain_text
 
 
@@ -83,7 +83,7 @@ def decrypt(client_name):
     while texting:
         while len(messages_received) > 0:
             cipher_text = messages_received.pop()
-            time.sleep(1)
+            time.sleep(0.01)
             plain_text = decrypt_alg(cipher_text)
             print(time.ctime(time.time()), ", From ", client_name)
             print(">", plain_text)
@@ -117,6 +117,7 @@ def send_data(conn, event):
 
 def server():
     global texting
+    global private_key, public_key, client_public_key
     event = threading.Event()
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:

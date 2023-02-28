@@ -248,6 +248,7 @@ def rsa_decryption(cipher_text, key):
     Decrypts the cipher_text using key.
     """
     d, n = key
+    plain_text = 0
     plain_text = pow(cipher_text, d) % n
     return plain_text
 
