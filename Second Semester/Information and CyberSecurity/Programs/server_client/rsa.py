@@ -220,7 +220,7 @@ def make_keys(prime_no_bits=1024):
                 break
 
     e = random.choice(list_of_ees)
-    public_key = (e, n)
+    public_key = [e, n]
 
     # remainder 1 = a * phi_n + b * e
     g, a, b = extended_eucleadean(phi_n, e)
@@ -228,9 +228,9 @@ def make_keys(prime_no_bits=1024):
     if b < 0:
         b = b + phi_n
     d = b
-    private_key = (d, n)
+    private_key = [d, n]
 
-    return (private_key, public_key)
+    return [private_key, public_key]
 
 
 def rsa_encryption(plain_text, key):
