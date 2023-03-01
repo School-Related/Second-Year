@@ -53,7 +53,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{OOPJC Mini Project Report}}}
+\fancyhead[L]{\textit{\Large{Database Management Systems Assignment 2}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -93,7 +93,8 @@
 
 
 	\huge{\textsc{
-			Drawing of the Entity Relationship Diagram
+			Learning SQL DCL and DDL Commands\\
+			\textit{Data Definition Language and Data Control Language}
 		}} \\
 
 
@@ -107,7 +108,7 @@
 	%--------------------------SUBTITLE --------------------------	
 
 	\LARGE\textsc{
-		Assignment No. 1
+		Assignment No. 2
 	} % Subtitle or further description
 	\vfill
 
@@ -136,27 +137,38 @@
 \setcounter{page}{1}
 
 \section{Aim}
+Design and Develop SQL DDL statements for different system.
 
 \section{Objectives}
+To study DDL, DCL commands.
 
 \section{Problem Statement}
-Requirements of the Company
-The Company is organized into: 
-\begin{enumerate}
-    \item DEPARTMENTs. Each department has a name, number and an employee who manages the department. We keep track of the start date of the department manager. 
-    \item Each department controls a number of PROJECTS. Each project has a name, Number, and is located at a single location. 
-    \item We store each EMPLOYEEs social security number, address, salary, sex and birthdate. Each employee works for one department but may work on several projects. We keep track of the number of hours per week that an employee currently works on each project. We also keep track of the direct supervisor of each employee. 
-    \item Each employee may have a number of DEPENDENTS. For each dependent we keep track of their name, sex, birthdate, and relationship to the employee.
-\end{enumerate}
 
 \section{Theory}
+\subsection{SQL Data Definition Language (DDL)}
 
-Syntax for stuff. 
+\subsubsection{What is Data Definition Language?}
+\begin{quote}
+	\textit{Data Definition Language (DDL) is a computer language used to define the database schema. It includes commands to create, modify and drop database objects in the database. It is used to define the database structure or schema. It is also used to define the access permissions on the data, or the views that are presented to different users.}
+\end{quote}
+\subsubsection{DDL Commands}
 
-\subsection{DDL Statements}
+The following are the Commands that are used in DDL:
+
 \begin{enumerate}
-	\item CREATE TABLE - Creates a new database table. 
-	\begin{verbatim}
+	\item CREATE - Creates a new database or a new table in a database.
+	\item ALTER - Modifies a database or a table.
+	\item DROP - Deletes a database or a table.
+	\item TRUNCATE - Deletes all the records from a table, including all spaces allocated for the records are removed.
+	\item COMMENT - Adds comments to the data dictionary.
+	\item RENAME - Renames an object.
+\end{enumerate}
+
+\subsubsection{DDL Command Syntax and Examples}
+
+\begin{enumerate}
+	\item CREATE TABLE - Creates a new database table.
+	      \begin{verbatim}
 		CREATE TABLE table_name constraints
 		(
 			Column_name datatype(size) constraints default '',
@@ -164,52 +176,91 @@ Syntax for stuff.
 			constraint(column_name)
 		);
 	\end{verbatim}
-	\item ALTER TABLE - Changes in columns and stuff. 
-		\begin{verbatim}
-			ALTER TABLE table_name
-			(
-				
-			)
-		\end{verbatim}
-	\item DROP TABLE - delete the table
-	\item TRUNCATE - clear the table. 
-	\item 
+	\item ALTER TABLE - Changes in columns and stuff.
+	      \begin{verbatim}
+		ALTER TABLE table_name
+		ADD column_name datatype;
+	\end{verbatim}
+	\item DROP TABLE - Deletes a table from the database.
+	      \begin{verbatim}
+		DROP TABLE table_name;
+	\end{verbatim}
+	\item RENAME TABLE - Renames a table.
+	      \begin{verbatim}
+		RENAME TABLE old_name TO new_name;
+	\end{verbatim}
+	\item TRUNCATE TABLE - Deletes all the records from a table.
+	      \begin{verbatim}
+		TRUNCATE TABLE table_name;
+	\end{verbatim}
+	\item COMMENT ON - Adds comments to the data dictionary.
+	      \begin{verbatim}
+		COMMENT ON TABLE table_name IS 'comment';
+	\end{verbatim}
 \end{enumerate}
 
-\subsection{DCL Commands}
+\subsection{SQL Data Control Language (DCL)}
+
+\subsubsection{What is Data Control Language?}
+\begin{quote}
+	\textit{Data Control Language (DCL) is a computer language used to define the access permissions on the data, or the views that are presented to different users. It includes commands to grant and deny privileges on database objects to users.}
+\end{quote}
+\subsubsection{DCL Commands}
+
+The following are the Commands that are used in DCL:
+
 \begin{enumerate}
-	\item GRANT - allow specified users to perform specified tasks. 
-	\item REVOKE - cancel previously granted permissions. 
+	\item GRANT - Gives the specified privileges to the specified user.
+	\item REVOKE - Takes back the specified privileges from the specified user.
 \end{enumerate}
 
-\subsection{Constraints}
+\subsection{DCL Command Syntax and Examples}
+
 \begin{enumerate}
-	\item 
+	\item GRANT - Gives the specified privileges to the specified user.
+	      \begin{verbatim}
+		GRANT privileges ON object_name TO user_name;
+	\end{verbatim}
+	\item REVOKE - Takes back the specified privileges from the specified user.
+	      \begin{verbatim}
+		REVOKE privileges ON object_name FROM user_name;
+	\end{verbatim}
 \end{enumerate}
 
-% \section{Platform}
-% \textbf{Operating System}: Arch Linux x86-64 \\
-% \textbf{IDEs or Text Editors Used}: Visual Studio Code with Jupyter\\
-% \textbf{Interpreter}: python 3.10.8 \\
+
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64 \\
+\textbf{IDEs or Text Editors Used}: Draw.io for Drawing the ER diagram. \\
 
 % \section{Pseudo Code or Algorithm}
 
-% \section{Input}
-% \section{Output}
-
-% \section{Code}
-
-% \subsection{Program}
-% \lstinputlisting[language=C]{../Programs/Assignment_1.py}
-
-% \subsection{Input and Output}
-% \lstinputlisting[]{../Programs/Assignment_1_output.txt}
+\section{Input}
+Given Database from the Problem Statement for the Assignment for our batch. (A1 PA 20)
+\section{Output}
+\lstinputlisting[language=SQL]{../../Programs/Assignment_2.md}
 
 \section{Conclusion}
-
+Thus, we have learned DDL and DCL commands thoroughly.
 \clearpage
 
 \section{FAQ}
+\begin{enumerate}
+	\item \textit{How to drop a column from a table?}
+	      \begin{verbatim}
+		ALTER TABLE table_name
+		DROP COLUMN column_name;
+	\end{verbatim}
+
+	\item \textit{How to add a primary key in an already existing table?}
+	      \begin{verbatim}
+		ALTER TABLE table_name
+		ADD PRIMARY KEY (column_name);
+	\end{verbatim}
+	\item \textit{How to create a new user in MySQL?}
+	      \begin{verbatim}
+		CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+	\end{verbatim}
+\end{enumerate}
 
 
 

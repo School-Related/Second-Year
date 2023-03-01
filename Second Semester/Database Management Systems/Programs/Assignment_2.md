@@ -1,84 +1,13 @@
-# Basic commands
-
-CREATE TABLE - creates a new table
-alter table 
-drop table
-truncate table
-select
-
-# DCL Commands
-GRANT - gives permissions to users
-REVOKE - removes permissions from users
-
-
-# DDL Commands
-CREATE DATABASE - creates a new database
-ALTER DATABASE - modifies a database
-DROP DATABASE - deletes a database
-CREATE INDEX - creates an index (search key)
-DROP INDEX - deletes an index
-
-
-# DML Commands
-
-INSERT - inserts new records in a table
-UPDATE - modifies the records in a table
-DELETE - deletes records from a table
-SELECT - extracts data from a database
-
-
-# TCL Commands
-
-COMMIT - saves changes
-ROLLBACK - undoes changes
-SAVEPOINT - sets a savepoint within a transaction
-SET TRANSACTION - defines the transaction properties for the session
-
-
-# Data Types
-
-VARCHAR - stores variable length strings
-CHAR - stores fixed length strings
-INT - stores integers
-FLOAT - stores floating point numbers
-DATE - stores date and time
-BLOB - stores binary large objects
-CLOB - stores character large objects
-
-
-# Commands Entered in this Assignment
-
- krishnaraj@Krishnaraj-Arch  ~   master ±  mariadb -u krishnaraj -p
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 3
-Server version: 10.10.3-MariaDB Arch Linux
+Server version: 10.11.2-MariaDB Arch Linux
 
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 MariaDB [(none)]> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| class              |
-| class_stuff        |
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-| test               |
-| test_libreoffice   |
-+--------------------+
-8 rows in set (0.005 sec)
-
-MariaDB [(none)]> create database dbms_lab;
-Query OK, 1 row affected (0.001 sec)
-
-MariaDB [(none)]> use dbms_lab;
-Database changed
-MariaDB [dbms_lab]> show databases;
 +--------------------+
 | Database           |
 +--------------------+
@@ -92,565 +21,197 @@ MariaDB [dbms_lab]> show databases;
 | test               |
 | test_libreoffice   |
 +--------------------+
-9 rows in set (0.001 sec)
+9 rows in set (0.004 sec)
 
-MariaDB [dbms_lab]> show tables;
-Empty set (0.000 sec)
-
-MariaDB [dbms_lab]> create table books(ISBN varchar(20), Title varchar(100), author_id int, Price float);
-Query OK, 0 rows affected (0.019 sec)
-
-MariaDB [dbms_lab]> show tables;
-+--------------------+
-| Tables_in_dbms_lab |
-+--------------------+
-| books              |
-+--------------------+
-1 row in set (0.001 sec)
-
-MariaDB [dbms_lab]> describe books;
-+-----------+--------------+------+-----+---------+-------+
-| Field     | Type         | Null | Key | Default | Extra |
-+-----------+--------------+------+-----+---------+-------+
-| ISBN      | varchar(20)  | YES  |     | NULL    |       |
-| Title     | varchar(100) | YES  |     | NULL    |       |
-| author_id | int(11)      | YES  |     | NULL    |       |
-| Price     | float        | YES  |     | NULL    |       |
-+-----------+--------------+------+-----+---------+-------+
-4 rows in set (0.002 sec)
-
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null, country varchar(25) not null, home_city varchar(25) not null);
-Query OK, 0 rows affected (0.007 sec)
-
-MariaDB [dbms_lab]> show tables;
-+--------------------+
-| Tables_in_dbms_lab |
-+--------------------+
-| books              |
-| newauthor          |
-+--------------------+
-2 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   |     | NULL    |       |
-| aut_name  | varchar(50) | NO   |     | NULL    |       |
-| country   | varchar(25) | NO   |     | NULL    |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.002 sec)
-
-MariaDB [dbms_lab]> insert into newauthor values(NULL, NULL, NULL, NULL);
-ERROR 1048 (23000): Column 'auth_id' cannot be null
-
-
-MariaDB [dbms_lab]> show tables;
-+--------------------+
-| Tables_in_dbms_lab |
-+--------------------+
-| books              |
-+--------------------+
-1 row in set (0.000 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) unique, aut_name varchar(50) not null , country varchar(25) not null , home_city varchar(25) not null );
-Query OK, 0 rows affected (0.005 sec)
-
-MariaDB [dbms_lab]> show tables;
-+--------------------+
-| Tables_in_dbms_lab |
-+--------------------+
-| books              |
-| newauthor          |
-+--------------------+
-2 rows in set (0.000 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | YES  | UNI | NULL    |       |
-| aut_name  | varchar(50) | NO   |     | NULL    |       |
-| country   | varchar(25) | NO   |     | NULL    |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.003 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null , home_city varchar(25) not null);
-Query OK, 0 rows affected (0.005 sec)
-
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.004 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null , home_city varchar(25) not null, unique(auth_id));
-Query OK, 0 rows affected (0.004 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   |     | NULL    |       |
-| country   | varchar(25) | NO   |     | NULL    |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.003 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null , home_city varchar(25) not null, unique(auth_id, aut_name));
-Query OK, 0 rows affected (0.004 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | NULL    |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.002 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) primary key, aut_name varchar(50) not null , country varchar(25) not null , home_city varchar(25) not null);
-Query OK, 0 rows affected (0.004 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   |     | NULL    |       |
-| country   | varchar(25) | NO   |     | NULL    |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.004 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) primary key, aut_name varchar(50) not null , country varchar(25) not null , home_city varchar(25) not null, primary key(auth_id, aut_name));
-ERROR 1068 (42000): Multiple primary key defined
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null , home_city varchar(25) not null, primary key(auth_id, aut_name));
-Query OK, 0 rows affected (0.005 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | NULL    |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.005 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null check (country in ( , home_city varchar(25) not null, primary key(auth_id, aut_name));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' home_city varchar(25) not null, primary key(auth_id, aut_name))' at line 1
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null check (country in ('USA', 'India', 'Madagascar') , home_city varchar(25) not null, primary key(auth_id, aut_name));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' home_city varchar(25) not null, primary key(auth_id, aut_name))' at line 1
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null check (country in ('USA', 'India', 'Madagascar')) , home_city varchar(25) not null, primary key(auth_id, aut_name));
-Query OK, 0 rows affected (0.004 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | NULL    |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> insert into newauthor values("1234", "Ahmed", "Pakistan", "instanbul");
-ERROR 4025 (23000): CONSTRAINT `newauthor.country` failed for `dbms_lab`.`newauthor`
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.003 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null check (country in ('USA', 'India', 'Madagascar')) default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name))' at line 1
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name));Query OK, 0 rows affected (0.004 sec)
-
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.003 sec)
-
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null check (country in ('USA', 'India', 'Madagascar')) default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check((country='India' AND home_city='Mumbai'));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'default 'India', home_city varchar(25) not null, primary key(auth_id, aut_nam...' at line 1
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check((country='India' AND home_city='Mumbai'));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
-MariaDB [dbms_lab]> create table if not exists newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check((country='India' AND home_city='Mumbai'));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
-MariaDB [dbms_lab]> create table newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check((country='India' AND home_city='Mumbai'));ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
-MariaDB [dbms_lab]> create table newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check(country='India' AND home_city='Mumbai');
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
-MariaDB [dbms_lab]> create table newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check(country='India' AND home_city='Mumbai'));
-Query OK, 0 rows affected (0.012 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | India   |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> create table newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check((country='India' AND home_city='Mumbai') or (country='India' and home_city = 'New Delhi')));
-ERROR 1050 (42S01): Table 'newauthor' already exists
-MariaDB [dbms_lab]> drop table newauthor;
-Query OK, 0 rows affected (0.021 sec)
-
-MariaDB [dbms_lab]> create table newauthor (auth_id varchar(8) not null, aut_name varchar(50) not null , country varchar(25) not null default 'India', home_city varchar(25) not null, primary key(auth_id, aut_name), check((country='India' AND home_city='Mumbai') or (country='India' and home_city = 'New Delhi')));
-Query OK, 0 rows affected (0.005 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | India   |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> create table newbook_master(book_id varchar(15) not null primary key, book_name varchar(50), isbn_no varchar(15) not null, cate_id varchar(8), aut_id varchar(8), pub_id varchar(8), dt_of_pub date, pub_lang varchar(15) , no_page decimal(5, 0) not null, book_price decimal(8, 2), foreign key(aut_id) references new_author(aut_id));
-ERROR 1005 (HY000): Can't create table `dbms_lab`.`newbook_master` (errno: 150 "Foreign key constraint is incorrectly formed")
-MariaDB [dbms_lab]> create table newbook_master(book_id varchar(15) not null primary key, book_name varchar(50), isbn_no varchar(15) not null, cate_id varchar(8), auth_id varchar(8), pub_id varchar(8), dt_of_pub date, pub_lang varchar(15) , no_page decimal(5, 0) not null, book_price decimal(8, 2), foreign key(aut_id) references new_author(auth_id));
-ERROR 1072 (42000): Key column 'aut_id' doesn't exist in table
-MariaDB [dbms_lab]> create table newbook_master(book_id varchar(15) not null primary key, book_name varchar(50), isbn_no varchar(15) not null, cate_id varchar(8), auth_id varchar(8), pub_id varchar(8), dt_of_pub date, pub_lang varchar(15) , no_page decimal(5, 0) not null, book_price decimal(8, 2), foreign key(aut_id) references new_author(auth_id));
-ERROR 1072 (42000): Key column 'aut_id' doesn't exist in table
-MariaDB [dbms_lab]> show tables;
-+--------------------+
-| Tables_in_dbms_lab |
-+--------------------+
-| books              |
-| newauthor          |
-+--------------------+
-2 rows in set (0.000 sec)
-
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | India   |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> create table newbook_master(book_id varchar(15) not null primary key, book_name varchar(50), isbn_no varchar(15) not null, cate_id varchar(8), auth_id varchar(8), pub_id varchar(8), dt_of_pub date, pub_lang varchar(15) , no_page decimal(5, 0) not null, book_price decimal(8, 2), foreign key(auth_id) references new_author(auth_id));
-ERROR 1005 (HY000): Can't create table `dbms_lab`.`newbook_master` (errno: 150 "Foreign key constraint is incorrectly formed")
-MariaDB [dbms_lab]> create table newbook_master(book_id varchar(15) primary key, book_name varchar(50), isbn_no varchar(15) not null, cate_id varchar(8), auth_id varchar(8) primary key, pub_id varchar(8), dt_of_pub date, pub_lang varchar(15) , no_page decimal(5, 0) not null, book_price decimal(8, 2), foreign key(auth_id) references new_author(auth_id));
-ERROR 1068 (42000): Multiple primary key defined
-MariaDB [dbms_lab]> create table newbook_master(book_id varchar(15) primary key, book_name varchar(50), isbn_no varchar(15) not null, cate_id varchar(8), auth_id varchar(8) not null, pub_id varchar(8), dt_of_pub date, pub_lang varchar(15) , no_page decimal(5, 0) not null, book_price decimal(8, 2), foreign key(auth_id) references new_author(auth_id));
-ERROR 1005 (HY000): Can't create table `dbms_lab`.`newbook_master` (errno: 150 "Foreign key constraint is incorrectly formed")
-MariaDB [dbms_lab]> describe newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | India   |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> create table newbook_master(book_id varchar(15) primary key, book_name varchar(50), isbn_no varchar(15) not null, cate_id varchar(8), auth_id varchar(8), pub_id varchar(8), dt_of_pub date, pub_lang varchar(15) , no_page decimal(5, 0) not null, book_price decimal(8, 2), foreign key(auth_id) references newauthor(auth_id));
-Query OK, 0 rows affected (0.005 sec)
-
-MariaDB [dbms_lab]> describe newbook_master;
-+------------+--------------+------+-----+---------+-------+
-| Field      | Type         | Null | Key | Default | Extra |
-+------------+--------------+------+-----+---------+-------+
-| book_id    | varchar(15)  | NO   | PRI | NULL    |       |
-| book_name  | varchar(50)  | YES  |     | NULL    |       |
-| isbn_no    | varchar(15)  | NO   |     | NULL    |       |
-| cate_id    | varchar(8)   | YES  |     | NULL    |       |
-| auth_id    | varchar(8)   | YES  | MUL | NULL    |       |
-| pub_id     | varchar(8)   | YES  |     | NULL    |       |
-| dt_of_pub  | date         | YES  |     | NULL    |       |
-| pub_lang   | varchar(15)  | YES  |     | NULL    |       |
-| no_page    | decimal(5,0) | NO   |     | NULL    |       |
-| book_price | decimal(8,2) | YES  |     | NULL    |       |
-+------------+--------------+------+-----+---------+-------+
-10 rows in set (0.002 sec)
-
-
-MariaDB [dbms_lab]>
-MariaDB [dbms_lab]> alter table newauthor add no_of_books varchar(50);
-Query OK, 0 rows affected (0.011 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
-MariaDB [dbms_lab]> alter table newauthor drop no_of_books;
-Query OK, 0 rows affected (0.006 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
-MariaDB [dbms_lab]> alter table newauthor add no_of_books varchar(50);
-Query OK, 0 rows affected (0.007 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
-MariaDB [dbms_lab]> desc newauthor;
-+-------------+-------------+------+-----+---------+-------+
-| Field       | Type        | Null | Key | Default | Extra |
-+-------------+-------------+------+-----+---------+-------+
-| auth_id     | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name    | varchar(50) | NO   | PRI | NULL    |       |
-| country     | varchar(25) | NO   |     | India   |       |
-| home_city   | varchar(25) | NO   |     | NULL    |       |
-| no_of_books | varchar(50) | YES  |     | NULL    |       |
-+-------------+-------------+------+-----+---------+-------+
-5 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> alter table newauthor drop no_of_books;
-Query OK, 0 rows affected (0.006 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
-MariaDB [dbms_lab]> desc newauthor;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| auth_id   | varchar(8)  | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50) | NO   | PRI | NULL    |       |
-| country   | varchar(25) | NO   |     | India   |       |
-| home_city | varchar(25) | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> alter table newauthor modify home_city varchar(100) not null;
-Query OK, 0 rows affected (0.006 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
-MariaDB [dbms_lab]> desc newauthor;
-+-----------+--------------+------+-----+---------+-------+
-| Field     | Type         | Null | Key | Default | Extra |
-+-----------+--------------+------+-----+---------+-------+
-| auth_id   | varchar(8)   | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50)  | NO   | PRI | NULL    |       |
-| country   | varchar(25)  | NO   |     | India   |       |
-| home_city | varchar(100) | NO   |     | NULL    |       |
-+-----------+--------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> alter table newauthor add constraint country not null;
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'not null' at line 1
-MariaDB [dbms_lab]> alter table newauthor add constraint country unique(country);
-Query OK, 0 rows affected (0.011 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
-MariaDB [dbms_lab]> desc newauthor;
-+-----------+--------------+------+-----+---------+-------+
-| Field     | Type         | Null | Key | Default | Extra |
-+-----------+--------------+------+-----+---------+-------+
-| auth_id   | varchar(8)   | NO   | PRI | NULL    |       |
-| aut_name  | varchar(50)  | NO   | PRI | NULL    |       |
-| country   | varchar(25)  | NO   | UNI | India   |       |
-| home_city | varchar(100) | NO   |     | NULL    |       |
-+-----------+--------------+------+-----+---------+-------+
-4 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from newauthor;
-Empty set (0.007 sec)
-
-MariaDB [dbms_lab]> describe
-Display all 747 possibilities? (y or n)
-MariaDB [dbms_lab]> describe newbook_master;
-+------------+--------------+------+-----+---------+-------+
-| Field      | Type         | Null | Key | Default | Extra |
-+------------+--------------+------+-----+---------+-------+
-| book_id    | varchar(15)  | NO   | PRI | NULL    |       |
-| book_name  | varchar(50)  | YES  |     | NULL    |       |
-| isbn_no    | varchar(15)  | NO   |     | NULL    |       |
-| cate_id    | varchar(8)   | YES  |     | NULL    |       |
-| auth_id    | varchar(8)   | YES  | MUL | NULL    |       |
-| pub_id     | varchar(8)   | YES  |     | NULL    |       |
-| dt_of_pub  | date         | YES  |     | NULL    |       |
-| pub_lang   | varchar(15)  | YES  |     | NULL    |       |
-| no_page    | decimal(5,0) | NO   |     | NULL    |       |
-| book_price | decimal(8,2) | YES  |     | NULL    |       |
-+------------+--------------+------+-----+---------+-------+
-10 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> alter table newbook_master rename to new_book_master;
-Query OK, 0 rows affected (0.005 sec)
-
-MariaDB [dbms_lab]> show tables;
-+--------------------+
-| Tables_in_dbms_lab |
-+--------------------+
-| books              |
-| new_book_master    |
-| newauthor          |
-+--------------------+
-3 rows in set (0.000 sec)
-
-MariaDB [dbms_lab]> alter table new_book_master change pub_id publi_id varchar(50);
-Query OK, 0 rows affected (0.007 sec)
-Records: 0  Duplicates: 0  Warnings: 0
-
-MariaDB [dbms_lab]> desc new_book_master;
-+------------+--------------+------+-----+---------+-------+
-| Field      | Type         | Null | Key | Default | Extra |
-+------------+--------------+------+-----+---------+-------+
-| book_id    | varchar(15)  | NO   | PRI | NULL    |       |
-| book_name  | varchar(50)  | YES  |     | NULL    |       |
-| isbn_no    | varchar(15)  | NO   |     | NULL    |       |
-| cate_id    | varchar(8)   | YES  |     | NULL    |       |
-| auth_id    | varchar(8)   | YES  | MUL | NULL    |       |
-| publi_id   | varchar(50)  | YES  |     | NULL    |       |
-| dt_of_pub  | date         | YES  |     | NULL    |       |
-| pub_lang   | varchar(15)  | YES  |     | NULL    |       |
-| no_page    | decimal(5,0) | NO   |     | NULL    |       |
-| book_price | decimal(8,2) | YES  |     | NULL    |       |
-+------------+--------------+------+-----+---------+-------+
-10 rows in set (0.001 sec)
-
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 4
-Server version: 10.10.3-MariaDB Arch Linux
-
-Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-MariaDB [(none)]> use dbms_lab;
+MariaDB [(none)]> use dbms_lab
 Reading table information for completion of table and column names
 You can turn off this feature to get a quicker startup with -A
 
 Database changed
-MariaDB [dbms_lab]> alter table course change course_id course_id varchar(50);
-Query OK, 0 rows affected (0.013 sec)
+MariaDB [dbms_lab]> show tables;
++--------------------+
+| Tables_in_dbms_lab |
++--------------------+
+| books              |
+| course             |
+| new_book_master    |
+| newauthor          |
+| newbook_master     |
++--------------------+
+5 rows in set (0.001 sec)
+
+MariaDB [dbms_lab]> create table Hotel (HotelNo int Primary Key, Name varchar(50), City varchar(50));
+Query OK, 0 rows affected (0.020 sec)
+
+MariaDB [dbms_lab]> describe Hotel;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| HotelNo | int(11)     | NO   | PRI | NULL    |       |
+| Name    | varchar(50) | YES  |     | NULL    |       |
+| City    | varchar(50) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
+
+MariaDB [dbms_lab]> create table Room (RoomNo int Primary Key, HotelNo int, Type varchar(50), Price int, foreign key(HotelNo) references Hotel(HotelNo));
+Query OK, 0 rows affected (0.014 sec)
+
+MariaDB [dbms_lab]> describe Room;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| RoomNo  | int(11)     | NO   | PRI | NULL    |       |
+| HotelNo | int(11)     | YES  | MUL | NULL    |       |
+| Type    | varchar(50) | YES  |     | NULL    |       |
+| Price   | int(11)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.002 sec)
+
+MariaDB [dbms_lab]> create table Booking (HotelNo int, GuestNo int, DateFrom date, DateTo date, RoomNo int, foreign key(HotelNo) references Hotel(HotelNo), foreign key(RoomNo) references Room(RoomNo));
+Query OK, 0 rows affected (0.011 sec)
+
+MariaDB [dbms_lab]> describe Booking;
++----------+---------+------+-----+---------+-------+
+| Field    | Type    | Null | Key | Default | Extra |
++----------+---------+------+-----+---------+-------+
+| HotelNo  | int(11) | YES  | MUL | NULL    |       |
+| GuestNo  | int(11) | YES  |     | NULL    |       |
+| DateFrom | date    | YES  |     | NULL    |       |
+| DateTo   | date    | YES  |     | NULL    |       |
+| RoomNo   | int(11) | YES  | MUL | NULL    |       |
++----------+---------+------+-----+---------+-------+
+5 rows in set (0.002 sec)
+
+MariaDB [dbms_lab]> create table Guest(GuestNo int primary key, GuestName varchar(50), GuessAddress varchar(50));
+Query OK, 0 rows affected (0.007 sec)
+
+MariaDB [dbms_lab]> alter table Booking add constraint foreign key(GuestNo) references Guest(GuestNo);
+Query OK, 0 rows affected (0.022 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
-MariaDB [dbms_lab]> insert into course values('CS-437', 'Database Systems', 'Comp.Sci', 4);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> describe Booking;
++----------+---------+------+-----+---------+-------+
+| Field    | Type    | Null | Key | Default | Extra |
++----------+---------+------+-----+---------+-------+
+| HotelNo  | int(11) | YES  | MUL | NULL    |       |
+| GuestNo  | int(11) | YES  | MUL | NULL    |       |
+| DateFrom | date    | YES  |     | NULL    |       |
+| DateTo   | date    | YES  |     | NULL    |       |
+| RoomNo   | int(11) | YES  | MUL | NULL    |       |
++----------+---------+------+-----+---------+-------+
+5 rows in set (0.004 sec)
 
-MariaDB [dbms_lab]> insert into course values('CS-437', 'Python', 'Comp.Sci', 1);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> describe Guest;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| GuestNo      | int(11)     | NO   | PRI | NULL    |       |
+| GuestName    | varchar(50) | YES  |     | NULL    |       |
+| GuessAddress | varchar(50) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.001 sec)
 
-MariaDB [dbms_lab]> select * from course;
-+-----------+------------------+-----------+---------+
-| course_id | title            | dept_name | credits |
-+-----------+------------------+-----------+---------+
-| CS-437    | Database Systems | Comp.Sci  |       4 |
-| CS-437    | Python           | Comp.Sci  |       1 |
-+-----------+------------------+-----------+---------+
-2 rows in set (0.001 sec)
+MariaDB [dbms_lab]> describe Room;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| RoomNo  | int(11)     | NO   | PRI | NULL    |       |
+| HotelNo | int(11)     | YES  | MUL | NULL    |       |
+| Type    | varchar(50) | YES  |     | NULL    |       |
+| Price   | int(11)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.002 sec)
 
-MariaDB [dbms_lab]> update course set course_id = 'CS-451' where title ='Python';
-Query OK, 1 row affected (0.003 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
+MariaDB [dbms_lab]> describe Hotel;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| HotelNo | int(11)     | NO   | PRI | NULL    |       |
+| Name    | varchar(50) | YES  |     | NULL    |       |
+| City    | varchar(50) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
 
-MariaDB [dbms_lab]> select * from course;
-+-----------+------------------+-----------+---------+
-| course_id | title            | dept_name | credits |
-+-----------+------------------+-----------+---------+
-| CS-437    | Database Systems | Comp.Sci  |       4 |
-| CS-451    | Python           | Comp.Sci  |       1 |
-+-----------+------------------+-----------+---------+
-2 rows in set (0.000 sec)
+ariaDB [dbms_lab]> create table emp(eno int primary key, ename varchar(50), zip int check(zip in (400110, 400111)), hdate date unique);
+Query OK, 0 rows affected (0.009 sec)
 
-MariaDB [dbms_lab]> insert into course values('CS-433', 'Operating Systems', 'Comp.Sci', 3);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> describe emp;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| eno   | int(11)     | NO   | PRI | NULL    |       |
+| ename | varchar(50) | YES  |     | NULL    |       |
+| zip   | int(11)     | YES  |     | NULL    |       |
+| hdate | date        | YES  | UNI | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+4 rows in set (0.002 sec)
 
-MariaDB [dbms_lab]> insert into course values('CS-333', 'OOPCJ', 'Comp.Sci', 4);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> create table parts(pno int primary key, pname varchar(50), qty_on_hand int not null, price int);
+Query OK, 0 rows affected (0.007 sec)
 
-MariaDB [dbms_lab]> insert into course values('CS-331', 'CBS', 'Math', 1);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> describe parts;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| pno         | int(11)     | NO   | PRI | NULL    |       |
+| pname       | varchar(50) | YES  |     | NULL    |       |
+| qty_on_hand | int(11)     | NO   |     | NULL    |       |
+| price       | int(11)     | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+4 rows in set (0.002 sec)
 
-MariaDB [dbms_lab]> insert into course values('MA-123', 'DMGT', 'Math', 1);
-Query OK, 1 row affected (0.002 sec)
+MariaDB [dbms_lab]> create table customer(cno primary key, cname varchar(50), street varchar(50), Zip int not null, phone int not null unique);
+ERROR 4161 (HY000): Unknown data type: 'primary'
+MariaDB [dbms_lab]> create table customer(cno int primary key, cname varchar(50), street varchar(50), Zip int not null, phone int not null unique);
+Query OK, 0 rows affected (0.009 sec)
 
-MariaDB [dbms_lab]> update course set course_id = 'MA-451' where title='CBS';
-Query OK, 1 row affected (0.001 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
+MariaDB [dbms_lab]> describe customer;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| cno    | int(11)     | NO   | PRI | NULL    |       |
+| cname  | varchar(50) | YES  |     | NULL    |       |
+| street | varchar(50) | YES  |     | NULL    |       |
+| Zip    | int(11)     | NO   |     | NULL    |       |
+| phone  | int(11)     | NO   | UNI | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+5 rows in set (0.002 sec)
 
-MariaDB [dbms_lab]> insert into course values('MA-554', 'Integral Calculus', 'Math', 2);
-Query OK, 1 row affected (0.007 sec)
+MariaDB [dbms_lab]> create table Orders(ono int primary key, cno int, receivedDate date, shippedDate date, foreign key(cno) references customer(cno));
+Query OK, 0 rows affected (0.010 sec)
 
-MariaDB [dbms_lab]> insert into course values('MA-124', 'Linear Algebra and Differential Calc', 'Math', 3);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> describe Orders;
++--------------+---------+------+-----+---------+-------+
+| Field        | Type    | Null | Key | Default | Extra |
++--------------+---------+------+-----+---------+-------+
+| ono          | int(11) | NO   | PRI | NULL    |       |
+| cno          | int(11) | YES  | MUL | NULL    |       |
+| receivedDate | date    | YES  |     | NULL    |       |
+| shippedDate  | date    | YES  |     | NULL    |       |
++--------------+---------+------+-----+---------+-------+
+4 rows in set (0.002 sec)
 
-MariaDB [dbms_lab]> insert into course values('CS-113', 'Computer Networks', 'Comp.Sci', 3);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> create table odetails(ono int, pno int, qty int, foreign key(ono) references Orders(ono));
+Query OK, 0 rows affected (0.009 sec)
 
-MariaDB [dbms_lab]> insert into course values('CS-945', 'Information and Cybsersecurity', 'Comp.Sci', 3);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> describe odetails;
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| ono   | int(11) | YES  | MUL | NULL    |       |
+| pno   | int(11) | YES  |     | NULL    |       |
+| qty   | int(11) | YES  |     | NULL    |       |
++-------+---------+------+-----+---------+-------+
+3 rows in set (0.002 sec)
 
-MariaDB [dbms_lab]> insert into course values('CS-911', 'Digital Elecronics', 'Electronics', 3);
-Query OK, 1 row affected (0.001 sec)
+MariaDB [dbms_lab]> create table zipcode(zip int primary key, city varchar(50) not null check(city in ('Pune', 'Mumbai')));
+Query OK, 0 rows affected (0.008 sec)
 
-MariaDB [dbms_lab]> insert into course values('EE-911', 'BEEE', 'Electronics', 3);
-Query OK, 1 row affected (0.001 sec)
-
-MariaDB [dbms_lab]> update course set course_id = 'EE-451' where title='Digital Electronics';
-Query OK, 0 rows affected (0.000 sec)
-Rows matched: 0  Changed: 0  Warnings: 0
-
-MariaDB [dbms_lab]> select * from course;
-+-----------+--------------------------------------+-------------+---------+
-| course_id | title                                | dept_name   | credits |
-+-----------+--------------------------------------+-------------+---------+
-| CS-437    | Database Systems                     | Comp.Sci    |       4 |
-| CS-451    | Python                               | Comp.Sci    |       1 |
-| CS-433    | Operating Systems                    | Comp.Sci    |       3 |
-| CS-333    | OOPCJ                                | Comp.Sci    |       4 |
-| MA-451    | CBS                                  | Math        |       1 |
-| MA-123    | DMGT                                 | Math        |       1 |
-| MA-554    | Integral Calculus                    | Math        |       2 |
-| MA-124    | Linear Algebra and Differential Calc | Math        |       3 |
-| CS-113    | Computer Networks                    | Comp.Sci    |       3 |
-| CS-945    | Information and Cybsersecurity       | Comp.Sci    |       3 |
-| CS-911    | Digital Elecronics                   | Electronics |       3 |
-| EE-911    | BEEE                                 | Electronics |       3 |
-+-----------+--------------------------------------+-------------+---------+
-12 rows in set (0.000 sec)
-
-MariaDB [dbms_lab]> update course set course_id = 'EE-451' where title='Digital Elecronics';
-Query OK, 1 row affected (0.001 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-MariaDB [dbms_lab]> update course set title='Digital Electronics' where title='Digital Elecronics';
-Query OK, 1 row affected (0.001 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-MariaDB [dbms_lab]> select * from course;
-+-----------+--------------------------------------+-------------+---------+
-| course_id | title                                | dept_name   | credits |
-+-----------+--------------------------------------+-------------+---------+
-| CS-437    | Database Systems                     | Comp.Sci    |       4 |
-| CS-451    | Python                               | Comp.Sci    |       1 |
-| CS-433    | Operating Systems                    | Comp.Sci    |       3 |
-| CS-333    | OOPCJ                                | Comp.Sci    |       4 |
-| MA-451    | CBS                                  | Math        |       1 |
-| MA-123    | DMGT                                 | Math        |       1 |
-| MA-554    | Integral Calculus                    | Math        |       2 |
-| MA-124    | Linear Algebra and Differential Calc | Math        |       3 |
-| CS-113    | Computer Networks                    | Comp.Sci    |       3 |
-| CS-945    | Information and Cybsersecurity       | Comp.Sci    |       3 |
-| EE-451    | Digital Electronics                  | Electronics |       3 |
-| EE-911    | BEEE                                 | Electronics |       3 |
-+-----------+--------------------------------------+-------------+---------+
-12 rows in set (0.000 sec)
-
-MariaDB [dbms_lab]>
-
-
+MariaDB [dbms_lab]> describe zipcode;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| zip   | int(11)     | NO   | PRI | NULL    |       |
+| city  | varchar(50) | NO   |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.002 sec)

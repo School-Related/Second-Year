@@ -1,7 +1,7 @@
-PWD /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab
+PWD /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1.tex
+INPUT /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1/Assignment_1.tex
 OUTPUT Assignment_1.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -798,6 +798,23 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
+INPUT ./ERDiagramsInDBMS_2.png
+INPUT ./ERDiagramsInDBMS_2.png
+INPUT ERDiagramsInDBMS_2.png
+INPUT ./ERDiagramsInDBMS_2.png
+INPUT ./ERDiagramsInDBMS_2.png
+INPUT ./table.png
+INPUT ./table.png
+INPUT table.png
+INPUT ./table.png
+INPUT ./table.png
+INPUT ./Assignment 1 ER Diagram.drawio.png
+INPUT ./Assignment 1 ER Diagram.drawio.png
+INPUT ./Assignment 1 ER Diagram.drawio.png
+INPUT ./Assignment 1 ER Diagram.drawio.png
+INPUT ./Assignment 1 ER Diagram.drawio.png
 INPUT Assignment_1.aux
 INPUT ./Assignment_1.out
 INPUT ./Assignment_1.out

@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1674147907 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1.tex" "Assignment_1.pdf" "Assignment_1" 1674147908
-  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1.tex" 1674147906 5507 4c5aa040dd70b3d8b9cf9023a6b525e6 ""
+["pdflatex"] 1677698980 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1/Assignment_1.tex" "Assignment_1.pdf" "Assignment_1" 1677698981
+  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment_1/Assignment_1.tex" 1677698979 11125 d3fd7b7afaa966227f5db9f100e6f3d7 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm" 1650183167 3220 7b5d1a9569a08754f1bdfbc1c7ad8dbd ""
@@ -105,12 +105,15 @@
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1650183167 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1650183167 56029 3f7889dab51d620aa43177c391b7b190 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1668975588 4278762 af3ac1370db81a450c1118eabf1fe718 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668975555 2927666 a3c8876ffc725e66a0174c418ee8cb0b ""
-  "Assignment_1.aux" 1674147908 1658 ce7207f852ed80fa5639b80afbb7a1b7 "pdflatex"
-  "Assignment_1.out" 1674147908 813 1a84f027a7d434eada46200bf37be819 "pdflatex"
-  "Assignment_1.tex" 1674147906 5507 4c5aa040dd70b3d8b9cf9023a6b525e6 ""
-  "Assignment_1.toc" 1674147908 603 e7ac5282a51d4708d53ae94bd11f67d1 "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1677424328 4278762 af3ac1370db81a450c1118eabf1fe718 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1677424290 2927663 a6a5366faa35c8d8187ac0abaa255d97 ""
+  "Assignment 1 ER Diagram.drawio.png" 1675361330 128868 6e3e444f68e883205110f5f362a410e8 ""
+  "Assignment_1.aux" 1677698981 3740 6397598d649fc4abc1b614cb8629169f "pdflatex"
+  "Assignment_1.out" 1677698981 2917 31bb1bc0a00bde5f4d44569371716d95 "pdflatex"
+  "Assignment_1.tex" 1677698979 11125 d3fd7b7afaa966227f5db9f100e6f3d7 ""
+  "Assignment_1.toc" 1677698981 1728 7a2070cb359b4b8b9c28d35e8b9a2694 "pdflatex"
+  "ERDiagramsInDBMS_2.png" 1677688340 23393 34f39b4b1daee7dc7636920711085055 ""
+  "table.png" 1677687208 38457 795978daf82f64397f01933ef4a0930e ""
   (generated)
   "Assignment_1.aux"
   "Assignment_1.log"
