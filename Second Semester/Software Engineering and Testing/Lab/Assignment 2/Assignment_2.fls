@@ -801,21 +801,21 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
-INPUT ./dfd level 0.png
-INPUT ./dfd level 0.png
-INPUT dfd level 0.png
-INPUT ./dfd level 0.png
-INPUT ./dfd level 0.png
-INPUT ./dfd level 1.png
-INPUT ./dfd level 1.png
-INPUT dfd level 1.png
-INPUT ./dfd level 1.png
-INPUT ./dfd level 1.png
-INPUT ./dfd level 2.png
-INPUT ./dfd level 2.png
-INPUT dfd level 2.png
-INPUT ./dfd level 2.png
-INPUT ./dfd level 2.png
+INPUT ./Data Flow Diagram-Page-1.drawio.png
+INPUT ./Data Flow Diagram-Page-1.drawio.png
+INPUT Data Flow Diagram-Page-1.drawio.png
+INPUT ./Data Flow Diagram-Page-1.drawio.png
+INPUT ./Data Flow Diagram-Page-1.drawio.png
+INPUT ./Data Flow Diagram-Page-2.drawio.png
+INPUT ./Data Flow Diagram-Page-2.drawio.png
+INPUT Data Flow Diagram-Page-2.drawio.png
+INPUT ./Data Flow Diagram-Page-2.drawio.png
+INPUT ./Data Flow Diagram-Page-2.drawio.png
+INPUT ./Data Flow Diagram-Page-3.drawio.png
+INPUT ./Data Flow Diagram-Page-3.drawio.png
+INPUT Data Flow Diagram-Page-3.drawio.png
+INPUT ./Data Flow Diagram-Page-3.drawio.png
+INPUT ./Data Flow Diagram-Page-3.drawio.png
 INPUT Assignment_2.aux
 INPUT ./Assignment_2.out
 INPUT ./Assignment_2.out

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.21)  24 FEB 2023 09:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  2 MAR 2023 22:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -702,11 +702,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
  []
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 160.
+(Font)              scaled to size 11.15991pt on input line 161.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 160.
+(Font)              scaled to size 11.15991pt on input line 161.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 176.
+(Font)              scaled to size 13.39188pt on input line 177.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -718,12 +718,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.176 	\item E
+l.177 	\item E
               ach data store should have at least one data flow in and data ... [1
 
 ]
-Overfull \hbox (30.3071pt too wide) in paragraph at lines 216--224
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 184--187
+
  []
 
 
@@ -734,13 +734,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 283.
-<dfd level 0.png, id=155, 1019.30812pt x 541.27219pt>
-File: dfd level 0.png Graphic file (type png)
-<use dfd level 0.png>
-Package pdftex.def Info: dfd level 0.png  used on input line 285.
-(pdftex.def)             Requested size: 407.71602pt x 216.50504pt.
+Overfull \hbox (30.3071pt too wide) in paragraph at lines 224--232
+[][] 
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -750,23 +746,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [3]
-<dfd level 1.png, id=160, 1047.915pt x 587.94656pt>
-File: dfd level 1.png Graphic file (type png)
-<use dfd level 1.png>
-Package pdftex.def Info: dfd level 1.png  used on input line 297.
-(pdftex.def)             Requested size: 471.55739pt x 264.5735pt.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 291.
+<Data Flow Diagram-Page-1.drawio.png, id=164, 713.66624pt x 435.6275pt>
+File: Data Flow Diagram-Page-1.drawio.png Graphic file (type png)
+<use Data Flow Diagram-Page-1.drawio.png>
+Package pdftex.def Info: Data Flow Diagram-Page-1.drawio.png  used on input line 293.
+(pdftex.def)             Requested size: 428.20305pt x 261.37851pt.
+<Data Flow Diagram-Page-2.drawio.png, id=166, 1135.24126pt x 756.8275pt>
+File: Data Flow Diagram-Page-2.drawio.png Graphic file (type png)
+<use Data Flow Diagram-Page-2.drawio.png>
+Package pdftex.def Info: Data Flow Diagram-Page-2.drawio.png  used on input line 305.
+(pdftex.def)             Requested size: 510.85385pt x 340.56923pt.
 
-Overfull \hbox (1.80237pt too wide) in paragraph at lines 297--298
+Overfull \hbox (41.09883pt too wide) in paragraph at lines 305--306
  [] 
  []
 
-<dfd level 2.png, id=161, 1081.03876pt x 689.57625pt>
-File: dfd level 2.png Graphic file (type png)
-<use dfd level 2.png>
-Package pdftex.def Info: dfd level 2.png  used on input line 310.
-(pdftex.def)             Requested size: 486.46295pt x 310.30644pt.
 
-Overfull \hbox (16.70793pt too wide) in paragraph at lines 310--311
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4 <./Data Flow Diagram-Page-1.drawio.png>]
+<Data Flow Diagram-Page-3.drawio.png, id=173, 1269.74374pt x 1031.855pt>
+File: Data Flow Diagram-Page-3.drawio.png Graphic file (type png)
+<use Data Flow Diagram-Page-3.drawio.png>
+Package pdftex.def Info: Data Flow Diagram-Page-3.drawio.png  used on input line 318.
+(pdftex.def)             Requested size: 507.8885pt x 412.73468pt.
+
+Overfull \hbox (38.13348pt too wide) in paragraph at lines 318--319
  [] 
  []
 
@@ -777,8 +788,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4 <./dfd level 0.png (PNG copy)> <./dfd level 1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+[5 <./Data Flow Diagram-Page-2.drawio.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6 <./Data Flow Diagram-Page-3.drawio.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
@@ -789,34 +808,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[5 <./dfd level 2.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6] (./Assignment_2.aux)
+[7] (./Assignment_2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Assignment_2.out' has not changed.
-(rerunfilecheck)             Checksum: C5CD8DF780350EA85524081A7459E838;3050.
+(rerunfilecheck)             Checksum: E1FE6322B9C1F83A01B5E68E30FD0E37;3135.
  ) 
 Here is how much of TeX's memory you used:
- 12962 strings out of 478238
- 196112 string characters out of 5850455
- 504900 words of memory out of 5000000
- 30943 multiletter control sequences out of 15000+600000
+ 12965 strings out of 478238
+ 196560 string characters out of 5850456
+ 504893 words of memory out of 5000000
+ 30944 multiletter control sequences out of 15000+600000
  513596 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,14n,69p,559b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,14n,69p,565b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_2.pdf (8 pages, 384233 bytes).
+Output written on Assignment_2.pdf (9 pages, 315863 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

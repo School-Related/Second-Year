@@ -716,12 +716,23 @@ INPUT /usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-OUTPUT Assignment 3.out
+INPUT ./Assignment 3.out
+INPUT Assignment 3.out
+INPUT ./Assignment 3.out
+INPUT Assignment 3.out
+INPUT ./Assignment 3.out
+INPUT Assignment 3.out
+INPUT ./Assignment 3.out
+INPUT Assignment 3.out
 OUTPUT Assignment 3.pdf
+INPUT ./Assignment 3.out
+INPUT ./Assignment 3.out
+OUTPUT Assignment 3.out
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
@@ -731,23 +742,82 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT ./Assignment 3.toc
+INPUT Assignment 3.toc
+INPUT Assignment 3.toc
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
 OUTPUT Assignment 3.toc
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT ./Symbols-of-use-case-diagrams.png
+INPUT ./Symbols-of-use-case-diagrams.png
+INPUT Symbols-of-use-case-diagrams.png
+INPUT ./Symbols-of-use-case-diagrams.png
+INPUT ./Symbols-of-use-case-diagrams.png
+INPUT ./07-relationships-between-classes.png
+INPUT ./07-relationships-between-classes.png
+INPUT 07-relationships-between-classes.png
+INPUT ./07-relationships-between-classes.png
+INPUT ./07-relationships-between-classes.png
+INPUT ./uml-connectors.png
+INPUT ./uml-connectors.png
+INPUT uml-connectors.png
+INPUT ./uml-connectors.png
+INPUT ./uml-connectors.png
 INPUT Assignment 3.aux
 INPUT ./Assignment 3.out
 INPUT ./Assignment 3.out
