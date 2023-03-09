@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}\textbf {Aim:}}{2}{}%
+\contentsline {section}{\numberline {2}\textbf {Objective:}}{2}{}%
+\contentsline {section}{\numberline {3}\textbf {Problem Statement}}{2}{}%
+\contentsline {section}{\numberline {4}\textbf {Theory:}}{2}{}%
+\contentsline {subsection}{\numberline {4.1}\textbf {Data Flow Diagrams}}{2}{}%
+\contentsline {subsection}{\numberline {4.2}\textbf {Symbols Used (Yourdon and Coad)}}{2}{}%
+\contentsline {subsection}{\numberline {4.3}\textbf {Rules of DFD:}}{2}{}%
+\contentsline {subsection}{\numberline {4.4}\textbf {DFD Level 0,1,2}}{3}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}\textbf {Level 0 DFDS:}}{3}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}\textbf {Level 1 DFDS:}}{3}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}\textbf {Level 2+ DFDS:}}{3}{}%
+\contentsline {section}{\numberline {5}\textbf {Difference Between DFD and CFD}}{3}{}%
+\contentsline {section}{\numberline {6}\textbf {Tables Generated}}{3}{}%
+\contentsline {subsection}{\numberline {6.1}\textbf {Customer Details:}}{3}{}%
+\contentsline {subsection}{\numberline {6.2}\textbf {Enginner's Details:}}{3}{}%
+\contentsline {subsection}{\numberline {6.3}\textbf {Vehicle Details:}}{3}{}%
+\contentsline {section}{\numberline {7}\textbf {Data Flow Diagram Level 0:}}{3}{}%
+\contentsline {section}{\numberline {8}\textbf {Data Flow Diagram Level 1:}}{4}{}%
+\contentsline {section}{\numberline {9}\textbf {Data Flow Diagram Level 2:}}{4}{}%
+\contentsline {section}{\numberline {10}\textbf {Conclusion:}}{4}{}%
+\contentsline {section}{\numberline {11}\textbf {FAQs:}}{4}{}%
+\contentsline {subsection}{\numberline {11.1}\textbf {What is meant by context diagram?}}{4}{}%
+\contentsline {subsection}{\numberline {11.2}\textbf {What are different levels of Data flow diagram?}}{4}{}%

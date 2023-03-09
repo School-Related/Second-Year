@@ -2,18 +2,20 @@
 # y0 = int(input("y_0"))
 # h = int(input("h"))
 
+import math
+
 x = [0.0]
 y = [1.0]
 ey = [1.0]
 ex = [0.0]
-h = 0.05
-end_x = 0.1
+h = 0.0002
+end_x = 0.6
 # x_n = int(input("till what value of x"))
 
 
 def f_X(x, y):
     # print(x - pow(y, 2))
-    return pow(x, 2) + y
+    return math.sqrt(x + y)
 
 
 def find_y_n(y, x, h, n):

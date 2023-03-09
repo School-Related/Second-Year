@@ -199,6 +199,16 @@ The tasks we have to do are:
 	\caption{Symbols of a Use Case Diagram}
 \end{figure}
 
+\clearpage
+
+\subsection{Diagram}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.20]{use_case.png}
+	\caption{Use Case Diagram}
+\end{figure}
+
 \subsection{Class Diagram}
 
 \subsubsection{What is a Class Diagram}
@@ -226,7 +236,10 @@ The tasks we have to do are:
 	      \begin{enumerate}
 		      \item \textbf{Association:} Association is a relationship between two classes. It shows that two classes are associated with each other. It is represented as a line with a closed arrowhead. The arrowhead points from the class that has a whole part relationship to the class that has a part-whole relationship.
 		      \item \textbf{Generalization:} Generalization is a relationship between two classes. It shows that one class is a more general class than the other class. It is represented as a line with an open arrowhead. The arrowhead points from the more general class to the more specific class.
-		      \item \textbf{Dependency:} Dependency is a relationship between two classes. It shows that one class
+		      \item \textbf{Dependency:} Dependency is a relationship between two classes. It shows that one class is dependent on another class.
+		      \item \textbf{Composition: } The composition is a special type of aggregation which denotes strong ownership between two classes when one class is a part of another class. For example, if college is composed of classes student. The college could contain many students, while each student belongs to only one college.
+		      \item \textbf{Aggregation: } Aggregation. refers to the formation of a particular class as a result of one class being aggregated or built as a collection. For example, the class “library” is made up of one or more books, among other materials. In aggregation, the contained classes are not strongly dependent on the lifecycle of the container.
+		      \item \textbf{Multiplicity: } Multiplicity can be set for attributes, operations, and associations in a UML class diagram, and for associations in a use case diagram. The multiplicity is an indication of how many objects may participate in the given relationship or the allowable number of instances of the element.
 	      \end{enumerate}
 \end{enumerate}
 
@@ -264,6 +277,13 @@ The tasks we have to do are:
 	\item multiplicity in the class model. Data types not required.
 \end{enumerate}
 
+\subsection{Diagram}
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[scale=0.5]{class_diagram.png}
+% \caption{Class Diagram}
+% \end{figure}
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
@@ -273,9 +293,10 @@ The tasks we have to do are:
 
 \section{Conclusion}
 Thus, we learnt about Use case diagrams, and UML Class diagrams in detail.
+\clearpage
+
 \section{FAQ}
 
-\clearpage
 
 \begin{enumerate}
 	\item \textbf{What kind of relationships do classes have? Explain all relationships with examples.}\\

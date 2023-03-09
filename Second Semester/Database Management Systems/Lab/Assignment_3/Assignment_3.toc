@@ -20,5 +20,11 @@
 \contentsline {section}{\numberline {5}Platform}{4}{section.5}%
 \contentsline {section}{\numberline {6}Input}{4}{section.6}%
 \contentsline {section}{\numberline {7}Output}{4}{section.7}%
-\contentsline {section}{\numberline {8}Conclusion}{6}{section.8}%
-\contentsline {section}{\numberline {9}FAQ}{7}{section.9}%
+\contentsline {section}{\numberline {8}Executed Queries}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Set 1}{7}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Set 2}{10}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Set 3}{12}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Set 4}{14}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Set 5}{17}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Conclusion}{19}{section.9}%
+\contentsline {section}{\numberline {10}FAQ}{20}{section.10}%

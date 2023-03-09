@@ -435,3 +435,4 @@ MariaDB [class_stuff]> select * from dept, course;
 |     50 | Development | NULL     | CS-315    | Robotics    | Comp Sci  |       3 |
 +--------+-------------+----------+-----------+-------------+-----------+---------+
 12 rows in set (0.001 sec)
+

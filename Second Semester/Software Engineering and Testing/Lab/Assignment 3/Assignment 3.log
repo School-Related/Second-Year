@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  3 MAR 2023 02:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  3 MAR 2023 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,7 +726,7 @@ l.178 	\item I
               t helps in identifying the relationships between use cases. [1
 
 ]
-<Symbols-of-use-case-diagrams.png, id=117, 647.41875pt x 647.41875pt>
+<Symbols-of-use-case-diagrams.png, id=127, 647.41875pt x 647.41875pt>
 File: Symbols-of-use-case-diagrams.png Graphic file (type png)
 <use Symbols-of-use-case-diagrams.png>
 Package pdftex.def Info: Symbols-of-use-case-diagrams.png  used on input line 198.
@@ -740,10 +740,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2 <./Symbols-of-use-case-diagrams.png>]
-<07-relationships-between-classes.png, id=133, 341.275pt x 315.1775pt>
+<use_case.png, id=143, 2214.2725pt x 2565.585pt>
+File: use_case.png Graphic file (type png)
+<use use_case.png>
+Package pdftex.def Info: use_case.png  used on input line 208.
+(pdftex.def)             Requested size: 442.84666pt x 513.10793pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3
+
+ <./use_case.png>]
+<07-relationships-between-classes.png, id=152, 341.275pt x 315.1775pt>
 File: 07-relationships-between-classes.png Graphic file (type png)
 <use 07-relationships-between-classes.png>
-Package pdftex.def Info: 07-relationships-between-classes.png  used on input line 235.
+Package pdftex.def Info: 07-relationships-between-classes.png  used on input line 248.
 (pdftex.def)             Requested size: 238.89085pt x 220.62274pt.
 
 
@@ -753,14 +769,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3]
-<uml-connectors.png, id=152, 793.96625pt x 527.9725pt>
+[4]
+<uml-connectors.png, id=173, 793.96625pt x 527.9725pt>
 File: uml-connectors.png Graphic file (type png)
 <use uml-connectors.png>
-Package pdftex.def Info: uml-connectors.png  used on input line 241.
+Package pdftex.def Info: uml-connectors.png  used on input line 254.
 (pdftex.def)             Requested size: 476.38342pt x 316.78593pt.
 
-Overfull \hbox (6.6284pt too wide) in paragraph at lines 241--242
+Overfull \hbox (6.6284pt too wide) in paragraph at lines 254--255
  [][] 
  []
 
@@ -771,8 +787,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4 <./07-relationships-between-classes.png> <./uml-connectors.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 269--272
+[5 <./07-relationships-between-classes.png> <./uml-connectors.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 
  []
 
@@ -783,29 +799,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-
- []
-
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
+
+ []
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[6
+[7
 
 ]
 
@@ -815,23 +831,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[7] (./Assignment 3.aux)
+[8] (./Assignment 3.aux)
 Package rerunfilecheck Info: File `"Assignment 3".out' has not changed.
-(rerunfilecheck)             Checksum: 6879B80EB44C99D2CA137DC66D0A0455;2608.
+(rerunfilecheck)             Checksum: E3E03CB388A4F25CB1776493599D0A35;2794.
  ) 
 Here is how much of TeX's memory you used:
- 12989 strings out of 478238
- 196614 string characters out of 5850456
- 497850 words of memory out of 5000000
- 30937 multiletter control sequences out of 15000+600000
+ 13005 strings out of 478238
+ 196824 string characters out of 5850456
+ 497852 words of memory out of 5000000
+ 30945 multiletter control sequences out of 15000+600000
  514743 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,12n,69p,783b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 3.pdf" (9 pages, 106754 bytes).
+Output written on "Assignment 3.pdf" (10 pages, 335686 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
