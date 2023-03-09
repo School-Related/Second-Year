@@ -77,6 +77,8 @@ first_primes_list = [
 
 # Iterative Function to calculate
 # (a^n)%p in O(logy)
+
+
 def power(a, n, p):
 
     # Initialize result
@@ -255,12 +257,11 @@ def rsa_decryption(cipher_text, key):
 if __name__ == "__main__":
     # making keys first
     private_key, public_key = make_keys(8)
-    
-    
+
     messages = []
     cipher_texts = []
     plain_texts = []
-    
+
     print("Enter the Message to be encrypted: ")
     message = input()
     for i in message:
@@ -272,23 +273,31 @@ if __name__ == "__main__":
     print("public key is: ", public_key)
 
     # this will be done by some one else who has my public key
-    for i in messages: 
+    for i in messages:
         cipher_text = rsa_encryption(i, public_key)
         cipher_texts.append(cipher_text)
-
 
     # print(cipher_texts)
     cipher_text = "".join([chr(i) for i in cipher_texts])
     print(cipher_text)
 
     # once I get cipher_text, I would then decrypt it using my private key.
-    
+
     cipher_texts = [ord(i) for i in cipher_text]
-    for i in cipher_texts: 
+    for i in cipher_texts:
         plain_text = rsa_encryption(i, private_key)
         plain_texts.append(plain_text)
 
     plain_texts = [chr(i) for i in plain_texts]
     plain_text = "".join(plain_texts)
     print(plain_text)
-    
+
+
+
+
+
+
+
+
+
+
