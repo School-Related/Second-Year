@@ -3,19 +3,20 @@
 # h = int(input("h"))
 
 import math
+import matplotlib.pyplot as plt
 
 x = [0.0]
 y = [1.0]
 ey = [1.0]
 ex = [0.0]
-h = 0.0002
-end_x = 0.6
+h = 0.05
+end_x = 100
 # x_n = int(input("till what value of x"))
-
+ 
 
 def f_X(x, y):
     # print(x - pow(y, 2))
-    return math.sqrt(x + y)
+    return x*y + 2 - 2*x - y
 
 
 def find_y_n(y, x, h, n):
@@ -52,3 +53,11 @@ print(y)
 
 print("Values of y from the Modified Euler Method")
 print(ey)
+
+plt.plot(x, y, label="Euler Method")
+plt.plot(ex, ey, label="Modified Euler Method")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.legend()
+plt.show()
+

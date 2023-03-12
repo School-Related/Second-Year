@@ -1,8 +1,3 @@
 {
-    "files.associations": {
-        "*.rmd": "markdown",
-        "ostream": "cpp",
-        "string_view": "cpp",
-        "iostream": "cpp"
-    }
+    "workbench.colorTheme": "Ayu Dark Bordered"
 }

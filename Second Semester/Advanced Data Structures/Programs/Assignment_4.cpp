@@ -25,7 +25,7 @@ public:
 
 class ThreadedBinaryTree
 {
-public:
+    public:
     ThreadedBinaryTreeNode *head;
     ThreadedBinaryTreeNode *root;
     ThreadedBinaryTree()
@@ -63,9 +63,8 @@ public:
      
         cout << "Do you want to enter another node? (1 or 0)" << endl;
         cin >> again;
-        while (again)
+        while (again != 0 || again != false)
         {
-
             while (flag)
             {
                 cout << "Enter 1 for Entering a new node to the Left, and 2 for Entering it to the right" << endl;
@@ -134,9 +133,9 @@ public:
 };
 
 int main(){
-    // ThreadedBinaryTree tree;
-    // tree.create();
-    // tree.inorder_traversal();
-    ThreadedBinaryTreeNode a;
-    
+    ThreadedBinaryTree tree;
+    tree.create();
+    tree.inorder_traversal();
+    // ThreadedBinaryTreeNode a;
+    cout << "done";
 }
