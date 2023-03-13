@@ -9,16 +9,16 @@ class ThreadedBinaryTreeNode
     string data;
     ThreadedBinaryTreeNode *left;
     ThreadedBinaryTreeNode *right;
-    bool isLeftThread;
-    bool isRightThread;
+    bool isLeftNodeAThread;
+    bool isRightNodeAThread;
 
 public:
     ThreadedBinaryTreeNode()
     {
         left = NULL;
         right = NULL;
-        isLeftThread = true;
-        isRightThread = true;
+        isLeftNodeAThread = true;
+        isRightNodeAThread = true;
     }
     friend class ThreadedBinaryTree;
 };
@@ -33,8 +33,8 @@ public:
         head = new ThreadedBinaryTreeNode();
         head->left = head;
         head->right = head;
-        head->isLeftThread = true;
-        head->isRightThread = true;
+        head->isLeftNodeAThread = true;
+        head->isRightNodeAThread = true;
         root = NULL;
     }
 
@@ -54,7 +54,7 @@ public:
         // Assign head lbit to 0;
         head->left = root;
         // Assign head->leftc to root;
-        head->isLeftThread = false;
+        head->isLeftNodeAThread = false;
 
         ThreadedBinaryTreeNode *temp, *curr;
         temp = root;
@@ -75,14 +75,14 @@ public:
             {
                 if (choice == 1)
                 {
-                    if (temp->isLeftThread == true)
+                    if (temp->isLeftNodeAThread == true)
                     {
                         curr = new ThreadedBinaryTreeNode();
                         cout << "Enter the Data: ";
                         cin >> curr->data;
                         curr->right = temp;
                         temp->left = curr;
-                        temp->isLeftThread = false;
+                        temp->isLeftNodeAThread = false;
                         flag = false;
                     }
                     else
@@ -92,7 +92,7 @@ public:
                 }
                 else if (choice == 2)
                 {
-                    if (temp->isRightThread == true)
+                    if (temp->isRightNodeAThread == true)
                     {
                         curr = new ThreadedBinaryTreeNode();
                         cout << "Enter the Data: ";
@@ -100,7 +100,7 @@ public:
                         curr->left = temp;
                         curr->right = temp->right;
                         temp->right = curr;
-                        temp->isRightThread = false;
+                        temp->isRightNodeAThread = false;
                         flag = false;
                     }
                     else
@@ -128,9 +128,9 @@ public:
     ThreadedBinaryTreeNode *inorder_successor(ThreadedBinaryTreeNode *temp)
     {
         ThreadedBinaryTreeNode *x = temp->right;
-        if (temp->isRightThread)
+        if (temp->isRightNodeAThread)
         {
-            while (x->isLeftThread)
+            while (!x->isLeftNodeAThread)
                 x = x->left;
         }
         return x;
@@ -142,12 +142,12 @@ public:
         while (temp != head)
         {
             cout << temp->data;
-            while (temp->isLeftThread)
+            while (temp->isLeftNodeAThread)
             {
                 temp = temp->left;
                 cout << temp->data;
             }
-            while (temp->isRightThread)
+            while (temp->isRightNodeAThread)
             {
                 temp = temp->right;
             }
