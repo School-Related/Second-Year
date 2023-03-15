@@ -53,7 +53,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{Advanced Data Structures - Assignment 3}}}
+\fancyhead[L]{\textit{\Large{Advanced Data Structures - Assignment 4}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -93,7 +93,7 @@
 
 
     \huge{\textsc{
-            Implementation of Dictionary using Binary Search Tree
+            Implementation of Threaded Binary Tree and Its Traversals
         }} \\
 
 
@@ -107,7 +107,7 @@
     %--------------------------SUBTITLE --------------------------	
 
     \LARGE\textsc{
-        Assignment No. 3
+        Assignment No. 4
     } % Subtitle or further description
     \vfill
 
@@ -136,99 +136,59 @@
 
 \section{Objectives}
 \begin{enumerate}
-    \item To study data structure : Binary Search Tree
-    \item To study breadth first traversal.
-    \item To study different operations on Binary search Tree.
+    \item \textbf{To study the data Structure }: Threaded Binary Tree
+    \item To study the advantages of Threaded Binary Tree over Binary Tree
 \end{enumerate}
 
 \section{Problem Statement}
-Implement dictionary using binary search tree where dictionary stores keywords and its meanings.
-Perform following operations:
-\begin{enumerate}
-    \item Insert a keyword
-    \item Delete a keyword
-    \item Create mirror image and display level wise
-    \item Copy the binary Search Tree
-\end{enumerate}
+Implement threaded binary tree and perform inorder traversal.
 
 \section{Theory}
-\subsection{Binary Search Tree}
-\textit{Binary Search Trees are a special type of binary trees where the value of all the nodes in the left sub-tree is less than the value of the root and the value of all the nodes in the right sub-tree is greater than the value of the root.}\\
+\subsection{Threaded Binary Tree}
 
-The left and right sub-trees are also binary search trees. This property of binary search trees makes them useful for searching, as the desired node can be found by repeatedly comparing the input to the value of the root and choosing the appropriate sub-tree, without having to search through the entire tree.
-
-Binary search trees are also useful for sorting, as it is easy to sort the nodes in ascending order by performing an in-order traversal of the tree.
+\subsubsection{What is Threaded Binary Tree?}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.30\textwidth]{figures/1200px-Binary_search_tree.svg.png}
-    \caption{Example of a Binary Search Tree}
-    \label{fig:1200px-Binary_search_tree.svg}
+    \includegraphics[width=1\textwidth]{figures/threaded-binary-tree3.png}
+    \caption{Threaded and a Normal Binary Tree}
 \end{figure}
 
-\subsection{Breadth First Traversal}
-Breadth First Traversal (or Level Order Traversal) is a tree traversal algorithm where we should start traversing the tree from root and traverse the tree level wise i.e. traverse the nodes level by level.
+\textit{A Threaded Binary Tree is a binary tree where every node has an extra bit, and this bit is used to indicate whether the right pointer points to the right child or to the inorder successor of the node. In this way, we can traverse the tree without using the stack and without recursion. A Threaded Binary Tree is a binary tree where every node has an extra bit, and this bit is used to indicate whether the right pointer points to the right child or to the inorder successor of the node. In this way, we can traverse the tree without using the stack and without recursion.}
 
-In level order traversal, we visit the nodes level by level from left to right.
-
-\subsection{Different operations on binary search tree}
-
-\subsubsection{Copy}
-To copy a Binary Search Tree into another Binary Search Tree, we perform a pre-order traversal of the tree. For each node, we create a new node with the same value and then recursively copy the left and right sub-trees of the node.
-
-To copy it Iteratively, we use a queue to store the nodes of the tree. We start by pushing the root node into the queue. We then pop a node from the queue and create a new node with the same value as the popped node. We then push the left and right child of the popped node into the queue and repeat the process until the queue is empty.
-
-\subsubsection{Insert}
-To insert a node in a binary search tree, we start by comparing the value of the node to be inserted with the value of the root node. If the value of the node to be inserted is less than the value of the root node, we move to the left sub-tree and repeat the process. If the value of the node to be inserted is greater than the value of the root node, we move to the right sub-tree and repeat the process.
-
-We repeat this process until we reach a leaf node. The new node is then inserted as the left or right child of the leaf node, depending on the value of the node to be inserted.
-\subsubsection{Mirror Image}
-
-To create a mirror image of a binary search tree, we perform a pre-order traversal of the tree. For each node, we swap the left and right child of the node. We then recursively create the mirror image of the left and right sub-trees of the node.
-
-To create it Iteratively, we use a stack to store the nodes of the tree. We start by pushing the root node into the stack. We then pop a node from the stack and swap the left and right child of the popped node. We then push the left and right child of the popped node into the stack and repeat the process until the stack is empty.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.5]{figures/Binary-Tree-Mirror.png}
-    \caption{Mirror of a Binary Tree}
-    \label{fig:Mirror of a Binary Tree}
-\end{figure}
-
-
-\subsubsection{Delete}
-
-There are 3 Cases for deletion of a node in a binary search tree:
+\subsubsection{Advantages of Threaded Binary Tree}
 
 \begin{enumerate}
-    \item The node to be deleted is a leaf node. In this case, we simply remove the node from the tree.
-    \item The node to be deleted has only one child. In this case, we replace the node to be deleted with its child.
-    \item The node to be deleted has two children. In this case, we find the inorder successor of the node. The inorder successor is the smallest node in the right sub-tree of the node. We replace the value of the node to be deleted with the value of the inorder successor. We then delete the inorder successor. The inorder successor will have at most one child node, so we can use the above two cases to delete it.
-
-          It can also be done using the inorder predecessor. The inorder predecessor is the largest node in the left sub-tree of the node. We replace the value of the node to be deleted with the value of the inorder predecessor. We then delete the inorder predecessor. The inorder predecessor will have at most one child node, so we can use the above two cases to delete it.
+    \item Threaded Binary Tree is used to traverse the tree without using the stack and without recursion.
+    \item Inorder traversal of a binary tree is the most frequently used traversal. Inorder traversal of a threaded binary tree is done without using the stack and without recursion easier than the normal binary tree.
 \end{enumerate}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/Deletion_BST.png}
-    \caption{Deleting a node from a Binary Search Tree}
-    \label{fig:Deleting a node from a Binary Search Tree}
-\end{figure}
+
+\subsection{Space Utilization in Threaded Binary Tree}
+
+\textbf{Space Utilized by a Normal Tree}
+A Normal Binary Tree with N nodes each has data, left and right pointers. So, the space utilized by a normal binary tree is 3N.\
+
+\textbf{Space Utilized by a Threaded Tree}
+
+A Threaded Binary Tree with N nodes each has data, left and right pointers and 2 bits. So, the space utilized by a threaded binary tree is 3N+2N = 5N.\\
+
+But they avoid the usege of a stack during traversal. So, the space utilized by a threaded binary tree is less than the space utilized by a normal binary tree.
 
 \section{Platform}
-\textbf{Operating System}: Arch Linux x86-64 \\
-\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
-\textbf{Compilers} : g++ and gcc on linux for C++\\
+\textbf{\textbf{Operating System}}: Arch Linux x86-64 \\
+\textbf{\textbf{IDEs or Text Editors Used}}: Visual Studio Code\\
+\textbf{\textbf{Compilers} }: g++ and gcc on linux for C++\\
 
 \section{Input}
 \begin{enumerate}
     \item Input at least 10 nodes.
-    \item Display binary search tree levelwise traversals of binary search tree with 10 nodes
-    \item Display mirror image and copy operations on BST
+    \item Display inorder traversal of binary tree with 10 nodes.
 \end{enumerate}
+
 \section{Output}
 \begin{enumerate}
-    \item The traversal of the binary tree in different ways.
+    \item The traversal of the Threaded binary tree in different ways.
 \end{enumerate}
 
 \section{Test Conditions}
@@ -240,245 +200,109 @@ There are 3 Cases for deletion of a node in a binary search tree:
 \section{Pseudo Code}
 \subsection{Create}
 \begin{lstlisting}[language=C++]
-	void create_root()
-        root = new WordNode
-        display - "Enter the data: " << endl
-        Take Input of root->word
-        Take Input of root->definition
-        root->left = NULL
-        root->right = NULL
-        create_recursive(root)
+	//Pseudo Code for Creation of Threaded Binary Tree
 
-    void create_recursive(WordNode *Node)
-        int choice = 0
-        WordNode *new_node
-        display - "Enter if you want to enter a left node (1/0): "
-             << "for the node -- " << Node->word << ":  " << Node->definition << "-- "
-        Take Input of choice
-        if (choice == 1)
-            new_node = new WordNode
-            display - "Enter the data: "
-            Take Input of new_node->word
-            Take Input of new_node->definition
-            Node->left = new_node
-            create_recursive(new_node)
-        display - "Enter if you want to enter a right node (1/0): "
-             << "for the node -- " << Node->word << ":  " << Node->definition << "-- "
-        Take Input of choice
-        if (choice == 1)
-            new_node = new WordNode
-            display - "Enter the data: "
-            Take Input of new_node->word
-            Take Input of new_node->definition
-            Node->right = new_node
-            create_recursive(new_node)
 \end{lstlisting}
-\subsection{Display}
+\subsection{Inorder Traversal}
 \begin{lstlisting}[language=C++]
-    void bfs()
-    {
-        WordNode *temp = root
-        queue<WordNode *> q
-        q.push(temp)
-        while (!q.empty())
-        {
-            temp = q.front()
-            q.pop()
-            display - temp->word << " : " << temp->definition << endl
-            if (temp->left != NULL)
-            {
-                q.push(temp->left)
-            }
-            if (temp->right != NULL)
-            {
-                q.push(temp->right)
-            }
-        }
-    }
-\end{lstlisting}
-\subsection{Delete}
-\begin{lstlisting}[language=C++]
-	void delete_node(WordNode *temp, string word)
-    
-        WordNode *parent = NULL;
-        while (temp != NULL)
-            if (temp->word == word)
-                break;
-            else
-                parent = temp;
-                if (strcmp(word.c_str(), temp->word.c_str()) < 0)
-                    temp = temp->left;
-                else
-                    temp = temp->right;
-        if (temp == NULL)
-            Print - "Word not found" - endl;
-            return;
-        else
-            // no child node.
-            if (temp->left == NULL && temp->right == NULL)
-                if (parent->left == temp)
-                    parent->left = NULL;
-                else
-                    parent->right = NULL;
-                delete temp;
-
-			// 1 Child case right.
-            else if (temp->left == NULL)
-                if (parent->left == temp)
-                    parent->left = temp->right;
-                else
-                    parent->right = temp->right;
-                delete temp;
-
-			// 1 Child case left. 
-            else if (temp->right == NULL)
-                if (parent->left == temp)
-                    parent->left = temp->left;
-                else
-                    parent->right = temp->left;
-                delete temp;
-            else
-                WordNode *temp1 = temp->right;
-                while (temp1->left != NULL)
-                    temp1 = temp1->left;
-                temp->word = temp1->word;
-                temp->definition = temp1->definition;
-                delete_node(temp->right, temp1->word);
     
 \end{lstlisting}
-\subsection{Mirror Image}
+\subsection{PreOrder Traversal}
 \begin{lstlisting}[language=C++]
-    void mirror_recursive(WordNode *temp)
-    {
-        if (temp == NULL)
-        {
-            return
-        }
-        else
-        {
-            WordNode *temp1
-            // Swapping
-            temp1 = temp->left
-            temp->left = temp->right
-            temp->right = temp1
-
-            // Recursively calling the function
-            mirror_recursive(temp->left)
-            mirror_recursive(temp->right)
-        }
-    }
-\end{lstlisting}
-\subsection{Copy}
-\begin{lstlisting}[language=C++]
-    WordNode *create_copy_recursive(WordNode *temp)
-    {
-        if (temp == NULL)
-        {
-            return NULL
-        }
-        else
-        {
-            WordNode *new_node = new WordNode
-            new_node->word = temp->word
-            new_node->definition = temp->definition
-            new_node->left = create_copy_recursive(temp->left)
-            new_node->right = create_copy_recursive(temp->right)
-            return new_node
-        }
-    }
 \end{lstlisting}
 
 \section{Time Complexity}
-\subsection{Create}
+
+\subsection{Creation of Threaded Binary Tree}
 \begin{itemize}
-    \item \textbf{Time Complexity Worst Case}: \[\bigcirc(n^2)\]
-    \item \textbf{Time Complexity Best Case}: \[\bigcirc(\log(n))\]
-          % \item \textbf{Space Complexity}: \[\bigcirc(n^2)\]
+    \item \textbf{Time Complexity:} O(n)
+    \item \textbf{Space Complexity:} O(n)
 \end{itemize}
-\subsection{Display}
+
+\subsection{Inorder Traversal}
+
 \begin{itemize}
-    \item \textbf{Time Complexity}: \[\bigcirc(n)\]
-          % \item \textbf{Space Complexity}: O(n)
+    \item \textbf{Time Complexity:} O(n)
+    \item \textbf{Space Complexity:} O(1)
 \end{itemize}
-\subsection{Delete}
+
+\subsection{Preorder Traversal}
+
 \begin{itemize}
-    \item \textbf{Time Complexity}: \[\bigcirc(h)\]\\
-          \[h\] is the height of the Binary search tree.
-          % \item \textbf{Space Complexity}: O(n)
-\end{itemize}
-\subsection{Mirror Image}
-\begin{itemize}
-    \item \textbf{Time Complexity}:\[\bigcirc(n)\]
-          % \item \textbf{Space Complexity}: O(n)
-\end{itemize}
-\subsection{Copy}
-\begin{itemize}
-    \item \textbf{Time Complexity}:\[\bigcirc(n)\]
-          % \item \textbf{Space Complexity}: O(n)
+    \item \textbf{Time Complexity:} O(n)
+    \item \textbf{Space Complexity:} O(1)
 \end{itemize}
 
 \section{Code}
 
 \subsection{Program}
-\lstinputlisting[language=C++]{../Programs/Assignment_3.cpp}
+\lstinputlisting[language=C++]{../Programs/Assignment_4.cpp}
 
 \subsection{Input and Output}
 \lstinputlisting[]{../Programs/Assignment_3_output.txt}
 
 \section{Conclusion}
-Thus, implemented Dictionary using Binary search tree.
+Thus, implemented threaded binary tree with inorder traversal.
 \clearpage
 
 \section{FAQ}
 \begin{enumerate}
-    \item \textbf{Explain application of BST}\\
+    \item \textbf{Why TBT can be traversed without stack?}\\
 
-          The Applications of Binary Search Tree are:
+          A threaded binary tree is a binary tree that has additional links between nodes to allow for traversal without the use of a stack or recursion. These extra links, called threads, connect nodes that would otherwise be null pointers in a traditional binary tree.
+
+          There \textbf{are two types of threaded binary trees}: inorder threaded binary trees and preorder threaded binary trees.
+
           \begin{enumerate}
-              \item Binary Search Tree is used to implement dictionaries.
-              \item Binary Search Tree is used to implement priority queues.
-              \item Binary Search Tree is used to implement disjoint sets.
-              \item Binary Search Tree is used to implement sorting algorithms.
-              \item Binary Search Tree is used to implement expression trees.
-              \item Binary Search Tree is used to implement Huffman coding.
-              \item Binary Search Tree is used to implement B-trees.
-              \item Binary Search Tree is used to implement red-black trees.
+
+              \item In an inorder threaded binary tree, the threads are used to connect nodes to their inorder predecessor and inorder successor. These threads allow for a traversal of the tree in inorder without using a stack or recursion. To traverse the tree in inorder without a stack, you start at the root node and follow the leftmost thread until you reach a node without a left child. Then, you visit that node and follow the thread to its inorder successor. You repeat this process until you have visited all nodes in the tree.
+
+              \item In a preorder threaded binary tree, the threads are used to connect nodes to their preorder successor. These threads allow for a traversal of the tree in preorder without using a stack or recursion. To traverse the tree in preorder without a stack, you start at the root node and visit each node in the tree in preorder. When you visit a node, you follow the thread to its preorder successor and visit that node next.
+
+              \item In both cases, the threads provide a way to traverse the tree without using a stack or recursion, which can be useful in situations where memory usage is a concern or where recursion or stack-based algorithms are not allowed. However, constructing the threads requires additional memory and processing time, so the benefits of threaded binary trees depend on the specific use case.
           \end{enumerate}
-    \item \textbf{Explain with example deletion of a node having two child.}\\
 
-          If a node has two children, then we need to find the inorder successor of the node. The inorder successor is the smallest in the right subtree or the largest in the left subtree. After finding the inorder successor, we copy the contents of the inorder successor to the node and delete the inorder successor. Note that the inorder predecessor can also be used.
+    \item \textbf{What are the advantages and disadvantages of TBT?}\\
 
-          An Example would be:
-          \begin{verbatim}
-    Let us consider the following BST as an example.
-          50
-         / \
-       30   70
-       / \  / \
-      20 40 60 80
-      /  \  / \
-    10  25 45 65
-\end{verbatim}
+          Threaded binary trees have several advantages and disadvantages that should be considered when deciding whether to use them in a specific scenario. Here are some of the main advantages and disadvantages:
 
-          Deleting 30 will be done in following steps.
-          1. Find inorder successor of 30.
-          2. Copy contents of the inorder successor to 30.
-          3. Delete the inorder successor.
-          4. Since inorder successor is 40 which has no left child, we simply make right child of 30 as the new right child of 20.
+          \textbf{Advantages}:
 
-          \begin{verbatim}
-             50
-            / \
-          40   70
-          / \  / \
-         20 25 60 80
-        /     / \
-       10     45 65
-\end{verbatim}
+          \begin{enumerate}
+              \item \textbf{Traversal without stack or recursion}: As mentioned before, threaded binary trees allow for traversal without using a stack or recursion. This can be useful in situations where memory usage is a concern or where recursion or stack-based algorithms are not allowed.
 
-    \item \textbf{Define skewed binary tree.}\\
+              \item \textbf{Efficient Inorder and Preorder Traversal}: The use of threads can significantly improve the performance of inorder and preorder traversal. In fact, threaded binary trees can perform these traversals in O(n) time complexity, which is faster than the O(nlogn) complexity of the recursive approach.
 
-          A binary tree is said to be skewed if all of its nodes have only one child. A skewed binary tree can be either left or right skewed. A left skewed binary tree is a binary tree in which all the nodes have only left child. A right skewed binary tree is a binary tree in which all the nodes have only right child.
+              \item \textbf{Space Efficiency}: Compared to traditional binary trees, threaded binary trees require less space to store the threads. This can be useful in situations where memory usage is a concern.
+
+          \end{enumerate}
+          \textbf{Disadvantages}:
+          \begin{enumerate}
+
+
+              \item \textbf{Construction Overhead}: The process of constructing threads can be time-consuming and requires additional memory. In some cases, the overhead of constructing the threads can negate any performance benefits.
+
+              \item \textbf{Complexity}: Threaded binary trees can be more complex than traditional binary trees due to the additional links. This can make them harder to understand and maintain.
+
+              \item \textbf{Limited Applications}: Threaded binary trees are not suitable for all types of problems. They are typically used in scenarios where traversal performance is critical, but in other cases, traditional binary trees or other data structures may be more appropriate.
+          \end{enumerate}
+
+    \item \textbf{Write application of TBT}\\
+
+          \begin{enumerate}
+              \item \textbf{Expression Trees}: Threaded binary trees can be used to represent arithmetic expressions in a compact form. By using threads, the expression tree can be traversed efficiently without using a stack or recursion. This can be useful in compilers and other applications that deal with arithmetic expressions.
+
+              \item \textbf{Database Indexing}: Threaded binary trees can be used to implement indexing in databases. By using threads, the binary tree can be traversed efficiently, which can improve the performance of database queries.
+
+              \item \textbf{Text Editors}: Threaded binary trees can be used in text editors to efficiently search for words in a document. By using threads, the binary tree can be traversed efficiently, which can improve the speed of searches.
+
+              \item \textbf{Spell Checking}: Threaded binary trees can be used in spell checking applications to efficiently search for misspelled words. By using threads, the binary tree can be traversed efficiently, which can improve the speed of spell checking.
+
+              \item \textbf{Image Processing}: Threaded binary trees can be used in image processing applications to efficiently process pixels in an image. By using threads, the binary tree can be traversed efficiently, which can improve the speed of image processing algorithms.
+
+
+          \end{enumerate}
+
 \end{enumerate}
 
 \end{document}
