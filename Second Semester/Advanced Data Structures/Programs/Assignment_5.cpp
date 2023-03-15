@@ -57,7 +57,6 @@ public:
     void depth_first_search(int vertex)
     {
         int visited[20];
-        int vertex;
         for (int i = 0; i < no_of_vtex; i++)
         {
             visited[i] = 0;
