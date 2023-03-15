@@ -128,7 +128,7 @@ public:
     ThreadedBinaryTreeNode *inorder_successor(ThreadedBinaryTreeNode *temp)
     {
         ThreadedBinaryTreeNode *x = temp->right;
-        if (temp->isRightNodeAThread)
+        if (!temp->isRightNodeAThread)
         {
             while (!x->isLeftNodeAThread)
                 x = x->left;
