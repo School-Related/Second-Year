@@ -1,2 +1,4 @@
 {
+	"workbench.colorTheme": "Ayu Dark Bordered",
+	"python.analysis.typeCheckingMode": "basic"
 }
