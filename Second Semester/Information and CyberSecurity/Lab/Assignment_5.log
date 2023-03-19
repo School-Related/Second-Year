@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  14 MAR 2023 23:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  19 MAR 2023 14:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -731,13 +731,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--227
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 229.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+<tony.jpg, id=89, 1204.5pt x 803.0pt>
+File: tony.jpg Graphic file (type jpg)
+<use tony.jpg>
+Package pdftex.def Info: tony.jpg  used on input line 233.
+(pdftex.def)             Requested size: 422.77664pt x 281.85065pt.
+<tony_changed.jpg, id=90, 1204.5pt x 803.0pt>
+File: tony_changed.jpg Graphic file (type jpg)
+<use tony_changed.jpg>
+Package pdftex.def Info: tony_changed.jpg  used on input line 239.
+(pdftex.def)             Requested size: 422.77664pt x 281.85065pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3 <./tony.jpg>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 243.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 237.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 254.
  (../Programs/Assignment_5/sha.py
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 1.
@@ -749,7 +767,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3])
+[4 <./tony_changed.jpg>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -757,23 +775,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
@@ -784,10 +802,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[5
+[6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
@@ -798,7 +816,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[6]
+[7]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -806,23 +824,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[7] (./Assignment_5.aux)
+[8] (./Assignment_5.aux)
 Package rerunfilecheck Info: File `Assignment_5.out' has not changed.
 (rerunfilecheck)             Checksum: BE3D54428426FC2965A61897749D18E5;985.
  ) 
 Here is how much of TeX's memory you used:
- 13437 strings out of 478238
- 200814 string characters out of 5850456
- 803669 words of memory out of 5000000
- 31365 multiletter control sequences out of 15000+600000
+ 13457 strings out of 478238
+ 201090 string characters out of 5850456
+ 748995 words of memory out of 5000000
+ 31377 multiletter control sequences out of 15000+600000
  517660 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,13n,69p,763b,2137s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_5.pdf (9 pages, 147240 bytes).
+Output written on Assignment_5.pdf (10 pages, 367573 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 88 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

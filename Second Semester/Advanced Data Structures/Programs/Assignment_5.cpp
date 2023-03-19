@@ -107,6 +107,17 @@ public:
             }
         } while (!s.empty());
     }
+
+    void breadth_first_traversal(){
+        int visited[20];
+        for (int i = 0; i < no_of_vtex; i++)
+        {
+            visited[i] = 0;
+        }
+        cout << "What is the starting vertex" << endl;
+        cin >> vertex;
+        bfs(vertex, visited);
+    }
 };
 
 int main()

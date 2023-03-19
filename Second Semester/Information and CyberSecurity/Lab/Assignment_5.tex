@@ -226,13 +226,30 @@ Here are the steps involved in the SHA-256 algorithm:
 \textbf{\textbf{Compilers or Interpreters} }: Python 3.10.1\\
 
 \section{Input and Output}
+
+\subsection*{Image Before Changing}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.90\textwidth]{tony.jpg}
+    \caption{Tony Stark Just before Showcasing the Jericho Missile}
+\end{figure}
+\subsection*{Image After Changing}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.90\textwidth]{tony_changed.jpg}
+    \caption{Tony Stark Just before Showcasing the Jericho Missile, but with a hidden message}
+\end{figure}
+
 \begin{verbatim}
 Hash of the file is: 
 b91bf2a1dd825725f788a7e204cfd38d0a4badd1bf3745ec2efceeb4e3cab591
 Modified the File, added hidden data to it.
+Data: I am Iron Man and I love by daughter 3000.
 Hash of the file now is: 
 d02d021cc9c7771339327216c82540b1796ce1f2d715797907c97ee7c24788e8
 \end{verbatim}
+
+
 \section{Code}
 \lstinputlisting[language=Python, caption="SHA Integrity Check"]{../Programs/Assignment_5/sha.py}
 

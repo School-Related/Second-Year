@@ -5,6 +5,6 @@
 \contentsline {subsection}{\numberline {3.2}Example}{2}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Platform}{3}{section.4}%
 \contentsline {section}{\numberline {5}Input and Output}{3}{section.5}%
-\contentsline {section}{\numberline {6}Code}{3}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{4}{section.7}%
-\contentsline {section}{\numberline {8}FAQ}{5}{section.8}%
+\contentsline {section}{\numberline {6}Code}{4}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{5}{section.7}%
+\contentsline {section}{\numberline {8}FAQ}{6}{section.8}%

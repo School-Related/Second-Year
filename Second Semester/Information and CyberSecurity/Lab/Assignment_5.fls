@@ -808,6 +808,16 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
+INPUT ./tony.jpg
+INPUT ./tony.jpg
+INPUT tony.jpg
+INPUT ./tony.jpg
+INPUT ./tony.jpg
+INPUT ./tony_changed.jpg
+INPUT ./tony_changed.jpg
+INPUT tony_changed.jpg
+INPUT ./tony_changed.jpg
+INPUT ./tony_changed.jpg
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
