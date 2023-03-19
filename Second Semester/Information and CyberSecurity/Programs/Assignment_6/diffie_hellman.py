@@ -45,4 +45,3 @@ g = check_primitive_root(p)
 print("g: ", g)
 
 shared_secret_key = diffie_hellman(p, g)
-print(shared_secret_key)

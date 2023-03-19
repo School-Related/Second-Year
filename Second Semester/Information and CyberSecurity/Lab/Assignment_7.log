@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  19 MAR 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  19 MAR 2023 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_5.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_5.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_7.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_7.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -514,8 +514,8 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box56
-) (./Assignment_5.aux)
-\openout1 = `Assignment_5.aux'.
+) (./Assignment_7.aux)
+\openout1 = `Assignment_7.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -623,9 +623,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
- (./Assignment_5.out) (./Assignment_5.out)
+ (./Assignment_7.out) (./Assignment_7.out)
 \@outlinefile=\write3
-\openout3 = `Assignment_5.out'.
+\openout3 = `Assignment_7.out'.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 19.28804pt on input line 74.
@@ -633,23 +633,16 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 19.28804pt on input line 76.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 16.07027pt on input line 80.
-
-
-LaTeX Font Warning: Font shape `T1/fnc/m/scit' undefined
-(Font)              using `T1/fnc/m/it' instead on input line 98.
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 19.28804pt on input line 98.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 16.07027pt on input line 112.
+(Font)              scaled to size 16.07027pt on input line 111.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 120.
-[1
+(Font)              scaled to size 13.39188pt on input line 119.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 133.
- (./Assignment_5.toc
+(Font)              scaled to size 13.39188pt on input line 132.
+ (./Assignment_7.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -682,27 +675,22 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 4.
 )
 \tf@toc=\write4
-\openout4 = `Assignment_5.toc'.
+\openout4 = `Assignment_7.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \clearpage
+l.134 \clearpage
                  [1]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 148.
+(Font)              scaled to size 11.15991pt on input line 146.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 148.
-<how-the-sha2-hashing-algorithm-works.png, id=66, 452.69125pt x 440.64626pt>
-File: how-the-sha2-hashing-algorithm-works.png Graphic file (type png)
-<use how-the-sha2-hashing-algorithm-works.png>
-Package pdftex.def Info: how-the-sha2-hashing-algorithm-works.png  used on input line 152.
-(pdftex.def)             Requested size: 258.36668pt x 251.48698pt.
+(Font)              scaled to size 11.15991pt on input line 146.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 156.
+(Font)              scaled to size 10.18341pt on input line 178.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 168.
+(Font)              scaled to size 13.39188pt on input line 178.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -715,10 +703,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 
-       [1
+l.178     \item Compute $$u_1 = (H(m)w) \bmod q$$ 
+                                                  and $$u_2 = (rw) \bmod q$$ [1
 
- <./how-the-sha2-hashing-algorithm-works.png>]
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -727,38 +715,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 224--227
+Underfull \hbox (badness 10000) in paragraph at lines 211--214
 
  []
 
-<tony.jpg, id=89, 1204.5pt x 803.0pt>
-File: tony.jpg Graphic file (type jpg)
-<use tony.jpg>
-Package pdftex.def Info: tony.jpg  used on input line 233.
-(pdftex.def)             Requested size: 422.77664pt x 281.85065pt.
-<tony_changed.jpg, id=90, 1204.5pt x 803.0pt>
-File: tony_changed.jpg Graphic file (type jpg)
-<use tony_changed.jpg>
-Package pdftex.def Info: tony_changed.jpg  used on input line 239.
-(pdftex.def)             Requested size: 422.77664pt x 281.85065pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[3 <./tony.jpg>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 243.
- (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 217.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 254.
- (../Programs/Assignment_5/sha.py
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 223.
+ (../Programs/Assignment_7/digital_signatures.py)
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 1.
+(Font)              scaled to size 8.36993pt on input line 223.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -767,45 +737,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4 <./tony_changed.jpg>])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+<./Digital-signature-generation-and-verification.png, id=134, 758.835pt x 544.0325pt>
+File: ./Digital-signature-generation-and-verification.png Graphic file (type png)
+<use ./Digital-signature-generation-and-verification.png>
+Package pdftex.def Info: ./Digital-signature-generation-and-verification.png  used on input line 247.
+(pdftex.def)             Requested size: 375.80544pt x 269.43388pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
@@ -816,7 +769,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[7]
+[4
+
+ <./Digital-signature-generation-and-verification.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 263.
+(/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 263.
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -824,23 +804,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[8] (./Assignment_5.aux)
-Package rerunfilecheck Info: File `Assignment_5.out' has not changed.
-(rerunfilecheck)             Checksum: BE3D54428426FC2965A61897749D18E5;985.
+[5] (./Assignment_7.aux)
+Package rerunfilecheck Info: File `Assignment_7.out' has not changed.
+(rerunfilecheck)             Checksum: 9873779E4FE29B2C22F6618A8A134577;1976.
  ) 
 Here is how much of TeX's memory you used:
- 13457 strings out of 478238
- 201090 string characters out of 5850456
- 748995 words of memory out of 5000000
- 31377 multiletter control sequences out of 15000+600000
- 517660 words of font info for 83 fonts, out of 8000000 for 9000
+ 13440 strings out of 478238
+ 201128 string characters out of 5850456
+ 679069 words of memory out of 5000000
+ 31376 multiletter control sequences out of 15000+600000
+ 524015 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,763b,2137s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_5.pdf (10 pages, 367573 bytes).
+ 65i,13n,69p,559b,1395s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on Assignment_7.pdf (7 pages, 77948 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
- 93 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

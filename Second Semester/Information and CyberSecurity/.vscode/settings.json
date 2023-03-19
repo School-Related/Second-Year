@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Ayu Light Bordered",
+    "workbench.colorTheme": "Ayu Dark Bordered",
     "sqltools.connections": [
         {
             "mysqlOptions": {
