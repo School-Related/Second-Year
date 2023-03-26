@@ -56,8 +56,9 @@ public:
         }
     }
 
-    void Depth_First_Search_Recursive(int vertex)
+    void DFS_recursive()
     {
+        int vertex;
         int visited[20];
         for (int i = 0; i < no_of_vtex; i++)
         {
@@ -65,10 +66,10 @@ public:
         }
         cout << "What is the starting vertex" << endl;
         cin >> vertex;
-        dfs(vertex, visited);
+        DFS_recursive_worker(vertex, visited);
     }
 
-    void dfs(int vertex, int visited[])
+    void DFS_recursive_worker(int vertex, int visited[])
     {
         GraphNode *temp;
         temp = head[vertex];
@@ -78,7 +79,7 @@ public:
         {
             if (visited[temp->vertex] == 0)
             {
-                dfs(temp->vertex, visited);
+                DFS_recursive_worker(temp->vertex, visited);
             }
             temp = temp->next;
         }
@@ -89,9 +90,7 @@ public:
         int visited[20];
         stack<int> s;
         for (int i = 0; i < no_of_vtex; i++)
-        {
             visited[i] = 0;
-        }
         s.push(vertex);
         visited[vertex] = 1;
         do
@@ -133,7 +132,7 @@ public:
         {
             if (visited[temp->vertex] == 0)
             {
-                dfs(temp->vertex, visited);
+                DFS_recursive_worker(temp->vertex, visited);
             }
             temp = temp->next;
         }
@@ -142,16 +141,18 @@ public:
 
 int main()
 {
-    int no_of_vtex;
+    int no_of_vtex, starting_vertex;
     cout << "Enter the number of vertices" << endl;
     cin >> no_of_vtex;
     Graph g(no_of_vtex);
     g.create_graph();
-    cout << " Depth First Search Recursive" << endl;
-    g.Depth_First_Search_Recursive(0);
-    cout << " Depth First Search Non Recursive" << endl;
-    g.DFS_non_recursive(0);
-    cout << " Breadth First Search" << endl;
+    cout << "Depth First Search Recursive" << endl;
+    g.DFS_recursive();
+    cout << "Depth First Search Non Recursive" << endl;
+    cout << "What is the starting vertex" << endl;
+    cin >> starting_vertex;
+    g.DFS_non_recursive(starting_vertex);
+    cout << "Breadth First Search" << endl;
     g.breadth_first_traversal();
     return 0;
 }

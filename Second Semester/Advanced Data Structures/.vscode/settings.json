@@ -1,3 +1,6 @@
 {
-    "workbench.colorTheme": "Ayu Dark"
+    "workbench.colorTheme": "Ayu Dark",
+    "files.associations": {
+        "ostream": "cpp"
+    }
 }
