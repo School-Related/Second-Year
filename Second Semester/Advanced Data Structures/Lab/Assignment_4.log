@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  19 MAR 2023 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  26 MAR 2023 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_5.tex"
-(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_5.tex
+**"/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_4.tex"
+(/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_4.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -514,8 +514,8 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box56
-) (./Assignment_5.aux)
-\openout1 = `Assignment_5.aux'.
+) (./Assignment_4.aux)
+\openout1 = `Assignment_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -623,9 +623,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
- (./Assignment_5.out) (./Assignment_5.out)
+ (./Assignment_4.out) (./Assignment_4.out)
 \@outlinefile=\write3
-\openout3 = `Assignment_5.out'.
+\openout3 = `Assignment_4.out'.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 19.28804pt on input line 74.
@@ -642,7 +642,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 131.
- (./Assignment_5.toc
+ (./Assignment_4.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -675,7 +675,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 4.
 )
 \tf@toc=\write4
-\openout4 = `Assignment_5.toc'.
+\openout4 = `Assignment_4.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -683,22 +683,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.133 \clearpage
                  [1]
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 139.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 153.
+(Font)              scaled to size 11.15991pt on input line 147.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 153.
-<figures/undirected graph.png, id=155, 853.1875pt x 526.96875pt>
-File: figures/undirected graph.png Graphic file (type png)
-<use figures/undirected graph.png>
-Package pdftex.def Info: figures/undirected graph.png  used on input line 159.
-(pdftex.def)             Requested size: 211.38832pt x 130.55984pt.
-<figures/directed graph.png, id=156, 1204.5pt x 797.98125pt>
-File: figures/directed graph.png Graphic file (type png)
-<use figures/directed graph.png>
-Package pdftex.def Info: figures/directed graph.png  used on input line 169.
-(pdftex.def)             Requested size: 211.38832pt x 140.03844pt.
+(Font)              scaled to size 11.15991pt on input line 147.
+<figures/threaded-binary-tree3.png, id=135, 702.625pt x 244.915pt>
+File: figures/threaded-binary-tree3.png Graphic file (type png)
+<use figures/threaded-binary-tree3.png>
+Package pdftex.def Info: figures/threaded-binary-tree3.png  used on input line 153.
+(pdftex.def)             Requested size: 469.75502pt x 163.74837pt.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 157.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 13.39188pt on input line 172.
 
@@ -713,65 +708,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 
-       [1
+l.172 \textbf{Space Utilized by a Threaded Tree}
+                                                 [1
 
- <./figures/undirected graph.png>]
-File: figures/undirected graph.png Graphic file (type png)
-<use figures/undirected graph.png>
-Package pdftex.def Info: figures/undirected graph.png  used on input line 179.
-(pdftex.def)             Requested size: 211.38832pt x 130.55984pt.
-<figures/weighted graph.png, id=170, 893.3375pt x 629.35126pt>
-File: figures/weighted graph.png Graphic file (type png)
-<use figures/weighted graph.png>
-Package pdftex.def Info: figures/weighted graph.png  used on input line 189.
-(pdftex.def)             Requested size: 211.38832pt x 148.9155pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[2 <./figures/directed graph.png>]
-<figures/bipartite graph.png, id=178, 604.2575pt x 244.915pt>
-File: figures/bipartite graph.png Graphic file (type png)
-<use figures/bipartite graph.png>
-Package pdftex.def Info: figures/bipartite graph.png  used on input line 200.
-(pdftex.def)             Requested size: 211.38832pt x 85.67668pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--213
+ <./figures/threaded-binary-tree3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+Underfull \hbox (badness 10000) in paragraph at lines 179--182
 
-[3 <./figures/weighted graph.png> <./figures/bipartite graph.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+ []
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 233.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 202.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 234.
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 255.
+(Font)              scaled to size 8.36993pt on input line 203.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[2]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3]
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 300.
  (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 255.
-
+(Font)              scaled to size 10.18341pt on input line 300.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 321.
+ (../Programs/Assignment_4.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -780,8 +767,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [4]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 288.
- (../Programs/Assignment_5.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -797,7 +782,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[6]) (../Programs/Assignment_5_output.txt
+[6]) (../Programs/Assignment_4_output.txt
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -805,7 +790,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[7]
+[7])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -822,52 +807,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [9]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[10])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
-<figures/social_media.png, id=571, 1471.4975pt x 1314.9125pt>
-File: figures/social_media.png Graphic file (type png)
-<use figures/social_media.png>
-Package pdftex.def Info: figures/social_media.png  used on input line 308.
-(pdftex.def)             Requested size: 211.38832pt x 188.88177pt.
-<figures/shortest path.png, id=572, 620.3175pt x 463.7325pt>
-File: figures/shortest path.png Graphic file (type png)
-<use figures/shortest path.png>
-Package pdftex.def Info: figures/shortest path.png  used on input line 316.
-(pdftex.def)             Requested size: 399.29463pt x 298.50017pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[12
-
- <./figures/social_media.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
@@ -878,7 +823,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[13 <./figures/shortest path.png>]
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+
+Overfull \hbox (15.60092pt too wide) in paragraph at lines 377--378
+[]\T1/fnc/b/n/10.95 Database In-dex-ing\T1/fnc/m/n/10.95 : Threaded bi-nary trees can be used to im-ple-ment in-dex-ing in databases.
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -886,23 +842,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[14] (./Assignment_5.aux)
-Package rerunfilecheck Info: File `Assignment_5.out' has not changed.
-(rerunfilecheck)             Checksum: F44B6F7AD6B8AEBD209AD8AB92B606AE;3878.
+[11] (./Assignment_4.aux)
+Package rerunfilecheck Info: File `Assignment_4.out' has not changed.
+(rerunfilecheck)             Checksum: B547A440D55E36811273877260D07944;3154.
  ) 
 Here is how much of TeX's memory you used:
- 14021 strings out of 478238
- 209886 string characters out of 5850456
- 1117185 words of memory out of 5000000
- 31611 multiletter control sequences out of 15000+600000
- 520206 words of font info for 90 fonts, out of 8000000 for 9000
+ 13869 strings out of 478238
+ 207448 string characters out of 5850456
+ 1314239 words of memory out of 5000000
+ 31488 multiletter control sequences out of 15000+600000
+ 515465 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,69p,828b,1965s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_5.pdf (16 pages, 439135 bytes).
+ 65i,13n,69p,718b,2020s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on Assignment_4.pdf (13 pages, 133463 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 656 compressed objects within 7 object streams
- 403 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 610 compressed objects within 7 object streams
+ 387 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -33,8 +33,8 @@ public:
         head = new ThreadedBinaryTreeNode();
         head->left = head;
         head->right = head;
-        head->isLeftNodeAThread = true;
-        head->isRightNodeAThread = true;
+        head->isLeftNodeAThread = false;
+        head->isRightNodeAThread = false;
         root = NULL;
     }
 
@@ -122,7 +122,7 @@ public:
             temp = inorder_successor(temp);
             if (temp == head)
                 break;
-            cout << temp->data;
+            cout << temp->data << " ";
         }
     }
     ThreadedBinaryTreeNode *inorder_successor(ThreadedBinaryTreeNode *temp)
@@ -130,7 +130,7 @@ public:
         ThreadedBinaryTreeNode *x = temp->right;
         if (!temp->isRightNodeAThread)
         {
-            while (!x->isLeftNodeAThread)
+            while (x->isLeftNodeAThread == false)
                 x = x->left;
         }
         return x;
@@ -138,16 +138,16 @@ public:
 
     void preorder_traversal()
     {
-        ThreadedBinaryTreeNode *temp = head;
+        ThreadedBinaryTreeNode *temp = head->left;
         while (temp != head)
         {
-            cout << temp->data;
-            while (temp->isLeftNodeAThread)
+            cout << temp->data << " ";
+            while (temp->isLeftNodeAThread == false)
             {
                 temp = temp->left;
-                cout << temp->data;
+                cout << temp->data << " ";
             }
-            while (temp->isRightNodeAThread)
+            while (temp->isRightNodeAThread == true)
             {
                 temp = temp->right;
             }
@@ -160,7 +160,9 @@ int main()
 {
     ThreadedBinaryTree tree;
     tree.create();
+    cout<<"The inorder traversal is:" << endl;
     tree.inorder_traversal();
+    cout << endl;
+    cout << "The preorder traversal is:" << endl;
     tree.preorder_traversal();
-    cout << "done";
 }

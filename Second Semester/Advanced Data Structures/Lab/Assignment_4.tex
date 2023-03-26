@@ -164,7 +164,7 @@ Implement threaded binary tree and perform inorder traversal.
 \end{enumerate}
 
 
-\subsection{Space Utilization in Threaded Binary Tree}\\
+\subsection{Space Utilization in Threaded Binary Tree}
 
 \textbf{Space Utilized by a Normal Tree}
 A Normal Binary Tree with N nodes each has data, left and right pointers. So, the space utilized by a normal binary tree is 3N.\
@@ -200,15 +200,97 @@ But they avoid the usege of a stack during traversal. So, the space utilized by 
 \section{Pseudo Code}
 \subsection{Create}
 \begin{lstlisting}[language=C++]
-	//Pseudo Code for Creation of Threaded Binary Tree
+// Allocate memory for root
+root = new ThreadedBinaryTreeNode()
+
+// Assign root->leftc and rightc to head
+root->left = head
+root->right = head
+
+// Accept root data
+print "Enter the root data: "
+cin >> root->data
+
+// Assign head lbit to 0
+head->left = root
+// Assign head->leftc to root
+head->isLeftNodeAThread = false
+
+ThreadedBinaryTreeNode *temp, *curr
+temp = root
+bool flag = true
+int again = 0
+int choice = 0
+
+print "Do you want to enter another node? (1 or 0)" << endl
+cin >> again
+while (again != 0)
+    temp = root
+    flag = true
+    print "Enter 1 for Entering a new node to the Left, and 2 for Entering it to the right" << endl
+    cin >> choice
+    while (flag)
+        if (choice == 1)
+            if (temp->isLeftNodeAThread == true)
+                curr = new ThreadedBinaryTreeNode()
+                print "Enter the Data: "
+                cin >> curr->data
+                curr->right = temp
+                temp->left = curr
+                temp->isLeftNodeAThread = false
+                flag = false
+            else
+                temp = temp->left
+            
+        else if (choice == 2)
+            if (temp->isRightNodeAThread == true)
+                curr = new ThreadedBinaryTreeNode()
+                print "Enter the Data: "
+                cin >> curr->data
+                curr->left = temp
+                curr->right = temp->right
+                temp->right = curr
+                temp->isRightNodeAThread = false
+                flag = false
+            else
+                temp = temp->right
+            
+    print "Do you want to enter another node? (1 or 0)" << endl
+    cin >> again
 
 \end{lstlisting}
 \subsection{Inorder Traversal}
 \begin{lstlisting}[language=C++]
-    
+inorder_traversal()
+    ThreadedBinaryTreeNode *temp
+    temp = head
+    while (true)
+        temp = inorder_successor(temp)
+        if (temp == head)
+            break
+        print temp->data << " "
+
+ThreadedBinaryTreeNode *inorder_successor(ThreadedBinaryTreeNode *temp)
+    ThreadedBinaryTreeNode *x = temp->right
+    if (!temp->isRightNodeAThread)
+        while (x->isLeftNodeAThread == false)
+            x = x->left
+    return x
+
 \end{lstlisting}
 \subsection{PreOrder Traversal}
 \begin{lstlisting}[language=C++]
+void preorder_traversal()
+    ThreadedBinaryTreeNode *temp = head->left
+    while (temp != head)
+        print temp->data << " "
+        while (temp->isLeftNodeAThread == false)
+            temp = temp->left
+            print temp->data << " "
+        while (temp->isRightNodeAThread == true)
+            temp = temp->right
+        temp = temp->right
+
 \end{lstlisting}
 
 \section{Time Complexity}
@@ -239,7 +321,7 @@ But they avoid the usege of a stack during traversal. So, the space utilized by 
 \lstinputlisting[language=C++]{../Programs/Assignment_4.cpp}
 
 \subsection{Input and Output}
-\lstinputlisting[]{../Programs/Assignment_3_output.txt}
+\lstinputlisting[]{../Programs/Assignment_4_output.txt}
 
 \section{Conclusion}
 Thus, implemented threaded binary tree with inorder traversal.
@@ -299,7 +381,6 @@ Thus, implemented threaded binary tree with inorder traversal.
               \item \textbf{Spell Checking}: Threaded binary trees can be used in spell checking applications to efficiently search for misspelled words. By using threads, the binary tree can be traversed efficiently, which can improve the speed of spell checking.
 
               \item \textbf{Image Processing}: Threaded binary trees can be used in image processing applications to efficiently process pixels in an image. By using threads, the binary tree can be traversed efficiently, which can improve the speed of image processing algorithms.
-
 
           \end{enumerate}
 

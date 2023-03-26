@@ -16,27 +16,28 @@ class Graph
 private:
     GraphNode *head[20];
     int no_of_vtex;
-    char choice;
 
 public:
-    Graph()
+    Graph(int no_of_vtex = 0)
     {
+        this->no_of_vtex = no_of_vtex;
         for (int i = 0; i < no_of_vtex; i++)
         {
-            head[i] = new GraphNode;
+            head[i] = new GraphNode();
             head[i]->vertex = i;
         }
     }
     void create_graph()
     {
         int current_vertex;
-        int choice;
+        char choice;
         GraphNode *temp;
         for (int i = 0; i < no_of_vtex; i++)
         {
             temp = head[i];
             do
             {
+                cout << "Enter the vertex to which " << i << " is connected" << endl;
                 cin >> current_vertex;
                 if (current_vertex == i)
                 {
@@ -44,17 +45,18 @@ public:
                 }
                 else
                 {
-                    GraphNode *current = new GraphNode;
+                    GraphNode *current = new GraphNode();
                     current->vertex = current_vertex;
                     temp->next = current;
                     temp = temp->next;
                 }
+                cout << "Do you want to add more edges" << endl;
                 cin >> choice;
             } while (choice == 'y' || choice == 'Y');
         }
     }
 
-    void depth_first_search(int vertex)
+    void Depth_First_Search_Recursive(int vertex)
     {
         int visited[20];
         for (int i = 0; i < no_of_vtex; i++)
@@ -108,23 +110,48 @@ public:
         } while (!s.empty());
     }
 
-    void breadth_first_traversal(){
+    void breadth_first_traversal()
+    {
         int visited[20];
+        int starting_vertex;
         for (int i = 0; i < no_of_vtex; i++)
         {
             visited[i] = 0;
         }
         cout << "What is the starting vertex" << endl;
-        cin >> vertex;
-        bfs(vertex, visited);
+        cin >> starting_vertex;
+        breadth_first_traversal(starting_vertex, visited);
+    }
+
+    void breadth_first_traversal(int vertex, int visited[])
+    {
+        GraphNode *temp;
+        temp = head[vertex];
+        visited[vertex] = 1;
+        cout << vertex << " " << endl;
+        for (int i = 0; i < no_of_vtex; i++)
+        {
+            if (visited[temp->vertex] == 0)
+            {
+                dfs(temp->vertex, visited);
+            }
+            temp = temp->next;
+        }
     }
 };
 
 int main()
 {
-    Graph g;
+    int no_of_vtex;
+    cout << "Enter the number of vertices" << endl;
+    cin >> no_of_vtex;
+    Graph g(no_of_vtex);
     g.create_graph();
-    g.depth_first_search(0);
+    cout << " Depth First Search Recursive" << endl;
+    g.Depth_First_Search_Recursive(0);
+    cout << " Depth First Search Non Recursive" << endl;
     g.DFS_non_recursive(0);
+    cout << " Breadth First Search" << endl;
+    g.breadth_first_traversal();
     return 0;
 }
