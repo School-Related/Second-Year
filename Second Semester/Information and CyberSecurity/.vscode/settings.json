@@ -1,18 +1,18 @@
 {
-    "workbench.colorTheme": "Ayu Dark",
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MariaDB",
-            "name": "usual",
-            "group": "usual",
-            "database": "class_stuff",
-            "username": "krishnaraj"
-        }
-    ]
+	"workbench.colorTheme": "Ayu Dark Bordered",
+	"sqltools.connections": [
+		{
+			"mysqlOptions": {
+				"authProtocol": "default"
+			},
+			"previewLimit": 50,
+			"server": "localhost",
+			"port": 3306,
+			"driver": "MariaDB",
+			"name": "usual",
+			"group": "usual",
+			"database": "class_stuff",
+			"username": "krishnaraj"
+		}
+	]
 }

@@ -57,6 +57,9 @@ create view IF NOT EXISTS HotelView as select Hotel.
 -- – order(ono,cno,receivedate,shippeddate)
 -- – odetails(ono,pno,qty)
 -- – zipcode(Zip,city)
+
+
+
 -- Solve the following queries
 -- get pno,pname values of parts that are priced less than $20.00
 -- get the ono & cname values of customer whose orders have not yet been shipped
