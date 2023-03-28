@@ -24,5 +24,5 @@
 \contentsline {section}{\numberline {10}Code}{5}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Program}{5}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10.2}Input and Output}{8}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Conclusion}{11}{section.11}%
-\contentsline {section}{\numberline {12}FAQ}{12}{section.12}%
+\contentsline {section}{\numberline {11}Conclusion}{12}{section.11}%
+\contentsline {section}{\numberline {12}FAQ}{13}{section.12}%
