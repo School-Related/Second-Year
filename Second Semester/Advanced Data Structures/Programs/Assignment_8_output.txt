@@ -1,0 +1,279 @@
+Welcome to ADS Assignment 8, hashign with linear probing. 
+What do you want to do? 
+1. Insert without replacement. 
+2. Insert with replacement. 
+3. Exit. 
+1
+You chose to insert without replacement. 
+Enter the keys to insert. 
+1
+The table is now: 
+0:-1 
+1:1 
+2:-1 
+3:-1 
+4:-1 
+5:-1 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+2
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:-1 
+4:-1 
+5:-1 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+3
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:-1 
+5:-1 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+5
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:-1 
+5:5 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+55
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:-1 
+5:5 
+6:55 
+7:-1 
+8:-1 
+9:-1 
+
+234
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:234 
+5:5 
+6:55 
+7:-1 
+8:-1 
+9:-1 
+
+32
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:234 
+5:5 
+6:55 
+7:32 
+8:-1 
+9:-1 
+
+654
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:234 
+5:5 
+6:55 
+7:32 
+8:654 
+9:-1 
+
+34
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:234 
+5:5 
+6:55 
+7:32 
+8:654 
+9:34 
+
+645
+The table is now: 
+0:645 
+1:1 
+2:2 
+3:3 
+4:234 
+5:5 
+6:55 
+7:32 
+8:654 
+9:34 
+
+
+Welcome to ADS Assignment 8, hashign with linear probing. 
+What do you want to do? 
+1. Insert without replacement. 
+2. Insert with replacement. 
+3. Exit. 
+2
+You chose to insert with replacement. 
+Enter the keys to insert. 
+1
+The table is now: 
+0:-1 
+1:1 
+2:-1 
+3:-1 
+4:-1 
+5:-1 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+2
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:-1 
+4:-1 
+5:-1 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+3
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:-1 
+5:-1 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+4
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:4 
+5:-1 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+3
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:4 
+5:3 
+6:-1 
+7:-1 
+8:-1 
+9:-1 
+
+9
+The table is now: 
+0:-1 
+1:1 
+2:2 
+3:3 
+4:4 
+5:3 
+6:-1 
+7:-1 
+8:-1 
+9:9 
+
+99
+The table is now: 
+0:99 
+1:1 
+2:2 
+3:3 
+4:4 
+5:3 
+6:-1 
+7:-1 
+8:-1 
+9:9 
+
+55
+The table is now: 
+0:99 
+1:1 
+2:2 
+3:3 
+4:4 
+5:55 
+6:3 
+7:-1 
+8:-1 
+9:9 
+
+66
+The table is now: 
+0:99 
+1:1 
+2:2 
+3:3 
+4:4 
+5:55 
+6:66 
+7:3 
+8:-1 
+9:9 
+
+99
+The table is now: 
+0:99 
+1:1 
+2:2 
+3:3 
+4:4 
+5:55 
+6:66 
+7:3 
+8:99 
+9:9 
+
+3
+Table is full.

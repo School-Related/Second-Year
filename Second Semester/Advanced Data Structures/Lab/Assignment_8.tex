@@ -1,0 +1,471 @@
+% This is a Basic Assignment Paper but with like Code and stuff allowed in it, there is also url, hyperlinks from contents included. 
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Advanced Data Structures - Assignment 8}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    %---------------------------NAMES-------------------------------
+
+    \huge\textsc{
+        MIT World Peace University
+    }\\
+
+    \vspace{0.75\baselineskip} % space after Uni Name
+
+    \LARGE{
+        Advanced Data Structures\\
+        Second Year B. Tech, Semester 4
+    }
+
+    \vfill % space after Sub Name
+
+    %--------------------------TITLE-------------------------------
+
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.6pt}
+    \vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+    \huge{\textsc{
+            Linear Probing with and without Replacement for Hashing
+        }} \\
+
+
+
+    \vspace{0.5\baselineskip} % Whitespace below the title
+    \rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+    \rule{\textwidth}{1.6pt}
+
+    \vspace{1\baselineskip} % Whitespace after the title block
+
+    %--------------------------SUBTITLE --------------------------	
+
+    \LARGE\textsc{
+        Assignment No. 8
+    } % Subtitle or further description
+    \vfill
+
+    %--------------------------AUTHOR-------------------------------
+
+    Prepared By
+    \vspace{0.5\baselineskip} % Whitespace before the editors
+
+    \Large{
+        Krishnaraj Thadesar \\
+        Cyber Security and Forensics\\
+        Batch A1, PA 20
+    }
+
+
+    \vspace{0.5\baselineskip} % Whitespace below the editor list
+    \today
+
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
+
+\section{Objectives}
+\begin{enumerate}
+    \item To study hashing techniques
+    \item To implement different hashing techniques
+    \item To study and implement linear probing with and without replacement
+    \item To study how hashing can be used to model real world problems
+\end{enumerate}
+
+\section{Problem Statement}
+Implement Direct access file using hashing (linear probing with and without
+replacement) perform following operations on it:
+\begin{enumerate}
+    \item Create Database
+    \item Display Database
+    \item Add a record
+    \item Search a record
+    \item Modify a record
+\end{enumerate}
+
+\section{Theory}
+
+\subsection{What is Hashing?}
+\begin{quote}
+    Hashing is a technique to convert a range of key values into a range of
+    indexes of an array. The idea is to use the key itself as an index into an
+    array that is why it is also called as direct access table.
+\end{quote}
+
+\subsubsection{Hashing in Comparison with other Searching Techniques}
+\begin{itemize}
+    \item \textbf{Sequential Search}:
+        \begin{itemize}
+            \item The worst case time complexity of the sequential search is
+            O(n)
+            \item The worst case time complexity of the hashing is O(1)
+            \item The sequential search is not suitable for large data sets
+            \item The hashing is suitable for large data sets
+        \end{itemize}
+    \item \textbf{Binary Search}:
+        \begin{itemize}
+            \item The worst case time complexity of the binary search is O(log
+            n)
+            \item The worst case time complexity of the hashing is O(1)
+            \item The binary search is only suitable for sorted data sets
+            \item The hashing is suitable for unsorted data sets
+        \end{itemize}
+    \item \textbf{Binary Tree}:
+        \begin{itemize}
+            \item The worst case time complexity of the binary tree search is
+            O(log n)
+            \item The worst case time complexity of the hashing is O(1)
+            \item The binary tree search is only suitable for sorted data sets
+            \item The hashing is suitable for unsorted data sets
+        \end{itemize}
+\end{itemize}
+
+\subsection{Hash Functions}
+
+\subsubsection{Hash Function}
+\begin{quote}
+    A hash function is a function that maps a given key to a location in the
+    hash table. The hash function is used to calculate the index of the array
+    where the data is to be stored or retrieved from.
+\end{quote}
+
+Different types of Hash functions are: 
+
+
+\begin{enumerate}
+    \item \textbf{Division Method}
+    
+    The division method is one of the simplest hashing methods. It works by computing the remainder of the key when divided by the table size, using a hash function of the form $h(key) = key \mod table_size$. The result is the index of the slot in the hash table where the key-value pair should be stored.
+    
+    \item \textbf{Multiplication Method}
+    
+    The multiplication method is another common hashing method. It works by multiplying the key by a constant $A$ in the range $(0, 1)$ and then extracting the fractional part of the product. The result is then multiplied by the table size and rounded down to obtain the index of the slot in the hash table where the key-value pair should be stored. The hash function has the form $h(key) = \lfloor table_size * (key * A \mod 1) \rfloor$.
+    
+    \item \textbf{Universal Hashing}
+    
+    Universal hashing is a family of hashing methods that use a randomly chosen hash function from a set of functions to minimize collisions. The set of functions is chosen to be large enough that the probability of two different keys having the same hash value is small, and the function is chosen randomly each time a new hash table is created. The hash function has the form $h(key) = ((a * key + b) \mod p) \mod table_size$, where $a$ and $b$ are randomly chosen integers and $p$ is a large prime number.
+    
+    \item \textbf{Perfect Hashing}
+    
+    Perfect hashing is a technique that is used when the keys are known in advance and fixed. It works by creating a hash function that maps each key to a unique index in the hash table, without any collisions. This is achieved by using two levels of hashing: the first level maps the keys to a set of buckets, and the second level uses a different hash function to map each key within a bucket to a unique index in the hash table. This approach guarantees that there are no collisions, but requires more memory and computation than other hashing methods.
+    \end{enumerate}
+
+\subsection{Collision Resolution Techniques}
+
+The main types of Collision Resolution techniques are: 
+\begin{itemize}
+    \item \textbf{Open Addressing}: \\
+    Open addressing is a family of hashing methods that use the hash table itself to resolve collisions, by storing each key-value pair in the next available slot in the table. There are several methods of open addressing, including:
+
+    \begin{itemize}
+        \item \textbf{Linear Probing}
+    
+        Linear probing is an open addressing method where, when a collision occurs, the algorithm searches for the next available slot in the table, by linearly checking each slot in the table until an empty slot is found. The hash function has the form $h(key, i) = (h'(key) + i) \mod table\_size$, where $h'(key)$ is the primary hash function and $i$ is the number of the probe.
+    
+        \item \textbf{Quadratic Probing}
+    
+        Quadratic probing is similar to linear probing, but uses a quadratic function to search for the next available slot. The hash function has the form $h(key, i) = (h'(key) + c_1 \cdot i + c_2 \cdot i^2) \mod table\_size$, where $c_1$ and $c_2$ are constants that depend on the hash table size.
+    
+        \item \textbf{Double Hashing}
+    
+        Double hashing is another open addressing method that uses two hash functions to determine the next available slot in the table. The hash function has the form $h(key, i) = (h_1(key) + i \cdot h_2(key)) \mod table\_size$, where $h_1$ and $h_2$ are two different hash functions.
+    
+    \end{itemize}
+    
+    \item \textbf{Separate Chaining}
+    
+    Separate chaining is a hashing method that uses linked lists to store the key-value pairs that hash to the same slot in the table. When a collision occurs, the key-value pair is added to the linked list at the appropriate slot. The hash function has the form $h(key) = key \mod table\_size$.
+    
+    \item \textbf{Double Hashing}
+    
+    Double hashing is both an open addressing method and a separate chaining method. It uses two hash functions to determine the slot in the table, and if there is a collision, it uses a linked list to store the key-value pairs that hash to the same slot. The hash function has the form $h(key, i) = (h_1(key) + i \cdot h_2(key)) \mod table\_size$, where $h_1$ and $h_2$ are two different hash functions.
+\end{itemize}
+
+Most of these techniques can be implemented in 2 ways \\
+
+\subsubsection{Without Replacement}
+\begin{quote}[Without Replacement]
+    In this technique, when a collision occurs, the new element is simply
+    discarded.
+\end{quote}
+
+
+\subsubsection{With Replacement}
+\begin{quote}[With Replacement]
+    In this technique, when a collision occurs, the old element is replaced by
+    the new element.
+\end{quote}
+
+
+% Write in brief about
+% ● What is Hashing? Compare hashing with other searching techniques.
+% ● Write different hash functions
+% ● Explain hash collision resolution techniques.
+
+\section{Platform}
+\textbf{\textbf{Operating System}}: Arch Linux x86-64 \\
+\textbf{\textbf{IDEs or Text Editors Used}}: Visual Studio Code\\
+\textbf{\textbf{Compilers} }: g++ and gcc on linux for C++\\
+
+\section{Test Conditions}
+\begin{enumerate}
+    \item Input at least 10 nodes.
+    \item Display collision with replacement and without replacement.
+\end{enumerate}
+
+\section{Input and Output}
+\begin{enumerate}
+    \item The minimum cost of the spanning tree.
+\end{enumerate}
+
+\section{Pseudo Code}
+\subsection{Linear Probing with Replacement}
+\begin{lstlisting}[language=C++]
+void HashTable::insert_without_replacement(int key)
+{
+    int index = hash(key);
+    if (table[index] == -1)
+        table[index] = key;
+    else
+    {
+        int i = 1;
+        while (table[(index + i) % SIZE] != -1)
+            i++;
+        table[(index + i) % SIZE] = key;
+    }
+}
+
+\end{lstlisting}
+\subsection{Linear Probing without Replacement}
+\begin{lstlisting}[language=C++]
+void HashTable::insert_with_replacement(int key)
+    {
+        int index = hash(key);
+    
+        // there is no value there.
+        if (table[index] == -1)
+            table[index] = key;
+        // the value that is already there, belongs there, then check, and then find another empty slot and insert there.
+        else if (hash(table[index]) == index)
+        {
+            int i = 1;
+            while (table[(index + i) % SIZE] != -1)
+                i++;
+            table[(index + i) % SIZE] = key;
+        }
+        // the value that is already there, does not belong there, then replace it with the new value, and push the existing value down.
+        else
+        {
+            // find empty slot
+            int i = 1;
+            while (table[(index + i) % SIZE] != -1)
+                i++;
+    
+            int temp = table[index]; // current value that doesnt belong there.
+            table[index] = key;
+            table[(index + i) % SIZE] = temp;
+        }
+    }
+    
+\end{lstlisting}
+
+\section{Time Complexity}
+\subsection{Linear Probing}
+\begin{itemize}
+    \item \textbf{Time Complexity:} \[O(n)\] It would be 1 if the it was the best case, and n for worst case, where all the slots would be filled, and we would have to keep probing over all the elements.
+    \item \textbf{Space Complexity:} \[O(n)\] For storing the Table, as there is no additional array or table required to store and hash.
+\end{itemize}
+
+\section{Code}
+
+\subsection{Program}
+\lstinputlisting[language=C++]{../Programs/Assignment_8.cpp}
+
+\lstinputlisting[]{../Programs/Assignment_8_output.txt}
+
+\section{Conclusion}
+Thus, we have implemented linear probing with and without replacement.
+
+\clearpage
+
+\section{FAQ}
+\begin{enumerate}
+    \item \textbf{Write different types of hash functions.}\\
+          There are several types of Hashing Functions. Here are a few:
+          \begin{itemize}
+              \item \textbf{Division Method:} This method is the simplest of all hash functions. It simply divides the key by the table size and uses the remainder as the hash value. The hash function is: \[h(k) = k \mod m\]
+              \item \textbf{Multiplication Method:} In this method, the hash value is obtained by multiplying the key with a constant A and then taking the fractional part.
+              \item \textbf{Universal Hashing:} In this method, the hash function is obtained by using a universal hash function.
+              \item \textbf{Mid Square Method:} In this method, the key is first squared and the middle digits are then taken as the hash value.
+              \item \textbf{Random Number Method:} In this method, a random number is generated and then multiplied with the key to obtain the hash value.
+              \item \textbf{Folding Method:} In this method, the key is divided into equal parts and then added to obtain the hash value.
+              \item \textbf{Exponential Method:} In this method, the key is multiplied by a constant A and then the fractional part is taken as the hash value.
+              \item \textbf{Truncation Method:} In this method, the key is divided into equal parts and then the first part is taken as the hash value.
+          \end{itemize}
+
+    \item \textbf{Explain chaining with and without replacement with example.}\\
+
+          \textit{Chaining is a collision resolution technique used in hash tables to resolve collisions by storing multiple keys in the same slot in the table, with each slot containing a linked list of key-value pairs.}
+
+          \begin{enumerate}
+              \item With Replacement: Chaining with replacement involves replacing the old value with the new one when a collision occurs, while chaining without replacement involves inserting the new value into the linked list without replacing the old one. \\
+
+                    Here is an example of chaining with replacement:
+
+                    Suppose we have a hash table of size 5, and the hash function maps keys to slots as follows: \\
+                    \begin{itemize}
+                        \item \textit{key "apple" $\rightarrow$ slot 3}
+                        \item \textit{key "banana" $\rightarrow$ slot 1}
+                        \item \textit{key "cherry" $\rightarrow$ slot 3}
+                        \item \textit{key "date" $\rightarrow$ slot 0 \\}
+                    \end{itemize}
+
+                    When we try to insert the key "cherry", we find that slot 3 is already occupied by the key "apple". In chaining with replacement, we replace the old value ("apple") with the new one ("cherry"), resulting in the linked list at slot 3 containing only the key-value pair ("cherry", value). Similarly, when we try to insert the key "orange", we find that slot 1 is already occupied by the key "banana". We replace the old value ("banana") with the new one ("orange"), resulting in the linked list at slot 1 containing only the key-value pair ("orange", value). The resulting hash table looks like this: \\
+                    \begin{itemize}
+                        \item \textit{slot 0: ("date", value)}
+                        \item \textit{slot 1: ("orange", value)}
+                        \item \textit{slot 2: empty}
+                        \item \textit{slot 3: ("cherry", value)\\}
+                    \end{itemize}
+
+              \item Chaining without replacement:\\
+
+                    Suppose we have the same hash table and keys as in the previous example. \\
+
+                    When we try to insert the key "cherry", we find that slot 3 is already occupied by the key "apple". In chaining without replacement, we add the key-value pair ("cherry", value) to the linked list at slot 3, resulting in the linked list containing both key-value pairs ("apple", value) and ("cherry", value).\\
+
+                    Similarly, when we try to insert the key "orange", we find that slot 1 is already occupied by the key "banana". We add the key-value pair ("orange", value) to the linked list at slot 1, resulting in the linked list containing both key-value pairs ("banana", value) and ("orange", value). \\
+
+                    The resulting hash table looks like this:
+                    \begin{itemize}
+                        \item \textit{slot 0: ("date", value)}
+                        \item \textit{slot 1: ("banana", value) $\rightarrow$ ("orange", value)}
+                        \item \textit{slot 2: empty}
+                        \item \textit{slot 3: ("apple", value) $\rightarrow$ ("cherry", value)}
+                    \end{itemize}
+                    In chaining without replacement, multiple key-value pairs can be stored in the same slot, without replacing any existing values.
+
+          \end{enumerate}
+
+
+
+    \item \textbf{Explain quadratic probing with example}\\
+
+          \textbf{Quadratic Probing}
+          \textit{Quadratic probing is a technique used to resolve collisions in hash tables. When a collision occurs, meaning that two or more keys are mapped to the same slot, quadratic probing searches for the next available slot by adding a quadratic sequence of values to the original hash value until an empty slot is found.}\\
+
+          To illustrate how quadratic probing works, consider the following example. We have a hash table with 10 slots, and the following keys are inserted using a hash function:
+
+          \begin{itemize}
+              \item \textit{Slot 0: ("date", value)}
+              \item \textit{Slot 1: empty}
+              \item \textit{Slot 2: empty}
+              \item \textit{Slot 3: ("apple", value)}
+              \item \textit{Slot 4: empty}
+              \item \textit{Slot 5: empty}
+              \item \textit{Slot 6: empty}
+              \item \textit{Slot 7: ("banana", value)}
+              \item \textit{Slot 8: empty}
+              \item \textit{Slot 9: ("cherry", value)}
+          \end{itemize}
+
+          Suppose we want to insert the key "fig" into the hash table. The hash function maps "fig" to slot 9, but we find that slot 9 is already occupied by the key "cherry". \\To resolve this collision using quadratic probing, we start at slot 9 and search for the next available slot by adding a quadratic sequence of values to the original hash value.\\
+
+          Here's how we can find the next available slot using quadratic probing:
+
+          \begin{enumerate}
+              \item Starting from slot 9, we add 1 to get slot 0. But slot 0 is already occupied by "date".
+              \item We add 4 to the original hash value to get slot 13. We need to wrap around to the beginning of the hash table since the hash table only has 10 slots. So slot 13 becomes slot 3. But slot 3 is already occupied by "apple".
+              \item We add 9 to the original hash value to get slot 18. We need to wrap around again to the beginning of the hash table. So slot 18 becomes slot 8. But slot 8 is empty, so we can insert "fig" into slot 8.
+          \end{enumerate}
+
+          We insert the key-value pair ("fig", value) into slot 8, and the resulting hash table looks like this:
+
+          \begin{itemize}
+              \item \textit{Slot 0: ("date", value)}
+              \item \textit{Slot 1: empty}
+              \item \textit{Slot 2: empty}
+              \item \textit{Slot 3: ("apple", value)}
+              \item \textit{Slot 4: empty}
+              \item \textit{Slot 5: empty}
+              \item \textit{Slot 6: empty}
+              \item \textit{Slot 7: ("banana", value)}
+              \item \textit{Slot 8: ("fig", value)}
+              \item \textit{Slot 9: ("cherry", value)}
+          \end{itemize}
+
+          Here, quadratic probing allowed us to find the next available slot by searching through a quadratic sequence of values until an empty slot was found.
+\end{enumerate}
+
+\end{document}
