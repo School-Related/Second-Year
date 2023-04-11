@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Objectives}{1}{section.1}%
+\contentsline {section}{\numberline {2}Problem Statement}{1}{section.2}%
+\contentsline {section}{\numberline {3}Theory}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Spanning Tree}{1}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Example of Spanning Tree}{1}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Weighted Graph}{1}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Example of Weighted Graph}{2}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Cost Adjacency Matrix}{2}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Example of Cost Adjacency Matrix}{2}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Prim's Algorithm}{2}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Steps}{2}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Example of Prim's Algorithm}{3}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Platform}{3}{section.4}%
+\contentsline {section}{\numberline {5}Test Conditions}{3}{section.5}%
+\contentsline {section}{\numberline {6}Input and Output}{4}{section.6}%
+\contentsline {section}{\numberline {7}Pseudo Code}{4}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Accepting the Spanning Tree using its adjacency matrix}{4}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Display of the Spanning Tree using its adjacency matrix}{4}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Prim's Algorithm}{5}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Time Complexity}{5}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Creation of Minimum Cost Spanning Tree using its adjacency matrix}{5}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Display of Minimum Cost Spanning Tree using its adjacency matrix}{5}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Prim's Algorithm}{6}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Code}{6}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Program}{6}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Conclusion}{7}{section.10}%
+\contentsline {section}{\numberline {11}FAQ}{8}{section.11}%

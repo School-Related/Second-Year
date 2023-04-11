@@ -155,6 +155,75 @@
 % ● Example of weighted graph and its cost adjacency matrix (with diagrams)
 % ● Explanation of Prim's algorithm using the above example graph
 
+\subsection{Spanning Tree}
+A spanning tree of a graph is a subgraph that is a tree and connects all the vertices together. A single graph can have many different spanning trees. A minimum spanning tree (MST) or minimum weight spanning tree for a weighted, connected and undirected graph is a spanning tree with weight less than or equal to the weight of every other spanning tree. The weight of a spanning tree is the sum of weights given to each edge of the spanning tree.
+
+\subsubsection{Example of Spanning Tree}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.75\textwidth]{figures/spanning_tree.png}
+    \caption{ Example of Spanning Tree }
+\end{figure}
+
+\subsection{Weighted Graph}
+
+A weighted graph is a graph in which each edge is assigned a weight or cost. The weight of an edge is a non-negative real number. The weight of a path is the sum of the weights of its constituent edges. The weight of a cycle is the sum of the weights of its constituent edges. The weight of a graph is the sum of the weights of its edges.
+
+\subsubsection{Example of Weighted Graph}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.45\textwidth]{figures/weightedgraph.png}
+    \caption{ Example of Weighted Graph }
+\end{figure}
+
+\subsection{Cost Adjacency Matrix}
+
+A cost adjacency matrix is a square matrix that represents the weighted edges of a graph. The matrix is symmetric about the main diagonal. The main diagonal of the matrix is all zeros. The matrix is filled with the weights of the edges. If there is no edge between two vertices, the corresponding entry in the matrix is zero.
+
+\subsubsection{Example of Cost Adjacency Matrix}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|}
+    \hline
+    \textbf{}  & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+    \textbf{A} & 0          & -1         & 3          & -1         & -1         \\ \hline
+    \textbf{B} & -1         & 0          & 10         & 4          & -1         \\ \hline
+    \textbf{C} & 3          & 10         & 0          & 2          & 6          \\ \hline
+    \textbf{D} & -1         & 4          & 2          & 0          & 1          \\ \hline
+    \textbf{E} & -1         & -1         & 6          & 1          & 0          \\ \hline
+    \end{tabular}
+\caption[short]{Adjacency Matrix of the Graph}    
+\end{table}
+    
+    \subsection{Prim's Algorithm}
+
+Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. The algorithm operates by building this tree one vertex at a time, from an arbitrary starting vertex, at each step adding the cheapest possible connection from the tree to another vertex.
+
+\subsubsection{Steps}
+\begin{enumerate}
+    \item Choose a starting vertex B.
+    \item Add the vertices that are adjacent to A. the edges that connecting the vertices are shown by dotted lines.
+    \item Choose the edge with the minimum weight among all. i.e. BD and add it to MST. Add the adjacent vertices of D i.e. C and E.
+    \item Choose the edge with the minimum weight among all. In this case, the edges DE and CD are such edges. Add them to MST and explore the adjacent of C i.e. E and A.
+    \item Choose the edge with the minimum weight i.e. CA. We can't choose CE as it would cause cycle in the graph.
+    
+\end{enumerate}
+
+\subsubsection{Example of Prim's Algorithm}
+
+This example is based on the above example of weighted graph and its cost adjacency matrix.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.85\textwidth]{figures/primeg.png}
+    \caption{ Example of Prim's Algorithm }
+\end{figure}
+
 \section{Platform}
 \textbf{\textbf{Operating System}}: Arch Linux x86-64 \\
 \textbf{\textbf{IDEs or Text Editors Used}}: Visual Studio Code\\
@@ -294,9 +363,22 @@ algorithm for MCST.
           Minimum cost spanning trees have a wide range of applications in computer science, operations research, and engineering. Here are two common applications of minimum cost spanning trees:
 
           \begin{enumerate}
-              \item \textbf{Network design and optimization}: Minimum cost spanning trees are often used to design and optimize communication networks, such as the internet or a telephone network. For example, a minimum cost spanning tree can be used to find the most cost-effective way to connect a set of cities with a fiber-optic network, or to design a network of sensors to monitor a given area with minimum cost. By minimizing the cost of connecting nodes while ensuring that every node is reachable from every other node, minimum cost spanning trees can help improve network performance and reduce operating costs.
+              \item \textbf{Network design and optimization}:
+              
+              
+              Minimum cost spanning trees are often used to design and optimize communication networks, such as the internet or a telephone network. \\
+              
+              For example, a minimum cost spanning tree can be used to find the most cost-effective way to connect a set of cities with a fiber-optic network, or to design a network of sensors to monitor a given area with minimum cost. \\
+              
+              By minimizing the cost of connecting nodes while ensuring that every node is reachable from every other node, minimum cost spanning trees can help improve network performance and reduce operating costs.
 
-              \item \textbf{Circuit design}: In circuit design, minimum cost spanning trees are often used to solve the problem of routing wires between electronic components on a printed circuit board. By constructing a minimum cost spanning tree that connects all the components, engineers can minimize the length and cost of the wires needed to connect the components, while ensuring that every component is connected to every other component through a path of wires. This can lead to more efficient and reliable circuit designs with lower production costs.
+              \item \textbf{Circuit design}: 
+              
+              In circuit design, minimum cost spanning trees are often used to solve the problem of routing wires between electronic components on a printed circuit board.\\
+              
+              By constructing a minimum cost spanning tree that connects all the components, engineers can minimize the length and cost of the wires needed to connect the components, while ensuring that every component is connected to every other component through a path of wires. \\
+              
+              This can lead to more efficient and reliable circuit designs with lower production costs.
 
           \end{enumerate}
 
