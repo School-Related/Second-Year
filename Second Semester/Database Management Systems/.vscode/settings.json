@@ -12,5 +12,6 @@
             "database": "dbms_lab",
             "username": "krishnaraj"
         }
-    ]
+    ],
+    "workbench.colorTheme": "Default Dark+"
 }

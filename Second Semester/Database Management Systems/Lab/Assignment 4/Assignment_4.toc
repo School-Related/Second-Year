@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
+\contentsline {section}{\numberline {3}Problem Statement}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {section}{\numberline {5}Platform}{1}{section.5}%
+\contentsline {section}{\numberline {6}Input}{1}{section.6}%
+\contentsline {section}{\numberline {7}Executed Queries}{1}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Questions SetA}{1}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Questions Set B}{1}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Conclusion}{1}{section.8}%
+\contentsline {section}{\numberline {9}FAQ}{2}{section.9}%

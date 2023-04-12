@@ -1,3 +1,4 @@
+-- Active: 1678946907415@@127.0.0.1@3306@dbms_lab
 
 -- View the Tables
 select * from Room;

@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Question A}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Science and Religion: Complementary Forces}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}The Limitations of Science and Religion}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Examples of the Complementarity of Science and Religion}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Question B}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Origins and Beliefs of Christianity}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Impact of Christianity on the World}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Modern-day Christianity}{4}{subsection.2.3}%
