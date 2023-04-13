@@ -30,7 +30,7 @@ MariaDB [dbms_lab]> select * from Hotel;
 |       6 | Hotel native     | Brunei                |
 |       7 | Hotel pool       | Panama                |
 |       8 | Hotel spin       | Guyana                |
-|       9 | Hotel toward     | St. Barthélemy        |
+|       9 | Hotel toward     | St. Barthelemy        |
 |      10 | Hotel expression | St. Pierre & Miquelon |
 |      11 | Hotel cheese     | Guinea-Bissau         |
 |      12 | Hotel motion     | Latvia                |
@@ -61,7 +61,7 @@ MariaDB [dbms_lab]> select * from Guest;
 | GuestNo | GuestName      | GuessAddress    |
 +---------+----------------+-----------------+
 |       2 | Patrick Taylor | Lebanon         |
-|       4 | Mattie Vargas  | St. Barthélemy  |
+|       4 | Mattie Vargas  | St. Barthelemy  |
 |       5 | Travis Frazier | Gambia          |
 |      10 | Sarah Ramsey   | Jamaica         |
 |      11 | Rachel Keller  | Kenya           |
@@ -178,6 +178,5 @@ MariaDB [dbms_lab]> select count(*) from Room, Hotel where Room.HotelNo = Hotel.
 +----------+
 1 row in set (0.000 sec)
 
-MariaDB [dbms_lab]>
-
+MariaDB [dbms_lab]> 
 

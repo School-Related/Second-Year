@@ -1,8 +1,8 @@
-PWD /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment 4
+PWD /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment 5
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment 4/Assignment_4.tex
-OUTPUT Assignment_4.log
+INPUT /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Database Management Systems/Lab/Assignment 5/Assignment_5.tex
+OUTPUT Assignment_5.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -684,10 +684,10 @@ INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Assignment_4.aux
-INPUT Assignment_4.aux
-INPUT Assignment_4.aux
-OUTPUT Assignment_4.aux
+INPUT ./Assignment_5.aux
+INPUT Assignment_5.aux
+INPUT Assignment_5.aux
+OUTPUT Assignment_5.aux
 INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 INPUT /usr/share/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
@@ -720,18 +720,18 @@ INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texmf-dist/tex/latex/graphics/color.sty
-INPUT ./Assignment_4.out
-INPUT Assignment_4.out
-INPUT ./Assignment_4.out
-INPUT Assignment_4.out
-INPUT ./Assignment_4.out
-INPUT Assignment_4.out
-INPUT ./Assignment_4.out
-INPUT Assignment_4.out
-OUTPUT Assignment_4.pdf
-INPUT ./Assignment_4.out
-INPUT ./Assignment_4.out
-OUTPUT Assignment_4.out
+INPUT ./Assignment_5.out
+INPUT Assignment_5.out
+INPUT ./Assignment_5.out
+INPUT Assignment_5.out
+INPUT ./Assignment_5.out
+INPUT Assignment_5.out
+INPUT ./Assignment_5.out
+INPUT Assignment_5.out
+OUTPUT Assignment_5.pdf
+INPUT ./Assignment_5.out
+INPUT ./Assignment_5.out
+OUTPUT Assignment_5.out
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
@@ -749,9 +749,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
-INPUT ./Assignment_4.toc
-INPUT Assignment_4.toc
-INPUT Assignment_4.toc
+INPUT ./Assignment_5.toc
+INPUT Assignment_5.toc
+INPUT Assignment_5.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
@@ -788,7 +788,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
-OUTPUT Assignment_4.toc
+OUTPUT Assignment_5.toc
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
@@ -797,6 +797,11 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -814,52 +819,27 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8c.vf
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT ../../Programs/Assignment_5_queries.sql
+INPUT ../../Programs/Assignment_5_queries.sql
+INPUT ../../Programs/Assignment_5_queries.sql
+INPUT ../../Programs/Assignment_5_queries.sql
+INPUT ../../Programs/Assignment_5_queries.sql
+INPUT ../../Programs/Assignment_5_queries.sql
+INPUT ../../Programs/Assignment_5.md
+INPUT ../../Programs/Assignment_5.md
+INPUT ../../Programs/Assignment_5.md
+INPUT ../../Programs/Assignment_5.md
+INPUT ../../Programs/Assignment_5.md
+INPUT ../../Programs/Assignment_5.md
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
-INPUT ./inner join.png
-INPUT ./inner join.png
-INPUT inner join.png
-INPUT ./inner join.png
-INPUT ./inner join.png
-INPUT ./left join.png
-INPUT ./left join.png
-INPUT left join.png
-INPUT ./left join.png
-INPUT ./left join.png
-INPUT ./right join.png
-INPUT ./right join.png
-INPUT right join.png
-INPUT ./right join.png
-INPUT ./right join.png
-INPUT ./full outer join.png
-INPUT ./full outer join.png
-INPUT full outer join.png
-INPUT ./full outer join.png
-INPUT ./full outer join.png
-INPUT ../../Programs/Assignment_4.md
-INPUT ../../Programs/Assignment_4.md
-INPUT ../../Programs/Assignment_4.md
-INPUT ../../Programs/Assignment_4.md
-INPUT ../../Programs/Assignment_4.md
-INPUT ../../Programs/Assignment_4.md
-INPUT ../../Programs/Assignment_4_part_2.md
-INPUT ../../Programs/Assignment_4_part_2.md
-INPUT ../../Programs/Assignment_4_part_2.md
-INPUT ../../Programs/Assignment_4_part_2.md
-INPUT ../../Programs/Assignment_4_part_2.md
-INPUT ../../Programs/Assignment_4_part_2.md
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8c.vf
-INPUT Assignment_4.aux
-INPUT ./Assignment_4.out
-INPUT ./Assignment_4.out
+INPUT Assignment_5.aux
+INPUT ./Assignment_5.out
+INPUT ./Assignment_5.out
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb

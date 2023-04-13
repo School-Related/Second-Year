@@ -65,18 +65,18 @@ select b.email, b.flight_no, f.place_from, f.place_to from flight_booking as b i
 select * from flights as f, passenger as p, flight_booking as b where b.email = p.email and b.flight_no = f.flight_no and departure_date between "2021-07-27" and "2021-07-28";
 
 -- 3.
---  Display the top 5 airplanes that participated in Flights from ‘Mumbai’ to ‘London’ based on the
+--  Display the top 5 airplanes that participated in Flights from Mumbai to London based on the
 -- airplane capacity
 
 select * from airplane as a, flights as f where a.reg_no = f.reg_no and f.place_from = "Mumbai" and f.place_to = "London" order by a.capacity desc limit 5;
 
 -- 4.Display the passenger first names who have booked the no_of seats smaller than the average
--- number of seats booked by all passengers for the arrival airport:”New Delhi”
+-- number of seats booked by all passengers for the arrival airport:New Delhi
 
 select * from passenger as p, flight_booking as b, flights as f where p.email = b.email and f.flight_no = b.flight_no and f.place_to = "New Delhi" and b.no_seats < all(select avg(no_seats) from flight_booking);
 
 
-/*5.Display the surnames of passengers who have not booked a flight from “Pune” to “Bangalore”*/
+/*5.Display the surnames of passengers who have not booked a flight from Pune to Bangalore*/
 select surname
 from passenger
 where email not in(
@@ -112,7 +112,7 @@ select name,
 from airplane
 group by name;
 
-/*9.Display the total number of flights which are booked and travelling to “London” airport.*/
+/*9.Display the total number of flights which are booked and travelling to London airport.*/
 select count(b.flight_no) as total
 from flight_booking b,
     flights f
