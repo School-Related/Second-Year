@@ -11,7 +11,7 @@ from rsa import rsa_decryption
 import json
 
 HOST = "127.0.0.1"  # The server's hostname or IP address
-PORT = 65435  # The port used by the server
+PORT = 65436  # The port used by the server
 
 # defining constants
 messages_to_send = [

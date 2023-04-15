@@ -23,7 +23,7 @@ texting = True
 
 messages_received = []
 
-HOST = "192.168.214.24"  # Standard loopback interface address (localhost)
+HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
 PORT = 65436  # Port to listen on (non-privileged ports are > 1023)
 
 public_key = [0, 0]
