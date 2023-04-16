@@ -231,21 +231,62 @@ representation and perform DFS and BFS traversals.
 \section{Pseudo Code}
 \subsection{Creation of the Graph}
 \begin{lstlisting}[language=C++]
-	//Pseudo Code for Creation of Threaded Binary Tree
+
+void create_graph()
+{
+    int src, dst;
+    char ch;
+    do
+        cout << "Enter the source and destination" << endl;
+        cin >> src >> dst;
+        if (src >= nodes || dst >= nodes || src < 0 || dst < 0)
+            cout << "Invalid edge" << endl;
+            continue;
+        if (src == dst)
+            cout << "Invalid edge, self loops not allowed." << endl;
+            continue;
+        AddEdge(src, dst);
+        cout << "Do you want to continue" << endl;
+        cin >> ch;
+    } while (ch == 'y' || ch == 'Y');
+}
 
 \end{lstlisting}
 \subsection{Depth First Search (Recursive)}
 \begin{lstlisting}[language=C++]
-    
-\end{lstlisting}
+void DFS_recursive()
+{
+    bool *visited = new bool[nodes];
+    for (int i = 0; i < nodes; i++)
+        visited[i] = false;
+    for (int i = 0; i < nodes; i++)
+        if (visited[i] == false)
+            DFS_recursive(i, visited);
+    cout << endl;
+}
 
-\subsection{Depth First Search (Non Recursive)}
-\begin{lstlisting}[language=C++]
-    
+void DFS_recursive(int src, bool *visited)
+{
+    visited[src] = true;
+    cout << src << " ";
+    for (auto &adj_node : adjlist[src])
+        if (visited[adj_node] == false)
+            DFS_recursive(adj_node, visited);
+}
 \end{lstlisting}
 
 \subsection{Breadth First Search}
 \begin{lstlisting}[language=C++]
+void breadth_first_traversal()
+{
+    bool *visited = new bool[nodes];
+    for (int i = 0; i < nodes; i++)
+        visited[i] = false;
+    for (int i = 0; i < nodes; i++)
+        if (visited[i] == false)
+            breadth_first_traversal(i, visited);
+    cout << endl;
+}
 \end{lstlisting}
 
 \section{Time Complexity}

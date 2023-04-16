@@ -1,279 +1,319 @@
-Welcome to ADS Assignment 8, hashign with linear probing. 
-What do you want to do? 
-1. Insert without replacement. 
-2. Insert with replacement. 
-3. Exit. 
-1
-You chose to insert without replacement. 
-Enter the keys to insert. 
-1
-The table is now: 
-0:-1 
-1:1 
-2:-1 
-3:-1 
-4:-1 
-5:-1 
-6:-1 
-7:-1 
-8:-1 
-9:-1 
-
-2
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:-1 
-4:-1 
-5:-1 
-6:-1 
-7:-1 
-8:-1 
-9:-1 
-
-3
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:-1 
-5:-1 
-6:-1 
-7:-1 
-8:-1 
-9:-1 
-
-5
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:-1 
-5:5 
-6:-1 
-7:-1 
-8:-1 
-9:-1 
-
-55
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:-1 
-5:5 
-6:55 
-7:-1 
-8:-1 
-9:-1 
-
-234
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:234 
-5:5 
-6:55 
-7:-1 
-8:-1 
-9:-1 
-
-32
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:234 
-5:5 
-6:55 
-7:32 
-8:-1 
-9:-1 
-
-654
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:234 
-5:5 
-6:55 
-7:32 
-8:654 
-9:-1 
-
-34
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:234 
-5:5 
-6:55 
-7:32 
-8:654 
-9:34 
-
-645
-The table is now: 
-0:645 
-1:1 
-2:2 
-3:3 
-4:234 
-5:5 
-6:55 
-7:32 
-8:654 
-9:34 
-
-
-Welcome to ADS Assignment 8, hashign with linear probing. 
-What do you want to do? 
-1. Insert without replacement. 
-2. Insert with replacement. 
-3. Exit. 
-2
-You chose to insert with replacement. 
-Enter the keys to insert. 
-1
-The table is now: 
-0:-1 
-1:1 
-2:-1 
-3:-1 
-4:-1 
-5:-1 
-6:-1 
-7:-1 
-8:-1 
-9:-1 
-
-2
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:-1 
-4:-1 
-5:-1 
-6:-1 
-7:-1 
-8:-1 
-9:-1 
-
-3
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:-1 
-5:-1 
-6:-1 
-7:-1 
-8:-1 
-9:-1 
-
+Enter size of table: 
 4
-The table is now: 
+Enter data for employee 1
+Enter name: 
+Krish
+Enter id: 
+12
+Enter age: 
+21
+
+
+Employee 1: 
+Name: Krish
+Id: 12
+Age: 21
+
+Enter data for employee 2
+Enter name: 
+Part
+Enter id: 
+42
+Enter age: 
+22
+
+
+Employee 2: 
+Name: Part
+Id: 42
+Age: 22
+
+Enter data for employee 3
+Enter name: 
+Ram
+Enter id: 
+23
+Enter age: 
+32
+
+
+Employee 3: 
+Name: Ram
+Id: 23
+Age: 32
+
+Enter data for employee 4
+Enter name: 
+Ramesh
+Enter id: 
+24 
+Enter age: 
+21 
+
+
+Employee 4: 
+Name: Ramesh
+Id: 24
+Age: 21
+
+Enter 1 to insert with replacement, 2 to insert without replacement: 
+1
+Hash table now looks like this. 
 0:-1 
-1:1 
-2:2 
-3:3 
-4:4 
-5:-1 
+1:-1 
+2:12 
+3:23 
+4:24 
+5:42 
 6:-1 
 7:-1 
 8:-1 
 9:-1 
 
-3
-The table is now: 
+Inserting data into the file. 
+Writing employee 1
+Employee 1: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 2
+Employee 2: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 3
+Employee 3: 
+Name: Krish
+Id: 12
+Age: 21
+Writing employee 4
+Employee 4: 
+Name: Ram
+Id: 23
+Age: 32
+Writing employee 5
+Employee 5: 
+Name: Ramesh
+Id: 24
+Age: 21
+Writing employee 6
+Employee 6: 
+Name: Part
+Id: 42
+Age: 22
+Writing employee 7
+Employee 7: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 8
+Employee 8: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 9
+Employee 9: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 10
+Employee 10: 
+Name: 
+Id: 0
+Age: 0
+Reading data from the file. 
+Employee 1: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 2: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 3: 
+Name: Krish
+Id: 12
+Age: 21
+
+Employee 4: 
+Name: Ram
+Id: 23
+Age: 32
+
+Employee 5: 
+Name: Ramesh
+Id: 24
+Age: 21
+
+Employee 6: 
+Name: Part
+Id: 42
+Age: 22
+
+Employee 7: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 8: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 9: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 10: 
+Name: 
+Id: 0
+Age: 0
+
+Enter size of table: 
+2
+Enter data for employee 1
+Enter name: 
+krish
+Enter id: 
+124
+Enter age: 
+21
+
+
+Employee 1: 
+Name: krish
+Id: 124
+Age: 21
+
+Enter data for employee 2
+Enter name: 
+Tony
+Enter id: 
+4
+Enter age: 
+23
+
+
+Employee 2: 
+Name: Tony
+Id: 4
+Age: 23
+
+Enter 1 to insert with replacement, 2 to insert without replacement: 
+2
+Hash table now looks like this. 
 0:-1 
-1:1 
-2:2 
-3:3 
-4:4 
-5:3 
+1:-1 
+2:-1 
+3:-1 
+4:124 
+5:4 
 6:-1 
 7:-1 
 8:-1 
 9:-1 
 
-9
-The table is now: 
-0:-1 
-1:1 
-2:2 
-3:3 
-4:4 
-5:3 
-6:-1 
-7:-1 
-8:-1 
-9:9 
+Inserting data into the file. 
+Writing employee 1
+Employee 1: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 2
+Employee 2: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 3
+Employee 3: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 4
+Employee 4: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 5
+Employee 5: 
+Name: krish
+Id: 124
+Age: 21
+Writing employee 6
+Employee 6: 
+Name: Tony
+Id: 4
+Age: 23
+Writing employee 7
+Employee 7: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 8
+Employee 8: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 9
+Employee 9: 
+Name: 
+Id: 0
+Age: 0
+Writing employee 10
+Employee 10: 
+Name: 
+Id: 0
+Age: 0
+Reading data from the file. 
+Employee 1: 
+Name: 
+Id: 0
+Age: 0
 
-99
-The table is now: 
-0:99 
-1:1 
-2:2 
-3:3 
-4:4 
-5:3 
-6:-1 
-7:-1 
-8:-1 
-9:9 
+Employee 2: 
+Name: 
+Id: 0
+Age: 0
 
-55
-The table is now: 
-0:99 
-1:1 
-2:2 
-3:3 
-4:4 
-5:55 
-6:3 
-7:-1 
-8:-1 
-9:9 
+Employee 3: 
+Name: 
+Id: 0
+Age: 0
 
-66
-The table is now: 
-0:99 
-1:1 
-2:2 
-3:3 
-4:4 
-5:55 
-6:66 
-7:3 
-8:-1 
-9:9 
+Employee 4: 
+Name: 
+Id: 0
+Age: 0
 
-99
-The table is now: 
-0:99 
-1:1 
-2:2 
-3:3 
-4:4 
-5:55 
-6:66 
-7:3 
-8:99 
-9:9 
+Employee 5: 
+Name: krish
+Id: 124
+Age: 21
 
-3
-Table is full.
+Employee 6: 
+Name: Tony
+Id: 4
+Age: 23
+
+Employee 7: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 8: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 9: 
+Name: 
+Id: 0
+Age: 0
+
+Employee 10: 
+Name: 
+Id: 0
+Age: 0

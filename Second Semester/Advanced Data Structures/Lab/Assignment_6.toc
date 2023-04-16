@@ -16,12 +16,12 @@
 \contentsline {section}{\numberline {7}Pseudo Code}{4}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Accepting the Spanning Tree using its adjacency matrix}{4}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Display of the Spanning Tree using its adjacency matrix}{4}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Prim's Algorithm}{5}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.3}Prim's Algorithm}{4}{subsection.7.3}%
 \contentsline {section}{\numberline {8}Time Complexity}{5}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Creation of Minimum Cost Spanning Tree using its adjacency matrix}{5}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Display of Minimum Cost Spanning Tree using its adjacency matrix}{5}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Prim's Algorithm}{6}{subsection.8.3}%
 \contentsline {section}{\numberline {9}Code}{6}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Program}{6}{subsection.9.1}%
-\contentsline {section}{\numberline {10}Conclusion}{7}{section.10}%
-\contentsline {section}{\numberline {11}FAQ}{8}{section.11}%
+\contentsline {section}{\numberline {10}Conclusion}{8}{section.10}%
+\contentsline {section}{\numberline {11}FAQ}{9}{section.11}%

@@ -243,80 +243,82 @@ This example is based on the above example of weighted graph and its cost adjace
 \section{Pseudo Code}
 \subsection{Accepting the Spanning Tree using its adjacency matrix}
 \begin{lstlisting}[language=C++]
-// Graph class with constructor
-class Graph
-    int V // Number of vertices in the graph
-    int** adj // Adjacency matrix to store the graph
-    
-    // Constructor to initialize the graph
-    Graph(int V)
-        this->V = V // Set the number of vertices in the graph
-        adj = new int*[V] // Create a 2D array for adjacency matrix with V rows
-        for (int i = 0; i < V; i++)
-            adj[i] = new int[V] // Create V columns for each row
-            memset(adj[i], 0, sizeof(int) * V) // Initialize all entries in the matrix to 0
-    
+    // input the adjacency matrix
+    cout << "Enter the adjacency matrix: " << endl;
 
-    // Function to add an edge between two vertices with weight w
-    void addEdge(int u, int v, int w)
-        adj[u][v] = w // Set the weight of edge (u, v)
-        adj[v][u] = w // Set the weight of edge (v, u) (since it's an undirected graph)
-    
-
-    // Function to accept the graph as input from the user
-    void acceptGraph()
-        int E // Number of edges in the graph
-        cout << "Enter the number of edges: "
-        cin >> E // Take input from user for the number of edges
-
-        // Loop through all the edges and add them to the graph using the addEdge function
-        for (int i = 0; i < E; i++)
-            int u, v, w // Variables to store the vertices and weight of the edge
-            cout << "Enter the edge (u, v, w): "
-            cin >> u >> v >> w // Take input from user for the edge
-            addEdge(u, v, w) // Add the edge to the graph
-
+    for (int i = 0; i < V; i++)
+        for (int j = 0; j < V; j++)
+            cin >> graph[i][j];
 \end{lstlisting}
 \subsection{Display of the Spanning Tree using its adjacency matrix}
 \begin{lstlisting}[language=C++]
-void Graph::displayMST(int parent[])
-{
-    cout << "Minimum Cost Spanning Tree:" << endl;
+// A utility function to print the
+// constructed MST stored in parent[]
+void printMST(int parent[], int graph[V][V])
+    cout << "Edge \tWeight\n";
     for (int i = 1; i < V; i++)
-    {
-        // Display the edge from parent[i] to i in the MST with weight adj[parent[i]][i]
-        cout << parent[i] << " - " << i << " \t" << adj[parent[i]][i] << endl;
-    }
-}
+        cout << parent[i] << " - " << i << " \t"
+             << graph[i][parent[i]] << " \n";
 \end{lstlisting}
 \subsection{Prim's Algorithm}
-\begin{lstlisting}[language=C++]
-// Function to find the minimum cost spanning tree using Prim's algorithm
-void primsMST()
-// Variables to store the parent of each vertex in the MST and the key value of each vertex
-int parent[V], key[V]
-// Array to keep track of whether each vertex is included in the MST or not
-bool inMST[V]
-// Initialize all key values to infinity and inMST to false
-for (int i = 0; i < V; i++)
-    key[i] = INT_MAX, inMST[i] = false
-// Set the key value of the first vertex to 0
-key[0] = 0
-parent[0] = -1 // Set the parent of the first vertex as -1
+\begin{lstlisting}[language=C++]    
 
-// Loop through all vertices to construct the MST
-for (int i = 0; i < V - 1; i++)
-    // Find the vertex with the minimum key value that is not yet included in the MST
-    int u = minKey(key, inMST)
-    // Add the vertex to the MST
-    inMST[u] = true
-    // Loop through all adjacent vertices of the selected vertex
+// A utility function to find the vertex with
+// minimum key value, from the set of vertices
+// not yet included in MST
+int minKey(int key[], bool mstSet[])
+    // Initialize min value
+    int min = INT_MAX, min_index;
     for (int v = 0; v < V; v++)
-        // If v is adjacent to u, has not been included in the MST, and has a smaller key value than its current value
-        if (adj[u][v] && inMST[v] == false && adj[u][v] < key[v])
-            parent[v] = u // Set u as the parent of v in the MST
-            key[v] = adj[u][v] // Update the key value of v
-    
+        if (mstSet[v] == false && key[v] < min)
+            min = key[v], min_index = v;
+    return min_index;
+
+void primMST(int graph[V][V])
+    // Array to store constructed MST
+    int parent[V];
+
+    // Key values used to pick minimum weight edge in cut
+    int key[V];
+
+    // To represent set of vertices included in MST
+    bool mstSet[V];
+
+    // Initialize all keys as INFINITE
+    for (int i = 0; i < V; i++)
+        key[i] = INT_MAX, mstSet[i] = false;
+
+    // Always include first 1st vertex in MST.
+    // Make key 0 so that this vertex is picked as first
+    // vertex.
+    key[0] = 0;
+
+    // First node is always root of MST
+    parent[0] = -1;
+
+    // The MST will have V vertices
+    for (int count = 0; count < V - 1; count++)
+        // Pick the minimum key vertex from the
+        // set of vertices not yet included in MST
+        int u = minKey(key, mstSet);
+
+        // Add the picked vertex to the MST Set
+        mstSet[u] = true;
+
+        // Update key value and parent index of
+        // the adjacent vertices of the picked vertex.
+        // Consider only those vertices which are not
+        // yet included in MST
+        for (int v = 0; v < V; v++)
+            // graph[u][v] is non zero only for adjacent
+            // vertices of m mstSet[v] is false for vertices
+            // not yet included in MST Update the key only
+            // if graph[u][v] is smaller than key[v]
+            if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v])
+                parent[v] = u, key[v] = graph[u][v];
+
+    // Print the constructed MST
+    printMST(parent, graph);
 \end{lstlisting}
 
 \section{Time Complexity}

@@ -1,169 +1,174 @@
 // Creating of a Network in a Graph
 #include <iostream>
 #include <stack>
+#include <queue>
+#include <list>
 
 using namespace std;
 
-// Class to store the vertex and its adjacent nodes
-class GraphNode
-{
-    int vertex; // Stores the vertex
-    GraphNode *next; // Pointer to the next node
-    friend class Graph; // Making Graph class as a friend of GraphNode
-};
-
-// Graph class to create a graph and perform traversal operations
 class Graph
 {
+
 private:
-    GraphNode *head[20]; // Array of pointers to store the head of each linked list
-    int no_of_vtex; // Stores the number of vertices
+    int nodes;
+    list<int> *adjlist;
 
 public:
-    // Constructor to initialize the number of vertices
-    Graph(int no_of_vtex = 0)
+    Graph()
     {
-        this->no_of_vtex = no_of_vtex;
-        for (int i = 0; i < no_of_vtex; i++)
-        {
-            head[i] = new GraphNode(); // Allocating memory for each head node
-            head[i]->vertex = i; // Assigning the vertex value to the head node
-        }
-    }
-    
-    // Function to create the graph
-    void create_graph()
-    {
-        int current_vertex;
-        char choice;
-        GraphNode *temp;
-        for (int i = 0; i < no_of_vtex; i++)
-        {
-            temp = head[i];
-            do
-            {
-                cout << "Enter the vertex to which " << i << " is connected" << endl;
-                cin >> current_vertex;
-                if (current_vertex == i)
-                {
-                    cout << "Self Loops are not allowed" << endl;
-                }
-                else
-                {
-                    GraphNode *current = new GraphNode(); // Allocating memory for the current node
-                    current->vertex = current_vertex; // Assigning the vertex value to the current node
-                    temp->next = current; // Linking the current node to the previous node
-                    temp = temp->next; // Moving the pointer to the current node
-                }
-                cout << "Do you want to add more edges" << endl;
-                cin >> choice;
-            } while (choice == 'y' || choice == 'Y');
-        }
     }
 
-    // Function to perform Depth First Search using recursion
+    Graph(int nodes)
+    { // Allocate resources
+        adjlist = new list<int>[nodes];
+        this->nodes = nodes;
+    }
+
+    ~Graph()
+    { // Free allocated resources
+        delete[] adjlist;
+    }
+
+    void AddEdge(int src, int dst)
+    {
+        adjlist[src].push_back(dst);
+        adjlist[dst].push_back(src);
+    }
+
+    void Iterate(int src)
+    {
+        cout << src << " : ";
+        for (auto &adj_node : adjlist[src])
+        {
+            cout << adj_node << " ";
+        }
+        cout << endl;
+    }
+
     void DFS_recursive()
     {
-        int vertex;
-        int visited[20];
-        for (int i = 0; i < no_of_vtex; i++)
+        bool *visited = new bool[nodes];
+        for (int i = 0; i < nodes; i++)
         {
-            visited[i] = 0; // Initializing all the vertices as unvisited
+            visited[i] = false;
         }
-        cout << "What is the starting vertex" << endl;
-        cin >> vertex;
-        DFS_recursive_worker(vertex, visited); // Calling the recursive worker function
+        for (int i = 0; i < nodes; i++)
+        {
+            if (visited[i] == false)
+            {
+                DFS_recursive(i, visited);
+            }
+        }
+        cout << endl;
     }
 
-    // Recursive worker function to traverse the graph
-    void DFS_recursive_worker(int vertex, int visited[])
+    void DFS_recursive(int src, bool *visited)
     {
-        GraphNode *temp;
-        temp = head[vertex];
-        visited[vertex] = 1; // Marking the vertex as visited
-        cout << vertex << " " << endl;
-        for (int i = 0; i < no_of_vtex; i++)
+        visited[src] = true;
+        cout << src << " ";
+        for (auto &adj_node : adjlist[src])
         {
-            if (visited[temp->vertex] == 0)
+            if (visited[adj_node] == false)
             {
-                DFS_recursive_worker(temp->vertex, visited); // Recursively calling the worker function
+                DFS_recursive(adj_node, visited);
             }
-            temp = temp->next;
         }
     }
 
-    // Function to perform Depth First Search without recursion
-    void DFS_non_recursive(int vertex)
-    {
-        int visited[20];
-        stack<int> s;
-        for (int i = 0; i < no_of_vtex; i++)
-            visited[i] = 0;
-        s.push(vertex); // Pushing the starting vertex into the stack
-        visited[vertex] = 1;
-        do
-        {
-            vertex = s.top(); // Taking out the top element from the stack
-            s.pop();
-            cout << vertex << " ";
-            for (int w = 0; w < no_of_vtex; w++)
-            {
-                if (!visited[w])
-                {
-                    s.push(w); // Pushing the unvisited vertex into the stack
-                    visited[w] = 1;
-                }
-            }
-        } while (!s.empty());
-    }
-
-    // Function to perform Breadth First Search
     void breadth_first_traversal()
     {
-        int visited[20];
-        int starting_vertex;
-        for (int i = 0; i < no_of_vtex; i++)
+        bool *visited = new bool[nodes];
+        for (int i = 0; i < nodes; i++)
         {
-            visited[i] = 0; // Initializing all the vertices as unvisited
+            visited[i] = false;
         }
-        cout << "What is the starting vertex" << endl;
-        cin >> starting_vertex;
-        breadth_first_traversal(starting_vertex, visited); // Calling the BFS function
+        for (int i = 0; i < nodes; i++)
+        {
+            if (visited[i] == false)
+            {
+                breadth_first_traversal(i, visited);
+            }
+        }
+        cout << endl;
     }
 
-    // Worker function to traverse the graph
-    void breadth_first_traversal(int vertex, int visited[])
+    void breadth_first_traversal(int src, bool *visited)
     {
-        GraphNode *temp;
-        temp = head[vertex];
-        visited[vertex] = 1; // Marking the vertex as visited
-        cout << vertex << " " << endl;
-        for (int i = 0; i < no_of_vtex; i++)
+        queue<int> q;
+        q.push(src);
+        visited[src] = true;
+        while (!q.empty())
         {
-            if (visited[temp->vertex] == 0)
+            int node = q.front();
+            q.pop();
+            cout << node << " ";
+            for (auto &adj_node : adjlist[node])
             {
-                DFS_recursive_worker(temp->vertex, visited); // Calling the recursive worker function
+                if (visited[adj_node] == false)
+                {
+                    q.push(adj_node);
+                    visited[adj_node] = true;
+                }
             }
-            temp = temp->next;
         }
-        
+    }
+
+    void create_graph()
+    {
+        int src, dst;
+        char ch;
+        do
+        {
+            cout << "Enter the source and destination" << endl;
+            cin >> src >> dst;
+            if (src >= nodes || dst >= nodes || src < 0 || dst < 0)
+            {
+                cout << "Invalid edge" << endl;
+                continue;
+            }
+            if (src == dst)
+            {
+                cout << "Invalid edge, self loops not allowed." << endl;
+                continue;
+            }
+            AddEdge(src, dst);
+            cout << "Do you want to continue" << endl;
+            cin >> ch;
+        } while (ch == 'y' || ch == 'Y');
     }
 };
 
 int main()
 {
-    int no_of_vtex, starting_vertex;
-    cout << "Enter the number of vertices" << endl;
-    cin >> no_of_vtex;
-    Graph g(no_of_vtex);
+    Graph g(10);
+
+    // g.AddEdge(0, 1);
+    // g.AddEdge(0, 2);
+    // g.AddEdge(1, 3);
+    // g.AddEdge(1, 4);
+    // g.AddEdge(2, 3);
+    // g.AddEdge(3, 5);
+    // g.AddEdge(4, 6);
+    // g.AddEdge(5, 6);
+    // g.AddEdge(5, 7);
+    // g.AddEdge(6, 7);
+    // g.AddEdge(6, 8);
+    // g.AddEdge(7, 8);
+    // g.AddEdge(7, 9);
+    // g.AddEdge(8, 9);
+
+    // cout << "Adjacency list implementation for graph" << endl;
+
+    // g.Iterate(0);
+    // g.Iterate(1);
+    // g.Iterate(4);
+
     g.create_graph();
+
     cout << "Depth First Search Recursive" << endl;
     g.DFS_recursive();
-    cout << "Depth First Search Non Recursive" << endl;
-    cout << "What is the starting vertex" << endl;
-    cin >> starting_vertex;
-    g.DFS_non_recursive(starting_vertex);
     cout << "Breadth First Search" << endl;
     g.breadth_first_traversal();
+
     return 0;
 }
