@@ -11,7 +11,7 @@ from rsa import rsa_decryption
 import json
 
 HOST = "127.0.0.1"  # The server's hostname or IP address
-PORT = 65436  # The port used by the server
+PORT = 65432  # The port used by the server
 
 # defining constants
 messages_to_send = [
@@ -40,7 +40,7 @@ def encrypt_alg(plain_text):
         # print(ord(i))
         cipher_text = rsa_encryption(ord(i), key=server_public_key)
         cipher_texts.append(cipher_text)
-        print(cipher_text)
+        # print(cipher_text)
 
     cipher_texts = [chr(i) for i in cipher_texts]
     cipher_text = "".join(cipher_texts)
@@ -181,3 +181,26 @@ while texting:
     messages_received.insert(0, data.decode(encoding="utf-32").strip(" "))
 
 s.close()
+
+# =========>> CLIENT <<===========
+# Identify Yourself for the server: krish 
+# Our key Information
+# Private Key [149, 36391]
+# Public Key [4349, 36391]
+# Servers data {'name': 'parth', 'e': 29033, 'n': 42593}
+# Server's Public Key [29033, 42593]
+# Clients data {"name": "krish", "e": 4349, "n": 36391}
+# Messages to this chat are now end to end encrypted. No one outside of this chat, Not even Mark Zuckerburg can read or listen to them.
+
+
+# > Sun Apr 16 20:58:57 2023 , From  parth
+# *> 被徑㛢㛢Ⲳᔜ
+# Sun Apr 16 20:58:57 2023 , From  parth
+# > hello!
+# Hi!  
+# > client is sending some stuff 
+# > Sun Apr 16 20:59:22 2023 , From  parth
+# *> 徑㹕艻徑㹕ފ㾝ފ㹕徑㭖徑㾝艻㾝盠十ފⲲ䑚徑ފ჉佹㖈㖈ފ劆ފ椟徑㛢㛢
+# Sun Apr 16 20:59:22 2023 , From  parth
+# > server is receiving some stuff as well
+# bye 

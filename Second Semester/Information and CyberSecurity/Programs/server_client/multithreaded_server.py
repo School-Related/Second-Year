@@ -24,7 +24,7 @@ texting = True
 messages_received = []
 
 HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
-PORT = 65436  # Port to listen on (non-privileged ports are > 1023)
+PORT = 65432  # Port to listen on (non-privileged ports are > 1023)
 
 public_key = [0, 0]
 private_key = [0, 0]
@@ -197,3 +197,33 @@ def main():
 
 
 server()
+
+
+# =========>> SERVER <<===========
+# Server Started, Listening for connections...
+# Connected by ('127.0.0.1', 55016)
+# Identify Yourself for the client: parth
+# Generating Keys
+# Our key Information
+# Private Key [77, 42593]
+# Public Key [29033, 42593]
+# Servers data {"name": "parth", "e": 29033, "n": 42593}
+# Clients data {'name': 'krish', 'e': 4349, 'n': 36391}
+# Client's key Information [4349, 36391]
+# Messages to this chat are now end to end encrypted. No one outside of this chat, Not even Mark Zuckerburg can read or listen to them.
+
+
+# > hello!
+# > Sun Apr 16 20:59:04 2023 , From  krish
+# *> ❒ᫍ⇬
+# Sun Apr 16 20:59:04 2023 , From  krish
+# > Hi!
+# Sun Apr 16 20:59:14 2023 , From  krish
+# *> ⢩꘩ᫍ湛倭浿瘂ᫍᗿ瘂ᗿ湛倭冓ᫍ倭闍瘂ᗿ䟻㦤湛瘂ᗿ浿靠坽坽
+# Sun Apr 16 20:59:14 2023 , From  krish
+# > client is sending some stuff
+# server is receiving some stuff as well
+# > bye
+# Sun Apr 16 21:00:04 2023 , From  krish
+# *> 
+# we are done texting
