@@ -473,8 +473,8 @@
 
 
 	\huge{\textsc{
-		Learning about If Else statements in Python		
-	}} \\
+			Exception Handling in Python
+		}} \\
 
 
 
@@ -515,179 +515,116 @@
 \setcounter{page}{1}
 
 \section{Aim}
-To Write a python program to find largest of three numbers.
+To write a python program that accepts the length of three sides of a triangle as inputs. The
+program should indicate whether or not the triangle is a right-angled triangle using function
+with exception handling.
 
 \section{Objectives}
 \begin{enumerate}
-	\item To learn and Implement different types of If-else statements. 
+	\item To learn and Implement Exception and Function handling in Python.
 \end{enumerate}
 
 \section{Problem Statement}
-Learn different kinds of If statements in python, and understand some Data Types in Python. 
-    
+To check whether or not the triangle is a right-angled triangle using function with exception
+handling.
 
-\hypertarget{theory}{%
-\section{Theory}\label{theory}}
+\section{Theory}
 
-    \hypertarget{decision-making}{%
-\subsection{Decision Making}\label{decision-making}}
+\subsection{Python Functions}
+In Python, a function is a block of reusable code that performs a specific task. Functions are used to organize code into modules, which can be easily reused and maintained.
 
-Following is the general form of a typical decision making structure
-found in most of the programming languages.
+\begin{lstlisting}[language=Python, caption=Python Function]
+	def multiply(x, y):
+    """
+    This function multiplies two numbers and returns the result
+    """
+    return x * y
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ condition:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{elif}\NormalTok{ condition:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
 
-Python programming language assumes any non-zero and non-null values as
-\emph{true}, and if it is either zero or null, then it is assumed as
-\emph{false} value.
+	# To call it, 
+	result = multiply(3, 4)
+	print(result)
+	
+	# This will output 12, since 3 * 4 is 12.
+\end{lstlisting}
 
-Python programming language provides the following types of decision
-making statements.
+Functions can also have optional arguments, default values, and can return multiple values. Here's an example of a function that takes an optional argument:
 
-    \hypertarget{if-statements}{%
-\subsection{If Statements}\label{if-statements}}
+\begin{lstlisting}[language=sql]
+	def greet(name, greeting='Hello'):
+    """
+    This function greets a person with a given message.
+    """
+    print(greeting, name)
 
-An \emph{if statement} consists of a boolean expression followed by one
-or more statements.
+greet('John') # Output: Hello John
+greet('Mary', 'Hi') # Output: Hi Mary
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
+\end{lstlisting}
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{1}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{var} \PY{o}{=} \PY{l+m+mi}{100}
-\PY{k}{if} \PY{n}{var} \PY{o}{==} \PY{l+m+mi}{100}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Value of expression is 100}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Good bye!}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
+In this example, the greeting parameter is optional and has a default value of 'Hello'. If we don't specify a greeting when calling the function, it will use the default value. If we do specify a greeting, it will use the value we provide.
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-Value of expression is 100
-Good bye!
-    \end{Verbatim}
+Functions are an important tool in Python programming and are used extensively in many applications. They allow us to write reusable code that can be easily maintained and modified.
 
-    \hypertarget{if-else-statements}{%
-\subsection{If \ldots{} Else Statements}\label{if-else-statements}}
+\subsection{Exception Handling}
 
-An \emph{if statement} can be followed by an optional \emph{else
-statement}, which executes when the boolean expression is \emph{false}.
+In Python, exceptions are used to handle runtime errors that occur during program execution. When an error occurs, Python raises an exception, which can be caught and handled by the program.\\
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
+\subsubsection{Raising Exceptions}
+Python exceptions can be raised explicitly using the raise keyword. This can be done in response to an error condition that the program encounters. For example:
+\begin{lstlisting}[language=sql]
+	if x < 0:
+    raise ValueError("x must be positive")
+\end{lstlisting}
+This code raises a ValueError exception with the message "x must be positive" if the value of x is negative.
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{3}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k}{if} \PY{n}{var} \PY{o}{==} \PY{l+m+mi}{200}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Value of expression is 200}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{k}{else}\PY{p}{:} 
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Value of expression is not 200}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
+\subsubsection{Catching Exceptions}
+Exceptions can be caught and handled using the try and except keywords. The code that might raise an exception is placed inside a try block, and any exceptions that occur are caught and handled in the corresponding except block. For example:
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-Value of expression is not 200
-    \end{Verbatim}
+\begin{lstlisting}[language=sql]
+	try:
+	    result = 10 / 0
+	except ZeroDivisionError:
+    	print("Division by zero error")
+\end{lstlisting}
+here, this code attempts to divide 10 by zero, which raises a ZeroDivisionError exception. The exception is caught by the except block, which prints an error message.
+	
+\subsubsection{Handling Multiple Exceptions}
+Python allows handling multiple exceptions in a single try block. This is done by providing multiple except blocks, each handling a different type of exception. For example:
 
-    \hypertarget{ifelifelse-statements}{%
-\subsection{IF\ldots ELIF\ldots ELSE
-Statements}\label{ifelifelse-statements}}
+\begin{lstlisting}[language=sql]
+try:
+    result = int("not a number")
+except ValueError:
+    print("ValueError: invalid literal for int() with base 10")
+except TypeError:
+    print("TypeError: int() argument must be a string or a number")
+This code attempts to convert the string "not a number" to an integer, which raises a ValueError exception. The except block for ValueError is executed, printing an error message.
+\end{lstlisting}
 
-An \emph{if statement} can be followed by an optional \emph{elif
-statement}, which is short for \emph{else if}. It is very useful to test
-various conditions for decision making.
+\subsubsection{Finally Block}
+Python provides a finally block that can be used to execute cleanup code, regardless of whether an exception was raised or not. The code inside the finally block is executed after the try and except blocks. For example:
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{elif}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
+\begin{lstlisting}[language=sql]
+try:
+    file = open("example.txt")
+    # perform some operations on the file
+except IOError:
+    print("Error: could not open file")
+finally:
+    file.close()
+\end{lstlisting}
+This code opens a file and performs some operations on it, which may raise an IOError exception. The finally block ensures that the file is closed, regardless of whether an exception was raised or not.
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{9}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{import} \PY{n+nn}{random}
-\PY{n}{num} \PY{o}{=} \PY{n}{random}\PY{o}{.}\PY{n}{randint}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{num}\PY{p}{)}
-\PY{k}{if} \PY{n}{num} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Positive number}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{k}{elif} \PY{n}{num} \PY{o}{\PYZlt{}} \PY{l+m+mi}{0}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Negative number}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\PY{k}{else}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The value is Zero}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
+\subsection{How does Exception handling happen in python?}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-3
-Positive number
-    \end{Verbatim}
+When an error occurs in a program, Python raises an exception. This exception can be caught and handled by the program, allowing it to recover from the error and continue executing.\\
 
-    \hypertarget{nested-if-statements}{%
-\subsection{Nested IF Statements}\label{nested-if-statements}}
+Behind the scenes, Python maintains a stack of "frames" representing the current execution context. When an exception occurs, Python looks through the frames on the stack in reverse order to find a "try" block that can handle the exception. A try block is a section of code that may raise an exception, but also contains code to handle the exception if it occurs.\\
 
-You can use one \emph{if} or \emph{else} statement inside another
-\emph{if} or \emph{else} statement(s).
+If Python finds a try block that matches the type of exception raised, it jumps to the corresponding "except" block and executes it. The except block may contain code to handle the exception and recover from the error, or it may simply log the error and exit the program.\\
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{    statement(s)}
-    \ControlFlowTok{if}\NormalTok{ expression:}
-\NormalTok{        statement(s)}
-    \ControlFlowTok{else}\NormalTok{:}
-\NormalTok{        statement(s)}
-\ControlFlowTok{else}\NormalTok{:}
-\NormalTok{    statement(s)}
-\end{Highlighting}
-\end{Shaded}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{11}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{Number\PYZus{}of\PYZus{}passengers} \PY{o}{=} \PY{l+m+mi}{6}
-\PY{n}{Number\PYZus{}of\PYZus{}baggage} \PY{o}{=} \PY{l+m+mi}{2}
-\PY{n}{Security\PYZus{}check} \PY{o}{=} \PY{k+kc}{True}
-
-\PY{k}{if} \PY{n}{Number\PYZus{}of\PYZus{}passengers} \PY{o}{\PYZgt{}} \PY{l+m+mi}{5}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The number of passengers is more than 5}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-    \PY{k}{if} \PY{n}{Number\PYZus{}of\PYZus{}passengers} \PY{o+ow}{and} \PY{n}{Number\PYZus{}of\PYZus{}baggage} \PY{o}{\PYZgt{}} \PY{l+m+mi}{5}\PY{p}{:}
-        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The number of passengers and baggage is more than 5}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-    \PY{k}{else}\PY{p}{:}
-        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The number of passengers and baggage is less than 5}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-The number of passengers is more than 5
-The number of passengers and baggage is less than 5
-    \end{Verbatim}
+If Python does not find a matching try block on the stack, the program terminates and prints a traceback message showing the location where the exception occurred and the sequence of function calls that led to the error.
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
@@ -696,135 +633,187 @@ The number of passengers and baggage is less than 5
 
 \section{Libraries Used with pip}
 No additional Libraries are used with pip. The only libraries used are the default libraries that come with python.
-
-% These are the requirements for the libraries needed for the program to run. Installed using pip on a virtual environment using virtualenv. 
-
-% \begin{itemize}
-%     \item numpy==1.21.4
-%     \item pandas==1.3.4
-% \end{itemize}
-
-% \begin{lstinputlisting}{../Programs/Assignment_1_requirements.txt}
-
-
 \section{Input}
 \begin{enumerate}
-	\item Take 3 numbers from the User. 
+	\item Accepts the length of three sides of a triangle as inputs from the user
 \end{enumerate}
 \section{Output}
 \begin{enumerate}
-	\item The Largest of those numbers. 
+	\item Display whether or not the triangle is a right-angled triangle.
 \end{enumerate}
-
+ 
 \section{Code}
-
+Write a python program that accepts the length of three sides of a
+triangle as inputs. The program should indicate whether or not the
+triangle is a right angled triangle using a user defined function with
+exception handling.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{1}{\boxspacing}
+\prompt{In}{incolor}{9}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{c+c1}{\PYZsh{} splitting the input string into a list of strings and then converting each string into an integer}
-\PY{p}{(}\PY{n}{a}\PY{p}{,} \PY{n}{b}\PY{p}{,} \PY{n}{c}\PY{p}{)} \PY{o}{=} \PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{i}\PY{p}{)} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{input}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Enter 3 Numbers: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{o}{.}\PY{n}{split}\PY{p}{(}\PY{p}{)}\PY{p}{]}
-\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The Numbers that you have entered are: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{a}\PY{p}{,} \PY{n}{b}\PY{p}{,} \PY{n}{c}\PY{p}{)}
+\PY{k+kn}{import} \PY{n+nn}{math}
 
 
-\PY{c+c1}{\PYZsh{} checking the largest number}
-\PY{k}{if} \PY{p}{(}\PY{n}{a} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{b} \PY{o+ow}{and} \PY{n}{a} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{c}\PY{p}{)}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The largest number is:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{a}\PY{p}{)}
+\PY{k}{def} \PY{n+nf}{check\PYZus{}right\PYZus{}angled\PYZus{}triangle}\PY{p}{(}\PY{n}{side\PYZus{}1}\PY{p}{,} \PY{n}{side\PYZus{}2}\PY{p}{,} \PY{n}{side\PYZus{}3}\PY{p}{)}\PY{p}{:}
+    \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}This function takes three sides of a triangle as input and returns True if the triangle is right\PYZhy{}angled and False otherwise.}
+\PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+    \PY{n}{longest\PYZus{}side} \PY{o}{=} \PY{n+nb}{max}\PY{p}{(}\PY{n}{side\PYZus{}1}\PY{p}{,} \PY{n}{side\PYZus{}2}\PY{p}{,} \PY{n}{side\PYZus{}3}\PY{p}{)}
+    \PY{n+nb}{print}\PY{p}{(}\PY{n}{longest\PYZus{}side}\PY{p}{)}
+    \PY{k}{if} \PY{n}{math}\PY{o}{.}\PY{n}{pow}\PY{p}{(}\PY{n}{longest\PYZus{}side}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)} \PY{o}{==} \PY{p}{(}\PY{n}{math}\PY{o}{.}\PY{n}{pow}\PY{p}{(}\PY{n}{side\PYZus{}1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)} \PY{o}{+} \PY{n}{math}\PY{o}{.}\PY{n}{pow}\PY{p}{(}\PY{n}{side\PYZus{}2}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)} \PY{o}{+} \PY{n}{math}\PY{o}{.}\PY{n}{pow}\PY{p}{(}\PY{n}{side\PYZus{}3}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)} \PY{o}{\PYZhy{}} \PY{n}{math}\PY{o}{.}\PY{n}{pow}\PY{p}{(}\PY{n}{longest\PYZus{}side}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+        \PY{k}{return} \PY{k+kc}{True}
+    \PY{k}{else}\PY{p}{:}
+        \PY{k}{return} \PY{k+kc}{False}        
+    
+\end{Verbatim}
+\end{tcolorbox}
 
-\PY{k}{elif} \PY{n}{b} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{a} \PY{o+ow}{and} \PY{n}{b} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{c}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The largest number is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{b}\PY{p}{)}
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{16}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k}{def} \PY{n+nf}{main}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Welcome to Python Assignment 3}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Enter the sides of the triangle to check if it is a right angled triangle}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{k}{try}\PY{p}{:}
+        \PY{n}{side\PYZus{}1} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n+nb}{input}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Enter the First side: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n}{side\PYZus{}2} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n+nb}{input}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Enter the Second side: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n}{side\PYZus{}3} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n+nb}{input}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Enter the Third side: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}
+        \PY{k}{if} \PY{n}{check\PYZus{}right\PYZus{}angled\PYZus{}triangle}\PY{p}{(}\PY{n}{side\PYZus{}1}\PY{p}{,} \PY{n}{side\PYZus{}2}\PY{p}{,} \PY{n}{side\PYZus{}3}\PY{p}{)}\PY{p}{:}
+            \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The triangle is a right angled triangle}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        \PY{k}{else}\PY{p}{:}
+            \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The triangle is not a right angled triangle}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{c+c1}{\PYZsh{} except ValueError:}
+    \PY{c+c1}{\PYZsh{}     print(\PYZdq{}Value Error Occured: Please enter a valid number\PYZdq{})}
+    \PY{k}{except} \PY{n+ne}{Exception} \PY{k}{as} \PY{n}{e}\PY{p}{:}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{An error occurred: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{e}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
 
-\PY{k}{else}\PY{p}{:} 
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The largest number is: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{c}\PY{p}{)}
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{18}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{main}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-The Numbers that you have entered are:  1 2 3
-The largest number is:  3
+Welcome to Python Assignment 3
+Enter the sides of the triangle to check if it is a right angled triangle
+An error occurred:  invalid literal for int() with base 10: 'hj'
     \end{Verbatim}
 
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{15}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{main}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Welcome to Python Assignment 3
+Enter the sides of the triangle to check if it is a right angled triangle
+5
+The triangle is a right angled triangle
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{20}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{main}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Welcome to Python Assignment 3
+Enter the sides of the triangle to check if it is a right angled triangle
+An error occurred:  invalid literal for int() with base 10: '-af'
+    \end{Verbatim}
+
+    \hypertarget{assignment-3---part-2}{%
+\subsection{Assignment 3 - Part 2}\label{assignment-3---part-2}}
+
+Given a list l1, find reciprocal of each element in the list. Use Error
+Handling
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{34}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{What do you want in the list? }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{input\PYZus{}list} \PY{o}{=} \PY{p}{[}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mf}{5.3}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{x}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{]}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The Input list is:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{input\PYZus{}list}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+What do you want in the list?
+The Input list is: [10, 5.3, 'x', 4, 0]
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{35}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The reciprocals are: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{k}{while} \PY{n}{i} \PY{o}{\PYZlt{}} \PY{n+nb}{len}\PY{p}{(}\PY{n}{input\PYZus{}list}\PY{p}{)} \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}\PY{p}{:}
+    \PY{k}{try}\PY{p}{:}
+        \PY{n}{i} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{/}\PY{n}{input\PYZus{}list}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+    \PY{k}{except} \PY{n+ne}{TypeError}\PY{p}{:}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{TypeError: Please enter a valid number}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{k}{except} \PY{n+ne}{ZeroDivisionError}\PY{p}{:}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ZeroDivisionError: Please enter a number other than 0}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{k}{except} \PY{n+ne}{Exception} \PY{k}{as} \PY{n}{e}\PY{p}{:}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{An error occurred: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{e}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+The reciprocals are:
+0.18867924528301888
+TypeError: Please enter a valid number
+0.25
+ZeroDivisionError: Please enter a number other than 0
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\end{Verbatim}
+\end{tcolorbox}
+
+
 \section{Conclusion}
-Studied implementation of different forms of if...else statements using python
-programming.
+Thus, We have studied python funtions along with exception handling and implemented it in the above program.
 \clearpage
 
 \section{FAQ}
 
 \begin{enumerate}
-	\item Describe following logical and relational operators with suitable examples.\\
-	Logical Operators: and, or, not\\
-	Relational Operators: ==, !=, >, <, >=, <=\\
+	\item \textbf{Why should use an exception?}\\
 
-	\textbf{Answer:}\\
+	      Exceptions are convenient in many ways for handling errors and special conditions in a program. When you think that you have a code which can produce an error then you can use exception handling. It handles the error by its own and your code will be executed without any interruption.
 
-	\textbf{Logical Operators:}\\
+	      There are many reasons to use exceptions, not just in python, but in all programming languages.
+	      \begin{enumerate}
+		      \item \textbf{Separation of Error Handling Code from Regular Code:} Exceptions allow you to separate error handling code from regular code. This is a good thing, because it allows you to focus on the regular code, and not worry about error handling until something goes wrong.
+		      \item \textbf{Propagating Errors Up the Call Stack:} Exceptions allow you to propagate errors up the call stack, until you find a function that can handle the error. This is a good thing, because it allows you to write code that can handle errors in a centralized location, instead of having to handle errors in every function.
+		      \item \textbf{Handling Errors in a Central Location:} Exceptions allow you to handle errors in a central location, instead of having to handle errors in every function. This is a good thing, because it allows you to write code that can handle errors in a centralized location, instead of having to handle errors in every function.
+	      \end{enumerate}
 
-	\textit{and:} This operator is used to check if both the conditions are true.\\
+	\item \textbf{Why functions are needed in Python?}\\
 
-	\textit{or:} This operator is used to check if any one of the conditions is true.\\
+	      Functions are a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time. Also functions are a key way to define interfaces so programmers can share their code.
 
-	\textit{not:} This operator is used to check if the condition is false.\\
+	      There are many reasons to use functions:
+	      \begin{enumerate}
+		      \item \textbf{Modularity:} Functions allow you to break down the problem into smaller parts. This makes your code easier to read and maintain.
+		      \item \textbf{Reuseability:} Functions can be reused in different programs. This saves time and effort.
+		      \item \textbf{Scoping:} Functions allow you to define variables that are only used within the function's scope. This avoids name collisions with variables in other parts of the program.
+		      \item \textbf{Namespacing:} Functions allow you to define variables that are only used within the function's scope. This avoids name collisions with variables in other parts of the program.
+		      \item \textbf{Testing and Debugging:} Functions allow you to test parts of your program in isolation. This makes it easier to find and fix bugs.
+		      \item \textbf{Composition:} Functions allow you to break down the problem into smaller parts. This makes your code easier to read and maintain.
+	      \end{enumerate}
 
-	\textbf{Relational Operators:}\\
-
-	\textit{==:} This operator is used to check if the two operands are equal.\\
-
-	\textit{!=:} This operator is used to check if the two operands are not equal.\\
-
-	\textit{>:} This operator is used to check if the left operand is greater than the right operand.\\
-
-	\textit{<:} This operator is used to check if the left operand is less than the right operand.\\
-
-	\textit{>=:} This operator is used to check if the left operand is greater than or equal to the right operand.\\
-
-	\textit{<=:} This operator is used to check if the left operand is less than or equal to the right operand.\\
-	
-	\textbf{Example for All the above mentioned Operators are:}\\
-	
-	\begin{lstlisting}[language=Python]
-		# Logical Operators
-		a = 10
-		b = 20
-		c = 30
-		if a > b and a > c:
-			print("a is the largest number")
-		elif b > a or b > c:
-			print("b is greater than a or b is greater than c")
-
-		# Relational Operators
-		a = 10
-		b = 20
-		if a == b:
-			print("a and b are equal")
-		else:
-			print("a and b are not equal")
-		
-		if a != b:
-			print("a and b are not equal")
-		else:
-			print("a and b are equal")	
-
-		if a > b:
-			print("a is greater than b")
-		else:
-			print("a is less than b")
-
-		if a < b:
-			print("a is less than b")
-		else:
-			print("a is greater than b")
-
-		if a >= b:
-			print("a is greater than or equal to b")
-		else:
-			print("a is less than b")
-
-		if a <= b:
-			print("a is less than or equal to b")
-		else:
-			print("a is greater than b")
-	\end{lstlisting}
 
 \end{enumerate}
 

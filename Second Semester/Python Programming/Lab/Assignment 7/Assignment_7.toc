@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
+\contentsline {section}{\numberline {3}Problem Statement}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pandas}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Matplotlib}{1}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Different types of Data Structures in Pandas}{1}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Reading data from csv file}{1}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Platform}{1}{section.5}%
+\contentsline {section}{\numberline {6}Input and Output}{1}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Input}{1}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Output}{1}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Requirements}{1}{section.7}%
+\contentsline {section}{\numberline {8}Code}{2}{section.8}%
+\contentsline {subsubsection}{\numberline {8.0.1}Reading First few Values}{2}{subsubsection.8.0.1}%
+\contentsline {subsubsection}{\numberline {8.0.2}Simple Series}{3}{subsubsection.8.0.2}%
+\contentsline {subsubsection}{\numberline {8.0.3}Slicing}{4}{subsubsection.8.0.3}%
+\contentsline {section}{\numberline {9}Conclusion}{9}{section.9}%
+\contentsline {section}{\numberline {10}FAQ}{10}{section.10}%

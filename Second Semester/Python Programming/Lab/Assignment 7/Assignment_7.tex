@@ -516,1023 +516,429 @@
 \setcounter{page}{1}
 
 \section{Aim}
-Write a python code to use a Numpy module create an array and check the following:
-\begin{enumerate}
-    \item Type of array.
-    \item Axes of array.
-    \item Shape of array.
-    \item Type of elements in array.
-\end{enumerate}
+Write a python code to read a .csv file using panda's module and print the first and last five
+records of the file. Using Matplotlib shows data analysis.
 
 \section{Objectives}
 \begin{enumerate}
-    \item To learn and implement functions of the Numpy module.
+    \item To learn and implement Function of Pandas and Matplotlib modules.
 \end{enumerate}
 
+\section{Problem Statement}
+Use of Pandas module for data analysis and Matplotlib for data visualization.
+
 \section{Theory}
-% Numpy Library and its Functions.
-% arrange(), shape, reshape, size, ndim, eyes, ones, zeros, dtype, diag,
-\subsection{Numpy Library}
-The Numpy library is a Python library that is used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+\subsection{Pandas}
+\subsection{Matplotlib}
+\subsection{Different types of Data Structures in Pandas}
+\subsection{Reading data from csv file}
 
-It also has a large collection of high-level mathematical functions to operate on these arrays. It is also used for working in domain of machine learning, deep learning, and artificial intelligence.
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64 \\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code with Jupyter\\
+\textbf{Interpreter}: python 3.10.8 \\
 
-The reason it was created is because the Python language does not have built-in support for Arrays, and they are very useful in data science and scientific computing.
-
-It has since grown in popularity and is now used in a wide range of fields including finance, engineering, and medicine.
-
-\subsection{Numpy Functions}
-
-The numpy Library supports a large number of functions that can be used to work with arrays. They make our job easier and help us to write code faster.
-
-\subsubsection{arrange()}
-
-\textbf{Definition}:\\
-The arrange() function returns evenly spaced values within a given interval. The format of the arrange() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x)
-
-> [0 1 2 3 4 5 6 7 8 9]
-\end{verbatim}
-
-\subsubsection{shape()}
-
-\textbf{Definition}:\\
-The shape() function returns the shape of an array. The format of the shape() function is:
-
-\textbf{Example and Use}:
-
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.shape)
-
-> (10,)
-\end{verbatim}
-
-
-\subsubsection{reshape()}
-
-\textbf{Definition}:\\
-The reshape() function gives a new shape to an array without changing its data. The format of the reshape() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.reshape(2, 5))
-
-> [[0 1 2 3 4]
-> [5 6 7 8 9]]
-\end{verbatim}
-
-\subsubsection{size()}
-
-\textbf{Definition}:\\
-The size() function returns the total number of elements of the array. The format of the size() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.size)
-
-> 10
-\end{verbatim}
-
-\subsubsection{ndim()}
-
-\textbf{Definition}:\\
-The ndim() function returns the number of array dimensions. The format of the ndim() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.ndim)
-
-> 1
-\end{verbatim}
-
-\subsubsection{eyes()}
-
-\textbf{Definition}:\\
-The eyes() function returns a 2-D array with ones on the diagonal and zeros elsewhere. The format of the eyes() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.reshape(2, 5))
-
-> [[0 1 2 3 4]
-> [5 6 7 8 9]]
-\end{verbatim}
-
-\subsubsection{ones()}
-
-\textbf{Definition}:\\
-The ones() function returns a new array of given shape and type, filled with ones. The format of the ones() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.ones(10)
-print(x)
-
-> [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
-\end{verbatim}
-
-\subsubsection{zeros()}
-
-\textbf{Definition}:\\
-The zeros() function returns a new array of given shape and type, filled with zeros. The format of the zeros() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x)
-
-> [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
-\end{verbatim}
-
-\subsubsection{dtype()}
-
-\textbf{Definition}:\\
-The dtype() function returns the data type of the array
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x.dtype)
-    
-> float64
-\end{verbatim}
 
 \section{Input and Output}
 \subsection{Input}
-Creating array using numpy library
+Reading data from 'csv file' for data analysis operation.
 \subsection{Output}
-ndarray is created and shape and data type are displayed.
+Data analysis and visualization of data.
 
 \section{Requirements}
 \begin{enumerate}
     \item Python 3.7 or above
-    \item Numpy
+    \item Pandas
+    \item Matplotlib
 \end{enumerate}
 
 \section{Code}
 
-    
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{1}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{2}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{,} \PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{]}\PY{p}{)}
-\PY{n}{arr}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{2}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{3}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-\PY{n}{arr}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{3}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([1, 2, 3, 4, 5])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{4}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{]}\PY{p}{,} \PY{n}{ndmin}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{4}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3, 4, 5],
-       [1, 2, 3, 4, 5]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{5}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{o}{.}\PY{n}{ndim}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{5}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-1
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{6}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{s\PYZus{}box} \PY{o}{=} \PY{p}{[}
-    \PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
-    \PY{p}{[}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{]}\PY{p}{,}
-    \PY{p}{[}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{]}
-\PY{p}{]}
-
-\PY{n}{s\PYZus{}box} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{s\PYZus{}box}\PY{p}{)}
-\PY{n}{s\PYZus{}box}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{6}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3],
-       [4, 5, 6],
-       [7, 8, 9]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{7}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{s\PYZus{}box}\PY{o}{.}\PY{n}{ndim}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{7}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-2
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{8}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{s\PYZus{}box}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{8}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3],
-       [4, 5, 6],
-       [7, 8, 9]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{9}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{)}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{11}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{]}\PY{p}{]}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{10}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{10}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[[ 1,  2,  3],
-        [ 4,  5,  6]],
-
-       [[ 7,  8,  9],
-        [10, 11, 12]]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{11}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{11}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3],
-       [4, 5, 6]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{12}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{12}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([1, 2, 3])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{13}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{.}\PY{n}{dtype}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{13}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-dtype('int64')
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{14}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{abcd}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{sadoifj}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{14}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array(['abcd', 'sadoifj'], dtype='<U7')
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{15}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{]}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{]}\PY{p}{)}
-\PY{n}{array}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{15}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3, 4, 5],
-       [1, 2, 3, 4, 4],
-       [0, 1, 2, 3, 4],
-       [0, 1, 2, 3, 4]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{16}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array}\PY{o}{.}\PY{n}{shape}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{16}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-(4, 5)
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{17}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{17}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3, 4],
-       [5, 1, 2, 3],
-       [4, 4, 0, 1],
-       [2, 3, 4, 0],
-       [1, 2, 3, 4]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{18}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array}\PY{o}{.}\PY{n}{transpose}\PY{p}{(}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{18}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 1, 0, 0],
-       [2, 2, 1, 1],
-       [3, 3, 2, 2],
-       [4, 4, 3, 3],
-       [5, 4, 4, 4]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{19}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{19}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{20}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{20}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{21}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{n}{array}\PY{o}{.}\PY{n}{shape}\PY{p}{)}
-\PY{n}{array}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{21}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{22}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{22}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{23}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{23}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([0, 2, 4, 6, 8])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{24}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n+nb}{type}\PY{p}{(}\PY{n}{array}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{24}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-numpy.ndarray
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{25}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-[[0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0.]]
-    \end{Verbatim}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{26}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-[0. 0. 0. 0. 0.]
-    \end{Verbatim}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{27}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{a} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{a}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-[0 1 2 3 4 5 6 7 8 9]
-    \end{Verbatim}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{28}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{x} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\PY{n}{y} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{29}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{29}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
-\end{Verbatim}
-\end{tcolorbox}
-        
-
-    
 \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{1}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{2}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{,} \PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{]}\PY{p}{)}
-    \PY{n}{arr}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{2}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{3}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-    \PY{n}{arr}
+        \PY{c+c1}{\PYZsh{} Create a simple dataframe}
+        \PY{n}{toyota\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{../Lab/Assignment 7/Toyota.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{3}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([1, 2, 3, 4, 5])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\hypertarget{reading-first-few-values}{%
+    \subsubsection{Reading First few
+        Values}\label{reading-first-few-values}}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{4}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{]}\PY{p}{,} \PY{n}{ndmin}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+        \PY{n}{toyota\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{4}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3, 4, 5],
-           [1, 2, 3, 4, 5]])
+        Unnamed: 0  Price   Age     KM FuelType  HP  MetColor  Automatic    CC  \textbackslash{}
+        0           0  13500  23.0  46986   Diesel  90       1.0          0  2000
+        1           1  13750  23.0  72937   Diesel  90       1.0          0  2000
+        2           2  13950  24.0  41711   Diesel  90       NaN          0  2000
+        3           3  14950  26.0  48000   Diesel  90       0.0          0  2000
+        4           4  13750  30.0  38500   Diesel  90       0.0          0  2000
+
+        Doors  Weight
+        0  three    1165
+        1      3    1165
+        2      3    1165
+        3      3    1165
+        4      3    1170
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{5}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{o}{.}\PY{n}{ndim}
+        \PY{n}{toyota\PYZus{}df}\PY{o}{.}\PY{n}{tail}\PY{p}{(}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{5}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    1
+        Unnamed: 0  Price   Age     KM FuelType   HP  MetColor  Automatic    CC  \textbackslash{}
+        1431        1431   7500   NaN  20544   Petrol   86       1.0          0  1300
+        1432        1432  10845  72.0     ??   Petrol   86       0.0          0  1300
+        1433        1433   8500   NaN  17016   Petrol   86       0.0          0  1300
+        1434        1434   7250  70.0     ??      NaN   86       1.0          0  1300
+        1435        1435   6950  76.0      1   Petrol  110       0.0          0  1600
+
+        Doors  Weight
+        1431     3    1025
+        1432     3    1015
+        1433     3    1015
+        1434     3    1015
+        1435     5    1114
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{6}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{s\PYZus{}box} \PY{o}{=} \PY{p}{[}
-        \PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
-        \PY{p}{[}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{]}\PY{p}{,}
-        \PY{p}{[}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{]}
-    \PY{p}{]}
-    
-    \PY{n}{s\PYZus{}box} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{s\PYZus{}box}\PY{p}{)}
-    \PY{n}{s\PYZus{}box}
+        \PY{n}{automobile\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{../Lab/Assignment 7/Automobile\PYZus{}data.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{6}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3],
-           [4, 5, 6],
-           [7, 8, 9]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{7}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{s\PYZus{}box}\PY{o}{.}\PY{n}{ndim}
+        \PY{n}{automobile\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{7}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    2
+        index      company   body-style  wheel-base  length engine-type  \textbackslash{}
+        0      0  alfa-romero  convertible        88.6   168.8        dohc
+        1      1  alfa-romero  convertible        88.6   168.8        dohc
+        2      2  alfa-romero    hatchback        94.5   171.2        ohcv
+        3      3         audi        sedan        99.8   176.6         ohc
+        4      4         audi        sedan        99.4   176.6         ohc
+
+        num-of-cylinders  horsepower  average-mileage    price
+        0             four         111               21  13495.0
+        1             four         111               21  16500.0
+        2              six         154               19  16500.0
+        3             four         102               24  13950.0
+        4             five         115               18  17450.0
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{8}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{s\PYZus{}box}
+        \PY{n}{automobile\PYZus{}df}\PY{o}{.}\PY{n}{tail}\PY{p}{(}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{8}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3],
-           [4, 5, 6],
-           [7, 8, 9]])
+        index     company body-style  wheel-base  length engine-type  \textbackslash{}
+        56     81  volkswagen      sedan        97.3   171.7         ohc
+        57     82  volkswagen      sedan        97.3   171.7         ohc
+        58     86  volkswagen      sedan        97.3   171.7         ohc
+        59     87       volvo      sedan       104.3   188.8         ohc
+        60     88       volvo      wagon       104.3   188.8         ohc
+
+        num-of-cylinders  horsepower  average-mileage    price
+        56             four          85               27   7975.0
+        57             four          52               37   7995.0
+        58             four         100               26   9995.0
+        59             four         114               23  12940.0
+        60             four         114               23  13415.0
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\hypertarget{simple-series}{%
+    \subsubsection{Simple Series}\label{simple-series}}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{9}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{)}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{11}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{]}\PY{p}{]}\PY{p}{)}
+        \PY{n}{s} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{]}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{10}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}
+        \PY{n}{s}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{10}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array([[[ 1,  2,  3],
-            [ 4,  5,  6]],
-    
-           [[ 7,  8,  9],
-            [10, 11, 12]]])
+        0    1
+        1    2
+        2    3
+        3    4
+        4    5
+        dtype: int64
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\hypertarget{slicing}{%
+    \subsubsection{Slicing}\label{slicing}}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{11}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+        \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{p}{:}\PY{l+m+mi}{10}\PY{p}{]}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{11}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3],
-           [4, 5, 6]])
+        0    13500
+        1    13750
+        2    13950
+        3    14950
+        4    13750
+        5    12950
+        6    16900
+        7    18600
+        8    21500
+        9    12950
+        Name: Price, dtype: int64
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{12}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{automobile\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{length}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{automobile\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{horsepower}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ro}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{12}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array([1, 2, 3])
+        [<matplotlib.lines.Line2D at 0x7f72240276d0>]
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_1.png}
+\end{center}
+{ \hspace*{\fill} \\}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{13}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{.}\PY{n}{dtype}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ro}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{13}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    dtype('int64')
+        [<matplotlib.lines.Line2D at 0x7f7221f50bb0>]
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_1.png}
+\end{center}
+{ \hspace*{\fill} \\}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{14}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{abcd}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{sadoifj}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price vs. Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{bar}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{14}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array(['abcd', 'sadoifj'], dtype='<U7')
+        <BarContainer object of 1436 artists>
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_1.png}
+\end{center}
+{ \hspace*{\fill} \\}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{15}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{]}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{]}\PY{p}{)}
-    \PY{n}{array}
+        \PY{n}{fuel\PYZus{}type} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{FuelType}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{p}{)}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{fuel\PYZus{}type}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{15}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3, 4, 5],
-           [1, 2, 3, 4, 4],
-           [0, 1, 2, 3, 4],
-           [0, 1, 2, 3, 4]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+    Petrol    1177
+    Diesel     144
+    CNG         15
+    dtype: int64
+\end{Verbatim}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{16}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array}\PY{o}{.}\PY{n}{shape}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Fuel Type}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{pie}\PY{p}{(}\PY{n}{fuel\PYZus{}type}\PY{p}{,} \PY{n}{labels}\PY{o}{=}\PY{n}{fuel\PYZus{}type}\PY{o}{.}\PY{n}{index}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{16}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    (4, 5)
+        ([<matplotlib.patches.Wedge at 0x7f72212137c0>,
+                <matplotlib.patches.Wedge at 0x7f72213d7670>,
+                <matplotlib.patches.Wedge at 0x7f72212340d0>],
+        [Text(-1.024006089442147, 0.40176053662026306, 'Petrol'),
+                Text(1.0092010076630402, -0.4376223556125809, 'Diesel'),
+                Text(1.0993157876137665, -0.038791740140453064, 'CNG')])
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{17}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{17}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3, 4],
-           [5, 1, 2, 3],
-           [4, 4, 0, 1],
-           [2, 3, 4, 0],
-           [1, 2, 3, 4]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{18}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array}\PY{o}{.}\PY{n}{transpose}\PY{p}{(}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{18}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 1, 0, 0],
-           [2, 2, 1, 1],
-           [3, 3, 2, 2],
-           [4, 4, 3, 3],
-           [5, 4, 4, 4]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_1.png}
+\end{center}
+{ \hspace*{\fill} \\}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{19}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+        \PY{n}{tony\PYZus{}image} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{imread}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tony.jpg}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{19}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{20}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
+        \PY{n}{tony\PYZus{}image}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{20}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array([[0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.]])
+        array([[[243, 243, 251],
+                        [243, 243, 251],
+                        [243, 243, 251],
+                        {\ldots},
+                        [245, 245, 253],
+                        [245, 245, 253],
+                        [245, 245, 253]],
+
+                [[243, 243, 251],
+                        [243, 243, 251],
+                        [243, 243, 251],
+                        {\ldots},
+                        [245, 245, 253],
+                        [245, 245, 253],
+                        [245, 245, 253]],
+
+                [[243, 243, 251],
+                        [243, 243, 251],
+                        [243, 243, 251],
+                        {\ldots},
+                        [245, 245, 253],
+                        [245, 245, 253],
+                        [245, 245, 253]],
+
+                {\ldots},
+
+                [[  9,   9,  17],
+                        [ 11,  11,  19],
+                        [ 14,  14,  22],
+                        {\ldots},
+                        [ 15,  15,  23],
+                        [ 17,  17,  25],
+                        [ 20,  20,  28]],
+
+                [[  9,   9,  17],
+                        [ 11,  11,  19],
+                        [ 14,  14,  22],
+                        {\ldots},
+                        [ 15,  15,  23],
+                        [ 17,  17,  25],
+                        [ 20,  20,  28]],
+
+                [[  9,   9,  17],
+                        [ 11,  11,  19],
+                        [ 14,  14,  22],
+                        {\ldots},
+                        [ 15,  15,  23],
+                        [ 17,  17,  25],
+                        [ 20,  20,  28]]], dtype=uint8)
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
     \prompt{In}{incolor}{21}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{n}{array}\PY{o}{.}\PY{n}{shape}\PY{p}{)}
-    \PY{n}{array}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{imshow}\PY{p}{(}\PY{n}{tony\PYZus{}image}\PY{p}{)}
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
     \prompt{Out}{outcolor}{21}{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    array([[0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.]])
+        <matplotlib.image.AxesImage at 0x7f72213461a0>
     \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{22}{\boxspacing}
+\end{tcolorbox}
+
+\begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_21_1.png}
+\end{center}
+{ \hspace*{\fill} \\}
+
+\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+    \prompt{In}{incolor}{ }{\boxspacing}
     \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
+
     \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{22}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{23}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{23}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([0, 2, 4, 6, 8])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{24}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n+nb}{type}\PY{p}{(}\PY{n}{array}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{24}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    numpy.ndarray
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{25}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{Verbatim}[commandchars=\\\{\}]
-    [[0. 0. 0. 0. 0.]
-     [0. 0. 0. 0. 0.]
-     [0. 0. 0. 0. 0.]
-     [0. 0. 0. 0. 0.]]
-        \end{Verbatim}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{26}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{Verbatim}[commandchars=\\\{\}]
-    [0. 0. 0. 0. 0.]
-        \end{Verbatim}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{27}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{a} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{a}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{Verbatim}[commandchars=\\\{\}]
-    [0 1 2 3 4 5 6 7 8 9]
-        \end{Verbatim}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{28}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{x} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \PY{n}{y} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{29}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{29}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-    
+\end{tcolorbox}
+
+
+
 \section{Conclusion}
 The Numpy was studied and understood. The functions of the Numpy library were also studied and implemented.
 
@@ -1540,62 +946,9 @@ The Numpy was studied and understood. The functions of the Numpy library were al
 
 \section{FAQ}
 \begin{enumerate}
-    \item \textbf{What is the difference between Numpy array and List?}\\
-    
-          \textbf{Numpy array:}\\
-          \begin{itemize}
-              \item Numpy arrays are faster than lists.
-              \item Numpy arrays are more compact than lists.
-              \item Numpy arrays are more convenient than lists.
-          \end{itemize}
-
-          \textbf{List:}\\
-          \begin{itemize}
-              \item Lists are slower than Numpy arrays.
-              \item Lists are more flexible than Numpy arrays.
-              \item Lists are more convenient than Numpy arrays.
-          \end{itemize}
-
-    \item \textbf{Explain type and dtype with example.}\\
-    
-          \textit{type() is a built-in function in Python that returns the type of the object passed to it. It is used to check the type of an object. dtype(), however, is an attribute of the ndarray object in Numpy. It returns the data type of the array. The difference between the two is that type() is a function and dtype() is an attribute.}
-
-          \begin{enumerate}
-              \item \textbf{Type:}
-                    \begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(type(x))
-
-> <class 'numpy.ndarray'>
-                \end{verbatim}
-
-              \item \textbf{Dtype:}
-                    \begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x.dtype)
-
-> float64
-                \end{verbatim}
-
-          \end{enumerate}
-
-    \item \textbf{Explain axis in numpy arrays.}\\
-
-          \textit{Axis is a dimension of an array. In a 2-D array, there are two axes, the first running vertically downwards across rows (axis 0), and the second running horizontally across columns (axis 1). In a 3-D array, there are three axes, the first running downwards along the depth of the array, the second running horizontally across rows (axis 1), and the third running vertically across columns (axis 2).}
-
-          \textbf{Example:}
-          \begin{verbatim}
-import numpy as np
-x = np.array([[1, 2, 3], [4, 5, 6]])
-print(x.sum(axis=0))
-
-> [5 7 9]
-            \end{verbatim}
-
-
-
+    \item 1. List out the key features of Panda Library?
+    \item 2. What are the different applications of Pandas.
+    \item 3. List down the different types of graphs are supported by Matplot library.
 \end{enumerate}
 
 
