@@ -47,7 +47,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{Python Programming Assignment 8}}}
+\fancyhead[L]{\textit{\Large{Python Programming Assignment 7}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -473,8 +473,7 @@
 
 
     \huge{\textsc{
-            Learning Basics of the \\
-            \textit{Numpy library}
+            Learning Basics of the Pandas and Matplotlib Libraries
         }} \\
 
 
@@ -488,7 +487,7 @@
     %--------------------------SUBTITLE --------------------------	
 
     \LARGE\textsc{
-        Assignment No. 8
+        Assignment No. 7
     } % Subtitle or further description
     \vfill
 
@@ -529,9 +528,74 @@ Use of Pandas module for data analysis and Matplotlib for data visualization.
 
 \section{Theory}
 \subsection{Pandas}
+
+\begin{quotation}
+    
+    Pandas is a popular open-source Python library used for data manipulation and analysis. It provides high-performance, easy-to-use data structures and data analysis tools for working with structured data, such as tables or spreadsheets. Pandas is built on top of the NumPy library, which provides support for efficient array operations.
+    
+\end{quotation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.45\textwidth]{1200px-Pandas_logo.svg.png}
+    \caption{Pandas Logo}
+\end{figure}
+
+One of the key data structures in Pandas is the DataFrame, which is a two-dimensional labeled array with columns of potentially different types. DataFrames are used extensively in data analysis, as they allow users to easily manipulate and query data. For example, you can filter rows based on certain criteria, aggregate data, or merge different tables together.
+
+Another important data structure in Pandas is the Series, which is a one-dimensional labeled array. A Series is similar to a column in a DataFrame, and can be used to represent time-series data, text data, or any other type of data that can be represented as a sequence of values. Series can be created from a Python list, dictionary, or NumPy array.
+
+
 \subsection{Matplotlib}
+\begin{quotation}
+    
+    Matplotlib is a data visualization library for Python that provides a variety of 2D and 3D plotting functions. It is widely used in the scientific community for creating high-quality visualizations of data. Matplotlib is built on top of NumPy, which makes it easy to work with arrays and manipulate data.
+    
+\end{quotation}
+
+One of the key features of Matplotlib is its ability to create publication-quality plots with just a few lines of code. Matplotlib provides a wide range of plot types, including line plots, scatter plots, bar plots, and histograms. It also allows users to customize the appearance of plots, including colors, fonts, and labels.\\
+
+Matplotlib is highly customizable, which makes it suitable for creating complex visualizations. For example, it allows users to create subplots, add annotations, and create animations. Matplotlib also provides support for different file formats, such as PNG, PDF, and SVG, which makes it easy to save and share visualizations.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.95\textwidth]{1*JTEqCz-VU16nkkUwzyWp_w.png}
+    \caption{Graphs in Matplotlib}
+\end{figure}
 \subsection{Different types of Data Structures in Pandas}
+
+Pandas provides several data structures for working with structured data, including:
+
+\begin{enumerate}
+\item DataFrame - a two-dimensional labeled array with columns of potentially different types.
+\item Series - a one-dimensional labeled array with homogeneous data.
+\item Panel - a three-dimensional labeled array.
+\item Panel4D - a four-dimensional labeled array.
+\item PanelND - a labeled N-dimensional array.
+\end{enumerate}
+
+\textit{The most commonly used data structure in Pandas is the DataFrame}, which is used for storing and manipulating tabular data. A DataFrame is a two-dimensional labeled array with columns of potentially different types. It can be thought of as a spreadsheet or a SQL table, with rows and columns of data.
+
+A Series is a one-dimensional labeled array with homogeneous data. It can be thought of as a single column of a DataFrame. Series are often used to represent time-series data or other types of data that can be represented as a sequence of values.
+
+Panels are higher-dimensional data structures that are less commonly used than DataFrames and Series. Panels can be thought of as a three-dimensional labeled array, where each item in the array represents a DataFrame. Panel4D and PanelND are higher-dimensional versions of Panel, with four and N dimensions, respectively. These structures are less commonly used in practice, as most data can be represented using DataFrames or Series.
+
+All of these data structures are designed to be flexible and efficient, allowing users to perform a wide range of data manipulation and analysis tasks. They support a variety of data types, including numerical, categorical, and textual data, and can be easily combined and transformed using built-in functions and methods.
+
 \subsection{Reading data from csv file}
+
+Pandas provides a simple and efficient way to read data from CSV files, which are commonly used for storing tabular data. The readcsv() function in Pandas can be used to read data from a CSV file and create a DataFrame object in memory.
+
+Here is an example of reading data from a CSV file named data.csv using the readcsv() function:
+
+\begin{lstlisting}[language=sql]
+    import pandas as pd
+
+    df = pd.read_csv('data.csv', delimiter='\t')
+\end{lstlisting}
+The readcsv() function also supports a number of other parameters for handling different types of data, including delimiter and encoding. For example, you can use the delimiter parameter to specify a custom delimiter for the file, such as a tab or semicolon:
+
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
@@ -552,403 +616,440 @@ Data analysis and visualization of data.
     \item Matplotlib
 \end{enumerate}
 
+
+
 \section{Code}
 
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{2}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
-        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
-        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{3}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{c+c1}{\PYZsh{} Create a simple dataframe}
-        \PY{n}{toyota\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{../Lab/Assignment 7/Toyota.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\hypertarget{reading-first-few-values}{%
-    \subsubsection{Reading First few
-        Values}\label{reading-first-few-values}}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{4}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{toyota\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{4}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        Unnamed: 0  Price   Age     KM FuelType  HP  MetColor  Automatic    CC  \textbackslash{}
-        0           0  13500  23.0  46986   Diesel  90       1.0          0  2000
-        1           1  13750  23.0  72937   Diesel  90       1.0          0  2000
-        2           2  13950  24.0  41711   Diesel  90       NaN          0  2000
-        3           3  14950  26.0  48000   Diesel  90       0.0          0  2000
-        4           4  13750  30.0  38500   Diesel  90       0.0          0  2000
-
-        Doors  Weight
-        0  three    1165
-        1      3    1165
-        2      3    1165
-        3      3    1165
-        4      3    1170
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{5}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{toyota\PYZus{}df}\PY{o}{.}\PY{n}{tail}\PY{p}{(}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{5}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        Unnamed: 0  Price   Age     KM FuelType   HP  MetColor  Automatic    CC  \textbackslash{}
-        1431        1431   7500   NaN  20544   Petrol   86       1.0          0  1300
-        1432        1432  10845  72.0     ??   Petrol   86       0.0          0  1300
-        1433        1433   8500   NaN  17016   Petrol   86       0.0          0  1300
-        1434        1434   7250  70.0     ??      NaN   86       1.0          0  1300
-        1435        1435   6950  76.0      1   Petrol  110       0.0          0  1600
-
-        Doors  Weight
-        1431     3    1025
-        1432     3    1015
-        1433     3    1015
-        1434     3    1015
-        1435     5    1114
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{6}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{automobile\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{../Lab/Assignment 7/Automobile\PYZus{}data.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{7}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{automobile\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{7}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        index      company   body-style  wheel-base  length engine-type  \textbackslash{}
-        0      0  alfa-romero  convertible        88.6   168.8        dohc
-        1      1  alfa-romero  convertible        88.6   168.8        dohc
-        2      2  alfa-romero    hatchback        94.5   171.2        ohcv
-        3      3         audi        sedan        99.8   176.6         ohc
-        4      4         audi        sedan        99.4   176.6         ohc
-
-        num-of-cylinders  horsepower  average-mileage    price
-        0             four         111               21  13495.0
-        1             four         111               21  16500.0
-        2              six         154               19  16500.0
-        3             four         102               24  13950.0
-        4             five         115               18  17450.0
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{8}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{automobile\PYZus{}df}\PY{o}{.}\PY{n}{tail}\PY{p}{(}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{8}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        index     company body-style  wheel-base  length engine-type  \textbackslash{}
-        56     81  volkswagen      sedan        97.3   171.7         ohc
-        57     82  volkswagen      sedan        97.3   171.7         ohc
-        58     86  volkswagen      sedan        97.3   171.7         ohc
-        59     87       volvo      sedan       104.3   188.8         ohc
-        60     88       volvo      wagon       104.3   188.8         ohc
-
-        num-of-cylinders  horsepower  average-mileage    price
-        56             four          85               27   7975.0
-        57             four          52               37   7995.0
-        58             four         100               26   9995.0
-        59             four         114               23  12940.0
-        60             four         114               23  13415.0
-    \end{Verbatim}
-\end{tcolorbox}
-
-\hypertarget{simple-series}{%
-    \subsubsection{Simple Series}\label{simple-series}}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{9}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{s} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{]}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{10}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{s}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{10}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        0    1
-        1    2
-        2    3
-        3    4
-        4    5
-        dtype: int64
-    \end{Verbatim}
-\end{tcolorbox}
-
-\hypertarget{slicing}{%
-    \subsubsection{Slicing}\label{slicing}}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{11}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{p}{:}\PY{l+m+mi}{10}\PY{p}{]}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{11}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        0    13500
-        1    13750
-        2    13950
-        3    14950
-        4    13750
-        5    12950
-        6    16900
-        7    18600
-        8    21500
-        9    12950
-        Name: Price, dtype: int64
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{12}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{automobile\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{length}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{automobile\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{horsepower}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ro}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{12}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        [<matplotlib.lines.Line2D at 0x7f72240276d0>]
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_1.png}
-\end{center}
-{ \hspace*{\fill} \\}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{13}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ro}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{13}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        [<matplotlib.lines.Line2D at 0x7f7221f50bb0>]
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_1.png}
-\end{center}
-{ \hspace*{\fill} \\}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{14}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-        \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-        \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price vs. Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-        \PY{n}{plt}\PY{o}{.}\PY{n}{bar}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{14}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        <BarContainer object of 1436 artists>
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_1.png}
-\end{center}
-{ \hspace*{\fill} \\}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{15}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{fuel\PYZus{}type} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{FuelType}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{p}{)}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}
-        \PY{n+nb}{print}\PY{p}{(}\PY{n}{fuel\PYZus{}type}\PY{p}{)}
-    \end{Verbatim}
-\end{tcolorbox}
-
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{2}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-    Petrol    1177
-    Diesel     144
-    CNG         15
-    dtype: int64
+\PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+\PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+\PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
 \end{Verbatim}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{16}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Fuel Type}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-        \PY{n}{plt}\PY{o}{.}\PY{n}{pie}\PY{p}{(}\PY{n}{fuel\PYZus{}type}\PY{p}{,} \PY{n}{labels}\PY{o}{=}\PY{n}{fuel\PYZus{}type}\PY{o}{.}\PY{n}{index}\PY{p}{)}
-    \end{Verbatim}
 \end{tcolorbox}
 
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{16}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        ([<matplotlib.patches.Wedge at 0x7f72212137c0>,
-                <matplotlib.patches.Wedge at 0x7f72213d7670>,
-                <matplotlib.patches.Wedge at 0x7f72212340d0>],
-        [Text(-1.024006089442147, 0.40176053662026306, 'Petrol'),
-                Text(1.0092010076630402, -0.4376223556125809, 'Diesel'),
-                Text(1.0993157876137665, -0.038791740140453064, 'CNG')])
-    \end{Verbatim}
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{3}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Create a simple dataframe}
+\PY{n}{toyota\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{../Lab/Assignment 7/Toyota.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
 \end{tcolorbox}
 
-\begin{center}
+    \hypertarget{reading-first-few-values}{%
+\subsubsection{Reading First few
+Values}\label{reading-first-few-values}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{toyota\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{4}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+   Unnamed: 0  Price   Age     KM FuelType  HP  MetColor  Automatic    CC  \textbackslash{}
+0           0  13500  23.0  46986   Diesel  90       1.0          0  2000
+1           1  13750  23.0  72937   Diesel  90       1.0          0  2000
+2           2  13950  24.0  41711   Diesel  90       NaN          0  2000
+3           3  14950  26.0  48000   Diesel  90       0.0          0  2000
+4           4  13750  30.0  38500   Diesel  90       0.0          0  2000
+
+   Doors  Weight
+0  three    1165
+1      3    1165
+2      3    1165
+3      3    1165
+4      3    1170
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{toyota\PYZus{}df}\PY{o}{.}\PY{n}{tail}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{5}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+      Unnamed: 0  Price   Age     KM FuelType   HP  MetColor  Automatic    CC  \textbackslash{}
+1431        1431   7500   NaN  20544   Petrol   86       1.0          0  1300
+1432        1432  10845  72.0     ??   Petrol   86       0.0          0  1300
+1433        1433   8500   NaN  17016   Petrol   86       0.0          0  1300
+1434        1434   7250  70.0     ??      NaN   86       1.0          0  1300
+1435        1435   6950  76.0      1   Petrol  110       0.0          0  1600
+
+     Doors  Weight
+1431     3    1025
+1432     3    1015
+1433     3    1015
+1434     3    1015
+1435     5    1114
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{6}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{automobile\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{../Lab/Assignment 7/Automobile\PYZus{}data.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{7}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{automobile\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{7}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+   index      company   body-style  wheel-base  length engine-type  \textbackslash{}
+0      0  alfa-romero  convertible        88.6   168.8        dohc
+1      1  alfa-romero  convertible        88.6   168.8        dohc
+2      2  alfa-romero    hatchback        94.5   171.2        ohcv
+3      3         audi        sedan        99.8   176.6         ohc
+4      4         audi        sedan        99.4   176.6         ohc
+
+  num-of-cylinders  horsepower  average-mileage    price
+0             four         111               21  13495.0
+1             four         111               21  16500.0
+2              six         154               19  16500.0
+3             four         102               24  13950.0
+4             five         115               18  17450.0
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{automobile\PYZus{}df}\PY{o}{.}\PY{n}{tail}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{8}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+    index     company body-style  wheel-base  length engine-type  \textbackslash{}
+56     81  volkswagen      sedan        97.3   171.7         ohc
+57     82  volkswagen      sedan        97.3   171.7         ohc
+58     86  volkswagen      sedan        97.3   171.7         ohc
+59     87       volvo      sedan       104.3   188.8         ohc
+60     88       volvo      wagon       104.3   188.8         ohc
+
+   num-of-cylinders  horsepower  average-mileage    price
+56             four          85               27   7975.0
+57             four          52               37   7995.0
+58             four         100               26   9995.0
+59             four         114               23  12940.0
+60             four         114               23  13415.0
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \hypertarget{simple-series}{%
+\subsubsection{Simple Series}\label{simple-series}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{s} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{,}\PY{l+m+mi}{3}\PY{p}{,}\PY{l+m+mi}{4}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{s}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+0    1
+1    2
+2    3
+3    4
+4    5
+dtype: int64
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \hypertarget{slicing}{%
+\subsubsection{Slicing}\label{slicing}}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{11}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{p}{:}\PY{l+m+mi}{10}\PY{p}{]}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{11}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+0    13500
+1    13750
+2    13950
+3    14950
+4    13750
+5    12950
+6    16900
+7    18600
+8    21500
+9    12950
+Name: Price, dtype: int64
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{12}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{automobile\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{length}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{automobile\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{horsepower}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ro}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{12}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[<matplotlib.lines.Line2D at 0x7f72240276d0>]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{13}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ro}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{13}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[<matplotlib.lines.Line2D at 0x7f7221f50bb0>]
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{14}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Price vs. Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{bar}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Price}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{14}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+<BarContainer object of 1436 artists>
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{15}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{fuel\PYZus{}type} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{toyota\PYZus{}df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{FuelType}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{p}{)}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{n}{fuel\PYZus{}type}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Petrol    1177
+Diesel     144
+CNG         15
+dtype: int64
+    \end{Verbatim}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{16}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Fuel Type}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{plt}\PY{o}{.}\PY{n}{pie}\PY{p}{(}\PY{n}{fuel\PYZus{}type}\PY{p}{,} \PY{n}{labels}\PY{o}{=}\PY{n}{fuel\PYZus{}type}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{16}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+([<matplotlib.patches.Wedge at 0x7f72212137c0>,
+  <matplotlib.patches.Wedge at 0x7f72213d7670>,
+  <matplotlib.patches.Wedge at 0x7f72212340d0>],
+ [Text(-1.024006089442147, 0.40176053662026306, 'Petrol'),
+  Text(1.0092010076630402, -0.4376223556125809, 'Diesel'),
+  Text(1.0993157876137665, -0.038791740140453064, 'CNG')])
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{center}
     \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_1.png}
-\end{center}
-{ \hspace*{\fill} \\}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{19}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{tony\PYZus{}image} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{imread}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tony.jpg}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-    \end{Verbatim}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{19}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{tony\PYZus{}image} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{imread}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{tony.jpg}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
 \end{tcolorbox}
 
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{20}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{tony\PYZus{}image}
-    \end{Verbatim}
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{20}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{tony\PYZus{}image}
+\end{Verbatim}
 \end{tcolorbox}
 
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{20}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        array([[[243, 243, 251],
-                        [243, 243, 251],
-                        [243, 243, 251],
-                        {\ldots},
-                        [245, 245, 253],
-                        [245, 245, 253],
-                        [245, 245, 253]],
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{20}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+array([[[243, 243, 251],
+        [243, 243, 251],
+        [243, 243, 251],
+        {\ldots},
+        [245, 245, 253],
+        [245, 245, 253],
+        [245, 245, 253]],
 
-                [[243, 243, 251],
-                        [243, 243, 251],
-                        [243, 243, 251],
-                        {\ldots},
-                        [245, 245, 253],
-                        [245, 245, 253],
-                        [245, 245, 253]],
+       [[243, 243, 251],
+        [243, 243, 251],
+        [243, 243, 251],
+        {\ldots},
+        [245, 245, 253],
+        [245, 245, 253],
+        [245, 245, 253]],
 
-                [[243, 243, 251],
-                        [243, 243, 251],
-                        [243, 243, 251],
-                        {\ldots},
-                        [245, 245, 253],
-                        [245, 245, 253],
-                        [245, 245, 253]],
+       [[243, 243, 251],
+        [243, 243, 251],
+        [243, 243, 251],
+        {\ldots},
+        [245, 245, 253],
+        [245, 245, 253],
+        [245, 245, 253]],
 
-                {\ldots},
+       {\ldots},
 
-                [[  9,   9,  17],
-                        [ 11,  11,  19],
-                        [ 14,  14,  22],
-                        {\ldots},
-                        [ 15,  15,  23],
-                        [ 17,  17,  25],
-                        [ 20,  20,  28]],
+       [[  9,   9,  17],
+        [ 11,  11,  19],
+        [ 14,  14,  22],
+        {\ldots},
+        [ 15,  15,  23],
+        [ 17,  17,  25],
+        [ 20,  20,  28]],
 
-                [[  9,   9,  17],
-                        [ 11,  11,  19],
-                        [ 14,  14,  22],
-                        {\ldots},
-                        [ 15,  15,  23],
-                        [ 17,  17,  25],
-                        [ 20,  20,  28]],
+       [[  9,   9,  17],
+        [ 11,  11,  19],
+        [ 14,  14,  22],
+        {\ldots},
+        [ 15,  15,  23],
+        [ 17,  17,  25],
+        [ 20,  20,  28]],
 
-                [[  9,   9,  17],
-                        [ 11,  11,  19],
-                        [ 14,  14,  22],
-                        {\ldots},
-                        [ 15,  15,  23],
-                        [ 17,  17,  25],
-                        [ 20,  20,  28]]], dtype=uint8)
-    \end{Verbatim}
+       [[  9,   9,  17],
+        [ 11,  11,  19],
+        [ 14,  14,  22],
+        {\ldots},
+        [ 15,  15,  23],
+        [ 17,  17,  25],
+        [ 20,  20,  28]]], dtype=uint8)
+\end{Verbatim}
+\end{tcolorbox}
+        
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{plt}\PY{o}{.}\PY{n}{imshow}\PY{p}{(}\PY{n}{tony\PYZus{}image}\PY{p}{)}
+\end{Verbatim}
 \end{tcolorbox}
 
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{21}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        \PY{n}{plt}\PY{o}{.}\PY{n}{imshow}\PY{p}{(}\PY{n}{tony\PYZus{}image}\PY{p}{)}
-    \end{Verbatim}
+            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+<matplotlib.image.AxesImage at 0x7f72213461a0>
+\end{Verbatim}
 \end{tcolorbox}
-
-\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{21}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-        <matplotlib.image.AxesImage at 0x7f72213461a0>
-    \end{Verbatim}
-\end{tcolorbox}
-
-\begin{center}
+        
+    \begin{center}
     \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_21_1.png}
-\end{center}
-{ \hspace*{\fill} \\}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{ }{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
 
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{ }{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-
-    \end{Verbatim}
+\end{Verbatim}
 \end{tcolorbox}
-
 
 
 \section{Conclusion}
-The Numpy was studied and understood. The functions of the Numpy library were also studied and implemented.
+The Pandas was studied and understood. The functions of the Pandas library were also studied and implemented.
 
 \clearpage
 
 \section{FAQ}
 \begin{enumerate}
     \item 1. List out the key features of Panda Library?
+
+          \begin{itemize}
+              \item Fast and efficient DataFrame object with default and customized indexing.
+              \item Tools for loading data into in-memory data objects from different file formats.
+              \item Data alignment and integrated handling of missing data.
+              \item Reshaping and pivoting of date sets.
+              \item Label-based slicing, indexing and subsetting of large data sets.
+              \item Columns from a data structure can be deleted or inserted.
+              \item Group by data for aggregation and transformations.
+              \item High performance merging and joining of data.
+              \item Time Series functionality.
+          \end{itemize}
     \item 2. What are the different applications of Pandas.
+    
+    \begin{itemize}
+        \item Data Manipulation: Pandas provides a variety of operations to manipulate your data in the way you want. It provides a flexible way to access and manipulate your data.
+        \item Data Analysis: Pandas provide a fast and efficient way to conduct data analysis. It is the most preferred tool for data analysis in Python.
+        \item Data Cleaning: Pandas make it easy to clean messy data sets. It provides various functions to remove rows, columns, and change the data type of a DataFrame column.
+        \item Data Visualization: Pandas provide the visualization feature to plot your data in various forms. It provides a high-level interface for drawing attractive and informative graphics.
+        \item Machine Learning: Pandas is a popular library for machine learning in Python. It provides features for making machine learning easier and faster.
+        
+    \end{itemize}
     \item 3. List down the different types of graphs are supported by Matplot library.
+    
+    \begin{itemize}
+        \item Line Graphs.
+        \item Bar Charts.
+        \item Histogram.
+        \item Scatter Plot.
+        \item Area Plot.
+        \item Pie Chart.
+        \item Error Charts.
+        \item Power Spectra.
+        \item Contour Plot.
+        \item Spectrogram.
+    \end{itemize}
+
+
 \end{enumerate}
 
 

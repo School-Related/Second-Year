@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1682317786 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment 3/Assignment_3.tex" "Assignment_3.pdf" "Assignment_3" 1682317789 0
-  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment 3/Assignment_3.tex" 1682317721 38123 80e844d2d9d99a282eb4b13ab6e65203 ""
+["pdflatex"] 1682343930 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment 3/Assignment_3.tex" "Assignment_3.pdf" "Assignment_3" 1682343933 0
+  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Python Programming/Lab/Assignment 3/Assignment_3.tex" 1682343930 38123 469072b9e01c757e9fb06408970bc9b1 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1680514707 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1680514707 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1680514707 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -220,10 +220,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1680514707 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1681635571 4491781 539e3b5e308794ddb50e5f94f0e971f4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1681635439 8204106 8edc09dd2071cca609206aa5de91178c ""
-  "Assignment_3.aux" 1682317789 3049 b753741d73e76748fb45c30c8a7b0357 "pdflatex"
-  "Assignment_3.out" 1682317789 2409 6c6523b941069fe9698a6d339ca0b1b3 "pdflatex"
-  "Assignment_3.tex" 1682317721 38123 80e844d2d9d99a282eb4b13ab6e65203 ""
-  "Assignment_3.toc" 1682317789 1461 90bd5a502bc7f0bfce84a1e2c2d4ccaa "pdflatex"
+  "Assignment_3.aux" 1682343933 3049 b753741d73e76748fb45c30c8a7b0357 "pdflatex"
+  "Assignment_3.out" 1682343933 2409 6c6523b941069fe9698a6d339ca0b1b3 "pdflatex"
+  "Assignment_3.tex" 1682343930 38123 469072b9e01c757e9fb06408970bc9b1 ""
+  "Assignment_3.toc" 1682343933 1461 90bd5a502bc7f0bfce84a1e2c2d4ccaa "pdflatex"
   (generated)
   "Assignment_3.aux"
   "Assignment_3.log"

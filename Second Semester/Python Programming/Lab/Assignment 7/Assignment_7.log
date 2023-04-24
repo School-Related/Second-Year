@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  24 APR 2023 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  24 APR 2023 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -990,22 +990,15 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 19.28804pt on input line 456.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 16.07027pt on input line 460.
-
-
-LaTeX Font Warning: Font shape `T1/fnc/m/scit' undefined
-(Font)              using `T1/fnc/m/it' instead on input line 478.
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 19.28804pt on input line 478.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 16.07027pt on input line 492.
+(Font)              scaled to size 16.07027pt on input line 491.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 500.
-[1
+(Font)              scaled to size 13.39188pt on input line 499.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 512.
+(Font)              scaled to size 13.39188pt on input line 511.
  (./Assignment_7.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
@@ -1048,28 +1041,26 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.514 \clearpage
+l.513 \clearpage
                  [1]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 531.
+(Font)              scaled to size 11.15991pt on input line 530.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 531.
+(Font)              scaled to size 11.15991pt on input line 530.
+<1200px-Pandas_logo.svg.png, id=113, 1204.5pt x 486.81876pt>
+File: 1200px-Pandas_logo.svg.png Graphic file (type png)
+<use 1200px-Pandas_logo.svg.png>
+Package pdftex.def Info: 1200px-Pandas_logo.svg.png  used on input line 540.
+(pdftex.def)             Requested size: 1204.49707pt x 486.81757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--540
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 558.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 560.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 564.
+(Font)              scaled to size 10.18341pt on input line 557.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 564.
-
+(Font)              scaled to size 13.39188pt on input line 557.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1081,17 +1072,53 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.564 \end{tcolorbox}
-                      [1
+l.557 
+       [1
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 570.
+ <./1200px-Pandas_logo.svg.png>]
+<1*JTEqCz-VU16nkkUwzyWp_w.png, id=122, 1405.25pt x 796.9775pt>
+File: 1*JTEqCz-VU16nkkUwzyWp_w.png Graphic file (type png)
+<use 1*JTEqCz-VU16nkkUwzyWp_w.png>
+Package pdftex.def Info: 1*JTEqCz-VU16nkkUwzyWp_w.png  used on input line 563.
+(pdftex.def)             Requested size: 1405.24658pt x 796.97554pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[2 <./1*JTEqCz-VU16nkkUwzyWp_w.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 592.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 593.
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 595.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
+Underfull \hbox (badness 10000) in paragraph at lines 601--604
+
+ []
+
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 626.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 576.
+(hyperref)                than one, level fixed on input line 642.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1100,7 +1127,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[4]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1108,17 +1135,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3]
-<output_14_1.png, id=136, 401.0985pt x 302.0886pt>
+[5]
+<output_14_1.png, id=163, 401.0985pt x 302.0886pt>
 File: output_14_1.png Graphic file (type png)
 <use output_14_1.png>
-Package pdftex.def Info: output_14_1.png  used on input line 760.
+Package pdftex.def Info: output_14_1.png  used on input line 826.
 (pdftex.def)             Requested size: 401.0975pt x 302.08784pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--763
+Underfull \hbox (badness 10000) in paragraph at lines 828--829
 
  []
 
+<output_15_1.png, id=164, 411.2163pt x 298.4751pt>
+File: output_15_1.png Graphic file (type png)
+<use output_15_1.png>
+Package pdftex.def Info: output_15_1.png  used on input line 845.
+(pdftex.def)             Requested size: 411.21529pt x 298.47437pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1126,21 +1158,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4 <./output_14_1.png>]
-<output_15_1.png, id=145, 411.2163pt x 298.4751pt>
-File: output_15_1.png Graphic file (type png)
-<use output_15_1.png>
-Package pdftex.def Info: output_15_1.png  used on input line 779.
-(pdftex.def)             Requested size: 411.21529pt x 298.47437pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 781--782
+[6 <./output_14_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 847--848
 
  []
 
-<output_16_1.png, id=146, 425.6703pt x 328.8285pt>
+<output_16_1.png, id=170, 425.6703pt x 328.8285pt>
 File: output_16_1.png Graphic file (type png)
 <use output_16_1.png>
-Package pdftex.def Info: output_16_1.png  used on input line 801.
+Package pdftex.def Info: output_16_1.png  used on input line 867.
 (pdftex.def)             Requested size: 425.66925pt x 328.8277pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1149,15 +1175,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[5 <./output_15_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 803--804
+[7 <./output_15_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 
  []
 
-<output_18_1.png, id=153, 291.9708pt x 297.0297pt>
+<output_18_1.png, id=176, 291.9708pt x 297.0297pt>
 File: output_18_1.png Graphic file (type png)
 <use output_18_1.png>
-Package pdftex.def Info: output_18_1.png  used on input line 841.
+Package pdftex.def Info: output_18_1.png  used on input line 907.
 (pdftex.def)             Requested size: 291.97008pt x 297.02896pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1166,8 +1192,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[6 <./output_16_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 843--844
+[8 <./output_16_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 909--910
 
  []
 
@@ -1178,11 +1204,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[7 <./output_18_1.png>]
-<output_21_1.png, id=164, 227.6505pt x 302.0886pt>
+[9 <./output_18_1.png>]
+<output_21_1.png, id=187, 227.6505pt x 302.0886pt>
 File: output_21_1.png Graphic file (type png)
 <use output_21_1.png>
-Package pdftex.def Info: output_21_1.png  used on input line 929.
+Package pdftex.def Info: output_21_1.png  used on input line 995.
 (pdftex.def)             Requested size: 227.64993pt x 302.08784pt.
 
 
@@ -1192,8 +1218,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 931--932
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 997--998
 
  []
 
@@ -1204,7 +1230,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[9 <./output_21_1.png>]
+[11 <./output_21_1.png>]
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 1017.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 1017.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -1212,25 +1245,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[10
+[12
 
 ] (./Assignment_7.aux)
 Package rerunfilecheck Info: File `Assignment_7.out' has not changed.
 (rerunfilecheck)             Checksum: 041139A174EF466C7A8BDB1E87F6E67C;2190.
  ) 
 Here is how much of TeX's memory you used:
- 27348 strings out of 476025
- 497488 string characters out of 5796532
- 2076388 words of memory out of 5000000
- 47235 multiletter control sequences out of 15000+600000
- 562095 words of font info for 96 fonts, out of 8000000 for 9000
+ 27920 strings out of 476025
+ 503584 string characters out of 5796532
+ 2027388 words of memory out of 5000000
+ 47788 multiletter control sequences out of 15000+600000
+ 560004 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,80p,612b,761s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_7.pdf (12 pages, 338547 bytes).
+ 83i,12n,80p,612b,1680s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on Assignment_7.pdf (14 pages, 662686 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
