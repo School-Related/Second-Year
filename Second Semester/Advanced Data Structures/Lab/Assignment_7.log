@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  24 APR 2023 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  24 APR 2023 19:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,6 +647,7 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 68.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 68.
 \c@lstlisting=\count323
 Package hyperref Info: Link coloring ON on input line 68.
+ (./Assignment_7.out) (./Assignment_7.out)
 \@outlinefile=\write3
 \openout3 = `Assignment_7.out'.
 
@@ -656,24 +657,47 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 19.28804pt on input line 77.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 16.07027pt on input line 81.
-
-
-LaTeX Font Warning: Font shape `T1/fnc/m/scit' undefined
-(Font)              using `T1/fnc/m/it' instead on input line 99.
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 19.28804pt on input line 99.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 16.07027pt on input line 113.
+(Font)              scaled to size 16.07027pt on input line 112.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 121.
-[1
+(Font)              scaled to size 13.39188pt on input line 120.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 133.
-
-No file Assignment_7.toc.
+(Font)              scaled to size 13.39188pt on input line 132.
+ (./Assignment_7.toc
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.18341pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 4.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 4.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 4.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 4.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 4.
+)
 \tf@toc=\write4
 \openout4 = `Assignment_7.toc'.
 
@@ -681,70 +705,16 @@ No file Assignment_7.toc.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \clearpage
+l.134 \clearpage
                  [1]
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 148.
+(Font)              scaled to size 10.18341pt on input line 147.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 150.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 156.
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
-
- []
-
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 174.
- (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 176.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 176.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 185.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 185.
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 187.
- (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 187.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 187.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 187.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 187.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 187.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 187.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 187.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 187.
- (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
-File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
-)
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 187.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 187.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 187.
+(Font)              scaled to size 11.15991pt on input line 150.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 188.
+(Font)              scaled to size 13.39188pt on input line 171.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -757,31 +727,166 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 ...tem \textbf{Space Complexity:} \[O(V^2)\]
-                                                   [1
+l.171 
+       [1
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
 
-! Package Listings Error: File `../Programs/Assignment_7(.cpp)' not found.
+ []
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: cpp)
 
-Enter file name: 
-/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_7.tex:201: Emergency stop.
-<read *> 
-         
-l.201 ...nguage=C++]{../Programs/Assignment_7.cpp}
-                                                  ^^M
-*** (cannot \read from terminal in nonstop modes)
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
- 
+[2] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 214.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 216.
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 227.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 227.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 254.
+ (../Programs/Assignment_7.cpp
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[7]) (../Programs/Assignment_7_output.txt
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[10]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[12])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[14
+
+] (./Assignment_7.aux)
+Package rerunfilecheck Info: File `Assignment_7.out' has not changed.
+(rerunfilecheck)             Checksum: 61246E0948C72FDC434D4A8E29456212;3151.
+ ) 
 Here is how much of TeX's memory you used:
- 13479 strings out of 476025
- 202841 string characters out of 5796532
- 1857388 words of memory out of 5000000
- 33687 multiletter control sequences out of 15000+600000
- 559285 words of font info for 86 fonts, out of 8000000 for 9000
+ 14258 strings out of 476025
+ 213918 string characters out of 5796532
+ 2241388 words of memory out of 5000000
+ 33867 multiletter control sequences out of 15000+600000
+ 560953 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,76p,519b,1296s stack positions out of 5000i,500n,10000p,200000b,80000s
-/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Lab/Assignment_7.tex:201:  ==> Fatal error occurred, no output PDF file produced!
+ 75i,13n,76p,598b,2075s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on Assignment_7.pdf (16 pages, 134957 bytes).
+PDF statistics:
+ 902 PDF objects out of 1000 (max. 8388607)
+ 867 compressed objects within 9 object streams
+ 600 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+

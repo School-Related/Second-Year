@@ -94,8 +94,7 @@
 
 
     \huge{\textsc{
-            Minimum Cost Spanning Tree using
-            \textit{Prim's Algorithm}
+            Implementation of Heap as a Data Structure
         }} \\
 
 
@@ -109,7 +108,7 @@
     %--------------------------SUBTITLE --------------------------	
 
     \LARGE\textsc{
-        Assignment No. 6
+        Assignment No. 7
     } % Subtitle or further description
     \vfill
 
@@ -148,9 +147,50 @@
     heap data structure and Heap sort.}
 \section{Theory}
 
-% ● What is Heap?
-% ● Write different types of Heaps
-% ● Construction of heap and Data Structure used for creation.
+\subsection{Heap}
+
+A heap is a specialized tree-based data structure that satisfies the heap property. The heap property is a condition where each node in the tree is greater than or equal to (in a max heap) or less than or equal to (in a min heap) its children. The root node of the heap is the maximum (or minimum) element in a max (or min) heap.
+
+Heaps are often used to implement priority queues, where elements are extracted in order of priority. For example, in a hospital, patients with the most urgent medical needs are given the highest priority for treatment. A priority queue based on a heap can efficiently manage the order of patients by storing their priority level (e.g., critical, urgent, or routine) in each node and maintaining the heap property.
+
+\subsection{Types of Heaps}
+
+There are two main types of heaps: max heaps and min heaps. In a max heap, the maximum element is always stored at the root, and every node is greater than or equal to its children. In a min heap, the minimum element is stored at the root, and every node is less than or equal to its children.
+
+Both types of heaps have their own advantages and use cases. Max heaps are often used to implement priority queues, where the highest priority element needs to be extracted first. Min heaps are often used in algorithms such as Dijkstra's shortest path algorithm, where the minimum distance to a vertex needs to be determined.
+
+\subsection{Construction of heaps}
+
+Heaps can be constructed using a variety of algorithms, including the bottom-up construction algorithm and the top-down construction algorithm. The bottom-up construction algorithm starts with a partially ordered set of elements and iteratively adds elements to the heap in a way that maintains the heap property. The top-down construction algorithm starts with an empty heap and iteratively adds elements to the heap in a way that maintains the heap property.
+
+Regardless of the algorithm used, the construction of a heap takes O(n) time, where n is the number of elements in the heap. This is because each element must be inserted into the heap and the heap property must be maintained at each step.
+
+\subsection{Data Structures Used for Heap Constructions}
+
+The most common data structure used for heap construction is an array. In an array-based heap, the elements are stored in an array in a way that maintains the heap property. The root element is stored at index 0, and the children of a node at index i are stored at indices 2i+1 and 2i+2.
+
+Linked lists can also be used to implement heaps, but they are less commonly used due to their higher overhead.
+
+\subsection{Time and Space Complexities Associated with Heap}
+
+The time complexity of heap operations depends on the height of the heap, which is O(log n) for a heap with n elements. The space complexity of a heap is O(n), where n is the number of elements in the heap.
+
+Inserting an element into a heap takes O(log n) time, as the element must be inserted at the bottom of the heap and then sifted up to maintain the heap property. Similarly, extracting the maximum (or minimum) element from a heap takes O(log n) time, as the root element must be removed and then the heap must be reorganized to maintain the heap property.
+
+Heap operations are generally more efficient than operations on other data structures such as arrays or linked lists, particularly for large datasets. However, they can be less efficient than other data structures for small datasets due to the overhead associated with maintaining the heap property.
+
+\subsection{Heap Vs Binary Search Trees}
+
+Heaps are often compared to binary search trees (BSTs), another tree-based data structure. However, heaps are not as efficient as BSTs for all operations. For example, searching for an element in a heap takes O(n) time, as each element must be searched in the worst case. In contrast, searching for an element in a BST takes O(log n) time, as the search can be narrowed down to a single subtree.
+
+However, heaps are more efficient than BSTs for operations such as finding the maximum (or minimum) element, as the root element is always the maximum (or minimum) element in a heap. In contrast, finding the maximum (or minimum) element in a BST takes O(log n) time, as the maximum (or minimum) element may be located at the bottom of the tree.
+
+\subsection{Applications of Heap}
+
+Heaps are often used to implement priority queues, where elements are extracted in order of priority. For example, in a hospital, patients with the most urgent medical needs are given the highest priority for treatment. A priority queue based on a heap can efficiently manage the order of patients by storing their priority level (e.g., critical, urgent, or routine) in each node and maintaining the heap property.
+
+Heaps are also used in algorithms such as Dijkstra's shortest path algorithm, where the minimum distance to a vertex needs to be determined. In this case, the heap stores the vertices that have not yet been visited, and the minimum distance to each vertex is stored in each node. The heap property is maintained by updating the minimum distance to each vertex as the algorithm progresses.
+
 
 \section{Platform}
 \textbf{\textbf{Operating System}}: Arch Linux x86-64 \\
@@ -184,15 +224,28 @@
 
 \subsection{Min and Max Heap Creation}
 \begin{itemize}
-    \item \textbf{Time Complexity:} \[O(V^2)\]
-    \item \textbf{Space Complexity:} \[O(V^2)\]
+    \item \textbf{Time Complexity:} \[ O(n\log(n))\]
+    \item \textbf{Space Complexity:} \[ O(n) \]
 \end{itemize}
 
 \subsection{Min or Max Heap Traversal}
 
 \begin{itemize}
-    \item \textbf{Time Complexity:} \[O(V^2)\]
-    \item \textbf{Space Complexity:} \[O(V^2)\]
+    \item \textbf{Time Complexity:} \[ O(n\log(n))\]
+    \item \textbf{Space Complexity:} \[ O(n) \]
+\end{itemize}
+
+\subsection{Heap Sort}
+
+\begin{itemize}
+    \item \textbf{Time Complexity:} \[ O(n\log(n))\]
+    \item \textbf{Space Complexity:} \[ O(n) \]
+\end{itemize}
+
+\section{Searching in Heap}
+
+\begin{itemize}
+    \item \textbf{Time Complexity:} \[ O(n) \]
 \end{itemize}
 
 \section{Code}
