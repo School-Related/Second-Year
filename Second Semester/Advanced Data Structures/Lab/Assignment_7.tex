@@ -242,35 +242,31 @@ CreateMinHeap(array)
 \end{lstlisting}
 \subsubsection*{Pseudo Code for Heapify function}
 \begin{lstlisting}[language=c++]
-MaxHeapify(array, i, n)
-    left = 2i
-    right = 2i + 1
-    largest = i
-    
-    if left <= n and array[left] > array[largest] then:
-        largest = left
-    if right <= n and array[right] > array[largest] then:
-        largest = right
-    if largest != i then:
-        swap(array[i], array[largest])
-        MaxHeapify(array, largest, n)
-
-MinHeapify(array, i, n)
-    left = 2i
-    right = 2i + 1
-    smallest = i
-    
-    if left <= n and array[left] < array[smallest] then:
-        smallest = left
-    if right <= n and array[right] < array[smallest] then:
-        smallest = right
-    if smallest != i then:
-        swap(array[i], array[smallest])
-        MinHeapify(array, smallest, n)
+heapify(array, size)
+Begin
+   for i := 1 to size do
+      node := i
+      par := floor (node / 2)
+      while par >= 1 do
+         if array[par] < array[node] then
+            swap array[par] with array[node]
+         node := par
+         par := floor (node / 2)
+      done
+   done
+End
 
 \end{lstlisting}
 
-
+\begin{lstlisting}[language=C++]
+Heapify(array, size)
+Begin
+   for i := n to 1 decrease by 1 do
+      heapify(array, i)
+      swap array[1] with array[i]
+   done
+End
+\end{lstlisting}
 \section{Time Complexity}
 
 \subsection{Min and Max Heap Creation}

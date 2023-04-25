@@ -413,6 +413,7 @@ public:
             s2.pop();
         }
     }
+    
 };
 
 int main()
@@ -425,7 +426,7 @@ int main()
     {
         cout << "\nWhat would like to do? " << endl;
         cout << "\n\nWelcome to ADS Assignment 2 - Binary Tree Traversals\n\nWhat would you like to do? " << endl;
-        cout << "1. Create a Binary Search Tree"
+        cout << "1. Create an AVL Tree"
              << endl;
         cout << "2. Traverse the Tree Inorder Iteratively"
              << endl;

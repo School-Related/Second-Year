@@ -690,848 +690,138 @@ ndarray is created and shape and data type are displayed.
 \section{Code}
 
     
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{1}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-\end{Verbatim}
-\end{tcolorbox}
+    
+\hypertarget{tkinter}{%
+\section{Tkinter}\label{tkinter}}
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{2}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{,} \PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{]}\PY{p}{)}
-\PY{n}{arr}
-\end{Verbatim}
-\end{tcolorbox}
+    \hypertarget{basic-tkinter-gui}{%
+\subsection{Basic tkinter gui}\label{basic-tkinter-gui}}
 
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{2}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{3}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-\PY{n}{arr}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{3}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([1, 2, 3, 4, 5])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{4}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{]}\PY{p}{,} \PY{n}{ndmin}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{4}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3, 4, 5],
-       [1, 2, 3, 4, 5]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{5}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{o}{.}\PY{n}{ndim}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{5}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-1
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{6}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{s\PYZus{}box} \PY{o}{=} \PY{p}{[}
-    \PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
-    \PY{p}{[}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{]}\PY{p}{,}
-    \PY{p}{[}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{]}
-\PY{p}{]}
-
-\PY{n}{s\PYZus{}box} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{s\PYZus{}box}\PY{p}{)}
-\PY{n}{s\PYZus{}box}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{6}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3],
-       [4, 5, 6],
-       [7, 8, 9]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{7}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{s\PYZus{}box}\PY{o}{.}\PY{n}{ndim}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{7}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-2
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{8}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{s\PYZus{}box}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{8}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3],
-       [4, 5, 6],
-       [7, 8, 9]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{9}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{)}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{11}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{]}\PY{p}{]}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{10}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{10}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[[ 1,  2,  3],
-        [ 4,  5,  6]],
-
-       [[ 7,  8,  9],
-        [10, 11, 12]]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{11}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{11}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3],
-       [4, 5, 6]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{12}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{12}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([1, 2, 3])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{13}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{.}\PY{n}{dtype}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{13}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-dtype('int64')
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{14}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{abcd}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{sadoifj}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{14}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array(['abcd', 'sadoifj'], dtype='<U7')
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{15}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{]}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{]}\PY{p}{)}
-\PY{n}{array}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{15}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3, 4, 5],
-       [1, 2, 3, 4, 4],
-       [0, 1, 2, 3, 4],
-       [0, 1, 2, 3, 4]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{16}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array}\PY{o}{.}\PY{n}{shape}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{16}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-(4, 5)
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{17}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{17}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 2, 3, 4],
-       [5, 1, 2, 3],
-       [4, 4, 0, 1],
-       [2, 3, 4, 0],
-       [1, 2, 3, 4]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{18}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array}\PY{o}{.}\PY{n}{transpose}\PY{p}{(}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{18}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[1, 1, 0, 0],
-       [2, 2, 1, 1],
-       [3, 3, 2, 2],
-       [4, 4, 3, 3],
-       [5, 4, 4, 4]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{19}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{19}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{20}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{20}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{21}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{n}{array}\PY{o}{.}\PY{n}{shape}\PY{p}{)}
-\PY{n}{array}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{21}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0.]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{22}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{22}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{23}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{23}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([0, 2, 4, 6, 8])
-\end{Verbatim}
-\end{tcolorbox}
-        
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{24}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n+nb}{type}\PY{p}{(}\PY{n}{array}\PY{p}{)}
+\PY{k+kn}{from} \PY{n+nn}{tkinter} \PY{k+kn}{import} \PY{o}{*}
+
+\PY{c+c1}{\PYZsh{} size of the window is defined}
+\PY{n}{root} \PY{o}{=} \PY{n}{Tk}\PY{p}{(}\PY{p}{)}
+\PY{n}{root}\PY{o}{.}\PY{n}{geometry}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{400x400}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+
+\PY{n}{frame\PYZus{}1} \PY{o}{=} \PY{n}{Frame}\PY{p}{(}\PY{n}{root}\PY{p}{)}
+\PY{n}{frame\PYZus{}1}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{side}\PY{o}{=}\PY{n}{TOP}\PY{p}{)}
+\PY{n}{frame\PYZus{}2} \PY{o}{=} \PY{n}{Frame}\PY{p}{(}\PY{n}{root}\PY{p}{)}
+\PY{n}{frame\PYZus{}2}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{side}\PY{o}{=}\PY{n}{BOTTOM}\PY{p}{)}
+
+
+\PY{n}{button\PYZus{}1} \PY{o}{=} \PY{n}{Button}\PY{p}{(}\PY{n}{frame\PYZus{}1}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Button 1}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{red}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{button\PYZus{}2} \PY{o}{=} \PY{n}{Button}\PY{p}{(}\PY{n}{frame\PYZus{}1}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Button 2}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{blue}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} to add the button the respective screens}
+\PY{n}{button\PYZus{}1}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{p}{)}
+\PY{n}{button\PYZus{}2}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{p}{)}
+
+\PY{n}{root}\PY{o}{.}\PY{n}{mainloop}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{24}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-numpy.ndarray
-\end{Verbatim}
-\end{tcolorbox}
-        
+    \hypertarget{assignment}{%
+\subsection{Assignment}\label{assignment}}
+
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{25}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{)}
+\PY{k+kn}{import} \PY{n+nn}{datetime}
+\PY{k+kn}{import} \PY{n+nn}{tkinter} \PY{k}{as} \PY{n+nn}{tk}
+
+\PY{c+c1}{\PYZsh{} Define the pastel color scheme}
+\PY{n}{bg\PYZus{}color} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}F2EFEA}\PY{l+s+s2}{\PYZdq{}}
+\PY{n}{fg\PYZus{}color} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}6D6A75}\PY{l+s+s2}{\PYZdq{}}
+\PY{n}{button\PYZus{}color} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}F2D4CB}\PY{l+s+s2}{\PYZdq{}}
+\PY{n}{button\PYZus{}hover\PYZus{}color} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}F2D4CB}\PY{l+s+s2}{\PYZdq{}}
+
+\PY{k}{def} \PY{n+nf}{calculate\PYZus{}age}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+    \PY{c+c1}{\PYZsh{} get the current date}
+    \PY{k}{try}\PY{p}{:} 
+        \PY{n}{today} \PY{o}{=} \PY{n}{datetime}\PY{o}{.}\PY{n}{date}\PY{o}{.}\PY{n}{today}\PY{p}{(}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} get the date of birth from the input fields}
+        \PY{n}{day} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n}{day\PYZus{}entry}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        \PY{n}{month} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n}{month\PYZus{}entry}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        \PY{n}{year} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n}{year\PYZus{}entry}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{day}\PY{p}{,} \PY{n}{month}\PY{p}{,} \PY{n}{year}\PY{p}{)}
+        \PY{n}{dob} \PY{o}{=} \PY{n}{datetime}\PY{o}{.}\PY{n}{date}\PY{p}{(}\PY{n}{year}\PY{p}{,} \PY{n}{month}\PY{p}{,} \PY{n}{day}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} calculate the difference between the current date and date of birth}
+        \PY{n}{age} \PY{o}{=} \PY{n}{today} \PY{o}{\PYZhy{}} \PY{n}{dob}
+        \PY{c+c1}{\PYZsh{} calculate age in years and months}
+        \PY{n}{years} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n}{age}\PY{o}{.}\PY{n}{days} \PY{o}{/} \PY{l+m+mf}{365.25}\PY{p}{)}
+        \PY{n}{months} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{p}{(}\PY{n}{age}\PY{o}{.}\PY{n}{days} \PY{o}{\PYZpc{}} \PY{l+m+mf}{365.25}\PY{p}{)} \PY{o}{/} \PY{l+m+mf}{30.44}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} update the label with the age}
+        \PY{n}{age\PYZus{}label}\PY{o}{.}\PY{n}{config}\PY{p}{(}\PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{You are }\PY{l+s+si}{\PYZob{}\PYZcb{}}\PY{l+s+s2}{ years and }\PY{l+s+si}{\PYZob{}\PYZcb{}}\PY{l+s+s2}{ months old.}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{years}\PY{p}{,} \PY{n}{months}\PY{p}{)}\PY{p}{)}
+    \PY{k}{except}\PY{p}{:} 
+        \PY{n}{age\PYZus{}label}\PY{o}{.}\PY{n}{config}\PY{p}{(}\PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Please enter a valid date.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+
+\PY{k}{def} \PY{n+nf}{reset\PYZus{}fields}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+    \PY{c+c1}{\PYZsh{} clear the input fields and age label}
+    \PY{n}{day\PYZus{}entry}\PY{o}{.}\PY{n}{delete}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{tk}\PY{o}{.}\PY{n}{END}\PY{p}{)}
+    \PY{n}{month\PYZus{}entry}\PY{o}{.}\PY{n}{delete}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{tk}\PY{o}{.}\PY{n}{END}\PY{p}{)}
+    \PY{n}{year\PYZus{}entry}\PY{o}{.}\PY{n}{delete}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{tk}\PY{o}{.}\PY{n}{END}\PY{p}{)}
+    \PY{n}{age\PYZus{}label}\PY{o}{.}\PY{n}{config}\PY{p}{(}\PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Create a new tkinter window}
+\PY{n}{root} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Tk}\PY{p}{(}\PY{p}{)}
+\PY{n}{root}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age Calculator}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{root}\PY{o}{.}\PY{n}{geometry}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{600x600}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+\PY{n}{root}\PY{o}{.}\PY{n}{configure}\PY{p}{(}\PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{)}
+
+\PY{n}{main\PYZus{}label} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Label}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age Calculator}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{16}\PY{p}{)}\PY{p}{)}
+\PY{n}{main\PYZus{}label}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{50}\PY{p}{,} \PY{l+m+mi}{20}\PY{p}{)}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Create the input fields for date of birth}
+\PY{n}{day\PYZus{}label} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Label}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Day}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{)}
+\PY{n}{day\PYZus{}entry} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Entry}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{bd}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+\PY{n}{month\PYZus{}label} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Label}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Month}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{)}
+\PY{n}{month\PYZus{}entry} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Entry}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{bd}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+\PY{n}{year\PYZus{}label} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Label}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Year}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{)}
+\PY{n}{year\PYZus{}entry} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Entry}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{bd}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Create the button to calculate age}
+\PY{n}{calc\PYZus{}button} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Button}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Calculate}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{button\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{14}\PY{p}{)}\PY{p}{,} \PY{n}{bd}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,}
+                        \PY{n}{activebackground}\PY{o}{=}\PY{n}{button\PYZus{}hover\PYZus{}color}\PY{p}{,} \PY{n}{activeforeground}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{command}\PY{o}{=}\PY{n}{calculate\PYZus{}age}\PY{p}{)}
+
+
+\PY{c+c1}{\PYZsh{} Create the button to reset the fields}
+\PY{n}{reset\PYZus{}button} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Button}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Reset}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{button\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{14}\PY{p}{)}\PY{p}{,} \PY{n}{bd}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,}
+                         \PY{n}{activebackground}\PY{o}{=}\PY{n}{button\PYZus{}hover\PYZus{}color}\PY{p}{,} \PY{n}{activeforeground}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{command}\PY{o}{=}\PY{n}{reset\PYZus{}fields}\PY{p}{)}
+
+
+\PY{c+c1}{\PYZsh{} Create the label to display the age}
+\PY{n}{age\PYZus{}label} \PY{o}{=} \PY{n}{tk}\PY{o}{.}\PY{n}{Label}\PY{p}{(}\PY{n}{root}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Please Enter Date}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bg}\PY{o}{=}\PY{n}{bg\PYZus{}color}\PY{p}{,} \PY{n}{fg}\PY{o}{=}\PY{n}{fg\PYZus{}color}\PY{p}{,} \PY{n}{font}\PY{o}{=}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Helvetica}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+m+mi}{16}\PY{p}{)}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Add the widgets to the window}
+\PY{n}{day\PYZus{}label}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{50}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+\PY{n}{day\PYZus{}entry}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+\PY{n}{month\PYZus{}label}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+\PY{n}{month\PYZus{}entry}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+\PY{n}{year\PYZus{}label}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+\PY{n}{year\PYZus{}entry}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+\PY{n}{calc\PYZus{}button}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{20}\PY{p}{)}
+\PY{n}{reset\PYZus{}button}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{)}
+\PY{n}{age\PYZus{}label}\PY{o}{.}\PY{n}{pack}\PY{p}{(}\PY{n}{pady}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+
+\PY{c+c1}{\PYZsh{} Run the main tkinter event loop}
+\PY{n}{root}\PY{o}{.}\PY{n}{mainloop}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-[[0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0.]
- [0. 0. 0. 0. 0.]]
+20 12 2002
     \end{Verbatim}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{26}{\boxspacing}
+\prompt{In}{incolor}{ }{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}
+
 \end{Verbatim}
 \end{tcolorbox}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-[0. 0. 0. 0. 0.]
-    \end{Verbatim}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{27}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{a} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\PY{n+nb}{print}\PY{p}{(}\PY{n}{a}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-[0 1 2 3 4 5 6 7 8 9]
-    \end{Verbatim}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{28}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{x} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\PY{n}{y} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{29}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{np}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{29}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
-\end{Verbatim}
-\end{tcolorbox}
-        
-
-    
-\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{1}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{2}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{,} \PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{]}\PY{p}{)}
-    \PY{n}{arr}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{2}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{3}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-    \PY{n}{arr}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{3}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([1, 2, 3, 4, 5])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{4}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{]}\PY{p}{,} \PY{n}{ndmin}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{4}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3, 4, 5],
-           [1, 2, 3, 4, 5]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{5}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{o}{.}\PY{n}{ndim}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{5}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    1
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{6}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{s\PYZus{}box} \PY{o}{=} \PY{p}{[}
-        \PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{]}\PY{p}{,}
-        \PY{p}{[}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{]}\PY{p}{,}
-        \PY{p}{[}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{]}
-    \PY{p}{]}
-    
-    \PY{n}{s\PYZus{}box} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{s\PYZus{}box}\PY{p}{)}
-    \PY{n}{s\PYZus{}box}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{6}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3],
-           [4, 5, 6],
-           [7, 8, 9]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{7}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{s\PYZus{}box}\PY{o}{.}\PY{n}{ndim}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{7}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    2
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{8}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{s\PYZus{}box}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{8}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3],
-           [4, 5, 6],
-           [7, 8, 9]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{9}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{)}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{p}{(}\PY{l+m+mi}{7}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{9}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{11}\PY{p}{,} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{]}\PY{p}{]}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{10}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{10}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[[ 1,  2,  3],
-            [ 4,  5,  6]],
-    
-           [[ 7,  8,  9],
-            [10, 11, 12]]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{11}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{11}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3],
-           [4, 5, 6]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{12}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{12}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([1, 2, 3])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{13}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{arr}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{.}\PY{n}{dtype}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{13}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    dtype('int64')
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{14}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{abcd}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{sadoifj}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{14}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array(['abcd', 'sadoifj'], dtype='<U7')
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{15}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{]}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{,} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{]}\PY{p}{)}
-    \PY{n}{array}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{15}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3, 4, 5],
-           [1, 2, 3, 4, 4],
-           [0, 1, 2, 3, 4],
-           [0, 1, 2, 3, 4]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{16}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array}\PY{o}{.}\PY{n}{shape}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{16}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    (4, 5)
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{17}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{17}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 2, 3, 4],
-           [5, 1, 2, 3],
-           [4, 4, 0, 1],
-           [2, 3, 4, 0],
-           [1, 2, 3, 4]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{18}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array}\PY{o}{.}\PY{n}{transpose}\PY{p}{(}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{18}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[1, 1, 0, 0],
-           [2, 2, 1, 1],
-           [3, 3, 2, 2],
-           [4, 4, 3, 3],
-           [5, 4, 4, 4]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{19}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{19}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{20}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{20}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{21}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{array} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{n}{array}\PY{o}{.}\PY{n}{shape}\PY{p}{)}
-    \PY{n}{array}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{21}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([[0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.],
-           [0., 0., 0., 0., 0.]])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{22}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{22}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{23}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{23}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([0, 2, 4, 6, 8])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{24}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n+nb}{type}\PY{p}{(}\PY{n}{array}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{24}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    numpy.ndarray
-    \end{Verbatim}
-    \end{tcolorbox}
-            
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{25}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{Verbatim}[commandchars=\\\{\}]
-    [[0. 0. 0. 0. 0.]
-     [0. 0. 0. 0. 0.]
-     [0. 0. 0. 0. 0.]
-     [0. 0. 0. 0. 0.]]
-        \end{Verbatim}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{26}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{array}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{Verbatim}[commandchars=\\\{\}]
-    [0. 0. 0. 0. 0.]
-        \end{Verbatim}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{27}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{a} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{a}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{Verbatim}[commandchars=\\\{\}]
-    [0 1 2 3 4 5 6 7 8 9]
-        \end{Verbatim}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{28}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{x} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \PY{n}{y} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{10}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-        \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-    \prompt{In}{incolor}{29}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    \PY{n}{np}\PY{o}{.}\PY{n}{sum}\PY{p}{(}\PY{p}{[}\PY{n}{x}\PY{p}{,} \PY{n}{y}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
-    \end{Verbatim}
-    \end{tcolorbox}
-    
-                \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-    \prompt{Out}{outcolor}{29}{\boxspacing}
-    \begin{Verbatim}[commandchars=\\\{\}]
-    array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
-    \end{Verbatim}
-    \end{tcolorbox}
-            
     
 \section{Conclusion}
 The Numpy was studied and understood. The functions of the Numpy library were also studied and implemented.
