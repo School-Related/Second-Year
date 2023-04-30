@@ -47,7 +47,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{Python Programming Assignment 8}}}
+\fancyhead[L]{\textit{\Large{Python Programming Assignment 11}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -474,7 +474,7 @@
 
     \huge{\textsc{
             Learning Basics of the \\
-            \textit{Numpy library}
+            \textit{Tkinter Module}
         }} \\
 
 
@@ -516,183 +516,86 @@
 \setcounter{page}{1}
 
 \section{Aim}
-Write a python code to use a Numpy module create an array and check the following:
-\begin{enumerate}
-    \item Type of array.
-    \item Axes of array.
-    \item Shape of array.
-    \item Type of elements in array.
-\end{enumerate}
+Write a Python GUI program to import Tkinter package and create a program to take input
+of your date of output your birth and age.
 
 \section{Objectives}
 \begin{enumerate}
-    \item To learn and implement functions of the Numpy module.
+    \item To learn and implement Python GUI using Tkinter.
 \end{enumerate}
 
+\section{Problem Statement}
+Create a program to take input of your date of output your birth and age.
 \section{Theory}
-% Numpy Library and its Functions.
-% arrange(), shape, reshape, size, ndim, eyes, ones, zeros, dtype, diag,
-\subsection{Numpy Library}
-The Numpy library is a Python library that is used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+Tkinter commonly comes bundled with Python, using Tk and is Python's standard GUI framework. It is famous for its simplicity and graphical user interface. It is open-source and available under the Python License.\\
 
-It also has a large collection of high-level mathematical functions to operate on these arrays. It is also used for working in domain of machine learning, deep learning, and artificial intelligence.
+Note: Tkinter comes pre-installed with Python 3 , and you need not bother about installing it. Now, let's build a very simple GUI with the help of Tkinter and understand it with the help of a flow diagram.
 
-The reason it was created is because the Python language does not have built-in support for Arrays, and they are very useful in data science and scientific computing.
+Steps:
+\begin{enumerate}
+    \item First, you import the key component, i.e., the Tkinter module.
+    \item As a next step, you initialize the window manager with the tkinter.Tk() method and assign it to a variable. This method creates a blank window with close, maximize, and minimize buttons on the top as a usual GUI should have.
+    \item Then as an optional step, you will Rename the title of the window as you like with window.title(title).
+    \item Next, you make use of a widget called Label, which is used to insert some text into the window.
+    \item Then, you make use of Tkinter's geometry management attribute called pack() to display the widget in size it requires.
+    \item Finally, as the last step, you use the mainloop() method to display the window until you manually close it. It runs an infinite loop in the backend.
+    $\underline{\text { Widgets }}$
+\end{enumerate}
 
-It has since grown in popularity and is now used in a wide range of fields including finance, engineering, and medicine.
-
-\subsection{Numpy Functions}
-
-The numpy Library supports a large number of functions that can be used to work with arrays. They make our job easier and help us to write code faster.
-
-\subsubsection{arrange()}
-
-\textbf{Definition}:\\
-The arrange() function returns evenly spaced values within a given interval. The format of the arrange() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x)
-
-> [0 1 2 3 4 5 6 7 8 9]
-\end{verbatim}
-
-\subsubsection{shape()}
-
-\textbf{Definition}:\\
-The shape() function returns the shape of an array. The format of the shape() function is:
-
-\textbf{Example and Use}:
-
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.shape)
-
-> (10,)
-\end{verbatim}
-
-
-\subsubsection{reshape()}
-
-\textbf{Definition}:\\
-The reshape() function gives a new shape to an array without changing its data. The format of the reshape() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.reshape(2, 5))
-
-> [[0 1 2 3 4]
-> [5 6 7 8 9]]
-\end{verbatim}
-
-\subsubsection{size()}
-
-\textbf{Definition}:\\
-The size() function returns the total number of elements of the array. The format of the size() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.size)
-
-> 10
-\end{verbatim}
-
-\subsubsection{ndim()}
-
-\textbf{Definition}:\\
-The ndim() function returns the number of array dimensions. The format of the ndim() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.ndim)
-
-> 1
-\end{verbatim}
-
-\subsubsection{eyes()}
-
-\textbf{Definition}:\\
-The eyes() function returns a 2-D array with ones on the diagonal and zeros elsewhere. The format of the eyes() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.reshape(2, 5))
-
-> [[0 1 2 3 4]
-> [5 6 7 8 9]]
-\end{verbatim}
-
-\subsubsection{ones()}
-
-\textbf{Definition}:\\
-The ones() function returns a new array of given shape and type, filled with ones. The format of the ones() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.ones(10)
-print(x)
-
-> [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
-\end{verbatim}
-
-\subsubsection{zeros()}
-
-\textbf{Definition}:\\
-The zeros() function returns a new array of given shape and type, filled with zeros. The format of the zeros() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x)
-
-> [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
-\end{verbatim}
-
-\subsubsection{dtype()}
-
-\textbf{Definition}:\\
-The dtype() function returns the data type of the array
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x.dtype)
-    
-> float64
-\end{verbatim}
+\begin{itemize}
+\item Button: Button widget has a property for switching on/off. When a user clicks the button, an event is triggered in the Tkinter.
+Syntax: buttonwidget = tk.Button(widget, option=placeholder) where widget is the argument for the parent window/frame while option is a placeholder that can have various values like foreground and background color, font, command (for function call), image, height, and width of button.
+\item Canvas: Canvas is used to draw shapes in your GUI and supports various drawing methods.
+Syntax: canvaswidget = tk.Canvas ( widget, option = placeholder )
+where widget is the parameter for the parent window/frame while option is a placeholder that can have various values like border-width, background color, height and width of widget.
+\item Checkbutton: Checkbutton records on-off or true-false state. It lets you can select more than one option at a time and even leave it unchecked.
+Syntax: checkbuttonwidget = tk.CheckButton(widget, option=placeholder)
+where widget is the parameter for the parent window/frame while option is a placeholder that can have various values like title, text, background and foreground color while widget is under the cursor, font, image, etc.
+\item Entry: Entry widget is used to create input fields or to get input text from the user within the GUI.
+Syntax: entrywidget = tk.Entry ( widget, option=placeholder )
+where widget is the parameter for the parent window/frame while option is a placeholder that can have various values like border-width, background color, width and height of button etc.
+\item Frame: Frame is used as containers in the Tkinter for grouping and adequately organizing the widgets.
+Syntax: framewidget = tk.Frame(widget, option=placeholder)
+where widget is the parameter for the parent window/frame while option is a placeholder that can have various values like border-width, height and width of widget, highlightcolor (color when widget has to be focused).
+\item Label: Label is used to create a single line widgets like text, images, etc.
+Syntax: labelwidget = tk.Label(widget, option=placeholder)
+where widget is the parameter for the parent window or frame while option is a placeholder
+that can have various values like the font of a button, background color, image, width, and
+height of button.
+\end{itemize}
 
 \section{Input and Output}
 \subsection{Input}
-Creating array using numpy library
+Tkinter GUI with input as date of birth of a student in date format.
+
 \subsection{Output}
-ndarray is created and shape and data type are displayed.
+Tkinter GUI with input as date of birth of a student and output shows age.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.55\textwidth]{./Screenshot_on_2023-04-24_at_11-47-44.png}
+    \caption{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.55\textwidth]{Screenshot_on_2023-04-24_at_11-48-02.png}
+    \caption{}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.55\textwidth]{Screenshot_on_2023-04-24_at_11-48-21.png}
+    \caption{}
+\end{figure}
 
 \section{Requirements}
 \begin{enumerate}
     \item Python 3.7 or above
-    \item Numpy
+    \item tkinter module comes inbuilt with python
 \end{enumerate}
 
 \section{Code}
-
-    
-    
-\hypertarget{tkinter}{%
-\section{Tkinter}\label{tkinter}}
 
     \hypertarget{basic-tkinter-gui}{%
 \subsection{Basic tkinter gui}\label{basic-tkinter-gui}}
@@ -824,67 +727,48 @@ ndarray is created and shape and data type are displayed.
 
     
 \section{Conclusion}
-The Numpy was studied and understood. The functions of the Numpy library were also studied and implemented.
+Studied Python GUI using Tkinter with various widgets.
 
 \clearpage
 
 \section{FAQ}
 \begin{enumerate}
-    \item \textbf{What is the difference between Numpy array and List?}\\
-    
-          \textbf{Numpy array:}\\
-          \begin{itemize}
-              \item Numpy arrays are faster than lists.
-              \item Numpy arrays are more compact than lists.
-              \item Numpy arrays are more convenient than lists.
-          \end{itemize}
+\item \textbf{What is python Tkinter?}\\
 
-          \textbf{List:}\\
-          \begin{itemize}
-              \item Lists are slower than Numpy arrays.
-              \item Lists are more flexible than Numpy arrays.
-              \item Lists are more convenient than Numpy arrays.
-          \end{itemize}
+Tkinter is a Python binding to the Tk GUI toolkit. It is the standard Python interface to the Tk GUI toolkit, and is Python's de facto standard GUI.
+It is a thin object-oriented layer on top of Tcl/Tk. Tkinter is not the only GuiProgramming toolkit for Python. It is however the most commonly used one, and almost the only one that is portable between Unix, Mac and Windows. It was originally written for Python 1.4, and is now the standard way to create a GUI with Python. \\
 
-    \item \textbf{Explain type and dtype with example.}\\
-    
-          \textit{type() is a built-in function in Python that returns the type of the object passed to it. It is used to check the type of an object. dtype(), however, is an attribute of the ndarray object in Numpy. It returns the data type of the array. The difference between the two is that type() is a function and dtype() is an attribute.}
+There are also other GUI toolkits like wxPython, PyQt, Kivy, etc. \\
 
-          \begin{enumerate}
-              \item \textbf{Type:}
-                    \begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(type(x))
+\item \textbf{What is Python Tkinter pack() and mainloop() method?}\\
 
-> <class 'numpy.ndarray'>
-                \end{verbatim}
+pack() method: This geometry manager organizes widgets in blocks before placing them in the parent widget.\\
 
-              \item \textbf{Dtype:}
-                    \begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x.dtype)
+mainloop() method: There is a method known by the name mainloop() is used when your application is ready to run. mainloop() is an infinite loop used to run the application, wait for an event to occur and process the event as long as the window is not closed.\\
 
-> float64
-                \end{verbatim}
+\begin{lstlisting}[language=python]
+# Python program to create a simple GUI and show an example of pack() method and mainloop() method
 
-          \end{enumerate}
+# Importing Tkinter module
+from tkinter import *
 
-    \item \textbf{Explain axis in numpy arrays.}\\
+root = Tk()
 
-          \textit{Axis is a dimension of an array. In a 2-D array, there are two axes, the first running vertically downwards across rows (axis 0), and the second running horizontally across columns (axis 1). In a 3-D array, there are three axes, the first running downwards along the depth of the array, the second running horizontally across rows (axis 1), and the third running vertically across columns (axis 2).}
+# Creating a Label Widget
+myLabel1 = Label(root, text="Hello World!")
 
-          \textbf{Example:}
-          \begin{verbatim}
-import numpy as np
-x = np.array([[1, 2, 3], [4, 5, 6]])
-print(x.sum(axis=0))
+# Showing it onto the screen
+myLabel1.pack()
 
-> [5 7 9]
-            \end{verbatim}
+# Creating a Label Widget
+myLabel2 = Label(root, text="My name is John Elder")
 
+# Showing it onto the screen
+myLabel2.pack()
 
+root.mainloop() // runs in a infinite loop
+
+\end{lstlisting}
 
 \end{enumerate}
 

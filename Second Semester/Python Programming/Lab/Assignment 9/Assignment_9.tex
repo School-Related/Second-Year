@@ -473,8 +473,8 @@
 
 
     \huge{\textsc{
-            Learning Basics of the \\
-            \textit{Numpy library}
+            Learning Basics of \\
+            \textit{regex}
         }} \\
 
 
@@ -514,185 +514,200 @@
 \clearpage
 
 \setcounter{page}{1}
-
 \section{Aim}
-Write a python code to use a Numpy module create an array and check the following:
+To find a string or set of strings using special sequence of characters that uses a search
+pattern.
+
+\section{Problem Statement}
+Create a Regular Expression and implement the following
+
 \begin{enumerate}
-    \item Type of array.
-    \item Axes of array.
-    \item Shape of array.
-    \item Type of elements in array.
+    \item Recognize the following strings: 'bat,' 'bit,' 'but,' 'hat,' 'hit,' or 'hut.'
+    \item Match any pair of words separated by a single space, i.e., first and last names.
+    \item Match any word and single letter separated by a comma and single space, as in last name, first initial.
 \end{enumerate}
 
 \section{Objectives}
 \begin{enumerate}
-    \item To learn and implement functions of the Numpy module.
+    \item To learn and implement Functions of Regular Expression.
 \end{enumerate}
 
 \section{Theory}
-% Numpy Library and its Functions.
-% arrange(), shape, reshape, size, ndim, eyes, ones, zeros, dtype, diag,
-\subsection{Numpy Library}
-The Numpy library is a Python library that is used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.
 
-It also has a large collection of high-level mathematical functions to operate on these arrays. It is also used for working in domain of machine learning, deep learning, and artificial intelligence.
+\subsection{Metacharacters and Special Sequences}
 
-The reason it was created is because the Python language does not have built-in support for Arrays, and they are very useful in data science and scientific computing.
+\subsubsection{Metacharacters}
+Metacharacters are characters with a special meaning:
+\begin{enumerate}
+    \item \textbf{\^{}} - Starts with
+    \item  \textbf{\$} - Ends with
+    \item  \textbf{.} - Any character
+    \item  \textbf{|} - Either or
+    \item  \textbf{[]} - Range
+    \item  \textbf{()} - Capture and group
+    \item  \textbf{\textbackslash} - Escape character
+    \item  \textbf{\textbackslash d} - Digits
+    \item  \textbf{\textbackslash D} - Not a digit 
+    \item  \textbf{\textbackslash w} - Word character
+    \item  \textbf{\textbackslash W} - Not a word character
+    \item  \textbf{\textbackslash s} - Whitespace
+    \item  \textbf{\textbackslash S} - Not a whitespace
+    \item  \textbf{\textbackslash b} - Word boundary
+    \item  \textbf{\textbackslash B} - Not a word boundary
+    \item  \textbf{\textbackslash A} - Beginning of string
+    \item  \textbf{\textbackslash Z} - End of string
+    \item  \textbf{\textbackslash z} - End of string
+    \item  \textbf{\textbackslash G} - End of previous match
+    \item  \textbf{\textbackslash n} - New line
+    \item  \textbf{\textbackslash t} - Tab
+    \item  \textbf{\textbackslash} - Backslash
+    \item  \textbf{\textbackslash (escape)} - Escape character
+    \item  \textbf{\textbackslash \{number\}} - Occurrences
+    \item  \textbf{\textbackslash \{number, number\}} - Range of occurrences
+    \item  \textbf{\textbackslash \{number, \}} - Minimum occurrences
+    \item  \textbf{\textbackslash * } - Zero or more occurrences
+    \item  \textbf{\textbackslash +} - One or more occurrences
+    \item  \textbf{\textbackslash ?} - Zero or one occurrences
+\end{enumerate}
 
-It has since grown in popularity and is now used in a wide range of fields including finance, engineering, and medicine.
+They are used to define the search pattern. They are used in the search() methods to search a string for a match.
 
-\subsection{Numpy Functions}
+\subsection{Regular Expression Functions}
 
-The numpy Library supports a large number of functions that can be used to work with arrays. They make our job easier and help us to write code faster.
+\subsubsection{re.findall()}
 
-\subsubsection{arrange()}
+The re.findall() method returns a list of strings containing all matches. If there are no matches, an empty list is returned. 
 
-\textbf{Definition}:\\
-The arrange() function returns evenly spaced values within a given interval. The format of the arrange() function is:
+Parameters: This method takes following arguments :
 
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x)
+\begin{itemize}
+    \item pattern: A regular expression to match the string.
+    \item string: A string to be searched.
+    \item flags: We can specify different flags using bitwise OR (|). These are modifiers, which are listed in the table below.
+\end{itemize}
 
-> [0 1 2 3 4 5 6 7 8 9]
-\end{verbatim}
+\begin{lstlisting}[language=python]
+    pattern = r"eggs"
+    string = "bacon and eggs"
+    re.findall(pattern, string, flags=0)
+    # output = ['eggs']
+\end{lstlisting}
 
-\subsubsection{shape()}
+\subsubsection{re.split()}
 
-\textbf{Definition}:\\
-The shape() function returns the shape of an array. The format of the shape() function is:
+The re.split method splits the string where there is a match and returns a list of strings where the splits have occurred.
 
-\textbf{Example and Use}:
+Parameters: This method takes following arguments :
 
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.shape)
+\begin{itemize}
+    \item pattern: A regular expression to match the string.
+    \item string: A string to be split on basis of pattern matching.
+    \item maxsplit: It is a number, which tells us to split the string into maximum of provided number of times. If not provided, the default is -1 that is, all occurrences.
+    \item flags: It is an optional parameter that can be used to control different regular expression operations.
+\end{itemize}
 
-> (10,)
-\end{verbatim}
+\begin{lstlisting}[language=python]
+    pattern = r"\s"
+    string = "bacon and eggs"
+    re.split(pattern, string, maxsplit=0, flags=0)
+    # output = ['bacon', 'and', 'eggs']
+
+    re.split(pattern, string, maxsplit=1, flags=0)
+
+    # output = ['bacon', 'and eggs']
+\end{lstlisting}
 
 
-\subsubsection{reshape()}
+\subsubsection{re.sub()}
 
-\textbf{Definition}:\\
-The reshape() function gives a new shape to an array without changing its data. The format of the reshape() function is:
+The re.sub() method replaces all occurrences of the RE pattern in string with repl, substituting all occurrences unless max provided. This method returns modified string.
 
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.reshape(2, 5))
+Parameters: This method takes following arguments :
+\begin{itemize}
+    \item pattern: A regular expression to match the string.
+    \item  repl: A substitute of the replace string.
+    \item  string: A string to be matched.
+    \item  count: Maximum number of occurrences that need to be replaced.
+    \item  flags: It is an optional parameter that can be used to control different regular expression operations.
+\end{itemize}
+\begin{lstlisting}[language=python]
+    pattern = r"eggs"
+    string = "bacon and eggs"
+    repl = "spam"
+    re.sub(pattern, repl, string, count=0, flags=0)
+    # output = 'bacon and spam'
+\end{lstlisting}
 
-> [[0 1 2 3 4]
-> [5 6 7 8 9]]
-\end{verbatim}
+\subsubsection{re.search()}
 
-\subsubsection{size()}
+The re.search() method takes two arguments: a pattern and a string. The method looks for the first location where the RegEx pattern produces a match with the string.
 
-\textbf{Definition}:\\
-The size() function returns the total number of elements of the array. The format of the size() function is:
+If the search is successful, re.search() returns a match object; if not, it returns None.
 
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.size)
+Parameters: This method takes following arguments :
 
-> 10
-\end{verbatim}
+\begin{itemize}
+    \item pattern: A regular expression to match the string.
+    \item string: A string to be searched.
+    \item flags: We can specify different flags using bitwise OR (|). These are modifiers, which are listed in the table below.    
+\end{itemize}
 
-\subsubsection{ndim()}
 
-\textbf{Definition}:\\
-The ndim() function returns the number of array dimensions. The format of the ndim() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.ndim)
-
-> 1
-\end{verbatim}
-
-\subsubsection{eyes()}
-
-\textbf{Definition}:\\
-The eyes() function returns a 2-D array with ones on the diagonal and zeros elsewhere. The format of the eyes() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.arrange(10)
-print(x.reshape(2, 5))
-
-> [[0 1 2 3 4]
-> [5 6 7 8 9]]
-\end{verbatim}
-
-\subsubsection{ones()}
-
-\textbf{Definition}:\\
-The ones() function returns a new array of given shape and type, filled with ones. The format of the ones() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.ones(10)
-print(x)
-
-> [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
-\end{verbatim}
-
-\subsubsection{zeros()}
-
-\textbf{Definition}:\\
-The zeros() function returns a new array of given shape and type, filled with zeros. The format of the zeros() function is:
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x)
-
-> [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
-\end{verbatim}
-
-\subsubsection{dtype()}
-
-\textbf{Definition}:\\
-The dtype() function returns the data type of the array
-
-\textbf{Example and Use}:
-\begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x.dtype)
+\begin{lstlisting}[language=python]
+    pattern = r"eggs"
+    string = "bacon and eggs"
+    re.search(pattern, string, flags=0)
     
-> float64
-\end{verbatim}
+    # output = <re.Match object; span=(10, 14), match='eggs'>
+
+    pattern = r"bacon"
+
+    re.search(pattern, string, flags=0)
+    # output = <re.Match object; span=(0, 5), match='bacon'>
+
+    pattern = r"sausage"
+    re.search(pattern, string, flags=0)
+
+    # output = None
+
+\end{lstlisting}
+
+
+\subsubsection{re.match()}
+
+The re.match() function returns a match object on success, None on failure. We use group(num) or groups() function of match object to get matched expression.
+
+Parameters: This method takes a regular expression pattern and a string and searches for that pattern with the string.
+
+\begin{lstlisting}[language=python]
+    pattern = r"eggs"
+    string = "bacon and eggs"
+    re.match(pattern, string, flags=0)
+    # output = None
+
+    pattern = r"bacon"
+    re.match(pattern, string, flags=0)
+    # output = <re.Match object; span=(0, 5), match='bacon'>
+
+    pattern = r"sausage"
+
+    re.match(pattern, string, flags=0)
+    # output = None
+\end{lstlisting}
+
+
 
 \section{Input and Output}
 \subsection{Input}
-Creating array using numpy library
+Some string that has a pattern that needs to be matched is taken as input.
 \subsection{Output}
-ndarray is created and shape and data type are displayed.
-
+The output is the string that matches the pattern.
 \section{Requirements}
 \begin{enumerate}
     \item Python 3.7 or above
-    \item Numpy
 \end{enumerate}
 
 \section{Code}
-    
-
-    
-\hypertarget{regex-stuff}{%
-\section{Regex Stuff}\label{regex-stuff}}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{2}{\boxspacing}
@@ -873,67 +888,49 @@ space.}\label{match-any-word-and-single-letter-separated-by-a-comma-and-a-single
 \end{tcolorbox}
     
 \section{Conclusion}
-The Numpy was studied and understood. The functions of the Numpy library were also studied and implemented.
+Studied python Regular Expression functions for string handling. 
 
 \clearpage
 
 \section{FAQ}
 \begin{enumerate}
-    \item \textbf{What is the difference between Numpy array and List?}\\
+    \item \textbf{Write a Python program to search some literals strings in a string. Sample text: 'The quick brown fox jumps over the lazy dog.' -- Searched words: 'fox', 'dog', 'horse'.}
+
+\begin{lstlisting}[language=python]
+import re
+text = 'The quick brown fox jumps over the lazy dog.'
+print(re.findall(r'fox|dog|horse', text))
+# Output: ['fox', 'dog']
+\end{lstlisting}
+    \item \textbf{Explain the findall () and sub () methods?}
+    The re.findall() method returns a list of strings containing all matches. The Parameters used in this function are: 
+    \begin{itemize}
+        \item pattern which is the regular expression to be matched.
+        \item string which is the string where pattern would be searched to fetch the matching strings.
+        \item flags which are optional and can be used to modify the meaning of the given pattern.
     
-          \textbf{Numpy array:}\\
-          \begin{itemize}
-              \item Numpy arrays are faster than lists.
-              \item Numpy arrays are more compact than lists.
-              \item Numpy arrays are more convenient than lists.
-          \end{itemize}
+    \end{itemize}
 
-          \textbf{List:}\\
-          \begin{itemize}
-              \item Lists are slower than Numpy arrays.
-              \item Lists are more flexible than Numpy arrays.
-              \item Lists are more convenient than Numpy arrays.
-          \end{itemize}
+    The re.sub() method returns the string obtained after replacing or substituting the specified patterns in the string. The Parameters used in this function are:
 
-    \item \textbf{Explain type and dtype with example.}\\
-    
-          \textit{type() is a built-in function in Python that returns the type of the object passed to it. It is used to check the type of an object. dtype(), however, is an attribute of the ndarray object in Numpy. It returns the data type of the array. The difference between the two is that type() is a function and dtype() is an attribute.}
+    \begin{itemize}
+        \item pattern which is the regular expression to be matched.
+        \item repl which is the substitute for the matched string.
+        \item string which is the string where pattern would be searched to fetch the matching strings.
+        \item count which is optional and can be used to specify the number of occurrences to be replaced.
+        
+    \end{itemize}
 
-          \begin{enumerate}
-              \item \textbf{Type:}
-                    \begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(type(x))
+    Here's an example of findall() and sub() methods:
 
-> <class 'numpy.ndarray'>
-                \end{verbatim}
-
-              \item \textbf{Dtype:}
-                    \begin{verbatim}
-import numpy as np
-x = np.zeros(10)
-print(x.dtype)
-
-> float64
-                \end{verbatim}
-
-          \end{enumerate}
-
-    \item \textbf{Explain axis in numpy arrays.}\\
-
-          \textit{Axis is a dimension of an array. In a 2-D array, there are two axes, the first running vertically downwards across rows (axis 0), and the second running horizontally across columns (axis 1). In a 3-D array, there are three axes, the first running downwards along the depth of the array, the second running horizontally across rows (axis 1), and the third running vertically across columns (axis 2).}
-
-          \textbf{Example:}
-          \begin{verbatim}
-import numpy as np
-x = np.array([[1, 2, 3], [4, 5, 6]])
-print(x.sum(axis=0))
-
-> [5 7 9]
-            \end{verbatim}
-
-
+\begin{lstlisting}[language=python]
+import re
+text = 'The quick brown fox jumps over the lazy dog.'
+print(re.findall(r'fox|dog|horse', text))
+# Output: ['fox', 'dog']
+print(re.sub(r'fox|dog', 'cat', text))
+# Output: The quick brown cat jumps over the lazy cat.
+\end{lstlisting}
 
 \end{enumerate}
 

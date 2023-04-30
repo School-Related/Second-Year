@@ -67,64 +67,64 @@
 \begin{document}
 
 \begin{titlepage}
-	\centering
+    \centering
 
-	%---------------------------NAMES-------------------------------
+    %---------------------------NAMES-------------------------------
 
-	\huge\textsc{
-		MIT World Peace University
-	}\\
+    \huge\textsc{
+        MIT World Peace University
+    }\\
 
-	\vspace{0.75\baselineskip} % space after Uni Name
+    \vspace{0.75\baselineskip} % space after Uni Name
 
-	\LARGE{
-		Database Management Systems\\
-		Second Year B. Tech, Semester 4
-	}
+    \LARGE{
+        Database Management Systems\\
+        Second Year B. Tech, Semester 4
+    }
 
-	\vfill % space after Sub Name
+    \vfill % space after Sub Name
 
-	%--------------------------TITLE-------------------------------
+    %--------------------------TITLE-------------------------------
 
-	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
-	\rule{\textwidth}{0.6pt}
-	\vspace{0.75\baselineskip} % Whitespace above the title
-
-
-
-	\huge{\textsc{
-        SQL Queries on Functions, Data Sorting, Subquery, Group by, Having, Set Operations and View
-		}} \\
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.6pt}
+    \vspace{0.75\baselineskip} % Whitespace above the title
 
 
 
-	\vspace{0.5\baselineskip} % Whitespace below the title
-	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
-	\rule{\textwidth}{1.6pt}
-
-	\vspace{1\baselineskip} % Whitespace after the title block
-
-	%--------------------------SUBTITLE --------------------------	
-
-	\LARGE\textsc{
-		Assignment No. 5
-	} % Subtitle or further description
-	\vfill
-
-	%--------------------------AUTHOR-------------------------------
-
-	Prepared By
-	\vspace{0.5\baselineskip} % Whitespace before the editors
-
-	\Large{
-		Krishnaraj Thadesar \\
-		Cyber Security and Forensics\\
-		Batch A1, PA 20
-	}
+    \huge{\textsc{
+            Cursors using PL/SQL
+        }} \\
 
 
-	\vspace{0.5\baselineskip} % Whitespace below the editor list
-	\today
+
+    \vspace{0.5\baselineskip} % Whitespace below the title
+    \rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+    \rule{\textwidth}{1.6pt}
+
+    \vspace{1\baselineskip} % Whitespace after the title block
+
+    %--------------------------SUBTITLE --------------------------	
+
+    \LARGE\textsc{
+        Assignment No. 8
+    } % Subtitle or further description
+    \vfill
+
+    %--------------------------AUTHOR-------------------------------
+
+    Prepared By
+    \vspace{0.5\baselineskip} % Whitespace before the editors
+
+    \Large{
+        Krishnaraj Thadesar \\
+        Cyber Security and Forensics\\
+        Batch A1, PA 20
+    }
+
+
+    \vspace{0.5\baselineskip} % Whitespace below the editor list
+    \today
 
 \end{titlepage}
 
@@ -136,245 +136,190 @@
 \setcounter{page}{1}
 
 \section{Aim}
-Write suitable select commands to execute queries on the given data set.
+Write PL/SQL Cursor for the given problem statements
 
 \section{Objectives}
 \begin{enumerate}
-    \item To get basic understanding of Aggregate Functions, Order By clause
-    \item To get basic understanding of Subquery or Inner query or Nested query and Select using subquery.
-    \item To understand the basic concept of Correlated Subquery.
-    \item To get familiar with the basic ALL, ANY, EXISTS, SOME functionality.
-    \item To understand basic TCL commands
+    \item To study and use Cursor using MySQL PL/SQL block
 \end{enumerate}
 
 
 \section{Problem Statement}
-Create tables and solve given queries using Subqueries
+Create tables and solve given queries.
 
 \section{Theory}
 
-\subsection{Aggregate Functions}
+Explain following points
 
-Aggregate functions are used to perform calculations on a set of values and return a single value. The following are the aggregate functions:
+\subsection{What is Cursor?}
 
-\begin{itemize}
-    \item COUNT() - Returns the number of rows that matches a specified criteria
-    \item SUM() - Returns the sum of all the values in a column
-    \item AVG() - Returns the average value of a numeric column
-    \item MIN() - Returns the smallest value of the selected column
-    \item MAX() - Returns the largest value of the selected column
-    
-\end{itemize}
+A cursor is a database object that allows a program to retrieve data from a database one row at a time. It acts like a pointer that points to a specific row in a result set returned by a SQL query. Cursors are useful in situations where we need to manipulate data row by row, such as in a loop. They allow us to navigate through the rows of a result set and manipulate them as needed.
 
-\subsection{Order By Clause}
-
-The ORDER BY clause is used to sort the result-set in ascending or descending order. The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
-
-\subsubsection*{Syntax}
-
+Example:
 \begin{lstlisting}[language=sql]
-SELECT column_name(s)
-FROM table_name
-ORDER BY column_name(s) ASC|DESC;
+    DECLARE
+        CURSOR c1 IS
+            SELECT * FROM employees;
+    BEGIN
+        FOR employee IN c1 LOOP
+            DBMS_OUTPUT.PUT_LINE(employee.first_name || ' ' || employee.last_name);
+        END LOOP;
+    END;
 \end{lstlisting}
 
-\subsection{Group By Clause}
+\subsection{Why do we need the Cursors?}
 
-The GROUP BY clause is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
+Cursors are necessary in situations where we need to retrieve data from a database one row at a time and process it. For example, if we want to perform a complex calculation on a large dataset, it may be more efficient to retrieve the data row by row rather than all at once. Cursors enable us to retrieve data one row at a time and process it as needed, which can be particularly useful in situations where we need to perform complex processing on data.
 
-\subsubsection*{Syntax}
+\begin{enumerate}
+    \item Cursors are used to retrieve data from a database one row at a time.
+    \item  Cursors are used to process data row by row.
+    \item  Cursors are used to perform complex calculations on large datasets.
+\end{enumerate}
+
+\subsection{Different types of Cursors}
+
+There are two types of cursors in PL/SQL:
+
+\begin{enumerate}
+    \item Implicit Cursor: This is a cursor that is automatically created by the Oracle database when a SQL statement is executed. It is used for simple, one-time queries that return a small number of rows.
+    \item Explicit Cursor: This is a cursor that is explicitly declared and defined in a PL/SQL program. It is used for more complex queries that require multiple rows to be returned and processed.
+\end{enumerate}
+
+\subsection{Drawbacks of Implicit Cursors}
+
+Implicit cursors have a few drawbacks, including:
+
+\begin{enumerate}
+    \item They do not provide much control over the result set returned by the query.
+    \item They do not allow us to manipulate data row by row.
+    \item They can cause performance issues if used in a loop or if the query returns a large number of rows.
+\end{enumerate}
+
+\subsection{PL/SQL variables in a Cursor}
+
+PL/SQL variables can be used in a cursor to pass values into the query. For example, we can declare a variable in the cursor declaration and use it in the WHERE clause of the query. This can be particularly useful when we need to retrieve a subset of data from a larger dataset.
+
+
+\subsection{Opening a Cursor}
+
+Before we can use a cursor, we need to open it using the OPEN statement. This statement prepares the cursor for fetching data from the result set. Once the cursor is open, we can begin fetching data from it.
 
 \begin{lstlisting}[language=sql]
-SELECT column_name, aggregate_function(column_name)
-FROM table_name
-WHERE column_name operator value
-GROUP BY column_name;
+    DECLARE
+        CURSOR c1 IS
+            SELECT * FROM employees;
+    BEGIN
+        OPEN c1;
+        ...
+    END;
 \end{lstlisting}
 
-\subsection{Subqueries}
+\subsection{Fetching from a Cursor}
 
-A subquery (sub-select) is a query within a query. The subquery is executed first, and the main query uses the subquery as a source of data.
-
-\subsubsection*{Syntax}
+To retrieve data from a cursor, we use the FETCH statement. This statement retrieves the next row from the result set and makes it available for processing. We can fetch data from the cursor one row at a time, or we can retrieve all of the rows at once.
 
 \begin{lstlisting}[language=sql]
-SELECT column_name(s)
-FROM table_name
-WHERE column_name operator
-(SELECT STATEMENT);
+    DECLARE
+        CURSOR c1 IS
+            SELECT * FROM employees;
+        emp_row employees%ROWTYPE;
+    BEGIN
+        OPEN c1;
+        FETCH c1 INTO emp_row;
+        ...
+    END;
 \end{lstlisting}
 
-\subsection{Views}
+\subsection{Closing a Cursor}
 
-A view is a virtual table based on the result-set of an SQL statement.
-
-\subsubsection*{Syntax}
+Once we are done processing the result set, we need to close the cursor using the CLOSE statement. This statement releases the resources used by the cursor and frees up memory. It is important to close cursors when we are done using them to avoid wasting system resources.
 
 \begin{lstlisting}[language=sql]
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
+    DECLARE
+        CURSOR c1 IS
+            SELECT * FROM employees;
+        emp_row employees%ROWTYPE;
+    BEGIN
+        OPEN c1;
+        FETCH c1 INTO emp_row;
+        CLOSE c1;
+    END;
 \end{lstlisting}
 
-\subsection{TCL Commands}
+\subsection{Cursor attributes}
+Cursor attributes are properties of a cursor that provide information about its status. Some examples of cursor attributes include \%FOUND, which indicates whether the last fetch retrieved a row, and \%NOTFOUND, which indicates whether the last fetch did not retrieve a row.
 
-TCL stands for Transaction Control Language. It is a set of SQL commands that are used to control the transaction. The following are the TCL commands:
-
-\begin{itemize}
-    \item COMMIT - permanently saves all changes made by the transaction. 
-    \item ROLLBACK - cancels all changes made by the transaction
-    \item SAVEPOINT - sets a savepoint within a transaction
-    \item SET TRANSACTION - sets the transaction characteristics for the current transaction
-\end{itemize}
+\begin{lstlisting}[language=sql]
+  DECLARE
+    CURSOR employee_cursor IS
+      SELECT * FROM employees;
+    emp_row employees%ROWTYPE;
+  BEGIN
+    OPEN employee_cursor;
+    LOOP
+      FETCH employee_cursor INTO emp_row;
+      EXIT WHEN employee_cursor%NOTFOUND;
+      -- process data here
+    END LOOP;
+    CLOSE employee_cursor;
+  END;
+\end{lstlisting}
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
 \textbf{IDEs or Text Editors Used}: Draw.io for Drawing the ER diagram. \\
 
-% \section{Pseudo Code or Algorithm}
 
 \section{Input}
 Given Database from the Problem Statement for the Assignment for our batch. (A1 PA 20)
-\section{Creation and Insertion of Values in the Tables}
-
-\lstinputlisting[language=SQL]{../../Programs/Assignment_5_queries.sql}
-
-\section{Tables}
-
-\begin{lstlisting}[language=sql]
-MariaDB [dbms_lab]> select * from passenger;
-+----------------+------------+----------+
-| email          | first_name | surname  |
-+----------------+------------+----------+
-| beck@gmail.com | Gwen       | Beck     |
-| joe@gmail.com  | Joe        | Goldberg |
-| love@gmail.com | Love       | Quinn    |
-+----------------+------------+----------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from airplane;
-+--------+----------+----------+---------------+
-| reg_no | model_no | capacity | name          |
-+--------+----------+----------+---------------+
-|    111 |        7 |      180 | Qatar Airways |
-|    112 |        7 |      169 | Qatar Airways |
-|    113 |        8 |      200 | Qatar Airways |
-|    221 |       17 |      150 | Emirates      |
-|    222 |       17 |      140 | Emirates      |
-|    223 |       18 |      175 | Emirates      |
-|    333 |       27 |      200 | Air India     |
-|    334 |       27 |      150 | Air India     |
-|    335 |       28 |      175 | Air India     |
-+--------+----------+----------+---------------+
-9 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from airline;
-+---------------+
-| name          |
-+---------------+
-| Air India     |
-| Emirates      |
-| Qatar Airways |
-+---------------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from flights;
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-| flight_no | place_from | place_to  | departure_date | departure_time | arrival_date | arrival_time | reg_no |
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-|     12345 | Mumbai     | London    | 2021-07-27     | 12:12:12       | 2021-07-28   | 23:59:56     |    111 |
-|     23456 | London     | Pune      | 2021-07-27     | 12:12:12       | 2021-07-28   | 22:59:56     |    333 |
-|     67890 | Pune       | Bangalore | 2021-07-27     | 12:12:12       | 2021-07-27   | 16:59:56     |    221 |
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from flight_booking;
-+----------------+-----------+----------+
-| email          | flight_no | no_seats |
-+----------------+-----------+----------+
-| beck@gmail.com |     67890 |        6 |
-| joe@gmail.com  |     23456 |        2 |
-| love@gmail.com |     12345 |        6 |
-+----------------+-----------+----------+
-3 rows in set (0.001 sec)
-
-\end{lstlisting}
 
 \section{Queries}
-\lstinputlisting[language=SQL]{../../Programs/Assignment_5.md}
+\lstinputlisting[language=SQL]{../../Programs/Assignment_8_queries.sql}
+
+\section{Outputs in Execution}
+\lstinputlisting[language=SQL]{../../Programs/Assignment_8.md}
 
 
 \section{Conclusion}
-Thus, we have learned Subqueries commands thoroughly.
+Thus, we have learned creating and using Cursor in SQL. We have also learned about the different types of Cursors and their advantages and disadvantages.
 
 \clearpage
 
 \section{FAQ}
 \begin{enumerate}
 
-\item \textit{Explain following types of subqueries}
-\begin{itemize}
-    \item \textit{Single-row subquery}    
-    \item \textit{Multiple-row subquery}
-    \item \textit{Multiple-column subquery}
-\end{itemize}
 
-The Given Subqueries can be explained as such: 
-\begin{itemize}
-    \item \textit{Single-row subquery} : A subquery that returns a single row is called a single-row subquery. A special case is the scalar subquery, which returns a single row with one column. Scalar subqueries are acceptable (and often very useful) in virtually any situation where you could use a literal value, a constant, or an expression.
-    \item \textit{Multiple-row subquery} : A subquery that returns multiple rows is called a multiple-row subquery. These queries are commonly used to generate result sets that will be passed to a DML or SELECT statement for further processing. Both single-row and multiple-row subqueries will be evaluated once, before the parent query is run. Single- and multiple-row subqueries can be used in the WHERE and HAVING clauses of the parent query, but there are restrictions on the legal comparison operators
-    \item \textit{Multiple-column subquery} : A subquery that returns multiple columns is called a multiple-column subquery. It is also called a correlated subquery.    
-    A correlated subquery has a more complex method of execution than single- and multiple-row subqueries and is potentially much more powerful. If a subquery references columns in the parent query, then its result will be dependent on the parent query. This makes it impossible to evaluate the subquery before evaluating the parent query.
-\end{itemize}
+    \item \textbf{Enlist Advantages of Cursors ?}\\
+          Advantages of Cursors:
+          \begin{enumerate}
+              \item Flexibility: Cursors offer a flexible way to process database records one at a time, allowing for complex processing logic to be applied to each record individually.
+              \item Control: Cursors give developers more control over the data being processed, allowing for precise manipulation of records and fields.
+              \item Sequential processing: Cursors allow records to be processed in a sequential order, which can be important in cases where records need to be processed in a specific order.
+              \item Record-level operations: Cursors allow for record-level operations such as inserting, updating, and deleting individual records in a result set.
+          \end{enumerate}
 
-\item \textit{When subquery is used?}
+    \item \textbf{Enlist Disadvantages of Cursors?}\\
 
-\begin{quotation}
-Subqueries are queires within queries. 
-\end{quotation}
+          Disadvantages of Cursors:
+          \begin{enumerate}
+              \item Overhead: Cursors can add overhead to the database server, as they require resources to be allocated to hold the result set and manage the cursor.
+              \item Performance: Cursors can have a negative impact on database performance, particularly if they are used to process large result sets.
+              \item Complexity: Cursors can make code more complex and difficult to understand, particularly if they are nested or used in conjunction with other database operations.
+          \end{enumerate}
+    \item \textbf{What are the Applications of Cursors.}\\
 
-They are used for the following purposes:
-\begin{itemize}
-    \item \textit{To find the value that is to be used in the outer query}
-    \item \textit{To find the rows that are to be used in the outer query}
-    \item \textit{To find the columns that are to be used in the outer query}
-\end{itemize}
+          Applications of Cursors:
+          \begin{enumerate}
+              \item Report generation: Cursors can be used to generate reports based on complex queries that require record-level processing.
+              \item Data validation: Cursors can be used to validate data against complex business rules that cannot be easily expressed in a single query.
+              \item Data migration: Cursors can be used to migrate data between databases, particularly when data needs to be transformed or manipulated during the migration process.
+              \item Batch processing: Cursors can be used for batch processing operations, such as updating a large number of records based on a specific criteria.
+          \end{enumerate}
 
-\item \textit{Explain SQL SubQueries with ALL, ANY, EXISTS, SOME, With UPDATE}\\
+    \item \textbf{Why do we need the Cursors?}\\
 
-Sql subqueries can be used with the following operators, ALL, ANY, EXISTS, SOME, IN, NOT IN, =, <>, >, <, >=, <=, !=, IS NULL, IS NOT NULL, BETWEEN, NOT BETWEEN, LIKE, NOT LIKE, etc.\\
-
-They can be explained as follows:
-
-\begin{itemize}
-    \item \textit{ALL} - Returns true if the subquery returns a value that is less than or equal to all the values in the subquery.
-    \item  \textit{ANY} - Returns true if the subquery returns a value that is less than or equal to any of the values in the subquery.
-    \item \textit{EXISTS} - Returns true if the subquery returns any rows.
-    \item  \textit{SOME} - Returns true if the subquery returns a value that is less than or equal to any of the values in the subquery.
-    \item  \textit{IN} - Returns true if the subquery returns a value that is equal to any of the values in the subquery.
-    \item \textit{NOT IN} - Returns true if the subquery returns a value that is not equal to any of the values in the subquery
-\end{itemize}
-
-\item \textit{How to get groupwise data from a table. What is use of Having Clause}\\
-
-Groupwise data can be obtained using the GROUP BY clause. The HAVING clause is used to filter the groups.\\
-
-\textit{An Example query would be }
-
-\begin{lstlisting}[language=sql]
-SELECT column_name, aggregate_function(column_name) from table_name having aggregate_function(column_name) operator value group by column_name;
-\end{lstlisting}
-
-\item \textit{What is ‘having’ clause and when to use it?}\\
-
-The Having clause is used to filter the groups. It is used with the GROUP BY clause.\\
-
-\item \textit{How to display data from View. Are the views updatable? Explain}\\
-
-Data from a view can be displayed using the SELECT statement.\\
-
-Views are not updatable. They are read-only. This is because the view is not a physical table. It is a virtual table.\\
+          Cursors are needed in situations where processing of individual records in a result set is required. They provide a way to traverse and manipulate data one record at a time, allowing for complex processing logic to be applied to each record individually. Cursors are particularly useful in scenarios where complex business rules need to be applied to individual records, and in cases where record-level operations such as inserting, updating, and deleting are required. However, cursors can also have a negative impact on database performance and should be used judiciously.
 \end{enumerate}
 
 

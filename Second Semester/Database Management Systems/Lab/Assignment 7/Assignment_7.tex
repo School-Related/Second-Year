@@ -67,64 +67,64 @@
 \begin{document}
 
 \begin{titlepage}
-	\centering
+    \centering
 
-	%---------------------------NAMES-------------------------------
+    %---------------------------NAMES-------------------------------
 
-	\huge\textsc{
-		MIT World Peace University
-	}\\
+    \huge\textsc{
+        MIT World Peace University
+    }\\
 
-	\vspace{0.75\baselineskip} % space after Uni Name
+    \vspace{0.75\baselineskip} % space after Uni Name
 
-	\LARGE{
-		Database Management Systems\\
-		Second Year B. Tech, Semester 4
-	}
+    \LARGE{
+        Database Management Systems\\
+        Second Year B. Tech, Semester 4
+    }
 
-	\vfill % space after Sub Name
+    \vfill % space after Sub Name
 
-	%--------------------------TITLE-------------------------------
+    %--------------------------TITLE-------------------------------
 
-	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
-	\rule{\textwidth}{0.6pt}
-	\vspace{0.75\baselineskip} % Whitespace above the title
-
-
-
-	\huge{\textsc{
-        SQL Queries on Functions, Data Sorting, Subquery, Group by, Having, Set Operations and View
-		}} \\
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.6pt}
+    \vspace{0.75\baselineskip} % Whitespace above the title
 
 
 
-	\vspace{0.5\baselineskip} % Whitespace below the title
-	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
-	\rule{\textwidth}{1.6pt}
-
-	\vspace{1\baselineskip} % Whitespace after the title block
-
-	%--------------------------SUBTITLE --------------------------	
-
-	\LARGE\textsc{
-		Assignment No. 5
-	} % Subtitle or further description
-	\vfill
-
-	%--------------------------AUTHOR-------------------------------
-
-	Prepared By
-	\vspace{0.5\baselineskip} % Whitespace before the editors
-
-	\Large{
-		Krishnaraj Thadesar \\
-		Cyber Security and Forensics\\
-		Batch A1, PA 20
-	}
+    \huge{\textsc{
+            Create Triggers using PL/SQL
+        }} \\
 
 
-	\vspace{0.5\baselineskip} % Whitespace below the editor list
-	\today
+
+    \vspace{0.5\baselineskip} % Whitespace below the title
+    \rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+    \rule{\textwidth}{1.6pt}
+
+    \vspace{1\baselineskip} % Whitespace after the title block
+
+    %--------------------------SUBTITLE --------------------------	
+
+    \LARGE\textsc{
+        Assignment No. 7
+    } % Subtitle or further description
+    \vfill
+
+    %--------------------------AUTHOR-------------------------------
+
+    Prepared By
+    \vspace{0.5\baselineskip} % Whitespace before the editors
+
+    \Large{
+        Krishnaraj Thadesar \\
+        Cyber Security and Forensics\\
+        Batch A1, PA 20
+    }
+
+
+    \vspace{0.5\baselineskip} % Whitespace below the editor list
+    \today
 
 \end{titlepage}
 
@@ -136,247 +136,303 @@
 \setcounter{page}{1}
 
 \section{Aim}
-Write suitable select commands to execute queries on the given data set.
+Write PL/SQL Triggers for the creation of insert trigger, delete trigger and update trigger on the
+given problem statements.
 
 \section{Objectives}
 \begin{enumerate}
-    \item To get basic understanding of Aggregate Functions, Order By clause
-    \item To get basic understanding of Subquery or Inner query or Nested query and Select using subquery.
-    \item To understand the basic concept of Correlated Subquery.
-    \item To get familiar with the basic ALL, ANY, EXISTS, SOME functionality.
-    \item To understand basic TCL commands
+    \item To study and use Triggers using MySQL PL/SQL block
 \end{enumerate}
 
 
 \section{Problem Statement}
-Create tables and solve given queries using Subqueries
+Create tables and solve given queries
 
 \section{Theory}
 
-\subsection{Aggregate Functions}
+\subsection{Triggers in PL/SQL}
+A trigger is a named PL/SQL unit that is stored in the database and can be invoked repeatedly. A trigger automatically executes whenever an event associated with a table occurs. There are two types of triggers based on the which level it is triggered. They are:
 
-Aggregate functions are used to perform calculations on a set of values and return a single value. The following are the aggregate functions:
+\begin{enumerate}
+    \item Row Level Trigger
+    \item Statement Level Trigger
+    \item Database Level Trigger
+    \item Instead of Trigger
+    \item DDL Trigger
+    \item System Trigger
+    \item Compound Trigger
+\end{enumerate}
 
-\begin{itemize}
-    \item COUNT() - Returns the number of rows that matches a specified criteria
-    \item SUM() - Returns the sum of all the values in a column
-    \item AVG() - Returns the average value of a numeric column
-    \item MIN() - Returns the smallest value of the selected column
-    \item MAX() - Returns the largest value of the selected column
-    
-\end{itemize}
+\subsection{Advantages of Triggers}
 
-\subsection{Order By Clause}
+\begin{enumerate}
+    \item Triggers can be used to enforce complex business rules.
+    \item Triggers can be used to enforce complex integrity constraints.
+    \item Triggers can be used to propagate data to other tables.
+    \item Triggers can be used to log all changes to a table.
+    \item Triggers can be used to prevent invalid transactions.
+    \item Triggers can be used to notify external applications of database changes.
+\end{enumerate}
 
-The ORDER BY clause is used to sort the result-set in ascending or descending order. The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
 
-\subsubsection*{Syntax}
+\subsection{Disadvantages of Triggers}
+
+\begin{enumerate}
+    \item Triggers are hidden within the database and can be difficult to find.
+    \item Triggers are not visible in the SQL source code.
+    \item Triggers can be difficult to debug.
+    \item Triggers can cause performance issues.
+    \item Triggers can cause infinite loops.
+    \item Triggers can cause locking issues.
+    \item Triggers can cause cascading failures.
+    \item Triggers can cause unpredictable results.
+    \item Triggers can cause security issues.
+\end{enumerate}
+
+\subsection{Usage of Triggers}
+Usages of Triggers
+
+\begin{enumerate}
+    \item Auditing
+    \item Data Integrity
+    \item Data Validation
+    \item Notification
+    \item Replication
+    \item Security
+    \item Synchronization
+\end{enumerate}
+
+\subsection{Difference between Stored Procedure and Trigger}
+\begin{enumerate}
+    \item Triggers are invoked automatically in response to the associated DML statement.
+    \item Stored procedures are invoked explicitly by users or applications.
+    \item Triggers are attached to tables and are implicitly invoked.
+    \item Stored procedures are stand-alone and are explicitly invoked.
+    \item Triggers execute implicitly in response to DML statements on the table with which they are associated.
+    \item Stored procedures execute explicitly when they are invoked by a user or application.
+    \item Triggers execute under the security privileges of the owner of the trigger.
+    \item Stored procedures execute under the security privileges of the user who invokes them.
+    \item Triggers are attached to tables and are implicitly invoked.
+    \item Stored procedures are stand-alone and are explicitly invoked.
+    \item Triggers execute implicitly in response to DML statements on the table with which they are associated.
+    \item Stored procedures execute explicitly when they are invoked by a user or application.
+    \item Triggers execute under the security privileges of the owner of the trigger.
+    \item Stored procedures execute under the security privileges of the user who invokes them.
+\end{enumerate}
+
+Syntax of Triggers: 
 
 \begin{lstlisting}[language=sql]
-SELECT column_name(s)
-FROM table_name
-ORDER BY column_name(s) ASC|DESC;
+    CREATE TRIGGER Trigger_Name  
+    [ BEFORE | AFTER ]  [ Insert | Update | Delete]  
+    ON [Table_Name]  
+    [ FOR EACH ROW | FOR EACH COLUMN ]  
+    AS  
+    Set of SQL Statement  
 \end{lstlisting}
 
-\subsection{Group By Clause}
+\subsection{Types of Triggers}
+\begin{enumerate}
+    \item Row Level Trigger
+          \begin{itemize}
+              \item Row level trigger is triggered when a row is inserted, updated or deleted from a table.
+              \item Row level trigger is declared at row level.
+              \item Row level trigger is used to perform an action when a DML event (INSERT, UPDATE, DELETE) occurs.
+              \item Row level trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
 
-The GROUP BY clause is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
+    \item Statement Level Trigger
+          \begin{itemize}
+              \item Statement level trigger is triggered when a DML event (INSERT, UPDATE, DELETE) occurs.
+              \item Statement level trigger is declared at statement level.
+              \item Statement level trigger is used to perform an action when a DML event (INSERT, UPDATE, DELETE) occurs.
+              \item Statement level trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
 
-\subsubsection*{Syntax}
+    \item Database Level Trigger
+          \begin{itemize}
+              \item Database level trigger is triggered when a DDL event (CREATE, ALTER, DROP, RENAME, TRUNCATE) occurs.
+              \item Database level trigger is declared at database level.
+              \item Database level trigger is used to perform an action when a DDL event (CREATE, ALTER, DROP, RENAME, TRUNCATE) occurs.
+              \item Database level trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
+
+    \item Instead of Trigger
+          \begin{itemize}
+              \item Instead of trigger is triggered when a DML event (INSERT, UPDATE, DELETE) occurs.
+              \item Instead of trigger is declared at view level.
+              \item Instead of trigger is used to perform an action when a DML event (INSERT, UPDATE, DELETE) occurs.
+              \item Instead of trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
+
+    \item DDL Trigger
+          \begin{itemize}
+              \item DDL trigger is triggered when a DDL event (CREATE, ALTER, DROP, RENAME, TRUNCATE) occurs.
+              \item DDL trigger is declared at database level.
+              \item DDL trigger is used to perform an action when a DDL event (CREATE, ALTER,
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Trigger Level}
+
+Trigger Levels are used to specify when the trigger should be fired. There are two types of trigger levels. They are:
+\begin{enumerate}
+    \item Before Trigger
+          \begin{itemize}
+              \item Before trigger is triggered before the triggering statement is executed.
+              \item Before trigger is declared using BEFORE keyword.
+              \item Before trigger is used to perform an action before the triggering statement is executed.
+              \item Before trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
+
+    \item After Trigger
+          \begin{itemize}
+              \item After trigger is triggered after the triggering statement is executed.
+              \item After trigger is declared using AFTER keyword.
+              \item After trigger is used to perform an action after the triggering statement is executed.
+              \item After trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
+        
+\end{enumerate}
+
+\subsection{Trigger Events}
+
+Trigger Events are used to specify when the trigger should be fired. There are three types of trigger events. They are:
+
+\begin{enumerate}
+    \item Insert Trigger
+          \begin{itemize}
+              \item Insert trigger is triggered when an insert event occurs.
+              \item Insert trigger is declared using INSERT keyword.
+              \item Insert trigger is used to perform an action when an insert event occurs.
+              \item Insert trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
+
+    \item Update Trigger
+          \begin{itemize}
+              \item Update trigger is triggered when an update event occurs.
+              \item Update trigger is declared using UPDATE keyword.
+              \item Update trigger is used to perform an action when an update event occurs.
+              \item Update trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
+
+    \item Delete Trigger
+          \begin{itemize}
+              \item Delete trigger is triggered when a delete event occurs.
+              \item Delete trigger is declared using DELETE keyword.
+              \item Delete trigger is used to perform an action when a delete event occurs.
+              \item Delete trigger can be used to enforce complex business rules or integrity constraints.
+          \end{itemize}
+
+\end{enumerate}
+
+An SQL example for trigger events is given below:
+\begin{lstlisting}[language=sql]
+CREATE TRIGGER trigger_name
+    BEFORE INSERT ON table_name
+    FOR EACH ROW
+    BEGIN
+        -- trigger body
+    END;
+\end{lstlisting}
+
+\subsection{NEW and OLD Clause /Trigger Variables}
+
+Clauses are used to specify the columns of the table. There are two types of clauses. They are:
+
+\begin{enumerate}
+    \item NEW Clause
+          \begin{itemize}
+              \item NEW clause is used to specify the columns of the table that are affected by the triggering statement.
+              \item NEW clause is used in INSERT and UPDATE triggers.
+              \item NEW clause is used to specify the columns of the table that are affected by the triggering statement.
+              \item NEW clause is used in INSERT and UPDATE triggers.
+          \end{itemize}
+
+    \item OLD Clause
+          \begin{itemize}
+              \item OLD clause is used to specify the columns of the table that are affected by the triggering statement.
+              \item OLD clause is used in UPDATE and DELETE triggers.
+              \item OLD clause is used to specify the columns of the table that are affected by the triggering statement.
+              \item OLD clause is used in UPDATE and DELETE triggers.
+          \end{itemize}
+\end{enumerate}
+
+An SQL Example for NEW and OLD clause would be:
+\begin{lstlisting}[language=sql]
+    CREATE TRIGGER trigger_name
+    BEFORE INSERT ON table_name
+    FOR EACH ROW
+    BEGIN
+        -- trigger body
+        IF NEW.column_name = 'value' THEN
+            -- trigger body
+        END IF;
+    END;
+\end{lstlisting}
+
+\subsection{Dropping Triggers}
+
+Dropping Triggers is used to drop the trigger from the database. An SQL Example for this would be: 
 
 \begin{lstlisting}[language=sql]
-SELECT column_name, aggregate_function(column_name)
-FROM table_name
-WHERE column_name operator value
-GROUP BY column_name;
+    DROP TRIGGER trigger_name;
 \end{lstlisting}
-
-\subsection{Subqueries}
-
-A subquery (sub-select) is a query within a query. The subquery is executed first, and the main query uses the subquery as a source of data.
-
-\subsubsection*{Syntax}
-
-\begin{lstlisting}[language=sql]
-SELECT column_name(s)
-FROM table_name
-WHERE column_name operator
-(SELECT STATEMENT);
-\end{lstlisting}
-
-\subsection{Views}
-
-A view is a virtual table based on the result-set of an SQL statement.
-
-\subsubsection*{Syntax}
-
-\begin{lstlisting}[language=sql]
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-\end{lstlisting}
-
-\subsection{TCL Commands}
-
-TCL stands for Transaction Control Language. It is a set of SQL commands that are used to control the transaction. The following are the TCL commands:
-
-\begin{itemize}
-    \item COMMIT - permanently saves all changes made by the transaction. 
-    \item ROLLBACK - cancels all changes made by the transaction
-    \item SAVEPOINT - sets a savepoint within a transaction
-    \item SET TRANSACTION - sets the transaction characteristics for the current transaction
-\end{itemize}
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
 \textbf{IDEs or Text Editors Used}: Draw.io for Drawing the ER diagram. \\
 
-% \section{Pseudo Code or Algorithm}
-
 \section{Input}
 Given Database from the Problem Statement for the Assignment for our batch. (A1 PA 20)
-\section{Creation and Insertion of Values in the Tables}
-
-\lstinputlisting[language=SQL]{../../Programs/Assignment_5_queries.sql}
-
-\section{Tables}
-
-\begin{lstlisting}[language=sql]
-MariaDB [dbms_lab]> select * from passenger;
-+----------------+------------+----------+
-| email          | first_name | surname  |
-+----------------+------------+----------+
-| beck@gmail.com | Gwen       | Beck     |
-| joe@gmail.com  | Joe        | Goldberg |
-| love@gmail.com | Love       | Quinn    |
-+----------------+------------+----------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from airplane;
-+--------+----------+----------+---------------+
-| reg_no | model_no | capacity | name          |
-+--------+----------+----------+---------------+
-|    111 |        7 |      180 | Qatar Airways |
-|    112 |        7 |      169 | Qatar Airways |
-|    113 |        8 |      200 | Qatar Airways |
-|    221 |       17 |      150 | Emirates      |
-|    222 |       17 |      140 | Emirates      |
-|    223 |       18 |      175 | Emirates      |
-|    333 |       27 |      200 | Air India     |
-|    334 |       27 |      150 | Air India     |
-|    335 |       28 |      175 | Air India     |
-+--------+----------+----------+---------------+
-9 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from airline;
-+---------------+
-| name          |
-+---------------+
-| Air India     |
-| Emirates      |
-| Qatar Airways |
-+---------------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from flights;
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-| flight_no | place_from | place_to  | departure_date | departure_time | arrival_date | arrival_time | reg_no |
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-|     12345 | Mumbai     | London    | 2021-07-27     | 12:12:12       | 2021-07-28   | 23:59:56     |    111 |
-|     23456 | London     | Pune      | 2021-07-27     | 12:12:12       | 2021-07-28   | 22:59:56     |    333 |
-|     67890 | Pune       | Bangalore | 2021-07-27     | 12:12:12       | 2021-07-27   | 16:59:56     |    221 |
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from flight_booking;
-+----------------+-----------+----------+
-| email          | flight_no | no_seats |
-+----------------+-----------+----------+
-| beck@gmail.com |     67890 |        6 |
-| joe@gmail.com  |     23456 |        2 |
-| love@gmail.com |     12345 |        6 |
-+----------------+-----------+----------+
-3 rows in set (0.001 sec)
-
-\end{lstlisting}
 
 \section{Queries}
-\lstinputlisting[language=SQL]{../../Programs/Assignment_5.md}
-
+\lstinputlisting[language=SQL]{../../Programs/Assignment_7_queries.sql}
+\section{Outputs}
+\lstinputlisting[language=SQL]{../../Programs/Assignment_7.md}
 
 \section{Conclusion}
-Thus, we have learned Subqueries commands thoroughly.
-
+Thus, we have learned creating and using triggers in SQL. We have also learned the advantages and disadvantages of using triggers in SQL.
 \clearpage
 
 \section{FAQ}
 \begin{enumerate}
+    \item \textbf{Enlist Advantages of Triggers ?}\\
 
-\item \textit{Explain following types of subqueries}
-\begin{itemize}
-    \item \textit{Single-row subquery}    
-    \item \textit{Multiple-row subquery}
-    \item \textit{Multiple-column subquery}
-\end{itemize}
+        Advantages of Triggers:
+          \begin{itemize}
+              \item Data Integrity: Triggers can help to ensure that data in a database remains consistent and accurate, by automatically enforcing data validation rules.
+              \item Automation: Triggers can automate repetitive or complex database operations, such as updating related records or sending notifications based on specific events.
+              \item Security: Triggers can be used to implement security policies, such as preventing unauthorized access or monitoring user activity.
+              \item Performance: Triggers can improve database performance by reducing the number of queries needed to perform certain operations.
+              \item Audit trail: Triggers can be used to create an audit trail of changes made to data, which can be useful for compliance or troubleshooting purposes.
+          \end{itemize}
 
-The Given Subqueries can be explained as such: 
-\begin{itemize}
-    \item \textit{Single-row subquery} : A subquery that returns a single row is called a single-row subquery. A special case is the scalar subquery, which returns a single row with one column. Scalar subqueries are acceptable (and often very useful) in virtually any situation where you could use a literal value, a constant, or an expression.
-    \item \textit{Multiple-row subquery} : A subquery that returns multiple rows is called a multiple-row subquery. These queries are commonly used to generate result sets that will be passed to a DML or SELECT statement for further processing. Both single-row and multiple-row subqueries will be evaluated once, before the parent query is run. Single- and multiple-row subqueries can be used in the WHERE and HAVING clauses of the parent query, but there are restrictions on the legal comparison operators
-    \item \textit{Multiple-column subquery} : A subquery that returns multiple columns is called a multiple-column subquery. It is also called a correlated subquery.    
-    A correlated subquery has a more complex method of execution than single- and multiple-row subqueries and is potentially much more powerful. If a subquery references columns in the parent query, then its result will be dependent on the parent query. This makes it impossible to evaluate the subquery before evaluating the parent query.
-\end{itemize}
+    \item \textbf{Enlist Disadvantages of Triggers ?}\\
 
-\item \textit{When subquery is used?}
+        Disadvantages of Triggers:
+          \begin{itemize}
+              \item Complexity: Triggers can add complexity to database design and maintenance, making it harder to understand and modify the database schema.
 
-\begin{quotation}
-Subqueries are queires within queries. 
-\end{quotation}
+              \item Debugging: Debugging triggers can be difficult, as they are executed automatically and can be triggered by a wide range of events.
 
-They are used for the following purposes:
-\begin{itemize}
-    \item \textit{To find the value that is to be used in the outer query}
-    \item \textit{To find the rows that are to be used in the outer query}
-    \item \textit{To find the columns that are to be used in the outer query}
-\end{itemize}
+              \item Performance: Triggers can also have a negative impact on database performance, particularly if they are poorly designed or executed frequently.
 
-\item \textit{Explain SQL SubQueries with ALL, ANY, EXISTS, SOME, With UPDATE}\\
+              \item Scalability: Triggers can make it more difficult to scale a database system, as they can increase the number of transactions and the amount of data being processed.
+          \end{itemize}
+    \item \textbf{What are the Applications of Triggers.}\\
 
-Sql subqueries can be used with the following operators, ALL, ANY, EXISTS, SOME, IN, NOT IN, =, <>, >, <, >=, <=, !=, IS NULL, IS NOT NULL, BETWEEN, NOT BETWEEN, LIKE, NOT LIKE, etc.\\
+        Applications of Triggers:
+          \begin{itemize}
+              \item Data validation: Triggers can be used to enforce data validation rules, such as checking that certain fields are not left blank or that certain values fall within a specified range.
 
-They can be explained as follows:
+              \item Data synchronization: Triggers can be used to synchronize data between different tables or databases, ensuring that related records are always up-to-date.
 
-\begin{itemize}
-    \item \textit{ALL} - Returns true if the subquery returns a value that is less than or equal to all the values in the subquery.
-    \item  \textit{ANY} - Returns true if the subquery returns a value that is less than or equal to any of the values in the subquery.
-    \item \textit{EXISTS} - Returns true if the subquery returns any rows.
-    \item  \textit{SOME} - Returns true if the subquery returns a value that is less than or equal to any of the values in the subquery.
-    \item  \textit{IN} - Returns true if the subquery returns a value that is equal to any of the values in the subquery.
-    \item \textit{NOT IN} - Returns true if the subquery returns a value that is not equal to any of the values in the subquery
-\end{itemize}
+              \item Notifications: Triggers can be used to send notifications or alerts based on specific events, such as when a new record is added or an existing record is updated.
 
-\item \textit{How to get groupwise data from a table. What is use of Having Clause}\\
+              \item Security: Triggers can be used to implement security policies, such as preventing unauthorized access or monitoring user activity.
 
-Groupwise data can be obtained using the GROUP BY clause. The HAVING clause is used to filter the groups.\\
-
-\textit{An Example query would be }
-
-\begin{lstlisting}[language=sql]
-SELECT column_name, aggregate_function(column_name) from table_name having aggregate_function(column_name) operator value group by column_name;
-\end{lstlisting}
-
-\item \textit{What is ‘having’ clause and when to use it?}\\
-
-The Having clause is used to filter the groups. It is used with the GROUP BY clause.\\
-
-\item \textit{How to display data from View. Are the views updatable? Explain}\\
-
-Data from a view can be displayed using the SELECT statement.\\
-
-Views are not updatable. They are read-only. This is because the view is not a physical table. It is a virtual table.\\
+              \item Audit trail: Triggers can be used to create an audit trail of changes made to data, which can be useful for compliance or troubleshooting purposes.
+          \end{itemize}
 \end{enumerate}
-
-
-
 \end{document}

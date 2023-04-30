@@ -1,26 +1,23 @@
 \contentsline {section}{\numberline {1}Aim}{1}{section.1}%
-\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
-\contentsline {section}{\numberline {3}Theory}{1}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Numpy Library}{1}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Numpy Functions}{1}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}arrange()}{1}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}shape()}{2}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}reshape()}{2}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}size()}{2}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}ndim()}{2}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}eyes()}{3}{subsubsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.7}ones()}{3}{subsubsection.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.2.8}zeros()}{3}{subsubsection.3.2.8}%
-\contentsline {subsubsection}{\numberline {3.2.9}dtype()}{3}{subsubsection.3.2.9}%
-\contentsline {section}{\numberline {4}Input and Output}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Input}{4}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Output}{4}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Requirements}{4}{section.5}%
-\contentsline {section}{\numberline {6}Code}{4}{section.6}%
-\contentsline {section}{\numberline {7}Regex Stuff}{4}{section.7}%
-\contentsline {subsubsection}{\numberline {7.0.1}Search}{4}{subsubsection.7.0.1}%
+\contentsline {section}{\numberline {2}Problem Statement}{1}{section.2}%
+\contentsline {section}{\numberline {3}Objectives}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Metacharacters and Special Sequences}{1}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Metacharacters}{1}{subsubsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.2}Regular Expression Functions}{2}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}re.findall()}{2}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}re.split()}{2}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}re.sub()}{3}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}re.search()}{3}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}re.match()}{4}{subsubsection.4.2.5}%
+\contentsline {section}{\numberline {5}Input and Output}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Input}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Output}{4}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Requirements}{4}{section.6}%
+\contentsline {section}{\numberline {7}Code}{5}{section.7}%
+\contentsline {subsubsection}{\numberline {7.0.1}Search}{5}{subsubsection.7.0.1}%
 \contentsline {subsubsection}{\numberline {7.0.2}Assignment stuff}{5}{subsubsection.7.0.2}%
 \contentsline {subsubsection}{\numberline {7.0.3}2. Match any pair of words separated by a single space. That is first and last names}{5}{subsubsection.7.0.3}%
-\contentsline {subsubsection}{\numberline {7.0.4}3. Match any word and single letter separated by a comma and a single space.}{5}{subsubsection.7.0.4}%
-\contentsline {section}{\numberline {8}Conclusion}{5}{section.8}%
-\contentsline {section}{\numberline {9}FAQ}{6}{section.9}%
+\contentsline {subsubsection}{\numberline {7.0.4}3. Match any word and single letter separated by a comma and a single space.}{6}{subsubsection.7.0.4}%
+\contentsline {section}{\numberline {8}Conclusion}{6}{section.8}%
+\contentsline {section}{\numberline {9}FAQ}{7}{section.9}%

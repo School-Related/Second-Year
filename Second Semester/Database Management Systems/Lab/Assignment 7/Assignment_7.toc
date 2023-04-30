@@ -2,16 +2,19 @@
 \contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
 \contentsline {section}{\numberline {3}Problem Statement}{1}{section.3}%
 \contentsline {section}{\numberline {4}Theory}{1}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Aggregate Functions}{1}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Order By Clause}{1}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Group By Clause}{2}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Subqueries}{2}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Views}{2}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}TCL Commands}{2}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Platform}{3}{section.5}%
-\contentsline {section}{\numberline {6}Input}{3}{section.6}%
-\contentsline {section}{\numberline {7}Creation and Insertion of Values in the Tables}{3}{section.7}%
-\contentsline {section}{\numberline {8}Tables}{5}{section.8}%
-\contentsline {section}{\numberline {9}Queries}{7}{section.9}%
-\contentsline {section}{\numberline {10}Conclusion}{10}{section.10}%
-\contentsline {section}{\numberline {11}FAQ}{11}{section.11}%
+\contentsline {subsection}{\numberline {4.1}Triggers in PL/SQL}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Advantages of Triggers}{1}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Disadvantages of Triggers}{2}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Usage of Triggers}{2}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Difference between Stored Procedure and Trigger}{2}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Types of Triggers}{3}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Trigger Level}{4}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Trigger Events}{4}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}NEW and OLD Clause /Trigger Variables}{5}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Dropping Triggers}{6}{subsection.4.10}%
+\contentsline {section}{\numberline {5}Platform}{6}{section.5}%
+\contentsline {section}{\numberline {6}Input}{6}{section.6}%
+\contentsline {section}{\numberline {7}Queries}{6}{section.7}%
+\contentsline {section}{\numberline {8}Outputs}{7}{section.8}%
+\contentsline {section}{\numberline {9}Conclusion}{10}{section.9}%
+\contentsline {section}{\numberline {10}FAQ}{11}{section.10}%

@@ -53,7 +53,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\textit{\Large{Database Management Systems Assignment 9}}}
+\fancyhead[L]{\textit{\Large{Database Management Systems Assignment 09}}}
 %\fancyhead[R]{\textit{something}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
@@ -67,64 +67,64 @@
 \begin{document}
 
 \begin{titlepage}
-	\centering
+    \centering
 
-	%---------------------------NAMES-------------------------------
+    %---------------------------NAMES-------------------------------
 
-	\huge\textsc{
-		MIT World Peace University
-	}\\
+    \huge\textsc{
+        MIT World Peace University
+    }\\
 
-	\vspace{0.75\baselineskip} % space after Uni Name
+    \vspace{0.75\baselineskip} % space after Uni Name
 
-	\LARGE{
-		Database Management Systems\\
-		Second Year B. Tech, Semester 4
-	}
+    \LARGE{
+        Database Management Systems\\
+        Second Year B. Tech, Semester 4
+    }
 
-	\vfill % space after Sub Name
+    \vfill % space after Sub Name
 
-	%--------------------------TITLE-------------------------------
+    %--------------------------TITLE-------------------------------
 
-	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
-	\rule{\textwidth}{0.6pt}
-	\vspace{0.75\baselineskip} % Whitespace above the title
-
-
-
-	\huge{\textsc{
-        SQL Queries on Functions, Data Sorting, Subquery, Group by, Having, Set Operations and View
-		}} \\
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.6pt}
+    \vspace{0.75\baselineskip} % Whitespace above the title
 
 
 
-	\vspace{0.5\baselineskip} % Whitespace below the title
-	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
-	\rule{\textwidth}{1.6pt}
-
-	\vspace{1\baselineskip} % Whitespace after the title block
-
-	%--------------------------SUBTITLE --------------------------	
-
-	\LARGE\textsc{
-		Assignment No. 5
-	} % Subtitle or further description
-	\vfill
-
-	%--------------------------AUTHOR-------------------------------
-
-	Prepared By
-	\vspace{0.5\baselineskip} % Whitespace before the editors
-
-	\Large{
-		Krishnaraj Thadesar \\
-		Cyber Security and Forensics\\
-		Batch A1, PA 20
-	}
+    \huge{\textsc{
+            Design of XML schema and XQUERY
+        }} \\
 
 
-	\vspace{0.5\baselineskip} % Whitespace below the editor list
-	\today
+
+    \vspace{0.5\baselineskip} % Whitespace below the title
+    \rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+    \rule{\textwidth}{1.6pt}
+
+    \vspace{1\baselineskip} % Whitespace after the title block
+
+    %--------------------------SUBTITLE --------------------------	
+
+    \LARGE\textsc{
+        Assignment No. 9
+    } % Subtitle or further description
+    \vfill
+
+    %--------------------------AUTHOR-------------------------------
+
+    Prepared By
+    \vspace{0.5\baselineskip} % Whitespace before the editors
+
+    \Large{
+        Krishnaraj Thadesar \\
+        Cyber Security and Forensics\\
+        Batch A1, PA 20
+    }
+
+
+    \vspace{0.5\baselineskip} % Whitespace below the editor list
+    \today
 
 \end{titlepage}
 
@@ -136,97 +136,65 @@
 \setcounter{page}{1}
 
 \section{Aim}
-Write suitable select commands to execute queries on the given data set.
+Study XML Query usage and write XQUERY to display the data XQuery FLOWR expression
 
 \section{Objectives}
 \begin{enumerate}
-    \item To get basic understanding of Aggregate Functions, Order By clause
-    \item To get basic understanding of Subquery or Inner query or Nested query and Select using subquery.
-    \item To understand the basic concept of Correlated Subquery.
-    \item To get familiar with the basic ALL, ANY, EXISTS, SOME functionality.
-    \item To understand basic TCL commands
+    \item To study and use XML Query using XQuery FLOWR expression
 \end{enumerate}
 
-
 \section{Problem Statement}
-Create tables and solve given queries using Subqueries
+Create tables and solve given queries.
 
 \section{Theory}
+\subsection{What is XML, XML document}
+XML stands for eXtensible Markup Language. It is a markup language that is used to store and transport data in a structured format. An XML document is a text file that contains data in a structured format using a set of predefined tags, also known as elements. These tags define the structure of the data and allow it to be easily processed and manipulated by software programs.
 
-\subsection{Aggregate Functions}
+\subsection{Components of XML}
+The main components of an XML document include elements, attributes, and entities.
 
-Aggregate functions are used to perform calculations on a set of values and return a single value. The following are the aggregate functions:
+\begin{enumerate}
+    \item Elements: They are the building blocks of an XML document and are defined by tags. Elements can contain other elements, text, or both.
+    \item Attributes: They provide additional information about an element and are defined within the opening tag of an element.
+    \item Entities: They are used to represent special characters or symbols within an XML document, such as \&, <, >, and ".
+\end{enumerate}
 
-\begin{itemize}
-    \item COUNT() - Returns the number of rows that matches a specified criteria
-    \item SUM() - Returns the sum of all the values in a column
-    \item AVG() - Returns the average value of a numeric column
-    \item MIN() - Returns the smallest value of the selected column
-    \item MAX() - Returns the largest value of the selected column
-    
-\end{itemize}
+\subsection{XML Databases}
 
-\subsection{Order By Clause}
+XML Databases are databases that store data in XML format. They are designed to provide efficient access and retrieval of data in XML format, as well as support for querying and updating the data. XML databases are often used in conjunction with XML processors to provide a powerful and flexible way to access and manipulate XML data.
 
-The ORDER BY clause is used to sort the result-set in ascending or descending order. The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+XML databases are used to store and manage XML data. They are designed to provide efficient access and retrieval of data in XML format, as well as support for querying and updating the data.
 
-\subsubsection*{Syntax}
+\subsection{XML Database Applications}
 
-\begin{lstlisting}[language=sql]
-SELECT column_name(s)
-FROM table_name
-ORDER BY column_name(s) ASC|DESC;
+Some examples of XML database applications include:
+
+\begin{enumerate}
+    \item E-commerce systems that store product data in XML format.
+    \item Financial systems that store transaction data in XML format.
+    \item Publishing systems that store content in XML format.
+\end{enumerate}
+\subsection{XQUERY}
+XQuery is a query language that is used to retrieve and manipulate data stored in XML format. It provides a way to search, filter, and transform XML data, and supports a wide range of data types, including text, numbers, and dates. XQuery is often used in conjunction with XML databases to provide a powerful and flexible way to access and manipulate XML data.
+
+\subsection{FLOWR Syntax and Example}
+FLOWR (pronounced "flower") is a query language used in XQuery to construct complex queries. The FLOWR syntax consists of four clauses: for, let, where, and return.
+
+For: This clause is used to specify the source of the data to be queried.
+Let: This clause is used to define variables that can be used in the query.
+Where: This clause is used to filter the data based on a set of conditions.
+Return: This clause is used to specify the data to be returned by the query.
+Here is an example of a FLOWR query:
+
+\begin{lstlisting}[language=php]
+for $book in //book
+let $price := $book/price
+where $price > 10
+return <result>
+<BookTitle>{data($book/title)}</BookTitle>
+<BookPrice>{data($price)}</BookPrice>
+</result>    
 \end{lstlisting}
-
-\subsection{Group By Clause}
-
-The GROUP BY clause is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
-
-\subsubsection*{Syntax}
-
-\begin{lstlisting}[language=sql]
-SELECT column_name, aggregate_function(column_name)
-FROM table_name
-WHERE column_name operator value
-GROUP BY column_name;
-\end{lstlisting}
-
-\subsection{Subqueries}
-
-A subquery (sub-select) is a query within a query. The subquery is executed first, and the main query uses the subquery as a source of data.
-
-\subsubsection*{Syntax}
-
-\begin{lstlisting}[language=sql]
-SELECT column_name(s)
-FROM table_name
-WHERE column_name operator
-(SELECT STATEMENT);
-\end{lstlisting}
-
-\subsection{Views}
-
-A view is a virtual table based on the result-set of an SQL statement.
-
-\subsubsection*{Syntax}
-
-\begin{lstlisting}[language=sql]
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-\end{lstlisting}
-
-\subsection{TCL Commands}
-
-TCL stands for Transaction Control Language. It is a set of SQL commands that are used to control the transaction. The following are the TCL commands:
-
-\begin{itemize}
-    \item COMMIT - permanently saves all changes made by the transaction. 
-    \item ROLLBACK - cancels all changes made by the transaction
-    \item SAVEPOINT - sets a savepoint within a transaction
-    \item SET TRANSACTION - sets the transaction characteristics for the current transaction
-\end{itemize}
 
 \section{Platform}
 \textbf{Operating System}: Arch Linux x86-64 \\
@@ -236,147 +204,42 @@ TCL stands for Transaction Control Language. It is a set of SQL commands that ar
 
 \section{Input}
 Given Database from the Problem Statement for the Assignment for our batch. (A1 PA 20)
-\section{Creation and Insertion of Values in the Tables}
-
-\lstinputlisting[language=SQL]{../../Programs/Assignment_5_queries.sql}
-
-\section{Tables}
-
-\begin{lstlisting}[language=sql]
-MariaDB [dbms_lab]> select * from passenger;
-+----------------+------------+----------+
-| email          | first_name | surname  |
-+----------------+------------+----------+
-| beck@gmail.com | Gwen       | Beck     |
-| joe@gmail.com  | Joe        | Goldberg |
-| love@gmail.com | Love       | Quinn    |
-+----------------+------------+----------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from airplane;
-+--------+----------+----------+---------------+
-| reg_no | model_no | capacity | name          |
-+--------+----------+----------+---------------+
-|    111 |        7 |      180 | Qatar Airways |
-|    112 |        7 |      169 | Qatar Airways |
-|    113 |        8 |      200 | Qatar Airways |
-|    221 |       17 |      150 | Emirates      |
-|    222 |       17 |      140 | Emirates      |
-|    223 |       18 |      175 | Emirates      |
-|    333 |       27 |      200 | Air India     |
-|    334 |       27 |      150 | Air India     |
-|    335 |       28 |      175 | Air India     |
-+--------+----------+----------+---------------+
-9 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from airline;
-+---------------+
-| name          |
-+---------------+
-| Air India     |
-| Emirates      |
-| Qatar Airways |
-+---------------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from flights;
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-| flight_no | place_from | place_to  | departure_date | departure_time | arrival_date | arrival_time | reg_no |
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-|     12345 | Mumbai     | London    | 2021-07-27     | 12:12:12       | 2021-07-28   | 23:59:56     |    111 |
-|     23456 | London     | Pune      | 2021-07-27     | 12:12:12       | 2021-07-28   | 22:59:56     |    333 |
-|     67890 | Pune       | Bangalore | 2021-07-27     | 12:12:12       | 2021-07-27   | 16:59:56     |    221 |
-+-----------+------------+-----------+----------------+----------------+--------------+--------------+--------+
-3 rows in set (0.001 sec)
-
-MariaDB [dbms_lab]> select * from flight_booking;
-+----------------+-----------+----------+
-| email          | flight_no | no_seats |
-+----------------+-----------+----------+
-| beck@gmail.com |     67890 |        6 |
-| joe@gmail.com  |     23456 |        2 |
-| love@gmail.com |     12345 |        6 |
-+----------------+-----------+----------+
-3 rows in set (0.001 sec)
-
-\end{lstlisting}
 
 \section{Queries}
-\lstinputlisting[language=SQL]{../../Programs/Assignment_5.md}
+% \lstinputlisting[language=SQL]{../../Programs/Assignment_9_queries.sql}
 
+\section{Outputs}
+% \lstinputlisting[language=SQL]{../../Programs/Assignment_9.md}
 
 \section{Conclusion}
-Thus, we have learned Subqueries commands thoroughly.
+Thus, we have learned creating and using XML Document and XQuery.
 
 \clearpage
 
 \section{FAQ}
 \begin{enumerate}
 
-\item \textit{Explain following types of subqueries}
-\begin{itemize}
-    \item \textit{Single-row subquery}    
-    \item \textit{Multiple-row subquery}
-    \item \textit{Multiple-column subquery}
-\end{itemize}
+    \item \textbf{Enlist Advantages of XML over HTML ?}\\
+          \begin{itemize}
+              \item Customizable tags: XML allows for the creation of custom tags, which can be tailored to specific data structures and applications.
+              \item Data validation: XML provides the ability to define data types and validation rules for data, which helps to ensure data accuracy and consistency.
+              \item Data interchange: XML is widely used for data interchange between systems, as it provides a standard way to represent data that is platform-independent.
+              \item Extensibility: XML is extensible, which means that new tags can be added to support new types of data or functionality.
+              \item Separation of content and presentation: XML separates content from presentation, making it easier to create different views of the same data.
+          \end{itemize}
 
-The Given Subqueries can be explained as such: 
-\begin{itemize}
-    \item \textit{Single-row subquery} : A subquery that returns a single row is called a single-row subquery. A special case is the scalar subquery, which returns a single row with one column. Scalar subqueries are acceptable (and often very useful) in virtually any situation where you could use a literal value, a constant, or an expression.
-    \item \textit{Multiple-row subquery} : A subquery that returns multiple rows is called a multiple-row subquery. These queries are commonly used to generate result sets that will be passed to a DML or SELECT statement for further processing. Both single-row and multiple-row subqueries will be evaluated once, before the parent query is run. Single- and multiple-row subqueries can be used in the WHERE and HAVING clauses of the parent query, but there are restrictions on the legal comparison operators
-    \item \textit{Multiple-column subquery} : A subquery that returns multiple columns is called a multiple-column subquery. It is also called a correlated subquery.    
-    A correlated subquery has a more complex method of execution than single- and multiple-row subqueries and is potentially much more powerful. If a subquery references columns in the parent query, then its result will be dependent on the parent query. This makes it impossible to evaluate the subquery before evaluating the parent query.
-\end{itemize}
+    \item \textbf{How XML is used to handle data?}\\
+    
+          XML is used to handle data by providing a standard format for representing data structures and their relationships. XML documents consist of elements, attributes, and text, which can be used to represent complex data structures such as hierarchical data or nested records. XML also provides the ability to define data types and validation rules for data, which helps to ensure data accuracy and consistency. XML can be processed uing a wide range of programming languages and technologies, making it a popular choice for data exchange and integration.
 
-\item \textit{When subquery is used?}
+    \item \textbf{Enlist applications of XQuery.}\\
+          \begin{enumerate}
+              \item Data integration: XQuery can be used to extract, transform, and load data from different sources, making it useful for data integration and migration projects.
+              \item Content management: XQuery can be used to manage and manipulate XML documents in content management systems, enabling more powerful and flexible search capabilities.
+              \item Web services: XQuery can be used to create web services that expose XML data over the internet, allowing for platform-independent data exchange between different systems.
+              \item Business intelligence: XQuery can be used to extract and analyze data from large XML documents, making it useful for business intelligence and reporting applications.
+              \item Data mining: XQuery can be used to extract patterns and trends from large XML datasets, making it useful for data mining and predictive analytics applications.
+          \end{enumerate}
 
-\begin{quotation}
-Subqueries are queires within queries. 
-\end{quotation}
-
-They are used for the following purposes:
-\begin{itemize}
-    \item \textit{To find the value that is to be used in the outer query}
-    \item \textit{To find the rows that are to be used in the outer query}
-    \item \textit{To find the columns that are to be used in the outer query}
-\end{itemize}
-
-\item \textit{Explain SQL SubQueries with ALL, ANY, EXISTS, SOME, With UPDATE}\\
-
-Sql subqueries can be used with the following operators, ALL, ANY, EXISTS, SOME, IN, NOT IN, =, <>, >, <, >=, <=, !=, IS NULL, IS NOT NULL, BETWEEN, NOT BETWEEN, LIKE, NOT LIKE, etc.\\
-
-They can be explained as follows:
-
-\begin{itemize}
-    \item \textit{ALL} - Returns true if the subquery returns a value that is less than or equal to all the values in the subquery.
-    \item  \textit{ANY} - Returns true if the subquery returns a value that is less than or equal to any of the values in the subquery.
-    \item \textit{EXISTS} - Returns true if the subquery returns any rows.
-    \item  \textit{SOME} - Returns true if the subquery returns a value that is less than or equal to any of the values in the subquery.
-    \item  \textit{IN} - Returns true if the subquery returns a value that is equal to any of the values in the subquery.
-    \item \textit{NOT IN} - Returns true if the subquery returns a value that is not equal to any of the values in the subquery
-\end{itemize}
-
-\item \textit{How to get groupwise data from a table. What is use of Having Clause}\\
-
-Groupwise data can be obtained using the GROUP BY clause. The HAVING clause is used to filter the groups.\\
-
-\textit{An Example query would be }
-
-\begin{lstlisting}[language=sql]
-SELECT column_name, aggregate_function(column_name) from table_name having aggregate_function(column_name) operator value group by column_name;
-\end{lstlisting}
-
-\item \textit{What is ‘having’ clause and when to use it?}\\
-
-The Having clause is used to filter the groups. It is used with the GROUP BY clause.\\
-
-\item \textit{How to display data from View. Are the views updatable? Explain}\\
-
-Data from a view can be displayed using the SELECT statement.\\
-
-Views are not updatable. They are read-only. This is because the view is not a physical table. It is a virtual table.\\
 \end{enumerate}
-
-
-
 \end{document}
