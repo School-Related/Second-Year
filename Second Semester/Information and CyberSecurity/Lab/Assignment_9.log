@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  30 APR 2023 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  1 MAY 2023 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -628,6 +628,7 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 67.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 67.
 \c@lstlisting=\count319
 Package hyperref Info: Link coloring ON on input line 67.
+ (./Assignment_9.out) (./Assignment_9.out)
 \@outlinefile=\write3
 \openout3 = `Assignment_9.out'.
 
@@ -646,8 +647,38 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 132.
-
-No file Assignment_9.toc.
+ (./Assignment_9.toc
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.18341pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 4.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 4.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 4.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 4.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 4.
+)
 \tf@toc=\write4
 \openout4 = `Assignment_9.toc'.
 
@@ -657,10 +688,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.134 \clearpage
                  [1]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 148.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 148.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 179.
+(Font)              scaled to size 10.18341pt on input line 168.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 179.
+(Font)              scaled to size 13.39188pt on input line 168.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -673,12 +708,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.179 
-       [1
+l.168     \item D
+                 ata encryption: SSL certificates encrypt all data transmitt... [1
 
 ]
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 183.
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
@@ -696,17 +738,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
-/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_9.tex:232: LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.232 \end{enumerate}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -717,29 +781,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3
 
-] (./Assignment_9.aux)
+]
 
-Package rerunfilecheck Warning: File `Assignment_9.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-Package rerunfilecheck Info: Checksums for `Assignment_9.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8C468B103806800B9D9F69B8F9F99BCE;587.
+[4] (./Assignment_9.aux)
+Package rerunfilecheck Info: File `Assignment_9.out' has not changed.
+(rerunfilecheck)             Checksum: 193F3CB3C4D90800FB5CC9932EB25A75;1451.
  ) 
 Here is how much of TeX's memory you used:
- 12896 strings out of 476025
- 196040 string characters out of 5796532
- 1859388 words of memory out of 5000000
- 33148 multiletter control sequences out of 15000+600000
- 542659 words of font info for 55 fonts, out of 8000000 for 9000
+ 13005 strings out of 476025
+ 197554 string characters out of 5796532
+ 1860388 words of memory out of 5000000
+ 33209 multiletter control sequences out of 15000+600000
+ 554567 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,76p,556b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,12n,76p,583b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_9.pdf (5 pages, 74353 bytes).
+Output written on Assignment_9.pdf (6 pages, 79525 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

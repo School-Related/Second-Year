@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  30 APR 2023 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  1 MAY 2023 00:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -628,6 +628,7 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 67.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 67.
 \c@lstlisting=\count319
 Package hyperref Info: Link coloring ON on input line 67.
+ (./Assignment_11.out) (./Assignment_11.out)
 \@outlinefile=\write3
 \openout3 = `Assignment_11.out'.
 
@@ -646,8 +647,38 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 132.
-
-No file Assignment_11.toc.
+ (./Assignment_11.toc
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.18341pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 4.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 4.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 4.
+ (/usr/share/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 4.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 4.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 4.
+)
 \tf@toc=\write4
 \openout4 = `Assignment_11.toc'.
 
@@ -657,17 +688,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.134 \clearpage
                  [1]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 145.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 178.
+(Font)              scaled to size 11.15991pt on input line 145.
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--181
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 181.
+(Font)              scaled to size 10.18341pt on input line 165.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 181.
+(Font)              scaled to size 13.39188pt on input line 165.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -679,12 +712,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.181 
-       [1
+l.165     \item R
+                 eporting: Nessus generates a report that summarizes the vul... [1
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 184.
- (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 175.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 
@@ -695,17 +732,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
-/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_11.tex:248: LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248 \end{enumerate}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 206.
+(/usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 206.
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -716,29 +766,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3
 
-] (./Assignment_11.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
-Package rerunfilecheck Warning: File `Assignment_11.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+ []
 
-Package rerunfilecheck Info: Checksums for `Assignment_11.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8C468B103806800B9D9F69B8F9F99BCE;587.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4] (./Assignment_11.aux)
+Package rerunfilecheck Info: File `Assignment_11.out' has not changed.
+(rerunfilecheck)             Checksum: 30A36DCBE2572C0550D3545E8A1EE8FA;910.
  ) 
 Here is how much of TeX's memory you used:
- 12895 strings out of 476025
- 196040 string characters out of 5796532
- 1860388 words of memory out of 5000000
- 33148 multiletter control sequences out of 15000+600000
- 542659 words of font info for 55 fonts, out of 8000000 for 9000
+ 13026 strings out of 476025
+ 197899 string characters out of 5796532
+ 1861388 words of memory out of 5000000
+ 33227 multiletter control sequences out of 15000+600000
+ 554877 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,76p,518b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,12n,76p,471b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_11.pdf (5 pages, 51755 bytes).
+Output written on Assignment_11.pdf (6 pages, 55983 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
