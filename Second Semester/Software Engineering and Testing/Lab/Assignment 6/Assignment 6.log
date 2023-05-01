@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  16 APR 2023 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  2 MAY 2023 04:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -725,6 +725,11 @@ File: 052919_0832_StateMachin1.png Graphic file (type png)
 <use 052919_0832_StateMachin1.png>
 Package pdftex.def Info: 052919_0832_StateMachin1.png  used on input line 201.
 (pdftex.def)             Requested size: 164.41711pt x 235.62466pt.
+<state.png, id=113, 807.015pt x 740.0147pt>
+File: state.png Graphic file (type png)
+<use state.png>
+Package pdftex.def Info: state.png  used on input line 210.
+(pdftex.def)             Requested size: 446.26582pt x 409.21123pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -741,8 +746,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3]
-<UML-Activity-Diagram-elements.png, id=131, 199.74625pt x 142.03062pt>
+[3 <./state.png (PNG copy)>]
+<UML-Activity-Diagram-elements.png, id=133, 199.74625pt x 142.03062pt>
 File: UML-Activity-Diagram-elements.png Graphic file (type png)
 <use UML-Activity-Diagram-elements.png>
 Package pdftex.def Info: UML-Activity-Diagram-elements.png  used on input line 247.
@@ -766,6 +771,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [5 <./UML-Activity-Diagram-elements.png>]
+<activity dia.drawio.png, id=159, 645.16031pt x 794.97pt>
+File: activity dia.drawio.png Graphic file (type png)
+<use activity dia.drawio.png>
+Package pdftex.def Info: activity dia.drawio.png  used on input line 256.
+(pdftex.def)             Requested size: 446.26582pt x 549.88849pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -775,11 +790,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
-
- []
-
+ <./activity dia.drawio.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -787,25 +798,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[7
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
@@ -823,18 +832,18 @@ Package rerunfilecheck Info: File `"Assignment 6".out' has not changed.
 (rerunfilecheck)             Checksum: C500D0555B889DF074C0C24C2FE7B543;2765.
  ) 
 Here is how much of TeX's memory you used:
- 13042 strings out of 476025
- 198014 string characters out of 5796532
+ 13059 strings out of 476025
+ 198355 string characters out of 5796532
  1860388 words of memory out of 5000000
- 33215 multiletter control sequences out of 15000+600000
+ 33228 multiletter control sequences out of 15000+600000
  555266 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,76p,498b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 6.pdf" (10 pages, 76581 bytes).
+Output written on "Assignment 6.pdf" (10 pages, 232008 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 67 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
