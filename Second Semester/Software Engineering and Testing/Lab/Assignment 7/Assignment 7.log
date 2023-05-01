@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  16 APR 2023 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  2 MAY 2023 05:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -748,6 +748,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [3 <./uml-deployment-diagram.png>]
+<component diagram.png, id=150, 757.32938pt x 613.54219pt>
+File: component diagram.png Graphic file (type png)
+<use component diagram.png>
+Package pdftex.def Info: component diagram.png  used on input line 246.
+(pdftex.def)             Requested size: 446.26582pt x 361.53738pt.
+<Screenshot_on_2023-05-02_at_05-07-39.png, id=151, 630.85687pt x 609.02531pt>
+File: Screenshot_on_2023-05-02_at_05-07-39.png Graphic file (type png)
+<use Screenshot_on_2023-05-02_at_05-07-39.png>
+Package pdftex.def Info: Screenshot_on_2023-05-02_at_05-07-39.png  used on input line 254.
+(pdftex.def)             Requested size: 446.26582pt x 430.8219pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4
+
+ <./component diagram.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 259--262
 
  []
@@ -759,9 +780,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4
+[5 <./Screenshot_on_2023-05-02_at_05-07-39.png (PNG copy)>]
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
@@ -788,18 +815,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-
- []
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.93642pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[5
+[7
 
 ]
 
@@ -809,23 +831,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[6] (./Assignment 7.aux)
+[8] (./Assignment 7.aux)
 Package rerunfilecheck Info: File `"Assignment 7".out' has not changed.
 (rerunfilecheck)             Checksum: D51594DDD6CED7081FD6FFF75A725DFC;2738.
  ) 
 Here is how much of TeX's memory you used:
- 13058 strings out of 476025
- 198401 string characters out of 5796532
+ 13075 strings out of 476025
+ 198913 string characters out of 5796532
  1860388 words of memory out of 5000000
- 33236 multiletter control sequences out of 15000+600000
+ 33248 multiletter control sequences out of 15000+600000
  555576 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,76p,552b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,12n,76p,552b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "Assignment 7.pdf" (8 pages, 85833 bytes).
+Output written on "Assignment 7.pdf" (10 pages, 235436 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 58 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
