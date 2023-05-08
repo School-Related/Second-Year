@@ -4,6 +4,6 @@
 \contentsline {subsection}{\numberline {3.1}HIDS - Host-based IDS}{1}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}NIDS - Network-based IDS}{1}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Platform}{2}{section.4}%
-\contentsline {section}{\numberline {5}Input and Output}{2}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{2}{section.6}%
-\contentsline {section}{\numberline {7}FAQ}{3}{section.7}%
+\contentsline {section}{\numberline {5}Input and Output}{3}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}%
+\contentsline {section}{\numberline {7}FAQ}{5}{section.7}%

@@ -7,6 +7,6 @@
 \contentsline {subsection}{\numberline {3.4}Benefits of SSL certificates}{2}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Example}{2}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Platform}{2}{section.4}%
-\contentsline {section}{\numberline {5}Input and Output}{2}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{2}{section.6}%
-\contentsline {section}{\numberline {7}FAQ}{3}{section.7}%
+\contentsline {section}{\numberline {5}Input and Output}{3}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{6}{section.6}%
+\contentsline {section}{\numberline {7}FAQ}{7}{section.7}%

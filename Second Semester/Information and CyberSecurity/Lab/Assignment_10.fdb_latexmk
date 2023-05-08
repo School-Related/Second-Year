@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1682876275 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_10.tex" "Assignment_10.pdf" "Assignment_10" 1682876276 0
-  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_10.tex" 1682876274 9656 c14a72bfd9066c0fc2e778290539c14c ""
+["pdflatex"] 1683379815 "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_10.tex" "Assignment_10.pdf" "Assignment_10" 1683379816 0
+  "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Information and CyberSecurity/Lab/Assignment_10.tex" 1683379813 10003 0f9e3ddd2b34fc3217e9803e48acac0c ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1680514707 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1680514707 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1680514707 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -112,11 +112,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1680514707 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1681635571 4491781 539e3b5e308794ddb50e5f94f0e971f4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1681635439 8204106 8edc09dd2071cca609206aa5de91178c ""
-  "Assignment_10.aux" 1682876276 1548 1bc0e6dd83a0bbe5bcd07a0ec148e00e "pdflatex"
-  "Assignment_10.out" 1682876276 944 7ab492c39d78fe74f2889c9dd8a7e17d "pdflatex"
-  "Assignment_10.tex" 1682876274 9656 c14a72bfd9066c0fc2e778290539c14c ""
-  "Assignment_10.toc" 1682876276 625 53a325ab842515557b7b9260cc70c0b7 "pdflatex"
+  "Assignment_10.aux" 1683379816 1881 cbd195f931ccd080b20901990c4dfb2f "pdflatex"
+  "Assignment_10.out" 1683379816 944 7ab492c39d78fe74f2889c9dd8a7e17d "pdflatex"
+  "Assignment_10.tex" 1683379813 10003 0f9e3ddd2b34fc3217e9803e48acac0c ""
+  "Assignment_10.toc" 1683379816 625 df0b94ca5242938ad04a3aaf3fdc1576 "pdflatex"
   "NIDS-vs-HIDS.jpg" 1557217447 29389 fdbc2de733db7ccc7d299da61485cc43 ""
+  "snort1.jpeg" 1683379616 446533 a521e2dbf6ee7f76e428f09e1f49460e ""
+  "snort2.jpeg" 1683379618 140457 abb06e10251f9541f8d682c844c3f607 ""
+  "snort3.jpeg" 1683379620 31059 3dcd4ee3bac88a7cca759c1a3ff8b42e ""
   (generated)
   "Assignment_10.aux"
   "Assignment_10.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  1 MAY 2023 00:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  6 MAY 2023 19:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,8 +726,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 188.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+<tomcat.jpeg, id=83, 1162.3425pt x 639.38875pt>
+File: tomcat.jpeg Graphic file (type jpg)
+<use tomcat.jpeg>
+Package pdftex.def Info: tomcat.jpeg  used on input line 189.
+(pdftex.def)             Requested size: 446.26582pt x 245.48737pt.
+<tomcat1.jpeg, id=84, 634.37pt x 657.45625pt>
+File: tomcat1.jpeg Graphic file (type jpg)
+<use tomcat1.jpeg>
+Package pdftex.def Info: tomcat1.jpeg  used on input line 194.
+(pdftex.def)             Requested size: 446.26582pt x 462.52359pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[2]
+<tomcat2.jpeg, id=94, 1371.1225pt x 674.52pt>
+File: tomcat2.jpeg Graphic file (type jpg)
+<use tomcat2.jpeg>
+Package pdftex.def Info: tomcat2.jpeg  used on input line 199.
+(pdftex.def)             Requested size: 446.26582pt x 219.53546pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3 <./tomcat.jpeg>]
+<tomcat3.jpeg, id=100, 973.6375pt x 686.565pt>
+File: tomcat3.jpeg Graphic file (type jpg)
+<use tomcat3.jpeg>
+Package pdftex.def Info: tomcat3.jpeg  used on input line 204.
+(pdftex.def)             Requested size: 446.26582pt x 314.68184pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[4 <./tomcat1.jpeg>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 207.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 
@@ -737,38 +783,46 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+[5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./tomcat2.jpeg> <./tomcat3.jpeg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
@@ -779,7 +833,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3
+[7
 
 ]
 
@@ -789,23 +843,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[4] (./Assignment_9.aux)
+[8] (./Assignment_9.aux)
 Package rerunfilecheck Info: File `Assignment_9.out' has not changed.
 (rerunfilecheck)             Checksum: 193F3CB3C4D90800FB5CC9932EB25A75;1451.
  ) 
 Here is how much of TeX's memory you used:
- 13005 strings out of 476025
- 197554 string characters out of 5796532
+ 13045 strings out of 476025
+ 198100 string characters out of 5796532
  1860388 words of memory out of 5000000
- 33209 multiletter control sequences out of 15000+600000
+ 33236 multiletter control sequences out of 15000+600000
  554567 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,76p,583b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_9.pdf (6 pages, 79525 bytes).
+Output written on Assignment_9.pdf (10 pages, 604865 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

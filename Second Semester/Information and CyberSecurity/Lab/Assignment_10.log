@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  30 APR 2023 23:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.16)  6 MAY 2023 19:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -735,8 +735,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 175.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+<snort1.jpeg, id=65, 1606.0pt x 903.375pt>
+File: snort1.jpeg Graphic file (type jpg)
+<use snort1.jpeg>
+Package pdftex.def Info: snort1.jpeg  used on input line 176.
+(pdftex.def)             Requested size: 446.26582pt x 251.02725pt.
+<snort2.jpeg, id=66, 944.52875pt x 372.39125pt>
+File: snort2.jpeg Graphic file (type jpg)
+<use snort2.jpeg>
+Package pdftex.def Info: snort2.jpeg  used on input line 181.
+(pdftex.def)             Requested size: 446.26582pt x 175.9501pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[2 <./NIDS-vs-HIDS.jpg>]
+<snort3.jpeg, id=71, 987.69pt x 199.74625pt>
+File: snort3.jpeg Graphic file (type jpg)
+<use snort3.jpeg>
+Package pdftex.def Info: snort3.jpeg  used on input line 186.
+(pdftex.def)             Requested size: 446.26582pt x 90.25072pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[3 <./snort1.jpeg> <./snort2.jpeg>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 189.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 
@@ -746,13 +778,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./NIDS-vs-HIDS.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./snort3.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
@@ -763,25 +795,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[3
+[5
 
 ] (./Assignment_10.aux)
 Package rerunfilecheck Info: File `Assignment_10.out' has not changed.
 (rerunfilecheck)             Checksum: 7AB492C39D78FE74F2889C9DD8A7E17D;944.
  ) 
 Here is how much of TeX's memory you used:
- 13004 strings out of 476025
- 197612 string characters out of 5796532
+ 13033 strings out of 476025
+ 198000 string characters out of 5796532
  1861388 words of memory out of 5000000
- 33212 multiletter control sequences out of 15000+600000
+ 33232 multiletter control sequences out of 15000+600000
  555580 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,76p,578b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_10.pdf (5 pages, 108985 bytes).
+Output written on Assignment_10.pdf (7 pages, 729047 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 28 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
