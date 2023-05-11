@@ -10,14 +10,14 @@ class WordNode
     string definition;
     WordNode *left;
     WordNode *right;
-    friend class AVLTree;
+    friend class Tree;
 };
 
-class AVLTree
+class Tree
 {
 public:
     WordNode *root;
-    AVLTree()
+    Tree()
     {
         root = NULL;
     }
@@ -420,7 +420,7 @@ int main()
 {
     int choice = 0;
     string word;
-    AVLTree main_tree, mirror_tree, copy_tree;
+    Tree main_tree, mirror_tree, copy_tree;
 
     while (choice != 10)
     {

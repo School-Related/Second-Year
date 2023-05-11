@@ -10,14 +10,14 @@ class WordNode
     string definition;
     WordNode *left;
     WordNode *right;
-    friend class AVLTree;
+    friend class Tree;
 };
 
-class AVLTree
+class Tree
 {
 public:
     WordNode *root;
-    AVLTree()
+    Tree()
     {
         root = NULL;
     }
@@ -419,12 +419,12 @@ int main()
 {
     int choice = 0;
     string word;
-    AVLTree main_tree, mirror_tree, copy_tree;
+    Tree main_tree, mirror_tree, copy_tree;
 
     while (choice != 10)
     {
         cout << "\nWhat would like to do? " << endl;
-        cout << "\n\nWelcome to ADS Assignment 2 - Binary Tree Traversals\n\nWhat would you like to do? " << endl;
+        cout << "\n\nWelcome to ADS Assignment 3 - Binary Tree Traversals BFS DFS\n\nWhat would you like to do? " << endl;
         cout << "1. Create a Binary Search Tree"
              << endl;
         cout << "2. Traverse the Tree Inorder Iteratively"
