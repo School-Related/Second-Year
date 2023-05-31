@@ -182,7 +182,7 @@ public:
                 copied_tree->right = new_node1;
                 q.push(new_node1);
             }
-            temp = temp->left;
+            // temp = temp->left;
         }
         return copied_tree;
     }
@@ -325,7 +325,7 @@ public:
                 }
                 temp->word = temp1->word;
                 temp->definition = temp1->definition;
-                delete_node(temp->right, temp1->word);
+                delete_node(temp1, temp1->word);
             }
         }
     }

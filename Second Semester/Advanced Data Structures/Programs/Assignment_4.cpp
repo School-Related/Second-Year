@@ -128,9 +128,9 @@ public:
     ThreadedBinaryTreeNode *inorder_successor(ThreadedBinaryTreeNode *temp)
     {
         ThreadedBinaryTreeNode *x = temp->right;
-        if (!temp->isRightNodeAThread)
+        if (!temp->isRightNodeAThread) // right node a normal node? 
         {
-            while (x->isLeftNodeAThread == false)
+            while (x->isLeftNodeAThread == false) // keep going left until you find a thread
                 x = x->left;
         }
         return x;
@@ -141,17 +141,17 @@ public:
         ThreadedBinaryTreeNode *temp = head->left;
         while (temp != head)
         {
-            cout << temp->data << " ";
-            while (temp->isLeftNodeAThread == false)
+            cout << temp->data << " "; // V
+            while (temp->isLeftNodeAThread == false) // while the left nodes are normal
             {
-                temp = temp->left;
-                cout << temp->data << " ";
+                temp = temp->left; // go left and print 
+                cout << temp->data << " "; // L
             }
-            while (temp->isRightNodeAThread == true)
+            while (temp->isRightNodeAThread == true) // while the right nodes are threads
             {
-                temp = temp->right;
+                temp = temp->right; // keep going right so you reach the parent once again
             }
-            temp = temp->right;
+            temp = temp->right; // once you reach the parent, go right so you can do the R from VLR
         }
     }
 };
