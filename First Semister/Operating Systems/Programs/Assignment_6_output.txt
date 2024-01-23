@@ -1,9 +1,0 @@
-Enter a String that you wanna send via the Pipe command : assignment6
-In the parent rn. 
-Writing User String to pipe...: assignment6
-Done.
-
-In the child rn. 
-Reading PIN from pipe...
-PIN from pipe: assignment6
-Done.

@@ -1,4 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" -S "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Programs" -B "/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Programs/cmake-build-debug"
--- Configuring done
--- Generating done
--- Build files have been written to: /run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Programs/cmake-build-debug

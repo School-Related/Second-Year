@@ -1,9 +1,0 @@
-﻿Name,Quantity,Component
-"BAT1",1," 9V Battery"
-"Digit1",1,"Cathode 7 Segment Display"
-"U1, U2",2," Dual J-K Flip-Flop"
-"U3",1," Quad NAND gate"
-"U4",1," 7-Segment Decoder"
-"S1",1," Pushbutton"
-"R1, R2",2,"1 kΩ Resistor"
-"R3",1,"250 Ω Resistor"

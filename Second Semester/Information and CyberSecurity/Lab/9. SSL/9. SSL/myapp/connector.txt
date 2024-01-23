@@ -1,8 +1,0 @@
-<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
-               maxThreads="150" SSLEnabled="true"
-scheme="https" secure="true"
-keystoreFile="conf/mynmcs"
-keystorePass="789456123"
-clientAuth="false"
-sslProtocol="TLS"
-keyAlias= "mykeys" />

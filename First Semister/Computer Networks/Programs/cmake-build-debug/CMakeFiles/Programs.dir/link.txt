@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/Programs.dir/Hamming_Code.cpp.o -o Programs 

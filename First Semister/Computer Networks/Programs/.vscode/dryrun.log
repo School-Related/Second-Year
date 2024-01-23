@@ -1,6 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Programs'
-make: Leaving directory '/run/media/krishnaraj/Classes/University/Second Year/First Semister/Computer Networks/Programs'
- 
-make: *** No targets specified and no makefile found.  Stop.
-
