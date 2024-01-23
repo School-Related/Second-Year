@@ -1,0 +1,41 @@
+Enter how many readers and Writers you want (Same number of both are taken by default): 8
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 1
+
+Read: 1
+Reader finished its CS so releasing mutex
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 2
+
+Read: 2
+Reader finished its CS so releasing mutex
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 3
+
+Read: 3
+Reader finished its CS so releasing mutex
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 4
+
+Read: 4
+Reader finished its CS so releasing mutex
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 5
+
+Read: 5
+Reader finished its CS so releasing mutex
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 6
+
+Read: 6
+Reader finished its CS so releasing mutex
+
+Read: 6
+Reader finished its CS so releasing mutex
+
+Read: 6
+Reader finished its CS so releasing mutex
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 7
+Blocking sem wait and mutex variable so no other writer can write rn. 
+Wrote to the shared variable 8

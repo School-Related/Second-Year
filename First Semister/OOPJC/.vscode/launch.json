@@ -1,0 +1,85 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch StudentInfo",
+      "request": "launch",
+      "mainClass": "StudentInfo"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Launch Cs",
+      "request": "launch",
+      "mainClass": "Cs"
+    },
+    {
+      "type": "java",
+      "name": "Attach",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": "<debug port of the debuggee>"
+    },
+    {
+      "type": "java",
+      "name": "Launch assignment_8",
+      "request": "launch",
+      "mainClass": "assignment_8",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "type": "java",
+      "name": "Launch Testing",
+      "request": "launch",
+      "mainClass": "Testing",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "assignment_2.Main",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "type": "java",
+      "name": "Launch Source",
+      "request": "launch",
+      "mainClass": "Source",
+      "projectName": "OOPJC_abb04044"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC",
+      "program": "/run/media/krishnaraj/Classes/University/Second Year/First Semister/OOPJC/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

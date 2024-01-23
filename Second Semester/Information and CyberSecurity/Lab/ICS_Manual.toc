@@ -1,0 +1,170 @@
+\contentsline {chapter}{Course Objectives}{i}{chapter*.2}%
+\contentsline {section}{\numberline {0.1}Knowledge}{i}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Skills}{i}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Attitude}{i}{section.0.3}%
+\contentsline {chapter}{Course Outcomes}{ii}{chapter*.3}%
+\contentsline {chapter}{Course Contents}{iii}{chapter*.4}%
+\contentsline {section}{\numberline {0.4}Module 1}{iii}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Foundations of Information Security}{iii}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {0.4.2}Cryptographic Techniques}{iii}{subsection.0.4.2}%
+\contentsline {section}{\numberline {0.5}Module 2}{iii}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}Mathematical Foundations and Public Key Cryptography}{iii}{subsection.0.5.1}%
+\contentsline {section}{\numberline {0.6}Module 3}{iii}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Foundations of Information Security}{iii}{subsection.0.6.1}%
+\contentsline {section}{\numberline {0.7}Module 4}{iv}{section.0.7}%
+\contentsline {subsection}{\numberline {0.7.1}Network and Cyber Security}{iv}{subsection.0.7.1}%
+\contentsline {section}{\numberline {0.8}Module 5}{iv}{section.0.8}%
+\contentsline {subsection}{\numberline {0.8.1}Cybersecurity Techniques, Tools and Laws}{iv}{subsection.0.8.1}%
+\contentsline {chapter}{References and Further Reading}{v}{chapter*.5}%
+\contentsline {section}{\numberline {0.9}Books}{v}{section.0.9}%
+\contentsline {section}{\numberline {0.10}Other Resources}{v}{section.0.10}%
+\contentsline {subsection}{\numberline {0.10.1}Web Resources}{v}{subsection.0.10.1}%
+\contentsline {subsection}{\numberline {0.10.2}MOOCs and Weblinks}{v}{subsection.0.10.2}%
+\contentsline {chapter}{Guidelines for CCA and LCA}{vi}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}Classical Cryptographic Techniques}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Aim}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectives}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Theory}{1}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Cryptography}{1}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Types of Cryptography}{1}{subsection.1.3.2}%
+\contentsline {subsubsection}{Classical Cryptography}{1}{section*.7}%
+\contentsline {subsubsection}{Modern Cryptography}{3}{section*.8}%
+\contentsline {section}{\numberline {1.4}Platform}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Pseudo Code or Algorithm}{4}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Input and Output}{4}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Code}{4}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Conclusion}{6}{section.1.8}%
+\contentsline {section}{\numberline {1.9}FAQ}{7}{section.1.9}%
+\contentsline {chapter}{\numberline {2}Fiestal Cipher Structure - SDES}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Aim}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Objectives}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Theory}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Symmetric Key Cryptography}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Feistal Cipher}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Fiestal Cipher Algorithm}{9}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Platform}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Input and Output}{10}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Code}{10}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Conclusion}{14}{section.2.7}%
+\contentsline {section}{\numberline {2.8}FAQ}{15}{section.2.8}%
+\contentsline {chapter}{\numberline {3}S-AES Symmetric Key Algorithm}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aim}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Objectives}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Theory}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}What is Simplified AES?}{20}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Key Expansion}{21}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Constants}{21}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Substitution}{21}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Shift Rows}{21}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Platform}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Input and Output}{22}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Code}{22}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Conclusion}{29}{section.3.7}%
+\contentsline {section}{\numberline {3.8}FAQ}{30}{section.3.8}%
+\contentsline {chapter}{\numberline {4}RSA Asymmetric Key Algorithm}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Aim}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Objectives}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Theory}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Euler Totient Function}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Euclidean Algorithm}{31}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Extended Euclidean Algorithm}{32}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}RSA Algorithm}{32}{subsection.4.3.4}%
+\contentsline {subsubsection}{Key Generation}{32}{section*.9}%
+\contentsline {subsubsection}{RSA Encryption}{33}{section*.10}%
+\contentsline {subsubsection}{RSA Decryption}{33}{section*.11}%
+\contentsline {subsubsection}{Example of RSA Encryption}{33}{section*.12}%
+\contentsline {section}{\numberline {4.4}Platform}{33}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Input and Output}{33}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Code}{34}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Conclusion}{38}{section.4.7}%
+\contentsline {section}{\numberline {4.8}FAQ}{39}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Integrity of Message using MD5 or SHA}{40}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Aim}{40}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Objectives}{40}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Theory}{40}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Secure Hashing Algorithm (SHA-256)}{40}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Example}{41}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Platform}{42}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Input and Output}{42}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Code}{43}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Conclusion}{44}{section.5.7}%
+\contentsline {section}{\numberline {5.8}FAQ}{45}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Diffie Hellman Key Exchange Algorithm}{47}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Aim}{47}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Objectives}{47}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Theory}{47}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}What is the Diffie-Hellman Key Exchange Algorithm?}{47}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Working of the Algorithm}{47}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Example}{48}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Platform}{48}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Input and Output}{48}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Code}{48}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Conclusion}{49}{section.6.7}%
+\contentsline {section}{\numberline {6.8}FAQ}{50}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Digital signature using DSA}{52}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Aim}{52}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Objectives}{52}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Theory}{52}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}The Digital Signature Algorithm (DSA)}{52}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Algorithm}{52}{subsection.7.3.2}%
+\contentsline {subsubsection}{Key Generation:}{52}{section*.15}%
+\contentsline {subsubsection}{Signature Generation:}{52}{section*.16}%
+\contentsline {subsubsection}{Signature Verification:}{53}{section*.17}%
+\contentsline {subsection}{\numberline {7.3.3}Example}{53}{subsection.7.3.3}%
+\contentsline {subsubsection}{Signature Generation:}{53}{section*.18}%
+\contentsline {subsubsection}{Signature Verification:}{53}{section*.19}%
+\contentsline {section}{\numberline {7.4}Platform}{54}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Input and Output}{54}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Code}{54}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Conclusion}{55}{section.7.7}%
+\contentsline {section}{\numberline {7.8}FAQ}{56}{section.7.8}%
+\contentsline {chapter}{\numberline {8}Email Security using - PGP or S/MIME for Confidentiality, Authenticity and Integrity}{58}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Aim}{58}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Objectives}{58}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Theory}{58}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}PGP}{58}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Steps to Send an EMail using PGP}{59}{subsection.8.3.2}%
+\contentsline {subsubsection}{Generate a key Pair}{59}{section*.20}%
+\contentsline {subsubsection}{Share public keys}{59}{section*.21}%
+\contentsline {subsubsection}{Encrypt the message}{59}{section*.22}%
+\contentsline {subsubsection}{Sign the message}{59}{section*.23}%
+\contentsline {subsubsection}{Send the message}{59}{section*.24}%
+\contentsline {subsubsection}{Decrypt the message}{59}{section*.25}%
+\contentsline {section}{\numberline {8.4}Platform}{59}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Input and Output}{59}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Generated Keys}{59}{subsection.8.5.1}%
+\contentsline {section}{\numberline {8.6}Conclusion}{62}{section.8.6}%
+\contentsline {section}{\numberline {8.7}FAQ}{63}{section.8.7}%
+\contentsline {chapter}{\numberline {9}Secured web applications system using SSL certificates and its deployment in Apache Tomcat Server}{64}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Aim}{64}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Objectives}{64}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Theory}{64}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}SSL Certificate}{64}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}How does an SSL certificate work?}{64}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Types of SSL certificates}{64}{subsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.3.4}Benefits of SSL certificates}{65}{subsection.9.3.4}%
+\contentsline {subsection}{\numberline {9.3.5}Example}{65}{subsection.9.3.5}%
+\contentsline {section}{\numberline {9.4}Platform}{65}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Input and Output}{66}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Conclusion}{69}{section.9.6}%
+\contentsline {section}{\numberline {9.7}FAQ}{70}{section.9.7}%
+\contentsline {chapter}{\numberline {10}Intrusion Detection System using Snort}{71}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Aim}{71}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Objectives}{71}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Theory}{71}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}HIDS - Host-based IDS}{71}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}NIDS - Network-based IDS}{71}{subsection.10.3.2}%
+\contentsline {section}{\numberline {10.4}Platform}{72}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Input and Output}{73}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Conclusion}{74}{section.10.6}%
+\contentsline {section}{\numberline {10.7}FAQ}{75}{section.10.7}%
+\contentsline {chapter}{\numberline {11}NESSUS tool for Vulnerability Assessment}{76}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Aim}{76}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Objectives}{76}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Theory}{76}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Vulnerability Assessment}{76}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}How Nessus Works}{77}{subsection.11.3.2}%
+\contentsline {section}{\numberline {11.4}Platform}{77}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Input and Output}{77}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Conclusion}{78}{section.11.6}%
+\contentsline {section}{\numberline {11.7}FAQ}{79}{section.11.7}%

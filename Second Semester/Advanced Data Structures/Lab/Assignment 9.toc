@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Objectives}{1}{section.1}%
+\contentsline {section}{\numberline {2}Problem Statement}{1}{section.2}%
+\contentsline {section}{\numberline {3}Theory}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Different Cases of Rotations in AVL Tree}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Construction of AVL Tree as a Data Structure for Creation of Dictionary}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Searching and Deleting in AVL Tree}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Advantages of AVL Tree over Other Data Structures}{3}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Disadvantages of AVL Tree over Other Data Structures}{3}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Platform}{4}{section.4}%
+\contentsline {section}{\numberline {5}Test Conditions}{4}{section.5}%
+\contentsline {section}{\numberline {6}Input and Output}{4}{section.6}%
+\contentsline {section}{\numberline {7}Pseudo Code}{4}{section.7}%
+\contentsline {section}{\numberline {8}Time Complexity}{6}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Creation, Searching, Insertion and Deletion in AVL Trees}{6}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Code}{6}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Program}{6}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Conclusion}{13}{section.10}%
+\contentsline {section}{\numberline {11}FAQ}{14}{section.11}%

@@ -1,0 +1,245 @@
+% This is a Basic Assignment Paper but with like Code and stuff allowed in it, there is also url, hyperlinks from contents included. 
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Database Management Systems Assignment 09}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    %---------------------------NAMES-------------------------------
+
+    \huge\textsc{
+        MIT World Peace University
+    }\\
+
+    \vspace{0.75\baselineskip} % space after Uni Name
+
+    \LARGE{
+        Database Management Systems\\
+        Second Year B. Tech, Semester 4
+    }
+
+    \vfill % space after Sub Name
+
+    %--------------------------TITLE-------------------------------
+
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.6pt}
+    \vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+    \huge{\textsc{
+            Design of XML schema and XQUERY
+        }} \\
+
+
+
+    \vspace{0.5\baselineskip} % Whitespace below the title
+    \rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+    \rule{\textwidth}{1.6pt}
+
+    \vspace{1\baselineskip} % Whitespace after the title block
+
+    %--------------------------SUBTITLE --------------------------	
+
+    \LARGE\textsc{
+        Assignment No. 9
+    } % Subtitle or further description
+    \vfill
+
+    %--------------------------AUTHOR-------------------------------
+
+    Prepared By
+    \vspace{0.5\baselineskip} % Whitespace before the editors
+
+    \Large{
+        Krishnaraj Thadesar \\
+        Cyber Security and Forensics\\
+        Batch A1, PA 20
+    }
+
+
+    \vspace{0.5\baselineskip} % Whitespace below the editor list
+    \today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
+
+\section{Aim}
+Study XML Query usage and write XQUERY to display the data XQuery FLOWR expression
+
+\section{Objectives}
+\begin{enumerate}
+    \item To study and use XML Query using XQuery FLOWR expression
+\end{enumerate}
+
+\section{Problem Statement}
+Create tables and solve given queries.
+
+\section{Theory}
+\subsection{What is XML, XML document}
+XML stands for eXtensible Markup Language. It is a markup language that is used to store and transport data in a structured format. An XML document is a text file that contains data in a structured format using a set of predefined tags, also known as elements. These tags define the structure of the data and allow it to be easily processed and manipulated by software programs.
+
+\subsection{Components of XML}
+The main components of an XML document include elements, attributes, and entities.
+
+\begin{enumerate}
+    \item Elements: They are the building blocks of an XML document and are defined by tags. Elements can contain other elements, text, or both.
+    \item Attributes: They provide additional information about an element and are defined within the opening tag of an element.
+    \item Entities: They are used to represent special characters or symbols within an XML document, such as \&, <, >, and ".
+\end{enumerate}
+
+\subsection{XML Databases}
+
+XML Databases are databases that store data in XML format. They are designed to provide efficient access and retrieval of data in XML format, as well as support for querying and updating the data. XML databases are often used in conjunction with XML processors to provide a powerful and flexible way to access and manipulate XML data.
+
+XML databases are used to store and manage XML data. They are designed to provide efficient access and retrieval of data in XML format, as well as support for querying and updating the data.
+
+\subsection{XML Database Applications}
+
+Some examples of XML database applications include:
+
+\begin{enumerate}
+    \item E-commerce systems that store product data in XML format.
+    \item Financial systems that store transaction data in XML format.
+    \item Publishing systems that store content in XML format.
+\end{enumerate}
+\subsection{XQUERY}
+XQuery is a query language that is used to retrieve and manipulate data stored in XML format. It provides a way to search, filter, and transform XML data, and supports a wide range of data types, including text, numbers, and dates. XQuery is often used in conjunction with XML databases to provide a powerful and flexible way to access and manipulate XML data.
+
+\subsection{FLOWR Syntax and Example}
+FLOWR (pronounced "flower") is a query language used in XQuery to construct complex queries. The FLOWR syntax consists of four clauses: for, let, where, and return.
+
+For: This clause is used to specify the source of the data to be queried.
+Let: This clause is used to define variables that can be used in the query.
+Where: This clause is used to filter the data based on a set of conditions.
+Return: This clause is used to specify the data to be returned by the query.
+Here is an example of a FLOWR query:
+
+\begin{lstlisting}[language=php]
+for $book in //book
+let $price := $book/price
+where $price > 10
+return <result>
+<BookTitle>{data($book/title)}</BookTitle>
+<BookPrice>{data($price)}</BookPrice>
+</result>    
+\end{lstlisting}
+
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64 \\
+\textbf{IDEs or Text Editors Used}: Draw.io for Drawing the ER diagram. \\
+
+% \section{Pseudo Code or Algorithm}
+
+\section{Input}
+Given Database from the Problem Statement for the Assignment for our batch. (A1 PA 20)
+
+\section{Queries}
+% \lstinputlisting[language=SQL]{../../Programs/Assignment_9_queries.sql}
+
+\section{Outputs}
+% \lstinputlisting[language=SQL]{../../Programs/Assignment_9.md}
+
+\section{Conclusion}
+Thus, we have learned creating and using XML Document and XQuery.
+
+\clearpage
+
+\section{FAQ}
+\begin{enumerate}
+
+    \item \textbf{Enlist Advantages of XML over HTML ?}\\
+          \begin{itemize}
+              \item Customizable tags: XML allows for the creation of custom tags, which can be tailored to specific data structures and applications.
+              \item Data validation: XML provides the ability to define data types and validation rules for data, which helps to ensure data accuracy and consistency.
+              \item Data interchange: XML is widely used for data interchange between systems, as it provides a standard way to represent data that is platform-independent.
+              \item Extensibility: XML is extensible, which means that new tags can be added to support new types of data or functionality.
+              \item Separation of content and presentation: XML separates content from presentation, making it easier to create different views of the same data.
+          \end{itemize}
+
+    \item \textbf{How XML is used to handle data?}\\
+    
+          XML is used to handle data by providing a standard format for representing data structures and their relationships. XML documents consist of elements, attributes, and text, which can be used to represent complex data structures such as hierarchical data or nested records. XML also provides the ability to define data types and validation rules for data, which helps to ensure data accuracy and consistency. XML can be processed uing a wide range of programming languages and technologies, making it a popular choice for data exchange and integration.
+
+    \item \textbf{Enlist applications of XQuery.}\\
+          \begin{enumerate}
+              \item Data integration: XQuery can be used to extract, transform, and load data from different sources, making it useful for data integration and migration projects.
+              \item Content management: XQuery can be used to manage and manipulate XML documents in content management systems, enabling more powerful and flexible search capabilities.
+              \item Web services: XQuery can be used to create web services that expose XML data over the internet, allowing for platform-independent data exchange between different systems.
+              \item Business intelligence: XQuery can be used to extract and analyze data from large XML documents, making it useful for business intelligence and reporting applications.
+              \item Data mining: XQuery can be used to extract patterns and trends from large XML datasets, making it useful for data mining and predictive analytics applications.
+          \end{enumerate}
+
+\end{enumerate}
+\end{document}

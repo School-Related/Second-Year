@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
+\contentsline {section}{\numberline {3}Equipments Required}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {section}{\numberline {5}Platform}{2}{section.5}%
+\contentsline {section}{\numberline {6}Circuit}{2}{section.6}%
+\contentsline {section}{\numberline {7}Circuit Diagram}{3}{section.7}%
+\contentsline {section}{\numberline {8}Input}{3}{section.8}%
+\contentsline {section}{\numberline {9}Output}{3}{section.9}%
+\contentsline {section}{\numberline {10}Code}{3}{section.10}%
+\contentsline {section}{\numberline {11}Conclusion}{4}{section.11}%
+\contentsline {section}{\numberline {12}FAQ}{5}{section.12}%

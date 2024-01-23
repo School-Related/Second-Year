@@ -1,0 +1,276 @@
+% This is a Basic Assignment Paper but with like Code and stuff allowed in it. 
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{karnaugh-map}
+\usepackage{pdfpages}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{DECA Active Learning CCA 3}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Digital Electronics and Computer Architecture\\
+		Second Year B. Tech, Semester 1
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Processor Structure, function and register organization\\
+			And 1 Numerical.
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar, PA20 \\
+		Atharva Yadav, PA24\\
+		Anuj Choudhary, PA26\\
+		Harshal Thoke, PA77\\
+		Yukta Hande, PA99\\
+		Shreny Jain, PA66\\
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\setcounter{page}{1}
+\section{Problem Statement}
+\textit{Illustrate the Processor Structure, function and register organization using, the Mind Mapping concept.}
+
+\section{Numerical}
+Consider a computer system with byte addressable primary memory of size
+$2^32$ bytes. It has direct mapped caches of size $32KB(1KB = 2^10 bytes)$,
+and each cache block is 64 bytes. What is the size of the tag field bit?
+
+\section{Theory}
+\subsection{Processor Requirements}
+\begin{enumerate}
+	\item Requirements placed on the processor:
+	\item Fetch instruction: reads an instruction from memory;
+	\item Interpret instruction: determines what action to perform;
+	\item Fetch data: if necessary read data from memory or an I/O module.
+	\item Process data: If necessary perform arithmetic / logical operation on data.
+	\item Write data: If necessary write data to memory or an I/O module.
+\end{enumerate}
+
+To do these things the processor needs to:
+\begin{enumerate}
+	\item
+	      • Store some data temporarily
+	      • Remember the location of the next instruction;
+\end{enumerate}
+While an instruction is being executed: In other words, the processor needs a small internal memory, called \textbf{Registers.}
+
+
+\subsection{Major Parts of a CPU}
+\begin{enumerate}
+	\item Arithmetic and Logic Unit (ALU): Performs computation or processing of data
+	\item Control Unit: Moves data and instructions in and out of the processor. Also controls the operation of the ALU;
+	\item Registers: Used as internal memory;
+	\item System Bus: Acting as a pathway between processor, memory and I/O module(s);
+\end{enumerate}
+
+\subsection{Register Organization}
+
+\begin{enumerate}
+	\item Registers in the processor perform two roles:
+	\item User-visible registers:
+	\item Used as internal memory by the assembly language programmer;
+	\item Control registers: Used to control the operation of the processor;
+	\item Status Register: Used to check the status of the processor or ALU;
+\end{enumerate}
+
+\subsection{User Visible Register}
+\begin{enumerate}
+	\item May be referenced by the programmer, categorized into:
+	\item General purpose
+	\item Data
+	\item Address
+	\item Condition codes
+\end{enumerate}
+
+\subsection{General Purpose Registers}
+\begin{enumerate}
+	\item Can be assigned to a variety of functions by the programmer:
+	\item Memory reference and backup;
+	\item Register reference and backup;
+	\item Data reference and backup;
+	\item These are the ones you use in the laboratory
+
+\end{enumerate}
+
+
+\subsection{Data Registers}
+\begin{enumerate}
+	\item May be used only to hold data and cannot hold addresses:
+	\item Must be able to hold values of most data types;
+	\item Some machines allow two contiguous registers to be used:
+	\item For holding double-length values
+
+\end{enumerate}
+
+\subsection{Flags or Condition Code Bits}
+\begin{enumerate}
+    \item Condition code bits are collected into one or more control register
+    \item Interruption results in all user-visible registers being saved;
+    \item These are then restored on return;
+    \item Allows each subroutine to use the user-visible registers independently;
+\end{enumerate}
+
+\subsection{Examples of Control Registers}
+\begin{enumerate}
+    \item Program counter (PC): Contains instruction address to be fetched;
+    \item Instruction Register (IR): Contains last instruction fetched;
+    \item Memory address register (MAR): Contains memory location address;
+    \item Memory buffer register (MBR): Contains:
+    \item Word of data to be written to memory;
+    \item Word of data read from memory.
+\end{enumerate}
+
+\subsection{PSW Register}
+\begin{enumerate}
+    \item Many processors include a program status word (PSW) register:
+    \item Contains condition codes plus other status information
+    \item Common fields or flags include the following:
+    \item Sign: Sign bit of the result of the last arithmetic operation;
+    \item Zero: when the result is 0;
+    \item Carry: Set if an operation resulted in a carry/borrow bit;
+    \item Equal: Set if a logical compare result is equality.
+    \item Overflow: Used to indicate arithmetic overflow.
+    \item Interrupt Enable/Disable: Used to enable or disable interrupts.
+\end{enumerate}
+
+
+\section{Numerical}
+
+\textbf{Concept}\\
+Memory address $=2^{32}$ bytes\\
+Data Cache $=32 \mathrm{~KB}=2^{15} \mathrm{~B}$\\
+Block Size $=64$ bytes $=2^6 \mathrm{~B}$\\
+\textbf{Concept}:\\
+In a direct Mapped, main memory can be represented as\\
+\begin{tabular}{|l|l|l|}
+\hline Tag & Lines & Block offset \\
+\hline
+\end{tabular}\\
+$32=\operatorname{tag}+$ lines $+$ Block offset (In bits)\\
+Calculation:\\
+Assume byte addressable:\\
+number of lines in cache memory\\
+$$=\frac{2^{15}}{2^6}=2^9$$
+$$32=\operatorname{tag}+9+6$$
+$\therefore$ tag $=17$
+bits
+
+\section{Prodecure}
+\begin{enumerate}
+	\item Draw Flowcharts, Mind maps and Diagrams on Paper
+	\item Try to draw them on Online collaborative websites like draw.io and excalidraw.com
+	\item Solve the Numerical
+	\item Combine pdfs into 1.
+\end{enumerate}
+
+
+\section{Conclusion}
+Thus learnt more about processor structure, architecture, and Register Types. Also learnt to solve numericals based on Computer architecture.
+
+\end{document}
+

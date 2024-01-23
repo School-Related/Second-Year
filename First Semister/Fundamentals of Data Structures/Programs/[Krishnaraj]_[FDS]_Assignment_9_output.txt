@@ -1,0 +1,205 @@
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+1
+Enter the Process Number of the Job you want to add. 
+1
+Queue is: 
+1 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+1
+Enter the Process Number of the Job you want to add. 
+2
+Queue is: 
+1 
+2 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+1
+Enter the Process Number of the Job you want to add. 
+3
+Queue is: 
+1 
+2 
+3 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+1
+Enter the Process Number of the Job you want to add. 
+5
+Queue is: 
+1 
+2 
+3 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+2
+Killing or Terminating Job from the Queue
+Queue is: 
+2 
+3 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+2
+Killing or Terminating Job from the Queue
+Queue is: 
+3 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+2
+Killing or Terminating Job from the Queue
+Queue is: 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+1
+Enter the Process Number of the Job you want to add. 
+5
+Queue is: 
+5 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+1
+Enter the Process Number of the Job you want to add. 
+65
+
+QUEUE OVERFLOW!
+Queue is: 
+5 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+5
+
+Yes the Queue is full!
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+4
+Nope Queue isnt empty
+Queue is: 
+5 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+2
+Killing or Terminating Job from the Queue
+Queue is: 
+5 
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+2
+Killing or Terminating Job from the Queue
+
+
+Queue is empty
+
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+1
+Enter the Process Number of the Job you want to add. 
+1
+
+QUEUE OVERFLOW!
+
+
+Queue is empty
+
+Enter what you want to do: 
+    1. Add Job to the Ready Queue
+    2. Kill or Terminate Job from the Queue
+    3. See the Queue
+    4. Check if Ready Queue is Empty and Processor is free
+    5. Check if Ready Queue is full
+    6. Exit
+
+6
+
+Thank You

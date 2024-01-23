@@ -1,0 +1,7 @@
+The Radius of the Circle is: 7
+The Area of the Circle is: 153.86
+The Side of the Square is: 1.5
+The Area of the Square is: 2.25
+The Length of the Rectangle is: 1.4
+The Breadth of the Rectangle is: 3.5
+The Area of the Rectangle is: 4.90

@@ -1,0 +1,294 @@
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{karnaugh-map}
+% \usepackage[table,xcdraw]{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{DECA Assignment 6}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Digital Electronics and Computer Architecture\\
+		Second Year B. Tech, Semester 3
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Write an Assembly Language Program to Display 2 Digit and 4 Digit Hexadecimal Numbers using 64 Bit Assembly.
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report\\
+		Assignment 7
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A1, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\section{\textbf{Problem Statement}}
+Write an assembly language program (ALP) to display 2-digit and 4-digit hex numbers using 64-bit assembly language programming.
+
+\section{\textbf{Objective}}
+\begin{itemize}
+    \item To understand the structure of the assembly language program.
+    \item To understand system call function for write and exit.
+\end{itemize}
+
+\section{\textbf{Platform}}
+CPU - Core i7 Duo, 64 bit with 4 GHz clock frequency.\\
+OS - Arch Linux, 64 bit\\
+Editor - VS code \\
+Assembler - NASM (Netwide Assembler)\\
+Linker - LD, GNU linker.
+
+\section{\textbf{Theory}}
+\subsection{\textbf{Assembly Language Program Basic Structure}}
+\begin{verbatim}
+    section.Data (declare data segment)
+    ; initialized data declaration 
+    section.bss (declare block started by segment sort)
+    ; uninitialized data declaration.
+    section.text (declare code segment)
+    global-start (entry point for program)
+
+    -start:
+    ;code.
+
+    (;semicolon is used to give the comment)
+
+\end{verbatim}
+
+\subsection{\textbf{System calls to write and exit.}}
+\subsubsection{\textbf{System Call to write/output call}}
+display variable -name contents of specified variable length on monitor.
+\begin{verbatim}
+    mov rax,1   ; function number for writing/outputting the data.
+    mov rdi,0   ; file descriptor ID for standard input device (keyboard)
+    mov rsi,arr ; starting addresses of the variable used to store the data.
+    mov rdx,8   ; maximum bytes to be read.
+    syscall     ; system call (in built function)
+\end{verbatim}
+\subsubsection{\textbf{System exit call}}
+
+function to exit or terminate program.
+\begin{verbatim}
+    mov rax,60 ; function number for sys-exit
+    mov rdi,0  ; return code for zero error.
+    syscall    ; system call.
+\end{verbatim}
+\subsection{\textbf{Instruction used in the program for implementation}}
+\begin{verbatim}
+    ADD
+    add two numbers together
+
+    COMPARE
+    compare numbers
+
+    JUMP
+    jump to designated RAM address.
+
+    LOAD 
+    Load information from RAM to the CPU.
+\end{verbatim}
+
+\subsection{\textbf{Commands to execute the program}}
+\begin{verbatim}
+    to assemble:
+    nasm -f elf64 hello.asm
+
+    to link:
+    ld -o hello hello.o
+
+    to execute:
+    ./hello
+
+    where, hello is the filename.
+\end{verbatim}
+
+\section{\textbf{Algorithm}}
+\begin{enumerate}
+    \item start
+    \item Display message "Two-digit HEX Number"
+    \item Initialize hard coded two digit and four-digit number.
+    \item Write a procedure for unpacking BCD number (Display Ouputs)
+    \item Display two digit and four digit numbers.
+    \item end.
+\end{enumerate}
+\section{\textbf{Input}}
+Two digit and four digit numbers.
+
+\section{\textbf{Output}}
+Two digit and four digit numbers.
+\begin{verbatim}
+The Two digit Hex number is: 
+2A
+\end{verbatim}
+\section{Code}
+\lstinputlisting[]{../Programs/assignment_1.asm}
+
+\section{\textbf{Conclusion}}
+Thus, implemented the program in assembly language to display two digit and four-digit hex numbers
+
+\section{\textbf{FAQs}}
+\begin{enumerate}
+	\item {\textbf{Explain assembler directives. List the assembler directives in your program.}}
+	
+	Assembler Directives supply data to the program and control the assembly process. It enables to do the following:
+\begin{itemize}
+    \item Assemble code and data into specified sections. 
+    \item Reserve space in memory for unitized variables.
+    \item Control the appearance of listings.
+    \item Initialize memory.
+    \item Assemble conditional blocks.
+    \item Define global variables.
+    \item Specify libraries from which the assembler can obtain macros.
+    \item Examine symbolic debugging information.
+\end{itemize}
+
+Assembler Directives in the program:
+\begin{itemize}
+    \item .text      switch to text segment.
+    \item .data      switch to initialized part of data segment.
+    \item .bss       switch to uninitialized port of data segment.
+\end{itemize}
+
+\item {\textbf{Illustrate the significance of the sections: .data, .bss, .text}}
+.bss segment stands for 'block starting symbol' is the memory space for uninitialized variable of your code . IT is the method of optimization to reduce the code size.\\
+syntax: section.bss\\
+\indent var-name RES memory-Type memory size.\\
+\begin{verbatim}
+    Eg. section.bss
+        A resb 5D
+        (Declare variable A allocate 50 bytes memory)
+\end{verbatim}
+
+.data section holds the initialized value. It holds the data of the initialized variable (global or local)
+\begin{verbatim}
+syntax:
+    section.data
+    var_name data_type variable_value.
+Eg:
+    A DB 50
+    (declared variable A of type byte with value 50)
+
+\end{verbatim}
+
+.text segment is the code, vector table and constants. It is the section that holds the executable instructions. 
+\begin{verbatim}
+syntax:
+       section.text
+       global_start
+       _start:
+       ;code
+\end{verbatim}
+
+\item {\textbf{What is the difference between RESB and DB?}}
+
+DB stands for Declare/Define Byte. It is a directive that is used to allocate space for initialized data in the data section.\\
+\\
+RESB Stands for Reserve Byte. It is a directive that is used to allocate space for uninitialized data in .bss section.
+
+\end{enumerate}
+
+
+\end{document}

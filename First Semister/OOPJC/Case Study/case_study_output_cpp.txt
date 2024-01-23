@@ -1,0 +1,14 @@
+What size array do you want? 
+5
+Enter the elements of the array!
+1
+2
+3
+4
+5
+The Average of all the elements in the array is: 3
+The Elements of the Array which are greater than the Average of the Array are: 
+4
+5
+
+The Number of Elements greater than the Average are: 2

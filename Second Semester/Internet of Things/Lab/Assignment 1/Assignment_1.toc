@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
+\contentsline {section}{\numberline {3}Equipments Required}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Raspberry Pi Model 3B}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Arduino Uno}{1}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Difference between Raspberry Pi 3B and Arduino Uno}{2}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Platform}{2}{section.5}%
+\contentsline {section}{\numberline {6}Arduino Uno}{3}{section.6}%
+\contentsline {section}{\numberline {7}Arduino Uno Pin Diagram}{3}{section.7}%
+\contentsline {section}{\numberline {8}Raspberry Pi 3B}{4}{section.8}%
+\contentsline {section}{\numberline {9}Raspberry Pi 3B Pin Diagram}{4}{section.9}%
+\contentsline {section}{\numberline {10}Conclusion}{4}{section.10}%
+\contentsline {section}{\numberline {11}FAQ}{5}{section.11}%

@@ -1,0 +1,157 @@
+<mxfile host="app.diagrams.net" modified="2023-05-01T23:20:52.157Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="A26ZXfeEW2KzdOC0JGl9" version="21.2.3" type="device">
+  <diagram name="Page-1" id="-foRYgEHSlVAG9Fa0xfn">
+    <mxGraphModel dx="1195" dy="666" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-4" value="Component Diagram for Attendence Assistant" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="216" y="34" width="418" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-7" value="Module" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="481" y="213" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-38" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-8" target="sjDbftmQNA6J5_KdtH6J-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-8" value="" style="html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="454" y="97" width="370" height="471" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-9" value="" style="shape=module;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-8">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-35" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-5" target="sjDbftmQNA6J5_KdtH6J-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-5" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 14px;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Database Manager&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 14px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Storing Images&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Processing Stored Images&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Serving Queries&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#bceaae;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="520" y="175" width="237.5" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-6" value="" style="shape=component;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-5">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-23" value="&amp;lt;&amp;lt; Server &amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="594" y="101" width="92" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-33" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-24" target="sjDbftmQNA6J5_KdtH6J-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-42" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-24" target="sjDbftmQNA6J5_KdtH6J-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="501" y="486" />
+              <mxPoint x="501" y="333" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-24" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 14px;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;API Manager&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 14px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ GET Request Manager&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ POST Request Manager&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Server and Send Data&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Fetch Data from Database&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#bceaae;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="518.75" y="424" width="240.5" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-25" value="" style="shape=component;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-24">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-32" value="" style="shape=providedRequiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;strokeColor=#788AA3;fontColor=#46495D;fillColor=#f6f9f5;rotation=90;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="620" y="331" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-36" value="Data Requests" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="651.5" y="336" width="106" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-37" value="" style="shape=providedRequiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;strokeColor=#788AA3;fontColor=#46495D;fillColor=#f6f9f5;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="380" y="157" width="37" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-39" value="API Calls" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="345" y="124" width="70" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-41" value="" style="shape=providedRequiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;strokeColor=#788AA3;fontColor=#46495D;fillColor=#f6f9f5;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="461" y="323" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-45" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-43" target="sjDbftmQNA6J5_KdtH6J-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-43" value="" style="html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="35" y="240" width="370" height="471" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-44" value="" style="shape=module;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-43">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-46" value="&amp;lt;&amp;lt;Client&amp;gt;&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="174" y="249" width="82" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-47" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 14px;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;CameraManager&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 14px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Capture Images&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Capture Video&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#bceaae;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="53" y="284" width="180" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-48" value="" style="shape=component;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-47">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-55" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-49" target="sjDbftmQNA6J5_KdtH6J-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-63" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-49" target="sjDbftmQNA6J5_KdtH6J-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-67" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-49" target="sjDbftmQNA6J5_KdtH6J-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-49" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 14px;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;ImageProcessor&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 14px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Process Images&lt;br style=&quot;font-size: 14px;&quot;&gt;+ Identify Faces&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#bceaae;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="58" y="449" width="172" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-50" value="" style="shape=component;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-49">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-54" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-51" target="sjDbftmQNA6J5_KdtH6J-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-51" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 14px;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Database Manager&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 14px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Storing Images Temporarily&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 14px;&quot;&gt;+ Querying to API&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#bceaae;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="101" y="608" width="227" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-52" value="" style="shape=component;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;rounded=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-51">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-53" value="" style="shape=providedRequiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;strokeColor=#788AA3;fontColor=#46495D;fillColor=#f6f9f5;rotation=90;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="195" y="543" width="39" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-56" value="ComparingImages" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="227" y="549" width="131" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-57" value="Capturing Images" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="154" y="392.5" width="126" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-64" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-58" target="sjDbftmQNA6J5_KdtH6J-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-58" value="" style="shape=providedRequiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;strokeColor=#788AA3;fontColor=#46495D;fillColor=#f6f9f5;rotation=90;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="123.5" y="380.5" width="39" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-61" value="&amp;lt;&amp;lt; Display Manager &amp;gt;&amp;gt;" style="html=1;dropTarget=0;whiteSpace=wrap;strokeColor=#788AA3;fontColor=#46495D;fillColor=#bceaae;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="284" y="284.5" width="100" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-62" value="" style="shape=module;jettyWidth=8;jettyHeight=4;strokeColor=#788AA3;fontColor=#46495D;fillColor=#B2C9AB;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="sjDbftmQNA6J5_KdtH6J-61">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-66" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#788AA3;fontColor=default;fillColor=#B2C9AB;endArrow=none;endFill=0;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" edge="1" parent="1" source="sjDbftmQNA6J5_KdtH6J-65" target="sjDbftmQNA6J5_KdtH6J-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-65" value="" style="shape=providedRequiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;strokeColor=#788AA3;fontColor=#46495D;fillColor=#f6f9f5;rotation=90;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="314.5" y="435" width="39" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="sjDbftmQNA6J5_KdtH6J-68" value="Displaying Data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#46495D;labelBackgroundColor=none;fontFamily=Product Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DProduct%2BSans;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="280" y="476" width="112" height="29" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

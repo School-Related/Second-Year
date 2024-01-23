@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Question 1}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Cryptanalysis}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}How is Cipher Text studied? }{1}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Frequency Analysis}{1}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Statistical Analysis}{1}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}Other Methods}{1}{subsubsection.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.5}Types of Cryptanalytic Attacks}{2}{subsubsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.6}Ciphertext Only Attack}{2}{subsubsection.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.7}Known Plaintext Attack}{2}{subsubsection.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.8}Probably Word Attack}{3}{subsubsection.1.1.8}%
+\contentsline {subsubsection}{\numberline {1.1.9}Chosen-plaintext attack}{3}{subsubsection.1.1.9}%
+\contentsline {subsubsection}{\numberline {1.1.10}Chosen Ciphertext Attack}{3}{subsubsection.1.1.10}%
+\contentsline {subsection}{\numberline {1.2}Brute Force Attack}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Example}{4}{subsubsection.1.2.1}%
+\contentsline {section}{\numberline {2}Question 2}{4}{section.2}%

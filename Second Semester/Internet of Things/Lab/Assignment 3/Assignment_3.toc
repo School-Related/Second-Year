@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{1}{section.2}%
+\contentsline {section}{\numberline {3}Component List}{1}{section.3}%
+\contentsline {section}{\numberline {4}Theory}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Stepper Motor}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}DC Motor}{1}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Servo Motor}{1}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}LN298 Motor Driver}{2}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Platform}{2}{section.5}%
+\contentsline {section}{\numberline {6}Circuit}{3}{section.6}%
+\contentsline {section}{\numberline {7}Circuit Diagram}{4}{section.7}%
+\contentsline {section}{\numberline {8}Code}{4}{section.8}%
+\contentsline {section}{\numberline {9}Conclusion}{5}{section.9}%
+\contentsline {section}{\numberline {10}FAQ}{6}{section.10}%

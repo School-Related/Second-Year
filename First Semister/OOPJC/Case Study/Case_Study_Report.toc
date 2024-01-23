@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Aim}{1}{}%
+\contentsline {section}{\numberline {2}Problem Statement}{1}{}%
+\contentsline {section}{\numberline {3}Platform}{1}{}%
+\contentsline {section}{\numberline {4}Flowchart}{1}{}%
+\contentsline {section}{\numberline {5}Algorithm}{2}{}%
+\contentsline {section}{\numberline {6}Code}{2}{}%
+\contentsline {subsection}{\numberline {6.1}C++ Implementation of Problem}{2}{}%
+\contentsline {subsection}{\numberline {6.2}Java Implementation of Problem}{3}{}%
+\contentsline {subsection}{\numberline {6.3}Input}{3}{}%
+\contentsline {subsection}{\numberline {6.4}Output}{3}{}%
+\contentsline {subsection}{\numberline {6.5}C++ Output}{3}{}%
+\contentsline {subsection}{\numberline {6.6}Java Output}{4}{}%

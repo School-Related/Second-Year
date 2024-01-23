@@ -1,0 +1,285 @@
+% This is a Basic Assignment Paper but with like Code and stuff allowed in it. 
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{OOPJC Assignment 4}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Object Oriented Programming with Java and C++\\
+		Second Year B. Tech, Semester 1
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+		Collection Frameworks in Java
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Practical Report\\
+		Assignment 6
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+		Batch A1, PA 20
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\setcounter{page}{1}
+
+\section{Aim and Objectives}
+\subsection*{Aim}
+Demonstrating the use of Collection Frameworks in Java.
+\subsection*{Objective}
+\begin{itemize}
+	\item To study the concept of collection framework
+	\item To get familiar with features of collection framework in Java
+\end{itemize}
+\section{Problem Statement}
+Write a Java Program to: 
+\begin{itemize}
+	\item Create a new array list and print out the collection by position
+	\item Add some elements (string)
+	\item Search an element in an array list
+	\item Reverse elements in an array list
+	\item Test an array list is empty or not
+	\item Join two array lists
+\end{itemize}
+	
+\section{Theory}
+\subsection{Concept of collection framework in Java}
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+
+
+Here is an Example using the ArrayList interface. 
+
+\begin{lstlisting}[language=Java]
+import java.util.*;  
+class TestJavaCollection1{  
+	public static void main(String args[]){  
+		ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
+		list.add("Ravi");//Adding object in arraylist  
+		list.add("Vijay");  
+		list.add("Ravi");  
+		list.add("Ajay");  
+		//Traversing list through Iterator  
+		Iterator itr=list.iterator();  
+		while(itr.hasNext()){  
+			System.out.println(itr.next());  
+		}  
+	}  
+}  
+\end{lstlisting}
+\subsection{Benefit of Generics in Collections Framework}
+The Java Generics programming is introduced in J2SE 5 to deal with type-safe objects. It makes the code stable by detecting the bugs at compile time.
+
+Before generics, we can store any type of objects in the collection, i.e., non-generic. Now generics force the java programmer to store a specific type of objects.
+
+The Advantages are: 
+\begin{itemize}
+	\item Type-safety :  We can hold only a single type of objects in generics. It doesn?t allow to store other objects.
+	\item Type casting is not required: There is no need to typecast the object.
+	\item Compile-time checking: It is checked at compile time so problem will not occur at runtime. It is far better to handle the problem at compile time than runtime.
+\end{itemize}
+\subsection{Basic interfaces of Java Collections Framework}
+Java Collection means a single unit of objects. Java Collection framework provides many basic interfaces.
+\begin{itemize}
+	\item ArrayList: It is used to create a dynamic array. It is similar to vector.
+	\item LinkedList: It is used to create a linked list. It is the implementation of the List and Deque interfaces.
+	\item Vector: It is similar to ArrayList. It is also used to create a dynamic array.
+	\item HashSet: It is used to create a collection that uses a hash table for storage.
+	\item TreeSet: It is used to create a collection that uses a tree for storage.
+	\item HashMap: It is used to create a map that uses a hash table for storage.
+	\item TreeMap: It is used to create a map that uses a tree for storage.
+
+\end{itemize}
+\subsection{Types of collections allowed by the Java collections framework, Explain with suitable syntax and examples}
+
+\section{Platform}
+\textbf{Operating System}: Arch Linux x86-64 \\
+\textbf{IDEs or Text Editors Used}: Visual Studio Code\\
+\textbf{Compilers} : g++ and gcc on linux for C++, and javac, with JDK 18.0.2 for Java\\
+
+\section{Input}
+
+\subsection*{For C++}
+\begin{enumerate}
+	\item Number of Each Type of Employee
+	\item Name, Age, Address City, and Salary of Each Employee
+\end{enumerate}
+
+\subsection*{For Java}
+\begin{enumerate}
+	\item The Side of the Square
+	\item The Radius of the Circle
+	\item The Length and Breadth of the Rectangle.
+\end{enumerate}
+
+\section{Output}
+\subsection*{For C++}
+\begin{enumerate}
+	\item General Information about Each Employee
+	\item The Weekly, hourly and commisioned Salary for Respective Employees.
+\end{enumerate}
+
+\subsection*{For Java}
+\begin{enumerate}
+	\item The Area of the Shapes
+	\item The Location of the Hill Stations
+	\item The Reason the Hill stations are Famous for.
+\end{enumerate}
+
+
+\section{Code}
+\lstinputlisting[language=Java, caption=Output]{../Programs/java_implementations/assignment_6/assignment_6.java}
+\subsubsection{Output}
+\lstinputlisting[caption=Output]{../Programs/java_implementations/assignment_6/assignment_6_output.txt}
+
+
+\section{Conclusion}
+Thus, learnt the use of collection framework in java and performed array list operations
+\pagebreak
+
+\section{FAQs}
+
+\begin{enumerate}
+	\item \textbf{Why do we use collection framework?}\\
+	Java Collection Framework offers the capability to Java Collection to represent a group of elements in classes and Interfaces.
+
+	Java Collection Framework enables the user to perform various data manipulation operations like storing data, searching, sorting, insertion, deletion, and updating of data on the group of elements. Followed by the Java Collections Framework, you must learn and understand the Hierarchy of Java collections and various descendants or classes and interfaces involved in the Java Collections.
+	\begin{itemize}
+		\item When input size is dynamic.
+		\item Whenever we are required to store heterogeneous data.
+		\item When data grows and shrinks frequently.
+	\end{itemize}
+	\item \textbf{Which is best collection framework in Java?}\\
+	There are several very important collection frameworks, in Java. They are:
+	\begin{itemize}
+		\item ArrayList
+		\item LinkedList
+		\item Vector
+		\item HashSet
+		\item TreeSet
+		\item HashMap
+		\item TreeMap
+	\end{itemize}
+	All of them are important, and useful in their own way. So we cannot say one of them is the best one, as it depends on the requirements. 
+	\item \textbf{What is difference between array and collection?}\\
+	\begin{itemize}
+		\item Arrays are fixed in size, whereas collections are dynamic in size.
+		\item Arrays are homogeneous, whereas collections are heterogeneous.
+		\item Arrays are not type safe, whereas collections are type safe.
+		\item Arrays are not thread safe, whereas collections are thread safe.
+		\item Arrays are not synchronized, whereas collections are synchronized.
+	\end{itemize}
+	
+	\item \textbf{What is HashMap in Java?}\\
+	HashMap is a part of the Java Collections Framework. It is a class that implements the Map interface. It is used to store key-value pairs. It is similar to Hashtable, but it is not synchronized. It allows one null key and multiple null values. It maintains no order.\\
+
+	It provides the functionality of the hash table data structure. It stores elements in key/value pairs. Here, keys are unique identifiers used to associate each value on a map.
+\end{enumerate}
+
+\end{document}

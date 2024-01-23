@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}Objectives}{1}{section.1}%
+\contentsline {section}{\numberline {2}Problem Statement}{1}{section.2}%
+\contentsline {section}{\numberline {3}Theory}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Heap}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Types of Heaps}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Construction of heaps}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Data Structures Used for Heap Constructions}{3}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Time and Space Complexities Associated with Heap}{3}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Heap Vs Binary Search Trees}{3}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Applications of Heap}{3}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Platform}{3}{section.4}%
+\contentsline {section}{\numberline {5}Test Conditions}{4}{section.5}%
+\contentsline {section}{\numberline {6}Input and Output}{4}{section.6}%
+\contentsline {section}{\numberline {7}Pseudo Code}{4}{section.7}%
+\contentsline {section}{\numberline {8}Time Complexity}{5}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Min and Max Heap Creation}{5}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Min or Max Heap Traversal}{5}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Heap Sort}{5}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Searching in Heap}{5}{section.9}%
+\contentsline {section}{\numberline {10}Code}{5}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Program}{5}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Conclusion}{7}{section.11}%
+\contentsline {section}{\numberline {12}FAQ}{8}{section.12}%

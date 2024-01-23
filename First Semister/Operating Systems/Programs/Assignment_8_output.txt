@@ -1,0 +1,49 @@
+Welcome to Super Bashing Calculator
+Enter the first number
+1
+Enter the second number
+2
+What would you like to do with these 2 numbers
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Quit
+1
+1 + 2 = 3
+Enter the first number
+2
+Enter the second number
+1
+What would you like to do with these 2 numbers
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Quit
+2
+2 - 1 = 1
+Enter the first number
+1
+Enter the second number
+2
+What would you like to do with these 2 numbers
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Quit
+3
+1 * 2 = 1
+Enter the first number
+4
+Enter the second number
+4
+What would you like to do with these 2 numbers
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Quit
+4
+4 / 4 = 1

@@ -1,0 +1,181 @@
+-> krishnaraj@Krishnaraj-Arch -> /run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Programs -> main -> cd "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Programs/" && g++ Assignment_9.cpp -o Assignment_9 && "/run/media/krishnaraj/Classes/University/Second Year/Second Semester/Advanced Data Structures/Programs/"Assignment_9
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Pineapple
+Enter the definition of the word: fruit
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Apple
+Enter the definition of the word: Fruit
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Keys
+Enter the definition of the word: object
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Laptop
+Enter the definition of the word: computer
+Right-Right Rotation Performed
+Left-Right Rotation Performed
+Left-Left Rotation Performed
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Guava
+Enter the definition of the word: fruit
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Arc_Reactor
+Enter the definition of the word: heart
+Left-Left Rotation Performed
+Right-Left Rotation Performed
+Right-Right Rotation Performed
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Suit
+Enter the definition of the word: if_ur_nothing_without_it_you_shouldnt_have_it
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Genius
+Enter the definition of the word: Tony
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Billionnaire
+Enter the definition of the word: Tony
+Left-Left Rotation Performed
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+1
+Enter the word to be inserted: Philanthropist
+Enter the definition of the word: Tony
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+2
+Balanced AVL Tree:
+
+Suit: if_ur_nothing_without_it_you_shouldnt_have_it
+Pineapple: fruit
+Philanthropist: Tony
+Laptop: computer
+Keys: object
+Root -> Head: AVL Dictionary
+Guava: fruit
+Genius: Tony
+Billionnaire: Tony
+Arc_Reactor: heart
+Apple: Fruit
+
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+3
+Inorder Traversal:
+Apple Arc_Reactor Billionnaire Genius Guava Head Keys Laptop Philanthropist Pineapple Suit 
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+4
+Preorder Traversal:
+Head Arc_Reactor Apple Genius Billionnaire Guava Laptop Keys Pineapple Philanthropist Suit 
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 
+
+5
+Postorder Traversal:
+Apple Billionnaire Guava Genius Arc_Reactor Keys Philanthropist Suit Pineapple Laptop Head 
+1.Insert Element into the tree
+2.show Balanced AVL Tree
+3.InOrder traversal
+4.PreOrder traversal
+5.PostOrder traversal
+6.Exit
+Enter your Choice: 6

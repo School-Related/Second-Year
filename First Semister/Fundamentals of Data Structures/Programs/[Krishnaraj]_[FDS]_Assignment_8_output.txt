@@ -1,0 +1,20 @@
+Enter the postfix expression: abc+-cdb/+*b^c+
+
+Enter value of a: 6
+
+Enter value of b: 2
+
+Enter value of c: 3
+
+Invalid operator
+Enter value of c: 3
+
+Enter value of d: 8
+
+Enter value of b: 2
+
+Enter value of b: 2
+
+Enter value of c: 3
+
+Answer = 52

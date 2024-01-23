@@ -1,0 +1,32 @@
+\contentsline {section}{\numberline {1}Conversion Techniques}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Analog to Analog Conversion}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Amplitude Modulation}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Frequency Modulation}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Phase Modulation}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Digital to Analog Conversion}{3}{}%
+\contentsline {subsection}{\numberline {1.3}Analog to Digital Conversion}{3}{}%
+\contentsline {subsection}{\numberline {1.4}Digital to Digital Conversion}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}Line Coding}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.2}Unipolar}{4}{}%
+\contentsline {subsubsection}{\numberline {1.4.3}Polar}{4}{}%
+\contentsline {subsubsection}{\numberline {1.4.4}BiPolar}{4}{}%
+\contentsline {subsubsection}{\numberline {1.4.5}Block Coding}{5}{}%
+\contentsline {subsubsection}{\numberline {1.4.6}Scrambling}{5}{}%
+\contentsline {subsubsection}{\numberline {1.4.7}Analog to Digital Conversion}{5}{}%
+\contentsline {section}{\numberline {2}Introduction to Medium Access Control}{5}{}%
+\contentsline {paragraph}{Type of Networks}{5}{}%
+\contentsline {paragraph}{802.11}{5}{}%
+\contentsline {paragraph}{Swithced Ethernet}{5}{}%
+\contentsline {section}{\numberline {3}Network Architecture}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Client Server Model}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Peer to Peer Network}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Distributed Network}{6}{}%
+\contentsline {subsection}{\numberline {3.4}Software Define Network}{6}{}%
+\contentsline {section}{\numberline {4}Protocol Hierarchies: Layers, Protocols and interfaces}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Layers}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Reference Models}{6}{}%
+\contentsline {paragraph}{Addresses}{7}{}%
+\contentsline {section}{\numberline {5}IP Addresses}{7}{}%
+\contentsline {subsection}{\numberline {5.1}Classes of IP Addresses}{7}{}%
+\contentsline {subsection}{\numberline {5.2}Network Address}{7}{}%
+\contentsline {subsection}{\numberline {5.3}Borrowing Subnet bits}{8}{}%
